@@ -1,0 +1,12 @@
+[
+  {
+    "instruction": "Summarize the key points of the following technical content.",
+    "input": "Edge computing has emerged as a critical paradigm for deploying machine learning models in resource-constrained environments. By moving inference closer to data sources, edge deployment reduces latency and bandwidth requirements. However, it introduces challenges in model optimization, including quantization, pruning, and knowledge distillation to fit models within memory and compute constraints.",
+    "output": "Edge computing enables ML deployment in resource-constrained settings by reducing latency through local inference, but requires model optimization techniques like quantization and pruning to meet hardware constraints."
+  },
+  {
+    "instruction": "中文翻译：",
+    "input": "Reinforcement Learning from Human Feedback (RLHF) has become the standard approach for aligning large language models with human preferences. The process involves training a reward model on human comparisons and then optimizing the language model using PPO.",
+    "output": "基于人类反馈的强化学习（RLHF）已成为使大语言模型与人类偏好对齐的标准方法。该过程包括在人类比较数据上训练奖励模型，然后使用PPO优化语言模型。"
+  }
+]

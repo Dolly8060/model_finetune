@@ -1,0 +1,67 @@
+### Granite 4.0-1B LoRA Finetune Config v2
+### 针对翻译能力优化版本
+### 
+### v2改进点：
+### 1. 使用v3数据集（翻译:总结≈1.7:1，方向平衡）
+### 2. 增大LoRA rank到96（提升翻译细节学习能力）
+### 3. 适当降低学习率（避免灾难性遗忘）
+### 4. 增加训练轮数到4（确保翻译任务充分学习）
+### 5. cutoff_len提升到2048（翻译任务通常较长）
+
+### Model
+model_name_or_path: D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16
+trust_remote_code: true
+
+### Finetune method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### Dataset (v3 - 翻译优化版)
+dataset_dir: ./data
+dataset: train_v3
+eval_dataset: val_v3
+template: granite4
+cutoff_len: 1536
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 1
+
+### LoRA (增强版 - 显存优化)
+### rank设为64，平衡效果与显存
+lora_target: q_proj,k_proj,v_proj,o_proj
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.1
+
+### Training
+output_dir: ./outputs/granite-4.0-1B-lora_v5_translation
+logging_steps: 10
+save_steps: 100
+save_total_limit: 5
+
+### Batch size (优化显存使用)
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+
+### Learning rate (略微降低，避免遗忘总结能力)
+learning_rate: 1.2e-4
+num_train_epochs: 4.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+weight_decay: 0.01
+
+### Optimizer
+optim: adamw_torch
+
+### Evaluation
+eval_strategy: steps
+eval_steps: 100
+per_device_eval_batch_size: 8
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+
+### Other
+report_to: none

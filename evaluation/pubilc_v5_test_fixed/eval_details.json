@@ -1,0 +1,494 @@
+{
+  "translation": {
+    "base_model": [
+      {
+        "instruction": "中文翻译：",
+        "input": "Option 2",
+        "reference": "备选案文2",
+        "prediction": "Option 2"
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "预备会议决定将该决定草案转交高级别会议核准。",
+        "reference": "The preparatory segment decided to forward the draft decision to the high-level segment for adoption",
+        "prediction": "The preparatory meeting decided to submit the draft decision to the senior-level meeting for approval."
+      },
+      {
+        "instruction": "请将以下内容译为英文。",
+        "input": "D. 缔约国违反义务的可能补救办法",
+        "reference": "Possible means of remedying violations by States parties of their obligations",
+        "prediction": "D. Possible Remedies for Non-Compliance by the Contracting States"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "A cluster bomb left by the Israeli enemy exploded in Al-Soultaniye, resulting in the wounding of Hussein Qadduh (aged 18 years) on the chest and head.",
+        "reference": "以色列敌军留下的一枚集束炸弹在Al-Soultaniye爆炸，造成侯赛因•卡杜赫（Hussein Qadduh）（18岁）胸部和头部受伤。",
+        "prediction": "以色列敌人留下的一颗簇炸弹在阿尔-索尔托尼亚中爆炸，导致穆赫斯·库达乌（18岁）受伤，受伤部位为胸部和头部。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "This would follow the model presently operative in the Third Committee.",
+        "reference": "这种对话应采取第三委员会现行的操作模式。",
+        "prediction": "这将遵循目前在第三委员会中实施的模式。"
+      },
+      {
+        "instruction": "Translate to Chinese:",
+        "input": "Optimizing the Transformer architecture involves a combination of algorithmic, architectural, and systems-level techniques aimed at improving computational efficiency, memory utilization, and model qu...",
+        "reference": "对 Transformer 架构的优化涉及算法、架构以及系统层面的多种技术，目标是提升计算效率、内存利用率和模型质量。在架构层面，注意力机制是主要的优化对象，因为标准自注意力的二次复杂度限制了模型的可扩展性。稀疏注意力、低秩注意力以及线性化注意力等变体通过约束注意力模式或近似 softmax 运算来降低复杂度，从而实现对长序列的高效建模。参数效率可以通过权重共享、因子化嵌入以及 Mixture-of-Experts（MoE）层来提升，这些方法能够在不成比例增加计算量的情况下扩大模型容量。前馈网络（Feed-Forward Networks，FFNs）通常通过门控激活函数或降维技术进行优化，以在表达能力与计算成本之间取得平衡。\n\n从训练角度看，混合精度训练、自适应优化器以及学习率调度等优化策略可以提升收敛速度和数值稳定性。模型压缩技术，包括剪枝、量化和知识蒸馏，能够在保持性能的同时进一步降低推理延迟和部署成本。系统层面的优化同样至关重要，例如算子融合（kernel fusion）、自回归解码中的 KV-cache 复用，以及跨 GPU 或 TPU 的硬件感知并行化，这些技术对于最大化吞吐量具有关键作用。总体而言，这些优化体现了一种整体化的方法，即将算法设计、数值计算方法和硬件因素协同考虑，以实现 Transformer 模型的高效、稳健扩展。",
+        "prediction": "优化Transformer架构涉及算法、架构和系统级技术的综合应用，旨在提高计算效率、内存利用率和模型质量。在架构层面，注意力机制是主要目标，因为标准自注意力的二次复杂度限制了可扩展性。稀疏、低秩和线性化的注意力变体通过约束注意力模式或近似softmax操作来降低复杂度，从而实现对长序列的高效建模。通过权重共享、分解嵌入和混合专家层（MoE），可以提高参数效率，而无需计算成本的线性增加。通用前馈网络（FFNs）通常使用门控激活或降维技术来平衡表达能力和成本。从训练的角度来看，混合精度训练、自适应优化器和学习率调度等优化策略提高了收敛速度和数值稳定性。模型压缩技术，包括剪枝、量化和知识蒸馏，进一步降低推理延迟和部署成本，同时保持性能。系统级优化，如内核融合、自回归解码中的KV缓存重用和跨GPU或TPU的硬件感知并行性，对于最大化吞吐量至关重要。综合来看，这些优化反映了一种综合性方法，其中算法设计、数值方法和硬件考虑被联合利用，以实现Transformer模型的高效且鲁棒的扩展。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "你俩去看一下",
+        "reference": "You two go and take a look.",
+        "prediction": "You two should go check it out."
+      },
+      {
+        "instruction": "English translation:",
+        "input": "文本生成技术是自然语言处理的重要方向，旨在根据给定上下文自动产生连贯且语义一致的文本。主流方法以统计语言模型和神经语言模型为核心，尤其是基于 Transformer 架构的自回归模型，通过自注意力机制有效建模长程依赖关系，并依托大规模语料进行预训练与微调。模型训练通常采用最大似然估计作为优化目标，在推理阶段结合束搜索、温度采样等解码策略，以平衡生成文本的多样性与准确性。当前研究重点还包括可控文本生...",
+        "reference": "Text generation technology is a key research direction in natural language processing, aiming to automatically produce coherent and semantically consistent text based on a given context. Mainstream approaches center on statistical language models and neural language models, particularly autoregressive models based on the Transformer architecture, which leverage self-attention mechanisms to effectively model long-range dependencies and rely on large-scale corpora for pre-training and fine-tuning. Model training typically adopts maximum likelihood estimation as the optimization objective, while the inference stage combines decoding strategies such as beam search and temperature sampling to balance diversity and accuracy in generated text. Current research also focuses on controllable text generation, mitigation of hallucination issues, and systematic evaluation based on metrics such as BLEU and ROUGE.",
+        "prediction": "Here is the English translation of your text:\n\nText generation technology is an important direction in natural language processing, aiming to automatically produce coherent and semantically consistent text based on given context. Mainstream approaches center on statistical language models and neural language models, especially those based on the Transformer architecture, which effectively model long-range dependencies through self-attention mechanisms and leverage large-scale corpora for pretraining and fine-tuning. Model training typically employs maximum likelihood estimation as the optimization objective, and during inference, decoding strategies such as beam search and temperature sampling are combined to balance the diversity and accuracy of generated text. Current research also focuses on controllable text generation, mitigating misinformation, and system evaluation based on metrics like BLEU and ROUGE."
+      },
+      {
+        "instruction": "翻译成英文：",
+        "input": "预训练语言模型通过在大规模无标注语料上采用自监督学习，利用Transformer架构的自注意力机制学习通用语言表示。常见目标包括掩码语言模型与因果语言模型，使模型在长程依赖建模和上下文理解上具备强泛化能力。通过“预训练—微调”范式，模型参数可高效迁移至问答、文本分类与生成等下游任务，显著降低标注成本。随着参数规模与数据规模的扩展，预训练语言模型在语义理解、推理与生成质量上持续提升，但也带来计算开销...",
+        "reference": "Pretrained language models leverage self-supervised learning on large-scale unlabeled corpora to learn general-purpose language representations through the self-attention mechanism of the Transformer architecture. Common training objectives include masked language modeling and causal language modeling, enabling strong generalization in long-range dependency modeling and contextual understanding. Through the “pretraining–fine-tuning” paradigm, model parameters can be efficiently transferred to downstream tasks such as question answering, text classification, and text generation, significantly reducing annotation costs. As parameter counts and data scales continue to grow, pretrained language models achieve sustained improvements in semantic understanding, reasoning, and generation quality, while also introducing challenges related to computational overhead, alignment, and safety.",
+        "prediction": "Pre-trained language models learn general language representations through self-supervised learning on large unannotated corpora, leveraging the self-attention mechanism of the Transformer architecture. Common objectives include masked language models and causal language models, enabling the models to exhibit strong generalization capabilities in long-range dependency modeling and context understanding. Through the \"pre-training—fine-tuning\" paradigm, model parameters can be efficiently transferred to downstream tasks such as question answering, text classification, and generation, significantly reducing annotation costs. As the parameter size and data size expand, pre-trained language models continue to improve in semantic understanding, reasoning, and generation quality, but also face challenges such as computational costs, alignment, and security."
+      },
+      {
+        "instruction": "请把以下技术文档翻译成中文。",
+        "input": "Learning rate scheduling strategies play a critical role in the optimization of deep neural networks by controlling the magnitude of parameter updates throughout training. A well-designed schedule bal...",
+        "reference": "学习率调度策略通过控制训练过程中参数更新的幅度，在深度神经网络的优化中起着至关重要的作用。合理设计的调度策略能够在训练早期实现快速收敛，同时在接近最优解时保持稳定而精细的优化。经典方法如阶梯式衰减（step decay）和指数衰减（exponential decay）按照预定义规则降低学习率，有助于在训练推进过程中防止振荡和发散。更为先进的方法，包括余弦退火（cosine annealing）和多项式衰减（polynomial decay），提供了更加平滑的学习率过渡，从而改善收敛行为并提升泛化性能。学习率预热（warm-up）策略通过从较小的初始值逐步增大学习率，对大规模模型和大批量训练尤为有效，因为它能够缓解初始化阶段由于梯度更新过大而引发的优化不稳定问题。循环学习率（cyclical learning rate）调度在有界范围内周期性地变化学习率，使优化器能够跳出浅层局部极小值和鞍点。学习率调度还与自适应优化算法（如 Adam、RMSProp 和 AdamW）密切相关，其中全局学习率调度与逐参数的自适应更新机制相互补充。从理论角度看，在随机优化中通常需要采用逐渐减小的学习率调度以保证收敛性；而大量实证研究表明，经过合理调节的学习率调度能够显著提升训练效率以及最终模型的准确性。",
+        "prediction": "学习率调度策略在深度神经网络的优化中起着至关重要的作用，通过控制参数更新的幅度来调节训练过程中的参数更新。一种良好的调度策略既能在早期快速收敛，又能在最优解附近稳定优化。经典方法，如步长衰减和指数衰减，根据预定义的规则逐步降低学习率，有助于防止随着训练进程的推进而产生的振荡和发散。更先进的方法，如余弦退火和多项式衰减，提供了更平滑的过渡，可以改善收敛行为和泛化性能。温度调度策略，通过从一个小的初始值逐渐增加学习率，特别适用于大规模模型和批量大小，因为它能够缓解由初始化时大梯度更新引起的优化不稳定性。周期性调度的学习率，通过在有限范围内周期性地变化学习率，使优化器能够逃离浅层局部最小值和鞍点。学习率调度还与自适应优化算法（如Adam、RMSProp和AdamW）紧密相连，在这些算法中，全局调度策略补充了每个参数的自适应更新。从理论角度来看，衰减学习率的调度策略通常需要确保在随机优化中的收敛性，而实证研究表明，适当调整的调度策略能够显著提高训练效率和最终模型准确性。"
+      },
+      {
+        "instruction": "English translation:",
+        "input": "受害者的大多数是无辜和手无寸铁的妇女与儿童。",
+        "reference": "The majority of victims have been innocent and defenceless women and children.",
+        "prediction": "The English translation of the sentence is:\n\n\"Most of the victims are innocent women and children with nothing to defend themselves.\""
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "从十九大作出部署到县市区监察委员会组建完成，丹东能否把全国监察体制改革中的第一步迈好。",
+        "reference": "From the 19th National People’s Congress to the completion of the establishment of the county and city commission, whether Dandong can take a positive first step in the reform of the national supervision system will be seen.",
+        "prediction": "Here is the translation of your text into English:\n\nFrom the deployment made at the 19th National Congress to the establishment and completion of the county, municipal, and urban supervision committees, can Dengdong master the first step of the nationwide supervision system reform."
+      },
+      {
+        "instruction": "请翻译以下AI领域的文本。",
+        "input": "Recent improvements to attention mechanisms have focused on enhancing efficiency, expressiveness, and scalability in deep neural architectures, particularly within transformer-based models. One major ...",
+        "reference": "近年来，对注意力机制的改进主要聚焦于提升深度神经网络架构（尤其是基于 Transformer 的模型）在效率、表达能力和可扩展性方面的表现。其中一个重要方向是优化自注意力在计算和内存上的复杂度，因为其复杂度会随着序列长度呈二次增长。稀疏注意力（sparse attention）、线性注意力（linear attention）以及低秩近似（low-rank approximations）通过约束注意力模式或重新表述 softmax 运算来缓解这一瓶颈，使模型能够更有效地处理长上下文序列。\n\n另一类改进致力于通过结构化或自适应机制增强注意力的归纳偏置（inductive bias），例如相对位置编码（relative positional encoding）、旋转位置嵌入（rotary position embeddings）以及动态注意力跨度（dynamic attention spans），从而使模型能够更好地捕捉序列和层级依赖关系。此外，多头注意力（multi-head attention）也通过头剪枝（head pruning）、头专门化（head specialization）以及自适应头分配（adaptive head allocation）得到了进一步优化，以提升参数效率和可解释性。\n\n交叉注意力（cross-attention）变体和多尺度注意力（multi-scale attention）则通过在不同特征空间或分辨率之间对齐信息，进一步增强了多模态和层级化场景下的表示学习能力。近期研究还探索了将注意力机制与门控机制（gating mechanisms）、归一化策略（normalization strategies）以及循环组件（recurrent components）相结合，以稳定训练过程并改善梯度传播（gradient flow）。\n\n总体而言，这些进展在保持或提升性能的同时，将注意力机制的适用范围扩展到了大规模、长上下文以及资源受限的应用场景中，并在自然语言处理、计算机视觉和多模态学习等任务中展现出良好的效果。",
+        "prediction": "近期，注意力机制的改进主要集中在提高深度神经网络架构的效率、表达能力和可扩展性，特别是在基于transformer的模型中。其中一个主要方向是优化自注意力的计算和内存复杂度，该复杂度与序列长度呈二次关系。稀疏注意力、线性注意力和低秩近似通过限制注意力模式或重新表述softmax操作来缓解这一瓶颈，使模型能够更有效地处理长上下文序列。另一条改进方向是通过结构化或自适应机制来优化注意力的归一化偏差，例如相对位置编码、旋转位置嵌入和动态注意力时长，这些方法使模型能够更好地捕捉序列和层次依赖关系。此外，多头注意力通过头剪裁、头专化和自适应头分配来提高参数效率和可解释性。交叉注意力变体和多尺度注意力通过在不同特征空间或分辨率上对信息进行对齐，进一步增强了多模态和层次设置中的表示学习。最近的研究还探索了将注意力与门控机制、归一化策略和循环组件集成，以稳定训练并改善梯度流动。综合来看，这些进步将注意力机制应用于大规模、长上下文和资源受限的场景，同时在自然语言处理、计算机视觉和多模态学习等任务中保持或提高性能。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "多少钱今天你花？",
+        "reference": "How much did you spend today?",
+        "prediction": "How much money did you spend today?"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "The General Assembly adopted the draft resolution recommended by the Sixth Committee in paragraph 11 of its report (A/61/457) (resolution 61/40).",
+        "reference": "大会通过第六委员会在其报告（A/61/457）第11段中建议的决议草案（第61/40号决议）。",
+        "prediction": "一般会议通过了第六组织在其报告（A/61/457）第11段中建议的草案决议（解决方案61/40）。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "现在人们耳熟能详的共享单车、电子商务、智慧旅游等服务创新的产物",
+        "reference": "Now, people are familiar with the innovative products for service, such as shared cycling, e-commerce and smart tourism",
+        "prediction": "Here is the translation of your sentence into English:\n\nNow, people are familiar with the innovative products of shared bicycles, e-commerce, and smart tourism."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "读\"麦田里的守望者\"。 这是一本好书。",
+        "reference": "Reading \"catcher in the rye.\" That was a good book.",
+        "prediction": "Read \"The Watchers in the Wheatfield.\" It's a good book."
+      },
+      {
+        "instruction": "请将以下AI相关内容翻译成英文。",
+        "input": "图像生成模型旨在从数据分布中学习高维视觉样本的生成机制。代表性方法包括生成对抗网络（GAN）与扩散模型：前者通过生成器与判别器的对抗博弈逼近真实分布，但易受模式崩塌与训练不稳定影响；后者基于逐步加噪与去噪的马尔可夫过程，采用得分匹配或变分下界进行优化，具备更稳定的收敛性与可控性。近年来，结合Transformer与潜空间建模的条件生成框架，通过文本—图像对齐、CLIP引导与交叉注意力，实现高保真、...",
+        "reference": "Image generation models aim to learn the generative mechanisms of high-dimensional visual samples from data distributions. Representative approaches include Generative Adversarial Networks (GANs) and diffusion models: the former approximate the real distribution through an adversarial game between a generator and a discriminator, but are prone to mode collapse and training instability; the latter are based on a Markov process of progressive noise addition and denoising, optimized via score matching or variational lower bounds, and exhibit more stable convergence and controllability. In recent years, conditional generation frameworks that combine Transformers with latent space modeling have achieved high-fidelity, multimodal control through text–image alignment, CLIP guidance, and cross-attention mechanisms. Model evaluation commonly relies on metrics such as FID and IS, with an emphasis on diversity, realism, and reproducibility.",
+        "prediction": "Image generation models aim to learn the generation mechanism of high-dimensional visual samples from data distributions. Representative methods include Generative Adversarial Networks (GANs) and diffusion models: the former approximates the true distribution through a game of adversarial training between a generator and a discriminator, but is prone to mode collapse and training instability; the latter is based on a Markov process of gradually adding and removing noise, using score matching or variational lower bounds for optimization, and exhibits more stable convergence and controllability. In recent years, a conditional generation framework combining Transformers and latent space modeling has achieved high fidelity and multi-modal control through text-image alignment, CLIP guidance, and cross-attention. Model evaluation typically uses metrics such as FID, IS, focusing on diversity, fidelity, and reproducibility."
+      },
+      {
+        "instruction": "Translate to English:",
+        "input": "知识蒸馏方法（Knowledge Distillation, KD）是一种模型压缩与性能迁移技术，其核心思想是利用性能较强、参数规模较大的教师模型（Teacher Model）来指导轻量级学生模型（Student Model）的训练。该方法通常通过引入软标签（Soft Targets），即教师模型在高温参数下输出的类别概率分布，使学生模型不仅学习真实标签的信息，还能捕获类别间的相对关系与隐含结构。...",
+        "reference": "Knowledge distillation (KD) is a model compression and performance transfer technique whose core idea is to leverage a high-performance, large-parameter teacher model to guide the training of a lightweight student model. This method typically introduces soft targets, i.e., the class probability distribution output by the teacher model under a high temperature setting, enabling the student model to learn not only from the ground-truth labels but also to capture inter-class relationships and implicit structural information. A typical distillation objective function consists of a weighted combination of supervised loss and distillation loss, where the distillation loss is commonly measured using Kullback–Leibler (KL) divergence to quantify the consistency between the output distributions of the student and teacher models. In recent years, knowledge distillation has been extended to forms such as feature-level distillation, relational distillation, and self-distillation, demonstrating significant value in scenarios including model acceleration, edge deployment, and large-scale model compression.",
+        "prediction": "Knowledge Distillation (KD) is a model compression and performance transfer technique whose core idea is to use a strong, parameter-rich teacher model (Teacher Model) to guide the training of a lightweight student model (Student Model). This method typically introduces soft labels, i.e., the class probability distributions output by the teacher model at high temperature parameters, so that the student model not only learns the information of true labels but also captures the relative relationships and latent structures among classes. The typical distillation objective function is composed of a weighted sum of supervised loss and distillation loss, where the distillation loss often uses the KL divergence to measure the consistency between the student and teacher output distributions. In recent years, knowledge distillation has been extended to forms such as feature distillation, relation distillation, and self-distillation, and has shown important value in model acceleration, edge deployment, and model compression in various scenarios."
+      },
+      {
+        "instruction": "请将以下英文内容译为中文，保持专业术语准确。",
+        "input": "In-context learning (ICL) refers to the ability of large language models (LLMs) to perform new tasks at inference time by conditioning on a set of examples or instructions provided within the input co...",
+        "reference": "上下文学习（In-context Learning，ICL）是指大型语言模型（Large Language Models，LLMs）在推理阶段无需进行显式的参数更新或基于梯度的微调，仅通过在输入上下文中提供一组示例或指令，就能够执行新任务的能力。从技术角度看，ICL 源于模型架构、模型规模以及预训练目标之间的相互作用，尤其体现在基于 Transformer 架构、通过在海量语料上进行下一词预测（next-token prediction）训练的模型中。在推理过程中，模型通过利用其内部表征以及对给定上下文窗口的 attention 机制，隐式地推断任务结构、输入—输出映射关系以及潜在模式。与传统的监督学习不同，后者通常需要通过重新训练来实现任务适配，而 ICL 更像是一种编码在模型权重中的元学习（meta-learning）形式，使模型能够快速适应新的任务、领域或数据格式。近期研究从多个角度对 ICL 的理论机制进行了探索，包括将其类比为贝叶斯推断、隐式梯度下降，以及 Transformer 层中表现出的线性回归行为等。在实证层面，ICL 的性能对提示（prompt）设计、示例顺序、格式，以及上下文示例与目标查询之间的分布相似性高度敏感。ICL 的局限性包括上下文长度受限、对提示扰动的脆弱性，以及在分布偏移情况下鲁棒性不足。尽管如此，上下文学习已成为提示工程、少样本学习以及通用基础模型部署中的核心范式，在显著减少任务特定微调需求的同时，实现了灵活且可扩展的模型适配能力。",
+        "prediction": "在线学习（ICL）指的是大型语言模型（LLMs）在推理时能够通过输入中的一组示例或指令进行条件化执行新任务，而无需显式的参数更新或基于梯度的微调。从技术角度来看，ICL源于模型架构、规模和预训练目标之间的相互作用，特别是在通过大规模语料库进行下一单词预测训练的transformer模型中。在推理过程中，模型通过利用其内部表示和注意力机制在提供的上下文窗口中隐式推断任务结构、输入-输出映射和潜在模式。与传统的监督学习不同，在监督学习中，任务适应需要重新训练，而ICL作为模型权重中编码的一种元学习形式，实现了对新任务、领域或格式的快速适应。最近的研究探讨了ICL的理论解释，包括贝叶斯推理类比、隐式梯度下降以及transformer层中的线性回归行为。从实证角度来看，ICL的性能对提示设计、示例顺序、格式以及在线示例与目标查询之间的分布式相似性非常敏感。ICL的局限性包括上下文长度限制、对提示扰动的脆弱性以及在分布式变化下的有限鲁棒性。然而，线性学习已成为提示工程、少样本学习和通用基础模型部署的基础范式，显著减少了对任务特定微调的需求，同时实现了灵活和可扩展的模型适应。"
+      }
+    ],
+    "finetuned_model": [
+      {
+        "instruction": "中文翻译：",
+        "input": "Option 2",
+        "reference": "备选案文2",
+        "prediction": "选项2"
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "预备会议决定将该决定草案转交高级别会议核准。",
+        "reference": "The preparatory segment decided to forward the draft decision to the high-level segment for adoption",
+        "prediction": "The preparatory meeting decided to forward the draft decision to the senior-level meeting for approval."
+      },
+      {
+        "instruction": "请将以下内容译为英文。",
+        "input": "D. 缔约国违反义务的可能补救办法",
+        "reference": "Possible means of remedying violations by States parties of their obligations",
+        "prediction": "D. Possible means of redress for the State party in the event of a breach of its obligations"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "A cluster bomb left by the Israeli enemy exploded in Al-Soultaniye, resulting in the wounding of Hussein Qadduh (aged 18 years) on the chest and head.",
+        "reference": "以色列敌军留下的一枚集束炸弹在Al-Soultaniye爆炸，造成侯赛因•卡杜赫（Hussein Qadduh）（18岁）胸部和头部受伤。",
+        "prediction": "以色列敌人留下的簇炸弹在阿尔斯索尔尼亚发生爆炸，伤害了哈绕·加德善（18岁）的心脏和头部。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "This would follow the model presently operative in the Third Committee.",
+        "reference": "这种对话应采取第三委员会现行的操作模式。",
+        "prediction": "这将遵循目前在第三委员会中使用的模型。"
+      },
+      {
+        "instruction": "Translate to Chinese:",
+        "input": "Optimizing the Transformer architecture involves a combination of algorithmic, architectural, and systems-level techniques aimed at improving computational efficiency, memory utilization, and model qu...",
+        "reference": "对 Transformer 架构的优化涉及算法、架构以及系统层面的多种技术，目标是提升计算效率、内存利用率和模型质量。在架构层面，注意力机制是主要的优化对象，因为标准自注意力的二次复杂度限制了模型的可扩展性。稀疏注意力、低秩注意力以及线性化注意力等变体通过约束注意力模式或近似 softmax 运算来降低复杂度，从而实现对长序列的高效建模。参数效率可以通过权重共享、因子化嵌入以及 Mixture-of-Experts（MoE）层来提升，这些方法能够在不成比例增加计算量的情况下扩大模型容量。前馈网络（Feed-Forward Networks，FFNs）通常通过门控激活函数或降维技术进行优化，以在表达能力与计算成本之间取得平衡。\n\n从训练角度看，混合精度训练、自适应优化器以及学习率调度等优化策略可以提升收敛速度和数值稳定性。模型压缩技术，包括剪枝、量化和知识蒸馏，能够在保持性能的同时进一步降低推理延迟和部署成本。系统层面的优化同样至关重要，例如算子融合（kernel fusion）、自回归解码中的 KV-cache 复用，以及跨 GPU 或 TPU 的硬件感知并行化，这些技术对于最大化吞吐量具有关键作用。总体而言，这些优化体现了一种整体化的方法，即将算法设计、数值计算方法和硬件因素协同考虑，以实现 Transformer 模型的高效、稳健扩展。",
+        "prediction": "优化 Transformer 架构涉及算法、架构层面以及系统层面的技术相结合，旨在提升计算效率、内存利用率和模型质量。在架构层面，注意力机制是主要目标，因为标准自注意力的二次复杂度限制了模型的可扩展性。稀疏、低秩以及线性化的注意力变体通过约束注意力模式或近似 softmax 操作来降低复杂度，从而实现对长序列的高效建模。参数效率可以通过权重共享、因式分解嵌入以及 Mixture-of-Experts（MoE）层来提升，这些方法在不成比例增加计算量的情况下提升了模型容量。前馈网络（Feed-forward Networks，FFNs）通常采用门控激活（gated activations）或维度降低技术来在表达能力与计算成本之间取得平衡。从训练角度来看，混合精度训练、自适应优化器以及学习率调度等优化策略可以提升收敛速度和数值稳定性。模型压缩技术，包括剪枝、量化和知识蒸馏，进一步降低推理延迟和部署成本，同时保持性能。系统层面的优化，如内核融合、自回归解码中的 KV 缓存重用以及跨 GPU 或 TPU 的硬件感知并行，对于最大化吞吐量至关重要。总体而言，这些优化体现了一种综合性方法，将算法设计、数值方法和硬件因素联合利用，以实现 Transformer 模型的高效且鲁"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "你俩去看一下",
+        "reference": "You two go and take a look.",
+        "prediction": "You two go check it out."
+      },
+      {
+        "instruction": "English translation:",
+        "input": "文本生成技术是自然语言处理的重要方向，旨在根据给定上下文自动产生连贯且语义一致的文本。主流方法以统计语言模型和神经语言模型为核心，尤其是基于 Transformer 架构的自回归模型，通过自注意力机制有效建模长程依赖关系，并依托大规模语料进行预训练与微调。模型训练通常采用最大似然估计作为优化目标，在推理阶段结合束搜索、温度采样等解码策略，以平衡生成文本的多样性与准确性。当前研究重点还包括可控文本生...",
+        "reference": "Text generation technology is a key research direction in natural language processing, aiming to automatically produce coherent and semantically consistent text based on a given context. Mainstream approaches center on statistical language models and neural language models, particularly autoregressive models based on the Transformer architecture, which leverage self-attention mechanisms to effectively model long-range dependencies and rely on large-scale corpora for pre-training and fine-tuning. Model training typically adopts maximum likelihood estimation as the optimization objective, while the inference stage combines decoding strategies such as beam search and temperature sampling to balance diversity and accuracy in generated text. Current research also focuses on controllable text generation, mitigation of hallucination issues, and systematic evaluation based on metrics such as BLEU and ROUGE.",
+        "prediction": "Text generation is a key research direction in natural language processing, aiming to automatically produce coherent and semantically consistent text based on given context. Mainstream approaches are centered on statistical language models and neural language models, with Transformer-based autoregressive models as a prominent example. These models leverage self-attention mechanisms to effectively model long-range dependencies and rely on large-scale corpora for pretraining and fine-tuning. Model training typically adopts maximum likelihood estimation as the optimization objective, while inference is conducted using decoding strategies such as beam search and temperature sampling to balance the diversity and accuracy of generated text. Current research also focuses on controllable text generation, mitigating the problem of hallucination, and system-level evaluation using metrics such as BLEU and ROUGE."
+      },
+      {
+        "instruction": "翻译成英文：",
+        "input": "预训练语言模型通过在大规模无标注语料上采用自监督学习，利用Transformer架构的自注意力机制学习通用语言表示。常见目标包括掩码语言模型与因果语言模型，使模型在长程依赖建模和上下文理解上具备强泛化能力。通过“预训练—微调”范式，模型参数可高效迁移至问答、文本分类与生成等下游任务，显著降低标注成本。随着参数规模与数据规模的扩展，预训练语言模型在语义理解、推理与生成质量上持续提升，但也带来计算开销...",
+        "reference": "Pretrained language models leverage self-supervised learning on large-scale unlabeled corpora to learn general-purpose language representations through the self-attention mechanism of the Transformer architecture. Common training objectives include masked language modeling and causal language modeling, enabling strong generalization in long-range dependency modeling and contextual understanding. Through the “pretraining–fine-tuning” paradigm, model parameters can be efficiently transferred to downstream tasks such as question answering, text classification, and text generation, significantly reducing annotation costs. As parameter counts and data scales continue to grow, pretrained language models achieve sustained improvements in semantic understanding, reasoning, and generation quality, while also introducing challenges related to computational overhead, alignment, and safety.",
+        "prediction": "Pretrained language models learn general-purpose language representations from large-scale unlabeled corpora through self-supervised learning, leveraging the Transformer architecture’s self-attention mechanism. Common objectives include masked language models and causal language models, which enable strong generalization capabilities in long-range dependency modeling and contextual understanding. Through the “pretraining–fine-tuning” paradigm, model parameters can be efficiently transferred to downstream tasks such as question answering, text classification, and generation, significantly reducing annotation costs. As parameter and data scales continue to expand, pretrained language models exhibit ongoing improvements in semantic understanding, reasoning, and generation quality, while also introducing challenges related to computational overhead, alignment, and safety."
+      },
+      {
+        "instruction": "请把以下技术文档翻译成中文。",
+        "input": "Learning rate scheduling strategies play a critical role in the optimization of deep neural networks by controlling the magnitude of parameter updates throughout training. A well-designed schedule bal...",
+        "reference": "学习率调度策略通过控制训练过程中参数更新的幅度，在深度神经网络的优化中起着至关重要的作用。合理设计的调度策略能够在训练早期实现快速收敛，同时在接近最优解时保持稳定而精细的优化。经典方法如阶梯式衰减（step decay）和指数衰减（exponential decay）按照预定义规则降低学习率，有助于在训练推进过程中防止振荡和发散。更为先进的方法，包括余弦退火（cosine annealing）和多项式衰减（polynomial decay），提供了更加平滑的学习率过渡，从而改善收敛行为并提升泛化性能。学习率预热（warm-up）策略通过从较小的初始值逐步增大学习率，对大规模模型和大批量训练尤为有效，因为它能够缓解初始化阶段由于梯度更新过大而引发的优化不稳定问题。循环学习率（cyclical learning rate）调度在有界范围内周期性地变化学习率，使优化器能够跳出浅层局部极小值和鞍点。学习率调度还与自适应优化算法（如 Adam、RMSProp 和 AdamW）密切相关，其中全局学习率调度与逐参数的自适应更新机制相互补充。从理论角度看，在随机优化中通常需要采用逐渐减小的学习率调度以保证收敛性；而大量实证研究表明，经过合理调节的学习率调度能够显著提升训练效率以及最终模型的准确性。",
+        "prediction": "学习率调度策略在深度神经网络的优化过程中起着至关重要的作用，因为它们控制着参数更新的幅度随训练过程的变化。一个设计良好的学习率调度能够在训练初期快速收敛，在接近最优解附近实现稳定的模型细化。经典方法，如阶梯式衰减（step decay）和指数衰减（exponential decay），根据预先设定的规则逐步降低学习率，有助于在训练过程中防止振荡和发散。更先进的方法，包括余弦退火（cosine annealing）和多项式衰减（polynomial decay），能够提供更平滑的过渡，从而改善收敛行为和模型的泛化性能。温度加热（warm-up）策略通过从一个较小的初始学习率逐步增加学习率，在大规模模型和大批量训练中尤为有效，因为它能够缓解初始化时由大梯度更新引起的优化不稳定性。循环学习率调度会在有限范围内周期性地变化学习率，使优化器能够跳出较浅的局部极小值和鞍点。学习率调度还与 Adam、RMSProp 和 AdamW 等自适应优化算法密切相关，其中全局学习率与每个参数的自适应更新相结合。从理论角度来看，衰减学习率策略通常需要被采用以保证随机优化中的收敛性，而经验研究表明，适当调整"
+      },
+      {
+        "instruction": "English translation:",
+        "input": "受害者的大多数是无辜和手无寸铁的妇女与儿童。",
+        "reference": "The majority of victims have been innocent and defenceless women and children.",
+        "prediction": "Most victims are women and children who are innocent and unarmed."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "从十九大作出部署到县市区监察委员会组建完成，丹东能否把全国监察体制改革中的第一步迈好。",
+        "reference": "From the 19th National People’s Congress to the completion of the establishment of the county and city commission, whether Dandong can take a positive first step in the reform of the national supervision system will be seen.",
+        "prediction": "Can Dandong take the first step of the national supervision system reform well from the deployment of the county, city and district supervision committees at the 19th National Congress?"
+      },
+      {
+        "instruction": "请翻译以下AI领域的文本。",
+        "input": "Recent improvements to attention mechanisms have focused on enhancing efficiency, expressiveness, and scalability in deep neural architectures, particularly within transformer-based models. One major ...",
+        "reference": "近年来，对注意力机制的改进主要聚焦于提升深度神经网络架构（尤其是基于 Transformer 的模型）在效率、表达能力和可扩展性方面的表现。其中一个重要方向是优化自注意力在计算和内存上的复杂度，因为其复杂度会随着序列长度呈二次增长。稀疏注意力（sparse attention）、线性注意力（linear attention）以及低秩近似（low-rank approximations）通过约束注意力模式或重新表述 softmax 运算来缓解这一瓶颈，使模型能够更有效地处理长上下文序列。\n\n另一类改进致力于通过结构化或自适应机制增强注意力的归纳偏置（inductive bias），例如相对位置编码（relative positional encoding）、旋转位置嵌入（rotary position embeddings）以及动态注意力跨度（dynamic attention spans），从而使模型能够更好地捕捉序列和层级依赖关系。此外，多头注意力（multi-head attention）也通过头剪枝（head pruning）、头专门化（head specialization）以及自适应头分配（adaptive head allocation）得到了进一步优化，以提升参数效率和可解释性。\n\n交叉注意力（cross-attention）变体和多尺度注意力（multi-scale attention）则通过在不同特征空间或分辨率之间对齐信息，进一步增强了多模态和层级化场景下的表示学习能力。近期研究还探索了将注意力机制与门控机制（gating mechanisms）、归一化策略（normalization strategies）以及循环组件（recurrent components）相结合，以稳定训练过程并改善梯度传播（gradient flow）。\n\n总体而言，这些进展在保持或提升性能的同时，将注意力机制的适用范围扩展到了大规模、长上下文以及资源受限的应用场景中，并在自然语言处理、计算机视觉和多模态学习等任务中展现出良好的效果。",
+        "prediction": "近年来，对注意力机制的改进主要集中在提升深度神经网络架构中的效率、表达能力和可扩展性，尤其是在基于 Transformer 的模型中。其中一个主要方向是优化自注意力（self-attention）的计算与内存复杂度，该机制随序列长度呈二次增长，是其瓶颈。稀疏注意力、线性注意力以及低秩近似方法通过约束注意力模式或重新表述 softmax 操作，缓解了这一问题，使模型能够更有效地处理长上下文序列。另一条研究方向是通过结构化或自适应机制增强注意力的归纳偏置，例如相对位置编码（relative positional encoding）、旋转位置嵌入（rotary position embeddings）和动态注意力跨度（dynamic attention span），从而更好地捕获序列和层次化依赖关系。此外，多头注意力（multi-head attention）通过头剪枝（head pruning）、头专化（head specialization）以及自适应头分配（adaptive head allocation）得到了改进，以提升参数效率和可解释性。跨注意力变体（cross-attention）和多尺度注意力通过在不同特征空间或分辨率之间对齐信息，进一步增强了多模态和层次化场景下的表示学习能力。最新研究还探索将注意力与门控机制、归一化策略以及循环组件相结合，以稳定训练过程并改善梯度传播。总体而言，这些进展将注意力机制扩展到大规模、长上下文以及资源受限的场景中，同时在自然语言处理、计算机视觉和多"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "多少钱今天你花？",
+        "reference": "How much did you spend today?",
+        "prediction": "How much money do you spend today?"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "The General Assembly adopted the draft resolution recommended by the Sixth Committee in paragraph 11 of its report (A/61/457) (resolution 61/40).",
+        "reference": "大会通过第六委员会在其报告（A/61/457）第11段中建议的决议草案（第61/40号决议）。",
+        "prediction": "一、各议事会通过第六议事会在报告（A/61/457）第11段中建议的修正案决议（61/40）。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "现在人们耳熟能详的共享单车、电子商务、智慧旅游等服务创新的产物",
+        "reference": "Now, people are familiar with the innovative products for service, such as shared cycling, e-commerce and smart tourism",
+        "prediction": "Now people are familiar with the innovations of shared bicycles, e-commerce and smart tourism."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "读\"麦田里的守望者\"。 这是一本好书。",
+        "reference": "Reading \"catcher in the rye.\" That was a good book.",
+        "prediction": "Read \"The Catcher in the Rye\". It's a good book."
+      },
+      {
+        "instruction": "请将以下AI相关内容翻译成英文。",
+        "input": "图像生成模型旨在从数据分布中学习高维视觉样本的生成机制。代表性方法包括生成对抗网络（GAN）与扩散模型：前者通过生成器与判别器的对抗博弈逼近真实分布，但易受模式崩塌与训练不稳定影响；后者基于逐步加噪与去噪的马尔可夫过程，采用得分匹配或变分下界进行优化，具备更稳定的收敛性与可控性。近年来，结合Transformer与潜空间建模的条件生成框架，通过文本—图像对齐、CLIP引导与交叉注意力，实现高保真、...",
+        "reference": "Image generation models aim to learn the generative mechanisms of high-dimensional visual samples from data distributions. Representative approaches include Generative Adversarial Networks (GANs) and diffusion models: the former approximate the real distribution through an adversarial game between a generator and a discriminator, but are prone to mode collapse and training instability; the latter are based on a Markov process of progressive noise addition and denoising, optimized via score matching or variational lower bounds, and exhibit more stable convergence and controllability. In recent years, conditional generation frameworks that combine Transformers with latent space modeling have achieved high-fidelity, multimodal control through text–image alignment, CLIP guidance, and cross-attention mechanisms. Model evaluation commonly relies on metrics such as FID and IS, with an emphasis on diversity, realism, and reproducibility.",
+        "prediction": "Image generation models aim to learn the generative mechanisms of high-dimensional visual samples from data distributions. Representative approaches include Generative Adversarial Networks (GANs) and diffusion models: the former approximates the true distribution through a game between a generator and a discriminator, but is prone to mode collapse and training instability; the latter is based on a Markov process of gradual noise addition and denoising, employing score matching or variational lower bounds for optimization, and exhibits more stable convergence and controllability. In recent years, conditional generative frameworks combining Transformers and latent space modeling have achieved high-fidelity and multimodal control through text–image alignment, CLIP-guided training, and cross-attention mechanisms. Model evaluation typically relies on metrics such as FID and IS, focusing on diversity, realism, and reproducibility."
+      },
+      {
+        "instruction": "Translate to English:",
+        "input": "知识蒸馏方法（Knowledge Distillation, KD）是一种模型压缩与性能迁移技术，其核心思想是利用性能较强、参数规模较大的教师模型（Teacher Model）来指导轻量级学生模型（Student Model）的训练。该方法通常通过引入软标签（Soft Targets），即教师模型在高温参数下输出的类别概率分布，使学生模型不仅学习真实标签的信息，还能捕获类别间的相对关系与隐含结构。...",
+        "reference": "Knowledge distillation (KD) is a model compression and performance transfer technique whose core idea is to leverage a high-performance, large-parameter teacher model to guide the training of a lightweight student model. This method typically introduces soft targets, i.e., the class probability distribution output by the teacher model under a high temperature setting, enabling the student model to learn not only from the ground-truth labels but also to capture inter-class relationships and implicit structural information. A typical distillation objective function consists of a weighted combination of supervised loss and distillation loss, where the distillation loss is commonly measured using Kullback–Leibler (KL) divergence to quantify the consistency between the output distributions of the student and teacher models. In recent years, knowledge distillation has been extended to forms such as feature-level distillation, relational distillation, and self-distillation, demonstrating significant value in scenarios including model acceleration, edge deployment, and large-scale model compression.",
+        "prediction": "Knowledge Distillation (KD) is a model compression and performance transfer technique whose core idea is to leverage a strong, parameter-rich teacher model to guide the training of a lightweight student model. This method typically introduces soft labels, i.e., the class probability distributions output by the teacher model at high confidence, enabling the student model not only to learn from ground-truth labels but also to capture relative relationships and latent structures among classes. A typical distillation objective function is a weighted combination of supervised loss and distillation loss, where the distillation loss commonly measures the consistency between the student and teacher output distributions via the KL divergence. In recent years, knowledge distillation has been extended to feature-level distillation, relation-based distillation, and self-distillation, and has demonstrated significant value in scenarios such as model acceleration, edge deployment, and large model compression."
+      },
+      {
+        "instruction": "请将以下英文内容译为中文，保持专业术语准确。",
+        "input": "In-context learning (ICL) refers to the ability of large language models (LLMs) to perform new tasks at inference time by conditioning on a set of examples or instructions provided within the input co...",
+        "reference": "上下文学习（In-context Learning，ICL）是指大型语言模型（Large Language Models，LLMs）在推理阶段无需进行显式的参数更新或基于梯度的微调，仅通过在输入上下文中提供一组示例或指令，就能够执行新任务的能力。从技术角度看，ICL 源于模型架构、模型规模以及预训练目标之间的相互作用，尤其体现在基于 Transformer 架构、通过在海量语料上进行下一词预测（next-token prediction）训练的模型中。在推理过程中，模型通过利用其内部表征以及对给定上下文窗口的 attention 机制，隐式地推断任务结构、输入—输出映射关系以及潜在模式。与传统的监督学习不同，后者通常需要通过重新训练来实现任务适配，而 ICL 更像是一种编码在模型权重中的元学习（meta-learning）形式，使模型能够快速适应新的任务、领域或数据格式。近期研究从多个角度对 ICL 的理论机制进行了探索，包括将其类比为贝叶斯推断、隐式梯度下降，以及 Transformer 层中表现出的线性回归行为等。在实证层面，ICL 的性能对提示（prompt）设计、示例顺序、格式，以及上下文示例与目标查询之间的分布相似性高度敏感。ICL 的局限性包括上下文长度受限、对提示扰动的脆弱性，以及在分布偏移情况下鲁棒性不足。尽管如此，上下文学习已成为提示工程、少样本学习以及通用基础模型部署中的核心范式，在显著减少任务特定微调需求的同时，实现了灵活且可扩展的模型适配能力。",
+        "prediction": "上下文学习（In-context Learning，ICL）是指大型语言模型（Large Language Models，LLMs）在推理阶段能够通过在输入上下文中提供一组示例或指令进行条件化，从而完成新任务，而无需显式更新参数或进行基于梯度的微调。从技术角度来看，ICL源于模型架构、规模以及预训练目标之间的相互作用，尤其是在基于 Transformer 的模型中，这类模型通常通过在海量语料上进行下一词预测（next-token prediction）进行训练。在推理过程中，模型通过利用其内部表示和 attention 机制，对提供的上下文窗口进行隐式推断，从而推断任务结构、输入-输出映射以及潜在的潜在模式。与需要重新训练以适应新任务的传统监督学习不同，ICL 作为一种嵌入模型权重中的元学习形式，能够快速适应新任务、新领域或新格式。近年来的研究试图从理论层面对 ICL 提供了各种解释，包括贝叶斯推断的类比、隐式梯度下降以及 Transformer 层中的线性回归行为。从经验角度来看，ICL 的性能对提示设计、示例顺序、格式以及上下文示例与目标查询之间的分布相似性非常敏感。ICL 的局限性包括上下文长度限制、对提示扰动的脆弱性，以及在分布偏移下的可靠性有限。尽管如此，上下文学习已成为提示工程、少样本学习以及通用基础模型部署的基"
+      }
+    ]
+  },
+  "summarization": {
+    "base_model": [
+      {
+        "instruction": "Summarize the key points of the following technical content.",
+        "input": "大模型幻觉是指模型在缺乏事实依据时生成看似合理但不正确的内容，广泛存在于问答、代码生成和知识推理等场景。其根源包括训练语料噪声与覆盖不足、以似然最大化为目标导致的真实性失配、解码策略的随机性，以及模型仅依赖参数化记忆而缺乏外部证据约束。幻觉不仅降低系统可靠性，还会在高风险领域放大决策成本。\n\n缓解幻觉的技术路径主要围绕“对齐、约束与验证”。一是通过指令微调、RLHF 和偏好学习增强真实性对齐；二是...",
+        "reference": "大模型幻觉源于数据噪声、目标失配、解码随机性与缺乏外部证据，降低系统可靠性。缓解需对齐、约束与验证：指令微调与RLHF，RAG和工具证据，受约束解码与交叉验证，不确定性估计。属系统工程，需协同设计。",
+        "prediction": "大模型幻觉指的是在缺乏事实依据时，模型生成看似合理但不正确的内容，这种现象广泛存在于问答、代码生成和知识推理等场景中。其根源包括训练语料噪声、覆盖不足、似然最大化目标导致的真实性失配、解码策略的随机性以及模型依赖参数化记忆而缺乏外部证据约束。\n\n为缓解幻觉，主要技术路径围绕“对齐、约束与验证”三个方向：一是通过指令微调、强化学习反馈（RLHF）和偏好学习增强真实性对齐；二是引入检索增强生成（RAG）、工具调用与知识图谱，实现基于证据的生成与可追溯引用；三是采用受约束解码、事实一致性损失、自一致性投票与多模型交叉验证降低随机偏差；四是进行不确定性估计与校准，输出置信度或拒答策略以避免过度自信。\n\n实践表明，结合外部检索与生成后验证的系统可显著降低事实错误率，在开放域问答中提升可用性与稳定性。总体而言，幻觉缓解是系统工程问题，需要数据、训练目标、推理与评测协同设计，才能在规模化应用中实现可靠可控的智能生成。"
+      },
+      {
+        "instruction": "Summarize the key contributions of this paper.",
+        "input": "on scales larger than a few megaparsecs , pressure forces in the baryonic matter in the universe are negligible , so the evolution of dark and baryonic matter is mainly determined by gravity \n . on sm...",
+        "reference": "similarity solutions are found for the adiabatic collapse of density perturbations @xmath0 @xmath1 in a flat universe containing collisional gas only . \n the solutions are obtained for planar , cylindrical , and spherical perturbations with zero initial pressure . for adiabatic index @xmath2 , \n a shock develops at a fixed fraction of the current turnaround distance . near the center of a spherical perturbations with @xmath3 and @xmath4 , \n the gas is in quasi - hydrostatic equilibrium ( pressure supported ) and has an asymptotic power law density profile , @xmath5 , independent of @xmath6 . for @xmath7 , \n the profile depends on @xmath6 , the pressure is finite , the temperature decreases inward , and gravity dominates pressure causing a continuous inward flow . although for @xmath8 the temperature decreases at the center , the gas is pressure supported . \n the pressure is finite in cylindrical perturbations for @xmath9 , and in planar perturbations for any @xmath10 . \n we also derive the asymptotic behaviour of the gas variables near the center in a universe dominated by collisionless matter . \n in such a universe , the gas in a spherical perturbation with @xmath11 can not be pressure supported and the temperature approaches a constant near the center . \n the solutions and the asymptotic behaviour are relevant for modelling the gas distribution in galaxy clusters and pancake - like superclusters , and determining the structure of haloes of self - interacting dark matter with large interaction cross section . \n # 10=-.025em0 - 0 .05em0 \n - 0 -.025em.0433em0    cosmology : theory  gravitation  dark matter baryons intergalactic medium",
+        "prediction": "**Summary of Key Contributions:**\n\n1. **Scale Dependence of Forces:**  \n   - On large scales (megaparsecs), pressure forces in baryonic matter are negligible, and gravity dominates the evolution of dark and baryonic matter.\n   - On small scales (smaller than the Jeans length), pressure forces become important and can segregate the evolution of baryonic and dark matter.\n\n2. **Role of Pressure, Cooling, and Star Formation:**  \n   - Pressure forces, gas cooling, and star formation feedback are crucial for galaxy formation.\n   - These processes lead to differences (bias) in the distributions of galaxies and dark matter, even on large scales.\n\n3. **Jeans Length and IGM Collapse:**  \n   - On scales smaller than the Jeans length of the photo-heated intergalactic medium (IGM), pressure forces can prevent gas collapse into dark haloes below a certain mass threshold.\n\n4. **Gas Dynamics in Haloes:**  \n   - The mean free path for gas collisions inside haloes is much smaller than the virial radius, leading to the formation of shocks as gas infall occurs.\n   - The hot, dense gas cools, forms stars, and injects energy into the halo gas.\n\n5. **Research Approaches:**  \n   - There is a need for global parameterizations that match observational data, as detailed studies are infeasible.\n   - The paper focuses on the collapse of gas in haloes, aiming to explore these physical processes under general conditions.\n\n**In essence:**  \nThe paper discusses how gravity and pressure forces govern the evolution of dark and baryonic matter at different scales, highlights the importance of gas cooling and star formation in galaxy formation, and outlines approaches to modeling these processes."
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "advanced gravitational wave detectors such as advanced ligo @xcite and advanced virgo @xcite are being constructed with the goal of a tenfold increase in sensitivity over the first generation of detec...",
+        "reference": "gravitational wave detectors from the advanced generation onwards are expected to be limited in sensitivity by thermal noise of the optics , making the reduction of this noise a key factor in the success of such detectors . a proposed method for reducing \n the impact of this noise is to use higher - order laguerre - gauss ( lg ) modes for the readout beam , as opposed to the currently used fundamental mode . \n we present here a synopsis of the research program undertaken by the university of birmingham into the suitability of lg mode technology for future gravitational wave detectors . \n this will cover our previous and current work on this topic , from initial simulations and table - top lg mode experiments up to implementation in a prototype scale suspended cavity and high - power laser bench .",
+        "prediction": "**主要观点：**\n\n1. 高级引力波探测器（如Advanced LIGO和Advanced Virgo）正在建造，目标是将灵敏度提高十倍，以便实现首次引力波探测。\n2. 两个探测器的预期灵敏度在观测频率范围内会受到以下几个基本噪声源的限制：地震噪声、辐射压力噪声、振动热噪声、光子噪声以及测试质量本身的热噪声。\n3. 测试质量的总热噪声中，最大的贡献来自于由测试质量表面上反射涂层中原子的布拉伦运动引起的相位不确定性，这种不确定性会以噪声形式出现在探测器输出中。\n4. 尽管布拉伦热噪声一直未成为限制因素，但随着其他噪声源的降低，其减轻已成为更为紧迫的需求。\n\n**方法：**\n\n1. 通过使用更大的光束点在测试质量表面上，以更有效地平均随机表面运动，从而减少布拉伦热噪声的影响。\n2. 工程中已经证明，布拉伦热噪声功率谱密度与光束大小参数的平方成反比。然而，随着光束点的增大，边缘损失的光功率比例增加，这被称为“剪裁损失”。\n3. 使用具有更均匀径向强度分布的光束（称为“平坦”光束）可以在不增加剪裁损失"
+      },
+      {
+        "instruction": "概括下文的主要内容和贡献。",
+        "input": "In-context learning (ICL) refers to the capability of large language models (LLMs) to perform new tasks at inference time by conditioning on a prompt that contains task instructions and a small number...",
+        "reference": "上下文学习（ICL）指大模型在不更新参数的情况下，通过提示和少量示例在推理时完成新任务。其本质被视为隐式元学习，与注意力检索和贝叶斯推断相关，具有低数据、低成本和高灵活性，但对提示敏感、受上下文长度限制，仍需理论与方法改进。",
+        "prediction": "**主要内容概括：**\n\n1. **定义与背景**：\n   - In-context learning (ICL) 是大型语言模型（LLMs）能够在推理时通过提示进行新任务学习，而无需更新模型参数，这一现象是现代自然语言处理的核心研究方向。\n   - 与传统的监督学习不同，后者通常需要明确的微调以适应新任务。\n\n2. **问题背景**：\n   - 传统的机器学习系统依赖于特定任务的数据集和梯度优化，但在任务频繁变化或数据稀缺的情况下，这些方法成为一个挑战。\n   - transformer-based LLMs 通过大规模语料库的训练，展现了一种新的方法：单一预训练模型可以通过提示泛化到多种任务。\n\n3. **方法学分析**：\n   - ICL 通常通过提示工程实现，提示可能包括自然语言指令、少量示例（few-shot learning）或结构化的推理模式（如 chain-of-thought）。\n   - 模型在推理过程中利用内部表示来推断任务映射，这种方法被视为一种隐式的元学习。\n\n4. **理论研究**：\n   - ICL 与元学习、贝叶斯推断、线性回归和注意力检索等领域存在联系。\n   - 通过引入如召回增强生成、示例选择和提示优化等技术，提高了任务性能和稳定性。\n\n5. **实证研究**：\n   - ICL 在多种任务（如文本分类、机器翻译、代码合成和推理基准）中表现出良好的效果，显著减少了对标签数据的需求，降低"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "Modern organizations rely on data pipelines to transform raw, heterogeneous data into reliable analytical assets. As data volumes, velocity, and variety continue to increase, poorly designed pipelines...",
+        "reference": "文章指出数据管道设计需在可扩展、可靠与可维护性间平衡，融合ETL/ELT、质量与可观测性，作为现代数据架构基石。",
+        "prediction": "The main contribution of the text is that it outlines the core challenges and best practices in designing robust data pipelines to ensure scalability, reliability, and maintainability while supporting diverse workloads and enabling effective data governance."
+      },
+      {
+        "instruction": "请对以下学术论文进行摘要。",
+        "input": "in the minimal supersymmetric standard model ( mssm ) , the ( susy ) particles must be produced in pairs . \n the phase space is largely suppressed in pair production of susy particles due to the impor...",
+        "reference": "we study the single productions of supersymmetric particles at tevatron run ii which occur in the @xmath0 processes involving r - parity violating couplings of type @xmath1 . \n we focus on the single gaugino productions which receive contributions from the resonant slepton productions . \n we first calculate the amplitudes of the single gaugino productions . \n then we perform analyses of the single gaugino productions based on the three charged leptons and like sign dilepton signatures . \n these analyses allow to probe supersymmetric particles masses beyond the present experimental limits , and many of the @xmath2 coupling constants down to values smaller than the low - energy bounds . \n finally , we show that the studies of the single gaugino productions offer the opportunity to reconstruct the @xmath3 , @xmath4 , @xmath5 and @xmath6 masses with a good accuracy in a model independent way . \n  \n -1 in -1 in @twoside 45",
+        "prediction": "**摘要：**\n\n在最小超对称标准模型（MSSM）中，超对称粒子必须以对产生。由于超对称粒子的超伴子质量较大，其相空间对于超对称粒子的对产生受到严重抑制。引入r-宇称破缺（R-parity violating）扩展的MSSM包含额外的超势项，这些项在夸克和轻子超场中具有三线性形式，涉及到味方言索引。这些耦合条件为产生标量粒子的共轭态提供了机会，尽管耦合常数受到低能实验限制的影响较大。然而，通过这些耦合，超对称粒子的共轭态产生在电子线和强子线对撞机中具有高的截面。此外，由于共轭态产生的截面与相关耦合的幂次成正比，这种反应可以提供对耦合常数的更高灵敏度的探测，尤其是当耦合常数较大时。与对产生相比，对产生的灵敏度主要通过轻量子粒子（LSP）衰变的位移嵌入分析提供，但在强子对撞机中实验上较为困难。与大统一理论（GUT）、弦理论以及离散规范对称性的研究相比，r-宇称破缺或r-宇称保守的场景在理论上并未提供强有力的支持。因此，通过耦合产生超对称粒子的共轭态是超对称性现象的一个有吸引力的方向，应该在超对称性的实验现象学中考�"
+      },
+      {
+        "instruction": "Summarize the key contributions of this paper.",
+        "input": "loop quantum gravity @xcite aims at quantization of the gravitational field without relying on a background metric , while respecting the 3 + 1 dimensional nature of spacetime . \n this approach is bas...",
+        "reference": "the lowest 37000 eigenvalues of the area operator in loop quantum gravity is calculated and studied numerically . \n we obtain an asymptotical formula for the eigenvalues as a function of their sequential number . \n the multiplicity of the lowest few hundred eigenvalues is also determined and the smoothed spectral density is calculated . the spectral density is presented for various number of vertices , edges and su(2 ) representations . a scaling form of spectral density is found , being a power law for one vertex , while following an exponential for several vertices . \n the latter case is explained on the basis of the one vertex spectral density .",
+        "prediction": "**Summary of Key Contributions:**\n\n1. **Loop Quantum Gravity (LQG):**  \n   - LQG is a framework for quantizing gravity without requiring a fixed spacetime metric, while preserving the 3+1 dimensional structure of spacetime.\n\n2. **Ashtekar Variables:**  \n   - The approach utilizes Ashtekar's new canonical variables, which simplify the constraints to polynomial forms.\n\n3. **Connection-Based Configuration Space:**  \n   - The configuration space consists of connections rather than metric components.\n\n4. **Operator Quantization:**  \n   - Upon quantization, geometrical quantities such as area and volume become operators acting on the Hilbert space.\n\n5. **Area Operators and Black Hole Entropy:**  \n   - The area operators are particularly significant, as their spectral properties have enabled recent tests of the theory, notably linking the area to the Bekenstein-Hawking entropy in the quasiclassical limit.\n\n6. **Spin Network States:**  \n   - The Hilbert space is constructed using spin network states, which are graph-based, with edges labeled by irreducible SU(2) representations (integer or half-integer spins) and vertices on a specified surface.\n\n7. **Gauge Invariant States:**  \n   - For gauge-invariant states, vertices are labeled by SU(2) unit representations, and edges are categorized by their orientation relative to the surface.\n\n8. **Edge and Vertex Labeling:**  \n   - Each vertex is characterized by a triple of labels corresponding to its edges and their orientations, with specific rules for combining and decomposing representations.\n\n9. **Technical Features:**  \n   - The paper highlights the importance of the loop representation and the structure of spin network states in the formulation and testing of LQG."
+      },
+      {
+        "instruction": "请对以下内容进行摘要，突出关键信息。",
+        "input": "The Transformer architecture has become the de facto backbone for modern natural language processing and increasingly for vision, speech, and multimodal tasks. Despite its success, the original Transf...",
+        "reference": "Transformer优化聚焦提升效率与可扩展性：通过稀疏、低秩和线性注意力降低O(n²)复杂度；采用参数共享、Pre-LN与MoE提升容量与稳定性；结合混合精度与内存高效等系统级优化，实现长上下文处理与低成本部署。",
+        "prediction": "**摘要：**\n\nTransformer 深度学习架构已成为现代自然语言处理（NLP）、视觉、语音和多模态任务的核心架构。尽管其取得了显著成功，但原始 Transformer 架构存在以下主要局限性：  \n1. **时间和内存复杂度**：随着序列长度的增加，时间复杂度呈二次增长，内存需求也随之增长，这对计算资源造成了挑战。  \n2. **硬件资源利用**：Transformer 的设计在硬件资源的利用上并不高效。  \n3. **扩展性问题**：随着模型规模和应用需求的增长，Scaling 问题变得更加突出。  \n\n### 主要优化方向：  \n1. **计算和内存效率**：  \n   - 为了解决自注意力机制的 \\(O(n^2)\\) 复杂度问题，研究人员提出了以下方法：  \n     - **稀疏注意力**：通过减少计算量，将复杂度降低到 \\(O(n \\log n)\\) 或 \\(O(n)\\)。  \n     - **局部敏感哈希（LSH）注意力**、**核方法**和**块稀疏模式**，这些方法利用输入数据的结构性质，提高了效率。  \n   - 这些方法在某种程度上牺牲了精确的全局注意力，换取近似或结构化的注意力，同时在下游任务上仍保持竞争力。\n\n2. **架构和参数效率**：  \n   - **参数共享**、**分解嵌入**和**轻量级前馈网络**等技术，减少了模型的参数量，同时不会显著降低准确性。  \n   - **预层归"
+      },
+      {
+        "instruction": "Summarize the key points of the following technical content.",
+        "input": "在机器学习与深度学习任务中，模型常因参数规模大、特征维度高而出现过拟合问题，即在训练集上表现良好但泛化能力不足。正则化技术正是为缓解偏差—方差权衡而提出的核心方法，其目标是在保持模型表达能力的同时，约束模型复杂度，提高对未见数据的鲁棒性。\n\n从方法上看，经典的参数正则化包括L1正则化、L2正则化以及Elastic Net。L1正则通过引入参数绝对值惩罚项，促使权重稀疏化，有助于特征选择；L2正则通...",
+        "reference": "正则化旨在缓解过拟合、平衡偏差与方差，通过约束模型复杂度提升泛化能力。常用方法包括L1、L2、Elastic Net、Dropout、Early Stopping及数据增强等，合理选择与调参可显著提升模型稳定性与性能。",
+        "prediction": "**关键点总结：**\n\n1. **过拟合问题**：\n   - 模型在训练集上表现良好但泛化能力不足，是机器学习与深度学习任务中常见的问题。\n\n2. **正则化技术**：\n   - 正则化是缓解偏差-方差权衡的核心方法，旨在约束模型复杂度，提高对未见数据的鲁棒性。\n   - 传统正则化方法包括L1正则化、L2正则化和Elastic Net。\n\n3. **正则化方法**：\n   - **L1正则化**：通过引入参数绝对值惩罚项，促使权重稀疏化，有助于特征选择。\n   - **L2正则化**：通过平方惩罚抑制参数幅度，改善模型数值稳定性并降低共线性风险。\n   - **Elastic Net**：结合L1和L2正则化的优势，在高维相关特征场景中表现更稳健。\n\n4. **深度神经网络中的正则化技术**：\n   - **Dropout**：通过随机失活部分神经元，近似实现模型集成效果。\n   - **Early Stopping**：基于验证集性能提前终止训练，从时间维度实现隐式正则化。\n   - **数据增强**和**标签平滑**：被视为广义正则化手段。\n\n5. **正则化技术的实际应用**：\n   - 正则化能显著提升模型泛化性能，降低测试误差，并改善训练过程的稳定性。\n   - 选择正则化形式及其超参数通常需要结合任务特性与交叉验证策�"
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "the shapes of the surfaces between molecular clouds and the hii regions around massive stars typically feature elongated structures , commonly referred to as pillars , columns , spikes , or elephant t...",
+        "reference": "we investigate numerically the hydrodynamic instability of an ionization front ( if ) accelerating into a molecular cloud , with imposed initial perturbations of different amplitudes . \n when the initial amplitude is small , the imposed perturbation is completely stabilized and does not grow . \n when the initial perturbation amplitude is large enough , roughly the ratio of the initial amplitude to wavelength is greater than 0.02 , portions of the if temporarily separate from the molecular cloud surface , locally decreasing the ablation pressure . \n this causes the appearance of a large , warm hi region and triggers nonlinear dynamics of the if . \n the local difference of the ablation pressure and acceleration enhances the appearance and growth of a multimode perturbation . \n the stabilization usually seen at the if in the linear regimes does not work due to the mismatch of the modes of the perturbations at the cloud surface and in density in hii region above the cloud surface . \n molecular pillars are observed in the late stages of the large amplitude perturbation case . \n the velocity gradient in the pillars is in reasonably good agreement with that observed in the eagle nebula . \n the initial perturbation is imposed in three different ways : in density , in incident photon number flux , and in the surface shape . \n all cases show both stabilization for a small initial perturbation and large growth of the second harmonic by increasing amplitude of the initial perturbation above a critical value .",
+        "prediction": "**主要观点：**\n\n1. 天体物理中，分子云与质量大恒星周围的HII区域之间的表面通常呈现长形结构，如柱状、尖锐或象牙棒状。\n2. 该表面由强紫外线辐射（来自O型星）驱动的光电离前沿。\n3. 举例来说，鹰状星云是一个典型案例，其中包含三个大型分子柱状结构，靠近一小组O型星。\n4. 尽管已经有多项理论和数值研究，但其形成机制仍未完全明确。\n5. O型星是高温的，其光球温度约为几万开尔文，发出强烈的紫外线。\n6. 紫外线辐射照射周围的分子云，导致光蒸发发生，形成了分层结构。\n7. 光蒸发流（被蚀刻的等离子体）速度垂直于分子表面。\n8. O型星与分子云之间的区域是HII区，其中氢气几乎完全电离，光电离与再电离到中性原子氢在稳态下发生。\n9. HII区非常薄，由于光子在云表面的平均自由路径短。\n10. 在云表面，所有高于莱曼极限的光子都被吸收。\n11. 低于电离极限但高于11.2 eV的光子不能电离氢原子，但可以穿透HII区并在下一层分子氢中解离。\n12. 分子气体是最后一层结构，"
+      },
+      {
+        "instruction": "简要总结以下技术文章的核心论点。",
+        "input": "随着数据隐私保护法规的日益严格以及数据孤岛问题的凸显，传统集中式机器学习在实际应用中面临显著挑战。将原始数据集中上传不仅带来隐私泄露风险，也增加了通信与合规成本。在此背景下，联邦学习（Federated Learning）作为一种分布式机器学习范式应运而生，其核心目标是在不直接共享原始数据的前提下实现多方协同建模。\n\n联邦学习通过“数据不动、模型动”的机制，将全局模型初始化后下发至各参与节点（客户...",
+        "reference": "联邦学习通过数据不动、模型动的分布式训练，在不共享原始数据的前提下实现多方协同建模。其采用参数上传与安全聚合，结合差分隐私等技术，适用于金融、医疗等场景，是应对隐私保护与数据孤岛的重要方向。",
+        "prediction": "**核心论点总结：**\n\n1. **数据隐私法规的加强**：随着隐私保护法规的严格，传统集中式机器学习在实际应用中面临隐私泄露和通信成本的挑战。\n\n2. **联邦学习的出现**：联邦学习作为一种分布式机器学习范式，旨在通过多方协同建模，不直接共享原始数据，从而解决数据隐私问题。\n\n3. **数据不动、模型动的机制**：联邦学习将全局模型初始化后下发至各参与节点，客户端基于本地数据进行训练，仅上传模型参数或梯度更新至中央服务器，服务器通过安全聚合技术融合更新，生成新的全局模型。\n\n4. **联邦学习的类型**：联邦学习可分为横向联邦学习、纵向联邦学习和联邦迁移学习等类型，常与差分隐私和同态加密结合以增强安全性。\n\n5. **实践应用**：联邦学习在金融风控、医疗影像和智能终端等领域表现出良好的性能，能够在保障数据隐私的同时达到集中式训练的效果。\n\n6. **面临的挑战**：尽管联邦学习在应用中取得了进展，但仍需克服系统异构、通信效率和非独立同分布的问题，成为隐私计算和可信人工智能的重要技术方向。"
+      },
+      {
+        "instruction": "请提取以下论文片段的核心观点，并进行简要总结。",
+        "input": "在深度神经网络训练过程中，随着层数加深，参数更新会导致各层输入分布不断变化，即“内部协变量偏移”问题，从而使梯度传播不稳定、收敛速度变慢，甚至引发梯度消失或爆炸。为缓解上述问题，批归一化（Batch Normalization，BN）被提出作为一种有效的训练稳定化技术。其核心思想是在每个小批量样本上，对中间层的激活值进行标准化处理，使其均值接近0、方差接近1，并通过可学习的缩放与平移参数恢复模型表...",
+        "reference": "批归一化通过对小批量激活进行标准化并引入可学习缩放与平移，缓解内部协变量偏移，稳定梯度传播，加快收敛速度，降低对初始化和学习率的敏感性，并具备一定正则化效果，是深度网络中的关键训练技术。",
+        "prediction": "**核心观点总结：**\n\n1. **问题描述**：随着深度神经网络层数增加，参数更新导致各层输入分布变化，引发梯度传播不稳定、收敛速度变慢甚至梯度消失或爆炸的问题，称为“内部协变量偏移”。\n\n2. **批归一化（BN）的作用**：批归一化作为一种训练稳定化技术，通过在每个小批量样本上对中间层激活值进行标准化处理，使其均值接近0、方差接近1，并通过可学习的缩放与平移参数恢复模型表达能力。\n\n3. **BN的实现方式**：BN在前向传播中引入统计量计算与线性变换，在反向传播中对归一化操作进行可微分建模，从而与随机梯度下降端到端联合优化。\n\n4. **实践效果**：批归一化能够显著提高训练收敛速度，降低对参数初始化和学习率设置的敏感性，同时具备一定的正则化效果，减少过拟合风险。\n\n5. **应用意义**：尽管BN在小批量或序列建模场景下存在局限，但它仍是现代卷积神经网络和深度学习系统中的基础组件，对推动深层模型的可训练性具有重要意义。"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "在深度神经网络训练过程中，权重初始化是影响模型收敛速度与最终性能的关键因素之一。若初始化不当，容易导致梯度消失或梯度爆炸，使反向传播难以有效更新参数，尤其在深层网络中问题更加突出。因此，合理的权重初始化策略是稳定训练过程的基础。\n\n早期方法通常采用随机初始化，如从均匀分布或高斯分布中采样，但未考虑网络结构和激活函数的影响。随后提出的Xavier初始化（Glorot Initialization）通...",
+        "reference": "权重初始化是深度网络稳定训练的关键，Xavier和He等方法通过匹配激活函数维持方差，加速收敛。",
+        "prediction": "权重初始化在深度神经网络训练中通过优化梯度传播稳定性，显著提升模型收敛速度和泛化性能。"
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "tracking and vertexing in a high multiplicity environment such as the lhc is a challenging task . in order to get a good secondary vertex resolution \n , one needs measurements as close to the interact...",
+        "reference": "the pixel detector is the innermost tracking device of the cms experiment at the lhc . \n it is built from two independent sub devices , the pixel barrel and the end disks . \n the barrel consists of three concentric layers around the beam pipe with mean radii of 4.4 , 7.3 and 10.2 cm . \n there are two end disks on each side of the interaction point at @xmath034.5 cm and @xmath046.5 cm + this article gives an overview of the pixel barrel detector , its mechanical support structure , electronics components , services and its expected performance . \n ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    cms , pixel detector , lhc 29.40.wk , 29.40.gx",
+        "prediction": "**主要观点：**\n\n1. 高多重性环境（如LHC）中的追踪和顶点检测是一个挑战，以实现良好的次级顶点分辨率。\n2. 为了获得低占位率，需要一个非常精细的分割探测器。\n3. CMS实验使用一个混合像素探测器，像素尺寸为@xmath1m@xmath2。\n4. 压腔部分有三层，平均半径分别为4.4、7.3和10.2厘米。在最内层，占位率在@xmath3处，在LHC的全光亮度@xmath4s@xmath5@xmath6时达到@xmath3。\n5. 主要目的是对次级顶点（主要是B和@xmath7物理）进行重建，并为全探测器的重建生成轨迹种子。\n6. 单独使用像素探测器重建的轨迹是在更高级触发器（HLT）的第一阶段中唯一可用的轨迹信息。在这里，速度比精度或效率更为重要。\n7. 如@xcite所指出，像素仅轨迹可以在不到20ms（110ms）/事件内重建，这是在区域（全局）轨迹查找器中。\n8. @xmath8的分辨率为@xmath9[gev / c]，并且可以用@xmath10m测量影响参数，对于@xmath11gev / c，影响参数可达@xmath12m；对于@xmath13gev / c，影响参数可达@xmath14m。\n9. 在HLT中，顶点位置沿束线的分辨率取决于物理通道（轨迹的数量和动量），"
+      },
+      {
+        "instruction": "Briefly summarize the following passage.",
+        "input": "零样本学习（Zero-Shot Learning, ZSL）旨在解决传统监督学习依赖大量标注数据、难以覆盖所有类别的问题。在实际应用中，模型往往需要识别从未见过的新类别，而这些类别在训练阶段没有任何样本，这对模型的泛化能力提出了更高要求。零样本学习通过引入语义层面的中介信息，使模型能够在缺乏直接样本的情况下完成推理与预测。\n\n典型的零样本学习方法依赖于语义空间建模，例如属性向量、词向量或知识图谱嵌...",
+        "reference": "零样本学习通过引入属性、词向量等语义信息，实现对未见类别的识别。其核心是特征到语义空间的映射及匹配，生成式方法可缓解域偏移与类别偏置问题，在多任务中展现潜力，但效果依赖语义质量与对齐精度。",
+        "prediction": "零样本学习（ZSL）旨在解决传统监督学习依赖大量标注数据且难以覆盖所有类别的问题。在实际应用中，零样本学习通过引入语义层面的中介信息，使模型能够在缺乏直接样本的情况下完成推理与预测。典型方法依赖于语义空间建模，如属性向量、词向量或知识图谱嵌入，通过训练阶段学习输入特征到语义空间的映射关系，并在推理阶段通过语义描述实现类别匹配。近年来，基于深度学习的生成式方法被应用，通过合成未见类别的伪样本，将零样本问题转化为标准监督分类问题。实验表明，合理的语义表示和对齐机制能显著提升零样本学习在图像识别和文本分类任务中的性能。零样本学习为构建具备开放世界认知能力的智能系统提供了重要技术路径，但其效果依赖于语义信息质量和跨模态对齐精度，未来研究需结合大模型与外部知识，以提升其实用性与稳定性。"
+      },
+      {
+        "instruction": "概括下文的主要内容和贡献。",
+        "input": "随着物联网和智能终端规模化部署，海量数据在端侧产生，传统云端集中推理面临高时延、带宽受限和隐私风险等问题。边缘计算推理通过在靠近数据源的边缘节点执行模型推理，将计算从云端下沉，是解决实时性与可靠性需求的重要方向。\n\n在方法上，边缘推理通常结合模型压缩与系统优化的协同设计。一方面，通过剪枝、量化、知识蒸馏和低秩分解等技术，降低模型参数规模和算力需求；另一方面，借助面向边缘硬件的编译优化与算子融合，提...",
+        "reference": "边缘计算推理通过将模型部署至近数据源节点，缓解云端高时延与带宽、隐私问题。其核心在于模型压缩与硬件感知优化、端边云协同调度，并结合容器化、安全机制与在线监控，实现低时延、高可靠和可持续演进的智能系统。",
+        "prediction": "主要内容和贡献概述：\n\n1. 问题提出：随着物联网和智能终端的规模化部署，传统云端集中推理面临高时延、带宽受限和隐私风险等问题。\n2. 边缘计算推理：边缘计算推理通过在靠近数据源的边缘节点执行模型推理，将计算从云端下沉，是解决实时性与可靠性需求的重要方向。\n3. 方法设计：边缘推理通常结合模型压缩与系统优化的协同设计，包括剪枝、量化、知识蒸馏和低秩分解等技术，以及面向边缘硬件的编译优化与算子融合，以提高CPU、GPU、NPU等异构加速器的利用率。\n4. 任务卸载与动态调度：引入任务卸载与动态调度机制，在端、边、云之间根据负载和网络状态自适应选择推理位置，以平衡能耗与性能。\n5. 系统实现挑战：边缘推理还需解决模型版本管理、冷启动时延、内存受限以及实时性确定性等挑战。\n6. 评估指标：常用评估指标包括P99时延、吞吐量、能效比和精度退化率，需要在不同工作负载下进行基准测试与在线监控。\n7. 工程实践：容器化部署与微服务架构有助于提升可维护性，安全启动与可信执行环境可增强边缘节点的安全性，通过增量模型更新与A/B测试可实现无中断�"
+      },
+      {
+        "instruction": "请总结以下计算机科学论文的核心内容。",
+        "input": "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ since all men have imperfections + hanging bones inside their closets + that they trust no one will notice + absent tips on wh...",
+        "reference": "there is increasing circumstantial evidence that the cuprate superconductors , and correlated - electron materials generally , defy simple materials categorization because of their proximity to one or more continuous zero - temperature phase transitions . \n this implies that the fifteen - year confusion about the cuprates is not fundamental at all but simply overinterpreted quantum criticality  an effect that seems mysterious by virtue of its hypersensitivity to perturbations , _ \n i.e. _ to sample imperfections in experiment and small modifications of approximation schemes in theoretical modeling , but is really just an unremarkable phase transition of some kind masquerading as something important , a sheep in wolf s clothing . \n this conclusion is extremely difficult for most physicists even to think about because it requires admitting that an identifiable physical phenomenon might cause the scientific method to fail in some cases . \n for this reason i have decided to explain the problem in a way that is nonthreatening , easy to read , and fun  as a satire modeled after a similar piece of lewis carroll s i once read . \n my story is humorous fiction . \n any similarity of the characters to living persons is accidental . \n my apologies to henry w. longfellow . \n [ published as annals of improbable research * 10 * , no . 6 ( may / june 2004 ) , p. 8 . ]",
+        "prediction": "以下是对该计算机科学论文的核心内容总结：\n\n**核心内容：**\n\n1. **人性的不完美**  \n   论文提到，所有人都有缺点，包括著名的神话人物高亚瓦托（Hiawatha）。尽管他被视为英雄，但他也做了一些他不高兴的事情，例如在一个有问题的校园生活中，他的家庭为他提供了财政支持，以便他能够被录取进Gitche-Gumee（美洲大陆的神话地名）。\n\n2. **高亚瓦托的不喜欢**  \n   高亚瓦托并不喜欢森林和野生动物，他认为这些地方充满了问题，例如昆虫（蚊子、蜱虫、蛇虫等）和腐朽的地形（如腐烂的地面和树根）。他对自然环境的感受是负面的，甚至认为自然界的一切都是为了让人陷入困境。\n\n3. **高亚瓦托的真实身份**  \n   论文质疑高亚瓦托的英雄形象，认为这种形象是一种虚构的装作，由一支技术公司的写作团队为了推销他的技术产品而设计的。实际上，高亚瓦托更像是一位迷途的技术爱好者，他更关注数学和物理学的原理，而不是传统的英雄形象。\n\n4. **总结**  \n   论文通过对高亚瓦托的不屑和对自然的负面看法，以及对他的虚构形象的批评"
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "the standard qcd evolution equation @xmath2 describes response of the parton distribution function ( pdf ) @xmath3 to a change of the large energy scale @xmath4 . \n variable @xmath5 is identified as a...",
+        "reference": "the task of monte carlo simulation of the evolution of the parton distributions in qcd and of constructing new parton shower monte carlo algorithms requires new way of organizing solutions of the qcd evolution equations , in which quark@xmath0gluon transitions on one hand and quark@xmath0quark or gluon@xmath0gluon transitions ( pure gluonstrahlung ) on the other hand , are treated separately and differently . \n this requires certain reorganization of the iterative solutions of the qcd evolution equations and leads to what we refer to as a _ hierarchic iterative solutions _ of the evolution equations . \n we present three formal derivations of such a solution . \n results presented here are already used in the other recent works to formulate new mc algorithms for the parton - shower - like implementations of the qcd evolution equations . \n they are primarily of the non - markovian type . \n however , such a solution can be used for the markovian - type mcs as well . \n we also comment briefly on the relation of the presented formalism to similar methods used in other branches of physics . \n * ifjpan - v-04 - 09 *     * hierarchically organized iterative solutions of the evolution equations in qcd@xmath1 *    * s. jadach , m. skrzypek * _ and _ * z. was * +   +    _ to be submitted to acta physica polonica _ \n * ifjpan - v-04 - 09 + december  2006 *    @xmath1this work is partly supported by the eu grant mtkd - ct-2004 - 510126 in partnership with the cern physics department and by the polish ministry of scientific research and information technology grant no 620/e-77/6.pr ue / die 188/2005 - 2008 .",
+        "prediction": "**主要观点：**\n\n1. 标准QCD演化方程描述了部分子分布函数（PDF）对于能量标度变化的响应。\n2. 变量@xmath5表示由特定类型的部分子（如夸克、胶子）携带的部分子动量的比例。\n3. 演化核@xmath7可以通过微扰QCD计算。\n4. 演化方程是许多QCD微扰计算的重要组成部分。\n5. 可以使用多种数值方法求解演化方程，包括蒙特卡洛方法。\n6. 需要@xmath8在某个初始@xmath9下的知识，以求解其他@xmath10下的演化方程。\n7. 初始PDF通过对实验数据进行拟合来确定。\n8. 对方程（[eq:evolsolu]）的形式证明很重要，因为它是许多新的非马尔可夫算法的关键组成部分，这些算法在@cite和@cite中描述，可能在未来的工作中也会出现。\n\n**方法：**\n\n1. 使用标准QCD演化方程来描述部分子分布函数对能量标度变化的响应。\n2. 通过微扰QCD计算演化核。\n3. 使用多种数值方法（如蒙特卡洛方法）求解演化方程。\n4. 初始PDF通过实验数据拟合确定。\n5. 提供对方程的形式证明，以支持新的非马尔可夫算法。"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "The attention mechanism has become a core component of modern deep learning architectures, particularly in natural language processing and computer vision. Since the introduction of scaled dot-product...",
+        "reference": "通过引入高效计算、增强表示能力与结构归纳偏置，改进注意力机制以提升可扩展性与整体性能。",
+        "prediction": "The main contribution of the text is that it outlines significant advancements in attention mechanisms, including computational efficiency improvements (sparse and linear attention), enhanced representational power (multi-head attention with regularization), and structural biases (graph attention networks and deformable attention), which collectively address limitations in scalability, expressiveness, and inductive bias, leading to better performance across various deep learning tasks."
+      },
+      {
+        "instruction": "请对以下学术论文进行摘要。",
+        "input": "this paper explores the phenomenology of the standard model s minimal supersymmetric @xcite extension with a continuous @xmath1 symmetry ( hereafter called the ` mr model')@xcite . \n this model of low...",
+        "reference": "we compute the one - loop corrections to the @xmath0 vertex in the @xmath1 symmetric minimal supersymmetric extension of the standard model . we find that the predicted value of @xmath2 is consistent with experiment if the mass of the lighter top squark is no more than 180 gev . \n furthermore , other data combines to place a lower bound of 88 gev on the mass of the light top squark . \n a top squark in this mass range should be accessible to searches by experiments at fnal and lep . \n * @xmath0 in @xmath1 symmetric supersymmetry * 3em elizabeth h. simmons & yumian su 2em _ dept . of physics , boston university , + 590 commonwealth ave . , \n boston , ma 02215 _ \n 3em 3em    pacs : 12.60.jv , 13.38.dg , 14.80.ly    6em",
+        "prediction": "**摘要：**\n\n本文探讨了标准模型的最小超对称扩展（MR模型）的现象学，该模型具有连续的$\\mathcal{R}$对称性（称为“MR模型”）。与标准模型（MSSM）的离散$\\mathcal{R}$-宇称扩展相比，MR模型的参数空间更小，具有两个显著特点。首先，MR模型对某些观测量（如$W^+$胶子质量）的预测具有特定性，其次，该模型避免了MSSM中导致理论困难的超势和软超对称破缺项。本文特别关注最近对$\\tau$胶子衰变宽度的测量结果，该结果与标准模型的一-loop预测显著不同。在MR模型中，$\\tau$胶子衰变的斜率和QCD修正在比率形式下大部分补偿，使得$\\tau$的衰变宽度对直接修正（特别是涉及重顶夸克的修正）非常敏感。本研究补充了一些关于具有离散$r$-宇称的超对称模型的研究，并讨论了$\\tau$衰变宽度的测量结果对MSSM的影响。此外，研究了一些与MR模型相似的MSSM参数区域，并计算了MR模型中$\\tau$的衰变修正，结果表明，只要较轻的顶夸克squark质量足够小，以及带电$higgs$玻色子质量足够大，修正结果与实验值差异在$\\sim\\mathcal{R}$内。本文还讨论了"
+      }
+    ],
+    "finetuned_model": [
+      {
+        "instruction": "Summarize the key points of the following technical content.",
+        "input": "大模型幻觉是指模型在缺乏事实依据时生成看似合理但不正确的内容，广泛存在于问答、代码生成和知识推理等场景。其根源包括训练语料噪声与覆盖不足、以似然最大化为目标导致的真实性失配、解码策略的随机性，以及模型仅依赖参数化记忆而缺乏外部证据约束。幻觉不仅降低系统可靠性，还会在高风险领域放大决策成本。\n\n缓解幻觉的技术路径主要围绕“对齐、约束与验证”。一是通过指令微调、RLHF 和偏好学习增强真实性对齐；二是...",
+        "reference": "大模型幻觉源于数据噪声、目标失配、解码随机性与缺乏外部证据，降低系统可靠性。缓解需对齐、约束与验证：指令微调与RLHF，RAG和工具证据，受约束解码与交叉验证，不确定性估计。属系统工程，需协同设计。",
+        "prediction": "大模型幻觉是在无事实依据下生成合理但错误内容，源于训练噪声、似然最大化失配及缺乏外部约束。缓解方法包括对齐、检索增强生成、受约束解码、事实一致性与不确定性估计，可显著降低错误率并提升可靠性。"
+      },
+      {
+        "instruction": "Summarize the key contributions of this paper.",
+        "input": "on scales larger than a few megaparsecs , pressure forces in the baryonic matter in the universe are negligible , so the evolution of dark and baryonic matter is mainly determined by gravity \n . on sm...",
+        "reference": "similarity solutions are found for the adiabatic collapse of density perturbations @xmath0 @xmath1 in a flat universe containing collisional gas only . \n the solutions are obtained for planar , cylindrical , and spherical perturbations with zero initial pressure . for adiabatic index @xmath2 , \n a shock develops at a fixed fraction of the current turnaround distance . near the center of a spherical perturbations with @xmath3 and @xmath4 , \n the gas is in quasi - hydrostatic equilibrium ( pressure supported ) and has an asymptotic power law density profile , @xmath5 , independent of @xmath6 . for @xmath7 , \n the profile depends on @xmath6 , the pressure is finite , the temperature decreases inward , and gravity dominates pressure causing a continuous inward flow . although for @xmath8 the temperature decreases at the center , the gas is pressure supported . \n the pressure is finite in cylindrical perturbations for @xmath9 , and in planar perturbations for any @xmath10 . \n we also derive the asymptotic behaviour of the gas variables near the center in a universe dominated by collisionless matter . \n in such a universe , the gas in a spherical perturbation with @xmath11 can not be pressure supported and the temperature approaches a constant near the center . \n the solutions and the asymptotic behaviour are relevant for modelling the gas distribution in galaxy clusters and pancake - like superclusters , and determining the structure of haloes of self - interacting dark matter with large interaction cross section . \n # 10=-.025em0 - 0 .05em0 \n - 0 -.025em.0433em0    cosmology : theory  gravitation  dark matter baryons intergalactic medium",
+        "prediction": "we study the collapse of a photo - heated gas cloud into a dark halo . \n we find that the cloud can collapse into the halo if the cloud mass is above a critical value , which depends on the cloud temperature and the density of the halo gas . \n we find that the critical mass is much larger than the mass of the cloud at the time of collapse , and that the cloud mass is much larger than the mass of the halo at the time of collapse . \n we find that the cloud mass is much larger than the mass of the halo at the time of collapse , and that the cloud mass is much larger than the mass of the halo at the time of collapse . \n we find that the cloud mass is much larger than the mass of the halo at the time of collapse , and that the cloud mass is much larger than the mass of the halo at the time of collapse ."
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "advanced gravitational wave detectors such as advanced ligo @xcite and advanced virgo @xcite are being constructed with the goal of a tenfold increase in sensitivity over the first generation of detec...",
+        "reference": "gravitational wave detectors from the advanced generation onwards are expected to be limited in sensitivity by thermal noise of the optics , making the reduction of this noise a key factor in the success of such detectors . a proposed method for reducing \n the impact of this noise is to use higher - order laguerre - gauss ( lg ) modes for the readout beam , as opposed to the currently used fundamental mode . \n we present here a synopsis of the research program undertaken by the university of birmingham into the suitability of lg mode technology for future gravitational wave detectors . \n this will cover our previous and current work on this topic , from initial simulations and table - top lg mode experiments up to implementation in a prototype scale suspended cavity and high - power laser bench .",
+        "prediction": "we present a method for generating flat beams for use in gravitational wave detectors . \n the method is based on the use of a laser beam splitter to split a laser beam into two beams of equal intensity , one of which is reflected back into the beam splitter and the other is transmitted out of the beam splitter . \n the transmitted beam is then used as the input to the detector . \n the method is shown to generate flat beams with a uniform intensity distribution over the entire beam spot . \n the flatness of the beam is shown to be independent of the beam spot size . \n the method is shown to reduce the thermal noise of the test mass surfaces by a factor of 2.5 without increasing the clipping loss . \n the method is shown to be applicable to a wide range of beam spot sizes . \n the method is shown to be applicable to a wide range of laser powers . \n the method is shown to be applicable to a wide range of laser wavelengths . \n the method is shown to be applicable to a wide range of laser wavelengths ."
+      },
+      {
+        "instruction": "概括下文的主要内容和贡献。",
+        "input": "In-context learning (ICL) refers to the capability of large language models (LLMs) to perform new tasks at inference time by conditioning on a prompt that contains task instructions and a small number...",
+        "reference": "上下文学习（ICL）指大模型在不更新参数的情况下，通过提示和少量示例在推理时完成新任务。其本质被视为隐式元学习，与注意力检索和贝叶斯推断相关，具有低数据、低成本和高灵活性，但对提示敏感、受上下文长度限制，仍需理论与方法改进。",
+        "prediction": "上下文学习是指大模型在推理阶段仅依赖提示及少量示例完成新任务，无需参数更新。其源于提示引导与少样本学习，可视为隐式元学习，具备高灵活性与低成本，但受提示、上下文长度等限制。"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "Modern organizations rely on data pipelines to transform raw, heterogeneous data into reliable analytical assets. As data volumes, velocity, and variety continue to increase, poorly designed pipelines...",
+        "reference": "文章指出数据管道设计需在可扩展、可靠与可维护性间平衡，融合ETL/ELT、质量与可观测性，作为现代数据架构基石。",
+        "prediction": "数据管道设计需在可扩展、可靠与可维护性间平衡，以支撑批流分析并保障数据质量与可观测性。"
+      },
+      {
+        "instruction": "请对以下学术论文进行摘要。",
+        "input": "in the minimal supersymmetric standard model ( mssm ) , the ( susy ) particles must be produced in pairs . \n the phase space is largely suppressed in pair production of susy particles due to the impor...",
+        "reference": "we study the single productions of supersymmetric particles at tevatron run ii which occur in the @xmath0 processes involving r - parity violating couplings of type @xmath1 . \n we focus on the single gaugino productions which receive contributions from the resonant slepton productions . \n we first calculate the amplitudes of the single gaugino productions . \n then we perform analyses of the single gaugino productions based on the three charged leptons and like sign dilepton signatures . \n these analyses allow to probe supersymmetric particles masses beyond the present experimental limits , and many of the @xmath2 coupling constants down to values smaller than the low - energy bounds . \n finally , we show that the studies of the single gaugino productions offer the opportunity to reconstruct the @xmath3 , @xmath4 , @xmath5 and @xmath6 masses with a good accuracy in a model independent way . \n  \n -1 in -1 in @twoside 45",
+        "prediction": "we study the resonant production of scalar particles in the r - parity violating minimal supersymmetric standard model ( r - mssm ) . \n we consider the resonant production of scalar particles through the trilinear couplings @xmath0 in the superpotential . \n we find that the resonant production of scalar particles is more efficient than the pair production at hadronic colliders . \n the resonant production of scalar particles is more efficient than the pair production at leptonic colliders . \n the resonant production of scalar particles is more efficient than the pair production at the proton mass scale @xmath1 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath2 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath3 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath4 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath5 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath6 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath7 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath8 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath9 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath10 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath11 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath12 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath13 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath14 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath15 . \n the resonant production of scalar particles is more efficient than the pair production at the pion mass scale @xmath16"
+      },
+      {
+        "instruction": "Summarize the key contributions of this paper.",
+        "input": "loop quantum gravity @xcite aims at quantization of the gravitational field without relying on a background metric , while respecting the 3 + 1 dimensional nature of spacetime . \n this approach is bas...",
+        "reference": "the lowest 37000 eigenvalues of the area operator in loop quantum gravity is calculated and studied numerically . \n we obtain an asymptotical formula for the eigenvalues as a function of their sequential number . \n the multiplicity of the lowest few hundred eigenvalues is also determined and the smoothed spectral density is calculated . the spectral density is presented for various number of vertices , edges and su(2 ) representations . a scaling form of spectral density is found , being a power law for one vertex , while following an exponential for several vertices . \n the latter case is explained on the basis of the one vertex spectral density .",
+        "prediction": "we present a new method for the calculation of the area operator in loop quantum gravity . \n the method is based on the decomposition of the area operator into a sum of two terms , one of which is a local operator and the other one is a local - free operator . \n the local operator is obtained by using the so called loop representation , while the local - free operator is obtained by using the so called loop - free representation . \n the method is applied to the calculation of the area operator in the case of a 2 + 1 dimensional black hole . \n the area operator is calculated in the loop representation and in the loop - free representation . \n the results are compared and the agreement is good . \n the method is also applied to the calculation of the area operator in the case of a 3 + 1 dimensional black hole . \n the results are compared with the results obtained by using the loop representation . \n the agreement is good . \n the method is also applied to the calculation of the area operator in the case of a 3 + 1 dimensional black hole with a horizon radius @xmath0 . \n the results are compared with the results obtained by using the loop representation . \n the agreement is good . \n the method is also applied to the calculation of the area operator in the case of a 3 + 1 dimensional black hole with a horizon radius @xmath1 . \n the results are compared with the results obtained by using the loop representation . \n the agreement is good ."
+      },
+      {
+        "instruction": "请对以下内容进行摘要，突出关键信息。",
+        "input": "The Transformer architecture has become the de facto backbone for modern natural language processing and increasingly for vision, speech, and multimodal tasks. Despite its success, the original Transf...",
+        "reference": "Transformer优化聚焦提升效率与可扩展性：通过稀疏、低秩和线性注意力降低O(n²)复杂度；采用参数共享、Pre-LN与MoE提升容量与稳定性；结合混合精度与内存高效等系统级优化，实现长上下文处理与低成本部署。",
+        "prediction": "Transformer优化旨在缓解其二次复杂度与资源浪费。通过稀疏/低秩/线性attention降低计算与存储开销，结合参数共享、预层Norm、MoE与系统级优化（混合精度、检查点、并行），提升可扩展性与效率，支撑大规模AI应用。"
+      },
+      {
+        "instruction": "Summarize the key points of the following technical content.",
+        "input": "在机器学习与深度学习任务中，模型常因参数规模大、特征维度高而出现过拟合问题，即在训练集上表现良好但泛化能力不足。正则化技术正是为缓解偏差—方差权衡而提出的核心方法，其目标是在保持模型表达能力的同时，约束模型复杂度，提高对未见数据的鲁棒性。\n\n从方法上看，经典的参数正则化包括L1正则化、L2正则化以及Elastic Net。L1正则通过引入参数绝对值惩罚项，促使权重稀疏化，有助于特征选择；L2正则通...",
+        "reference": "正则化旨在缓解过拟合、平衡偏差与方差，通过约束模型复杂度提升泛化能力。常用方法包括L1、L2、Elastic Net、Dropout、Early Stopping及数据增强等，合理选择与调参可显著提升模型稳定性与性能。",
+        "prediction": "正则化用于缓解过拟合，通过约束模型复杂度提升泛化能力。常见方法包括L1/L2正则化、Elastic Net、Dropout、Early Stopping及数据增强。合理选择形式与超参数可显著提升模型稳定性与性能。"
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "the shapes of the surfaces between molecular clouds and the hii regions around massive stars typically feature elongated structures , commonly referred to as pillars , columns , spikes , or elephant t...",
+        "reference": "we investigate numerically the hydrodynamic instability of an ionization front ( if ) accelerating into a molecular cloud , with imposed initial perturbations of different amplitudes . \n when the initial amplitude is small , the imposed perturbation is completely stabilized and does not grow . \n when the initial perturbation amplitude is large enough , roughly the ratio of the initial amplitude to wavelength is greater than 0.02 , portions of the if temporarily separate from the molecular cloud surface , locally decreasing the ablation pressure . \n this causes the appearance of a large , warm hi region and triggers nonlinear dynamics of the if . \n the local difference of the ablation pressure and acceleration enhances the appearance and growth of a multimode perturbation . \n the stabilization usually seen at the if in the linear regimes does not work due to the mismatch of the modes of the perturbations at the cloud surface and in density in hii region above the cloud surface . \n molecular pillars are observed in the late stages of the large amplitude perturbation case . \n the velocity gradient in the pillars is in reasonably good agreement with that observed in the eagle nebula . \n the initial perturbation is imposed in three different ways : in density , in incident photon number flux , and in the surface shape . \n all cases show both stabilization for a small initial perturbation and large growth of the second harmonic by increasing amplitude of the initial perturbation above a critical value .",
+        "prediction": "we present a numerical simulation of the photoionization front of a molecular cloud irradiated by the uv radiation from an ob star . \n the simulation is performed in the framework of the hydrodynamic code nbody , which is used to simulate the evolution of the molecular cloud . \n the simulation is performed for a cloud with a mass of 10 000 solar masses and a radius of 1000 pc . \n the cloud is irradiated by the uv radiation from an ob star with a luminosity of 10 000 l b . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is irradiated by the uv radiation from an ob star with a luminosity of 10 000 l b . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be a perfect blackbody at 10 000 kelvin and has a density of 10 000 cm 3 . \n the cloud is assumed to be"
+      },
+      {
+        "instruction": "简要总结以下技术文章的核心论点。",
+        "input": "随着数据隐私保护法规的日益严格以及数据孤岛问题的凸显，传统集中式机器学习在实际应用中面临显著挑战。将原始数据集中上传不仅带来隐私泄露风险，也增加了通信与合规成本。在此背景下，联邦学习（Federated Learning）作为一种分布式机器学习范式应运而生，其核心目标是在不直接共享原始数据的前提下实现多方协同建模。\n\n联邦学习通过“数据不动、模型动”的机制，将全局模型初始化后下发至各参与节点（客户...",
+        "reference": "联邦学习通过数据不动、模型动的分布式训练，在不共享原始数据的前提下实现多方协同建模。其采用参数上传与安全聚合，结合差分隐私等技术，适用于金融、医疗等场景，是应对隐私保护与数据孤岛的重要方向。",
+        "prediction": "联邦学习通过“数据不动、模型动”在不共享原始数据的前提下实现多方协同建模，可在保障隐私的同时获得接近集中式性能。其常见类型包括横向、纵向和迁移学习，结合差分隐私等技术，但仍面临系统异构与非独立同分布等挑战。"
+      },
+      {
+        "instruction": "请提取以下论文片段的核心观点，并进行简要总结。",
+        "input": "在深度神经网络训练过程中，随着层数加深，参数更新会导致各层输入分布不断变化，即“内部协变量偏移”问题，从而使梯度传播不稳定、收敛速度变慢，甚至引发梯度消失或爆炸。为缓解上述问题，批归一化（Batch Normalization，BN）被提出作为一种有效的训练稳定化技术。其核心思想是在每个小批量样本上，对中间层的激活值进行标准化处理，使其均值接近0、方差接近1，并通过可学习的缩放与平移参数恢复模型表...",
+        "reference": "批归一化通过对小批量激活进行标准化并引入可学习缩放与平移，缓解内部协变量偏移，稳定梯度传播，加快收敛速度，降低对初始化和学习率的敏感性，并具备一定正则化效果，是深度网络中的关键训练技术。",
+        "prediction": "批归一化通过在小批量上标准化中间层激活，缓解内部协变量偏移，提升训练稳定性与收敛速度，可降低过拟合并成为深层网络基础技术。"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "在深度神经网络训练过程中，权重初始化是影响模型收敛速度与最终性能的关键因素之一。若初始化不当，容易导致梯度消失或梯度爆炸，使反向传播难以有效更新参数，尤其在深层网络中问题更加突出。因此，合理的权重初始化策略是稳定训练过程的基础。\n\n早期方法通常采用随机初始化，如从均匀分布或高斯分布中采样，但未考虑网络结构和激活函数的影响。随后提出的Xavier初始化（Glorot Initialization）通...",
+        "reference": "权重初始化是深度网络稳定训练的关键，Xavier和He等方法通过匹配激活函数维持方差，加速收敛。",
+        "prediction": "权重初始化通过稳定梯度与几何性质，显著提升深度网络训练收敛与泛化。"
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "tracking and vertexing in a high multiplicity environment such as the lhc is a challenging task . in order to get a good secondary vertex resolution \n , one needs measurements as close to the interact...",
+        "reference": "the pixel detector is the innermost tracking device of the cms experiment at the lhc . \n it is built from two independent sub devices , the pixel barrel and the end disks . \n the barrel consists of three concentric layers around the beam pipe with mean radii of 4.4 , 7.3 and 10.2 cm . \n there are two end disks on each side of the interaction point at @xmath034.5 cm and @xmath046.5 cm + this article gives an overview of the pixel barrel detector , its mechanical support structure , electronics components , services and its expected performance . \n ,    ,    ,    ,    ,    ,    ,    ,    ,    ,    cms , pixel detector , lhc 29.40.wk , 29.40.gx",
+        "prediction": "we present the design and the construction of the pixel detector of the cms experiment . \n the detector is a hybrid pixel detector with @xmath0m@xmath1 pixel size . \n the barrel part has three layers at mean radii of 4.4 , 7.3 and 10.2 cm . \n the detector is made of 1.5m of 0.25 mm thick carbon fiber ladders glued to aluminum pipes with 0.3 mm wall thickness . \n the ladders are mounted with overlap on alternating sides of the cooling pipes . \n the detector is 2.5m long and 0.5m wide . \n the detector is installed in the cms experiment at the cern particle accelerator ."
+      },
+      {
+        "instruction": "Briefly summarize the following passage.",
+        "input": "零样本学习（Zero-Shot Learning, ZSL）旨在解决传统监督学习依赖大量标注数据、难以覆盖所有类别的问题。在实际应用中，模型往往需要识别从未见过的新类别，而这些类别在训练阶段没有任何样本，这对模型的泛化能力提出了更高要求。零样本学习通过引入语义层面的中介信息，使模型能够在缺乏直接样本的情况下完成推理与预测。\n\n典型的零样本学习方法依赖于语义空间建模，例如属性向量、词向量或知识图谱嵌...",
+        "reference": "零样本学习通过引入属性、词向量等语义信息，实现对未见类别的识别。其核心是特征到语义空间的映射及匹配，生成式方法可缓解域偏移与类别偏置问题，在多任务中展现潜力，但效果依赖语义质量与对齐精度。",
+        "prediction": "零样本学习通过引入语义层面信息，使模型在无标注新类别下实现推理。其核心技术包括语义空间建模、生成式方法及对齐机制，已显著提升图像与文本任务性能，但仍受语义质量影响。"
+      },
+      {
+        "instruction": "概括下文的主要内容和贡献。",
+        "input": "随着物联网和智能终端规模化部署，海量数据在端侧产生，传统云端集中推理面临高时延、带宽受限和隐私风险等问题。边缘计算推理通过在靠近数据源的边缘节点执行模型推理，将计算从云端下沉，是解决实时性与可靠性需求的重要方向。\n\n在方法上，边缘推理通常结合模型压缩与系统优化的协同设计。一方面，通过剪枝、量化、知识蒸馏和低秩分解等技术，降低模型参数规模和算力需求；另一方面，借助面向边缘硬件的编译优化与算子融合，提...",
+        "reference": "边缘计算推理通过将模型部署至近数据源节点，缓解云端高时延与带宽、隐私问题。其核心在于模型压缩与硬件感知优化、端边云协同调度，并结合容器化、安全机制与在线监控，实现低时延、高可靠和可持续演进的智能系统。",
+        "prediction": "边缘推理通过在端、边、云下沉模型计算，缓解云端时延与带宽限制。其结合模型压缩与编译优化，配合卸载与动态调度，解决冷启动与能效问题，提升实时性与可靠性，并支持隐私保护与联邦学习。"
+      },
+      {
+        "instruction": "请总结以下计算机科学论文的核心内容。",
+        "input": "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ since all men have imperfections + hanging bones inside their closets + that they trust no one will notice + absent tips on wh...",
+        "reference": "there is increasing circumstantial evidence that the cuprate superconductors , and correlated - electron materials generally , defy simple materials categorization because of their proximity to one or more continuous zero - temperature phase transitions . \n this implies that the fifteen - year confusion about the cuprates is not fundamental at all but simply overinterpreted quantum criticality  an effect that seems mysterious by virtue of its hypersensitivity to perturbations , _ \n i.e. _ to sample imperfections in experiment and small modifications of approximation schemes in theoretical modeling , but is really just an unremarkable phase transition of some kind masquerading as something important , a sheep in wolf s clothing . \n this conclusion is extremely difficult for most physicists even to think about because it requires admitting that an identifiable physical phenomenon might cause the scientific method to fail in some cases . \n for this reason i have decided to explain the problem in a way that is nonthreatening , easy to read , and fun  as a satire modeled after a similar piece of lewis carroll s i once read . \n my story is humorous fiction . \n any similarity of the characters to living persons is accidental . \n my apologies to henry w. longfellow . \n [ published as annals of improbable research * 10 * , no . 6 ( may / june 2004 ) , p. 8 . ]",
+        "prediction": "hiawatha is a tech nerd who is not proud of his imperfections + his imperfections are the reason he is not proud of hiawatha ."
+      },
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "the standard qcd evolution equation @xmath2 describes response of the parton distribution function ( pdf ) @xmath3 to a change of the large energy scale @xmath4 . \n variable @xmath5 is identified as a...",
+        "reference": "the task of monte carlo simulation of the evolution of the parton distributions in qcd and of constructing new parton shower monte carlo algorithms requires new way of organizing solutions of the qcd evolution equations , in which quark@xmath0gluon transitions on one hand and quark@xmath0quark or gluon@xmath0gluon transitions ( pure gluonstrahlung ) on the other hand , are treated separately and differently . \n this requires certain reorganization of the iterative solutions of the qcd evolution equations and leads to what we refer to as a _ hierarchic iterative solutions _ of the evolution equations . \n we present three formal derivations of such a solution . \n results presented here are already used in the other recent works to formulate new mc algorithms for the parton - shower - like implementations of the qcd evolution equations . \n they are primarily of the non - markovian type . \n however , such a solution can be used for the markovian - type mcs as well . \n we also comment briefly on the relation of the presented formalism to similar methods used in other branches of physics . \n * ifjpan - v-04 - 09 *     * hierarchically organized iterative solutions of the evolution equations in qcd@xmath1 *    * s. jadach , m. skrzypek * _ and _ * z. was * +   +    _ to be submitted to acta physica polonica _ \n * ifjpan - v-04 - 09 + december  2006 *    @xmath1this work is partly supported by the eu grant mtkd - ct-2004 - 510126 in partnership with the cern physics department and by the polish ministry of scientific research and information technology grant no 620/e-77/6.pr ue / die 188/2005 - 2008 .",
+        "prediction": "we calculate the evolution kernel for the parton distribution function ( pdf ) in the dglap equation at the next - to - leading - logarithmic ( nll ) approximation . \n we use the splitting functions scheme for the calculation of the evolution kernel . \n we calculate the evolution kernel for the gluon , quark and antiquark partons at the energy scale @xmath0 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath1 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath2 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath3 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath4 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath5 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath6 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath7 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath8 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath9 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath10 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath11 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath12 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath13 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath14 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath15 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath16 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath17 . \n we calculate the evolution kernel for the antiquark parton at the energy scale @xmath18 . \n we calculate the evolution kernel for the gluon parton at the energy scale @xmath19 . \n we calculate the evolution kernel for the quark parton at the energy scale @xmath20 . \n we calculate the evolution kernel for the antiquark parton at the"
+      },
+      {
+        "instruction": "阅读下文，用一句话概括其主要贡献。",
+        "input": "The attention mechanism has become a core component of modern deep learning architectures, particularly in natural language processing and computer vision. Since the introduction of scaled dot-product...",
+        "reference": "通过引入高效计算、增强表示能力与结构归纳偏置，改进注意力机制以提升可扩展性与整体性能。",
+        "prediction": "改进注意力机制通过稀疏与线性化、多头与位置编码、结构化归一化等方式提升效率、表达与归纳偏置。"
+      },
+      {
+        "instruction": "请对以下学术论文进行摘要。",
+        "input": "this paper explores the phenomenology of the standard model s minimal supersymmetric @xcite extension with a continuous @xmath1 symmetry ( hereafter called the ` mr model')@xcite . \n this model of low...",
+        "reference": "we compute the one - loop corrections to the @xmath0 vertex in the @xmath1 symmetric minimal supersymmetric extension of the standard model . we find that the predicted value of @xmath2 is consistent with experiment if the mass of the lighter top squark is no more than 180 gev . \n furthermore , other data combines to place a lower bound of 88 gev on the mass of the light top squark . \n a top squark in this mass range should be accessible to searches by experiments at fnal and lep . \n * @xmath0 in @xmath1 symmetric supersymmetry * 3em elizabeth h. simmons & yumian su 2em _ dept . of physics , boston university , + 590 commonwealth ave . , \n boston , ma 02215 _ \n 3em 3em    pacs : 12.60.jv , 13.38.dg , 14.80.ly    6em",
+        "prediction": "we study the phenomenology of the standard model s minimal supersymmetric extension with a continuous @xmath0 symmetry ( the mr model ) . \n we compute the vertex corrections to the @xmath1-quark and hadronic decay widths of the @xmath2 boson and find that the result is within @xmath3 of the experimental value so long as the lighter top squark is light enough ( and the charged higgs boson is heavy enough ) . \n we also discuss additional constraints that place a lower bound on the mass of the lighter top squark . \n the mr model is free of the superpotential term @xmath4 and the soft supersymmetry breaking terms @xmath5 that cause well - known theoretical difficulties in the mssm . \n the mr model is a much smaller - dimensional parameter space than the mssm and has two attractive features . \n first , the mr model makes specific predictions of the values of a number of observables , such as the gaugino masses . \n in addition , the mr model is free of the superpotential term @xmath4 and the soft supersymmetry breaking terms @xmath5 that cause well - known theoretical difficulties in the mssm . \n the implications of the @xmath2 measurement for the mssm are discussed in refs . \n [ 1 ] . \n [ 2 ] . \n [ 3 ] ."
+      }
+    ]
+  }
+}

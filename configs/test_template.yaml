@@ -1,0 +1,37 @@
+### Template compatibility test config
+### Test if granite template is supported
+
+### Model
+model_name_or_path: D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16
+trust_remote_code: true
+
+### Finetune method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### Dataset - use sample data
+dataset_dir: ./data
+dataset: sample_train
+template: granite4
+cutoff_len: 512
+max_samples: 5
+overwrite_cache: true
+
+### LoRA config (minimal)
+lora_target: q_proj,v_proj
+lora_rank: 8
+lora_alpha: 16
+
+### Training params (minimal test)
+output_dir: ./outputs/test_template
+logging_steps: 1
+save_steps: 100
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-4
+max_steps: 3
+bf16: true
+
+### Other
+report_to: none

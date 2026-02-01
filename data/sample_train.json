@@ -1,0 +1,27 @@
+[
+  {
+    "instruction": "将下面这段计算机领域的学术摘要翻译成中文。",
+    "input": "We introduce a novel attention mechanism that reduces computational complexity from quadratic to linear while maintaining model performance. Our experiments on language modeling benchmarks demonstrate significant speedups without sacrificing accuracy.",
+    "output": "我们引入了一种新颖的注意力机制，将计算复杂度从二次降低到线性，同时保持模型性能。我们在语言建模基准上的实验表明，在不牺牲准确性的情况下实现了显著的加速。"
+  },
+  {
+    "instruction": "Translate to Chinese:",
+    "input": "Large Language Models often suffer from hallucinations when generating factual content. Recent research proposes retrieval-augmented generation (RAG) as an effective mitigation strategy.",
+    "output": "大语言模型在生成事实性内容时经常出现幻觉问题。最新研究提出检索增强生成（RAG）作为一种有效的缓解策略。"
+  },
+  {
+    "instruction": "请把这段中文翻译成英文。",
+    "input": "模型量化是一种常用的模型压缩技术，通过将浮点数权重转换为低精度整数来减少模型大小和推理延迟。常见的量化方法包括INT8和INT4量化。",
+    "output": "Model quantization is a commonly used model compression technique that reduces model size and inference latency by converting floating-point weights to low-precision integers. Common quantization methods include INT8 and INT4 quantization."
+  },
+  {
+    "instruction": "阅读下文，用一句话概括其主要贡献。",
+    "input": "Current fine-tuning methods require updating all model parameters, which is computationally expensive for large language models. We propose Low-Rank Adaptation (LoRA), which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer. This approach reduces the number of trainable parameters by 10,000x while maintaining comparable performance to full fine-tuning.",
+    "output": "本文提出LoRA方法，通过冻结预训练权重并注入低秩分解矩阵，将可训练参数减少10000倍同时保持与全量微调相当的性能。"
+  },
+  {
+    "instruction": "请提取以下论文片段的核心观点，并进行简要总结。",
+    "input": "Transformer架构自2017年提出以来已成为自然语言处理的主流方法。然而，其自注意力机制的计算复杂度为O(n²)，这限制了模型处理长序列的能力。近年来，研究者们提出了多种线性注意力变体，如Linformer、Performer和Linear Transformer，试图在保持建模能力的同时降低计算成本。实验表明，这些方法在某些任务上取得了与标准Transformer相当的效果。",
+    "output": "文章讨论了Transformer自注意力机制的O(n²)计算复杂度问题，介绍了Linformer、Performer等线性注意力变体，这些方法能在降低计算成本的同时保持建模性能。"
+  }
+]

@@ -1,0 +1,49 @@
+### Granite 4.0-1B 全量微调配置
+### 任务：中英翻译 + 文章总结（计算机/AI领域）
+### 显存需求：约8-12GB
+
+### 模型配置
+model_name_or_path: ${MODEL_PATH}
+trust_remote_code: true
+
+### 微调方法
+stage: sft
+do_train: true
+finetuning_type: full
+
+### 数据集配置
+dataset_dir: ./data
+dataset: granite_translation_summary
+template: granite4
+cutoff_len: 2048
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### 训练参数
+output_dir: ./outputs/granite-4.0-1B-full
+logging_steps: 10
+save_steps: 500
+save_total_limit: 2
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-5
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### 优化器配置
+optim: adamw_torch
+
+### DeepSpeed配置（可选，用于多卡训练）
+# deepspeed: configs/ds_config.json
+
+### 评估配置
+eval_strategy: steps
+eval_steps: 500
+per_device_eval_batch_size: 2
+
+### 其他
+report_to: none

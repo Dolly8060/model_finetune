@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "base_model": [
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "88. 缔约方会议多次请秘书处特别注意其他公约的缔约方会议，只要讨论的问题问题涉及荒漠化、土地退化、土地利用、土地利用的变化和林业或旱地生物多样性，这些讨论提出了交叉报告的形式(不同公约机构之间相互报告)。",
+        "reference": "On several occasions, the COP requested the secretariat to give special attention to the COPs of other conventions where matters linked to desertification, land degradation, land use, land-use change and forestry or dryland biodiversity were discussed, which generated forms of cross-reporting (bodies of different conventions reporting to each other).",
+        "prediction": "88. The contracting parties' meetings have repeatedly requested the Secretariat to pay special attention to the meetings of other treaty bodies, provided that the issues discussed involve desertification, land degradation, land use, changes in land use, and biodiversity of forests or drylands. These discussions have proposed the form of cross-reporting (inter-reporting between different treaty bodies)."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "7. 专家组商定专家组副主席的职能如下 ：",
+        "reference": "The group agreed that the functions of the anglophone Rapporteur would be as follows: Liaising with anglophone LDC Parties; Record-keeping at meetings.",
+        "prediction": "7. The expert group agreed on the following functions for the role of the expert group vice-chairman:"
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "它在重建总部时，也必须向新时代的透明度、问责制和严肃的宗旨敞开大门。",
+        "reference": "As it rebuilds its Headquarters, it must also open the door to a new age of transparency, accountability and seriousness of purpose.",
+        "prediction": "Here is the translation:\n\nWhile rebuilding its headquarters, it must also open its doors to the new era of transparency, accountability, and a serious sense of purpose."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "我们倡导四项原则五点主张，就是希望同国际社会一道，尊重网络主权，发扬伙伴精神。",
+        "reference": "China advocates five principles and four proposals in the hope of working with the international community to respect network power and promote partnerships.",
+        "prediction": "We advocate four principles and five points, which is to wish to stand together with the international community, respect network sovereignty, and promote the spirit of partnership."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "(d) 有机会个别或在认为必要时由译员协助，在没有旁人在场的情况下单独询问被剥夺自由者以及防范小组委员会认为可提供相关资料的任何其他人；",
+        "reference": "(d) The opportunity to have private interviews with the persons deprived of their liberty without witnesses, either personally or with a translator if deemed necessary, as well as with any other person who the Subcommittee on Prevention believes may supply relevant information;",
+        "prediction": "Here is the English translation of your provided Chinese sentence:\n\n(d) Where possible, individuals may be asked to ask questions individually, or, if necessary, with the assistance of an interpreter, about those deprived of freedom and about any other person whom the Committee on the Prevention of Torture believes may provide relevant information, without the presence of others."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "- 我在学习。",
+        "reference": "- I was studying.",
+        "prediction": "- I am learning."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "临时化学品审查委员会的第二次会议将于2001年3月19日至23日举行,而本委员会的第八届会议将于2001年10月8日至12日举行。",
+        "reference": "Decides to formally appoint the 29 experts designated by Governments identified below to act as members of the Interim Chemical Review Committee:",
+        "prediction": "The second meeting of the Temporary Chemicals Review Committee will be held from March 19 to 23, 2001, while the eighth meeting of this committee will be held from October 8 to 12, 2001."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "2002年收到的其他资源捐助（减去利息和其他收入后的净额）总计22亿美元，其中46％为当地资源（2001年为57％，2000年为55％）。",
+        "reference": "Other resource contributions (net of interest and other income) received in 2002 totalled $2.2 billion, of which 46 per cent accounted for local resources (57 per cent in 2001 and 55 per cent in 2000).",
+        "prediction": "The total amount of other resource donations received in 2002 (after subtracting interest and other income, net of expenses) amounted to $2.2 billion, of which 46% were local resources (57% in 2001, 55% in 2000)."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para. 18.",
+        "reference": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para.",
+        "prediction": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para. 18."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "审议通过《九三学社章程修正案》，选举九三学社第十四届中央委员会。",
+        "reference": "The Amendment of the Jiu San Society was approved in the review, and the 14th Central Committee of the Jiu San Society was selected.",
+        "prediction": "The following Chinese content has been translated into English:\n\n\"Approved the amendment to the statutes of the Jiyanli Learning Society, electing the Jiyanli Learning Society's 14th Central Committee.\""
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "原来是老百姓上门去的，现在是上上到下面来，那么就是说",
+        "reference": "Previously, ordinary people asked for help, but now, officials have come to help. That is",
+        "prediction": "The original content was about the common people going to their homes, while now it's about going from upstairs to downstairs. So, it seems to suggest that there's a change in the way people are approaching their homes or their daily routines."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "56. 促请各国考虑加入国际水道测量组织，敦促各国同该组织一道努力，在全球范围内增加水道测量信息,加强能力建设和技术援助，促进特别是在国际航行地区、港口和内有脆弱或受保护海洋区的水域的航行安全；",
+        "reference": "Calls upon States to consider becoming members of the International Hydrographic Organization, and urges all States to work with that Organization to increase the coverage of hydrographic information on a global basis to enhance capacity-building and technical assistance and to promote safe navigation, especially in areas used for international navigation, ports and where there are vulnerable or protected marine areas;",
+        "prediction": "56. Please urge all countries to consider joining the International Hydrographic Organization, urging all countries to work together with the organization to increase hydrographic measurement information on a global scale, strengthen capacity building and technical assistance, and promote maritime safety, especially in international navigation areas, ports, and vulnerable or protected marine zones."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "另外一件傻事",
+        "reference": "I'll come there. Bye.",
+        "prediction": "Here's the translation:\n\n\"Another foolish thing\""
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "豆泥",
+        "reference": "And...hey, pat? .",
+        "prediction": "The English translation of \"豆泥\" is \"soil\" or \"dust.\""
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "此外，特别赞成并欢迎专家使得有关方在准备阶段已广泛地参与；特别要强调的是，已经将意见表达了出来，并鼓励儿童自己积极地参加。",
+        "reference": "It welcomed in particular the fact that the Independent Expert had ensured the participation of a broad range of stakeholders in the preparatory stage and, especially, the emphasis that he had put on eliciting the views and encouraging the active participation of children.",
+        "prediction": "In addition, I particularly support and welcome experts to actively participate in the preparation stage for stakeholders; it is especially important to highlight that opinions have been expressed and encourage children to participate actively."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "关于民间借贷利率的规定。",
+        "reference": "on the interest rates on private loans.",
+        "prediction": "The translation of the text \"关于民间借贷利率的规定。\" into English is:\n\n\"Regulations on the interest rates for private lending.\""
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "这个报告内容到我们村到我们家有什么关系",
+        "reference": "What is the relationship between this report and our village and our family?",
+        "prediction": "Here is the English translation of your sentence:\n\nWhat is the relationship between the content of this report and coming to our village to our home?"
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "从十几年前的一无所有，到如今",
+        "reference": "From nothing more than a dozen years ago to the present,",
+        "prediction": "From the utter lack of possessions several decades ago, to today..."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "鉴于土著人民对其土地、领土和资源的高度依赖，以及与土地、领土和资源的紧密关系，这些开发活动对土著人民的安全和福祉产生的总的累积影响非常严重。",
+        "reference": "The overall cumulative impacts of those developments on indigenous peoples' security and well-being is severe, given the close dependence and interrelationship that indigenous peoples have with their lands, territories and resources.",
+        "prediction": "Given the high dependence of Indigenous peoples on their land, territory, and resources, as well as their close relationship with these areas, the cumulative impact of these development activities on the safety and well-being of Indigenous peoples is very serious."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "双方应该共同努力促进全球互联网治理向更加公正合理方向发展。",
+        "reference": "Both parties should make joint efforts to promote the development of global Internet governance in a more just and reasonable direction.",
+        "prediction": "Both parties should work together to promote the development of global internet governance towards a more fair and reasonable direction."
+      }
+    ],
+    "finetuned_model": [
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "88. 缔约方会议多次请秘书处特别注意其他公约的缔约方会议，只要讨论的问题问题涉及荒漠化、土地退化、土地利用、土地利用的变化和林业或旱地生物多样性，这些讨论提出了交叉报告的形式(不同公约机构之间相互报告)。",
+        "reference": "On several occasions, the COP requested the secretariat to give special attention to the COPs of other conventions where matters linked to desertification, land degradation, land use, land-use change and forestry or dryland biodiversity were discussed, which generated forms of cross-reporting (bodies of different conventions reporting to each other).",
+        "prediction": "The meetings of the parties to the Convention have repeatedly requested the Secretariat to pay particular attention to the meetings of the parties to other conventions, provided that the issues under discussion involve desertification, land degradation, land use, changes in land use and biodiversity of forests or drylands. These discussions have led to the formulation of cross-reports (inter-agency reporting)."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "7. 专家组商定专家组副主席的职能如下 ：",
+        "reference": "The group agreed that the functions of the anglophone Rapporteur would be as follows: Liaising with anglophone LDC Parties; Record-keeping at meetings.",
+        "prediction": "The functions of the Vice-Chairman of the Expert Group are as follows:"
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "它在重建总部时，也必须向新时代的透明度、问责制和严肃的宗旨敞开大门。",
+        "reference": "As it rebuilds its Headquarters, it must also open the door to a new age of transparency, accountability and seriousness of purpose.",
+        "prediction": "It must also open its doors to the new era of transparency, accountability and a serious mission in its reconstruction."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "我们倡导四项原则五点主张，就是希望同国际社会一道，尊重网络主权，发扬伙伴精神。",
+        "reference": "China advocates five principles and four proposals in the hope of working with the international community to respect network power and promote partnerships.",
+        "prediction": "We advocate five principles and one recommendation, which is to respect network sovereignty and to promote the spirit of partnership with the international community."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "(d) 有机会个别或在认为必要时由译员协助，在没有旁人在场的情况下单独询问被剥夺自由者以及防范小组委员会认为可提供相关资料的任何其他人；",
+        "reference": "(d) The opportunity to have private interviews with the persons deprived of their liberty without witnesses, either personally or with a translator if deemed necessary, as well as with any other person who the Subcommittee on Prevention believes may supply relevant information;",
+        "prediction": "(d) The opportunity to ask individually or, if necessary in the opinion of the interpreter, to be assisted by the interpreter, the deprived of their liberty and the members of the Committee for Prevention of Torture to provide any other information that they believe relevant without the presence of others;"
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "- 我在学习。",
+        "reference": "- I was studying.",
+        "prediction": "- I am learning."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "临时化学品审查委员会的第二次会议将于2001年3月19日至23日举行,而本委员会的第八届会议将于2001年10月8日至12日举行。",
+        "reference": "Decides to formally appoint the 29 experts designated by Governments identified below to act as members of the Interim Chemical Review Committee:",
+        "prediction": "The second meeting of the Temporary Chemicals Review Committee will be held from 19 to 23 March 2001, and the eighth meeting of the Committee will be held from 8 to 12 October 2001."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "2002年收到的其他资源捐助（减去利息和其他收入后的净额）总计22亿美元，其中46％为当地资源（2001年为57％，2000年为55％）。",
+        "reference": "Other resource contributions (net of interest and other income) received in 2002 totalled $2.2 billion, of which 46 per cent accounted for local resources (57 per cent in 2001 and 55 per cent in 2000).",
+        "prediction": "In 2002, total net contributions received (after interest and other income) amounted to $2.2 billion, of which 46% was local (57% in 2001 and 55% in 2000)."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para. 18.",
+        "reference": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para.",
+        "prediction": "UNHCR submission to the UPR on Norway, pp. 2-3, citing CRC/C/OPAC/NOR/CO/1, para. 18."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "审议通过《九三学社章程修正案》，选举九三学社第十四届中央委员会。",
+        "reference": "The Amendment of the Jiu San Society was approved in the review, and the 14th Central Committee of the Jiu San Society was selected.",
+        "prediction": "The Committee on the 1993 Society of Learning has been elected by the Committee on the 1993 Society of Learning."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "原来是老百姓上门去的，现在是上上到下面来，那么就是说",
+        "reference": "Previously, ordinary people asked for help, but now, officials have come to help. That is",
+        "prediction": "It's not just the people on the street, it's the people in the government."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "56. 促请各国考虑加入国际水道测量组织，敦促各国同该组织一道努力，在全球范围内增加水道测量信息,加强能力建设和技术援助，促进特别是在国际航行地区、港口和内有脆弱或受保护海洋区的水域的航行安全；",
+        "reference": "Calls upon States to consider becoming members of the International Hydrographic Organization, and urges all States to work with that Organization to increase the coverage of hydrographic information on a global basis to enhance capacity-building and technical assistance and to promote safe navigation, especially in areas used for international navigation, ports and where there are vulnerable or protected marine areas;",
+        "prediction": "56. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "另外一件傻事",
+        "reference": "I'll come there. Bye.",
+        "prediction": "Another stupid thing."
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "豆泥",
+        "reference": "And...hey, pat? .",
+        "prediction": "Mud"
+      },
+      {
+        "instruction": "将以下中文内容翻译成英文。",
+        "input": "此外，特别赞成并欢迎专家使得有关方在准备阶段已广泛地参与；特别要强调的是，已经将意见表达了出来，并鼓励儿童自己积极地参加。",
+        "reference": "It welcomed in particular the fact that the Independent Expert had ensured the participation of a broad range of stakeholders in the preparatory stage and, especially, the emphasis that he had put on eliciting the views and encouraging the active participation of children.",
+        "prediction": "In addition, we particularly welcome and encourage experts to be involved in the preparatory stage; it is particularly important to highlight that opinions have been expressed and children are encouraged to participate actively."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "关于民间借贷利率的规定。",
+        "reference": "on the interest rates on private loans.",
+        "prediction": "Regulations on the interest rate on private loans."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "这个报告内容到我们村到我们家有什么关系",
+        "reference": "What is the relationship between this report and our village and our family?",
+        "prediction": "What is the connection between this report and our village and our home?"
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "从十几年前的一无所有，到如今",
+        "reference": "From nothing more than a dozen years ago to the present,",
+        "prediction": "From being empty of everything to being full of everything."
+      },
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "鉴于土著人民对其土地、领土和资源的高度依赖，以及与土地、领土和资源的紧密关系，这些开发活动对土著人民的安全和福祉产生的总的累积影响非常严重。",
+        "reference": "The overall cumulative impacts of those developments on indigenous peoples' security and well-being is severe, given the close dependence and interrelationship that indigenous peoples have with their lands, territories and resources.",
+        "prediction": "Given the high degree of dependence of Aboriginal peoples on their land, territory and resources, and the close relationship they have with these, the cumulative impact of these developments on the safety and well-being of Aboriginal peoples is very serious."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "双方应该共同努力促进全球互联网治理向更加公正合理方向发展。",
+        "reference": "Both parties should make joint efforts to promote the development of global Internet governance in a more just and reasonable direction.",
+        "prediction": "Both parties should work together to promote the development of global internet governance towards a more just and reasonable direction."
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+### Granite 4.0-1B QLoRA 微调配置
+### 任务：中英翻译 + 文章总结（计算机/AI领域）
+### 使用4-bit量化 + LoRA，显存需求：约2-4GB
+
+### 模型配置
+model_name_or_path: ${MODEL_PATH}
+trust_remote_code: true
+
+### 微调方法
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### 量化配置
+quantization_bit: 4
+quantization_method: bitsandbytes
+
+### 数据集配置
+dataset_dir: ./data
+dataset: granite_translation_summary
+template: granite4
+cutoff_len: 2048
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### LoRA配置
+lora_target: all
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+### 训练参数
+output_dir: ./outputs/granite-4.0-1B-qlora
+logging_steps: 10
+save_steps: 500
+save_total_limit: 3
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+fp16: true  # QLoRA使用fp16
+ddp_timeout: 180000000
+
+### 优化器配置
+optim: paged_adamw_32bit
+
+### 评估配置
+eval_strategy: steps
+eval_steps: 500
+per_device_eval_batch_size: 4
+
+### 其他
+report_to: none

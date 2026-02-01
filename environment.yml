@@ -1,0 +1,35 @@
+name: granite_finetune
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch>=2.1.0
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+    - llamafactory>=0.9.0
+    - transformers>=4.45.0
+    - datasets>=2.14.0
+    - accelerate>=0.27.0
+    - peft>=0.10.0
+    - trl>=0.8.0
+    - bitsandbytes>=0.43.0
+    - sentencepiece
+    - tiktoken
+    - protobuf
+    - openai>=1.0.0
+    - httpx
+    - tqdm
+    - pandas
+    - numpy
+    - scikit-learn
+    - rouge-score
+    - sacrebleu
+    - bert-score
+    - jieba
+    - python-dotenv
+    - pyyaml
+    - fire

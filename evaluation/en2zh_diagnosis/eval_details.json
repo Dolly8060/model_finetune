@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "base_model": [
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Did you just... laugh?",
+        "reference": "你刚刚是不是笑了",
+        "prediction": "你刚刚... 开玩笑吗？"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "(d) The maintenance of efficient and cost-effective travel and transportation services, in particular through close cooperation with other United Nations system organizations;",
+        "reference": "(d) 特别是通过与联合国系统其他组织密切合作，维持有效和符合成本效益的旅行和运输服务；",
+        "prediction": "(d) 通过与其他联合国机构紧密合作，维持高效且具有成本效益的旅游和交通服务。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "To take up this mission, it is crucial for political parties to strengthen their own foundation and construction.",
+        "reference": "政党要承担起这一使命，关键要加强自身建设",
+        "prediction": "为了承担这项任务，政党必须加强自己的基础和建设。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Enkhtuvshin said that the development of relations with China is a priority for Mongolia's diplomacy. Mongolia upholds the one-China policy",
+        "reference": "恩赫图布辛表示，发展对华关系是蒙古国外交优先方向，蒙方坚持一个中国政策",
+        "prediction": "邦廉说，与中国建立关系的发展是摩尔人外交的首要任务。摩尔人坚持一中国政策。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Hearings with the business community on financing for development, 11 and 12 December 2000: summary of panel presentations and discussion (A/AC.257/19)",
+        "reference": "2000年12月11日和12日企业界关于发展筹资问题意见听询会：小组陈述和讨论摘要（A/AC.257/19）",
+        "prediction": "关于开展与商界关于发展资金支持的听证会，2000年12月11日和12日：关于部分桌面报告和讨论的总结（A/AC.257/19）"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "That is why the approach adopted covers care provided both by the government and by institutions and individuals working in the fields of prevention, support, punishment and regulation.",
+        "reference": "这就是为什么所采取的方法涵盖了政府和机构以及在预防、支助、惩罚和规范领域工作的个人提供的照顾。",
+        "prediction": "因此，采取的方法涵盖了由政府以及在预防、支持、惩罚和监管领域工作的机构和个人提供的护理。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Mr. Lamani (Organization on the Islamic Conference) (spoke in Arabic): The Security Council is meeting once again to consider Israel's serious, dangerous actions in the occupied Arab territories, resu...",
+        "reference": "拉马尼先生（伊斯兰会议组织）（以阿拉伯语发言）：安全理事会再次开会，审议以色列在被占领阿拉伯领土的严重、危险行动，这些行动导致杀害无辜儿童、妇女和老人。",
+        "prediction": "Mr. Lamani（伊斯兰会议组织）（在阿拉伯语中发言）：安理会再次会议，审议以色列在占领的阿拉伯领土中的严重、危险行动，导致无辜的儿童、女性和老年人的杀害。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "It is our goal that through a combination of uniform assessments conducted by FA TF, IMF, World Bank, and FA TF-Style Regional Bodies, all countries throughout the world will be assessed against the F...",
+        "reference": "我们的目标是，通过金融行动工作组、货币基金组织、世界银行和类似于金融行动工作组的区域机构共同进行统一的评估，世界各国都将按照金融行动工作组的标准得到评估。",
+        "prediction": "我们的目标是，通过FA TF、IMF、世界银行和FA TF风格的区域机构联合进行的统一评估，全球所有国家都将根据FATF标准进行评估。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "He agreed to handle it.",
+        "reference": "他同意这样处理的 He agreed to handle it.",
+        "prediction": "他同意接手它。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "My delegation also commends the report presented by the Secretary-General (A/58/352) on the implementation of the recommendations contained in the report on the causes of conflict and the promotion of...",
+        "reference": "我国代表团还赞赏秘书长提交的有关冲突起因和促进持久和平与可持续发展的报告所载各项建议执行情况的报告（A/58/352）。",
+        "prediction": "我的大队也表扬了秘书长（A/58/352）在关于冲突原因及可持续和可持续发展的报告中提出的建议实施报告中所作出的建议。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "The Institute of Ecology and the Environment, Tsinghua Yangtze River Delta Research Institute in Zhejiang Province is located in Jiaxing, the birthplace of the Red Boat spirit.",
+        "reference": "浙江清华长三角研究院生态环境研究所就设在红船精神的发源地嘉兴。",
+        "prediction": "中国科学院生态与环境研究所，丽江塔江大研究所位于浙江省松江市，是红船灵的诞生地。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Are you sure this is where she said?",
+        "reference": "你确定她说的是这里吗？",
+        "prediction": "你确定这是她说的地方吗？"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "The global Internet governance system reform has entered a crucial period.",
+        "reference": "全球互联网治理体系变革进入关键时期。",
+        "prediction": "全球互联网治理体系正在经历一个关键时期。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Also recognizes the need to strengthen the capacity of Governments to incorporate a gender perspective in policies and decision-making, and encourages all Governments, international organizations, inc...",
+        "reference": "10. 又认识到需要加强政府将两性平等观念纳入政策和决策中的能力，并鼓励各国政府、包括联合国系统在内的各国际组织、以及其他的利益攸关方通过提供技术援助和财政资源等，协助和支持发展中国家努力将两性平等观念纳入政策制定的所有方面；",
+        "prediction": "同时也承认加强政府在政策和决策中纳入性别视角的能力的必要性，并鼓励所有政府、国际组织、包括联合国体系以及其他相关利益相关者，协助并支持发展中国家在政策制定的所有方面纳入性别视角的努力，包括通过提供技术援助和财政资源；"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "none of them can be solved. At this stage, you have to stick to it and keep going.",
+        "reference": "都觉得无法解决的程度，那这个阶段你要坚持住，就你在不断地走不断地走。",
+        "prediction": "其中没有一个可以解决。在这个阶段，你必须坚持下去。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "Doesn't it seem like dancing is just the same old tune?",
+        "reference": "似乎你还在跳以前那支老掉牙舞吗",
+        "prediction": "不是吗？跳舞似乎就是一首早已乏味的旋律吧。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Such issues include duty-free and quota-free market access for LDCs with transparent and simple rules of origin, the elimination of all forms of export subsidies in agriculture by 2013 with front-load...",
+        "reference": "这类问题包括最不发达国家的免税和免配额市场准入以及透明和简单的原产地规则，以加速行动而在2013年以前取消所有形式的农业出口补贴，大幅度、快速和具体处理棉花问题。",
+        "prediction": "这些问题包括为LMDC提供无关税和配额市场接入，具有透明且简单的原产地规则，农业中消除所有形式的出口补贴直到2013年，采取前期投入，并采取坚定、迅速且具体的方式来解决棉花问题。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "And the suspects?",
+        "reference": "而犯罪嫌疑人？",
+        "prediction": "然后是怪疑人呢？"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Zhejiang Province vigorously promoted the spirit of the Red Ship, with a firm move to work at the forefront of the times.",
+        "reference": "浙江省大力弘扬红船精神，以坚定的行动，让工作走在时代前列。",
+        "prediction": "浙江省积极推广红船的精神，坚定地迈向时代的前沿。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "you were lucky last time.",
+        "reference": "上次你命大",
+        "prediction": "你在上次中赢了。"
+      }
+    ],
+    "finetuned_model": [
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Did you just... laugh?",
+        "reference": "你刚刚是不是笑了",
+        "prediction": "你刚刚... 喜笑?"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "(d) The maintenance of efficient and cost-effective travel and transportation services, in particular through close cooperation with other United Nations system organizations;",
+        "reference": "(d) 特别是通过与联合国系统其他组织密切合作，维持有效和符合成本效益的旅行和运输服务；",
+        "prediction": "(d) 保持高效且具成本效益的旅行和运输服务，尤其是通过与其他联合国系统机构的紧密合作；"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "To take up this mission, it is crucial for political parties to strengthen their own foundation and construction.",
+        "reference": "政党要承担起这一使命，关键要加强自身建设",
+        "prediction": "为了承担这项任务，政党必须加强自己的基础和建设。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Enkhtuvshin said that the development of relations with China is a priority for Mongolia's diplomacy. Mongolia upholds the one-China policy",
+        "reference": "恩赫图布辛表示，发展对华关系是蒙古国外交优先方向，蒙方坚持一个中国政策",
+        "prediction": "梅尔鲁特说，中国与回族自治区的关系发展是挪威外交的优先事项。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Hearings with the business community on financing for development, 11 and 12 December 2000: summary of panel presentations and discussion (A/AC.257/19)",
+        "reference": "2000年12月11日和12日企业界关于发展筹资问题意见听询会：小组陈述和讨论摘要（A/AC.257/19）",
+        "prediction": "2000年12月11日和12日与企业界开展的开发资金事务听证会：关于面向该委员会的演讲和讨论的摘要（A/AC.257/19）"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "That is why the approach adopted covers care provided both by the government and by institutions and individuals working in the fields of prevention, support, punishment and regulation.",
+        "reference": "这就是为什么所采取的方法涵盖了政府和机构以及在预防、支助、惩罚和规范领域工作的个人提供的照顾。",
+        "prediction": "因此，采取的方法涵盖了政府和在预防、支持、惩罚和规范领域工作的机构和个人提供的护理。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Mr. Lamani (Organization on the Islamic Conference) (spoke in Arabic): The Security Council is meeting once again to consider Israel's serious, dangerous actions in the occupied Arab territories, resu...",
+        "reference": "拉马尼先生（伊斯兰会议组织）（以阿拉伯语发言）：安全理事会再次开会，审议以色列在被占领阿拉伯领土的严重、危险行动，这些行动导致杀害无辜儿童、妇女和老人。",
+        "prediction": "李曼纶（伊斯兰会议组织）（阅读中文翻译）：安全理事会再次会议审议以色列在占领的阿拉伯领土中所作的严重且危险的行动，导致无辜的儿童、妇女和老年人死亡。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "It is our goal that through a combination of uniform assessments conducted by FA TF, IMF, World Bank, and FA TF-Style Regional Bodies, all countries throughout the world will be assessed against the F...",
+        "reference": "我们的目标是，通过金融行动工作组、货币基金组织、世界银行和类似于金融行动工作组的区域机构共同进行统一的评估，世界各国都将按照金融行动工作组的标准得到评估。",
+        "prediction": "我们的目标是，通过联合评估的方式，将所有国家的评估与 FATF 标准相比，这些评估将由 FA TF、IMF、世界银行和 FA TF-风格的区域机构进行。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "He agreed to handle it.",
+        "reference": "他同意这样处理的 He agreed to handle it.",
+        "prediction": "他同意处理它。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "My delegation also commends the report presented by the Secretary-General (A/58/352) on the implementation of the recommendations contained in the report on the causes of conflict and the promotion of...",
+        "reference": "我国代表团还赞赏秘书长提交的有关冲突起因和促进持久和平与可持续发展的报告所载各项建议执行情况的报告（A/58/352）。",
+        "prediction": "我的代表团还表扬秘书长提出的报告（A/58/352），关于冲突的原因和持久和可持续的和平与可持续发展的推动方面的建议的实施情况。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "The Institute of Ecology and the Environment, Tsinghua Yangtze River Delta Research Institute in Zhejiang Province is located in Jiaxing, the birthplace of the Red Boat spirit.",
+        "reference": "浙江清华长三角研究院生态环境研究所就设在红船精神的发源地嘉兴。",
+        "prediction": "中国环境与生态学研究所，浙江省红船神话出生地，位于江西省吉星市。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Are you sure this is where she said?",
+        "reference": "你确定她说的是这里吗？",
+        "prediction": "你确定这是她说的地方吗？"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "The global Internet governance system reform has entered a crucial period.",
+        "reference": "全球互联网治理体系变革进入关键时期。",
+        "prediction": "全球互联网治理体系的改革正进入一个关键阶段。"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "Also recognizes the need to strengthen the capacity of Governments to incorporate a gender perspective in policies and decision-making, and encourages all Governments, international organizations, inc...",
+        "reference": "10. 又认识到需要加强政府将两性平等观念纳入政策和决策中的能力，并鼓励各国政府、包括联合国系统在内的各国际组织、以及其他的利益攸关方通过提供技术援助和财政资源等，协助和支持发展中国家努力将两性平等观念纳入政策制定的所有方面；",
+        "prediction": "也认识到需要加强政府能力，使其在政策制定和决策中纳入性别视角，鼓励所有政府、国际组织，包括联合国体系，以及其他相关利益相关方，协助并支持发展中国家在政策制定的所有方面纳入性别视角，包括通过提供技术援助和财政资源；"
+      },
+      {
+        "instruction": "Translate the following text into Chinese.",
+        "input": "none of them can be solved. At this stage, you have to stick to it and keep going.",
+        "reference": "都觉得无法解决的程度，那这个阶段你要坚持住，就你在不断地走不断地走。",
+        "prediction": "他们都无法解决。在这个阶段，你必须坚持下去。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "Doesn't it seem like dancing is just the same old tune?",
+        "reference": "似乎你还在跳以前那支老掉牙舞吗",
+        "prediction": "不是吗，跳舞似乎就是一首早已乏味的旋律？"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Such issues include duty-free and quota-free market access for LDCs with transparent and simple rules of origin, the elimination of all forms of export subsidies in agriculture by 2013 with front-load...",
+        "reference": "这类问题包括最不发达国家的免税和免配额市场准入以及透明和简单的原产地规则，以加速行动而在2013年以前取消所有形式的农业出口补贴，大幅度、快速和具体处理棉花问题。",
+        "prediction": "这些问题包括为LDC提供无关税和无配额市场接入，具有透明且简单的出产规则，将在2013年消除农业中的所有形式的出口补贴，以及采取坚定、迅速且具体的方式来解决棉花问题。"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "And the suspects?",
+        "reference": "而犯罪嫌疑人？",
+        "prediction": "而犯罪嫌疑人呢？"
+      },
+      {
+        "instruction": "请把下面这段话翻译成中文。",
+        "input": "Zhejiang Province vigorously promoted the spirit of the Red Ship, with a firm move to work at the forefront of the times.",
+        "reference": "浙江省大力弘扬红船精神，以坚定的行动，让工作走在时代前列。",
+        "prediction": "浙江省热切推广红船精神，坚定地追求时代的前沿。"
+      },
+      {
+        "instruction": "将以下英文内容翻译成中文。",
+        "input": "you were lucky last time.",
+        "reference": "上次你命大",
+        "prediction": "你在上一次中午的时候很幸运。"
+      }
+    ]
+  }
+}

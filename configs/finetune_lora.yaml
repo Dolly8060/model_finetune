@@ -1,0 +1,56 @@
+### Granite 4.0-1B LoRA Finetune Config
+### Task: EN-CN Translation + Summarization (CS/AI domain)
+### VRAM: 24GB
+
+### Model
+model_name_or_path: D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16
+trust_remote_code: true
+
+### Finetune method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### Dataset
+dataset_dir: ./data
+dataset: train_mixed_3k
+eval_dataset: granite_translation_summary_val
+template: granite4
+cutoff_len: 1536
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 1
+
+### LoRA
+lora_target: q_proj,k_proj,v_proj,o_proj
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.15
+
+### Training (optimized for 24GB VRAM)
+output_dir: ./outputs/granite-4.0-1B-lora_v4_optimal
+logging_steps: 10
+save_steps: 100
+save_total_limit: 5
+per_device_train_batch_size: 10
+gradient_accumulation_steps: 2
+learning_rate: 1.5e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.15
+bf16: true
+ddp_timeout: 180000000
+weight_decay: 0.01
+
+### Optimizer
+optim: adamw_torch
+
+### Evaluation
+eval_strategy: steps
+eval_steps: 100
+per_device_eval_batch_size: 8
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+
+### Other
+report_to: none
