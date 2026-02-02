@@ -579,7 +579,7 @@ class MultiModelEvaluator:
         self.rouge_scorer_obj = rouge_scorer.RougeScorer(
             ['rouge1', 'rouge2', 'rougeL'], use_stemmer=True
         )
-        self.bleu = BLEU(effective_order=True)
+        self.bleu = BLEU(effective_order=True, lowercase=False, tokenize='zh')
     
     def _generate(self, model, tokenizer, prompt: str) -> str:
         """使用模型生成回复"""
@@ -613,19 +613,42 @@ class MultiModelEvaluator:
     
     def _compute_metrics(self, predictions: List[str], references: List[str]) -> EvalResult:
         """计算评估指标"""
-        predictions = [p if p else " " for p in predictions]
-        references = [r if r else " " for r in references]
+        # 处理空预测
+        predictions = [p.strip() if p else " " for p in predictions]
+        references = [r.strip() if r else " " for r in references]
         
+        # 清理预测中的常见前缀
+        cleaned_predictions = []
+        for pred in predictions:
+            for prefix in [
+                "Here is the English translation:",
+                "Here is the Chinese translation:",
+                "Translation:",
+                "翻译：",
+                "翻译结果：",
+                "译文：",
+            ]:
+                if pred.startswith(prefix):
+                    pred = pred[len(prefix):].strip()
+                    break
+            cleaned_predictions.append(pred)
+        predictions = cleaned_predictions
+        
+        # 检测语言
         sample_text = ''.join(references[:10])
         detected_lang = self._detect_lang(sample_text)
         
-        # BLEU
-        if detected_lang == "zh":
-            pred_tokenized = [' '.join(self._tokenize_chinese(p)) for p in predictions]
-            ref_tokenized = [[' '.join(self._tokenize_chinese(r))] for r in references]
-            bleu_score = self.bleu.corpus_score(pred_tokenized, ref_tokenized).score
-        else:
-            bleu_score = self.bleu.corpus_score(predictions, [[r] for r in references]).score
+        # BLEU（修复：使用SacreBLEU的中文分词）
+        try:
+            if detected_lang == "zh":
+                # 中文：使用字符级分词（SacreBLEU的zh tokenizer）
+                bleu_score = self.bleu.corpus_score(predictions, [[r] for r in references]).score
+            else:
+                # 英文：SacreBLEU自动处理
+                bleu_score = self.bleu.corpus_score(predictions, [[r] for r in references]).score
+        except Exception as e:
+            print(f"BLEU计算失败: {e}, 返回0")
+            bleu_score = 0.0
         
         # ROUGE
         rouge1_scores, rouge2_scores, rougeL_scores = [], [], []
@@ -648,6 +671,27 @@ class MultiModelEvaluator:
             bert_f1=F1.mean().item() * 100,
         )
     
+    def _classify_sample(self, sample: Dict) -> Optional[str]:
+        """根据instruction或task_type粗略判断是翻译还是总结"""
+        task_type = sample.get("task_type", "").lower()
+        if task_type in ("translation", "summarization"):
+            return task_type
+        instr = sample.get("instruction", "")
+        instr_lower = instr.lower()
+        translation_keywords = [
+            "翻译", "translate", "translation", "译为", "译成",
+            "english translation", "中文翻译", "中译英", "英译中",
+        ]
+        summary_keywords = [
+            "总结", "摘要", "概括", "summary", "summarize",
+            "提炼", "提取主要观点", "总结以下", "概括下文",
+        ]
+        if any(kw in instr_lower for kw in translation_keywords):
+            return "translation"
+        if any(kw in instr_lower for kw in summary_keywords):
+            return "summarization"
+        return None
+    
     def evaluate_single_model(
         self,
         model,
@@ -655,13 +699,15 @@ class MultiModelEvaluator:
         model_type: str,
         samples: List[Dict],
         model_name: str,
+        desc_suffix: str = "",
     ) -> Tuple[EvalResult, List[Dict]]:
         """评估单个模型"""
         predictions = []
         references = []
         detailed_results = []
         
-        for sample in tqdm(samples, desc=f"评估 {model_name}"):
+        desc = f"评估 {model_name}{desc_suffix}"
+        for sample in tqdm(samples, desc=desc):
             prompt = format_prompt(sample["instruction"], sample["input"], model_type)
             prediction = self._generate(model, tokenizer, prompt)
             predictions.append(prediction)
@@ -685,7 +731,7 @@ class MultiModelEvaluator:
         output_dir: str = "evaluation",
     ) -> Dict:
         """
-        对比多个模型
+        对比多个模型（按任务类型拆分：翻译/总结）
         
         Args:
             model_configs: 模型配置列表，每个元素为 {"name": "显示名称", "path": "模型路径", "adapter": "可选的adapter路径"}
@@ -703,7 +749,20 @@ class MultiModelEvaluator:
             eval_data = random.sample(eval_data, max_samples)
         print(f"评估样本数: {len(eval_data)}")
         
-        results = {}
+        # 按任务类型拆分数据
+        translation_data: List[Dict] = []
+        summarization_data: List[Dict] = []
+        for sample in eval_data:
+            task = self._classify_sample(sample)
+            if task == "translation":
+                translation_data.append(sample)
+            elif task == "summarization":
+                summarization_data.append(sample)
+        
+        print(f"翻译样本数: {len(translation_data)}")
+        print(f"总结样本数: {len(summarization_data)}")
+        
+        results: Dict[str, Dict] = {}
         
         # 逐个评估模型
         for i, config in enumerate(model_configs):
@@ -721,16 +780,27 @@ class MultiModelEvaluator:
                     model_path, adapter_path
                 )
                 
-                # 评估
-                metrics, details = self.evaluate_single_model(
-                    model, tokenizer, model_type, eval_data, model_name
-                )
+                # 评估翻译子集
+                if translation_data:
+                    tr_metrics, tr_details = self.evaluate_single_model(
+                        model, tokenizer, model_type, translation_data, model_name, "-翻译子集"
+                    )
+                    results.setdefault("translation", {})[model_name] = {
+                        "path": model_path,
+                        "metrics": tr_metrics.__dict__,
+                        "details": tr_details,
+                    }
                 
-                results[model_name] = {
-                    "path": model_path,
-                    "metrics": metrics.__dict__,
-                    "details": details,
-                }
+                # 评估总结子集
+                if summarization_data:
+                    sum_metrics, sum_details = self.evaluate_single_model(
+                        model, tokenizer, model_type, summarization_data, model_name, "-总结子集"
+                    )
+                    results.setdefault("summarization", {})[model_name] = {
+                        "path": model_path,
+                        "metrics": sum_metrics.__dict__,
+                        "details": sum_details,
+                    }
                 
                 # 释放显存
                 print(f"释放 {model_name} 显存...")
@@ -738,10 +808,18 @@ class MultiModelEvaluator:
                 
             except Exception as e:
                 print(f"评估 {model_name} 失败: {e}")
-                results[model_name] = {
-                    "path": model_path,
-                    "error": str(e),
-                }
+                import traceback
+                traceback.print_exc()
+                if translation_data:
+                    results.setdefault("translation", {})[model_name] = {
+                        "path": model_path,
+                        "error": str(e),
+                    }
+                if summarization_data:
+                    results.setdefault("summarization", {})[model_name] = {
+                        "path": model_path,
+                        "error": str(e),
+                    }
         
         # 生成对比报告
         self._generate_comparison_report(results, output_dir)
@@ -749,56 +827,41 @@ class MultiModelEvaluator:
         return results
     
     def _generate_comparison_report(self, results: Dict, output_dir: str):
-        """生成多模型对比报告"""
+        """生成多模型对比报告（按任务类型拆分）"""
         os.makedirs(output_dir, exist_ok=True)
         
-        # 过滤有效结果
-        valid_results = {k: v for k, v in results.items() if "metrics" in v}
+        # 保存指标摘要（按子集）
+        summary = {}
+        for subset_name, subset_res in results.items():
+            summary[subset_name] = {}
+            for model_name, model_data in subset_res.items():
+                if "metrics" in model_data:
+                    summary[subset_name][model_name] = model_data["metrics"]
         
-        if not valid_results:
-            print("没有有效的评估结果")
-            return
-        
-        # 保存指标摘要
         summary_path = os.path.join(output_dir, "comparison_results.json")
         with open(summary_path, "w", encoding="utf-8") as f:
-            summary = {k: v["metrics"] for k, v in valid_results.items()}
             json.dump(summary, f, ensure_ascii=False, indent=2)
         print(f"\n指标摘要已保存: {summary_path}")
         
         # 保存详细结果
+        details_out = {}
+        for subset_name, subset_res in results.items():
+            details_out[subset_name] = {}
+            for model_name, model_data in subset_res.items():
+                if "details" in model_data:
+                    details_out[subset_name][model_name] = model_data["details"][:10]
+        
         details_path = os.path.join(output_dir, "comparison_details.json")
         with open(details_path, "w", encoding="utf-8") as f:
-            details = {k: v["details"][:10] for k, v in valid_results.items()}
-            json.dump(details, f, ensure_ascii=False, indent=2)
-        print(f"详细结果已保存: {details_path} (每模型前10条)")
+            json.dump(details_out, f, ensure_ascii=False, indent=2)
+        print(f"详细结果已保存: {details_path} (每模型每子集前10条)")
         
         # 生成Markdown报告
-        model_names = list(valid_results.keys())
-        
         report = ["# 多模型对比评估报告\n"]
         report.append("## 评估指标说明\n")
-        report.append("- **BLEU**: 机器翻译标准评估指标，衡量n-gram精确度")
-        report.append("- **ROUGE-1/2/L**: 文本摘要评估指标，衡量n-gram召回率")
+        report.append("- **BLEU**: 机器翻译标准评估指标，主要用于翻译子集")
+        report.append("- **ROUGE-1/2/L**: 文本摘要评估指标，主要用于总结子集")
         report.append("- **BERTScore**: 基于BERT的语义相似度评估\n")
-        
-        report.append("## 模型信息\n")
-        report.append("| 模型名称 | 模型路径 |")
-        report.append("|----------|----------|")
-        for name in model_names:
-            path = valid_results[name]["path"]
-            report.append(f"| {name} | {path} |")
-        
-        report.append("\n## 评估结果对比\n")
-        
-        # 构建表头
-        header = "| 指标 |"
-        separator = "|------|"
-        for name in model_names:
-            header += f" {name} |"
-            separator += "-------:|"
-        report.append(header)
-        report.append(separator)
         
         metrics_names = [
             ("BLEU", "bleu"),
@@ -810,66 +873,137 @@ class MultiModelEvaluator:
             ("BERTScore-F1", "bert_f1"),
         ]
         
-        for display_name, key in metrics_names:
-            row = f"| {display_name} |"
-            for name in model_names:
-                val = valid_results[name]["metrics"].get(key, 0)
-                row += f" {val:.2f} |"
-            report.append(row)
+        subset_labels = {
+            "translation": "翻译子集 (Translation)",
+            "summarization": "总结子集 (Summarization)",
+        }
         
-        # 找出各指标的最佳模型
-        report.append("\n## 最佳模型\n")
-        report.append("| 指标 | 最佳模型 | 分数 |")
-        report.append("|------|----------|------|")
+        # 获取所有模型名称
+        all_model_names = set()
+        for subset_res in results.values():
+            all_model_names.update(subset_res.keys())
+        all_model_names = [n for n in all_model_names if not results.get("translation", {}).get(n, {}).get("error")]
         
-        for display_name, key in metrics_names:
-            best_model = max(
-                model_names,
-                key=lambda n: valid_results[n]["metrics"].get(key, 0)
-            )
-            best_score = valid_results[best_model]["metrics"].get(key, 0)
-            report.append(f"| {display_name} | {best_model} | {best_score:.2f} |")
+        # 模型信息表
+        if all_model_names:
+            report.append("## 模型信息\n")
+            report.append("| 模型名称 | 模型路径 |")
+            report.append("|----------|----------|")
+            for name in all_model_names:
+                path = ""
+                for subset_res in results.values():
+                    if name in subset_res and "path" in subset_res[name]:
+                        path = subset_res[name]["path"]
+                        break
+                report.append(f"| {name} | {path} |")
         
-        report.append("\n## 结论\n")
+        # 按子集输出对比结果
+        for subset_name, label in subset_labels.items():
+            if subset_name not in results:
+                continue
+            
+            subset_res = results[subset_name]
+            valid_models = [n for n in all_model_names if n in subset_res and "metrics" in subset_res[n]]
+            
+            if not valid_models:
+                continue
+            
+            report.append(f"\n## {label}\n")
+            
+            # 构建表头
+            header = "| 指标 |"
+            separator = "|------|"
+            for name in valid_models:
+                header += f" {name} |"
+                separator += "-------:|"
+            report.append(header)
+            report.append(separator)
+            
+            # 输出各指标
+            for display_name, key in metrics_names:
+                row = f"| {display_name} |"
+                for name in valid_models:
+                    val = subset_res[name]["metrics"].get(key, 0)
+                    row += f" {val:.2f} |"
+                report.append(row)
+            
+            # 找出各指标的最佳模型
+            report.append(f"\n### {label} - 最佳模型\n")
+            report.append("| 指标 | 最佳模型 | 分数 |")
+            report.append("|------|----------|------|")
+            
+            for display_name, key in metrics_names:
+                best_model = max(
+                    valid_models,
+                    key=lambda n: subset_res[n]["metrics"].get(key, 0)
+                )
+                best_score = subset_res[best_model]["metrics"].get(key, 0)
+                report.append(f"| {display_name} | {best_model} | {best_score:.2f} |")
         
-        # 计算综合得分（所有指标的平均）
-        avg_scores = {}
-        for name in model_names:
-            metrics = valid_results[name]["metrics"]
-            avg = np.mean([metrics.get(k, 0) for _, k in metrics_names])
-            avg_scores[name] = avg
+        # 综合结论
+        report.append("\n## 综合结论\n")
         
-        sorted_models = sorted(avg_scores.items(), key=lambda x: x[1], reverse=True)
-        report.append("按综合得分排名：\n")
-        for i, (name, score) in enumerate(sorted_models, 1):
-            report.append(f"{i}. **{name}**: 平均得分 {score:.2f}")
+        for subset_name, label in subset_labels.items():
+            if subset_name not in results:
+                continue
+            
+            subset_res = results[subset_name]
+            valid_models = [n for n in all_model_names if n in subset_res and "metrics" in subset_res[n]]
+            
+            if not valid_models:
+                continue
+            
+            # 计算子集综合得分
+            avg_scores = {}
+            for name in valid_models:
+                metrics = subset_res[name]["metrics"]
+                avg = np.mean([metrics.get(k, 0) for _, k in metrics_names])
+                avg_scores[name] = avg
+            
+            sorted_models = sorted(avg_scores.items(), key=lambda x: x[1], reverse=True)
+            report.append(f"\n**{label}综合排名**：\n")
+            for i, (name, score) in enumerate(sorted_models, 1):
+                report.append(f"{i}. **{name}**: 平均得分 {score:.2f}")
         
         report_path = os.path.join(output_dir, "comparison_report.md")
         with open(report_path, "w", encoding="utf-8") as f:
             f.write("\n".join(report))
         print(f"对比报告已保存: {report_path}")
         
-        # 打印摘要
+        # 打印终端摘要
         print("\n" + "=" * 80)
-        print("多模型评估结果摘要")
+        print("多模型评估结果摘要（按子集）")
         print("=" * 80)
         
-        # 打印表头
-        header_line = f"{'指标':<15}"
-        for name in model_names:
-            header_line += f"{name:>15}"
-        print(header_line)
-        print("-" * 80)
-        
-        for display_name, key in metrics_names:
-            row = f"{display_name:<15}"
-            for name in model_names:
-                val = valid_results[name]["metrics"].get(key, 0)
-                row += f"{val:>15.2f}"
-            print(row)
+        for subset_name, label in subset_labels.items():
+            if subset_name not in results:
+                continue
+            
+            subset_res = results[subset_name]
+            valid_models = [n for n in all_model_names if n in subset_res and "metrics" in subset_res[n]]
+            
+            if not valid_models:
+                continue
+            
+            print(f"\n[{label}]")
+            
+            # 打印表头
+            header_line = f"{'指标':<15}"
+            for name in valid_models:
+                # 截断过长的名称
+                display_name = name[:12] if len(name) > 12 else name
+                header_line += f"{display_name:>15}"
+            print(header_line)
+            print("-" * 80)
+            
+            for display_name, key in metrics_names:
+                row = f"{display_name:<15}"
+                for name in valid_models:
+                    val = subset_res[name]["metrics"].get(key, 0)
+                    row += f"{val:>15.2f}"
+                print(row)
         
         print("=" * 80)
-        print("\n综合排名:", " > ".join([n for n, _ in sorted_models]))
 
 
 def main():
