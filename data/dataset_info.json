@@ -79,5 +79,41 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "train_v4": {
+    "file_name": "train_v4.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "val_v4": {
+    "file_name": "val_v4.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "test_v4": {
+    "file_name": "test_v4.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "ifeval_alpaca": {
+    "file_name": "ifeval_alpaca.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }

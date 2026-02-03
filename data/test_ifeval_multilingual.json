@@ -1,0 +1,2102 @@
+[
+  {
+    "instruction": "用通俗易懂的语言向初学者解释机器翻译。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述边缘计算。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于大语言模型的文字，必须包含以下关键词：算法, 梯度下降, 特征提取。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出神经网络的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于自然语言处理的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好120个字概括生成对抗网络的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出自监督学习的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍自监督学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写神经网络的介绍，每段必须包含'特征提取'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述图像分割。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述边缘计算，开头必须是'众所周知'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述自然语言处理，开头必须是'随着技术发展'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明情感分析。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍知识蒸馏，但不要使用'很'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于计算机视觉的文字，字数要求在200到300之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写模型量化的介绍，每段必须包含'特征提取'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述知识蒸馏。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述文本分类。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于边缘计算的文字，必须包含以下关键词：神经网络, 人工智能, 推理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于大语言模型的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于150个字描述文本分类。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写强化学习的介绍，每段必须包含'人工智能'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出注意力机制的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写代码生成的介绍，每段必须包含'参数'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍提示工程，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述注意力机制，开头必须是'众所周知'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述图像分割时，请确保'深度学习'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写模型量化的介绍，每段必须包含'推理'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释分布式训练。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于Transformer架构的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于情感分析的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写推荐系统的介绍，每段必须包含'参数'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于提示工程的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释注意力机制。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于大语言模型的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于边缘计算的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述生成对抗网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述联邦学习，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于Transformer架构的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出提示工程的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好120个字概括情感分析的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述知识蒸馏，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好50个字概括注意力机制的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于大语言模型的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍自监督学习，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述命名实体识别的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于机器学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出神经网络的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明计算机视觉。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述机器翻译。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述迁移学习的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好50个字概括文本分类的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于深度学习的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于自监督学习的文字，必须包含以下关键词：推理, 优化, 神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于模型压缩的文字，必须包含以下关键词：推理, 反向传播, 深度学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述提示工程，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于200个字描述模型量化。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释模型压缩。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述自监督学习时，请确保'损失函数'这个词出现至少4次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍计算机视觉，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于机器翻译的文字，字数要求在200到350之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于联邦学习的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写计算机视觉的介绍，每段必须包含'训练'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于命名实体识别的文字，必须包含以下关键词：损失函数, 人工智能, 梯度下降。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述边缘计算。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释迁移学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写提示工程的介绍，每段必须包含'反向传播'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍自监督学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于大语言模型的文字，必须包含以下关键词：训练, 深度学习, 推理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以问答形式介绍强化学习，包含至少4个问题和回答。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释深度学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好80个字概括生成对抗网络的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好100个字概括情感分析的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于200个字描述机器翻译。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述自监督学习，开头必须是'众所周知'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于迁移学习的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍图像分割。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释迁移学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述异常检测的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明自然语言处理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于深度学习的文字，必须包含以下关键词：损失函数, 梯度下降, 人工智能。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述异常检测的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述推荐系统。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于生成对抗网络的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释Transformer架构。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述机器学习，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍推荐系统。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述知识蒸馏。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出深度学习的6个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述异常检测的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于计算机视觉的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于联邦学习的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍边缘计算。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍模型量化。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍代码生成，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出Transformer架构的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于150个字描述生成对抗网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于Transformer架构的文字，必须包含以下关键词：算法, 深度学习, 推理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述模型量化时，请确保'训练'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述命名实体识别的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出计算机视觉的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于提示工程的文字，字数要求在150到300之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出命名实体识别的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好100个字概括神经网络的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述自然语言处理时，请确保'模型'这个词出现至少4次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于文本分类的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于边缘计算的文字，字数要求在300到450之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于强化学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于生成对抗网络的文字，必须包含以下关键词：算法, 优化, 神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于联邦学习的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍计算机视觉，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好120个字概括模型压缩的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述文本分类。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释提示工程。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明推荐系统。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出RAG检索增强的5个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍语音识别。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出目标检测的4个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于100个字描述提示工程。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于200个字描述代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述神经网络，开头必须是'随着技术发展'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于迁移学习的文字，必须包含以下关键词：深度学习, 梯度下降, 人工智能。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述神经网络时，请确保'反向传播'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述图像分割，开头必须是'众所周知'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出知识蒸馏的3个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于大语言模型的文字，必须包含以下关键词：人工智能, 模型, 优化。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写大语言模型的介绍，每段必须包含'算法'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于强化学习的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于边缘计算的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于强化学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释联邦学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于推荐系统的文字，必须包含以下关键词：反向传播, 优化, 神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述Transformer架构的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍命名实体识别，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于深度学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述Transformer架构。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出注意力机制的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于语音识别的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好120个字概括语音识别的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于联邦学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述深度学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述模型量化时，请确保'优化'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出命名实体识别的4个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述模型量化的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于150个字描述模型量化。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于注意力机制的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于200个字描述计算机视觉。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于联邦学习的文字，必须包含以下关键词：神经网络, 反向传播, 人工智能。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述模型量化。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写4段关于RAG检索增强的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍机器学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于代码生成的文字，必须包含以下关键词：神经网络, 人工智能, 参数。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于情感分析的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于知识蒸馏的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好100个字概括分布式训练的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写3段关于注意力机制的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于生成对抗网络的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述注意力机制，开头必须是'众所周知'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述边缘计算的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出注意力机制的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于RAG检索增强的文字，字数要求在200到350之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于迁移学习的文字，字数要求在100到250之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写4段关于异常检测的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于深度学习的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于模型压缩的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍推荐系统。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍大语言模型。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于知识蒸馏的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述分布式训练。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于图像分割的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于分布式训练的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述注意力机制时，请确保'训练'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍语音识别，但不要使用'很'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于注意力机制的文字，必须包含以下关键词：人工智能, 深度学习, 算法。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于目标检测的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于100个字描述情感分析。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于分布式训练的文字，必须包含以下关键词：模型, 优化, 参数。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于模型量化的文字，字数要求在200到350之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍Transformer架构。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好100个字概括注意力机制的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于计算机视觉的文字，必须包含以下关键词：优化, 损失函数, 训练。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述联邦学习，开头必须是'随着技术发展'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好150个字概括生成对抗网络的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出边缘计算的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述模型量化时，请确保'特征提取'这个词出现至少4次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述模型压缩的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释文本分类。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以问答形式介绍代码生成，包含至少4个问题和回答。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于目标检测的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出文本分类的4个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出模型压缩的5个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍图像分割。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于边缘计算的文字，字数要求在100到300之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明边缘计算。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出图像分割的6个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好80个字概括计算机视觉的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于图像分割的文字，字数要求在150到250之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述机器学习时，请确保'反向传播'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于目标检测的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于模型压缩的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好50个字概括情感分析的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍深度学习，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于联邦学习的文字，必须包含以下关键词：梯度下降, 反向传播, 神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明强化学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍生成对抗网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍图像分割，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述异常检测，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于分布式训练的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释RAG检索增强。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍神经网络，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍计算机视觉，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍机器翻译，但不要使用'非常'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明语音识别。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出模型压缩的4个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述代码生成时，请确保'推理'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍模型压缩。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明大语言模型。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用JSON格式输出文本分类的关键信息。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好120个字概括边缘计算的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于语音识别的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述边缘计算的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述自然语言处理时，请确保'训练'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述模型量化时，请确保'算法'这个词出现至少3次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于联邦学习的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于150个字描述神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍分布式训练。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍迁移学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于代码生成的文字，字数要求在200到300之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于提示工程的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明RAG检索增强。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍强化学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于250个字描述生成对抗网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于分布式训练的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于机器翻译的文字，必须包含以下关键词：推理, 模型, 深度学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写模型量化的介绍，每段必须包含'训练'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于大语言模型的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍自然语言处理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写5段关于注意力机制的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明联邦学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍机器学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述机器学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于注意力机制的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释神经网络。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于语音识别的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述图像分割。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出分布式训练的4个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写4段关于提示工程的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好150个字概括深度学习的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于注意力机制的文字，必须包含以下关键词：推理, 神经网络, 参数。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述目标检测，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于300个字描述推荐系统。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用Markdown格式撰写关于机器翻译的说明，必须包含标题和分点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用恰好150个字概括命名实体识别的核心要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于150个字描述注意力机制。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于迁移学习的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述注意力机制的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述机器翻译。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用不少于200个字描述目标检测。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述语音识别的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍图像分割，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍自监督学习，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述自然语言处理的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写4段关于模型量化的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于模型量化的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释代码生成。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一篇关于情感分析的短文，必须以问句结尾。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍图像分割，但不要使用'很'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写计算机视觉的介绍，每段必须包含'深度学习'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述分布式训练。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍RAG检索增强，但不要使用'极其'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于神经网络的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述分布式训练的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写文本分类的介绍，每段必须包含'损失函数'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于计算机视觉的文字，必须包含以下关键词：算法, 深度学习, 反向传播。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍目标检测，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写Transformer架构的介绍，每段必须包含'反向传播'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请写3段关于深度学习的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "介绍异常检测，但不要使用'非常'这个词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用正式的学术语言描述语音识别。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于知识蒸馏的文字，字数要求在150到300之间。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "以问答形式介绍自监督学习，包含至少3个问题和回答。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用简洁的技术文档风格说明机器翻译。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述情感分析的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "撰写生成对抗网络的介绍，每段必须包含'推理'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于目标检测的文字，必须包含以下关键词：训练, 模型, 推理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于机器翻译的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "请用列表形式列出提示工程的6个要点。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于自监督学习的文字，必须包含以下关键词：训练, 特征提取, 推理。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述语音识别的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "写一段关于代码生成的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "在描述边缘计算时，请确保'神经网络'这个词出现至少2次。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "描述生成对抗网络，开头必须是'在当今时代'。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释迁移学习。",
+    "input": "",
+    "output": "",
+    "language": "zh",
+    "source": "chinese_templates"
+  }
+]

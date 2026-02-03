@@ -1,0 +1,68 @@
+### Granite 4.0-1B LoRA Finetune Config v3
+### 针对指令遵循能力增强版本 (v6模型训练配置)
+### 
+### v3改进点（相对v2）：
+### 1. 使用v4数据集（翻译:总结:指令遵循 = 1:1:1）
+### 2. 增大LoRA rank到96（提升多任务学习容量）
+### 3. 增加cutoff_len到2048（指令遵循任务通常较长）
+### 4. 增加训练轮数到5（三任务需要更多轮次）
+### 5. 略降学习率到1e-4（稳定多任务学习）
+
+### Model
+model_name_or_path: D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16
+trust_remote_code: true
+
+### Finetune method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### Dataset (v4 - 指令遵循增强版)
+dataset_dir: ./data
+dataset: train_v4
+eval_dataset: val_v4
+template: granite4
+cutoff_len: 2048
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 1
+
+### LoRA (增强版 - 多任务学习)
+### rank设为96，增强容量应对翻译+总结+指令遵循三任务
+lora_target: q_proj,k_proj,v_proj,o_proj
+lora_rank: 96
+lora_alpha: 192
+lora_dropout: 0.1
+
+### Training
+output_dir: ./outputs/granite-4.0-1B-lora_v6_instruction
+logging_steps: 10
+save_steps: 100
+save_total_limit: 5
+resume_from_checkpoint: true
+
+### Batch size (优化显存使用)
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+
+### Learning rate (略微降低，稳定多任务学习)
+learning_rate: 1.0e-4
+num_train_epochs: 5.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+weight_decay: 0.01
+
+### Optimizer
+optim: adamw_torch
+
+### Evaluation
+eval_strategy: steps
+eval_steps: 100
+per_device_eval_batch_size: 8
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+
+### Other
+report_to: none

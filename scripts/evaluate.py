@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-模型评估脚本 - 对比微调前后以及不同规模模型在翻译和总结任务上的表现
-评估指标：BLEU、ROUGE、BERTScore（业界标准）
+模型评估脚本 - 对比微调前后以及不同规模模型在翻译、总结和指令遵循任务上的表现
+评估指标：BLEU、ROUGE、BERTScore（业界标准）+ 指令遵循率（IFR）
 
 支持功能：
 1. 基础模型 vs 微调模型对比
 2. 多模型横向对比（如1B vs 7B vs 8B）
+3. 指令遵循能力评估（v6新增）
 """
 
 import os
 import json
 import argparse
 import random
+import re
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass, field
 from tqdm import tqdm
@@ -30,6 +32,305 @@ from bert_score import score as bert_score
 import jieba
 
 load_dotenv()
+
+
+# ============================================================
+# 指令遵循评估器（v6新增）
+# ============================================================
+
+class InstructionFollowingEvaluator:
+    """指令遵循评估器 - 评估模型对可验证指令的遵循能力"""
+    
+    # 可验证指令类型及对应的检测函数
+    VERIFIABLE_INSTRUCTIONS = {
+        # 字数约束
+        "min_words": {
+            "patterns": [
+                r"at least (\d+) words",
+                r"no less than (\d+) words", 
+                r"minimum (\d+) words",
+                r"不少于(\d+)个?字",
+                r"至少(\d+)个?字",
+            ],
+            "check": lambda text, param: len(text.split()) >= int(param) or len(text) >= int(param),
+        },
+        "max_words": {
+            "patterns": [
+                r"at most (\d+) words",
+                r"no more than (\d+) words",
+                r"maximum (\d+) words",
+                r"不超过(\d+)个?字",
+                r"最多(\d+)个?字",
+            ],
+            "check": lambda text, param: len(text.split()) <= int(param) or len(text) <= int(param),
+        },
+        "exact_words": {
+            "patterns": [
+                r"exactly (\d+) words",
+                r"恰好(\d+)个?字",
+            ],
+            "check": lambda text, param: abs(len(text.split()) - int(param)) <= 5 or abs(len(text) - int(param)) <= 10,
+        },
+        
+        # 段落约束
+        "min_paragraphs": {
+            "patterns": [
+                r"at least (\d+) paragraphs?",
+                r"至少(\d+)段",
+                r"不少于(\d+)段",
+            ],
+            "check": lambda text, param: text.count('\n\n') + 1 >= int(param) or text.count('\n') + 1 >= int(param),
+        },
+        "exact_paragraphs": {
+            "patterns": [
+                r"exactly (\d+) paragraphs?",
+                r"write (\d+) paragraphs?",
+                r"写(\d+)段",
+                r"分(\d+)段",
+            ],
+            "check": lambda text, param: abs((text.count('\n\n') + 1) - int(param)) <= 1,
+        },
+        
+        # 关键词包含
+        "keyword_include": {
+            "patterns": [
+                r"must include ['\"]([^'\"]+)['\"]",
+                r"include the (?:word|keyword) ['\"]([^'\"]+)['\"]",
+                r"必须包含['\"]([^'\"]+)['\"]",
+                r"包含关键词['\"]([^'\"]+)['\"]",
+            ],
+            "check": lambda text, param: param.lower() in text.lower(),
+        },
+        "keyword_count": {
+            "patterns": [
+                r"['\"]([^'\"]+)['\"].*at least (\d+) times",
+                r"['\"]([^'\"]+)['\"].*出现.*(\d+)次",
+                r"包含['\"]([^'\"]+)['\"](\d+)次",
+            ],
+            "check": lambda text, params: text.lower().count(params[0].lower()) >= int(params[1]) if isinstance(params, tuple) else True,
+        },
+        
+        # 排除约束
+        "keyword_exclude": {
+            "patterns": [
+                r"do not use ['\"]([^'\"]+)['\"]",
+                r"avoid (?:using )?['\"]([^'\"]+)['\"]",
+                r"without ['\"]([^'\"]+)['\"]",
+                r"不要使用['\"]([^'\"]+)['\"]",
+                r"禁止使用['\"]([^'\"]+)['\"]",
+            ],
+            "check": lambda text, param: param.lower() not in text.lower(),
+        },
+        
+        # 格式约束
+        "bullet_points": {
+            "patterns": [
+                r"use bullet points",
+                r"in bullet point format",
+                r"使用列表",
+                r"列表形式",
+            ],
+            "check": lambda text, _: bool(re.search(r'[-•*]\s', text)) or bool(re.search(r'^\d+\.', text, re.MULTILINE)),
+        },
+        "numbered_list": {
+            "patterns": [
+                r"use numbered list",
+                r"numbered format",
+                r"使用编号",
+                r"编号列表",
+            ],
+            "check": lambda text, _: bool(re.search(r'^\d+[.、)]\s', text, re.MULTILINE)),
+        },
+        "json_format": {
+            "patterns": [
+                r"in json format",
+                r"as json",
+                r"json格式",
+                r"JSON格式",
+            ],
+            "check": lambda text, _: ('{' in text and '}' in text) or ('[' in text and ']' in text),
+        },
+        
+        # 结构约束
+        "end_with_question": {
+            "patterns": [
+                r"end with a question",
+                r"ends with a question",
+                r"以问句结尾",
+                r"以问题结尾",
+            ],
+            "check": lambda text, _: text.rstrip().endswith('?') or text.rstrip().endswith('？'),
+        },
+        "start_with": {
+            "patterns": [
+                r"start with ['\"]([^'\"]+)['\"]",
+                r"begin with ['\"]([^'\"]+)['\"]",
+                r"开头[是为]['\"]([^'\"]+)['\"]",
+                r"以['\"]([^'\"]+)['\"]开头",
+            ],
+            "check": lambda text, param: text.strip().lower().startswith(param.lower()),
+        },
+    }
+    
+    @classmethod
+    def extract_constraints(cls, instruction: str) -> List[Tuple[str, any]]:
+        """从指令中提取可验证的约束条件
+        
+        Args:
+            instruction: 指令文本
+            
+        Returns:
+            约束条件列表 [(constraint_type, parameter), ...]
+        """
+        constraints = []
+        instruction_lower = instruction.lower()
+        
+        for constraint_type, config in cls.VERIFIABLE_INSTRUCTIONS.items():
+            for pattern in config["patterns"]:
+                match = re.search(pattern, instruction, re.IGNORECASE)
+                if match:
+                    # 提取参数
+                    if match.groups():
+                        if len(match.groups()) == 2:
+                            param = (match.group(1), match.group(2))
+                        else:
+                            param = match.group(1)
+                    else:
+                        param = None
+                    constraints.append((constraint_type, param))
+                    break  # 每种类型只匹配一次
+        
+        return constraints
+    
+    @classmethod
+    def check_constraint(cls, text: str, constraint_type: str, param: any) -> bool:
+        """检查输出是否满足约束条件
+        
+        Args:
+            text: 模型输出文本
+            constraint_type: 约束类型
+            param: 约束参数
+            
+        Returns:
+            是否满足约束
+        """
+        if constraint_type not in cls.VERIFIABLE_INSTRUCTIONS:
+            return True  # 未知约束类型默认通过
+        
+        check_fn = cls.VERIFIABLE_INSTRUCTIONS[constraint_type]["check"]
+        try:
+            return check_fn(text, param)
+        except Exception:
+            return False
+    
+    @classmethod
+    def evaluate_instruction_following(
+        cls, 
+        instruction: str, 
+        output: str
+    ) -> Dict:
+        """评估单个样本的指令遵循情况
+        
+        Args:
+            instruction: 指令文本
+            output: 模型输出
+            
+        Returns:
+            评估结果 {
+                "constraints": [(type, param, passed), ...],
+                "total": int,
+                "passed": int,
+                "rate": float
+            }
+        """
+        constraints = cls.extract_constraints(instruction)
+        
+        if not constraints:
+            return {
+                "constraints": [],
+                "total": 0,
+                "passed": 0,
+                "rate": 1.0,  # 无约束默认通过
+            }
+        
+        results = []
+        passed_count = 0
+        
+        for constraint_type, param in constraints:
+            passed = cls.check_constraint(output, constraint_type, param)
+            results.append((constraint_type, param, passed))
+            if passed:
+                passed_count += 1
+        
+        return {
+            "constraints": results,
+            "total": len(constraints),
+            "passed": passed_count,
+            "rate": passed_count / len(constraints) if constraints else 1.0,
+        }
+    
+    @classmethod
+    def compute_corpus_metrics(cls, eval_results: List[Dict]) -> Dict:
+        """计算语料级指令遵循指标
+        
+        Args:
+            eval_results: 各样本的评估结果列表
+            
+        Returns:
+            语料级指标
+        """
+        # 过滤有约束的样本
+        samples_with_constraints = [r for r in eval_results if r["total"] > 0]
+        
+        if not samples_with_constraints:
+            return {
+                "instruction_following_rate": 100.0,
+                "strict_accuracy": 100.0,
+                "constraint_satisfaction": 100.0,
+                "samples_evaluated": 0,
+                "total_constraints": 0,
+            }
+        
+        # 计算各项指标
+        total_constraints = sum(r["total"] for r in samples_with_constraints)
+        total_passed = sum(r["passed"] for r in samples_with_constraints)
+        
+        # Instruction Following Rate (IFR): 约束级通过率
+        ifr = (total_passed / total_constraints * 100) if total_constraints > 0 else 100.0
+        
+        # Strict Accuracy: 所有约束都通过的样本比例
+        strict_pass = sum(1 for r in samples_with_constraints if r["passed"] == r["total"])
+        strict_acc = (strict_pass / len(samples_with_constraints) * 100)
+        
+        # Per-constraint satisfaction rate
+        constraint_sat = ifr
+        
+        return {
+            "instruction_following_rate": ifr,
+            "strict_accuracy": strict_acc,
+            "constraint_satisfaction": constraint_sat,
+            "samples_evaluated": len(samples_with_constraints),
+            "total_constraints": total_constraints,
+        }
+
+
+# ============================================================
+# 指令遵循任务识别关键词
+# ============================================================
+
+INSTRUCTION_FOLLOWING_KEYWORDS = [
+    # 英文
+    "at least", "at most", "exactly", "no more than", "no less than",
+    "must include", "must contain", "do not use", "avoid using",
+    "bullet point", "numbered list", "json format", "markdown format",
+    "end with", "start with", "begin with",
+    "paragraphs", "sentences", "words",
+    # 中文
+    "不少于", "不超过", "至少", "最多", "恰好",
+    "必须包含", "不要使用", "禁止使用",
+    "列表形式", "编号", "JSON格式",
+    "以问句结尾", "以问题结尾", "开头必须",
+]
 
 
 # 预定义模型的prompt模板
@@ -236,9 +537,9 @@ class ModelEvaluator:
         return "en"
 
     def _classify_sample(self, sample: Dict) -> Optional[str]:
-        """根据instruction或task_type粗略判断是翻译还是总结"""
+        """根据instruction或task_type判断任务类型：翻译/总结/指令遵循"""
         task_type = sample.get("task_type", "").lower()
-        if task_type in ("translation", "summarization"):
+        if task_type in ("translation", "summarization", "instruction_following"):
             return task_type
         instr = sample.get("instruction", "")
         instr_lower = instr.lower()
@@ -250,10 +551,14 @@ class ModelEvaluator:
             "总结", "摘要", "概括", "summary", "summarize",
             "提炼", "提取主要观点", "总结以下", "概括下文",
         ]
+        # 优先检查翻译和总结
         if any(kw in instr_lower for kw in translation_keywords):
             return "translation"
         if any(kw in instr_lower for kw in summary_keywords):
             return "summarization"
+        # 检查指令遵循（v6新增）
+        if any(kw in instr_lower for kw in INSTRUCTION_FOLLOWING_KEYWORDS):
+            return "instruction_following"
         return None
 
     def _compute_metrics(
@@ -351,7 +656,7 @@ class ModelEvaluator:
     def compare_models(
         self, eval_file: str, max_samples: int = 0, output_dir: str = "evaluation"
     ) -> Dict:
-        """对比微调前后的模型表现（按任务类型拆分：翻译/总结）"""
+        """对比微调前后的模型表现（按任务类型拆分：翻译/总结/指令遵循）"""
         # 加载评估数据
         print(f"加载评估数据: {eval_file}")
         with open(eval_file, "r", encoding="utf-8") as f:
@@ -366,15 +671,19 @@ class ModelEvaluator:
         # 按任务类型拆分
         translation_data: List[Dict] = []
         summarization_data: List[Dict] = []
+        instruction_following_data: List[Dict] = []
         for sample in eval_data:
             task = self._classify_sample(sample)
             if task == "translation":
                 translation_data.append(sample)
             elif task == "summarization":
                 summarization_data.append(sample)
+            elif task == "instruction_following":
+                instruction_following_data.append(sample)
         
         print(f"翻译样本数: {len(translation_data)}")
         print(f"总结样本数: {len(summarization_data)}")
+        print(f"指令遵循样本数: {len(instruction_following_data)}")
         
         results: Dict[str, Dict] = {}
         
@@ -399,6 +708,24 @@ class ModelEvaluator:
             results.setdefault("summarization", {})["base_model"] = {
                 "metrics": base_metrics_sum.__dict__,
                 "details": base_details_sum,
+            }
+        
+        if instruction_following_data:
+            base_metrics_if, base_details_if = self.evaluate_model(
+                self.base_model, instruction_following_data, "基础模型-指令遵循子集"
+            )
+            # 计算指令遵循特有指标
+            if_eval_results = []
+            for detail in base_details_if:
+                if_result = InstructionFollowingEvaluator.evaluate_instruction_following(
+                    detail["instruction"], detail["prediction"]
+                )
+                if_eval_results.append(if_result)
+            if_corpus_metrics = InstructionFollowingEvaluator.compute_corpus_metrics(if_eval_results)
+            
+            results.setdefault("instruction_following", {})["base_model"] = {
+                "metrics": {**base_metrics_if.__dict__, **if_corpus_metrics},
+                "details": base_details_if,
             }
         
         # 释放基础模型显存（如果需要加载微调模型）
@@ -452,6 +779,23 @@ class ModelEvaluator:
                     "metrics": ft_metrics_sum.__dict__,
                     "details": ft_details_sum,
                 }
+            if instruction_following_data:
+                ft_metrics_if, ft_details_if = self.evaluate_model(
+                    self.finetuned_model, instruction_following_data, "微调模型-指令遵循子集"
+                )
+                # 计算指令遵循特有指标
+                if_eval_results = []
+                for detail in ft_details_if:
+                    if_result = InstructionFollowingEvaluator.evaluate_instruction_following(
+                        detail["instruction"], detail["prediction"]
+                    )
+                    if_eval_results.append(if_result)
+                if_corpus_metrics = InstructionFollowingEvaluator.compute_corpus_metrics(if_eval_results)
+                
+                results.setdefault("instruction_following", {})["finetuned_model"] = {
+                    "metrics": {**ft_metrics_if.__dict__, **if_corpus_metrics},
+                    "details": ft_details_if,
+                }
         
         # 生成对比报告
         self._generate_report(results, output_dir)
@@ -490,7 +834,9 @@ class ModelEvaluator:
         report.append("## 评估指标说明\n")
         report.append("- **BLEU**: 机器翻译标准评估指标，主要用于翻译子集")
         report.append("- **ROUGE-1/2/L**: 文本摘要评估指标，主要用于总结子集")
-        report.append("- **BERTScore**: 基于BERT的语义相似度评估\n")
+        report.append("- **BERTScore**: 基于BERT的语义相似度评估")
+        report.append("- **IFR (Instruction Following Rate)**: 指令遵循率，衡量模型对可验证指令的遵循能力")
+        report.append("- **Strict Accuracy**: 所有约束都满足的样本比例\n")
         
         metrics_names = [
             ("BLEU", "bleu"),
@@ -502,9 +848,17 @@ class ModelEvaluator:
             ("BERTScore-F1", "bert_f1"),
         ]
         
+        # 指令遵循特有指标
+        if_metrics_names = [
+            ("IFR", "instruction_following_rate"),
+            ("Strict Accuracy", "strict_accuracy"),
+            ("Samples Evaluated", "samples_evaluated"),
+        ]
+        
         subset_labels = {
             "translation": "翻译子集 (Translation)",
             "summarization": "总结子集 (Summarization)",
+            "instruction_following": "指令遵循子集 (Instruction Following)",
         }
         
         for subset_name, label in subset_labels.items():
@@ -528,6 +882,31 @@ class ModelEvaluator:
                     diff_str = "-"
                 ft_str = f"{ft_val:.2f}" if isinstance(ft_val, (int, float)) else ft_val
                 report.append(f"| {display_name} | {base_val:.2f} | {ft_str} | {diff_str} |")
+            
+            # 指令遵循子集额外输出特有指标
+            if subset_name == "instruction_following":
+                report.append("\n### 指令遵循特有指标\n")
+                report.append("| 指标 | 基础模型 | 微调模型 | 提升 |")
+                report.append("|------|----------|----------|------|")
+                for display_name, key in if_metrics_names:
+                    base_val = base_m.get(key, 0)
+                    ft_val = ft_m.get(key, 0) if ft_m else "-"
+                    if ft_m and isinstance(ft_val, (int, float)):
+                        diff = ft_val - base_val
+                        diff_str = f"+{diff:.2f}" if diff > 0 else f"{diff:.2f}"
+                    else:
+                        diff_str = "-"
+                    if isinstance(base_val, float):
+                        base_str = f"{base_val:.2f}"
+                    else:
+                        base_str = str(base_val)
+                    if isinstance(ft_val, float):
+                        ft_str = f"{ft_val:.2f}"
+                    elif isinstance(ft_val, int):
+                        ft_str = str(ft_val)
+                    else:
+                        ft_str = str(ft_val)
+                    report.append(f"| {display_name} | {base_str} | {ft_str} | {diff_str} |")
             
             report.append("\n### 子集结论\n")
             if ft_m:
@@ -672,9 +1051,9 @@ class MultiModelEvaluator:
         )
     
     def _classify_sample(self, sample: Dict) -> Optional[str]:
-        """根据instruction或task_type粗略判断是翻译还是总结"""
+        """根据instruction或task_type判断任务类型：翻译/总结/指令遵循"""
         task_type = sample.get("task_type", "").lower()
-        if task_type in ("translation", "summarization"):
+        if task_type in ("translation", "summarization", "instruction_following"):
             return task_type
         instr = sample.get("instruction", "")
         instr_lower = instr.lower()
@@ -686,10 +1065,14 @@ class MultiModelEvaluator:
             "总结", "摘要", "概括", "summary", "summarize",
             "提炼", "提取主要观点", "总结以下", "概括下文",
         ]
+        # 优先检查翻译和总结
         if any(kw in instr_lower for kw in translation_keywords):
             return "translation"
         if any(kw in instr_lower for kw in summary_keywords):
             return "summarization"
+        # 检查指令遵循（v6新增）
+        if any(kw in instr_lower for kw in INSTRUCTION_FOLLOWING_KEYWORDS):
+            return "instruction_following"
         return None
     
     def evaluate_single_model(
