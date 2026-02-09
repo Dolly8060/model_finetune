@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "base_model": [
+      {
+        "instruction": "请把下面这段话翻译成英文。",
+        "input": "委员会进一步关切地注意到有关西撒哈拉冲突导致的流离失所者历尽艰辛的报告，特别是妇女和儿童，他们按照《公约》应享有的权利显然遭受到了多重的侵犯，委员会敦促摩洛哥采取步骤，保护那些流离失所者的权利，确保他们的安全。",
+        "reference": "The Committee further noted with concern reports of the straitened circumstances endured by people displaced by the conflict in Western Sahara, particularly women and children who apparently suffer multiple violations of their rights under the Covenant, and urged Morocco to take steps to protect the rights of those displaced persons and to ensure their safety.",
+        "prediction": "The committee further noted with great concern the report regarding the plight of displaced persons caused by the West Sahar conflict, especially women and children, who clearly suffered multiple violations of their rights as stipulated in the Convention. The committee urged Morocco to take steps to protect the rights of displaced persons and ensure their safety."
+      },
+      {
+        "instruction": "Translate the following text into English.",
+        "input": "临时化学品审查委员会的第二次会议将于2001年3月19日至23日举行,而本委员会的第八届会议将于2001年10月8日至12日举行。",
+        "reference": "Decides to formally appoint the 29 experts designated by Governments identified below to act as members of the Interim Chemical Review Committee:",
+        "prediction": "The second meeting of the Temporary Chemicals Review Committee will be held from March 19 to 23, 2001, while the eighth meeting of this committee will be held from October 8 to 12, 2001."
+      }
+    ]
+  },
+  "summarization": {
+    "base_model": [
+      {
+        "instruction": "阅读下文，提炼其主要观点和方法。",
+        "input": "within the last decade an increasing interest in molecular electronics has developed , with the expectation of realising molecular diodes and transistors . \n this is based on the progress in manipulat...",
+        "reference": "we report on electronic transport calculations for self - assembled mono - layers ( sam ) of 1,4-phenylene diisocyanide on au(111 ) contacts . \n experimentally one observes more structure ( i.e  peaks ) within the measured conductance curve for this molecule with two cyanide end - groups , compared to measurements with molecules having thiol end - groups . \n the calculations are performed on the semi - empiric extended hckel level using elastic scattering quantum chemistry ( esqc ) and we investigate three possible explanations for the experimental findings . comparing the experimental and theoretical data , we are able to rule out all but one of the scenarios . the observed additional peaks are found to be only reproduced by a mono - layer with additional molecules perturbing the periodicity . \n it is conjectured that the weaker coupling to au of cyanide end - groups compared to thiol end - groups might be responsible for such perturbations .",
+        "prediction": "**主要观点：**\n\n1. 分子电子学近年来取得了显著进展，目标是实现分子蜿蜒和晶体管。\n2. 这种进展依赖于在分子到介观导体上的精确控制，使得能够测量分子的电导性特性。\n3. 为了设计和使用纳米级电子电路，理解和预测分子设备的电子行为至关重要。\n4. 已经进行了多项理论研究，旨在再现测量的电特性。\n5. 理论研究在处理分子的电能级、与导体耦合的影响以及由于偏置电压引起的静电势变化时采用了不同方法。\n6. 一些方法是基于经验的，而另一些是基于第一原理的，后者适用于中等规模的系统。\n7. 实验观察到的广泛行为表明，分子设备的电导性不仅取决于分子结构，还受设备制造过程的影响。\n8. 分子沉积到导体表面的关键步骤是通过自组装实现的，但无法精确控制沉积的分子数量及其位置，因此导致了未知的因素。\n9. 目前尚未能充分理解分子的几何排列与测量的电导性之间的相互作用。\n10. 本文旨在研究改变单层分子的几何排列对分子设备电导性的影响，以排除一些解释因素。\n\n**方法：**\n\n1. 使用经验方法和基于第一原理的方法进行理论研究。\n2. 在理论研究中考虑分子的电能级、"
+      }
+    ]
+  }
+}

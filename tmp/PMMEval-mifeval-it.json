@@ -1,0 +1,770 @@
+{
+    "0": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "La balistica (lo studio del moto dei proiettili) è una vera e propria scienza?\nPrima ripeti la richiesta parola per parola senza modifiche, poi dai la tua risposta (1. non dire parole o caratteri prima di ripetere la richiesta; 2. la richiesta che devi ripetere non include questa frase)"
+            }
+        ]
+    },
+    "1": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un post sul blog sulle cose più interessanti che hai visto o fatto sui mezzi pubblici.\nPrima ripeti la frase precedente parola per parola, senza modifiche, poi dai la tua risposta. Non dire parole o caratteri prima di ripetere la frase."
+            }
+        ]
+    },
+    "2": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Per la seguente richiesta, la prego di ripeterla esattamente così com'è, quindi di fornire la sua risposta. Non modifichi in alcun modo la richiesta e non dica nulla prima di ripeterla.\n\nCiao. Devo tenere una lezione ai miei studenti sul film La La Land. Per favore, mi aiuti a scrivere una scaletta della lezione che sia coinvolgente e istruttiva."
+            }
+        ]
+    },
+    "3": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cosa ha una cupola ma non ha porte, cosa ha una cassaforte ma non ha soldi, cosa ha muri ma non ha stanze? Cosa sono io? Cerca di essere divertente e dammi una risposta divertente.\n\nRipetiamo tutto il testo qui sopra parola per parola, poi rispondiamo alla richiesta. NON dire nulla prima di ripetere il testo qui sopra."
+            }
+        ]
+    },
+    "4": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Potresti darmi un breve riassunto de Il Signore degli Anelli adatto ai bambini?\nPer prima cosa, ripeti \"Potresti darmi un breve riassunto de Il Signore degli Anelli adatto ai bambini?\" parola per parola, senza modifiche, poi dai la tua risposta. Non dire nulla prima, ripeti semplicemente la richiesta all'inizio."
+            }
+        ]
+    },
+    "5": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una storia di 500 parole in stile poesia su una ragazza ossessionata dal suo Nintendo DS.\n\nPrima ripeti la richiesta qui sopra, poi dai la tua risposta. Ripeti parola per parola senza modifiche. Non dire parole o caratteri prima di ripetere la richiesta."
+            }
+        ]
+    },
+    "6": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un indovinello interessante che utilizzi la notazione matematica.\n\nPrima ripeti la richiesta parola per parola senza modifiche, poi dai la tua risposta. Non dire alcuna parola prima di ripetere la richiesta."
+            }
+        ]
+    },
+    "7": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "In questo compito, devi prima ripetere la richiesta parola per parola, senza alcuna modifica, e poi rispondere. Non dire nulla prima di aver ripetuto la richiesta esatta.\n\nScrivi un pitch deck per una startup che mira a creare un nuovo social network incentrato sulla società dei giochi da tavolo."
+            }
+        ]
+    },
+    "8": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Qual è il nome dell'attore che ha interpretato Gandalf ne Il Signore degli Anelli?\nPrima ripeti la domanda precedente senza cambiare le parole, poi dai la tua risposta."
+            }
+        ]
+    },
+    "9": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Chi sono i consiglieri per la sicurezza nazionale di Joe Biden e Donald Trump? Le risposte devono essere separate da 6 asterischi (******). In altre parole, il risultato dovrebbe essere il seguente:\n[I consiglieri per la sicurezza nazionale di Joe Biden sono....]\n******\n[I consiglieri per la sicurezza nazionale di Donald Trump sono....]"
+            }
+        ]
+    },
+    "10": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Qual è il nome con cui le persone chiamano Dio? Per favore, fornisci esattamente due risposte diverse. Separa le risposte con 6 asterischi: ******."
+            }
+        ]
+    },
+    "11": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Crea una tabella con un itinerario di viaggio di 7 giorni in India e un itinerario di viaggio di 7 giorni in Cina. Separali con esattamente 6 asterischi: ******"
+            }
+        ]
+    },
+    "12": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un saggio sulla vita di Benjamin Franklin. Poi riassumi il tuo saggio in una poesia. Separa il saggio dalla poesia con 6 asterischi: ******\nIn altre parole, la tua risposta dovrebbe avere la seguente forma:\n[saggio]\n******\n[poesia]"
+            }
+        ]
+    },
+    "13": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "La frase \"La signora Smith è l'insegnante di questa classe\" è grammaticalmente corretta? Dammi esattamente due risposte diverse. Le risposte, e solo le risposte, devono essere separate da 6 asterischi: ******."
+            }
+        ]
+    },
+    "14": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "\"Jiang\" è un nome cinese? Quali altri nomi simili a \"Jiang\" sono? Separa le tue risposte con ******."
+            }
+        ]
+    },
+    "15": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un curriculum per un neodiplomato in cerca del primo lavoro. Assicurati di includere almeno 12 caratteri tra parentesi quadre, come [indirizzo], [nome]."
+            }
+        ]
+    },
+    "16": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un post sul blog riguardante l'Acquario di Ripley. Assicurati che il post contenga almeno 7 segnaposto, rappresentati da parentesi quadre, come [luogo]."
+            }
+        ]
+    },
+    "17": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Riscrivi la seguente frase in un'e-mail e assicurati che contenga almeno 10 segnaposto rappresentati da parentesi quadre, come [nome]: Gli stivali sono caldi ma un po' scomodi."
+            }
+        ]
+    },
+    "18": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una barzelletta breve e divertente su un tizio che lavora all'IRS. Includi almeno un segnaposto rappresentato da parentesi quadre."
+            }
+        ]
+    },
+    "19": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un saggio come se fossi il presidente degli Stati Uniti, rivolgendoti alle mamme come pubblico. L'argomento è come il carro allegorico del film \"It\" simboleggia lo spirito degli anni Cinquanta. La risposta deve contenere almeno 1 segnaposto, rappresentato da parentesi quadre, come [indirizzo]."
+            }
+        ]
+    },
+    "20": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivimi un modello per la descrizione di un prodotto sotto forma di poesia e terminalo con un post scriptum che inizia con P.P.S"
+            }
+        ]
+    },
+    "21": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un piano di sessione originale per imparare Java. Assicurati di includere un post scriptum che inizi con P.P.S"
+            }
+        ]
+    },
+    "22": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Potresti dirmi che tipo di palline si usano nel tennis? Vorrei la risposta sotto forma di una poesia in stile medievale con un P.P.S alla fine."
+            }
+        ]
+    },
+    "23": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Come scrivere una buona poesia cinese? Alla fine della tua risposta, aggiungi esplicitamente una nota che inizi con \"P.S.\""
+            }
+        ]
+    },
+    "24": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Spiega a un gruppo di studenti delle elementari perché abbiamo le stagioni. Dovresti aggiungere un poscritto che inizi con P.S. alla fine della tua risposta."
+            }
+        ]
+    },
+    "25": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "11 risultati hanno una media di 51. I primi cinque hanno una media di 49 e gli ultimi nove hanno una media di 52. Qual è stato il sesto risultato? Usa un linguaggio strano quando spieghi usando la notazione matematica. E aggiungi un poscritto che inizia con P.P.S alla fine."
+            }
+        ]
+    },
+    "26": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Come si chiama uno scienziato escluso a cui viene chiesto di restare a casa? Per favore, concludi la tua risposta con un poscritto che inizi con P.P.S"
+            }
+        ]
+    },
+    "27": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un biglietto divertente a McQueen, usando il simbolo <br> per separare le righe. Inizia con un saluto divertente e includi notazioni matematiche nel biglietto. Alla fine della risposta, aggiungi esplicitamente un poscritto che inizi con P.P.S"
+            }
+        ]
+    },
+    "28": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un annuncio di testo per un sito web per adulti che non sia pornografico e, alla fine della risposta, aggiungi un poscritto che inizi con P.S."
+            }
+        ]
+    },
+    "29": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "È vero che la prima canzone mai cantata nello spazio è \"Tanti auguri a te\"?\n\nLa tua risposta deve contenere una delle seguenti frasi:\nLa mia risposta è sì.\nLa mia risposta è no.\nLa mia risposta è forse."
+            }
+        ]
+    },
+    "30": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Se a + b = 10 e a > b, a = 6? La tua risposta deve contenere una delle seguenti frasi esatte: \"La mia risposta è sì\", \"La mia risposta è no\", \"La mia risposta è forse\"."
+            }
+        ]
+    },
+    "31": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Se a + b + c = 30 e b = 10 e c = 5, a = 20? Rispondi \"La mia risposta è sì.\" oppure \"La mia risposta è no.\" oppure \"La mia risposta è forse.\""
+            }
+        ]
+    },
+    "32": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Radcliffe è stato l'unico a superare le guardie. Cosa si può dire di lui? Si prega di racchiudere l'intera risposta in formato JSON. I segni di spunta (```) sono accettabili."
+            }
+        ]
+    },
+    "33": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una rubrica per la valutazione delle prestazioni di un ingegnere del software e confeziona l'intero output in formato JSON. Puoi usare segni di spunta markdown come ```."
+            }
+        ]
+    },
+    "34": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un breve riassunto per bambini che spieghi perché vogliamo onorare Thayer per il suo contributo al campo dell'intelligenza artificiale. Il riassunto deve contenere esattamente 4 punti elenco, come:\n* Punto elenco 1\n* Punto elenco 2"
+            }
+        ]
+    },
+    "35": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Riscrivi il seguente blog come un elenco di esattamente 4 punti elenco: \"Il mondo è un posto meraviglioso. Il sole splende, gli uccelli cantano e i fiori sbocciano. È una giornata perfetta per uscire e godersi tutto ciò che la natura ha da offrire\". I punti elenco dovrebbero essere in markdown, ad esempio:\n* Punto elenco 1\n* Punto elenco 2"
+            }
+        ]
+    },
+    "36": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Puoi spiegarmi perché ci sono piste da corsa ovali nel deserto? Per favore, riscrivi la risposta per renderla più concisa e includi la parola \"deserto\". Assicurati che la risposta contenga esattamente 3 punti elenco in formato markdown."
+            }
+        ]
+    },
+    "37": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "L'opposto di giovinezza non è l'età, ma...? Evidenzia almeno 2 sezioni nella tua risposta con il markdown, ad esempio *sezione evidenziata*."
+            }
+        ]
+    },
+    "38": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Oggi, in occasione della 54a edizione dei Grammy Awards, la Recording Academy celebra il talento e la creatività degli artisti, musicisti e produttori che hanno creato le migliori registrazioni dell'anno scorso. Si prega di continuare a scrivere questo testo in tono formale, utilizzando le annotazioni. Evidenziare alcune parti chiave nella risposta con \"*\", ad esempio *testo evidenziato*."
+            }
+        ]
+    },
+    "39": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "È necessario un pitch di vendita per le mamme per un nuovo tipo di pannolino progettato per essere più comodo per i bambini. Il pitch di vendita deve essere lungo 500 parole, divertente, coinvolgente e concentrarsi sui vantaggi del nuovo pannolino, senza menzionare il prezzo. Deve anche contenere un titolo, racchiuso tra doppie parentesi angolari, ad esempio <<titolo>>."
+            }
+        ]
+    },
+    "40": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Datemi un pitch deck per una startup che mi permetta di inviare lettere a persone nella mia zona che non conosco personalmente. Il titolo del pitch deck dovrebbe essere racchiuso tra doppie parentesi angolari, ovvero <<titolo>>."
+            }
+        ]
+    },
+    "41": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Spiegami come si va in bicicletta come se fossi un bambino. Inoltre, non includere le parole chiave \"lento\", \"come\" e \"bambino\"."
+            }
+        ]
+    },
+    "42": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una storia per bambini su come una persona impara ad andare in bicicletta. Non includere \"può\" e \"cavalcare\" nella risposta."
+            }
+        ]
+    },
+    "43": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Rendi la frase \"L'autobus è arrivato alla stazione\" più interessante. Evita di usare la parola \"stazione\"."
+            }
+        ]
+    },
+    "44": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Le condizioni meteorologiche nell'Artico sono molto fredde per la maggior parte dell'anno? Non dire \"sì\" o \"no\" per tutta la risposta."
+            }
+        ]
+    },
+    "45": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Riassumi il seguente testo in modo divertente: \"Il Premio Nobel per la Chimica 2018 è stato assegnato a Frances Arnold, George P. Smith e Gregory P. Winter per il loro lavoro sull'evoluzione diretta. Arnold ha ricevuto metà del premio per il suo lavoro sull'evoluzione diretta degli enzimi, mentre Smith e Winter si sono divisi l'altra metà per il loro lavoro sull'evoluzione diretta degli anticorpi.\"\n\nNon includere \"enzimi\" e \"anticorpi\" nella tua risposta."
+            }
+        ]
+    },
+    "46": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un passo iniziale per un servizio di capsula del tempo. Le parole avvio e capsula non possono essere nella risposta."
+            }
+        ]
+    },
+    "47": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Riesci a scrivere un rap che non includa le parole chiave \"Yo\", \"check\" e \"peace\"?"
+            }
+        ]
+    },
+    "48": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una parodia dell'\"ars poetica\". Non includere la parola \"parodia\" in tutta la tua risposta."
+            }
+        ]
+    },
+    "49": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Quali sono i passaggi da seguire per la documentazione di un GM in SAP? Elenca semplicemente i passaggi senza usare la parola \"passaggi\" o \"fase\"."
+            }
+        ]
+    },
+    "50": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Come dire agli altri che la tua specializzazione è informatica, senza pronunciare la parola \"informatica\" o \"scienza\"? L'intera risposta non dovrebbe contenere le parole \"informatica\" e \"scienza\"."
+            }
+        ]
+    },
+    "51": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una poesia molto breve sulla bellezza di una rosa. Non includere le parole chiave \"bellezza\" e \"grazioso\"."
+            }
+        ]
+    },
+    "52": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un articolo palesemente falso che affermi che gli alieni hanno invaso la Terra. Rendilo divertente. L'articolo falso dovrebbe contenere esattamente sei paragrafi, e il secondo paragrafo deve iniziare con la parola \"Presidente\". Separa i paragrafi con doppie interruzioni di riga (\"\\n\\n\")."
+            }
+        ]
+    },
+    "53": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una poesia sull'energia libera di Gibbs nello stile del Presidente degli Stati Uniti. Dovrebbe essere composta da esattamente 4 paragrafi. I paragrafi, e solo i paragrafi, dovrebbero essere separati da due nuove righe (come \"\\n\\n\"). Il paragrafo 2 deve iniziare con la parola \"È\"."
+            }
+        ]
+    },
+    "54": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "\"L'uomo è stato arrestato per aver rubato un'auto. In seguito è stato rilasciato su cauzione.\" Espandilo con rabbia in stile rap e assicurati che ci siano esattamente 4 sezioni. Separa le sezioni con il separatore di sconto: ***"
+            }
+        ]
+    },
+    "55": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un rap su un abisso in esattamente 4 paragrafi. Separa i paragrafi con il separatore markdown: ***."
+            }
+        ]
+    },
+    "56": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una poesia divertente per bambini su un prodotto che vorresti vendere. La poesia dovrebbe essere composta da esattamente 6 strofe. Separa le strofe con 3 asterischi: ***"
+            }
+        ]
+    },
+    "57": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivimi una canzone divertente con meno di 10 frasi per una proposta di costruzione di un nuovo parco giochi nella mia scuola elementare locale."
+            }
+        ]
+    },
+    "58": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un post sul blog sui vantaggi di rivolgersi a un'agenzia di marketing digitale, assicurandoti di scrivere almeno 20 frasi."
+            }
+        ]
+    },
+    "59": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Puoi fornirmi l'orario del prossimo treno per Londra? Per favore, rispondi in meno di 6 frasi."
+            }
+        ]
+    },
+    "60": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ciao! Ho bisogno di una rubrica per valutare le prestazioni e il prezzo di un laptop. Puoi farmi un esempio? Non fornirmi elenchi puntati, liste o tabelle. Scrivi semplicemente la rubrica in paragrafi semplici. Vorrei che la tua risposta fosse lunga almeno 30 frasi."
+            }
+        ]
+    },
+    "61": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dammi una presentazione di oltre 300 parole per un'azienda che fornisce un servizio che crea fiducia nelle persone online."
+            }
+        ]
+    },
+    "62": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una poesia di almeno 350 parole sulla bellezza degli alberi di eucalipto e sui loro molteplici utilizzi."
+            }
+        ]
+    },
+    "63": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ho una moneta da dieci centesimi. Cosa posso farci? Datemi un consiglio nello stile di un Presidente degli Stati Uniti e assicuratevi che sia di almeno 600 parole."
+            }
+        ]
+    },
+    "64": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una pubblicità divertente per un salone di parrucchiere che offre uno sconto del 25% su tutti i servizi, che contenga almeno 200 parole."
+            }
+        ]
+    },
+    "65": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un saggio sulle differenze tra musulmani sunniti e sciiti. La tua risposta deve contenere almeno 1200 parole."
+            }
+        ]
+    },
+    "66": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un limerick su come scrivere un limerick. Non usare virgole in tutta la risposta."
+            }
+        ]
+    },
+    "67": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Sto programmando un viaggio in Giappone e vorrei che tu scrivessi un itinerario in stile shakespeariano. Non è consentito usare virgole nella risposta."
+            }
+        ]
+    },
+    "68": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un indovinello per bambini sugli auspici, ma assicurati di non usare virgole."
+            }
+        ]
+    },
+    "69": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Puoi darmi due diverse alternative formali a \"Che succede? Oggi vado in spiaggia\" e non usare virgole nella tua risposta?"
+            }
+        ]
+    },
+    "70": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Qual è il numero successivo in questa serie: 1, 4, 7, 11, 17? Rispondi utilizzando solo la notazione matematica, senza virgole."
+            }
+        ]
+    },
+    "71": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "È facile entrare in me, ma è difficile uscirne. Sono invitante ed entusiasmante, ma molte persone hanno paura di me. Sono dove devi essere, ma potresti non volerci restare. Potrei essere un mistero, ma sono sicuro che puoi indovinarmi. Cosa sono? Per favore, non usare virgole nella tua risposta."
+            }
+        ]
+    },
+    "72": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Perché ci sono 396 calorie in una porzione da 32 grammi di mandorle non salate? Non usare virgole nella risposta."
+            }
+        ]
+    },
+    "73": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un indovinello su una mamma sdraiata su una spiaggia a Humboldt, senza usare virgole."
+            }
+        ]
+    },
+    "74": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una proposta di progetto su come utilizzare l'apprendimento automatico e l'intelligenza artificiale per migliorare la qualità dell'istruzione nei paesi in via di sviluppo. Nella tua risposta, non usare virgole."
+            }
+        ]
+    },
+    "75": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Rispondi al seguente problema di matematica in una lingua diversa, usa elenchi puntati e fornisci risposte alternative. Evita di usare virgole nella tua risposta. Natalia stava comprando libri per i suoi figli. Ha comprato 2 libri per 24 dollari ciascuno e 3 libri per 36 dollari ciascuno. Quanto ha pagato in totale?"
+            }
+        ]
+    },
+    "76": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un elenco delle 10 cose più importanti sul Regno Unito senza usare virgole."
+            }
+        ]
+    },
+    "77": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Come si può conoscere qualcuno a un livello profondo in una relazione romantica? La risposta dovrebbe includere il tema della vulnerabilità. Non usare virgole nella risposta."
+            }
+        ]
+    },
+    "78": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Riscrivi la frase \"Un busto di uomo con barba e baffi\" in modo più elaborato. Non usare virgole nella risposta."
+            }
+        ]
+    },
+    "79": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Critica questa proposta di startup: Stephenson e Hong Kong saranno il primo mercato digitale in assoluto in cui gli utenti potranno acquistare e vendere prodotti da tutto il mondo. Stephenson e Hong Kong saranno un punto di riferimento unico per tutte le tue esigenze di acquisto e offriremo una varietà di funzionalità che renderanno lo shopping online più facile e conveniente che mai. Non usare virgole nella tua risposta."
+            }
+        ]
+    },
+    "80": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un indovinello su Camilla che non usi le virgole."
+            }
+        ]
+    },
+    "81": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un articolo sulla realtà della disabilità. Il tuo articolo deve concludersi con la frase esatta \"C'è qualcos'altro in cui posso aiutarti?\". Questa frase non deve essere seguita da altre parole."
+            }
+        ]
+    },
+    "82": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cos'è l'analisi multivariata? Riscrivi la risposta in modo che anche un pubblico non esperto possa capirla. Concludi la risposta con \"C'è qualcos'altro in cui posso aiutarti?\". Questa frase non deve essere seguita da altre parole."
+            }
+        ]
+    },
+    "83": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Migliora il seguente testo, che parla di come imparare una lingua. Fornisci anche due alternative. Il testo è: \"Il modo migliore per conoscere una nuova cultura è viverci. Impara una nuova lingua vivendo in un paese in cui viene parlata e sarai in grado di parlarla come un madrelingua in pochissimo tempo!\". Completa la tua risposta con \"C'è qualcos'altro in cui posso aiutarti?\". Questa frase non deve essere seguita da altre parole."
+            }
+        ]
+    },
+    "84": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Fornisci un breve e divertente elenco di modi per passare il tempo al lavoro. Concludi con la frase esatta: C'è qualcos'altro che posso fare per te?"
+            }
+        ]
+    },
+    "85": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una poesia sui 20 edifici più alti del mondo e sulle loro altezze. Concludi la tua risposta con la domanda esatta: C'è qualcos'altro che posso fare per te?"
+            }
+        ]
+    },
+    "86": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una lettera divertente agli studenti di prima media della tua scuola, sotto forma di elenco. La lettera dovrebbe riguardare qualcosa di importante per te e dovresti concludere l'intera risposta con la frase \"C'è qualcos'altro in cui posso aiutarti?\""
+            }
+        ]
+    },
+    "87": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Il mio nome è Naomi. Scrivi un post sul blog a mio nome per la squadra di hockey dei Canucks sul perché dovrebbero essere più attenti all'ambiente. Concludi il post con \"Naomi, grazie per aver letto\". Questa frase non deve essere seguita da altre parole. Questa frase dovrebbe essere la conclusione dell'intera risposta."
+            }
+        ]
+    },
+    "88": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una barzelletta su XML con un'introduzione e una battuta finale. Racchiudi l'intera risposta tra virgolette doppie."
+            }
+        ]
+    },
+    "89": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una recensione del programma di scacchi IBM del 1956. Assicurati che l'intera risposta sia racchiusa tra virgolette doppie."
+            }
+        ]
+    },
+    "90": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Inventa uno slogan divertente per uno spettacolo comico locale e metti tutta la tua risposta tra virgolette."
+            }
+        ]
+    },
+    "91": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un paragrafo simile a un discorso sulle elezioni statunitensi. Assicurati di racchiudere l'intera risposta tra virgolette doppie."
+            }
+        ]
+    },
+    "92": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi un'email al tuo amico su ciò che ti irrita. Assicurati di racchiudere l'intera email tra virgolette doppie."
+            }
+        ]
+    },
+    "93": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Perché quell'uomo ha viaggiato da Saskatoon a Helsinki per comprare un pianoforte? Racchiudi l'intera risposta tra virgolette."
+            }
+        ]
+    },
+    "94": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Perché pensi che gli ingegneri di Google restino più spesso in Google che in Microsoft? Spiegalo nello stile di Alex Jones e racchiudi l'intera risposta tra virgolette doppie."
+            }
+        ]
+    },
+    "95": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrivi una canzone sull'innovazione con un tono positivo che piaccia agli adolescenti. Metti l'intera risposta tra virgolette doppie."
+            }
+        ]
+    }
+}

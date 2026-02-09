@@ -1,0 +1,220 @@
+{
+  "translation": {
+    "bleu": 82.76547520982224,
+    "rouge1": 52.86107168972616,
+    "rouge2": 37.15742757711946,
+    "rougeL": 50.20583871722894,
+    "bert_precision": 92.65623092651367,
+    "bert_recall": 92.72639751434326,
+    "bert_f1": 92.66930222511292
+  },
+  "summarization": {
+    "bleu": 39.375720272701095,
+    "rouge1": 40.43922467132817,
+    "rouge2": 18.079162129138048,
+    "rougeL": 35.00444839856676,
+    "bert_precision": 87.92421221733093,
+    "bert_recall": 87.44217157363892,
+    "bert_f1": 87.6684844493866
+  },
+  "instruction_following": {
+    "bleu": 18.008400816295385,
+    "rouge1": 44.37552073619002,
+    "rouge2": 24.990646014472716,
+    "rougeL": 32.33905825259723,
+    "bert_precision": 90.57428240776062,
+    "bert_recall": 90.2325689792633,
+    "bert_f1": 90.38040041923523,
+    "instruction_following_rate": 87.70370370370371,
+    "strict_accuracy": 71.07438016528926,
+    "loose_accuracy": 89.6694214876033,
+    "samples_evaluated": 242,
+    "no_constraint_samples": 993,
+    "total_constraints": 675,
+    "avg_constraints_per_sample": 2.7892561983471076,
+    "by_constraint_type": {
+      "response_language": {
+        "total": 92,
+        "passed": 89,
+        "rate": 96.73913043478261
+      },
+      "min_sentences": {
+        "total": 70,
+        "passed": 63,
+        "rate": 90.0
+      },
+      "title_double_brackets": {
+        "total": 35,
+        "passed": 35,
+        "rate": 100.0
+      },
+      "paragraph_divider": {
+        "total": 42,
+        "passed": 42,
+        "rate": 100.0
+      },
+      "word_frequency": {
+        "total": 47,
+        "passed": 40,
+        "rate": 85.1063829787234
+      },
+      "exact_paragraphs": {
+        "total": 26,
+        "passed": 21,
+        "rate": 80.76923076923077
+      },
+      "min_words": {
+        "total": 32,
+        "passed": 23,
+        "rate": 71.875
+      },
+      "keyword_count": {
+        "total": 35,
+        "passed": 27,
+        "rate": 77.14285714285715
+      },
+      "max_words": {
+        "total": 26,
+        "passed": 25,
+        "rate": 96.15384615384616
+      },
+      "keyword_include_zh": {
+        "total": 8,
+        "passed": 7,
+        "rate": 87.5
+      },
+      "highlight_sections": {
+        "total": 30,
+        "passed": 28,
+        "rate": 93.33333333333333
+      },
+      "section_markers": {
+        "total": 13,
+        "passed": 12,
+        "rate": 92.3076923076923
+      },
+      "zh_three_part_structure": {
+        "total": 2,
+        "passed": 2,
+        "rate": 100.0
+      },
+      "all_lowercase": {
+        "total": 28,
+        "passed": 28,
+        "rate": 100.0
+      },
+      "quotation_wrap": {
+        "total": 8,
+        "passed": 8,
+        "rate": 100.0
+      },
+      "bullet_points": {
+        "total": 5,
+        "passed": 1,
+        "rate": 20.0
+      },
+      "postscript": {
+        "total": 55,
+        "passed": 44,
+        "rate": 80.0
+      },
+      "placeholder_count": {
+        "total": 35,
+        "passed": 30,
+        "rate": 85.71428571428571
+      },
+      "max_sentences": {
+        "total": 7,
+        "passed": 7,
+        "rate": 100.0
+      },
+      "start_with": {
+        "total": 4,
+        "passed": 4,
+        "rate": 100.0
+      },
+      "end_with_question": {
+        "total": 4,
+        "passed": 2,
+        "rate": 50.0
+      },
+      "numbered_list": {
+        "total": 3,
+        "passed": 3,
+        "rate": 100.0
+      },
+      "zh_keyword_per_paragraph": {
+        "total": 2,
+        "passed": 2,
+        "rate": 100.0
+      },
+      "keyword_exclude": {
+        "total": 8,
+        "passed": 8,
+        "rate": 100.0
+      },
+      "zh_no_degree_adverbs": {
+        "total": 4,
+        "passed": 4,
+        "rate": 100.0
+      },
+      "min_paragraphs": {
+        "total": 4,
+        "passed": 4,
+        "rate": 100.0
+      },
+      "table_format": {
+        "total": 14,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "json_format": {
+        "total": 6,
+        "passed": 6,
+        "rate": 100.0
+      },
+      "zh_qa_format": {
+        "total": 4,
+        "passed": 4,
+        "rate": 100.0
+      },
+      "zh_no_adjectives": {
+        "total": 1,
+        "passed": 1,
+        "rate": 100.0
+      },
+      "exact_words": {
+        "total": 2,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "zh_keyword_count": {
+        "total": 2,
+        "passed": 2,
+        "rate": 100.0
+      },
+      "repeat_prompt": {
+        "total": 8,
+        "passed": 8,
+        "rate": 100.0
+      },
+      "separator_asterisks": {
+        "total": 6,
+        "passed": 6,
+        "rate": 100.0
+      },
+      "markdown_format": {
+        "total": 1,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "no_commas": {
+        "total": 6,
+        "passed": 6,
+        "rate": 100.0
+      }
+    },
+    "content_quality_samples": 179,
+    "content_quality_skipped": 1056
+  }
+}

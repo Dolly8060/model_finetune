@@ -8,7 +8,7 @@
 |------|------|
 | 数据生成 | 调用AI API生成高质量翻译+总结混合数据集（聚焦计算机/AI领域） |
 | 模型微调 | 支持LoRA/QLoRA/全量微调，YAML配置驱动 |
-| 效果评估 | BLEU/ROUGE/BERTScore量化对比微调前后表现 |
+| 效果评估 | BLEU/ROUGE/BERTScore + 指令遵循约束检测(35种约束模式)，两阶段评估(推理+评分分离) |
 
 ## 数据生成设计原则
 
@@ -126,24 +126,27 @@ model_finetune/
 │   ├── train_v3.json          # v3 训练集(v5 模型训练数据源)
 │   ├── val_v3.json            # v3 验证集(checkpoint 选择)
 │   ├── test_v3.json           # v3 测试集(v5 性能指标来源)
+│   ├── test_v4_enhanced.json  # v4 增强测试集(翻译+总结+指令遵循, 1643条)
 │   ├── public_val_v2.json     # 公开评估集(900 条,0% 训练集重叠)
 │   ├── public_val_v2_en2zh.json   # 英→中翻译子集(284 条)
 │   ├── public_val_v2_zh2en.json   # 中→英翻译子集(316 条)
 │   ├── train.json             # 历史训练数据(已被 train_v3.json 替代)
-│   ├── val.json               # 历史验证数据
-│   └── train_mixed_3k.json    # 历史混合训练集
+│   └── val.json               # 历史验证数据
 ├── scripts/
 │   ├── generate_dataset.py    # 数据集生成脚本(支持 API 批量生成)
 │   ├── download_public_datasets.py  # 公开数据集下载工具
 │   ├── build_v3_dataset.py    # v3 数据集构建脚本
+│   ├── build_test_v4_enhanced.py   # v4 增强测试集构建(翻译+总结+IF)
 │   ├── augment_training_data.py    # 数据增强与混合工具
 │   ├── analyze_dataset.py     # 数据集统计分析工具
 │   ├── evaluate.py            # 模型评估脚本(支持多模型对比)
+│   ├── generate.py            # 批量推理脚本(多模型推理并保存结果)
+│   ├── score.py               # 评分脚本(指标计算+指令遵循约束检测)
 │   └── monitor_training.py    # 训练进度实时监控工具
 ├── evaluation/                 # 评估结果输出目录
-│   ├── pubilc_v5_test_fixed/  # v5 在 test_v3.json 上的评估结果
-│   ├── own_dataset_v4/        # v4 历史评估结果
-│   └── public_dataset_v4/     # 公开数据评估结果
+│   ├── output_data/           # generate.py 推理结果
+│   ├── performance/           # score.py 评分报告
+│   └── ...                    # 其他历史评估结果
 ├── outputs/                    # 微调模型输出目录(被 .gitignore 忽略)
 │   └── granite-4.0-1B-lora_v5_translation/  # v5 版本 LoRA 适配器
 ├── .env                        # 环境配置文件(被 .gitignore 忽略)
@@ -331,7 +334,7 @@ python scripts/monitor_training.py --output-dir outputs/granite-4.0-1B-lora_v5_t
 
 ### 步骤3：评估对比
 
-支持两种评估模式：微调前后对比 和 多模型横向对比。
+支持三种评估模式：微调前后对比、多模型横向对比、两阶段评估（推理+评分分离）。
 
 #### 模式A：微调前后对比
 
@@ -441,6 +444,145 @@ python scripts/evaluate.py --compare-models \
 - `evaluation/comparison_results.json` - 各模型指标数据
 - `evaluation/comparison_details.json` - 详细输出样本（每模型前10条）
 
+#### 模式C：两阶段评估（推理+评分分离） — 推荐
+
+将推理和评分分开执行，适用于：
+- 推理耗时长，需要分批运行
+- 想复用推理结果进行多次评分（调整约束检测后无需重新推理）
+- 需要检查推理输出后再评分
+- 需要评估**指令遵循 (Instruction Following)** 能力
+
+##### 第一步：批量推理 (generate.py)
+
+对一个或多个模型运行推理，保存预测结果到 JSON 文件。
+
+```bash
+conda activate granite_ft
+
+# 单模型推理（推荐使用 test_v4_enhanced.json，包含翻译+总结+指令遵循）
+python scripts/generate.py \
+  --models "Granite-v6:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16:outputs/granite-4.0-1B-lora_v6_instruction" \
+  --eval-file data/test_v4_enhanced.json
+
+# 单模型推理（自定义输出路径）
+python scripts/generate.py \
+  --models "Granite-v6:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16:outputs/granite-4.0-1B-lora_v6_instruction" \
+  --eval-file data/test_v4_enhanced.json \
+  --output-file evaluation/output_data/my_results.json
+
+# 多模型推理
+python scripts/generate.py \
+  --models \
+    "Base-Granite:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16" \
+    "Granite-v6:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16:outputs/granite-4.0-1B-lora_v6_instruction" \
+    "Qwen3-4B:D:/AI_code/models/Qwen3-4B-Instruct-2507" \
+  --eval-file data/test_v4_enhanced.json \
+  --max-samples 50
+```
+
+**generate.py 参数说明：**
+
+| 参数 | 必填 | 默认值 | 说明 |
+|------|------|--------|------|
+| `--models` | 是 | - | 模型配置列表，格式见下方 |
+| `--eval-file` | 是 | - | 评估数据文件路径 |
+| `--output-dir` | 否 | `evaluation/output_data` | 输出目录 |
+| `--output-file` | 否 | - | 自定义输出路径（仅单模型有效，覆盖 `--output-dir`） |
+| `--max-samples` | 否 | 0 | 最大样本数，0=全部 |
+| `--max-new-tokens` | 否 | 512 | 生成的最大 token 数 |
+
+**模型配置格式：**
+```
+"显示名称:模型路径"                    # 无 adapter
+"显示名称:模型路径:adapter路径"         # 带 adapter（LoRA）
+
+# Windows 路径示例：
+"Granite-v6:D:/models/granite-1b:D:/outputs/lora_v6"
+```
+
+**输出位置：**
+- `evaluation/output_data/{模型名}_{时间戳}.json` - 推理结果文件
+
+##### 第二步：评分 (score.py)
+
+对单个推理结果文件进行评分。score.py 会自动：
+1. **按任务类型分组**：翻译 / 总结 / 指令遵循 / 其他
+2. **运行时重分类**：修正数据集中的分类错误（无需重建数据集）
+3. **计算内容质量指标**：BLEU / ROUGE-1/2/L / BERTScore（翻译和总结子集）
+4. **检测并验证约束**：从指令中提取格式约束并验证输出是否符合（指令遵循子集）
+5. **生成 Markdown 报告**：包含所有指标、约束类型分解、覆盖率统计
+
+```bash
+conda activate granite_ft
+
+# 默认输出目录: evaluation/performance/{文件名}_eval/
+python scripts/score.py \
+  --input-file evaluation/output_data/Granite-v6_20260208_120000.json
+
+# 自定义输出目录
+python scripts/score.py \
+  --input-file evaluation/output_data/Granite-v6_20260208_120000.json \
+  --output-dir evaluation/performance/my_eval
+```
+
+**score.py 参数说明：**
+
+| 参数 | 必填 | 默认值 | 说明 |
+|------|------|--------|------|
+| `--input-file` | 是 | - | 推理结果文件（generate.py 的输出） |
+| `--output-dir` | 否 | `evaluation/performance/{文件名}_eval/` | 评分结果输出目录 |
+
+**输出位置：**
+- `{output_dir}/eval_results.json` - JSON 格式评分结果
+- `{output_dir}/eval_report.md` - Markdown 格式评估报告
+
+**评分报告内容：**
+
+| 任务类型 | 评估指标 | 说明 |
+|----------|----------|------|
+| 翻译 (translation) | BLEU, ROUGE-1/2/L, BERTScore | 需要 reference |
+| 总结 (summarization) | BLEU, ROUGE-1/2/L, BERTScore | 需要 reference |
+| 指令遵循 (instruction_following) | IFR, Strict Acc, Loose Acc, 约束类型分解 | 不依赖 reference，从指令提取约束并验证 |
+
+**指令遵循评估详解：**
+
+score.py 内置 35 种约束检测模式，覆盖中英文常见格式约束：
+
+| 约束类别 | 示例 |
+|----------|------|
+| 长度约束 | "at least 200 words" / "不超过500字" / "exactly 3 paragraphs" |
+| 格式约束 | "use bullet points" / "in json format" / "use markdown format" |
+| 关键词约束 | "must include 'AI'" / "必须包含关键词：深度学习" / "do not use 'very'" |
+| 语言约束 | "response should be in Chinese" |
+| 结构约束 | "三段式结构" / "highlight at least 3 sections" / "end with a question" |
+| IFEval标准约束 | postscript, quotation wrap, all uppercase/lowercase, repeat prompt |
+
+**运行时重分类机制：**
+
+score.py 在评分前会自动检查标记为 `instruction_following` 的样本：
+- 有可检测约束 → 保持IF
+- 来自公开基准（M-IFEval）且无reference → 保持IF
+- 无约束 + 匹配总结/翻译模式 → 自动重分类，避免污染IF指标
+
+##### 完整工作流示例
+
+```bash
+# 1. 批量推理多个模型
+python scripts/generate.py \
+  --models \
+    "Base:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16" \
+    "Finetuned:D:/AI_code/models/AAITC-Quantum-Granite-4.0-v1.1.1-bf16:outputs/granite-4.0-1B-lora_v6_instruction" \
+  --eval-file data/test_v4_enhanced.json
+
+# 2. 分别评分
+python scripts/score.py --input-file evaluation/output_data/Base_20260208_120000.json
+python scripts/score.py --input-file evaluation/output_data/Finetuned_20260208_120100.json
+
+# 3. 查看报告
+# - evaluation/performance/Base_20260208_120000_eval/eval_report.md
+# - evaluation/performance/Finetuned_20260208_120100_eval/eval_report.md
+```
+
 ### 步骤4：导出合并模型（可选）
 
 ```bash
@@ -451,11 +593,22 @@ python run.py export \
 
 ## 评估指标说明
 
+### 内容质量指标（翻译/总结）
+
 | 指标 | 适用任务 | 说明 |
 |------|----------|------|
 | BLEU | 翻译 | n-gram精确度，业界标准翻译评估指标 |
-| ROUGE-1/2/L | 总结 | n-gram召回率，摘要评估标准指标 |
-| BERTScore | 通用 | 基于BERT的语义相似度，捕捉深层语义 |
+| ROUGE-1/2/L | 总结/翻译 | n-gram召回率，摘要评估标准指标（中文自动jieba分词） |
+| BERTScore | 通用 | 基于BERT的语义相似度，捕捉深层语义（自动检测中/英文选择模型） |
+
+### 指令遵循指标
+
+| 指标 | 说明 |
+|------|------|
+| IFR (Instruction Following Rate) | 约束通过率 = 通过的约束数 / 总约束数 |
+| Strict Accuracy | 完全通过率 = 所有约束全部通过的样本占比 |
+| Loose Accuracy | 宽松通过率 = 至少通过一半约束的样本占比 |
+| 约束覆盖率 | 检测到约束的样本数 / 总IF样本数（越高越好） |
 
 ## 常见问题
 

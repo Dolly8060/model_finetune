@@ -1,0 +1,252 @@
+{
+  "translation": {
+    "base_model": {
+      "bleu": 71.24746088938804,
+      "rouge1": 43.70849943155702,
+      "rouge2": 26.380750040207783,
+      "rougeL": 41.217584418384696,
+      "bert_precision": 91.07003211975098,
+      "bert_recall": 91.95533990859985,
+      "bert_f1": 91.47645831108093
+    },
+    "finetuned_model": {
+      "bleu": 82.76547520982224,
+      "rouge1": 52.85872428063227,
+      "rouge2": 37.19739528253157,
+      "rougeL": 50.177883929354294,
+      "bert_precision": 92.63406991958618,
+      "bert_recall": 92.73640513420105,
+      "bert_f1": 92.66281127929688
+    }
+  },
+  "summarization": {
+    "base_model": {
+      "bleu": 12.677503486724575,
+      "rouge1": 16.29417579102555,
+      "rouge2": 6.13658960171096,
+      "rougeL": 13.119374809986104,
+      "bert_precision": 77.55836248397827,
+      "bert_recall": 81.11793994903564,
+      "bert_f1": 79.20740842819214
+    },
+    "finetuned_model": {
+      "bleu": 39.89264699394002,
+      "rouge1": 38.74122848656364,
+      "rouge2": 17.436392354261482,
+      "rougeL": 33.363690954145184,
+      "bert_precision": 87.50414252281189,
+      "bert_recall": 87.23199367523193,
+      "bert_f1": 87.35180497169495
+    }
+  },
+  "instruction_following": {
+    "base_model": {
+      "bleu": 26.751686347323204,
+      "rouge1": 6.867459496152716,
+      "rouge2": 3.706170116313528,
+      "rougeL": 4.8881857037992,
+      "bert_precision": 14.65957909822464,
+      "bert_recall": 14.680150151252747,
+      "bert_f1": 14.666394889354706,
+      "instruction_following_rate": 87.25490196078431,
+      "strict_accuracy": 84.88372093023256,
+      "loose_accuracy": 89.53488372093024,
+      "samples_evaluated": 86,
+      "total_constraints": 102,
+      "avg_constraints_per_sample": 1.186046511627907,
+      "constraint_coverage": 6.80379746835443,
+      "by_constraint_type": {
+        "min_words": {
+          "total": 28,
+          "passed": 28,
+          "rate": 100.0
+        },
+        "keyword_count": {
+          "total": 37,
+          "passed": 30,
+          "rate": 81.08108108108108
+        },
+        "bullet_points": {
+          "total": 5,
+          "passed": 5,
+          "rate": 100.0
+        },
+        "end_with_question": {
+          "total": 4,
+          "passed": 3,
+          "rate": 75.0
+        },
+        "exact_paragraphs": {
+          "total": 5,
+          "passed": 3,
+          "rate": 60.0
+        },
+        "keyword_include": {
+          "total": 4,
+          "passed": 3,
+          "rate": 75.0
+        },
+        "keyword_exclude": {
+          "total": 5,
+          "passed": 5,
+          "rate": 100.0
+        },
+        "min_paragraphs": {
+          "total": 4,
+          "passed": 4,
+          "rate": 100.0
+        },
+        "json_format": {
+          "total": 6,
+          "passed": 6,
+          "rate": 100.0
+        },
+        "start_with": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        },
+        "exact_words": {
+          "total": 2,
+          "passed": 0,
+          "rate": 0.0
+        },
+        "max_words": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      },
+      "by_category": {
+        "word_count": {
+          "label": "字数约束",
+          "total": 31,
+          "passed": 29,
+          "rate": 93.54838709677419
+        },
+        "keyword": {
+          "label": "关键词约束",
+          "total": 46,
+          "passed": 38,
+          "rate": 82.6086956521739
+        },
+        "format": {
+          "label": "格式约束",
+          "total": 11,
+          "passed": 11,
+          "rate": 100.0
+        },
+        "structure": {
+          "label": "结构约束",
+          "total": 14,
+          "passed": 11,
+          "rate": 78.57142857142857
+        }
+      }
+    },
+    "finetuned_model": {
+      "bleu": 31.59356113265929,
+      "rouge1": 7.378158622533149,
+      "rouge2": 4.065520107286429,
+      "rougeL": 5.526097779133319,
+      "bert_precision": 14.879992604255676,
+      "bert_recall": 14.857999980449677,
+      "bert_f1": 14.8665651679039,
+      "instruction_following_rate": 88.23529411764706,
+      "strict_accuracy": 86.04651162790698,
+      "loose_accuracy": 89.53488372093024,
+      "samples_evaluated": 86,
+      "total_constraints": 102,
+      "avg_constraints_per_sample": 1.186046511627907,
+      "constraint_coverage": 6.80379746835443,
+      "by_constraint_type": {
+        "min_words": {
+          "total": 28,
+          "passed": 28,
+          "rate": 100.0
+        },
+        "keyword_count": {
+          "total": 37,
+          "passed": 31,
+          "rate": 83.78378378378379
+        },
+        "bullet_points": {
+          "total": 5,
+          "passed": 5,
+          "rate": 100.0
+        },
+        "end_with_question": {
+          "total": 4,
+          "passed": 2,
+          "rate": 50.0
+        },
+        "exact_paragraphs": {
+          "total": 5,
+          "passed": 4,
+          "rate": 80.0
+        },
+        "keyword_include": {
+          "total": 4,
+          "passed": 3,
+          "rate": 75.0
+        },
+        "keyword_exclude": {
+          "total": 5,
+          "passed": 5,
+          "rate": 100.0
+        },
+        "min_paragraphs": {
+          "total": 4,
+          "passed": 4,
+          "rate": 100.0
+        },
+        "json_format": {
+          "total": 6,
+          "passed": 5,
+          "rate": 83.33333333333334
+        },
+        "start_with": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        },
+        "exact_words": {
+          "total": 2,
+          "passed": 1,
+          "rate": 50.0
+        },
+        "max_words": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      },
+      "by_category": {
+        "word_count": {
+          "label": "字数约束",
+          "total": 31,
+          "passed": 30,
+          "rate": 96.7741935483871
+        },
+        "keyword": {
+          "label": "关键词约束",
+          "total": 46,
+          "passed": 39,
+          "rate": 84.78260869565217
+        },
+        "format": {
+          "label": "格式约束",
+          "total": 11,
+          "passed": 10,
+          "rate": 90.9090909090909
+        },
+        "structure": {
+          "label": "结构约束",
+          "total": 14,
+          "passed": 11,
+          "rate": 78.57142857142857
+        }
+      }
+    }
+  }
+}

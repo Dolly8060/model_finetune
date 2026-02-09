@@ -137,7 +137,7 @@ def display_progress(log_data, checkpoints, output_dir):
         print("-" * 70)
         print(f"已保存: {len(checkpoints)} 个检查点")
         print(f"最新: checkpoint-{checkpoints[-1]['step']} ({checkpoints[-1]['time'].strftime('%H:%M:%S')})")
-        print(f"检查点列表: {', '.join([f'step-{c['step']}' for c in checkpoints[-5:]])}\n")
+        print(f"检查点列表: (', '.join([f'step-{c["step"]}' for c in checkpoints[-5:]]))\n")
     else:
         print("💾 检查点保存")
         print("-" * 70)

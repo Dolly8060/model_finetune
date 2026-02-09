@@ -1,0 +1,128 @@
+{
+  "translation": {
+    "base_model": {
+      "bleu": 30.33668865762665,
+      "rouge1": 52.397660818713454,
+      "rouge2": 45.96736596736597,
+      "rougeL": 52.397660818713454,
+      "bert_precision": 92.86994934082031,
+      "bert_recall": 96.31450772285461,
+      "bert_f1": 94.5385992527008
+    },
+    "finetuned_model": {
+      "bleu": 49.17574775266128,
+      "rouge1": 57.556935817805375,
+      "rouge2": 51.010101010101,
+      "rougeL": 57.556935817805375,
+      "bert_precision": 94.947749376297,
+      "bert_recall": 96.92535996437073,
+      "bert_f1": 95.9184467792511
+    }
+  },
+  "summarization": {
+    "base_model": {
+      "bleu": 0.1675717753761336,
+      "rouge1": 1.680672268907563,
+      "rouge2": 0.0,
+      "rougeL": 1.680672268907563,
+      "bert_precision": 66.65357947349548,
+      "bert_recall": 75.64643621444702,
+      "bert_f1": 70.86585760116577
+    },
+    "finetuned_model": {
+      "bleu": 4.373507737589755,
+      "rouge1": 29.25170068027211,
+      "rouge2": 9.58904109589041,
+      "rougeL": 21.768707482993197,
+      "bert_precision": 83.72863531112671,
+      "bert_recall": 82.20438957214355,
+      "bert_f1": 82.95950889587402
+    }
+  },
+  "instruction_following": {
+    "base_model": {
+      "bleu": 0.7617617354415154,
+      "rouge1": 28.010442042480026,
+      "rouge2": 16.051254253368143,
+      "rougeL": 21.339112973415432,
+      "bert_precision": 45.64673602581024,
+      "bert_recall": 45.72744369506836,
+      "bert_f1": 45.685067772865295,
+      "instruction_following_rate": 100.0,
+      "strict_accuracy": 100.0,
+      "loose_accuracy": 100.0,
+      "samples_evaluated": 2,
+      "total_constraints": 3,
+      "avg_constraints_per_sample": 1.5,
+      "constraint_coverage": 33.33333333333333,
+      "by_constraint_type": {
+        "keyword_count": {
+          "total": 2,
+          "passed": 2,
+          "rate": 100.0
+        },
+        "min_words": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      },
+      "by_category": {
+        "keyword": {
+          "label": "关键词约束",
+          "total": 2,
+          "passed": 2,
+          "rate": 100.0
+        },
+        "word_count": {
+          "label": "字数约束",
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      }
+    },
+    "finetuned_model": {
+      "bleu": 0.6829979614037213,
+      "rouge1": 30.126993130396418,
+      "rouge2": 15.225391249391512,
+      "rougeL": 20.008193105186866,
+      "bert_precision": 46.15670144557953,
+      "bert_recall": 45.635390281677246,
+      "bert_f1": 45.89174687862396,
+      "instruction_following_rate": 100.0,
+      "strict_accuracy": 100.0,
+      "loose_accuracy": 100.0,
+      "samples_evaluated": 2,
+      "total_constraints": 3,
+      "avg_constraints_per_sample": 1.5,
+      "constraint_coverage": 33.33333333333333,
+      "by_constraint_type": {
+        "keyword_count": {
+          "total": 2,
+          "passed": 2,
+          "rate": 100.0
+        },
+        "min_words": {
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      },
+      "by_category": {
+        "keyword": {
+          "label": "关键词约束",
+          "total": 2,
+          "passed": 2,
+          "rate": 100.0
+        },
+        "word_count": {
+          "label": "字数约束",
+          "total": 1,
+          "passed": 1,
+          "rate": 100.0
+        }
+      }
+    }
+  }
+}

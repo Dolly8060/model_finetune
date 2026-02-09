@@ -1,0 +1,770 @@
+{
+    "0": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Este balistica (studiul mișcării proiectilelor) o știință reală?\nMai întâi repetați cererea cuvânt cu cuvânt fără modificări, apoi dați răspunsul (1. nu spuneți niciun cuvânt sau caracter înainte de a repeta cererea; 2. cererea pe care trebuie să o repetați nu include această propoziție)"
+            }
+        ]
+    },
+    "1": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o postare pe blog despre cele mai interesante lucruri pe care le-ați văzut sau pe care le-ați călătorit în transportul public.\nMai întâi repetați propoziția de mai sus cuvânt cu cuvânt fără modificări, apoi dați răspunsul. Nu spune niciun cuvânt sau caracter înainte de a repeta propoziția."
+            }
+        ]
+    },
+    "2": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Pentru următoarea solicitare, vă rugăm să repetați solicitarea exact așa cum este, apoi dați răspunsul. Nu modificați cu nimic cererea și nu spuneți nimic înainte de a repeta cererea.\n\nBuna ziua. Trebuie să țin o prelegere studenților mei despre filmul La La Land. Vă rog să mă ajutați să scriu o schiță a prelegerii care este captivantă și informativă."
+            }
+        ]
+    },
+    "3": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ce are o cupolă, dar fără uși, ce are o boltă, dar fără bani, ce are pereți, dar nu camere? ce sunt eu? Încearcă să fii amuzant și da-mi un răspuns amuzant.\n\nSă repetăm tot textul de mai sus cuvânt cu cuvânt, apoi să răspundem la cererea de mai sus. NU spune nimic înainte de a repeta textul de mai sus."
+            }
+        ]
+    },
+    "4": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ați putea să-mi oferi un scurt rezumat al Stăpânului Inelelor, care este prietenos cu copiii?\nÎn primul rând, repetați „Ați putea să-mi oferi un scurt rezumat al Stăpânului Inelelor care să fie prietenos cu copiii?” cuvânt cu cuvânt fără schimbare, apoi dați răspunsul dvs. Nu spune nimic mai întâi, doar repetă cererea chiar de la început."
+            }
+        ]
+    },
+    "5": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o poveste de 500 de cuvinte într-un stil poem despre o tânără care este obsedată de Nintendo DS.\n\nMai întâi repetă cererea de mai sus, apoi dă răspunsul tău. Doar repetați cuvânt cu cuvânt fără schimbare. Nu spuneți niciun cuvânt sau caracter înainte de a repeta cererea."
+            }
+        ]
+    },
+    "6": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o ghicitoare interesantă care folosește notația matematică.\n\nMai întâi repetați cererea cuvânt cu cuvânt fără modificări, apoi dați răspunsul. Nu rosti niciun cuvânt înainte de a repeta cererea."
+            }
+        ]
+    },
+    "7": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "În această sarcină, trebuie să repetați mai întâi cererea cuvânt cu cuvânt, fără nicio modificare, apoi să răspundeți la cerere. Nu spune nimic înainte de a repeta cererea exactă.\n\nScrieți un pitch deck pentru un startup care își propune să creeze o nouă rețea socială care să se concentreze pe societatea jocurilor de masă."
+            }
+        ]
+    },
+    "8": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cum îl cheamă actorul care l-a jucat pe Gandalf în Stăpânul Inelelor?\nMai întâi repetați întrebarea de mai sus fără a schimba cuvintele, apoi dați răspunsul."
+            }
+        ]
+    },
+    "9": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cine sunt consilierii de securitate națională ai lui Joe Biden și Donald Trump? Răspunsurile trebuie separate prin 6 simboluri asterisc (******). Cu alte cuvinte, rezultatul dvs. ar trebui să arate astfel:\n[Consilierii de securitate națională ai lui Joe Biden sunt ....]\n******\n[Consilierii de securitate națională ai lui Donald Trump sunt ....]"
+            }
+        ]
+    },
+    "10": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Care este un nume pe care oamenii îl numesc Dumnezeu? Vă rugăm să dați exact două răspunsuri diferite. Separați răspunsurile cu 6 simboluri asterisc: ******."
+            }
+        ]
+    },
+    "11": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Creați un tabel cu un itinerar de călătorie de 7 zile pentru India și un itinerar de călătorie de 7 zile pentru China. Separați-le cu exact 6 simboluri asteriscuri: ******"
+            }
+        ]
+    },
+    "12": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un eseu despre viața lui Benjamin Franklin. Apoi rezumați eseul într-o poezie. Separați eseul și poezia cu 6 simboluri asterisc: ******\nCu alte cuvinte, răspunsul dvs. ar trebui să aibă următoarea formă:\n[eseu]\n******\n[poem]"
+            }
+        ]
+    },
+    "13": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Este propoziția „Doamna Smith este profesoara acestei clase”. corect gramatical? Dați-mi exact două răspunsuri diferite. Răspunsurile și numai răspunsurile trebuie separate prin 6 simboluri asterisc: ******."
+            }
+        ]
+    },
+    "14": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "„Jiang” este un nume chinezesc? Care sunt alte nume similare cu „jiang”? Separați cele două răspunsuri cu ******"
+            }
+        ]
+    },
+    "15": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un CV pentru un proaspăt absolvent de liceu care își caută primul loc de muncă. Asigurați-vă că includeți cel puțin 12 substituenți reprezentați prin paranteze drepte, cum ar fi [adresă], [nume]."
+            }
+        ]
+    },
+    "16": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Creați o postare pe blog despre Acvariul lui Ripley. Asigurați-vă că postarea de pe blog conține cel puțin 7 substituenți reprezentați prin paranteze drepte, cum ar fi [locație]."
+            }
+        ]
+    },
+    "17": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Rescrieți următoarea propoziție într-un e-mail și asigurați-vă că conține cel puțin 10 substituenți reprezentați prin paranteze drepte, cum ar fi [nume]: cizmele sunt calde, dar puțin incomode."
+            }
+        ]
+    },
+    "18": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o glumă scurtă și amuzantă despre un tip care lucrează la IRS. Includeți cel puțin un substituent reprezentat prin paranteze drepte."
+            }
+        ]
+    },
+    "19": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un eseu ca și cum ați fi președintele Statelor Unite, vizând mamele ca public. Subiectul este modul în care plutitorul din filmul „It” simbolizează spiritul anilor 1950. Răspunsul trebuie să conțină cel puțin 1 substituent reprezentat prin paranteze drepte, cum ar fi [adresă]."
+            }
+        ]
+    },
+    "20": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți-mi un șablon pentru descrierea unui produs sub formă de poezie și încheiați-l cu un post-script care începe cu P.P.S"
+            }
+        ]
+    },
+    "21": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un plan de sesiune extravagant pentru a afla despre java. Asigurați-vă că includeți un postscript care începe cu P.P.S"
+            }
+        ]
+    },
+    "22": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Îmi puteți spune ce fel de mingi sunt folosite în tenis? As dori raspunsul sub forma unei poezii in stil medieval cu un P.P.S la final."
+            }
+        ]
+    },
+    "23": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cum să scrii o poezie chinezească bună? La sfârșitul răspunsului, adăugați în mod explicit o notă care începe cu „P.S.”"
+            }
+        ]
+    },
+    "24": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Explicați unui grup de elevi de școală elementară de ce avem anotimpuri. Ar trebui să adăugați un postscript care începe cu P.S. la sfârșitul răspunsului dvs."
+            }
+        ]
+    },
+    "25": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "11 rezultate au o medie de 51. Primele cinci au o medie de 49, iar ultimele nouă au o medie de 52. Care a fost al șaselea rezultat? Folosiți un limbaj ciudat când explicați folosind notația matematică. Și adăugați un postscript care începe cu P.P.S la sfârșit."
+            }
+        ]
+    },
+    "26": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "cum numești un om de știință exclus căruia i se cere să stea acasă? Vă rugăm să terminați răspunsul cu un postscript care începe cu P.P.S"
+            }
+        ]
+    },
+    "27": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o notă amuzantă lui McQueen, folosind <br> pentru a separa rândurile. Începeți cu un salut amuzant și includeți notații matematice în notă. La sfârșitul răspunsului dvs., adăugați în mod explicit un postscript care începe cu P.P.S"
+            }
+        ]
+    },
+    "28": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un anunț text pentru un site web pentru adulți care nu este pornografic și, la sfârșitul răspunsului dvs., adăugați un postscript care începe cu P.S."
+            }
+        ]
+    },
+    "29": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Este adevărat că primul cântec cântat vreodată în spațiul cosmic este „La mulți ani”.\n\nRăspunsul dvs. trebuie să conţină una dintre următoarele fraze:\nRăspunsul meu este da.\nRaspunsul meu este nu.\nRaspunsul meu este poate."
+            }
+        ]
+    },
+    "30": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dacă a + b = 10. Și a > b. Este a = 6? Răspunsul dumneavoastră trebuie să conţină una dintre următoarele expresii exacte: „Răspunsul meu este da”, „Răspunsul meu este nu”, „Răspunsul meu este poate”."
+            }
+        ]
+    },
+    "31": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dacă a + b + c = 30 și b = 10 și c = 5. Este a = 20? Răspuns „Răspunsul meu este da”. sau „Răspunsul meu este nu”. sau „Răspunsul meu este poate”."
+            }
+        ]
+    },
+    "32": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Radcliffe era singurul care putea trece de gardieni. Ce s-ar putea spune despre el? Vă rugăm să completați întregul răspuns în format JSON. Bifările de reducere (```) sunt acceptabile."
+            }
+        ]
+    },
+    "33": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o rubrica pentru evaluarea performanței unui inginer software și includeți întreaga ieșire în format JSON. Puteți folosi bifări de reducere, cum ar fi ```."
+            }
+        ]
+    },
+    "34": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un scurt rezumat pentru copii care explică de ce vrem să-l onorăm pe Thayer pentru contribuțiile sale în domeniul inteligenței artificiale. Rezumatul trebuie să conțină exact 4 puncte, cum ar fi:\n* Punctul 1\n* Punctul 2"
+            }
+        ]
+    },
+    "35": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Rescrie următorul blog ca o listă cu exact 4 puncte: \"Lumea este un loc frumos. Soarele strălucește, păsările cântă și florile înfloresc. Este o zi perfectă pentru a ieși afară și a te bucura de tot ceea ce are de oferit natura.\" Punctele marcatoare ar trebui să fie reduse, cum ar fi:\n* Punctul 1\n* Punctul 2"
+            }
+        ]
+    },
+    "36": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Îmi puteți spune de ce există piste de curse ovale în deșert? Vă rugăm să rescrieți răspunsul pentru a-l face mai concis și includeți cuvântul „deșert” în răspuns. Asigurați-vă că răspunsul conține exact 3 marcatori în format de reducere."
+            }
+        ]
+    },
+    "37": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Opusul tinereții nu este vârsta, dar...? Evidențiați cel puțin 2 secțiuni din răspunsul dvs. cu reducere, adică *secțiune evidențiată*."
+            }
+        ]
+    },
+    "38": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Astăzi, la cea de-a 54-a ediție anuală a Premiilor Grammy, Academia de Înregistrări onorează talentul și creativitatea artiștilor, muzicienilor și producătorilor care sunt creatorii celor mai bune înregistrări ale anului trecut. Vă rugăm să continuați să scrieți acest text pe un ton formal, folosind notații. Evidențiați câteva părți cheie din răspunsul dvs. cu „*”, cum ar fi *text evidențiat*."
+            }
+        ]
+    },
+    "39": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Este nevoie de un argument de vânzare pentru mame pentru un nou tip de scutec care este conceput pentru a fi mai confortabil pentru bebeluși. Prezentul de vânzare ar trebui să aibă 500 de cuvinte, amuzant, captivant și să se concentreze pe beneficiile noului scutec fără a menționa prețul. De asemenea, trebuie să conțină un titlu, înfășurat în paranteze unghiulare duble, adică <<titlu>>."
+            }
+        ]
+    },
+    "40": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dă-mi un pitch deck pentru un startup care să-mi permită să trimit scrisori unor persoane de pe teritoriul meu pe care nu le cunosc personal. Titlul pachetului de pitch ar trebui să fie înfășurat în paranteze unghiulare duble, adică <<titlu>>."
+            }
+        ]
+    },
+    "41": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Explică-mi cum să merg pe bicicletă ca și cum aș fi copil. De asemenea, nu includeți cuvintele cheie „lent”, „like” și „copil”."
+            }
+        ]
+    },
+    "42": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o poveste pentru copii despre cum învață o persoană să meargă pe bicicletă. Nu include „poate” și „călări” în răspuns."
+            }
+        ]
+    },
+    "43": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Faceți propoziția «Autobuzul a sosit în stație» să sune mai interesant. Evitați folosirea cuvântului «stație»."
+            }
+        ]
+    },
+    "44": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Condițiile meteorologice din Arctica sunt foarte reci în cea mai mare parte a anului? Nu spuneți „da” sau „nu” pe parcursul întregului răspuns."
+            }
+        ]
+    },
+    "45": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un rezumat al următorului text într-un mod amuzant: „Premiul Nobel pentru Chimie 2018 a fost acordat lui Frances Arnold, George P. Smith și Gregory P. Winter pentru munca lor privind evoluția dirijată. Arnold a primit jumătate din premiu pentru munca sa privind evoluția dirijată a enzimelor, în timp ce Smith și Winter și-au împărtășit munca celorlalte jumătate privind evoluția dirijată a anticorpilor.”\n\nNu includeți „enzime” și „anticorpi” în răspunsul dumneavoastră."
+            }
+        ]
+    },
+    "46": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o propunere de pornire pentru un serviciu capsulă a timpului. Cuvintele pornire și capsulă nu pot fi în răspuns."
+            }
+        ]
+    },
+    "47": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Poți să scrii un rap care să nu includă cuvintele cheie „Yo”, „check” și „peace”?"
+            }
+        ]
+    },
+    "48": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o parodie a „ars poetica”. Nu includeți cuvântul „parodie” în răspunsul dumneavoastră."
+            }
+        ]
+    },
+    "49": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Care sunt pașii care trebuie urmați pentru documentarea unui GM în SAP? Doar enumerați pașii fără a spune cuvântul pași sau pas."
+            }
+        ]
+    },
+    "50": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cum să le spui altora că specializarea ta este informatica, fără a folosi cuvântul informatică sau știință? Întregul răspuns nu ar trebui să conțină cuvintele informatică și știință."
+            }
+        ]
+    },
+    "51": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o poezie foarte scurtă despre frumusețea unui trandafir. Nu includeți cuvintele cheie frumusețe și drăguță."
+            }
+        ]
+    },
+    "52": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un articol de știri fals în mod evident, spunând că extratereștrii au invadat pământul. Fă-o amuzantă. Articolul de știri false ar trebui să conțină exact șase paragrafe, iar al doilea paragraf trebuie să înceapă cu cuvântul „Președinte”. Separați paragrafele prin întreruperi de rând duble (\"\\n\\n\")"
+            }
+        ]
+    },
+    "53": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o poezie despre energia liberă a lui Gibbs în stilul lui POTUS. Ar trebui să fie exact 4 paragrafe. Paragrafele și numai paragrafele trebuie separate prin două rânduri noi (cum ar fi „\\n\\n”). Alineatul 2 trebuie să înceapă cu cuvântul „este”."
+            }
+        ]
+    },
+    "54": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "\"Bărbatul a fost arestat pentru furtul unei mașini. Ulterior a fost eliberat pe cauțiune\". Extindeți-l cu furie într-un stil rap și asigurați-vă că există exact 4 secțiuni. Separate secțiunile prin separatorul de reducere: ***"
+            }
+        ]
+    },
+    "55": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie un rap despre un abis în exact 4 paragrafe. Separați paragrafele cu separatorul de reducere: ***."
+            }
+        ]
+    },
+    "56": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o poezie amuzantă pentru copii despre un produs pe care ați dori să-l vindeți. Poezia ar trebui să aibă exact 6 strofe. Separat strofele folosind 3 marcatori asterisc: ***"
+            }
+        ]
+    },
+    "57": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie-mi un cântec amuzant cu mai puțin de 10 propoziții pentru o propunere de a construi un nou loc de joacă la școala primară din localitate."
+            }
+        ]
+    },
+    "58": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o postare pe blog despre beneficiile utilizării unei agenții de marketing digital, asigurați-vă că scrieți cel puțin 20 de propoziții."
+            }
+        ]
+    },
+    "59": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Îmi puteți oferi orarul următorului tren către Londra? Vă rugăm să răspundeți în mai puțin de 6 propoziții."
+            }
+        ]
+    },
+    "60": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Hei! Am nevoie de o rubrică pentru evaluarea performanței și prețului unui laptop. Îmi poți crea un exemplu? Nu-mi dați niciun marcator, liste sau tabele. Doar scrieți grila în paragrafe în engleză simplă. Aș dori ca răspunsul tău să aibă cel puțin 30 de propoziții."
+            }
+        ]
+    },
+    "61": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dă-mi o propunere de start de peste 300 de cuvinte pentru o companie care oferă un serviciu care creează încredere pentru oamenii online."
+            }
+        ]
+    },
+    "62": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o poezie care conține cel puțin 350 de cuvinte despre frumusețea copacilor de eucalipt și numeroasele lor utilizări."
+            }
+        ]
+    },
+    "63": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Am un ban. Ce pot face cu acest ban? Dă-mi un sfat în stilul unui președinte al Statelor Unite și asigură-te că are cel puțin 600 de cuvinte."
+            }
+        ]
+    },
+    "64": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o reclamă amuzantă pentru un salon de coafură care oferă o reducere de 25% la toate serviciile care are cel puțin 200 de cuvinte."
+            }
+        ]
+    },
+    "65": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un eseu despre diferențele dintre musulmanii suniți și șiiti. Întregul răspuns trebuie să conțină cel puțin 1200 de cuvinte."
+            }
+        ]
+    },
+    "66": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie un limerick despre scrierea unui limerick. Nu utilizați nicio virgulă în întregul răspuns."
+            }
+        ]
+    },
+    "67": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Plănuiesc o călătorie în Japonia și aș vrea să scrii un itinerariu pentru călătoria mea într-un stil shakespearian. Nu aveți voie să folosiți virgulă în răspunsul dvs."
+            }
+        ]
+    },
+    "68": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o ghicitoare pentru copii despre auspicii, dar asigurați-vă că nu folosiți virgule."
+            }
+        ]
+    },
+    "69": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Îmi puteți oferi două alternative formale diferite la „Ce se întâmplă? Mă duc la plajă astăzi” și nu folosiți nicio virgulă în răspunsul dvs."
+            }
+        ]
+    },
+    "70": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Care este următorul număr din această serie: 1, 4, 7, 11, 17? Vă rugăm să răspundeți doar cu notație matematică, fără virgule."
+            }
+        ]
+    },
+    "71": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "SUNT UȘOR DE INTRARE, DAR DREPT SĂ IESC. SUNT INVITĂTOR ȘI EMOZANT DAR MULTI OAMENI SE FEMEĂ DE MINE. EU SUNT UNDE TREBUIE SĂ FII DAR S-AR PUTEA NU VREI SĂ RĂMĂI ACOLO. S-ar putea să fiu un mister, dar sunt sigur că mă poți ghici. CE SUNT? Vă rugăm să nu folosiți nicio virgulă în răspunsul dvs."
+            }
+        ]
+    },
+    "72": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "De ce există 396 de calorii într-o porție de 32 de grame de migdale nesărate? Nu folosiți virgule în răspunsul dvs."
+            }
+        ]
+    },
+    "73": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o ghicitoare despre o mamă care stă întinsă pe o plajă din Humboldt, fără a folosi nicio virgulă."
+            }
+        ]
+    },
+    "74": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o propunere de proiect despre cum să utilizați învățarea automată și inteligența artificială pentru a îmbunătăți calitatea educației în țările în curs de dezvoltare. În răspunsul dvs., nu folosiți nicio virgulă."
+            }
+        ]
+    },
+    "75": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Răspundeți la următoarea problemă de matematică într-o altă limbă, folosiți punctele marcante și oferiți răspunsuri alternative. Abțineți-vă de la folosirea virgulelor în răspunsul dvs. Natalia cumpăra cărți pentru copiii ei. Ea a cumpărat 2 cărți cu 24 de dolari fiecare și 3 cărți cu 36 de dolari fiecare. Cât a plătit ea în total?"
+            }
+        ]
+    },
+    "76": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o listă cu primele 10 lucruri despre Marea Britanie fără a folosi virgulele."
+            }
+        ]
+    },
+    "77": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Cum poți să cunoști pe cineva la un nivel profund într-o relație romantică? Răspunsul ar trebui să implice subiectul vulnerabilității. Nu utilizați nicio virgulă în răspunsul dvs."
+            }
+        ]
+    },
+    "78": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Rescrie propoziția „Un bust de bărbat cu barbă și mustață”. într-un mod mai sofisticat. Nu folosiți virgule în răspunsul dvs."
+            }
+        ]
+    },
+    "79": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "critică această propunere de startup: Stephenson și Hong Kong vor fi prima piață digitală unde utilizatorii pot cumpăra și vinde produse din întreaga lume Stephenson și Hong Kong vor fi un magazin unic pentru toate nevoile dvs. de cumpărături și vă vom oferi o varietate de funcții care vor face cumpărăturile online mai ușoare și mai convenabile decât oricând. Nu utilizați nicio virgulă în răspunsul dvs."
+            }
+        ]
+    },
+    "80": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie o ghicitoare despre Camilla care nu folosește virgule."
+            }
+        ]
+    },
+    "81": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un articol despre realitatea dizabilității. Articolul dvs. trebuie să se încheie cu expresia exactă „Mai pot ajuta cu altceva?”. Niciun alt cuvânt nu ar trebui să urmeze această expresie."
+            }
+        ]
+    },
+    "82": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ce este analiza multivariată? Rescrieți răspunsul, astfel încât un public obișnuit să poată înțelege. Vă rugăm să încheiați răspunsul cu „Mai pot ajuta cu altceva?” și niciun alt cuvânt nu ar trebui să urmeze această afirmație."
+            }
+        ]
+    },
+    "83": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Îmbunătățiți următorul text, despre cum să învățați o limbă. De asemenea, oferiți două alternative. Textul este: „Cel mai bun mod de a învăța despre o nouă cultură este să trăiești în ea. Învață o nouă limbă trăind într-o țară în care este vorbită și vei putea vorbi limba ca un nativ în cel mai scurt timp!”. Termină răspunsul cu „Mai pot ajuta cu altceva?”. Niciun alt cuvânt nu ar trebui să urmeze această expresie."
+            }
+        ]
+    },
+    "84": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Vă rugăm să furnizați o listă scurtă și amuzantă a modalităților de a petrece timpul la serviciu. Încheiați cu expresia exactă. Mai pot ajuta cu ceva?"
+            }
+        ]
+    },
+    "85": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o poezie despre primele 20 de clădiri cele mai înalte din lume și înălțimile lor. Încheiați răspunsul cu întrebarea exactă: Mai există ceva cu care vă pot ajuta?"
+            }
+        ]
+    },
+    "86": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o scrisoare amuzantă elevilor de clasa a 6-a de la școala dvs. în format de listă. Scrisoarea ar trebui să fie despre ceva important pentru dvs. și ar trebui să vă încheiați întregul răspuns cu expresia „Mai pot ajuta cu altceva?”"
+            }
+        ]
+    },
+    "87": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Numele lui May este Naomi. Scrieți o postare pe blog în numele meu pentru echipa de hochei canucks despre motivul pentru care trebuie să fie mai atenți la mediul lor. Încheiați postarea pe blog cu „Naomi vă mulțumesc pentru citit”. Niciun alt cuvânt nu ar trebui să urmeze această expresie. Această frază ar trebui să fie sfârșitul întregului răspuns."
+            }
+        ]
+    },
+    "88": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o glumă despre xml cu o configurare și un punchline. Puneți întregul răspuns între ghilimele duble."
+            }
+        ]
+    },
+    "89": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți o recenzie a programului de șah IBM din 1956. Asigurați-vă că întregul răspuns este împachetat între ghilimele duble."
+            }
+        ]
+    },
+    "90": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Inventează un slogan amuzant pentru un spectacol de comedie local și pune întregul tău răspuns între ghilimele."
+            }
+        ]
+    },
+    "91": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un paragraf asemănător unui discurs despre alegerile din SUA. Asigurați-vă că închegeți întregul răspuns cu ghilimele duble."
+            }
+        ]
+    },
+    "92": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrie un e-mail prietenului tău despre ceea ce te declanșează. Asigurați-vă că includeți întregul e-mail între ghilimele duble."
+            }
+        ]
+    },
+    "93": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "De ce a călătorit bărbatul de la Saskatoon la Helsinki pentru a cumpăra un pian? Încheiați întregul răspuns între ghilimele duble."
+            }
+        ]
+    },
+    "94": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "De ce credeți că inginerii Google rămân la Google mai des decât se mută la Microsoft? Explicați-l în stilul lui Alex Jones și includeți întregul răspuns între ghilimele duble."
+            }
+        ]
+    },
+    "95": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Scrieți un cântec despre inovație cu un ton pozitiv, care este atrăgător pentru adolescenți. Puneți întregul răspuns între ghilimele duble."
+            }
+        ]
+    }
+}
