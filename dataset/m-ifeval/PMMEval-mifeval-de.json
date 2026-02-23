@@ -1,0 +1,770 @@
+{
+    "0": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ist Ballistik (die Lehre von der Bewegung von Geschossen) eine echte Wissenschaft?\nWiederholen Sie die Anfrage zunächst Wort für Wort unverändert und geben Sie dann Ihre Antwort (1. Sagen Sie vor der Wiederholung der Anfrage keine Wörter oder Buchstaben; 2. Die zu wiederholende Anfrage enthält diesen Satz nicht)."
+            }
+        ]
+    },
+    "1": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Blogbeitrag über die interessantesten Dinge, die Sie mit öffentlichen Verkehrsmitteln gesehen oder erlebt haben.\nWiederholen Sie zunächst den obigen Satz Wort für Wort unverändert und geben Sie dann Ihre Antwort. Sagen Sie vor der Wiederholung des Satzes keine Wörter oder Buchstaben."
+            }
+        ]
+    },
+    "2": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Bitte wiederholen Sie die folgende Anfrage genau so, wie sie ist, und geben Sie anschließend Ihre Antwort. Ändern Sie die Anfrage nicht und sagen Sie nichts, bevor Sie sie wiederholen.\n\nHallo. Ich muss meinen Studierenden eine Vorlesung über den Film „La La Land“ halten. Bitte helfen Sie mir, eine ansprechende und informative Vorlesungsgliederung zu schreiben."
+            }
+        ]
+    },
+    "3": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Was hat eine Kuppel, aber keine Türen, was hat einen Tresor, aber kein Geld, was hat Wände, aber keine Räume? Was bin ich? Sei witzig und gib mir eine witzige Antwort.\n\nWiederholen wir den gesamten obigen Text Wort für Wort und antworten dann auf die obige Anfrage. Sagen Sie NICHTS, bevor Sie den obigen Text wiederholt haben."
+            }
+        ]
+    },
+    "4": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie mir eine kurze, kinderfreundliche Zusammenfassung von „Der Herr der Ringe“ geben?\nWiederholen Sie zunächst Wort für Wort unverändert die Frage „Könnten Sie mir eine kurze, kinderfreundliche Zusammenfassung von „Der Herr der Ringe“ geben?“ und geben Sie dann Ihre Antwort. Sagen Sie zunächst nichts, sondern wiederholen Sie einfach die Anfrage vom Anfang."
+            }
+        ]
+    },
+    "5": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine 500 Wörter lange Geschichte im Gedichtstil über ein junges Mädchen, das von seinem Nintendo DS besessen ist.\n\nWiederholen Sie zunächst die obige Aufforderung und geben Sie dann Ihre Antwort. Wiederholen Sie die Aufforderung Wort für Wort unverändert. Sagen Sie vor der Wiederholung der Aufforderung keine Wörter oder Buchstaben."
+            }
+        ]
+    },
+    "6": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreibe ein interessantes Rätsel mit mathematischen Notationen.\n\nWiederhole die Frage zunächst Wort für Wort unverändert und gib dann deine Antwort. Sag kein Wort, bevor du die Frage wiederholst."
+            }
+        ]
+    },
+    "7": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Bei dieser Aufgabe müssen Sie die Anfrage zunächst Wort für Wort und unverändert wiederholen und dann darauf antworten. Sagen Sie nichts, bevor Sie die genaue Anfrage wiederholt haben.\n\nSchreiben Sie ein Pitch Deck für ein Startup, das ein neues soziales Netzwerk für die Brettspiel-Community aufbauen möchte."
+            }
+        ]
+    },
+    "8": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wie heißt der Schauspieler, der Gandalf in „Der Herr der Ringe“ spielte?\nWiederholen Sie zunächst die obige Frage ohne Wortänderung und geben Sie dann Ihre Antwort."
+            }
+        ]
+    },
+    "9": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wer sind die nationalen Sicherheitsberater von Joe Biden und Donald Trump? Die Antworten sollten durch sechs Sternchen (******) getrennt sein. Anders ausgedrückt: Ihre Ausgabe sollte folgendermaßen aussehen:\n[Joe Bidens nationaler Sicherheitsberater ist ....]\n******\n[Donald Trumps nationaler Sicherheitsberater ist ....]"
+            }
+        ]
+    },
+    "10": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Mit welchem Namen geben die Menschen Gott? Bitte geben Sie genau zwei verschiedene Antworten. Trennen Sie die Antworten mit 6 Sternchen: ******."
+            }
+        ]
+    },
+    "11": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Erstellen Sie eine Tabelle mit einem 7-tägigen Reiseplan für Indien und einem 7-tägigen Reiseplan für China. Trennen Sie sie mit genau 6 Sternchensymbolen: ******"
+            }
+        ]
+    },
+    "12": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Aufsatz über das Leben von Benjamin Franklin. Fassen Sie Ihren Aufsatz anschließend in einem Gedicht zusammen. Trennen Sie Aufsatz und Gedicht durch sechs Sternchen: ******\n\nMit anderen Worten: Ihre Antwort sollte folgende Form haben:\n[Aufsatz]\n******\n[Gedicht]"
+            }
+        ]
+    },
+    "13": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ist der Satz „Frau Smith ist die Lehrerin dieser Klasse.“ grammatikalisch korrekt? Geben Sie mir genau zwei verschiedene Antworten. Antworten und nur Antworten sollten durch 6 Sternchen getrennt sein: ******."
+            }
+        ]
+    },
+    "14": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ist „Jiang“ ein chinesischer Name? Welche anderen Namen ähneln „Jiang“? Trennen Sie Ihre beiden Antworten mit ******"
+            }
+        ]
+    },
+    "15": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Verfassen Sie einen Lebenslauf für einen frischgebackenen Abiturient, der seinen ersten Job sucht. Achten Sie darauf, mindestens 12 Platzhalter in eckigen Klammern einzufügen, z. B. [Adresse], [Name]."
+            }
+        ]
+    },
+    "16": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Verfassen Sie einen Blogbeitrag über Ripley's Aquarium. Stellen Sie sicher, dass Ihr Blogbeitrag mindestens sieben Platzhalter enthält, die durch eckige Klammern dargestellt werden, z. B. [Standort]."
+            }
+        ]
+    },
+    "17": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie den folgenden Satz in eine E-Mail um und stellen Sie sicher, dass er mindestens 10 Platzhalter enthält, die durch eckige Klammern dargestellt werden, z. B. [Name]: Die Stiefel sind warm, aber etwas unbequem."
+            }
+        ]
+    },
+    "18": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen kurzen und lustigen Witz über einen Mann, der beim IRS arbeitet. Fügen Sie mindestens einen Platzhalter ein, der durch eckige Klammern dargestellt wird."
+            }
+        ]
+    },
+    "19": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Aufsatz, als wären Sie Präsident der Vereinigten Staaten und richten Sie sich an Mütter. Thema ist, wie der Festwagen aus dem Film „Es“ den Zeitgeist der 1950er Jahre symbolisiert. Die Antwort muss mindestens einen Platzhalter in eckigen Klammern enthalten, z. B. [Adresse]."
+            }
+        ]
+    },
+    "20": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie mir eine Vorlage für eine Produktbeschreibung in Form eines Gedichts und beenden Sie es mit einem Postskriptum, das mit P.P.S beginnt."
+            }
+        ]
+    },
+    "21": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen ausführlichen Sitzungsplan, um mehr über Java zu erfahren. Fügen Sie unbedingt ein Postskriptum ein, das mit P.P.S beginnt."
+            }
+        ]
+    },
+    "22": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie mir sagen, welche Art Bälle beim Tennis verwendet werden? Die Antwort hätte ich gerne in Form eines Gedichts im mittelalterlichen Stil mit einem P.P.S am Ende."
+            }
+        ]
+    },
+    "23": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wie schreibt man ein gutes chinesisches Gedicht? Fügen Sie am Ende Ihrer Antwort bitte eine explizite Notiz hinzu, die mit „P.S.“ beginnt."
+            }
+        ]
+    },
+    "24": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Erklären Sie einer Gruppe von Grundschülern, warum es Jahreszeiten gibt. Fügen Sie am Ende Ihrer Antwort ein Postskriptum mit dem Buchstaben P.S. hinzu."
+            }
+        ]
+    },
+    "25": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Elf Ergebnisse haben einen Durchschnitt von 51. Die ersten fünf haben einen Durchschnitt von 49 und die letzten neun haben einen Durchschnitt von 52. Was war das sechste Ergebnis? Verwenden Sie bei der Erklärung eine seltsame Sprache mit mathematischer Notation. Und fügen Sie am Ende ein Postskriptum hinzu, das mit P.P.S beginnt."
+            }
+        ]
+    },
+    "26": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "wie nennt man einen ausgeschlossenen Wissenschaftler, der gebeten wird, zu Hause zu bleiben? Bitte schließen Sie Ihre Antwort mit einem Postskriptum ab, das mit P.P.S beginnt."
+            }
+        ]
+    },
+    "27": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine lustige Nachricht an McQueen und verwenden Sie <br> als Zeilentrenner. Beginnen Sie mit einer lustigen Begrüßung und verwenden Sie mathematische Notationen. Fügen Sie am Ende Ihrer Antwort explizit ein Postskriptum hinzu, das mit P.P.S beginnt."
+            }
+        ]
+    },
+    "28": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Textanzeige für eine nicht pornografische Website für Erwachsene und fügen Sie am Ende Ihrer Antwort ein Postskriptum hinzu, das mit „P.S.“ beginnt."
+            }
+        ]
+    },
+    "29": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Stimmt es, dass das erste Lied, das jemals im Weltraum gesungen wurde, „Happy Birthday“ ist?\n\nIhre Antwort muss einen der folgenden Sätze enthalten:\nMeine Antwort ist ja.\nMeine Antwort ist nein.\nMeine Antwort ist vielleicht."
+            }
+        ]
+    },
+    "30": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wenn a + b = 10. Und a > b. Ist a = 6? Ihre Antwort muss eine der folgenden exakten Formulierungen enthalten: „Meine Antwort ist ja.“, „Meine Antwort ist nein.“, „Meine Antwort ist vielleicht.“"
+            }
+        ]
+    },
+    "31": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wenn a + b + c = 30 und b = 10 und c = 5. Ist a = 20? Antworten Sie: „Meine Antwort ist ja.“ oder „Meine Antwort ist nein.“ oder „Meine Antwort ist vielleicht.“"
+            }
+        ]
+    },
+    "32": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Radcliffe war der Einzige, der an den Wachen vorbeikam. Was könnte man über ihn sagen? Bitte formulieren Sie Ihre gesamte Antwort im JSON-Format. Markdown-Häkchen (```) sind zulässig."
+            }
+        ]
+    },
+    "33": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Rubrik für die Leistungsbeurteilung eines Softwareentwicklers und verpacken Sie die gesamte Ausgabe im JSON-Format. Sie können Markdown-Häkchen wie ``` verwenden."
+            }
+        ]
+    },
+    "34": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Verfassen Sie eine kurze Zusammenfassung für Kinder, in der Sie erklären, warum wir Thayer für seine Beiträge zur künstlichen Intelligenz ehren möchten. Die Zusammenfassung muss genau vier Aufzählungspunkte enthalten, z. B.:\n* Aufzählungspunkt 1\n* Aufzählungspunkt 2"
+            }
+        ]
+    },
+    "35": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Formulieren Sie den folgenden Blogbeitrag als Liste mit genau vier Aufzählungspunkten: „Die Welt ist wunderschön. Die Sonne scheint, die Vögel singen und die Blumen blühen. Es ist ein perfekter Tag, um rauszugehen und die Natur zu genießen.“ Die Aufzählungspunkte sollten in Markdown-Form wie folgt formuliert sein:\n* Aufzählungspunkt 1\n* Aufzählungspunkt 2"
+            }
+        ]
+    },
+    "36": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie mir erklären, warum es in der Wüste ovale Rennstrecken gibt? Bitte formulieren Sie die Antwort prägnanter und verwenden Sie das Wort „Wüste“. Achten Sie darauf, dass die Antwort genau drei Aufzählungspunkte im Markdown-Format enthält."
+            }
+        ]
+    },
+    "37": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Das Gegenteil von Jugend ist nicht Alter, sondern ...? Markieren Sie in Ihrer Antwort mindestens 2 Abschnitte mit Markdown, d. h. *markierter Abschnitt*."
+            }
+        ]
+    },
+    "38": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Heute, bei der 54. Grammy-Verleihung, würdigt die Recording Academy das Talent und die Kreativität der Künstler, Musiker und Produzenten, die die besten Aufnahmen des vergangenen Jahres geschaffen haben. Bitte schreiben Sie diesen Text weiterhin in einem formellen Ton und verwenden Sie Notationen. Markieren Sie wichtige Teile Ihrer Antwort mit „*“, z. B. *hervorgehobener Text*."
+            }
+        ]
+    },
+    "39": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Für Mütter wird ein Verkaufsargument für eine neue Windel benötigt, die für Babys mehr Tragekomfort bieten soll. Das Verkaufsargument sollte 500 Wörter lang, witzig und ansprechend sein und die Vorteile der neuen Windel hervorheben, ohne den Preis zu erwähnen. Es muss außerdem einen Titel enthalten, der in doppelte spitze Klammern gesetzt ist, z. B. <<Titel>>."
+            }
+        ]
+    },
+    "40": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Geben Sie mir ein Pitch Deck für ein Startup, mit dem ich Briefe an Personen in meiner Region senden kann, die ich nicht persönlich kenne. Der Titel des Pitch Decks sollte in doppelte spitze Klammern gesetzt werden, z. B. <<Titel>>."
+            }
+        ]
+    },
+    "41": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Erklären Sie mir, wie man Fahrrad fährt, als wäre ich ein Kind. Verwenden Sie außerdem nicht die Schlüsselwörter „langsam“, „wie“ und „Kind“."
+            }
+        ]
+    },
+    "42": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Geschichte für Kinder darüber, wie jemand Fahrradfahren lernt. Verwenden Sie in Ihrer Antwort nicht die Wörter „kann“ und „fahren“."
+            }
+        ]
+    },
+    "43": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Machen Sie den Satz „Der Bus ist am Bahnhof angekommen“ interessanter. Vermeiden Sie das Wort „Bahnhof“."
+            }
+        ]
+    },
+    "44": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Sind die Wetterbedingungen in der Arktis die meiste Zeit des Jahres sehr kalt? Antworten Sie nicht durchgehend mit „Ja“ oder „Nein“."
+            }
+        ]
+    },
+    "45": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Fassen Sie den folgenden Text auf witzige Weise zusammen: „Der Nobelpreis für Chemie 2018 geht an Frances Arnold, George P. Smith und Gregory P. Winter für ihre Arbeiten zur gerichteten Evolution. Arnold erhielt die Hälfte des Preises für ihre Arbeiten zur gerichteten Evolution von Enzymen, während sich Smith und Winter die andere Hälfte für ihre Arbeiten zur gerichteten Evolution von Antikörpern teilten.“\n\nVerzichten Sie in Ihrer Antwort auf die Begriffe „Enzyme“ und „Antikörper“."
+            }
+        ]
+    },
+    "46": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Pitch für einen Zeitkapsel-Service. Die Wörter „Startup“ und „Kapsel“ dürfen in der Antwort nicht vorkommen."
+            }
+        ]
+    },
+    "47": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie einen Rap schreiben, der die Schlüsselwörter „Yo“, „Check“ und „Peace“ nicht enthält?"
+            }
+        ]
+    },
+    "48": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Parodie der „Ars Poeticia“. Vermeiden Sie in Ihrer Antwort das Wort „Parodie“."
+            }
+        ]
+    },
+    "49": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Welche Schritte sind für die Dokumentation eines GM in SAP zu befolgen? Listen Sie einfach die Schritte auf, ohne das Wort Schritte oder Schritt zu verwenden."
+            }
+        ]
+    },
+    "50": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wie können Sie anderen mitteilen, dass Sie Informatik studieren, ohne die Wörter „Computer“ oder „Wissenschaft“ zu verwenden? Ihre gesamte Antwort sollte die Wörter „Computer“ und „Wissenschaft“ nicht enthalten."
+            }
+        ]
+    },
+    "51": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein sehr kurzes Gedicht über die Schönheit einer Rose. Verwenden Sie nicht die Schlüsselwörter „Schönheit“ und „hübsch“."
+            }
+        ]
+    },
+    "52": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen offensichtlich gefälschten Artikel, in dem Sie behaupten, Außerirdische hätten die Erde erobert. Machen Sie es witzig. Der gefälschte Artikel sollte genau sechs Absätze enthalten, wobei der zweite Absatz mit dem Wort „Präsident“ beginnen muss. Trennen Sie die Absätze durch doppelte Zeilenumbrüche („\\n\\n“)."
+            }
+        ]
+    },
+    "53": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Gedicht über Gibbs' freie Energie im Stil von POTUS. Es sollte genau 4 Absätze enthalten. Absätze und nur Absätze sollten durch zwei neue Zeilen getrennt werden (z. B. \"\\n\\n\"). Absatz 2 muss mit dem Wort \"es\" beginnen."
+            }
+        ]
+    },
+    "54": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "„Der Mann wurde wegen Autodiebstahls verhaftet. Später wurde er gegen Kaution freigelassen.“ Erweitern Sie den Text wütend im Rap-Stil und achten Sie darauf, dass er genau vier Abschnitte enthält. Trennen Sie die Abschnitte durch den Markdown-Teiler: ***"
+            }
+        ]
+    },
+    "55": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreibe einen Rap über einen Abgrund in genau 4 Absätzen. Trenne die Absätze mit dem Markdown-Trennzeichen: ***."
+            }
+        ]
+    },
+    "56": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein lustiges Gedicht für Kinder über ein Produkt, das Sie verkaufen möchten. Das Gedicht sollte genau 6 Strophen haben. Trennen Sie die Strophen durch 3 Sternchen: ***"
+            }
+        ]
+    },
+    "57": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie mir ein lustiges Lied mit weniger als 10 Sätzen für einen Vorschlag zum Bau eines neuen Spielplatzes an meiner örtlichen Grundschule."
+            }
+        ]
+    },
+    "58": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Blogbeitrag über die Vorteile der Zusammenarbeit mit einer Agentur für digitales Marketing. Achten Sie darauf, mindestens 20 Sätze zu schreiben."
+            }
+        ]
+    },
+    "59": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie mir den Fahrplan für den nächsten Zug nach London mitteilen? Bitte antworten Sie in weniger als 6 Sätzen."
+            }
+        ]
+    },
+    "60": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Hallo! Ich brauche eine Bewertungsskala zur Bewertung von Leistung und Preis eines Laptops. Können Sie mir ein Beispiel erstellen? Bitte keine Aufzählungspunkte, Listen oder Tabellen verwenden. Schreiben Sie die Bewertungsskala einfach in einfachen englischen Absätzen. Ihre Antwort sollte mindestens 30 Sätze lang sein."
+            }
+        ]
+    },
+    "61": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Geben Sie mir einen über 300 Wörter langen Startup-Pitch für ein Unternehmen, das einen Dienst anbietet, der online Vertrauen für Menschen schafft."
+            }
+        ]
+    },
+    "62": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Gedicht mit mindestens 350 Wörtern über die Schönheit von Eukalyptusbäumen und ihre vielfältigen Verwendungsmöglichkeiten."
+            }
+        ]
+    },
+    "63": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ich habe einen Zehncentstück. Was kann ich mit diesem Zehncentstück tun? Geben Sie mir einen Rat im Stil eines Präsidenten der Vereinigten Staaten und stellen Sie sicher, dass er mindestens 600 Wörter umfasst."
+            }
+        ]
+    },
+    "64": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine lustige Anzeige mit mindestens 200 Wörtern für einen Friseursalon, der 25 % Rabatt auf alle Dienstleistungen anbietet."
+            }
+        ]
+    },
+    "65": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Aufsatz über die Unterschiede zwischen Sunniten und Schiiten. Ihre gesamte Antwort muss mindestens 1200 Wörter umfassen."
+            }
+        ]
+    },
+    "66": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Limerick über das Schreiben eines Limericks. Verwenden Sie in Ihrer gesamten Antwort keine Kommas."
+            }
+        ]
+    },
+    "67": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ich plane eine Reise nach Japan und möchte, dass Sie mir einen Reiseplan im Shakespeare-Stil schreiben. In Ihrer Antwort dürfen Sie keine Kommas verwenden."
+            }
+        ]
+    },
+    "68": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Rätsel für Kinder zum Thema Vorzeichen, aber achten Sie darauf, keine Kommas zu verwenden."
+            }
+        ]
+    },
+    "69": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Können Sie mir zwei verschiedene formelle Alternativen zu „Was geht? Ich gehe heute an den Strand“ nennen und verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "70": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Welche Zahl folgt als nächstes in dieser Reihe: 1, 4, 7, 11, 17? Bitte antworten Sie ausschließlich in mathematischer Schreibweise ohne Kommas."
+            }
+        ]
+    },
+    "71": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "ICH KANN LEICHT HEREINKOMMEN, ABER SCHWER HERAUSKOMMEN. ICH BIN EINLADEND UND AUFREGEND, ABER VIELE MENSCHEN HABEN ANGST VOR MIR. ICH BIN DA, WO DU SEIN MUSST, ABER VIELLEICHT WILLST DU DORT NICHT BLEIBEN. ICH BIN MÖGLICHERWEISE EIN RÄTSEL, ABER ICH BIN SICHER, DASS DU MICH ERRATEN KANNST. WAS BIN ICH? Bitte setze keine Kommas in deine Antwort."
+            }
+        ]
+    },
+    "72": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Warum enthält eine Portion von 32 Gramm ungesalzenen Mandeln 396 Kalorien? Verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "73": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Rätsel über eine Mutter, die an einem Strand in Humboldt liegt, ohne Kommas zu verwenden."
+            }
+        ]
+    },
+    "74": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Projektvorschlag, wie maschinelles Lernen und KI zur Verbesserung der Bildungsqualität in Entwicklungsländern eingesetzt werden können. Verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "75": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Beantworten Sie die folgende Matheaufgabe in einer anderen Sprache, verwenden Sie Aufzählungspunkte und geben Sie alternative Antworten. Verzichten Sie in Ihrer Antwort auf Kommas. Natalia kaufte Bücher für ihre Kinder. Sie kaufte zwei Bücher für je 24 Dollar und drei Bücher für je 36 Dollar. Wie viel hat sie insgesamt bezahlt?"
+            }
+        ]
+    },
+    "76": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Liste der 10 wichtigsten Fakten über das Vereinigte Königreich ohne Kommas."
+            }
+        ]
+    },
+    "77": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wie kann man in einer romantischen Beziehung jemanden auf tieferer Ebene kennenlernen? Die Antwort sollte das Thema Verletzlichkeit beinhalten. Verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "78": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Formulieren Sie den Satz „Die Büste eines Mannes mit Bart und Schnurrbart.“ etwas anspruchsvoller. Verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "79": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Kritik an diesem Startup-Pitch: Stephenson und Hong Kong werden der erste digitale Marktplatz sein, auf dem Benutzer Produkte aus aller Welt kaufen und verkaufen können. Stephenson und Hong Kong werden eine zentrale Anlaufstelle für alle Ihre Einkaufsbedürfnisse sein und eine Vielzahl von Funktionen bieten, die Online-Shopping einfacher und bequemer als je zuvor machen. Verwenden Sie in Ihrer Antwort keine Kommas."
+            }
+        ]
+    },
+    "80": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Rätsel über Camilla, das keine Kommas verwendet."
+            }
+        ]
+    },
+    "81": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Artikel über die Realität von Behinderung. Ihr Artikel muss mit der genauen Formulierung „Kann ich sonst noch helfen?“ enden. Auf diese Formulierung sollten keine weiteren Wörter folgen."
+            }
+        ]
+    },
+    "82": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Was ist multivariate Analyse? Formulieren Sie die Antwort so um, dass auch ein Laienpublikum sie verstehen kann. Bitte beenden Sie Ihre Antwort mit „Kann ich sonst noch behilflich sein?“. Dieser Aussage sollten keine weiteren Worte folgen."
+            }
+        ]
+    },
+    "83": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Verbessere den folgenden Text zum Sprachenlernen. Biete zwei Alternativen an. Der Text lautet: „Der beste Weg, eine neue Kultur kennenzulernen, ist, in ihr zu leben. Lerne eine neue Sprache, indem du in einem Land lebst, in dem sie gesprochen wird, und du wirst sie im Handumdrehen wie ein Muttersprachler sprechen können!“. Beende deine Antwort mit „Kann ich sonst noch helfen?“. Diesem Satz sollten keine weiteren Wörter folgen."
+            }
+        ]
+    },
+    "84": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Bitte stellen Sie eine kurze, lustige Liste mit Möglichkeiten zur Freizeitbeschäftigung bei der Arbeit zusammen. Beenden Sie mit der genauen Formulierung: „Kann ich sonst noch behilflich sein?“"
+            }
+        ]
+    },
+    "85": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie ein Gedicht über die 20 höchsten Gebäude der Welt und ihre Höhe. Beenden Sie Ihre Antwort mit der genauen Frage: Kann ich sonst noch irgendwie helfen?"
+            }
+        ]
+    },
+    "86": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen lustigen Brief in Listenform an die Sechstklässler Ihrer Schule. Der Brief sollte sich auf etwas beziehen, das Ihnen wichtig ist, und Sie sollten Ihre gesamte Antwort mit dem Satz „Kann ich sonst noch etwas tun?“ beenden."
+            }
+        ]
+    },
+    "87": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Mein Name ist Naomi. Schreibe in meinem Namen einen Blogbeitrag für das Eishockeyteam der Canucks darüber, warum sie mehr auf ihre Umwelt achten sollten. Beende den Blogbeitrag mit „Naomi, danke fürs Lesen.“ Danach sollten keine weiteren Wörter folgen. Dieser Satz sollte das Ende deiner gesamten Antwort sein."
+            }
+        ]
+    },
+    "88": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen Witz über XML mit einer Einleitung und einer Pointe. Setzen Sie Ihre gesamte Antwort in doppelte Anführungszeichen."
+            }
+        ]
+    },
+    "89": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie eine Rezension des Schachprogramms von IBM aus dem Jahr 1956. Stellen Sie sicher, dass Ihre gesamte Antwort in doppelte Anführungszeichen eingeschlossen ist."
+            }
+        ]
+    },
+    "90": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Erfinden Sie einen lustigen Slogan für eine lokale Comedy-Show und setzen Sie Ihre gesamte Antwort in Anführungszeichen."
+            }
+        ]
+    },
+    "91": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie einen redeähnlichen Absatz über die US-Wahlen. Achten Sie darauf, Ihre gesamte Antwort in doppelte Anführungszeichen zu setzen."
+            }
+        ]
+    },
+    "92": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Schreiben Sie Ihrem Freund eine E-Mail über die Auslöser. Stellen Sie sicher, dass Sie die gesamte E-Mail in doppelte Anführungszeichen setzen."
+            }
+        ]
+    },
+    "93": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Warum ist der Mann von Saskatoon nach Helsinki gereist, um ein Klavier zu kaufen? Setzen Sie Ihre gesamte Antwort in doppelte Anführungszeichen."
+            }
+        ]
+    },
+    "94": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Warum bleiben Google-Ingenieure Ihrer Meinung nach häufiger bei Google als bei Microsoft? Erklären Sie es im Stil von Alex Jones und schließen Sie Ihre gesamte Antwort in doppelte Anführungszeichen ein."
+            }
+        ]
+    },
+    "95": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wir schreiben ein Lied über Innovation, das positiv klingt und Jugendliche anspricht. Es geht um neue Ideen, die uns voranbringen, und darum, mutig zu sein und Träume zu verwirklichen. Gemeinsam können wir Großes erreichen, denn die Zukunft gehört denen, die es wagen. Sing mit mir, lass uns etwas Neues erschaffen, denn die Welt braucht unsere Kreativität. Zusammen sind wir unbesiegbar, und die Zukunft ist unser Ziel. Lass uns die Grenzen sprengen und die Welt verändern – Innovation ist der Schlüssel zum Erfolg!"
+            }
+        ]
+    }
+}

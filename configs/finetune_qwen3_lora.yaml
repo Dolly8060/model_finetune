@@ -1,0 +1,69 @@
+### Qwen3-1.7B LoRA Finetune Config
+### 针对翻译/总结/指令遵循三任务微调
+###
+### 关键设计：
+### 1. template=qwen3，适配 Qwen3 chat format
+### 2. 数据集已内置 <think>\n\n</think>\n\n 空思考前缀（保护思考能力）
+### 3. LoRA rank=64（1.7B模型适中容量）
+### 4. cutoff_len=2048（指令遵循任务可能较长）
+### 5. 三任务均衡数据集 ~3200 条
+
+### Model
+model_name_or_path: D:/AI_code/models/Qwen3-1.7B
+trust_remote_code: true
+
+### Finetune method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+### Dataset (Qwen3 专用，含思考前缀 + 溯源字段)
+dataset_dir: ./data
+dataset: qwen3_train
+eval_dataset: qwen3_val
+template: qwen3
+cutoff_len: 2048
+max_samples: 10000
+overwrite_cache: true
+preprocessing_num_workers: 1
+
+### LoRA
+### rank=64 适合 1.7B 模型，alpha=128 (2x rank)
+### target: q/k/v/o projection layers
+lora_target: q_proj,k_proj,v_proj,o_proj
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.05
+
+### Training
+output_dir: ./outputs/qwen3-1.7B-lora-sft
+logging_steps: 10
+save_steps: 100
+save_total_limit: 5
+resume_from_checkpoint: false
+
+### Batch size
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+
+### Learning rate
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+weight_decay: 0.01
+
+### Optimizer
+optim: adamw_torch
+
+### Evaluation
+eval_strategy: steps
+eval_steps: 100
+per_device_eval_batch_size: 4
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+
+### Other
+report_to: none

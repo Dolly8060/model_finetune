@@ -147,11 +147,12 @@ def generate_response(
     model, 
     tokenizer, 
     prompt: str, 
-    max_new_tokens: int = 512
+    max_new_tokens: int = 512,
+    max_input_length: int = 2048,
 ) -> str:
     """生成模型回复"""
     inputs = tokenizer(
-        prompt, return_tensors="pt", truncation=True, max_length=1536
+        prompt, return_tensors="pt", truncation=True, max_length=max_input_length
     ).to(model.device)
     
     with torch.no_grad():
@@ -180,6 +181,7 @@ def run_inference(
     eval_data: List[Dict],
     model_name: str,
     max_new_tokens: int = 512,
+    max_input_length: int = 2048,
 ) -> List[Dict]:
     """对评估数据运行推理"""
     results = []
@@ -195,17 +197,21 @@ def run_inference(
         
         # 生成预测
         try:
-            prediction = generate_response(model, tokenizer, prompt, max_new_tokens)
+            prediction = generate_response(
+                model, tokenizer, prompt, max_new_tokens, max_input_length
+            )
         except Exception as e:
             print(f"  推理失败: {e}")
             prediction = f"[ERROR] {str(e)}"
         
         results.append({
             "instruction": instruction,
-            "input": input_text[:500] + "..." if len(input_text) > 500 else input_text,
+            "input": input_text,
             "reference": reference,
             "prediction": prediction,
             "task_type": task_type,
+            "source": sample.get("source", ""),
+            "language": sample.get("language", ""),
         })
     
     return results
@@ -327,6 +333,10 @@ def main():
         "--max-new-tokens", type=int, default=512,
         help="生成的最大token数 (默认: 512)"
     )
+    parser.add_argument(
+        "--max-input-length", type=int, default=2048,
+        help="输入prompt最大token长度，超出将截断 (默认: 2048)"
+    )
     
     args = parser.parse_args()
     
@@ -384,7 +394,7 @@ def main():
             # 运行推理
             results = run_inference(
                 model, tokenizer, model_type, eval_data, 
-                model_name, args.max_new_tokens
+                model_name, args.max_new_tokens, args.max_input_length
             )
             
             # 保存结果

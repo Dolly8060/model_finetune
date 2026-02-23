@@ -1,0 +1,147 @@
+{
+  "instruction_following": {
+    "bleu": null,
+    "rouge1": null,
+    "rouge2": null,
+    "rougeL": null,
+    "bert_precision": null,
+    "bert_recall": null,
+    "bert_f1": null,
+    "instruction_following_rate": 50.0,
+    "strict_accuracy": 40.65934065934066,
+    "loose_accuracy": 53.11355311355312,
+    "samples_evaluated": 273,
+    "no_constraint_samples": 927,
+    "total_constraints": 374,
+    "avg_constraints_per_sample": 1.36996336996337,
+    "by_constraint_type": {
+      "min_sentences": {
+        "total": 12,
+        "passed": 7,
+        "rate": 58.333333333333336
+      },
+      "quotation_wrap": {
+        "total": 21,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "highlight_sections": {
+        "total": 9,
+        "passed": 5,
+        "rate": 55.55555555555556
+      },
+      "markdown_format": {
+        "total": 10,
+        "passed": 1,
+        "rate": 10.0
+      },
+      "max_sentences": {
+        "total": 14,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "json_format": {
+        "total": 13,
+        "passed": 6,
+        "rate": 46.15384615384615
+      },
+      "repeat_prompt": {
+        "total": 23,
+        "passed": 23,
+        "rate": 100.0
+      },
+      "exact_paragraphs": {
+        "total": 16,
+        "passed": 2,
+        "rate": 12.5
+      },
+      "no_commas": {
+        "total": 14,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "paragraph_divider": {
+        "total": 2,
+        "passed": 1,
+        "rate": 50.0
+      },
+      "keyword_count": {
+        "total": 7,
+        "passed": 5,
+        "rate": 71.42857142857143
+      },
+      "all_uppercase": {
+        "total": 34,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "word_frequency": {
+        "total": 11,
+        "passed": 10,
+        "rate": 90.9090909090909
+      },
+      "min_words": {
+        "total": 22,
+        "passed": 16,
+        "rate": 72.72727272727273
+      },
+      "start_with": {
+        "total": 2,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "response_language": {
+        "total": 27,
+        "passed": 27,
+        "rate": 100.0
+      },
+      "all_lowercase": {
+        "total": 28,
+        "passed": 26,
+        "rate": 92.85714285714286
+      },
+      "title_double_brackets": {
+        "total": 23,
+        "passed": 19,
+        "rate": 82.6086956521739
+      },
+      "keyword_exclude": {
+        "total": 4,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "max_words": {
+        "total": 11,
+        "passed": 1,
+        "rate": 9.090909090909092
+      },
+      "separator_asterisks": {
+        "total": 19,
+        "passed": 8,
+        "rate": 42.10526315789473
+      },
+      "postscript": {
+        "total": 17,
+        "passed": 14,
+        "rate": 82.35294117647058
+      },
+      "table_format": {
+        "total": 19,
+        "passed": 2,
+        "rate": 10.526315789473683
+      },
+      "placeholder_count": {
+        "total": 14,
+        "passed": 13,
+        "rate": 92.85714285714286
+      },
+      "section_markers": {
+        "total": 2,
+        "passed": 1,
+        "rate": 50.0
+      }
+    },
+    "content_quality_samples": 0,
+    "content_quality_skipped": 1200
+  }
+}

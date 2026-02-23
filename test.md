@@ -1,0 +1,1 @@
+python scripts/generate.py --models "BaseQwen3:D:/AI_code/models/Qwen3-1.7B" --eval-file data/qwen3_rigorous_test_labeled.json --output-file evaluation/output_data/base_labeled.json --max-input-length 2048

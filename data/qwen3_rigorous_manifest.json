@@ -1,0 +1,95 @@
+{
+  "args": {
+    "data_dir": "data",
+    "dataset_dir": "dataset",
+    "output_prefix": "qwen3_rigorous",
+    "train_target": 3600,
+    "val_target": 360,
+    "test_target": 600,
+    "if_unlabeled_target": 1200,
+    "seed": 2026,
+    "include_public_in_train": false,
+    "no_think_prefix": false
+  },
+  "counts": {
+    "train": 3600,
+    "val": 360,
+    "test_labeled": 585,
+    "test_if_unlabeled": 1200
+  },
+  "task_distribution": {
+    "train": {
+      "summarization": 1200,
+      "translation": 1200,
+      "instruction_following": 1200
+    },
+    "val": {
+      "instruction_following": 120,
+      "translation": 120,
+      "summarization": 120
+    },
+    "test_labeled": {
+      "instruction_following": 185,
+      "summarization": 200,
+      "translation": 200
+    },
+    "test_if_unlabeled": {
+      "instruction_following": 1200
+    }
+  },
+  "source_distribution": {
+    "train": {
+      "self_generated": 1281,
+      "v3_dataset": 973,
+      "chinese_generated": 328,
+      "argilla_ifeval": 872,
+      "mixed_3k": 146
+    },
+    "val": {
+      "argilla_ifeval": 88,
+      "mixed_3k": 11,
+      "v3_dataset": 102,
+      "self_generated": 127,
+      "chinese_generated": 32
+    },
+    "test_labeled": {
+      "test_v4_enhanced": 288,
+      "public_v2_eval": 297
+    },
+    "test_if_unlabeled": {
+      "PMMEval-mifeval-fr": 83,
+      "PMMEval-mifeval-pl": 75,
+      "ifeval_prompt_only": 354,
+      "PMMEval-mifeval-ar": 88,
+      "PMMEval-mifeval-it": 77,
+      "PMMEval-mifeval-de": 75,
+      "PMMEval-mifeval-zh": 73,
+      "PMMEval-mifeval-pt": 75,
+      "PMMEval-mifeval-ja": 71,
+      "PMMEval-mifeval-ro": 75,
+      "PMMEval-mifeval-es": 75,
+      "PMMEval-mifeval-en": 79
+    }
+  },
+  "pool_stats": {
+    "skipped_no_output": 0,
+    "skipped_other": 84,
+    "skipped_test_overlap": 685,
+    "train_pool_translation_en2zh": 959,
+    "train_pool_translation_zh2en": 1049,
+    "train_pool_summarization": 1529,
+    "train_pool_instruction_following": 1530,
+    "labeled_test_pool_translation_en2zh": 353,
+    "labeled_test_pool_translation_zh2en": 399,
+    "labeled_test_pool_summarization": 446,
+    "labeled_test_pool_instruction_following": 185
+  },
+  "leakage": {
+    "train_val": 0,
+    "train_test_labeled": 0,
+    "val_test_labeled": 0,
+    "train_test_if_unlabeled": 0,
+    "val_test_if_unlabeled": 0,
+    "test_labeled_vs_test_if_unlabeled": 0
+  }
+}

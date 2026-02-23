@@ -530,12 +530,17 @@ class MetricsCalculator:
         self.rouge_scorer_obj = rouge_scorer.RougeScorer(
             ['rouge1', 'rouge2', 'rougeL'], use_stemmer=True
         )
-        self.bleu = BLEU(effective_order=True, lowercase=False, tokenize='zh')
+        # BLEU tokenizer按语种选择：中文用zh，其他语种用13a
+        self.bleu_zh = BLEU(effective_order=True, lowercase=False, tokenize='zh')
+        self.bleu_default = BLEU(effective_order=True, lowercase=False, tokenize='13a')
     
     def _detect_lang(self, text: str) -> str:
         chinese_chars = sum(1 for c in text if '\u4e00' <= c <= '\u9fff')
         total_chars = len(text.replace(' ', ''))
         return "zh" if total_chars > 0 and chinese_chars / total_chars > 0.3 else "en"
+
+    def _is_zh_text(self, text: str) -> bool:
+        return self._detect_lang(text) == "zh"
     
     @staticmethod
     def _tokenize_for_rouge(text: str) -> str:
@@ -563,9 +568,31 @@ class MetricsCalculator:
         sample_text = ''.join(references[:10])
         detected_lang = self._detect_lang(sample_text)
         
-        # BLEU
+        # BLEU（混合语料按参考文本语种分开计算，再加权平均）
         try:
-            bleu_score = self.bleu.corpus_score(predictions, [[r] for r in references]).score
+            zh_preds, zh_refs = [], []
+            other_preds, other_refs = [], []
+            for pred, ref in zip(predictions, references):
+                if self._is_zh_text(ref):
+                    zh_preds.append(pred)
+                    zh_refs.append(ref)
+                else:
+                    other_preds.append(pred)
+                    other_refs.append(ref)
+
+            bleu_parts = []
+            total = len(references)
+            if zh_refs:
+                zh_score = self.bleu_zh.corpus_score(zh_preds, [zh_refs]).score
+                bleu_parts.append((zh_score, len(zh_refs)))
+            if other_refs:
+                other_score = self.bleu_default.corpus_score(other_preds, [other_refs]).score
+                bleu_parts.append((other_score, len(other_refs)))
+
+            if bleu_parts:
+                bleu_score = sum(score * cnt for score, cnt in bleu_parts) / total
+            else:
+                bleu_score = 0.0
         except Exception:
             bleu_score = 0.0
         
@@ -696,7 +723,7 @@ def _reclassify_samples(samples: List[Dict]) -> List[Dict]:
     return samples
 
 
-def score_results(input_file: str, output_dir: str):
+def score_results(input_file: str, output_dir: str, reclassify: bool = False):
     """对推理结果进行评分"""
     
     # 加载推理结果
@@ -710,8 +737,11 @@ def score_results(input_file: str, output_dir: str):
     print(f"模型名称: {model_name}")
     print(f"样本数量: {len(samples)}")
     
-    # 运行时重分类：修正分类错误的样本
-    samples = _reclassify_samples(samples)
+    # 可选：运行时重分类（严格测试集建议关闭，保持任务标签不变）
+    if reclassify:
+        samples = _reclassify_samples(samples)
+    else:
+        print("任务重分类: 关闭（使用原始 task_type）")
     
     # 按任务类型分组
     translation_samples = [s for s in samples if s.get("task_type") == "translation"]
@@ -929,6 +959,10 @@ def main():
         "--output-dir", type=str, default=None,
         help="输出目录 (默认: 与输入文件同目录的 eval_output/)"
     )
+    parser.add_argument(
+        "--reclassify", action="store_true",
+        help="启用运行时任务重分类（默认关闭，严格测试集建议关闭）"
+    )
     
     args = parser.parse_args()
     
@@ -939,7 +973,7 @@ def main():
         input_name = os.path.splitext(os.path.basename(args.input_file))[0]
         args.output_dir = os.path.join(out_dir_tmp, f"{input_name}_eval")
     
-    score_results(args.input_file, args.output_dir)
+    score_results(args.input_file, args.output_dir, args.reclassify)
 
 
 if __name__ == "__main__":

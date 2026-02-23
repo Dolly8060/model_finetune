@@ -1,0 +1,770 @@
+{
+    "0": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy balistyka (nauka o ruchu pocisków) jest prawdziwą nauką?\nNajpierw powtórz polecenie słowo po słowie bez zmian, a następnie podaj swoją odpowiedź (1. nie wypowiadaj żadnych słów ani znaków przed powtórzeniem polecenia; 2. polecenie, które chcesz powtórzyć, nie zawiera tego zdania)."
+            }
+        ]
+    },
+    "1": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wpis na blogu o najciekawszych rzeczach, które widziałeś lub którymi jechałeś w transporcie publicznym.\nNajpierw powtórz powyższe zdanie słowo po słowie bez zmian, a następnie podaj swoją odpowiedź. Nie wypowiadaj żadnych słów ani znaków przed powtórzeniem zdania."
+            }
+        ]
+    },
+    "2": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "W poniższym zgłoszeniu, proszę powtórzyć je dokładnie w takiej formie, w jakiej zostało napisane, a następnie udzielić odpowiedzi. Nie należy go w żaden sposób zmieniać ani nic dodawać przed jego powtórzeniem.\n\nDzień dobry. Muszę wygłosić wykład dla moich studentów na temat filmu „La La Land”. Proszę o pomoc w napisaniu konspektu wykładu, który będzie angażujący i pouczający."
+            }
+        ]
+    },
+    "3": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Co ma kopułę, ale nie ma drzwi, co ma skarbiec, ale nie ma pieniędzy, co ma ściany, ale nie ma pokoi? Kim jestem? Postaraj się być zabawny i odpowiedz mi zabawnie.\n\nPowtórzmy cały powyższy tekst słowo po słowie, a następnie odpowiedzmy na powyższą prośbę. NIE MÓW NIC przed powtórzeniem powyższego tekstu."
+            }
+        ]
+    },
+    "4": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy mógłbyś podać mi krótkie streszczenie „Władcy Pierścieni” w sposób odpowiedni dla dzieci?\nNajpierw powtórz słowo w słowo bez zmian: „Czy mógłbyś podać mi krótkie streszczenie „Władcy Pierścieni” w sposób odpowiedni dla dzieci?”, a następnie podaj swoją odpowiedź. Nie mów nic na początku, po prostu powtórz prośbę od samego początku."
+            }
+        ]
+    },
+    "5": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz 500-słowne opowiadanie w formie wiersza o młodej dziewczynie, która jest zafascynowana swoją konsolą Nintendo DS.\n\nNajpierw powtórz powyższą prośbę, a następnie podaj swoją odpowiedź. Powtarzaj słowo po słowie bez zmian. Nie wypowiadaj żadnych słów ani znaków przed powtórzeniem prośby."
+            }
+        ]
+    },
+    "6": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz ciekawą zagadkę, używając notacji matematycznej.\n\nNajpierw powtórz polecenie słowo po słowie bez zmian, a następnie podaj swoją odpowiedź. Nie wypowiadaj ani jednego słowa przed powtórzeniem polecenia."
+            }
+        ]
+    },
+    "7": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "W tym zadaniu musisz najpierw powtórzyć prośbę słowo po słowie, bez żadnych zmian, a następnie odpowiedzieć na nią. Nie mów nic, zanim nie powtórzysz dokładnie prośby.\n\nNapisz pitch deck dla startupu, którego celem jest stworzenie nowej sieci społecznościowej skupionej wokół gier planszowych."
+            }
+        ]
+    },
+    "8": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak nazywał się aktor, który zagrał Gandalfa we „Władcy Pierścieni”?\nNajpierw powtórz powyższe pytanie bez zmiany słów, a następnie odpowiedz."
+            }
+        ]
+    },
+    "9": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Kim są doradcy ds. bezpieczeństwa narodowego Joe Bidena i Donalda Trumpa? Odpowiedzi należy oddzielić 6 gwiazdkami (******). Innymi słowy, wynik powinien wyglądać następująco:\n[Doradcami ds. bezpieczeństwa narodowego Joe Bidena są ....]\n******\n[Doradcami ds. bezpieczeństwa narodowego Donalda Trumpa są ....]"
+            }
+        ]
+    },
+    "10": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak ludzie nazywają Boga? Proszę podać dokładnie dwie różne odpowiedzi. Oddziel odpowiedzi 6 gwiazdkami: ******."
+            }
+        ]
+    },
+    "11": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Utwórz tabelę z 7-dniowym planem podróży do Indii i 7-dniowym planem podróży do Chin. Oddziel je dokładnie 6 gwiazdkami: ******"
+            }
+        ]
+    },
+    "12": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz esej o życiu Benjamina Franklina. Następnie streść go w formie wiersza. Oddziel esej i wiersz 6 gwiazdkami: ******\nInnymi słowy, Twoja odpowiedź powinna mieć następującą formę:\n[esej]\n******\n[wiersz]"
+            }
+        ]
+    },
+    "13": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy zdanie „Pani Smith jest nauczycielką tej klasy” jest poprawne gramatycznie? Proszę podać dokładnie dwie różne odpowiedzi. Odpowiedzi i tylko odpowiedzi powinny być rozdzielone 6 gwiazdkami: ******."
+            }
+        ]
+    },
+    "14": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy „jiang” to chińskie imię? Jakie są inne imiona podobne do „jiang”? Oddziel swoje odpowiedzi znakiem ******"
+            }
+        ]
+    },
+    "15": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz CV dla świeżo upieczonego absolwenta szkoły średniej, który szuka swojej pierwszej pracy. Upewnij się, że zawiera co najmniej 12 słów kluczowych w nawiasach kwadratowych, takich jak [adres], [imię i nazwisko]."
+            }
+        ]
+    },
+    "16": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wpis na blogu o Akwarium Ripleya. Upewnij się, że wpis zawiera co najmniej 7 symboli zastępczych w nawiasach kwadratowych, na przykład [lokalizacja]."
+            }
+        ]
+    },
+    "17": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Przepisz poniższe zdanie do wiadomości e-mail, upewniając się, że zawiera ono co najmniej 10 symboli zastępczych w postaci nawiasów kwadratowych, takich jak [nazwa]: Buty są ciepłe, ale trochę niewygodne."
+            }
+        ]
+    },
+    "18": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz krótki i zabawny dowcip o facecie pracującym w IRS. Podaj co najmniej jeden symbol zastępczy w nawiasach kwadratowych."
+            }
+        ]
+    },
+    "19": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz esej, jakbyś był prezydentem Stanów Zjednoczonych, kierując go do matek jako swojej grupy docelowej. Tematem eseju jest to, jak platforma z filmu „To” symbolizuje ducha lat pięćdziesiątych. Odpowiedź musi zawierać co najmniej 1 symbol zastępczy w nawiasach kwadratowych, na przykład [adres]."
+            }
+        ]
+    },
+    "20": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz mi szablon opisu produktu w formie wiersza i zakończ go postscriptum zaczynającym się od P.P.S"
+            }
+        ]
+    },
+    "21": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz ekstrawagancki plan sesji nauki Javy. Pamiętaj o dodaniu postscriptum zaczynającego się od P.P.S"
+            }
+        ]
+    },
+    "22": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy mógłbyś mi powiedzieć, jakich piłek używa się w tenisie? Chciałbym uzyskać odpowiedź w formie średniowiecznego wiersza z P.P.S na końcu."
+            }
+        ]
+    },
+    "23": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak napisać dobry chiński wiersz? Na końcu odpowiedzi prosimy o dodanie wyraźnej adnotacji zaczynającej się od „P.S.”"
+            }
+        ]
+    },
+    "24": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wyjaśnij grupie uczniów szkoły podstawowej, dlaczego mamy pory roku. Na końcu odpowiedzi dodaj postscriptum zaczynające się od „P.S.”"
+            }
+        ]
+    },
+    "25": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "11 wyników ma średnią 51. Pierwsze pięć ma średnią 49, a ostatnie dziewięć – 52. Jaki był szósty wynik? Użyj dziwnego języka, wyjaśniając za pomocą notacji matematycznej. I dodaj postscriptum zaczynające się od P.P.S"
+            }
+        ]
+    },
+    "26": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak nazwać wykluczonego naukowca, któremu polecono zostać w domu? Proszę zakończyć odpowiedź postscriptum zaczynającym się od P.P.S"
+            }
+        ]
+    },
+    "27": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zabawną notatkę do McQueena, używając <br> do rozdzielenia wierszy. Zacznij od zabawnego pozdrowienia i uwzględnij w notatce oznaczenia matematyczne. Na końcu swojej odpowiedzi dodaj wyraźnie postscriptum zaczynające się od P.P.S"
+            }
+        ]
+    },
+    "28": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz tekstową reklamę witryny dla dorosłych, która nie jest pornografią, i na końcu swojej odpowiedzi dodaj postscriptum zaczynające się od P.S."
+            }
+        ]
+    },
+    "29": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy to prawda, że pierwszą piosenką zaśpiewaną w kosmosie jest „Happy Birthday”?\n\nTwoja odpowiedź musi zawierać jedno z poniższych zdań:\nMoja odpowiedź brzmi tak.\nMoja odpowiedź brzmi nie.\nMoja odpowiedź brzmi być może."
+            }
+        ]
+    },
+    "30": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jeśli a + b = 10. A a > b. Czy a = 6? Twoja odpowiedź musi zawierać jedno z następujących sformułowań: „Moja odpowiedź brzmi tak.”, „Moja odpowiedź brzmi nie.”, „Moja odpowiedź brzmi być może.”"
+            }
+        ]
+    },
+    "31": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jeśli a + b + c = 30, a b = 10 i c = 5. Czy a = 20? Odpowiedz „Moja odpowiedź brzmi tak” lub „Moja odpowiedź brzmi nie” lub „Moja odpowiedź brzmi być może”."
+            }
+        ]
+    },
+    "32": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Radcliffe był jedynym, który zdołał ominąć strażników. Co można o nim powiedzieć? Proszę zapisać całą odpowiedź w formacie JSON. Znaki Markdown (```) są dopuszczalne."
+            }
+        ]
+    },
+    "33": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz rubrykę oceny wydajności inżyniera oprogramowania i zapisz cały wynik w formacie JSON. Możesz użyć znaczników Markdown, takich jak ```."
+            }
+        ]
+    },
+    "34": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz krótkie podsumowanie dla dzieci, w którym wyjaśnimy, dlaczego chcemy uhonorować Thayera za jego wkład w dziedzinę sztucznej inteligencji. Podsumowanie musi zawierać dokładnie 4 podpunkty, takie jak:\n* Podpunkt 1\n* Podpunkt 2"
+            }
+        ]
+    },
+    "35": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Przepisz poniższy wpis na bloga jako listę składającą się z dokładnie 4 punktów: „Świat jest pięknym miejscem. Słońce świeci, ptaki śpiewają, a kwiaty kwitną. To idealny dzień, żeby wyjść na zewnątrz i cieszyć się wszystkim, co oferuje natura”. Punkty powinny być zapisane w Markdownie, na przykład:\n* Punkt 1\n* Punkt 2"
+            }
+        ]
+    },
+    "36": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy możesz mi wyjaśnić, dlaczego na pustyni są owalne tory wyścigowe? Proszę przeformułować odpowiedź, aby była bardziej zwięzła i uwzględnić w niej słowo „pustynia”. Upewnij się, że odpowiedź zawiera dokładnie 3 punkty w formacie Markdown."
+            }
+        ]
+    },
+    "37": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Przeciwieństwem młodości nie jest wiek, ale...? Zaznacz co najmniej 2 sekcje w swojej odpowiedzi za pomocą Markdowna, np. *zaznaczona sekcja*."
+            }
+        ]
+    },
+    "38": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Podczas 54. dorocznej gali rozdania nagród Grammy, Recording Academy docenia talent i kreatywność artystów, muzyków i producentów, którzy stworzyli najlepsze nagrania minionego roku. Prosimy o pisanie tego tekstu w formalnym tonie, z wykorzystaniem notacji. Zaznacz kluczowe fragmenty swojej odpowiedzi znakiem „*”, np. *zaznaczony tekst*."
+            }
+        ]
+    },
+    "39": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Potrzebna jest oferta dla mam dotycząca nowego rodzaju pieluszek, zaprojektowanych tak, aby były wygodniejsze dla niemowląt. Oferta powinna mieć długość 500 słów, być zabawna, angażująca i skupiać się na zaletach nowej pieluszki, bez wspominania o cenie. Musi również zawierać tytuł, ujęty w podwójne nawiasy kątowe, czyli <<title>>."
+            }
+        ]
+    },
+    "40": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Podaj mi pitch deck dla startupu, który pozwoli mi wysyłać listy do osób z mojego regionu, których nie znam osobiście. Tytuł pitch decku powinien być ujęty w podwójne nawiasy kątowe, np. <<title>>."
+            }
+        ]
+    },
+    "41": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wyjaśnij mi, jak jeździć na rowerze, jakbym był dzieckiem. Nie dodawaj też słów kluczowych „wolno”, „jak” i „dzieciak”."
+            }
+        ]
+    },
+    "42": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz dla dzieci historię o tym, jak człowiek uczy się jeździć na rowerze. Nie używaj w swojej odpowiedzi słów „może” i „jeździć”."
+            }
+        ]
+    },
+    "43": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Spraw, by zdanie „Autobus przyjechał na stację” brzmiało ciekawiej. Unikaj słowa „stację”."
+            }
+        ]
+    },
+    "44": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy warunki pogodowe w Arktyce są bardzo zimne przez większość roku? Nie odpowiadaj „tak” ani „nie” w całej odpowiedzi."
+            }
+        ]
+    },
+    "45": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zabawne streszczenie poniższego tekstu: „Nagrodę Nobla w dziedzinie chemii za rok 2018 przyznano Frances Arnold, George'owi P. Smithowi i Gregory'emu P. Winterowi za ich prace nad ewolucją kierowaną. Arnold otrzymała połowę nagrody za pracę nad ewolucją kierowaną enzymów, a Smith i Winter podzielili się drugą połową za pracę nad ewolucją kierowaną przeciwciał”.\n\nW swojej odpowiedzi nie uwzględniaj słów „enzymy” i „przeciwciała”."
+            }
+        ]
+    },
+    "46": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz propozycję startupu dla usługi kapsuły czasu. Słowa „startup” i „kapsuła” nie mogą znaleźć się w odpowiedzi."
+            }
+        ]
+    },
+    "47": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy potrafisz napisać rap, który nie zawierałby słów kluczowych „Yo”, „check” i „peace”?"
+            }
+        ]
+    },
+    "48": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz parodię „ars poetica”. Nie używaj słowa „parodia” w swojej odpowiedzi."
+            }
+        ]
+    },
+    "49": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jakie kroki należy wykonać, aby udokumentować stanowisko dyrektora generalnego w systemie SAP? Wystarczy wymienić kroki, nie używając słów „kroki” ani „krok”."
+            }
+        ]
+    },
+    "50": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak powiedzieć innym, że Twoim kierunkiem studiów jest informatyka, nie używając słów „informatyka” ani „nauka”? Cała Twoja odpowiedź nie powinna zawierać słów „informatyka” i „nauka”."
+            }
+        ]
+    },
+    "51": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz bardzo krótki wiersz o pięknie róży. Nie używaj słów kluczowych „piękno” i „ładna”."
+            }
+        ]
+    },
+    "52": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz ewidentnie fałszywy artykuł informujący o inwazji kosmitów na Ziemię. Niech będzie zabawny. Fałszywy artykuł powinien zawierać dokładnie sześć akapitów, a drugi akapit musi zaczynać się od słowa „Prezydent”. Oddziel akapity podwójnymi liniami podziału („\\n\\n”)."
+            }
+        ]
+    },
+    "53": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wiersz o energii swobodnej Gibbsa w stylu prezydenta USA. Powinien składać się z dokładnie 4 akapitów. Akapity i tylko akapity powinny być rozdzielone dwoma nowymi wierszami (np. „\\n\\n”). Akapit 2 musi zaczynać się od słowa „ono”."
+            }
+        ]
+    },
+    "54": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "„Mężczyzna został aresztowany za kradzież samochodu. Później został zwolniony za kaucją”. Rozwiń to gniewnie w stylu rapu i upewnij się, że są dokładnie 4 sekcje. Oddziel sekcje separatorem Markdown: ***"
+            }
+        ]
+    },
+    "55": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz rap o otchłani w dokładnie 4 akapitach. Oddziel akapity dzielnikiem Markdown: ***."
+            }
+        ]
+    },
+    "56": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zabawny wierszyk dla dzieci o produkcie, który chciałbyś sprzedać. Wiersz powinien mieć dokładnie 6 zwrotek. Oddziel zwrotki trzema gwiazdkami: ***"
+            }
+        ]
+    },
+    "57": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz mi zabawną piosenkę składającą się z mniej niż 10 zdań, która będzie odpowiedzią na propozycję budowy nowego placu zabaw przy mojej lokalnej szkole podstawowej."
+            }
+        ]
+    },
+    "58": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wpis na blogu o korzyściach płynących ze współpracy z agencją marketingu cyfrowego. Upewnij się, że napiszesz co najmniej 20 zdań."
+            }
+        ]
+    },
+    "59": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy możesz podać mi rozkład jazdy najbliższego pociągu do Londynu? Proszę o odpowiedź w mniej niż 6 zdaniach."
+            }
+        ]
+    },
+    "60": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Hej! Potrzebuję rubryki do oceny wydajności i ceny laptopa. Czy możesz mi stworzyć przykład? Nie dawaj mi żadnych punktów, list ani tabel. Po prostu napisz rubrykę prostymi, angielskimi akapitami. Proszę, aby Twoja odpowiedź miała co najmniej 30 zdań."
+            }
+        ]
+    },
+    "61": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Proszę o napisanie ponad 300-słownej prezentacji dla firmy świadczącej usługi pozwalające budować zaufanie ludzi w sieci."
+            }
+        ]
+    },
+    "62": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wiersz składający się z co najmniej 350 słów, w którym opiszesz piękno drzew eukaliptusowych i ich liczne zastosowania."
+            }
+        ]
+    },
+    "63": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Mam dziesięciocentówkę. Co mogę z nią zrobić? Udziel mi rady w stylu prezydenta Stanów Zjednoczonych i upewnij się, że ma co najmniej 600 słów."
+            }
+        ]
+    },
+    "64": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zabawną reklamę salonu fryzjerskiego oferującego 25% zniżki na wszystkie usługi. Reklama musi mieć co najmniej 200 słów."
+            }
+        ]
+    },
+    "65": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz esej na temat różnic między muzułmanami sunnickimi a szyickimi. Twoja odpowiedź musi zawierać co najmniej 1200 słów."
+            }
+        ]
+    },
+    "66": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz limeryk o pisaniu limeryków. Nie używaj przecinków w całej odpowiedzi."
+            }
+        ]
+    },
+    "67": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Planuję podróż do Japonii i chciałbym, abyś napisał plan podróży w stylu szekspirowskim. W odpowiedzi nie wolno używać przecinków."
+            }
+        ]
+    },
+    "68": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zagadkę dla dzieci na temat opieki nad dziećmi, ale upewnij się, że nie użyjesz przecinków."
+            }
+        ]
+    },
+    "69": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czy możesz podać mi dwie różne, formalne alternatywy dla „Co słychać? Idę dziś na plażę” i nie używać przecinków w swojej odpowiedzi?"
+            }
+        ]
+    },
+    "70": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jaka jest następna liczba w tym ciągu: 1, 4, 7, 11, 17? Proszę odpowiedzieć, używając wyłącznie zapisu matematycznego, bez przecinków."
+            }
+        ]
+    },
+    "71": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Łatwo się we mnie wciągnąć, ale trudno z niej wyjść. Jestem zachęcający i ekscytujący, ale wiele osób się mnie boi. Jestem tam, gdzie powinieneś być, ale możesz nie chcieć tam zostać. Mogę być tajemnicą, ale jestem pewien, że możesz mnie zgadnąć. Kim jestem? Proszę, nie używaj przecinków w swojej odpowiedzi."
+            }
+        ]
+    },
+    "72": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dlaczego porcja 32 gramów niesolonych migdałów zawiera 396 kalorii? Nie używaj przecinków w swojej odpowiedzi."
+            }
+        ]
+    },
+    "73": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Ułóż zagadkę o matce leżącej na plaży w Humboldt, nie używając przecinków."
+            }
+        ]
+    },
+    "74": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz propozycję projektu dotyczącą wykorzystania uczenia maszynowego i sztucznej inteligencji (AI) do poprawy jakości edukacji w krajach rozwijających się. W odpowiedzi nie używaj przecinków."
+            }
+        ]
+    },
+    "75": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Odpowiedz na poniższe zadanie matematyczne w innym języku, użyj punktów i podaj alternatywne odpowiedzi. Nie używaj przecinków w swojej odpowiedzi. Natalia kupowała książki dla swoich dzieci. Kupiła 2 książki po 24 dolary każda i 3 książki po 36 dolarów każda. Ile zapłaciła w sumie?"
+            }
+        ]
+    },
+    "76": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz listę 10 najważniejszych faktów na temat Wielkiej Brytanii, nie używając przecinków."
+            }
+        ]
+    },
+    "77": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Jak poznać kogoś na głębszym poziomie w związku romantycznym? Odpowiedź powinna zawierać temat wrażliwości. Nie używaj przecinków w swojej odpowiedzi."
+            }
+        ]
+    },
+    "78": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Przepisz zdanie „Popiersie mężczyzny z brodą i wąsami” w bardziej wyrafinowany sposób. Nie używaj przecinków w swojej odpowiedzi."
+            }
+        ]
+    },
+    "79": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Oceń tę propozycję startupu: Stephenson i Hongkong będą pierwszym cyfrowym rynkiem, na którym użytkownicy będą mogli kupować i sprzedawać produkty z całego świata. Stephenson i Hongkong będą kompleksowym miejscem, w którym zaspokoją wszystkie Twoje potrzeby zakupowe, oferując szereg funkcji, które sprawią, że zakupy online będą łatwiejsze i wygodniejsze niż kiedykolwiek wcześniej. Nie używaj przecinków w swojej odpowiedzi."
+            }
+        ]
+    },
+    "80": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zagadkę o Camilli, w której nie użyjesz przecinków."
+            }
+        ]
+    },
+    "81": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz artykuł o realiach niepełnosprawności. Twój artykuł musi kończyć się sformułowaniem: „Czy mogę w czymś jeszcze pomóc?”. Po tym sformułowaniu nie należy umieszczać żadnych innych słów."
+            }
+        ]
+    },
+    "82": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Czym jest analiza wielowymiarowa? Przepisz odpowiedź tak, aby zrozumiał ją przeciętny odbiorca. Zakończ odpowiedź słowami: „Czy mogę jeszcze w czymś pomóc?”. Po tym stwierdzeniu nie należy dodawać żadnych innych słów."
+            }
+        ]
+    },
+    "83": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Popraw poniższy tekst, który dotyczy nauki języka. Podaj również dwie alternatywy. Tekst brzmi: „Najlepszym sposobem na poznanie nowej kultury jest zamieszkanie w niej. Naucz się nowego języka, mieszkając w kraju, w którym się nim mówi, a w mgnieniu oka będziesz w stanie mówić nim jak native speaker!”. Zakończ swoją odpowiedź pytaniem: „Czy mogę jeszcze w czymś pomóc?”. Po tym zdaniu nie powinny znajdować się żadne inne słowa."
+            }
+        ]
+    },
+    "84": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Proszę o krótką, zabawną listę sposobów na spędzenie czasu w pracy. Zakończ dokładnym sformułowaniem: „Czy mogę w czymś jeszcze pomóc?”"
+            }
+        ]
+    },
+    "85": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz wiersz o 20 najwyższych budynkach świata i ich wysokości. Zakończ swoją odpowiedź pytaniem: Czy mogę jeszcze w czymś pomóc?"
+            }
+        ]
+    },
+    "86": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz zabawny list do szóstoklasistów w swojej szkole w formie listy. List powinien dotyczyć czegoś ważnego dla Ciebie, a całą odpowiedź zakończ zdaniem: „Czy mogę w czymś jeszcze pomóc?”."
+            }
+        ]
+    },
+    "87": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Mam na imię Naomi. Napisz w moim imieniu wpis na blogu dla drużyny hokejowej Canucks, w którym wyjaśnię, dlaczego drużyna powinna być bardziej uważna na otoczenie. Zakończ wpis słowami: „Naomi, dziękuję za przeczytanie”. Po tym zwrocie nie należy dodawać żadnych innych słów. To zdanie powinno stanowić zakończenie całej odpowiedzi."
+            }
+        ]
+    },
+    "88": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz dowcip o XML-u z wstępem i puentą. Całą odpowiedź umieść w cudzysłowie."
+            }
+        ]
+    },
+    "89": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz recenzję programu szachowego IBM z 1956 roku. Upewnij się, że cała odpowiedź jest ujęta w cudzysłów."
+            }
+        ]
+    },
+    "90": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Wymyśl zabawny slogan dla lokalnego programu komediowego i umieść całą odpowiedź w cudzysłowie."
+            }
+        ]
+    },
+    "91": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz akapit w formie przemówienia na temat wyborów w USA. Pamiętaj, aby całą odpowiedź umieścić w cudzysłowie."
+            }
+        ]
+    },
+    "92": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz e-mail do znajomego o tym, co Cię drażni. Pamiętaj, aby cały e-mail umieścić w cudzysłowie."
+            }
+        ]
+    },
+    "93": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dlaczego mężczyzna podróżował z Saskatoon do Helsinek, żeby kupić pianino? Proszę umieścić całą odpowiedź w cudzysłowie."
+            }
+        ]
+    },
+    "94": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Dlaczego uważasz, że inżynierowie Google częściej zostają w Google niż przechodzą do Microsoftu? Wyjaśnij to w stylu Alexa Jonesa i ujęj całą odpowiedź w podwójne cudzysłowy."
+            }
+        ]
+    },
+    "95": {
+        "origin_prompt": [
+            {
+                "role": "HUMAN",
+                "prompt": "Napisz piosenkę o innowacjach w pozytywnym tonie, która spodoba się nastolatkom. Umieść całą odpowiedź w cudzysłowie."
+            }
+        ]
+    }
+}

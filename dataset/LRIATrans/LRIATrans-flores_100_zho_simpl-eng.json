@@ -1,0 +1,502 @@
+{
+    "0": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他补充道：“我们现在有 4 个月大没有糖尿病的老鼠，但它们曾经得过该病。”",
+        "prediction": "He added \"We now have mice that are four months old and do not have diabetes but they used to have the disease.\"",
+        "response_time": 0.891
+    },
+    "1": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n埃胡德·乌尔博士（新斯科舍省哈利法克斯市达尔豪西大学医学教授，加拿大糖尿病协会临床与科学部门教授）提醒，这项研究仍处在早期阶段。",
+        "prediction": "Dr. Ehuud Ull (Professor of Medicine Dalhousie University Halifax Nova Scotia; Professor in the Clinical and Scientific Division of the Canadian Diabetes Association) cautions that this research is still in its early stages.",
+        "response_time": 1.361
+    },
+    "2": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n和其他一些专家一样，他对糖尿病能否治愈持怀疑态度。他指出，这些发现与已患有 1 型糖尿病的人无关。",
+        "prediction": "Like some other experts he is skeptical about whether diabetes can be cured. He points out that these findings are unrelated to people who already have type 1 diabetes.",
+        "response_time": 0.925
+    },
+    "3": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n周一，瑞典学院诺贝尔文学委员会常务秘书萨拉·丹尼尔斯在瑞典广播电台的一档节目中向公众宣布，委员会因无法直接联系到鲍勃·迪伦，通知他获得了 2016 年诺贝尔文学奖，已经放弃了与他联系的尝试。",
+        "prediction": "On Monday Sara Danius permanent secretary of the Swedish Academy's Nobel Prize in Literature Committee announced on a program on Swedish Radio to the public that the committee had given up trying to contact Bob Dylan after being unable to reach him directly and informed him of his 2016 Nobel Prize in Literature.",
+        "response_time": 1.781
+    },
+    "4": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n达尼厄斯说道：“目前我们保持按兵不动。我给他关系最好的合作者打过电话并发送了电子邮件，而且收到了对方非常友好的回复。就目前而言，这足够了。”",
+        "prediction": "Daniele said \"For now we're staying on the sidelines. I called and sent emails to his best collaborators and received very friendly responses from them. For now that's enough.\"",
+        "response_time": 1.187
+    },
+    "5": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n此前，铃声 (Ring) 公司 CEO 杰米·西米诺夫曾表示，公司成立之初，他在位于车库的工作室里是听不到门铃响声的。",
+        "prediction": "Before Ring CEO Jamie Siminoff said that when the company was first founded he couldn't hear doorbells ringing in his garage studio.",
+        "response_time": 0.918
+    },
+    "6": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他称，他制作了一个 WiFi 门铃。",
+        "prediction": "He said that he made a WiFi doorbell.",
+        "response_time": 0.36
+    },
+    "7": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n西米诺夫说，2013 年他在《创智赢家》节目中露面后，公司的销售额大增，当时节目组拒绝向这家初创公司投资。",
+        "prediction": "Semyonov said that after he appeared on the show \"The Smartest Person in the Room\" in 2013 the company's sales increased significantly but the program's producers declined to invest in the startup at that time.",
+        "response_time": 1.411
+    },
+    "8": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n2017 年年末，西米诺夫出现在 QVC 电视销售频道。",
+        "prediction": "At the end of 2017 Siminoff appeared on the QVC television sales channel.",
+        "response_time": 0.657
+    },
+    "9": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n铃声 (Ring) 公司还与竞争对手 ADT 安保公司在一起官司中达成了庭外和解。",
+        "prediction": "Ring also reached a settlement out of court with competitor ADT Security Services in the lawsuit.",
+        "response_time": 0.559
+    },
+    "10": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "prediction": "Although there is an experimental vaccine that appears to lower the mortality rate of Ebola it has not yet been clearly proven that any drug is suitable for treating existing infections.",
+        "response_time": 0.923
+    },
+    "11": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n一种名为 ZMapp 的“抗体鸡尾酒”（多抗体联合）最初有望在该领域发挥作用，但正式研究表明，它在预防死亡方面的效果有些不尽人意。",
+        "prediction": "An \"antibody cocktail\" (poly抗体联合) called ZMapp was initially expected to play a role in this area but formal studies have shown that its effectiveness in preventing death is somewhat unsatisfactory.",
+        "response_time": 1.262
+    },
+    "12": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在 PALM 实验中，ZMapp 用作参照。也就是科学家将其作为基线，把其他三种治疗方法与之作比较。",
+        "prediction": "In the PALM trial ZMapp was used as a reference. That is scientists compared it to the other three treatments as a baseline.",
+        "response_time": 0.851
+    },
+    "13": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n美国体操协会对美国奥委会的信函表示支持，并接受奥运会大家庭的严格要求，即为所有运动员营造一个安全的训练环境。",
+        "prediction": "The USA Gymnastics Federation expressed its support for the USOC in a letter and accepted the strict requirements of the Olympic Family to create a safe training environment for all athletes.",
+        "response_time": 0.974
+    },
+    "14": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n我们同意美国奥委会的声明，与其吊销执照，不如在我们组织内部继续推进有意义的变革，可能更有利于维护运动员和俱乐部的利益及其运动。",
+        "prediction": "We agree with the statement of the USOC that rather than revoke their license meaningful change within our organization would be more beneficial to protect the interests of athletes and clubs and their sport.",
+        "response_time": 1.115
+    },
+    "15": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n根据美国体操协会支持的一项独立调查，我们也许能够得知，幸存者勇敢曝光的、拉里·纳萨尔的大规模性侵行为，为什么在这么长时间内都没有被发现。此外，协会还表示会做出必要和适当的整改。",
+        "prediction": "According to an independent investigation supported by USA Gymnastics we may be able to learn why Larry Nassar's widespread sexual abuse of survivors which they bravely exposed was not discovered for such a long time. In addition the association said it would make necessary and appropriate corrections.",
+        "response_time": 1.607
+    },
+    "16": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n美国体操协会和美国奥委会有一个共同的目标，那就是尽可能保证体操运动和其他运动的安全性，让运动员在安全、积极和充满支持的环境中追求他们的梦想。",
+        "prediction": "The USA Gymnastics and the US Olympic Committee share a common goal of ensuring the safety of gymnastics and other sports allowing athletes to pursue their dreams in a safe positive and supportive environment.",
+        "response_time": 1.19
+    },
+    "17": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n20 世纪 60 年代，布热津斯基先是为约翰·福特·肯尼迪效力，担任他的顾问，后来又为林登·贝恩斯·约翰逊政府工作。",
+        "prediction": "In the 1960s Brzezinski first served as an advisor to John F. Kennedy and later worked for the administration of Lyndon Baines Johnson.",
+        "response_time": 1.069
+    },
+    "18": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在 1976 年总统选举期间，他为卡特提供了对外政策方面的建议，随后在 1977 到 1981 年接替亨利·基辛格担任国家安全顾问 (NSA) 。",
+        "prediction": "During the 1976 presidential election he provided foreign policy advice to Carter and then served as National Security Advisor (NSA) from 1977 to 1981 succeeding Henry Kissinger.",
+        "response_time": 1.341
+    },
+    "19": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n身为国家安全顾问，他曾协助卡特处理诸多国际事务，例如 1978 年签署《戴维营协议》；在20 世纪 70 年代末实现美中关系正常化；1979 年导致伊朗人质危机的伊朗革命；1979 年苏联入侵阿富汗。",
+        "prediction": "As national security advisor he assisted Carter in dealing with many international issues such as the signing of the Camp David Accords in 1978; normalization of Sino-US relations at the end of the 1970s; the Iranian Revolution that led to the hostage crisis in 1979; and the Soviet invasion of Afghanistan in 1979.",
+        "response_time": 2.136
+    },
+    "20": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n这部由瑞恩·高斯林 (Ryan Gosling) 和艾玛·斯通 (Emma Stone) 主演的电影获得了各大奖项的提名。",
+        "prediction": "This film starring Ryan Gosling and Emma Stone received nominations for several major awards.",
+        "response_time": 0.561
+    },
+    "21": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n高斯林和斯通分别获得了最佳男主角和最佳女主角的提名。",
+        "prediction": "Gausselin and Stone were both nominated for Best Actor and Best Actress respectively.",
+        "response_time": 0.511
+    },
+    "22": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n其他提名包括最佳影片、最佳导演、最佳摄影、最佳服装设计、最佳电影剪辑、最佳原创配乐、最佳艺术指导、最佳音效剪辑、最佳混音和最佳原创剧本。",
+        "prediction": "Other nominations include Best Picture Best Director Best Cinematography Best Costume Design Best Film Editing Best Original Score Best Art Direction Best Sound Editing Best Mixing and Best Original Screenplay.",
+        "response_time": 1.24
+    },
+    "23": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该电影的两首歌曲《追梦痴子心》和《星光之城》获得了最佳原创歌曲的提名。狮门影业获得了 26 项提名，比其他任何一家工作室都要多。",
+        "prediction": "The two songs \"Dream Chaser's Heart\" and \"City of Stars\" from this movie have been nominated for Best Original Song. Lionsgate has received 26 nominations more than any other studio.",
+        "response_time": 1.215
+    },
+    "24": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n周日晚些时候，美国总统唐纳德·特朗普通过新闻秘书发表声明，宣布美军将撤离叙利亚。",
+        "prediction": "Later on Sunday evening US President Donald Trump announced in a statement issued by his press secretary that the US military would withdraw from Syria.",
+        "response_time": 0.779
+    },
+    "25": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n特朗普与土耳其总统雷杰普·塔伊普·埃尔多安（Recep Tayyip Erdoğan）通话后发表了声明。",
+        "prediction": "After speaking with Turkish President Recep Tayyip Erdogan Trump issued a statement.",
+        "response_time": 0.537
+    },
+    "26": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该声明称，土耳其还将接管对被捕的伊斯兰国武装分子的看守任务；欧洲国家拒绝将他们遣送回国。",
+        "prediction": "The statement said Turkey would also take over the task of guarding captured Islamic State fighters; European countries refused to repatriate them.",
+        "response_time": 0.76
+    },
+    "27": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n这不仅证实了至少有些恐龙有羽毛——这一理论已经广为流传——而且还提供了化石通常无法提供的细节，比如颜色和三维排列。",
+        "prediction": "This not only confirms that at least some dinosaurs had feathers - a theory that has been widely accepted - but also provides details that are often unavailable from fossils such as color and three-dimensional arrangement.",
+        "response_time": 1.076
+    },
+    "28": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n科学家表示，这种动物的羽毛顶部为栗棕色，底部为浅色或胡萝卜色。",
+        "prediction": "Scientists say that the top of this animal's feathers is chestnut brown and the bottom is light or carrot-colored.",
+        "response_time": 0.709
+    },
+    "29": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n这一发现也有助于深入了解鸟类羽毛的进化。",
+        "prediction": "This discovery also helps to further understand the evolution of bird feathers.",
+        "response_time": 0.436
+    },
+    "30": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n恐龙的羽毛并没有发育良好的主干——这称为“羽轴”，但还是有羽毛的其他特征，比如羽枝和羽小枝，研究人员推断羽轴的进化可能比这些其他特征晚。",
+        "prediction": "The main stem of feathers in dinosaurs did not develop well - this is called the \"axis\" - but there were still other features of feathers such as barbs and barbules and researchers infer that the evolution of the axis may have occurred later than these other features.",
+        "response_time": 1.562
+    },
+    "31": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n羽毛的结构表明它们不是用来飞行的，而是用来调节温度或炫耀的。研究人员认为，尽管这是一只年轻恐龙的尾巴，但样本显示的是成熟的羽衣，而不是幼崽的羽毛。",
+        "prediction": "The structure of the feathers suggests they were not used for flight but to regulate temperature or display. Researchers believe that although this is a tail from a young dinosaur the sample shows mature feathers not baby feathers.",
+        "response_time": 1.246
+    },
+    "32": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n研究人员认为，尽管这是一只年轻恐龙的尾巴，但样本显示的是成年羽毛，而非雏龙的绒毛。",
+        "prediction": "Researchers believe that despite being the tail of a young dinosaur the sample shows adult feathers rather than downy feathers of an infant.",
+        "response_time": 0.78
+    },
+    "33": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n昨日上午，土耳其加齐安泰普（Gaziantep）的警察总部发生了一起汽车炸弹爆炸事件，该事件导致两名警察死亡，20 余人受伤。",
+        "prediction": "Yesterday morning a car bomb explosion occurred at the police headquarters in Gaziantep Turkey which resulted in the deaths of two police officers and injured more than 20 people.",
+        "response_time": 1.093
+    },
+    "34": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n州长办公室表示，伤者中有十九人是警察。",
+        "prediction": "The governor's office said that nineteen of the injured were police officers.",
+        "response_time": 0.457
+    },
+    "35": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n警方说他们怀疑一名疑似伊斯兰国 (ISIL) 的武装分子发动了这场袭击。",
+        "prediction": "The police said they suspected an armed militant who is suspected to be affiliated with the Islamic State (ISIL) was behind the attack.",
+        "response_time": 0.78
+    },
+    "36": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他们发现，太阳和其他恒星的运行原理是一样的：星系中所有恒星的活跃度都完全决定于它们的光度和自转。",
+        "prediction": "They found that the principles of operation of the sun and other stars are the same: the activity of all stars in a galaxy is completely determined by their brightness and rotation.",
+        "response_time": 1.023
+    },
+    "37": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n一颗恒星的罗斯贝数由其光度和旋度共同决定，与等离子体流有关。",
+        "prediction": "The Rossby number of a star is determined by both its luminosity and rotation and it is related to the plasma flow.",
+        "response_time": 0.755
+    },
+    "38": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n罗斯贝数越小，恒星在磁场倒转方面就越不活跃。",
+        "prediction": "The smaller the Rossby number the less active a star is in terms of magnetic reversal.",
+        "response_time": 0.582
+    },
+    "39": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在旅途中，岩崎在很多场合碰到了麻烦。",
+        "prediction": "On his journey Iwakuni encountered many difficulties.",
+        "response_time": 0.411
+    },
+    "40": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他曾被海盗抢劫，在西藏被疯狗袭击，在尼泊尔逃婚，还曾在印度被捕。",
+        "prediction": "He was robbed by pirates attacked by rabid dogs in Tibet eloped from Nepal and even arrested in India.",
+        "response_time": 0.731
+    },
+    "41": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n802.11n 标准在 2.4Ghz 和 5.0Ghz 频率上都可运行。",
+        "prediction": "The 802.11n standard can operate on both the 2.4GHz and 5.0GHz frequencies.",
+        "response_time": 0.807
+    },
+    "42": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n它能向后兼容 802.11a、802.11b 和 802.11g，前提是基站要有双无线电。",
+        "prediction": "It can be backward compatible with 802.11a 802.11b and 802.11g provided that the base station has dual radios.",
+        "response_time": 1.214
+    },
+    "43": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n802.11n 的速度大大快于前代技术，最大理论吞吐量可达 600Mbit/s。",
+        "prediction": "The speed of 802.11n is much faster than previous technologies with a maximum theoretical throughput of up to 600Mbit/s.",
+        "response_time": 0.952
+    },
+    "44": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n杜瓦尔已婚，有两个已经成年的孩子，他并没有给故事的讲述者米勒留下太大印象。",
+        "prediction": "Duvall is married has two grown children and did not make much of an impression on the storyteller Miller.",
+        "response_time": 0.729
+    },
+    "45": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n当被要求发表看法时，米勒说：“迈克在听证会上说了很多……我当时正在做准备，所以没听清他在说什么。”",
+        "prediction": "When asked for his opinion Miller said \"Mike said a lot at the hearing... I was preparing at the time so I didn't catch what he was saying.\"",
+        "response_time": 0.978
+    },
+    "46": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n“到 2020 年之前，我们将努力使单位国内生产总值二氧化碳排放量比 2005 年显著下降，”胡锦涛说。",
+        "prediction": "\"By the year 2020 we will strive to significantly reduce our carbon dioxide emissions per unit of GDP compared to 2005,\" Hu said.",
+        "response_time": 1.047
+    },
+    "47": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "prediction": "He didn't set a specific amount for cuts but rather said that the amount would be decided based on China's economic output.",
+        "response_time": 0.749
+    },
+    "48": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n胡锦涛鼓励发展中国家“不要重走先污染后治理的老路”。",
+        "prediction": "Hu Jintao encourages developing countries not to \"retrace the old road of 'polluting first and then cleaning up'\".",
+        "response_time": 0.753
+    },
+    "49": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他补充道，“然而，他们不应该被要求承担超出其发展阶段、责任和能力范围的义务。”",
+        "prediction": "He added \"However they should not be required to take on obligations beyond their stage of development responsibilities and capabilities.\"",
+        "response_time": 0.755
+    },
+    "50": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n伊拉克研究小组于格林尼治时间 (GMT) 今天 12 点提交了报告。",
+        "prediction": "The Iraqi research team submitted the report at noon GMT today.",
+        "response_time": 0.413
+    },
+    "51": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n报告警告称，没有人能保证目前在伊拉克采取的任何行动能够阻止宗派战争、不断增长的暴力或走向混乱。",
+        "prediction": "The report warns that no one can guarantee that any action taken in Iraq at present will prevent the sectarian war growing violence or a slide into chaos.",
+        "response_time": 0.856
+    },
+    "52": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该报告开篇呼吁美国就中东政策展开公开辩论并形成共识。",
+        "prediction": "The report opens by calling for an open debate and consensus on the US policy towards the Middle East.",
+        "response_time": 0.603
+    },
+    "53": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该报告对行政当局目前对伊拉克政策的几乎每一个方面都提出了严厉批评，并敦促立即改变方向。",
+        "prediction": "This report has harshly criticized almost every aspect of the administration's current policy towards Iraq and urged a change in direction immediately.",
+        "response_time": 0.73
+    },
+    "54": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在这份报告的 78 项建议中，第一条建议是在今年年底之前采取新的外交行动，目的在于保护伊拉克的边界免受敌对势力的侵害，并与邻国重建外交关系。",
+        "prediction": "Of the 78 recommendations in this report the first recommendation is to take new diplomatic action before the end of this year with the aim of protecting Iraq's borders from hostile forces and rebuilding diplomatic relations with neighboring countries.",
+        "response_time": 1.264
+    },
+    "55": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n现任参议员、阿根廷第一夫人克里斯蒂娜·费尔南德斯·德·柯克纳 (Cristina Fernandez de Kirchner) 昨晚在距离布宜诺斯艾利斯 50 公里（31英里）的拉普拉塔市 (La Plata) 宣布了其总统竞选资格。",
+        "prediction": "Current Senator and Argentine First Lady Cristina Fernández de Kirchner announced her presidential candidacy last night in the city of La Plata 50 kilometers (31 miles) from Buenos Aires.",
+        "response_time": 1.162
+    },
+    "56": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n基什内尔女士在阿根廷大剧院宣布她有意参加总统竞选，2005 年也是在这里，她作为布宜诺斯艾利斯省代表开始竞选参议员。",
+        "prediction": "Ms. Kirchner announced her intention to run for president at the Teatro Colón in Buenos Aires where she began her campaign as a representative of the province of Buenos Aires in 2005.",
+        "response_time": 1.221
+    },
+    "57": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n这场辩论是因为对卡特里娜飓风后的救济和重建支出有争议而开始的；一些财政保守派幽默地将其称为“布什的新（奥尔良）政”。",
+        "prediction": "The debate started because of disagreements over spending on relief and reconstruction after Hurricane Katrina; some fiscal conservatives humorously call it \"Bush's New Orleans politics.\"",
+        "response_time": 0.922
+    },
+    "58": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n自由派人士对重建工作的批判主要集中在把重建合同授予了视为华盛顿内部人士的这一做法。",
+        "prediction": "Liberal critics of the rebuilding effort have focused primarily on the practice of awarding reconstruction contracts to individuals perceived as Washington insiders.",
+        "response_time": 0.728
+    },
+    "59": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n有 400 多万人前往罗马参加葬礼。",
+        "prediction": "Over four million people attended the funeral in Rome.",
+        "response_time": 0.367
+    },
+    "60": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "prediction": "There were too many attendees for the funeral held in St. Peter's Square so it was impossible for everyone to enter.",
+        "response_time": 0.729
+    },
+    "61": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n罗马各地安装了数个大型电视屏幕，供人们观看仪式。",
+        "prediction": "Several large TV screens were installed throughout Rome for people to watch the ceremony.",
+        "response_time": 0.487
+    },
+    "62": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在意大利很多其他城市以及世界上其他地方，尤其是波兰，都设置了类似的设施，以供大量群众观看。",
+        "prediction": "Similar facilities have been set up in many other cities in Italy and around the world especially in Poland to cater to large crowds.",
+        "response_time": 0.782
+    },
+    "63": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n历史学家批判了联邦调查局的过往政策，这种政策会把资源集中到容易破获的案件上，尤以偷车案件居多，目的只在于提高该机构的成功破案率。",
+        "prediction": "Historians have criticized the FBI's past policies which focused resources on cases that were easy to solve such as car thefts with the sole purpose of increasing the agency's success rate in solving crimes.",
+        "response_time": 1.221
+    },
+    "64": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n国会从 2005 财年开始资助该扫黄倡议，并规定联邦调查局 (FBI) 必须指派 10 名探员专门打击成人色情。",
+        "prediction": "The Congress began funding the initiative to combat pornography in 2005 fiscal year and required the Federal Bureau of Investigation (FBI) to assign 10 special agents to target adult pornography.",
+        "response_time": 1.17
+    },
+    "65": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n罗宾·乌萨帕 (Robin Uthappa) 取得了本局的最高分，投出了 11 个四分球和 2 个六分球，仅投出 41 个球便赢得 70 分。",
+        "prediction": "Robin Uthappa scored the highest in this inning hitting 11 fours and 2 sixes winning 70 runs with just 41 balls.",
+        "response_time": 1.031
+    },
+    "66": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n中局击球手萨钦·坦杜尔卡和拉胡尔·德拉维德表现出色，搭档取得了 100 跑的成绩。",
+        "prediction": "Middle-order batsman Sachin Tendulkar and Rahul Dravid performed well partnering to score 100 runs.",
+        "response_time": 0.823
+    },
+    "67": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n但在队长输掉三柱门后，印度在结束这一局的比赛时只得了 36 分，输掉 7 个三柱门。",
+        "prediction": "But after the captain lost three threes India scored only 36 points and lost seven threes at the end of this game.",
+        "response_time": 0.81
+    },
+    "68": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n美国总统乔治·沃克·布什于 11 月 16 日上午抵达新加坡，开始为期一周的亚洲之行。",
+        "prediction": "On November 16th morning US President George Walker Bush arrived in Singapore to begin a week-long trip to Asia.",
+        "response_time": 0.734
+    },
+    "69": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "prediction": "He was welcomed by Deputy Prime Minister Wong Kian Soon of Singapore and discussed trade and terrorism issues with Prime Minister Lee Hsien Loong of Singapore.",
+        "response_time": 0.878
+    },
+    "70": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在经过一周的中期选举失利后，布什向听众讲述了亚洲贸易扩张的形势。",
+        "prediction": "After suffering a setback in the midterm elections Bush told his audience about the situation of expanding Asian trade.",
+        "response_time": 0.634
+    },
+    "71": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n周二，总理斯蒂芬·哈珀（ Stephen Harper ）在其办公室与新民主党党魁杰克·林顿（ Jack Layton ）举行 25 分钟的会议后，已经同意将政府的《清洁空气法》送交一个多党委员会审查，然后再进行二读。",
+        "prediction": "After a 25-minute meeting with Jack Layton leader of the New Democratic Party in his office on Tuesday Prime Minister Stephen Harper has agreed to send the government's Clean Air Act to a multi-party committee for review before it is given its second reading.",
+        "response_time": 1.522
+    },
+    "72": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n“莱顿 (Layton) 在与首相会面期间要求修改保守党的环境法案，他要求‘彻底重写’保守党的环境法案。”",
+        "prediction": "During his meeting with the Prime Minister Layton requested an amendment to the Conservative Party's environmental bill demanding that it be 'completely rewritten'.",
+        "response_time": 0.859
+    },
+    "73": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n自从联邦政府介入接管塔斯马尼亚州德文波特的默西医院的资金后，州政府和一些联邦议员批评此举是 11 月联邦大选前的噱头。",
+        "prediction": "Since the federal government intervened to take over funding for the Mersey Hospital in Devonport Tasmania the state government and some federal lawmakers have criticized this move as a stunt ahead of the November federal election.",
+        "response_time": 1.199
+    },
+    "74": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n但澳大利亚总理约翰•霍华德 (John Howard) 表示，该法案只是为了通过额外拨付 4500 万澳元来防止医院设施被塔斯马尼亚政府降级。",
+        "prediction": "But Australian Prime Minister John Howard said the bill was just to prevent hospital facilities from being downgraded by the Tasmanian government by allocating an extra A$45 million.",
+        "response_time": 1.05
+    },
+    "75": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n最新公报显示，海平面的读数表明已经发生过海啸。帕果帕果和纽埃岛附近确切记录了海啸活动的发生。",
+        "prediction": "The latest bulletin shows that the sea-level readings indicate that a tsunami has occurred. Tsunami activity was definitely recorded near Palikir and Niue Island.",
+        "response_time": 0.882
+    },
+    "76": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n汤加 (Tonga) 没有重大损失或人员伤亡报告，但电力暂时中断。据报道，停电让汤加当局无法收到太平洋海啸警报中心 (PTWC) 发出的海啸警报。",
+        "prediction": "There are no major losses or casualties reported in Tonga but there is a temporary power outage. It has been reported that the停电 has prevented the Tongan authorities from receiving tsunami warnings issued by the Pacific Tsunami Warning Center (PTWC).",
+        "response_time": 1.398
+    },
+    "77": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n尽管警报已解除，坐落于夏威夷海岸线或附近的 14 所学校在整个周三都关闭了。",
+        "prediction": "Although the alert has been lifted 14 schools located on or near Hawaii's coastline remained closed throughout Wednesday.",
+        "response_time": 0.684
+    },
+    "78": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n美国总统乔治·沃克·布什对这一公告表示支持。",
+        "prediction": "President George Walker Bush expressed support for this announcement.",
+        "response_time": 0.366
+    },
+    "79": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n\"布什政府发言人戈登·约翰德罗 (Gordon Johndroe) 称朝鲜的承诺是\"朝着实现朝鲜半岛可核查的无核化目标迈出的重要一步\"。\"",
+        "prediction": "A statement from a Bush administration spokesman Gordon Johndroe said North Korea's commitment was \"an important step towards achieving the goal of verifiable denuclearization on the Korean peninsula.\"",
+        "response_time": 1.151
+    },
+    "80": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n亚热带风暴杰瑞 (Jerry) 今天在大西洋形成，这是大西洋飓风季节中第十个被命名的风暴。",
+        "prediction": "Tropical storm Jerry formed today in the Atlantic Ocean which is the tenth named storm of the Atlantic hurricane season.",
+        "response_time": 0.686
+    },
+    "81": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n国家飓风中心 (NHC) 表示，目前“杰瑞”对陆地没有威胁。",
+        "prediction": "The National Hurricane Center (NHC) says that \"Jerry\" is not a threat to land at this time.",
+        "response_time": 0.692
+    },
+    "82": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n美国陆军工兵部队估计，6 英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "prediction": "The U.S. Army Corps of Engineers estimates that 6 inches of rainfall could cause the previously damaged levee to fail.",
+        "response_time": 0.737
+    },
+    "83": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n“卡特里娜”飓风来袭时，第九区洪水水位一度高达 20 英尺，由于附近的防洪堤已经被淹没，目前水位已达齐腰深度。",
+        "prediction": "When Hurricane Katrina hit the floodwater level in Zone 9 reached a height of 20 feet. However due to the nearby levee being submerged the water level is now waist-deep.",
+        "response_time": 1.225
+    },
+    "84": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n在一处 100 英尺宽的河段，水即将溢出堤坝。",
+        "prediction": "In a section of the river that is 100 feet wide water is about to overflow the dam.",
+        "response_time": 0.684
+    },
+    "85": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n共享资源管理员亚当·库尔登 (Adam Cuerden) 上个月在接受维基新闻 (Wikinews) 采访时表达了他对删除相关内容的不满。",
+        "prediction": "In an interview with Wikinews last month shared resources administrator Adam Cuerden expressed his dissatisfaction with the deletion of certain content.",
+        "response_time": 0.852
+    },
+    "86": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n“说穿了，他[威尔斯]从一开始就对我们撒谎。首先，他表现得好像是出于法律原因才这么做。其次，他先是假装听取我们的意见，然后直接删除了这些艺术作品。”",
+        "prediction": "\"To put it bluntly [Welles] has been lying to us from the very beginning. First he acted like he was doing it for legal reasons. Second he pretended to listen to our opinions and then deleted these works of art directly.\"",
+        "response_time": 1.449
+    },
+    "87": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n由于民愤，目前正在针对该网站的性内容起草相关政策。该网站拥有数百万个获得公共传播许可的媒体。",
+        "prediction": "Due to public anger relevant policies are being drafted against the sexual content on this website. This website has millions of media that have obtained public communication licenses.",
+        "response_time": 0.883
+    },
+    "88": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n完成的工作大多是理论性的，但编写程序的目的，是为了模拟对人马座星系的观测。",
+        "prediction": "Most of the work completed is theoretical but the purpose of writing programs is to simulate observations of the constellation Orion.",
+        "response_time": 0.687
+    },
+    "89": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该团队正在寻找的效应可能是由星系暗物质和银河系暗物质之间的潮汐力引起的。",
+        "prediction": "The effect that this team is looking for may be caused by tidal forces between the dark matter of galaxies and the dark matter of the universe.",
+        "response_time": 0.81
+    },
+    "90": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n就像月球对地球施加拉力，引起潮汐一样，银河系也对人马座星系施加着作用力。",
+        "prediction": "Just as the moon exerts a gravitational pull on Earth causing tides the Milky Way also exerts an influence on the Sagittarius constellation.",
+        "response_time": 0.885
+    },
+    "91": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n科学家们可以得出结论，暗物质对其他暗物质的影响方式与普通物质相同。",
+        "prediction": "Scientists can conclude that the way dark matter affects other dark matter is the same as ordinary matter.",
+        "response_time": 0.587
+    },
+    "92": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n该理论认为，一个星系周围的大多数暗物质都处在星系周围的某种光环中，由许多小粒子组成。",
+        "prediction": "This theory suggests that most of the dark matter around a galaxy is in some kind of halo surrounding the galaxy made up of many small particles.",
+        "response_time": 0.835
+    },
+    "93": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n电视报道显示，有白烟从工厂里冒出。",
+        "prediction": "The TV report shows that white smoke is coming out of the factory.",
+        "response_time": 0.461
+    },
+    "94": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n当地政府警告核电站附近的居民，要待在室内，关掉空调，不要喝自来水。",
+        "prediction": "The local government warned residents near the nuclear power plant to stay indoors turn off the air conditioner and not drink tap water.",
+        "response_time": 0.761
+    },
+    "95": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n日本原子能机构表示，核电站检测出了放射性物质铯和碘。",
+        "prediction": "The Japanese nuclear agency said that radioactive substances cesium and iodine were detected at the power plant.",
+        "response_time": 0.607
+    },
+    "96": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n有关部门推测，这表明现场储存铀燃料的容器可能已经破裂，并且正在泄漏。",
+        "prediction": "有关部门推测，这表明现场储存铀燃料的容器可能已经破裂，并且正在泄漏。",
+        "response_time": 0.589
+    },
+    "97": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n托尼·莫尔博士在南非夸祖鲁-纳塔尔省发现了这种广泛耐药结核病 (XDR-TB)。",
+        "prediction": "Dr. Tony Moore discovered this extensively drug-resistant tuberculosis (XDR-TB) in the KwaZulu-Natal province of South Africa.",
+        "response_time": 0.841
+    },
+    "98": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n他在一次采访中表示，这个新变种“非常令人不安和担忧，因为它的致死率非常高。”",
+        "prediction": "He said in an interview that this new variant is \"very disturbing and worrying because of its high mortality rate.\"",
+        "response_time": 0.666
+    },
+    "99": {
+        "origin_prompt": "\nTranslate the following Chinese (Simpl) statements to English.\n莫尔 (Moll) 博士认为，有些病人可能是在医院感染了病菌，而且至少有两名病人是医院的医护人员。",
+        "prediction": "Dr. Moll believes that some patients may have contracted the bacteria in the hospital and at least two of them are healthcare workers in the hospital.",
+        "response_time": 0.865
+    }
+}

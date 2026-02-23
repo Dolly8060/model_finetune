@@ -115,5 +115,86 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "qwen3_train": {
+    "file_name": "qwen3_train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_val": {
+    "file_name": "qwen3_val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_train": {
+    "file_name": "qwen3_rigorous_train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_val": {
+    "file_name": "qwen3_rigorous_val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_test_labeled": {
+    "file_name": "qwen3_rigorous_test_labeled.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_test_if_unlabeled": {
+    "file_name": "qwen3_rigorous_test_if_unlabeled.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_train_v2a": {
+    "file_name": "qwen3_rigorous_train_v2a.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_train_v2b": {
+    "file_name": "qwen3_rigorous_train_v2b.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_rigorous_train_v2c": {
+    "file_name": "qwen3_rigorous_train_v2c.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }
