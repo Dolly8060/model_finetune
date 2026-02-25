@@ -1,0 +1,80 @@
+{
+  "translation": {
+    "bleu": 19.28280249347544,
+    "rouge1": 25.65546926014083,
+    "rouge2": 13.378889696333,
+    "rougeL": 22.261007304880163,
+    "bert_precision": 85.5215847492218,
+    "bert_recall": 90.55869579315186,
+    "bert_f1": 87.93121576309204
+  },
+  "summarization": {
+    "bleu": 4.2525339678416145,
+    "rouge1": 30.956223705000564,
+    "rouge2": 8.42889268505066,
+    "rougeL": 19.482299404180463,
+    "bert_precision": 82.64524340629578,
+    "bert_recall": 83.09341669082642,
+    "bert_f1": 82.84270167350769
+  },
+  "instruction_following": {
+    "bleu": 6.336502958044747,
+    "rouge1": 16.396175200767914,
+    "rouge2": 10.325758076405195,
+    "rougeL": 14.97391171557425,
+    "bert_precision": 76.93247199058533,
+    "bert_recall": 84.70887541770935,
+    "bert_f1": 80.54764866828918,
+    "instruction_following_rate": 14.893617021276595,
+    "strict_accuracy": 13.661202185792352,
+    "loose_accuracy": 14.754098360655737,
+    "samples_evaluated": 183,
+    "no_constraint_samples": 117,
+    "total_constraints": 188,
+    "avg_constraints_per_sample": 1.0273224043715847,
+    "by_constraint_type": {
+      "lria_reference_exact_short": {
+        "total": 92,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "lria_language_or_code": {
+        "total": 28,
+        "passed": 19,
+        "rate": 67.85714285714286
+      },
+      "reply_only_choices": {
+        "total": 52,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "first_letter_lowercase": {
+        "total": 2,
+        "passed": 2,
+        "rate": 100.0
+      },
+      "max_words": {
+        "total": 3,
+        "passed": 2,
+        "rate": 66.66666666666666
+      },
+      "table_format": {
+        "total": 7,
+        "passed": 3,
+        "rate": 42.857142857142854
+      },
+      "markdown_format": {
+        "total": 3,
+        "passed": 1,
+        "rate": 33.33333333333333
+      },
+      "json_format": {
+        "total": 1,
+        "passed": 1,
+        "rate": 100.0
+      }
+    },
+    "content_quality_samples": 300,
+    "content_quality_skipped": 0
+  }
+}

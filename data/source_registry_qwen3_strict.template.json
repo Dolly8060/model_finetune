@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "project": "qwen3_strict",
+  "notes": [
+    "train.json and val.json are confirmed by user as API-generated internal data.",
+    "Fill TODO fields before audit-grade rebuild run.",
+    "Prefer atomic sources and metadata-preserving public dataset exports."
+  ],
+  "sources": [
+    {
+      "path": "data/train.json",
+      "source_type": "api_generated",
+      "owner": "internal",
+      "confirmed_by_user": true,
+      "generation_method": "scripts/generate_dataset.py",
+      "model_provider": "OpenAI-compatible API",
+      "model_name": "TODO",
+      "generated_at": "TODO",
+      "license": "internal",
+      "sha256": "TODO"
+    },
+    {
+      "path": "data/val.json",
+      "source_type": "api_generated",
+      "owner": "internal",
+      "confirmed_by_user": true,
+      "generation_method": "scripts/generate_dataset.py",
+      "model_provider": "OpenAI-compatible API",
+      "model_name": "TODO",
+      "generated_at": "TODO",
+      "license": "internal",
+      "sha256": "TODO"
+    },
+    {
+      "path": "data/argilla_ifeval.json",
+      "source_type": "public_download",
+      "upstream_dataset": "argilla/ifeval-like-data",
+      "upstream_revision": "TODO",
+      "download_method": "scripts/download_ifeval_datasets.py",
+      "downloaded_at": "TODO",
+      "license": "TODO",
+      "sha256": "TODO"
+    },
+    {
+      "path": "data/ifeval_full_with_meta.json",
+      "source_type": "api_generated",
+      "owner": "internal",
+      "generation_method": "scripts/download_ifeval_datasets.py --generate-responses",
+      "upstream_templates": "data/ifeval_chinese_templates.json",
+      "model_provider": "OpenAI-compatible API",
+      "model_name": "TODO",
+      "generated_at": "TODO",
+      "license": "internal_or_mixed",
+      "sha256": "TODO"
+    },
+    {
+      "path": "data/public_train_strict_with_meta.json",
+      "source_type": "public_download",
+      "upstream_dataset": "TODO (e.g., WMT/OPUS/arXiv/etc.)",
+      "upstream_revision": "TODO",
+      "download_method": "TODO (metadata-preserving converter)",
+      "downloaded_at": "TODO",
+      "license": "TODO",
+      "sha256": "TODO",
+      "status": "required_for_strict_rebuild"
+    },
+    {
+      "path": "data/public_val_strict_with_meta.json",
+      "source_type": "public_download",
+      "upstream_dataset": "TODO",
+      "upstream_revision": "TODO",
+      "download_method": "TODO",
+      "downloaded_at": "TODO",
+      "license": "TODO",
+      "sha256": "TODO",
+      "status": "optional_for_train_topup"
+    },
+    {
+      "path": "data/public_test_strict_with_meta.json",
+      "source_type": "public_download",
+      "upstream_dataset": "TODO",
+      "upstream_revision": "TODO",
+      "download_method": "TODO",
+      "downloaded_at": "TODO",
+      "license": "TODO",
+      "sha256": "TODO",
+      "status": "required_for_labeled_test_completion"
+    },
+    {
+      "path": "data/qwen3_strict_internal_if_labeled.json",
+      "source_type": "derived_internal_eval",
+      "generation_method": "scripts/convert_lria_follow_to_strict_test.py",
+      "upstream_files": [
+        "dataset/LRIA-Follow_EN/LRIA-Follow_v3_EN.xlsx",
+        "dataset/LRIA-Follow_ZH/LRIA-Follow_v3_ZH.xlsx"
+      ],
+      "license": "internal",
+      "sha256": "TODO"
+    },
+    {
+      "path": "dataset/LRIA-Follow_EN/LRIA-Follow_v3_EN.xlsx",
+      "source_type": "internal_test_raw",
+      "owner": "internal",
+      "license": "internal",
+      "sha256": "TODO"
+    },
+    {
+      "path": "dataset/LRIA-Follow_ZH/LRIA-Follow_v3_ZH.xlsx",
+      "source_type": "internal_test_raw",
+      "owner": "internal",
+      "license": "internal",
+      "sha256": "TODO"
+    },
+    {
+      "path": "dataset/IFEval/input_data.jsonl",
+      "source_type": "raw_prompt_only",
+      "upstream_dataset": "google/IFEval",
+      "license": "TODO",
+      "sha256": "TODO"
+    },
+    {
+      "path": "dataset/m-ifeval/PMMEval-mifeval-*.json",
+      "source_type": "raw_prompt_only",
+      "upstream_dataset": "PMMEval m-IFEval",
+      "license": "TODO",
+      "sha256": "TODO (record per file in audit hashes)"
+    },
+    {
+      "path": "dataset/LRIATrans/*.json",
+      "source_type": "internal_eval_auxiliary",
+      "owner": "internal",
+      "usage": "historical prediction replay / comparison only (not primary labeled test, no reference outputs in current files)",
+      "license": "internal",
+      "sha256": "TODO"
+    }
+  ]
+}
+

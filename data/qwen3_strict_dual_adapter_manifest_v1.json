@@ -1,0 +1,115 @@
+{
+  "series": "qwen3_strict_dual_adapter",
+  "version_tag": "v1",
+  "parent": {
+    "train_file": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train.json",
+    "val_file": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_val.json",
+    "train_sha256": "1074b718c68faac080249975484500f52cc230f6d523fc79e888ac48b1baffb6",
+    "val_sha256": "80b797ea4cd6ade30365eb80c838b6b7a72d68a29a0d77e818fb2c37e922a022"
+  },
+  "routing_policy": {
+    "ts_adapter_tasks": [
+      "summarization",
+      "translation"
+    ],
+    "if_adapter_tasks": [
+      "instruction_following"
+    ]
+  },
+  "outputs": {
+    "train_ts": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train_ts_v1.json",
+    "val_ts": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_val_ts_v1.json",
+    "train_if": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train_if_v1.json",
+    "val_if": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_val_if_v1.json"
+  },
+  "stats": {
+    "parent_train": {
+      "count": 3600,
+      "task_distribution": {
+        "instruction_following": 1200,
+        "translation": 1200,
+        "summarization": 1200
+      },
+      "source_distribution": {
+        "chinese_generated": 318,
+        "self_generated": 1241,
+        "argilla_ifeval": 882,
+        "opus-100": 432,
+        "arxiv": 521,
+        "wmt19": 206
+      }
+    },
+    "parent_val": {
+      "count": 360,
+      "task_distribution": {
+        "instruction_following": 120,
+        "translation": 120,
+        "summarization": 120
+      },
+      "source_distribution": {
+        "argilla_ifeval": 79,
+        "wmt19": 26,
+        "chinese_generated": 41,
+        "self_generated": 130,
+        "arxiv": 44,
+        "opus-100": 40
+      }
+    },
+    "train_ts": {
+      "count": 2400,
+      "task_distribution": {
+        "translation": 1200,
+        "summarization": 1200
+      },
+      "source_distribution": {
+        "self_generated": 1241,
+        "opus-100": 432,
+        "arxiv": 521,
+        "wmt19": 206
+      }
+    },
+    "val_ts": {
+      "count": 240,
+      "task_distribution": {
+        "translation": 120,
+        "summarization": 120
+      },
+      "source_distribution": {
+        "wmt19": 26,
+        "self_generated": 130,
+        "arxiv": 44,
+        "opus-100": 40
+      }
+    },
+    "train_if": {
+      "count": 1200,
+      "task_distribution": {
+        "instruction_following": 1200
+      },
+      "source_distribution": {
+        "chinese_generated": 318,
+        "argilla_ifeval": 882
+      }
+    },
+    "val_if": {
+      "count": 120,
+      "task_distribution": {
+        "instruction_following": 120
+      },
+      "source_distribution": {
+        "argilla_ifeval": 79,
+        "chinese_generated": 41
+      }
+    }
+  },
+  "consistency_checks": {
+    "train_partition_complete": true,
+    "val_partition_complete": true,
+    "train_overlap_count": 0,
+    "val_overlap_count": 0
+  },
+  "notes": [
+    "Derived from qwen3_strict mother train/val only; strict test sets are unchanged.",
+    "Use strict test_labeled/test_if_unlabeled for all downstream adapter evaluation."
+  ]
+}

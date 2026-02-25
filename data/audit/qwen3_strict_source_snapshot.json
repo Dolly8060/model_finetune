@@ -1,0 +1,195 @@
+{
+  "output_prefix": "qwen3_strict",
+  "source_registry_path": "D:\\AI_code\\model_finetune\\data\\source_registry_qwen3_strict.template.json",
+  "confirmed_user_generated": [
+    "data/train.json",
+    "data/val.json"
+  ],
+  "direct_input_files": [
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\train.json",
+      "size_bytes": 4678956
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\val.json",
+      "size_bytes": 524088
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json",
+      "size_bytes": 2379037
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\public_train_strict_with_meta.json",
+      "size_bytes": 3201977
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json",
+      "size_bytes": 679841
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_internal_if_labeled.json",
+      "size_bytes": 560550
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\public_test_strict_with_meta.json",
+      "size_bytes": 1613406
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ar.json",
+      "size_bytes": 39181
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-de.json",
+      "size_bytes": 35480
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-en.json",
+      "size_bytes": 31884
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-es.json",
+      "size_bytes": 33561
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-fr.json",
+      "size_bytes": 34860
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-it.json",
+      "size_bytes": 33223
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ja.json",
+      "size_bytes": 38307
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pl.json",
+      "size_bytes": 33488
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pt.json",
+      "size_bytes": 33473
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ro.json",
+      "size_bytes": 34655
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-zh.json",
+      "size_bytes": 30131
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\dataset\\IFEval\\input_data.jsonl",
+      "size_bytes": 207112
+    },
+    {
+      "path": "D:\\AI_code\\model_finetune\\data\\source_registry_qwen3_strict.template.json",
+      "size_bytes": 4412
+    }
+  ],
+  "final_split_source_labels": {
+    "train_v1a": {
+      "chinese_generated": 318,
+      "self_generated": 1241,
+      "argilla_ifeval": 882,
+      "opus-100": 432,
+      "arxiv": 521,
+      "wmt19": 206
+    },
+    "train_v1b": {
+      "chinese_generated": 483,
+      "argilla_ifeval": 1317,
+      "opus-100": 334,
+      "wmt19": 152,
+      "arxiv": 394,
+      "self_generated": 920
+    },
+    "train_v1c": {
+      "arxiv": 394,
+      "argilla_ifeval": 1317,
+      "self_generated": 920,
+      "chinese_generated": 483,
+      "opus-100": 334,
+      "wmt19": 152
+    },
+    "val": {
+      "argilla_ifeval": 79,
+      "wmt19": 26,
+      "chinese_generated": 41,
+      "self_generated": 130,
+      "arxiv": 44,
+      "opus-100": 40
+    },
+    "test_labeled": {
+      "lria_follow_zh": 193,
+      "arxiv": 300,
+      "lria_follow_en": 107,
+      "opus-100": 194,
+      "wmt19": 106
+    },
+    "test_if_unlabeled": {
+      "mifeval_ro": 77,
+      "ifeval_prompt_only": 357,
+      "mifeval_en": 79,
+      "mifeval_ar": 70,
+      "mifeval_ja": 74,
+      "mifeval_de": 71,
+      "mifeval_fr": 77,
+      "mifeval_pt": 77,
+      "mifeval_es": 85,
+      "mifeval_it": 71,
+      "mifeval_zh": 80,
+      "mifeval_pl": 82
+    }
+  },
+  "final_split_source_files": {
+    "train_v1a": {
+      "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json": 318,
+      "D:\\AI_code\\model_finetune\\data\\train.json": 1130,
+      "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json": 882,
+      "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json": 1159,
+      "D:\\AI_code\\model_finetune\\data\\val.json": 111
+    },
+    "train_v1b": {
+      "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json": 483,
+      "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json": 1317,
+      "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json": 880,
+      "D:\\AI_code\\model_finetune\\data\\train.json": 839,
+      "D:\\AI_code\\model_finetune\\data\\val.json": 81
+    },
+    "train_v1c": {
+      "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json": 880,
+      "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json": 1317,
+      "D:\\AI_code\\model_finetune\\data\\train.json": 839,
+      "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json": 483,
+      "D:\\AI_code\\model_finetune\\data\\val.json": 81
+    },
+    "val": {
+      "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json": 79,
+      "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json": 110,
+      "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json": 41,
+      "D:\\AI_code\\model_finetune\\data\\train.json": 113,
+      "D:\\AI_code\\model_finetune\\data\\val.json": 17
+    },
+    "test_labeled": {
+      "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_ZH\\LRIA-Follow_v3_ZH.xlsx": 193,
+      "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json": 600,
+      "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_EN\\LRIA-Follow_v3_EN.xlsx": 107
+    },
+    "test_if_unlabeled": {
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ro.json": 77,
+      "D:\\AI_code\\model_finetune\\dataset\\IFEval\\input_data.jsonl": 357,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-en.json": 79,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ar.json": 70,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ja.json": 74,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-de.json": 71,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-fr.json": 77,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pt.json": 77,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-es.json": 85,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-it.json": 71,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-zh.json": 80,
+      "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pl.json": 82
+    }
+  },
+  "lineage_record_count": 13260
+}

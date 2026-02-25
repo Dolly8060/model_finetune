@@ -1,0 +1,117 @@
+{
+  "output_prefix": "qwen3_strict",
+  "files": {
+    "D:\\AI_code\\model_finetune\\data\\train.json": {
+      "sha256": "96e54c2255eafe5766e861d74da8482bdca734e000bf3d06b3e92a2d22328d3c",
+      "size_bytes": 4678956
+    },
+    "D:\\AI_code\\model_finetune\\data\\val.json": {
+      "sha256": "5cb4cb0b9cf49532712aa52baf2a3e33d625f2500588df71412207629ae15a56",
+      "size_bytes": 524088
+    },
+    "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json": {
+      "sha256": "2c544490aaab02aa11b14199e4a7ce059b6587bf3fc9585ffbc57815b528c071",
+      "size_bytes": 2379037
+    },
+    "D:\\AI_code\\model_finetune\\data\\public_train_strict_with_meta.json": {
+      "sha256": "0285952518119226428bbeccc357107e926916f7d8f31abeb8ed4c180e024e2b",
+      "size_bytes": 3201977
+    },
+    "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json": {
+      "sha256": "bb4371a4a7cb0ed8dcdb0c5b57c87efbde1f6b4f1bdef478b1830ffaa750df30",
+      "size_bytes": 679841
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_internal_if_labeled.json": {
+      "sha256": "cff9c8c962d24676502c2bf5dab8f6cfbfc2dc01a2714de144268e3a0707e4b7",
+      "size_bytes": 560550
+    },
+    "D:\\AI_code\\model_finetune\\data\\public_test_strict_with_meta.json": {
+      "sha256": "a53d4df6051aa39425d8b65fedd654bc489cae3819928ef3b1082a926f79bc2c",
+      "size_bytes": 1613406
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ar.json": {
+      "sha256": "8ef255c39c7cbb0c4baa32979e5768fdfde3dd135ef23e461645267ddab65714",
+      "size_bytes": 39181
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-de.json": {
+      "sha256": "04d0de3cee165a1bbbf4f1ef7f1e75535fc390af0d3c9d60ddb7f02e266a72a9",
+      "size_bytes": 35480
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-en.json": {
+      "sha256": "fcd52d427da746c08078c1ac86c016ae3ed0bf3d677aaab03f344cee1d0910b9",
+      "size_bytes": 31884
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-es.json": {
+      "sha256": "0b15f6869e8cf9bcee7bcc85de0c5c6f9a466e68d91b36a3e07d4d820478ce49",
+      "size_bytes": 33561
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-fr.json": {
+      "sha256": "56965469465ef6c1f0cfe0eb0eab54cc2c6d00ac600a15bd64d8bda00c4ab620",
+      "size_bytes": 34860
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-it.json": {
+      "sha256": "9f257b45db7298c0652893f2e11df9b9f557f356913f6c7131ecad80a0761569",
+      "size_bytes": 33223
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ja.json": {
+      "sha256": "a047a9e79ed0a1074b7ab386cb8427ffff5a131a141631a6e7f532455dd71f28",
+      "size_bytes": 38307
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pl.json": {
+      "sha256": "07ff75732d7b3dd9ba3e2c4a36abf00a3a9cf67792236ca54c2f2941df26e7a0",
+      "size_bytes": 33488
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-pt.json": {
+      "sha256": "58a1e006683c966774e0a7543417fc17c748a11e4bf4778489758fcb84bdaeea",
+      "size_bytes": 33473
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-ro.json": {
+      "sha256": "9f32d6036fa18dc2f76f26a9077ab8e9c07082770364bfffc13052ae178efe6f",
+      "size_bytes": 34655
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\m-ifeval\\PMMEval-mifeval-zh.json": {
+      "sha256": "f4184c48d24101d2daec0e0adaa6b63e26425f5e033b873321a85832ff800f72",
+      "size_bytes": 30131
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\IFEval\\input_data.jsonl": {
+      "sha256": "86ea91641ee9e6b891330f3f019e82c481abddbdea5945106df1dfe59757fbc2",
+      "size_bytes": 207112
+    },
+    "D:\\AI_code\\model_finetune\\data\\source_registry_qwen3_strict.template.json": {
+      "sha256": "99a3fead5e3a53771c882b1cb2cf2cba398354352b8260a67615024ddae9f92c",
+      "size_bytes": 4412
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train.json": {
+      "sha256": "1074b718c68faac080249975484500f52cc230f6d523fc79e888ac48b1baffb6",
+      "size_bytes": 7039605
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_val.json": {
+      "sha256": "80b797ea4cd6ade30365eb80c838b6b7a72d68a29a0d77e818fb2c37e922a022",
+      "size_bytes": 682480
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_test_labeled.json": {
+      "sha256": "01830641f0e5dcfd33f1dd8b2c1b4b7c594ab8ddcf322bbd014f92f3a9754831",
+      "size_bytes": 1242984
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_test_if_unlabeled.json": {
+      "sha256": "29cba3e54d012f56d0b2b6cbf181b56f854a6bbe3403da35b9d417de212762c6",
+      "size_bytes": 451569
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train_v1b.json": {
+      "sha256": "4fa6e97b1c4400c74775d4ce9ceecc359c377b8dc2a510f8bedfff5966ef6295",
+      "size_bytes": 6584319
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_train_v1c.json": {
+      "sha256": "56d1ec52f028e34cc0c98e31e0877cae47156ac13be841c700600901520bfc14",
+      "size_bytes": 6584319
+    },
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_manifest.json": {
+      "sha256": "f47e0128bec3b68ba955ae4e207e30a1582cb820b5b75012daf20a1da36fa22e",
+      "size_bytes": 6421
+    },
+    "D:\\AI_code\\model_finetune\\scripts\\build_qwen3_strict_dataset.py": {
+      "sha256": "da09bd50a86fe4325b8e678d059701236e2238cbfaf5bfb97d25c2566c2017b6",
+      "size_bytes": 23830
+    }
+  }
+}

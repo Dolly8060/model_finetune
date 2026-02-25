@@ -196,5 +196,95 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "qwen3_strict_train": {
+    "file_name": "qwen3_strict_train.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_val": {
+    "file_name": "qwen3_strict_val.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_test_labeled": {
+    "file_name": "qwen3_strict_test_labeled.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_test_if_unlabeled": {
+    "file_name": "qwen3_strict_test_if_unlabeled.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_train_v1b": {
+    "file_name": "qwen3_strict_train_v1b.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_train_v1c": {
+    "file_name": "qwen3_strict_train_v1c.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_train_ts_v1": {
+    "file_name": "qwen3_strict_train_ts_v1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_val_ts_v1": {
+    "file_name": "qwen3_strict_val_ts_v1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_train_if_v1": {
+    "file_name": "qwen3_strict_train_if_v1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_strict_val_if_v1": {
+    "file_name": "qwen3_strict_val_if_v1.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }

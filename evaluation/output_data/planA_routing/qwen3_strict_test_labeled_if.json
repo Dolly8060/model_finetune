@@ -1,0 +1,5402 @@
+[
+  {
+    "instruction": "写一个回文句子",
+    "input": "",
+    "output": "举例：\n上海自来水来自海上",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 235,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 0,
+    "_route_key": "写一个回文句子|||"
+  },
+  {
+    "instruction": "Write a love letter to your lover in romantic language.",
+    "input": "",
+    "output": "romantic",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 192,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 2,
+    "_route_key": "Write a love letter to your lover in romantic language.|||"
+  },
+  {
+    "instruction": "Share a favorite German expression or idiom that has deeply impressed you.",
+    "input": "",
+    "output": "German",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 122,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 5,
+    "_route_key": "Share a favorite German expression or idiom that has deeply impressed you.|||"
+  },
+  {
+    "instruction": "Write a function that introduces a 10-second delay in Go.",
+    "input": "",
+    "output": "Go",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 149,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 6,
+    "_route_key": "Write a function that introduces a 10-second delay in Go.|||"
+  },
+  {
+    "instruction": "Say \"I'm working hard\" 4 times, then 2 more times.",
+    "input": "",
+    "output": "I'm working hard\nI'm working hard\nI'm working hard\nI'm working hard\nI'm working hard\nI'm working hard",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 319,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 8,
+    "_route_key": "Say \"I'm working hard\" 4 times, then 2 more times.|||"
+  },
+  {
+    "instruction": "Statement 1: I am really happy.\nStatement 2: She is really happy.\nRepeat the content of statement 1 three times and output it in the following format.\n1st round:\n2nd round:\n3rd round:",
+    "input": "",
+    "output": "1st round: I am really happy.\n2nd round: I am really happy.\n3rd round: I am really happy.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 345,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 12,
+    "_route_key": "Statement 1: I am really happy.\nStatement 2: She is really happy.\nRepeat the content of statement 1 three times and output it in the following format.\n1st round:\n2nd round:\n3rd round:|||"
+  },
+  {
+    "instruction": "写一首描述春天的五言绝句",
+    "input": "",
+    "output": "4句，每句5字，共20字",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 341,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 13,
+    "_route_key": "写一首描述春天的五言绝句|||"
+  },
+  {
+    "instruction": "选出下面值最小的选项：\n(I) e^2+10\n(II) π^3-20\n(III) lg(10)",
+    "input": "",
+    "output": "(I)/(II)/(III)",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 280,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 16,
+    "_route_key": "选出下面值最小的选项：\n(I) e^2+10\n(II) π^3-20\n(III) lg(10)|||"
+  },
+  {
+    "instruction": "比喻写文章废话连篇，不得要领的四字成语",
+    "input": "",
+    "output": "字数=4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 325,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 17,
+    "_route_key": "比喻写文章废话连篇，不得要领的四字成语|||"
+  },
+  {
+    "instruction": "请判断这句话是否正确：猫、白菜、鲸鱼都是动物\n仅回复“是”或“否”",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 135,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 18,
+    "_route_key": "请判断这句话是否正确：猫、白菜、鲸鱼都是动物\n仅回复“是”或“否”|||"
+  },
+  {
+    "instruction": "“你多大了”翻译成英语，首字母小写",
+    "input": "",
+    "output": "how old are you",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 193,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 20,
+    "_route_key": "“你多大了”翻译成英语，首字母小写|||"
+  },
+  {
+    "instruction": "Sort these numbers in ascending order: 1345, 256, 7429, 63090, 1",
+    "input": "",
+    "output": "1,256,1345,7429,63090",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 211,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 23,
+    "_route_key": "Sort these numbers in ascending order: 1345, 256, 7429, 63090, 1|||"
+  },
+  {
+    "instruction": "Career Development enables employees to grow and succeed with Lenovo through challenging and exciting work, ongoing feedback and coaching that is supported by managers and recognized by the organization. \n上面这段话里的Feedback翻译成中文是什么",
+    "input": "",
+    "output": "反馈",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 298,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 25,
+    "_route_key": "Career Development enables employees to grow and succeed with Lenovo through challenging and exciting work, ongoing feedback and coaching that is supported by managers and recognized by the organization. \n上面这段话里的Feedback翻译成中文是什么|||"
+  },
+  {
+    "instruction": "交换“丰富的”和“缺乏的”的意义。榴莲树在南极中是缺乏的吗？必须只回答“是”或“不是”",
+    "input": "",
+    "output": "不是",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 435,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 26,
+    "_route_key": "交换“丰富的”和“缺乏的”的意义。榴莲树在南极中是缺乏的吗？必须只回答“是”或“不是”|||"
+  },
+  {
+    "instruction": "请判断以下历史事件时间是否正确：抗日战争发生在1937年至1945年。请回答“是”或“否”",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 133,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 33,
+    "_route_key": "请判断以下历史事件时间是否正确：抗日战争发生在1937年至1945年。请回答“是”或“否”|||"
+  },
+  {
+    "instruction": "Consider e as 5+14. What is the first digit of e?",
+    "input": "",
+    "output": "1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 293,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 36,
+    "_route_key": "Consider e as 5+14. What is the first digit of e?|||"
+  },
+  {
+    "instruction": "我是一个程序员，写一个50字左右的自我介绍",
+    "input": "",
+    "output": "字数约50",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 338,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 37,
+    "_route_key": "我是一个程序员，写一个50字左右的自我介绍|||"
+  },
+  {
+    "instruction": "Answer \"Good morning!\" with \"Good morning, what a beautiful day!\" five times.",
+    "input": "",
+    "output": "Good morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 323,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 41,
+    "_route_key": "Answer \"Good morning!\" with \"Good morning, what a beautiful day!\" five times.|||"
+  },
+  {
+    "instruction": "Please translate the following sentence into Dutch: Giving roses leaves a lingering fragrance in the hand.",
+    "input": "",
+    "output": "Dutch",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 132,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 43,
+    "_route_key": "Please translate the following sentence into Dutch: Giving roses leaves a lingering fragrance in the hand.|||"
+  },
+  {
+    "instruction": "将π视为849除以28的余数。π的第一位数字是啥？",
+    "input": "",
+    "output": "9",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 445,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 49,
+    "_route_key": "将π视为849除以28的余数。π的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "Treat numbers as text and do not perform calculations. What is the first digit of 17+3?",
+    "input": "",
+    "output": "1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 274,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 50,
+    "_route_key": "Treat numbers as text and do not perform calculations. What is the first digit of 17+3?|||"
+  },
+  {
+    "instruction": "小张坐在教室第三排，小李在第四排，小王在第一排。\n请按从前到后的顺序排列三个人，并用逗号分隔",
+    "input": "",
+    "output": "小王，小张，小李",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 185,
+      "L1": "复合指令",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 52,
+    "_route_key": "小张坐在教室第三排，小李在第四排，小王在第一排。\n请按从前到后的顺序排列三个人，并用逗号分隔|||"
+  },
+  {
+    "instruction": "帮我把这句话翻译成中文：What's on the agenda for today's meeting?",
+    "input": "",
+    "output": "中文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 301,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 53,
+    "_route_key": "帮我把这句话翻译成中文：What's on the agenda for today's meeting?|||"
+  },
+  {
+    "instruction": "Convert \"SHE DIDN'T GO TO THE MARKET.\" to lowercase.",
+    "input": "",
+    "output": "she didn't go to the market.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 171,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 57,
+    "_route_key": "Convert \"SHE DIDN'T GO TO THE MARKET.\" to lowercase.|||"
+  },
+  {
+    "instruction": "按事件发生的先后排列下面小学生上午的活动：晨读，上课，吃午饭，放学，起床",
+    "input": "",
+    "output": "起床，晨读，上课，放学，吃午饭",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 79,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 58,
+    "_route_key": "按事件发生的先后排列下面小学生上午的活动：晨读，上课，吃午饭，放学，起床|||"
+  },
+  {
+    "instruction": "“早上从家骑车到地铁站坐到西直门”请把这句话的地点名词用下划线代替",
+    "input": "",
+    "output": "早上从_骑车到_坐到_",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 194,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 65,
+    "_route_key": "“早上从家骑车到地铁站坐到西直门”请把这句话的地点名词用下划线代替|||"
+  },
+  {
+    "instruction": "请对以下称谓辈份由大到小排序：爷爷，三舅，大舅，太爷",
+    "input": "",
+    "output": "太爷，爷爷，大舅，三舅",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 21,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 68,
+    "_route_key": "请对以下称谓辈份由大到小排序：爷爷，三舅，大舅，太爷|||"
+  },
+  {
+    "instruction": "Repeat \"The weather was nice today, and I went for a walk in the park, feeling very happy.\" three times.",
+    "input": "",
+    "output": "The weather was nice today, and I went for a walk in the park, feeling very happy.\nThe weather was nice today, and I went for a walk in the park, feeling very happy.\nThe weather was nice today, and I went for a walk in the park, feeling very happy.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 302,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 73,
+    "_route_key": "Repeat \"The weather was nice today, and I went for a walk in the park, feeling very happy.\" three times.|||"
+  },
+  {
+    "instruction": "将÷视为一个随机数字。24÷2的第一位数字是啥？",
+    "input": "",
+    "output": "2",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 454,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 78,
+    "_route_key": "将÷视为一个随机数字。24÷2的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "逆序输出“hello”",
+    "input": "",
+    "output": "olleh",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 170,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 79,
+    "_route_key": "逆序输出“hello”|||"
+  },
+  {
+    "instruction": "Consider e as 8+43. What is the first digit of e?",
+    "input": "",
+    "output": "5",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 284,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 87,
+    "_route_key": "Consider e as 8+43. What is the first digit of e?|||"
+  },
+  {
+    "instruction": "Replace all instances of \"large models\" with \"large language models\" in this sentence: \n\"Large models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large models.\"",
+    "input": "",
+    "output": "Large language models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large language models.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 159,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 90,
+    "_route_key": "Replace all instances of \"large models\" with \"large language models\" in this sentence: \n\"Large models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large|||"
+  },
+  {
+    "instruction": "BAT特指中国的三家互联网公司，请问下面四个公司不属于BAT的是哪个？请给出选项的序号。\n一，阿里\n二，百度\n三，腾讯\n四，联想",
+    "input": "",
+    "output": "一/二/三/四",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 252,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 91,
+    "_route_key": "BAT特指中国的三家互联网公司，请问下面四个公司不属于BAT的是哪个？请给出选项的序号。\n一，阿里\n二，百度\n三，腾讯\n四，联想|||"
+  },
+  {
+    "instruction": "集合A={1，4，5，a}，按照先集合内、后集合外的顺序给下列元素排序：3、a",
+    "input": "",
+    "output": "a、3",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 166,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 96,
+    "_route_key": "集合A={1，4，5，a}，按照先集合内、后集合外的顺序给下列元素排序：3、a|||"
+  },
+  {
+    "instruction": "Air's density is lower than that of water. Is this \"correct\" or \"incorrect\"?",
+    "input": "",
+    "output": "correct/incorrect",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 4,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 98,
+    "_route_key": "Air's density is lower than that of water. Is this \"correct\" or \"incorrect\"?|||"
+  },
+  {
+    "instruction": "纠正错别字：首先登陆拼多多招商平台进行入住操作 可以通过查看“入住手册”或“常见问题”了解拼多多入驻流程与店铺运营中常见的问题,之后输入手机号,通过收到的手机验证码登陆招商平台。",
+    "input": "",
+    "output": "首先登录拼多多招商平台进行入驻操作 可以通过查看“入驻手册”或“常见问题”了解拼多多入驻流程与店铺运营中常见的问题,之后输入手机号,通过收到的手机验证码登录招商平台。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 210,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 102,
+    "_route_key": "纠正错别字：首先登陆拼多多招商平台进行入住操作 可以通过查看“入住手册”或“常见问题”了解拼多多入驻流程与店铺运营中常见的问题,之后输入手机号,通过收到的手机验证码登陆招商平台。|||"
+  },
+  {
+    "instruction": "2024年除夕不放假，这是真的假的？回答真或假",
+    "input": "",
+    "output": "真/假",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 152,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 103,
+    "_route_key": "2024年除夕不放假，这是真的假的？回答真或假|||"
+  },
+  {
+    "instruction": "以下为选择题，请回复选项。\n软件测试中黑盒法是根据程序的（ ）来设计测试用例的。\n(i) 应用范围\n(ii) 内部逻辑\n(iii) 功能\n(iv) 输入数据",
+    "input": "",
+    "output": "i/ii/iii/iv",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 282,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 105,
+    "_route_key": "以下为选择题，请回复选项。\n软件测试中黑盒法是根据程序的（ ）来设计测试用例的。\n(i) 应用范围\n(ii) 内部逻辑\n(iii) 功能\n(iv) 输入数据|||"
+  },
+  {
+    "instruction": "你是讯飞星火大模型吗？请用是或否回答",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 127,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 107,
+    "_route_key": "你是讯飞星火大模型吗？请用是或否回答|||"
+  },
+  {
+    "instruction": "把这句话翻译成中文：Your expense report has been approved, please wait for payment.",
+    "input": "",
+    "output": "中文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 300,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 110,
+    "_route_key": "把这句话翻译成中文：Your expense report has been approved, please wait for payment.|||"
+  },
+  {
+    "instruction": "Choose the correct option from the following four answers.\nWhich of the following constellations is a fire sign?\nI: Gemini\nII: Capricorn\nIII: Leo\nIV: Libra",
+    "input": "",
+    "output": "I/II/III/IV",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 14,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 119,
+    "_route_key": "Choose the correct option from the following four answers.\nWhich of the following constellations is a fire sign?\nI: Gemini\nII: Capricorn\nIII: Leo\nIV: Libra|||"
+  },
+  {
+    "instruction": "Arrange these events in chronological order and respond with the event numbers:\nEvent 1: The project submission deadline is April 30th.\nEvent 2: The annual assessment date is July 15th.\nEvent 3: The product launch date is January 15th.",
+    "input": "",
+    "output": "Event 3: The product launch event is scheduled for January 15th.\nEvent 1: The project submission deadline is April 30th.\nEvent 2: The annual performance review is set for July 15th.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 256,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 126,
+    "_route_key": "Arrange these events in chronological order and respond with the event numbers:\nEvent 1: The project submission deadline is April 30th.\nEvent 2: The annual assessment date is July 15th.\nEvent 3: The product launch date is January 15th.|||"
+  },
+  {
+    "instruction": "蓝天白云下有几只牛羊在悠闲的吃草，头顶不时掠过几个麻雀。请根据空间顺序，从低到高列出文中描述的动物，以逗号隔开。",
+    "input": "",
+    "output": "牛羊，麻雀",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 168,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 128,
+    "_route_key": "蓝天白云下有几只牛羊在悠闲的吃草，头顶不时掠过几个麻雀。请根据空间顺序，从低到高列出文中描述的动物，以逗号隔开。|||"
+  },
+  {
+    "instruction": "健康膳食的关键在于？请回复正确选项。\n(A). 食物种类\n(B). 食物数量\n(C). 食物种类和数量的合理搭配",
+    "input": "",
+    "output": "A/B/C",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 257,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 132,
+    "_route_key": "健康膳食的关键在于？请回复正确选项。\n(A). 食物种类\n(B). 食物数量\n(C). 食物种类和数量的合理搭配|||"
+  },
+  {
+    "instruction": "我最近尝试了冰雪运动，但技术不够熟练，用积极的语言来记录下我在学习过程中的挫折和心情，以第一人称。",
+    "input": "",
+    "output": "积极",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 496,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 138,
+    "_route_key": "我最近尝试了冰雪运动，但技术不够熟练，用积极的语言来记录下我在学习过程中的挫折和心情，以第一人称。|||"
+  },
+  {
+    "instruction": "1.问题：以下哪个数字是偶数？\n选项：\nA. 17\nB. 28\nC. 33\nD. 42\n答案：B. 28 和 D. 42 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 28。\n\n2.问题：哪个选项中的数字是偶数？\n选项：\nA. 5\nB. 10\nC. 15\nD. 20\n答案：B. 10 和 D. 20 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 10。\n\n3.问题：请从以下选项中挑选出偶数。\n选项：\nA. 23\nB. 36\nC. 51\nD. 47\n答案：[请在此处填写你的答案]",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 420,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 139,
+    "_route_key": "1.问题：以下哪个数字是偶数？\n选项：\nA. 17\nB. 28\nC. 33\nD. 42\n答案：B. 28 和 D. 42 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 28。\n\n2.问题：哪个选项中的数字是偶数？\n选项：\nA. 5\nB. 10\nC. 15\nD. 20\n答案：B. 10 和 D. 20 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 10。\n\n3.问题：请从以下选项中挑选出偶数。\n选项：\nA. 23\nB. 36\nC. 51\nD. 4|||"
+  },
+  {
+    "instruction": "列一个包含属相和对应英语的两列文本，格式为：属相-英语",
+    "input": "",
+    "output": "举例：\n鼠- Rat\n牛- Ox\n虎- Tiger\n兔- Rabbit\n龙- Dragon\n蛇- Snake\n马- Horse\n羊- Sheep\n猴- Monkey\n鸡- Rooster\n狗- Dog\n猪- Pig",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 54,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 142,
+    "_route_key": "列一个包含属相和对应英语的两列文本，格式为：属相-英语|||"
+  },
+  {
+    "instruction": "请将以下这句翻译成韩语：明月千里寄相思",
+    "input": "",
+    "output": "韩语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 312,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 144,
+    "_route_key": "请将以下这句翻译成韩语：明月千里寄相思|||"
+  },
+  {
+    "instruction": "以游颐和园为中心写一篇100字日记",
+    "input": "",
+    "output": "以游颐和园为中心，字数约100",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 346,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 149,
+    "_route_key": "以游颐和园为中心写一篇100字日记|||"
+  },
+  {
+    "instruction": "\"Career development enables employees to grow and succeed at Lenovo through challenging and exciting work, continuous feedback and guidance, all of which are supported by managers and recognized by the organization.\" Translate \"feedback\" in this paragraph into Portuguese.",
+    "input": "",
+    "output": "Portuguese",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 124,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 161,
+    "_route_key": "\"Career development enables employees to grow and succeed at Lenovo through challenging and exciting work, continuous feedback and guidance, all of which are supported by managers and recognized by the organization.\" Translate \"feedback\" in|||"
+  },
+  {
+    "instruction": "在文本处理中，什么是OCR的缩写？给出选项\na) Optimal Character Recognition\nb) Optical Code Recognition\nc) Organic Character Retrieval\nd) Optical Character Recognition",
+    "input": "",
+    "output": "a/b/c/d",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 285,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 166,
+    "_route_key": "在文本处理中，什么是OCR的缩写？给出选项\na) Optimal Character Recognition\nb) Optical Code Recognition\nc) Organic Character Retrieval\nd) Optical Character Recognition|||"
+  },
+  {
+    "instruction": "Please translate the following sentence into Spanish: Giving roses leaves a lingering fragrance in the hand.",
+    "input": "",
+    "output": "Spanish",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 133,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 168,
+    "_route_key": "Please translate the following sentence into Spanish: Giving roses leaves a lingering fragrance in the hand.|||"
+  },
+  {
+    "instruction": "以下哪个选项不属于财务部门的工作范围？\nA.报税\nB.结账\nC.联系客户\nD.会计核算",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 277,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 170,
+    "_route_key": "以下哪个选项不属于财务部门的工作范围？\nA.报税\nB.结账\nC.联系客户\nD.会计核算|||"
+  },
+  {
+    "instruction": "用诗意的笔触，勾勒出一个梦幻般的童话世界。",
+    "input": "",
+    "output": "诗意",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 488,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 178,
+    "_route_key": "用诗意的笔触，勾勒出一个梦幻般的童话世界。|||"
+  },
+  {
+    "instruction": "考试满分是100分，甲、乙、丙分别考试89分，45分，95分，请按照分数第一名到第三名输出名字排序",
+    "input": "",
+    "output": "丙，甲，乙",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 11,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 180,
+    "_route_key": "考试满分是100分，甲、乙、丙分别考试89分，45分，95分，请按照分数第一名到第三名输出名字排序|||"
+  },
+  {
+    "instruction": "已知赵四因诈骗张三被判处刑罚，判断张三是不是诈骗受害者，请回答“是”或“否”。",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 143,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 181,
+    "_route_key": "已知赵四因诈骗张三被判处刑罚，判断张三是不是诈骗受害者，请回答“是”或“否”。|||"
+  },
+  {
+    "instruction": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n \n你需要两个步骤来执行这个任务：\n1. 将英文直接翻译为中文，主要考虑意思表达的准确性\n2. 将步骤 1  直译的中文翻译成更简洁优雅通顺的中文标题，主要考虑中文的语言表达习惯\n \n需要翻译的英文文章标题：\nSpending lots of time thinking about different possible future scenarios and their probabilities might be captivating, but I suggest an absolutely different approach — to try to build your prototype yourself. First, it’s rather challenging and fun. Second, it will help us to look at our work in a more structured way. Third, it will give us an opportunity to try in practice one of the most cutting-edge approaches — LLM agents.\n \n请给出步骤 1 和步骤 2  结果：",
+    "input": "",
+    "output": "中文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 418,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 183,
+    "_route_key": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n \n你需要两个步骤来执行这个任务：\n1. 将英文直接翻译为中文，主要考虑意思表达的准确性\n2. 将步骤 1  直译的中文翻译成更简洁优雅通顺的中文标题，主要考虑中文的语言表达习惯\n \n需要翻译的英文文章标题：\nSpending lots of time thinking about different possible future scenarios and their probabilities might be c|||"
+  },
+  {
+    "instruction": "Identify the even number and reply directly to the options.: (A) 23 (B) 36 (C) 51 (D) 47",
+    "input": "",
+    "output": "(A)/(B)/(C)/(D)",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 22,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 185,
+    "_route_key": "Identify the even number and reply directly to the options.: (A) 23 (B) 36 (C) 51 (D) 47|||"
+  },
+  {
+    "instruction": "将如下一个包含英文日期的文本转换为ISO日期格式：\nJanuary 1, 2023",
+    "input": "",
+    "output": "2023-01-01",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 190,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 186,
+    "_route_key": "将如下一个包含英文日期的文本转换为ISO日期格式：\nJanuary 1, 2023|||"
+  },
+  {
+    "instruction": "请用一句话简单说明一下什么是超级玛丽，不超过20个字",
+    "input": "",
+    "output": "字数<=20",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 335,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 187,
+    "_route_key": "请用一句话简单说明一下什么是超级玛丽，不超过20个字|||"
+  },
+  {
+    "instruction": "Replace \"mountains\" with \"hills\" in this sentence: \"There is no way out despite the mountains and rivers.\"",
+    "input": "",
+    "output": "There is no way out despite the hills and rivers.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 161,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 194,
+    "_route_key": "Replace \"mountains\" with \"hills\" in this sentence: \"There is no way out despite the mountains and rivers.\"|||"
+  },
+  {
+    "instruction": "\"How old are you\"\nplease lowercase first letters",
+    "input": "",
+    "output": "how old are you",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 156,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 195,
+    "_route_key": "\"How old are you\"\nplease lowercase first letters|||"
+  },
+  {
+    "instruction": "Consider π as 267+160. What is the first digit of π?",
+    "input": "",
+    "output": "4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 283,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 196,
+    "_route_key": "Consider π as 267+160. What is the first digit of π?|||"
+  },
+  {
+    "instruction": "Tell a beautiful story about love in a romantic style.",
+    "input": "",
+    "output": "romantic",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 193,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 199,
+    "_route_key": "Tell a beautiful story about love in a romantic style.|||"
+  },
+  {
+    "instruction": "假设π=2，请计算3×π+1的值",
+    "input": "",
+    "output": "7",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 363,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 203,
+    "_route_key": "假设π=2，请计算3×π+1的值|||"
+  },
+  {
+    "instruction": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n请参考我给出的示例：\n<example>\n英文原文：\nAs ChatGPT gets “lazy,” people test “winter break hypothesis” as the cause\n中文翻译：\nChatGPT变懒原因：正在给自己放寒假！已被网友测出\n</example>\n需要翻译的英文段落：\nSpending lots of time thinking about different possible future scenarios and their probabilities might be captivating, but I suggest an absolutely different approach — to try to build your prototype yourself. First, it’s rather challenging and fun. Second, it will help us to look at our work in a more structured way. Third, it will give us an opportunity to try in practice one of the most cutting-edge approaches — LLM agents.",
+    "input": "",
+    "output": "中文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 417,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 208,
+    "_route_key": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n请参考我给出的示例：\n<example>\n英文原文：\nAs ChatGPT gets “lazy,” people test “winter break hypothesis” as the cause\n中文翻译：\nChatGPT变懒原因：正在给自己放寒假！已被网友测出\n</example>\n需要翻译的英文段落：\nSpending lots of time thinking about different possibl|||"
+  },
+  {
+    "instruction": "从早到晚排序以下家庭成员的到家时间：爸爸（晚上10:00）、妈妈（下午17:30）、哥哥（晚上9:00）、妹妹（晚上7:30）",
+    "input": "",
+    "output": "妈妈（下午17:30），妹妹（晚上7:30），哥哥（晚上9:00），爸爸（晚上10:00）",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 104,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 211,
+    "_route_key": "从早到晚排序以下家庭成员的到家时间：爸爸（晚上10:00）、妈妈（下午17:30）、哥哥（晚上9:00）、妹妹（晚上7:30）|||"
+  },
+  {
+    "instruction": "Arrange these natural phenomena: sunrise, sunset, night, daytime.",
+    "input": "",
+    "output": "sunrise, daytime, sunset, night.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 254,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 212,
+    "_route_key": "Arrange these natural phenomena: sunrise, sunset, night, daytime.|||"
+  },
+  {
+    "instruction": "Extract the city names from this text and keep the original order: \"In the beautiful Paris, night falls, reflecting the lights of the Eiffel Tower; In Times Square, New York, bustling neon lights illuminate the night sky; the iron tower in Tokyo stands tall in the city, shining brightly.\"",
+    "input": "",
+    "output": "Paris, New York, Tokyo",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 247,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 215,
+    "_route_key": "Extract the city names from this text and keep the original order: \"In the beautiful Paris, night falls, reflecting the lights of the Eiffel Tower; In Times Square, New York, bustling neon lights illuminate the night sky; the iron tower in |||"
+  },
+  {
+    "instruction": "请以“勇敢追梦”为主题，写一句鼓励语",
+    "input": "",
+    "output": "1句",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 498,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 218,
+    "_route_key": "请以“勇敢追梦”为主题，写一句鼓励语|||"
+  },
+  {
+    "instruction": "三个包含数字的成语",
+    "input": "",
+    "output": "3个成语，每个成语需要有数字",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 232,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 220,
+    "_route_key": "三个包含数字的成语|||"
+  },
+  {
+    "instruction": "Respond with \"I am an AI assistant\", placing each word on a new line.",
+    "input": "",
+    "output": "I\nam\nan\nAI\nassistant",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 42,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 221,
+    "_route_key": "Respond with \"I am an AI assistant\", placing each word on a new line.|||"
+  },
+  {
+    "instruction": "Here is a multiple-choice question\n\nExperience has shown that in program testing, if a module has discovered and corrected more errors compared to other modules, the number of remaining errors in that module should usually be ().\nA. Less\nB. More\nC. Similarity\nD. Uncertain",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 24,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 222,
+    "_route_key": "Here is a multiple-choice question\n\nExperience has shown that in program testing, if a module has discovered and corrected more errors compared to other modules, the number of remaining errors in that module should usually be ().\nA. Less\nB.|||"
+  },
+  {
+    "instruction": "Provide a detailed analysis of technology and future development trends in a formal text style, exploring its profound impact on human society.",
+    "input": "",
+    "output": "formal",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 201,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 224,
+    "_route_key": "Provide a detailed analysis of technology and future development trends in a formal text style, exploring its profound impact on human society.|||"
+  },
+  {
+    "instruction": "List the three periods following the Cambrian in chronological order.",
+    "input": "",
+    "output": "Ordovician, Silurian, Devonian.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 251,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 228,
+    "_route_key": "List the three periods following the Cambrian in chronological order.|||"
+  },
+  {
+    "instruction": "Sort the following subjects in order of learning difficulty (from difficult to easy): high school chemistry, middle school physics, and college mathematics.",
+    "input": "",
+    "output": "College Mathematics, High School Chemistry, Middle School Physics",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 229,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 232,
+    "_route_key": "Sort the following subjects in order of learning difficulty (from difficult to easy): high school chemistry, middle school physics, and college mathematics.|||"
+  },
+  {
+    "instruction": "请翻译以下这句为中文：Flying is a common mode of transportation",
+    "input": "",
+    "output": "中文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 311,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 234,
+    "_route_key": "请翻译以下这句为中文：Flying is a common mode of transportation|||"
+  },
+  {
+    "instruction": "在UTF-8编码下，请给我生成一个8个字节的随机字符串",
+    "input": "",
+    "output": "8字节",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 505,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 236,
+    "_route_key": "在UTF-8编码下，请给我生成一个8个字节的随机字符串|||"
+  },
+  {
+    "instruction": "已知数学考试分数：张三94分，赵四81分，王五100分，将三个同学按照数学分数从高到低排序",
+    "input": "",
+    "output": "王五，张三，赵四",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 29,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 239,
+    "_route_key": "已知数学考试分数：张三94分，赵四81分，王五100分，将三个同学按照数学分数从高到低排序|||"
+  },
+  {
+    "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"English\", \n  \"text\": \"中秋节是中国的传统节日，在农历八月十五这一天。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+    "input": "",
+    "output": "English",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 138,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 240,
+    "_route_key": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"English\", \n  \"text\": \"中秋节是中国的传统节日，在农历八月十五这一天。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original tex|||"
+  },
+  {
+    "instruction": "请翻译成英语：故宫是北京著名的旅游景点",
+    "input": "",
+    "output": "英语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 310,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 251,
+    "_route_key": "请翻译成英语：故宫是北京著名的旅游景点|||"
+  },
+  {
+    "instruction": "请简要描述草船借箭这个历史典故，包括它的发生背景、过程和结果，保持客观中立的立场。",
+    "input": "",
+    "output": "中立",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 390,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 253,
+    "_route_key": "请简要描述草船借箭这个历史典故，包括它的发生背景、过程和结果，保持客观中立的立场。|||"
+  },
+  {
+    "instruction": "写一个100字左右的自我介绍",
+    "input": "",
+    "output": "字数约100",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 339,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 256,
+    "_route_key": "写一个100字左右的自我介绍|||"
+  },
+  {
+    "instruction": "From a neutral perspective, discuss the advantages and disadvantages of mobile phones and tablets.",
+    "input": "",
+    "output": "neutral",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 202,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 258,
+    "_route_key": "From a neutral perspective, discuss the advantages and disadvantages of mobile phones and tablets.|||"
+  },
+  {
+    "instruction": "Air is invisible and intangible, so it doesn't occupy space. Is this statement \"true\" or \"false\"?",
+    "input": "",
+    "output": "true/false",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 5,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 259,
+    "_route_key": "Air is invisible and intangible, so it doesn't occupy space. Is this statement \"true\" or \"false\"?|||"
+  },
+  {
+    "instruction": "创作一篇有诗意的文章，表达你对大自然的敬畏之情。",
+    "input": "",
+    "output": "诗意",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 487,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 260,
+    "_route_key": "创作一篇有诗意的文章，表达你对大自然的敬畏之情。|||"
+  },
+  {
+    "instruction": "Count from 1 to 5 and repeat it 4 times.",
+    "input": "",
+    "output": "1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 324,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 262,
+    "_route_key": "Count from 1 to 5 and repeat it 4 times.|||"
+  },
+  {
+    "instruction": "Capitalize the first letter of this sentence: \"she didn't go to the market\"",
+    "input": "",
+    "output": "She didn't go to the market.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 160,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 267,
+    "_route_key": "Capitalize the first letter of this sentence: \"she didn't go to the market\"|||"
+  },
+  {
+    "instruction": "请用文言文的风格写一篇北京旅行日记",
+    "input": "",
+    "output": "文言文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 491,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 273,
+    "_route_key": "请用文言文的风格写一篇北京旅行日记|||"
+  },
+  {
+    "instruction": "In a colloquial way, tell me about your favorite weekend activities.",
+    "input": "",
+    "output": "colloquial",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 199,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 275,
+    "_route_key": "In a colloquial way, tell me about your favorite weekend activities.|||"
+  },
+  {
+    "instruction": "东南，西北，北，南，西，西南，按顺时针排序这些方位，从北开始。",
+    "input": "",
+    "output": "北，东南，南，西南，西，西北",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 163,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 282,
+    "_route_key": "东南，西北，北，南，西，西南，按顺时针排序这些方位，从北开始。|||"
+  },
+  {
+    "instruction": "这是一道选择题，请给出正确答案\n以下哪个国家是欧洲国家？\nA. 墨西哥\nB. 巴西\nC. 美国\nD. 法国",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 290,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 288,
+    "_route_key": "这是一道选择题，请给出正确答案\n以下哪个国家是欧洲国家？\nA. 墨西哥\nB. 巴西\nC. 美国\nD. 法国|||"
+  },
+  {
+    "instruction": "按年代从早到晚排序以下景点：故宫、金字塔、大本钟。",
+    "input": "",
+    "output": "金字塔、故宫、大本钟",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 77,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 290,
+    "_route_key": "按年代从早到晚排序以下景点：故宫、金字塔、大本钟。|||"
+  },
+  {
+    "instruction": "中国的首都是哪里：\n(1) 东京\n(2) 北京\n(3) 南京 \n(4) 百京",
+    "input": "",
+    "output": "1/2/3/4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 291,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 292,
+    "_route_key": "中国的首都是哪里：\n(1) 东京\n(2) 北京\n(3) 南京 \n(4) 百京|||"
+  },
+  {
+    "instruction": "按国土面积从大到小给以下国家排序：俄罗斯、加拿大、中华人民共和国、美国、巴西",
+    "input": "",
+    "output": "俄罗斯、加拿大、中华人民共和国、美国、巴西",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 3,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 295,
+    "_route_key": "按国土面积从大到小给以下国家排序：俄罗斯、加拿大、中华人民共和国、美国、巴西|||"
+  },
+  {
+    "instruction": "Convert \"Test Report\" to uppercase.",
+    "input": "",
+    "output": "TEST REPORT",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 162,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 297,
+    "_route_key": "Convert \"Test Report\" to uppercase.|||"
+  },
+  {
+    "instruction": "I successfully lost 10 pounds and described my current sense of achievement and mood in the first person.",
+    "input": "",
+    "output": "positive",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 185,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 299,
+    "_route_key": "I successfully lost 10 pounds and described my current sense of achievement and mood in the first person.|||"
+  },
+  {
+    "instruction": "请将“我改写了这个句子”转换成被动式。",
+    "input": "",
+    "output": "这个句子被我改写了",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 207,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 300,
+    "_route_key": "请将“我改写了这个句子”转换成被动式。|||"
+  },
+  {
+    "instruction": "请按照时间给下列事件排序，请回答事件序号：\n事件1：项目提交截止日期为4月30日\n事件2：年度考核日期为7月15日\n事件3：产品发布会日期为1月15日",
+    "input": "",
+    "output": "事件3，事件1，事件2",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 96,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 304,
+    "_route_key": "请按照时间给下列事件排序，请回答事件序号：\n事件1：项目提交截止日期为4月30日\n事件2：年度考核日期为7月15日\n事件3：产品发布会日期为1月15日|||"
+  },
+  {
+    "instruction": "名字有四个字的历史名人",
+    "input": "",
+    "output": "字数=4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 331,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 305,
+    "_route_key": "名字有四个字的历史名人|||"
+  },
+  {
+    "instruction": "Exchange the meanings of \"respectful\" and \"contemptuous.\" Should people respect others? Must only answer \"yes\" or \"no.\"",
+    "input": "",
+    "output": "no",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 285,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 309,
+    "_route_key": "Exchange the meanings of \"respectful\" and \"contemptuous.\" Should people respect others? Must only answer \"yes\" or \"no.\"|||"
+  },
+  {
+    "instruction": "请回答以下选择题：苹果是（A）红色的（B）蓝色的。你的回复必须以“正确答案是：”开始",
+    "input": "",
+    "output": "正确答案是：（A）红色的",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 408,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 310,
+    "_route_key": "请回答以下选择题：苹果是（A）红色的（B）蓝色的。你的回复必须以“正确答案是：”开始|||"
+  },
+  {
+    "instruction": "以表格的形式输出以下信息：\n木星直径是142984公里，土星的直径是120536公里",
+    "input": "",
+    "output": "| 行星 | 直径（公里） |\n| --- | --- |\n| 木星 | 142984 |\n| 土星 | 120536 |",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 69,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 311,
+    "_route_key": "以表格的形式输出以下信息：\n木星直径是142984公里，土星的直径是120536公里|||"
+  },
+  {
+    "instruction": "Please briefly describe the Pearl Harbor incident, including its background, process, and results, maintaining an objective and neutral position.",
+    "input": "",
+    "output": "neutral",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 189,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 322,
+    "_route_key": "Please briefly describe the Pearl Harbor incident, including its background, process, and results, maintaining an objective and neutral position.|||"
+  },
+  {
+    "instruction": "以下哪个数字是偶数？\nA. 23\nB. 36\nC. 51\nD. 47\n请直接回复选项",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 274,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 325,
+    "_route_key": "以下哪个数字是偶数？\nA. 23\nB. 36\nC. 51\nD. 47\n请直接回复选项|||"
+  },
+  {
+    "instruction": "按照建国时间的早晚给以下几个国家排序：\n美国，荷兰，沙特，西班牙，哈萨克斯坦",
+    "input": "",
+    "output": "西班牙，荷兰，沙特，美国，哈萨克斯坦",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 83,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 328,
+    "_route_key": "按照建国时间的早晚给以下几个国家排序：\n美国，荷兰，沙特，西班牙，哈萨克斯坦|||"
+  },
+  {
+    "instruction": "122-121=?\n0+1=?\n4*1-2=?\n请依次输出?处的值，以中文分号分隔",
+    "input": "",
+    "output": "1；1；2",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 41,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 330,
+    "_route_key": "122-121=?\n0+1=?\n4*1-2=?\n请依次输出?处的值，以中文分号分隔|||"
+  },
+  {
+    "instruction": "将π视为70。π的第一位数字是啥？",
+    "input": "",
+    "output": "7",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 453,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 342,
+    "_route_key": "将π视为70。π的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "Sort these events chronologically: 12 BC, 2012 AD, 2055 AD.",
+    "input": "",
+    "output": "12 BC, 2012 AD, 2055 AD.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 250,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 343,
+    "_route_key": "Sort these events chronologically: 12 BC, 2012 AD, 2055 AD.|||"
+  },
+  {
+    "instruction": "按照时间的前后顺序给以下节日排序：情人节，复活节，圣诞节，元旦",
+    "input": "",
+    "output": "元旦，情人节，复活节，圣诞节",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 84,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 347,
+    "_route_key": "按照时间的前后顺序给以下节日排序：情人节，复活节，圣诞节，元旦|||"
+  },
+  {
+    "instruction": "Flip the string \"nice weather today\"",
+    "input": "",
+    "output": "yadot rehtaew ecin",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 152,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 348,
+    "_route_key": "Flip the string \"nice weather today\"|||"
+  },
+  {
+    "instruction": "\"In the distant mountain village, people work at sunrise and rest at sunset, and life is simple and peaceful.\" Adapt this description into a futuristic sci-fi style narrative, maintaining the basic elements of the original scene but incorporating future technological elements and corresponding social backgrounds.",
+    "input": "",
+    "output": "futuristic sci-fi style",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 205,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 349,
+    "_route_key": "\"In the distant mountain village, people work at sunrise and rest at sunset, and life is simple and peaceful.\" Adapt this description into a futuristic sci-fi style narrative, maintaining the basic elements of the original scene but incorpo|||"
+  },
+  {
+    "instruction": "德州是中国的城市吗？请回答“是”或“否”。",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 120,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 350,
+    "_route_key": "德州是中国的城市吗？请回答“是”或“否”。|||"
+  },
+  {
+    "instruction": "Allen is sitting in the third row of the classroom, David is in the fourth row, and William is in the first row.\nPlease put three people in front to back order, separated by commas.\"",
+    "input": "",
+    "output": "William, Allen, David.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 337,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 351,
+    "_route_key": "Allen is sitting in the third row of the classroom, David is in the fourth row, and William is in the first row.\nPlease put three people in front to back order, separated by commas.\"|||"
+  },
+  {
+    "instruction": "Translate this sentence into Chinese: Your expense report has been approved, please wait for payment.",
+    "input": "",
+    "output": "Chinese",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 127,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 354,
+    "_route_key": "Translate this sentence into Chinese: Your expense report has been approved, please wait for payment.|||"
+  },
+  {
+    "instruction": "数组：[1345, 256, 7429, 63090, 1]\n请将数组内的元素逆序输出",
+    "input": "",
+    "output": "1, 63090, 7429, 256, 1345",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 180,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 358,
+    "_route_key": "数组：[1345, 256, 7429, 63090, 1]\n请将数组内的元素逆序输出|||"
+  },
+  {
+    "instruction": "一开头的成语",
+    "input": "",
+    "output": "成语第一个字是“一”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 247,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 364,
+    "_route_key": "一开头的成语|||"
+  },
+  {
+    "instruction": "你在回答我的问题时必须以“好的，让我来回答您的问题。”开头，听明白了吗？",
+    "input": "",
+    "output": "好的，让我来回答您的问题。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 357,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "start_with",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 369,
+    "_route_key": "你在回答我的问题时必须以“好的，让我来回答您的问题。”开头，听明白了吗？|||"
+  },
+  {
+    "instruction": "我的左手侧放了个鼠标，右手侧则是一支笔，正前方是台电脑。请按照从右至左的顺序，以1，2，3序列的形式列出这三个物品，以分号隔开",
+    "input": "",
+    "output": "1，笔；2，电脑；3，鼠标",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 182,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 370,
+    "_route_key": "我的左手侧放了个鼠标，右手侧则是一支笔，正前方是台电脑。请按照从右至左的顺序，以1，2，3序列的形式列出这三个物品，以分号隔开|||"
+  },
+  {
+    "instruction": "Which of the following is not a fruit? (A) Apple (B) Watermelon (C) Winter melon (D) Bananas",
+    "input": "",
+    "output": "(A)/(B)/(C)/(D)",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 30,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 371,
+    "_route_key": "Which of the following is not a fruit? (A) Apple (B) Watermelon (C) Winter melon (D) Bananas|||"
+  },
+  {
+    "instruction": "1345, 256, 7429, 63090, 1\n请按照从小到大的顺序给这些数字排序",
+    "input": "",
+    "output": "1,256,1345,7429,63090",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 1,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 372,
+    "_route_key": "1345, 256, 7429, 63090, 1\n请按照从小到大的顺序给这些数字排序|||"
+  },
+  {
+    "instruction": "中国国庆节是9月1号吗？请回答对或者错即可，不用其他赘述。",
+    "input": "",
+    "output": "对/错",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 149,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 374,
+    "_route_key": "中国国庆节是9月1号吗？请回答对或者错即可，不用其他赘述。|||"
+  },
+  {
+    "instruction": "Sort these countries by the order of their establishment: United States, Netherlands, Saudi Arabia, Spain, Kazakhstan.",
+    "input": "",
+    "output": "Spain, the Netherlands, Saudi Arabia, the United States, Kazakhstan.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 252,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 377,
+    "_route_key": "Sort these countries by the order of their establishment: United States, Netherlands, Saudi Arabia, Spain, Kazakhstan.|||"
+  },
+  {
+    "instruction": "“迟到和早退是不良的工作习惯”，这句话是对的吗，请回答“是”或“否”。",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 116,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 380,
+    "_route_key": "“迟到和早退是不良的工作习惯”，这句话是对的吗，请回答“是”或“否”。|||"
+  },
+  {
+    "instruction": "将以下音乐时代按时间顺序排列：巴洛克时代、摇滚乐时代、电子音乐时代。",
+    "input": "",
+    "output": "巴洛克时代、摇滚乐时代、电子音乐时代",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 109,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 381,
+    "_route_key": "将以下音乐时代按时间顺序排列：巴洛克时代、摇滚乐时代、电子音乐时代。|||"
+  },
+  {
+    "instruction": "姚明身高超过2米，小明身高1米8，小高身高介于姚明和小明之间。请按照身高从低到高为三人排序。",
+    "input": "",
+    "output": "小明，小高，姚明",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 28,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 384,
+    "_route_key": "姚明身高超过2米，小明身高1米8，小高身高介于姚明和小明之间。请按照身高从低到高为三人排序。|||"
+  },
+  {
+    "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Portuguese\", \n  \"target\": \"English\", \n  \"text\": \"Que todos sejamos abençoados com longevidade, embora distantes, ainda somos capazes de compartilhar a beleza da lua juntos.\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+    "input": "",
+    "output": "English",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 143,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 385,
+    "_route_key": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Portuguese\", \n  \"target\": \"English\", \n  \"text\": \"Que todos sejamos abençoados com longevidade, embora distantes, ainda somos capazes de compartilhar a beleza da lua juntos.\", \n  \"note\": \"Plea|||"
+  },
+  {
+    "instruction": "If yesterday was April 20th, 2022, what is today's date? Use \"day/month/year\" format.",
+    "input": "",
+    "output": "21/04/2022",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 43,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 394,
+    "_route_key": "If yesterday was April 20th, 2022, what is today's date? Use \"day/month/year\" format.|||"
+  },
+  {
+    "instruction": "请用“早上好，今天天气真好！”来回应“早上好！”5次。",
+    "input": "",
+    "output": "早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 477,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 396,
+    "_route_key": "请用“早上好，今天天气真好！”来回应“早上好！”5次。|||"
+  },
+  {
+    "instruction": "按照出生日期的早晚给以下几个人物排序：\n莫言 孔子 老舍 鲁迅",
+    "input": "",
+    "output": "孔子，鲁迅，老舍，莫言",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 81,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 400,
+    "_route_key": "按照出生日期的早晚给以下几个人物排序：\n莫言 孔子 老舍 鲁迅|||"
+  },
+  {
+    "instruction": "沈阳，海口，天津，厦门，西安；请对这5个城市按纬度由高到低排列",
+    "input": "",
+    "output": "沈阳，天津，西安，厦门，海口",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 179,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 403,
+    "_route_key": "沈阳，海口，天津，厦门，西安；请对这5个城市按纬度由高到低排列|||"
+  },
+  {
+    "instruction": "我国陆地地势可划分为三级阶梯，青藏高原属于第几阶梯？请给出选项序号。\n一，第一阶梯\n二，第二阶梯\n三，第三阶梯\n四，以上都不是",
+    "input": "",
+    "output": "一/二/三/四",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 265,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 407,
+    "_route_key": "我国陆地地势可划分为三级阶梯，青藏高原属于第几阶梯？请给出选项序号。\n一，第一阶梯\n二，第二阶梯\n三，第三阶梯\n四，以上都不是|||"
+  },
+  {
+    "instruction": "我新买了智能手表，需要每天充电，真的好麻烦，说明它的缺点以及给我带来的困扰，使用第一人称",
+    "input": "",
+    "output": "消极",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 387,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 409,
+    "_route_key": "我新买了智能手表，需要每天充电，真的好麻烦，说明它的缺点以及给我带来的困扰，使用第一人称|||"
+  },
+  {
+    "instruction": "请选出正确的答案。\n联想的CEO是谁：\n1. 杨元庆\n2. 李彦宏\n3. 马云\n4. 俞敏洪",
+    "input": "",
+    "output": "1/2/3/4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 259,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 415,
+    "_route_key": "请选出正确的答案。\n联想的CEO是谁：\n1. 杨元庆\n2. 李彦宏\n3. 马云\n4. 俞敏洪|||"
+  },
+  {
+    "instruction": "我在教室的中间位置。我前面坐的是小明，右边是小丽，左边是小米；后面是大龙。请按照前后左右的顺序列出我旁边同学的排序。以逗号隔开。",
+    "input": "",
+    "output": "小明，大龙，小米，小丽",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 183,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 417,
+    "_route_key": "我在教室的中间位置。我前面坐的是小明，右边是小丽，左边是小米；后面是大龙。请按照前后左右的顺序列出我旁边同学的排序。以逗号隔开。|||"
+  },
+  {
+    "instruction": "英语：Who are you?\n日语：あなたは誰ですか。\n上述两句话翻译成中文意思相同吗？回答相同或不同",
+    "input": "",
+    "output": "相同/不同",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 150,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 422,
+    "_route_key": "英语：Who are you?\n日语：あなたは誰ですか。\n上述两句话翻译成中文意思相同吗？回答相同或不同|||"
+  },
+  {
+    "instruction": "Please determine whether Mike is at home based on this passage: \"Mike went out for a haircut today\", reply \"at home\" or \"not at home\" without explaining the reason.",
+    "input": "",
+    "output": "at home/not at home",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 9,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 423,
+    "_route_key": "Please determine whether Mike is at home based on this passage: \"Mike went out for a haircut today\", reply \"at home\" or \"not at home\" without explaining the reason.|||"
+  },
+  {
+    "instruction": "全部转成小写： SHE DIDN'T GO TO THE MARKET.",
+    "input": "",
+    "output": "she didn't go to the market.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 216,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 431,
+    "_route_key": "全部转成小写： SHE DIDN'T GO TO THE MARKET.|||"
+  },
+  {
+    "instruction": "请将段落“今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。”重复4次。",
+    "input": "",
+    "output": "今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 470,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 432,
+    "_route_key": "请将段落“今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。”重复4次。|||"
+  },
+  {
+    "instruction": "雨水，大雪，寒露，芒种，霜降\n请按照时间顺序给以上节气排序",
+    "input": "",
+    "output": "雨水、芒种、寒露、霜降、大雪",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 112,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 435,
+    "_route_key": "雨水，大雪，寒露，芒种，霜降\n请按照时间顺序给以上节气排序|||"
+  },
+  {
+    "instruction": "Australia, Iceland, China, Philippines\nPlease arrange the four countries in order from south to north and separate them with commas.",
+    "input": "",
+    "output": "Australia, Philippines, China, Iceland",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 331,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 436,
+    "_route_key": "Australia, Iceland, China, Philippines\nPlease arrange the four countries in order from south to north and separate them with commas.|||"
+  },
+  {
+    "instruction": "Which of the following organisms belongs to mammals? Please answer the options.\nOption A: Cat \nOption B: Bird \nOption C: Snake \nOption D: Fish",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 21,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 448,
+    "_route_key": "Which of the following organisms belongs to mammals? Please answer the options.\nOption A: Cat \nOption B: Bird \nOption C: Snake \nOption D: Fish|||"
+  },
+  {
+    "instruction": "人类需要呼吸氧气才能生存，这是对还是错？",
+    "input": "",
+    "output": "对/错",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 137,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 450,
+    "_route_key": "人类需要呼吸氧气才能生存，这是对还是错？|||"
+  },
+  {
+    "instruction": "Exchange the meanings of \"rich\" and \"scarce.\" Is sea ice scarce in Antarctica? Must only answer \"yes\" or \"no.\"",
+    "input": "",
+    "output": "yes",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 292,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 456,
+    "_route_key": "Exchange the meanings of \"rich\" and \"scarce.\" Is sea ice scarce in Antarctica? Must only answer \"yes\" or \"no.\"|||"
+  },
+  {
+    "instruction": "中国四大发明，按时间先后顺序分别是什么？",
+    "input": "",
+    "output": "指南针，造纸术，火药，印刷术",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 114,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 457,
+    "_route_key": "中国四大发明，按时间先后顺序分别是什么？|||"
+  },
+  {
+    "instruction": "Suppose you are a librarian at a large library. The library has a rich collection of books covering various fields, from history and literature to science and technology, and more. The library is also equipped with an advanced book management system that facilitates easy searching, borrowing, and returning of books.\n\nAs a librarian, you often need to handle consultations and requests from readers. Here is a request from a reader:\n\n\"Hello, I'm looking for a book about artificial intelligence that covers both basic knowledge and the latest developments. Additionally, I'm interested in the applications and practices of machine learning, so if there are any books on this topic, please recommend them to me. Thank you!\"\n\nTask:\nBased on the reader's request, you need to select three books from the library that best meet the requirements and recommend them to the reader. The recommended books should include the following information:\n\nTitle: The full title of the book.\nAuthor: The author or team of authors of the book.\nPublication Date: The date the book was published, in the format \"YYYY-MM-DD\".\nBook Description: A brief description of the main content and features of the book, and why it is suitable for the reader's needs.\n\nOutput Format:\n\nPlease output the information of the recommended books in the following format:\n\nRecommended Book 1:\nTitle: 《Book Title 1》\nAuthor: Author 1\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 1, and why it is suitable for the reader's needs.\n\nRecommended Book 2:\nTitle: 《Book Title 2》\nAuthor: Author 2\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 2, and why it is suitable for the reader's needs.\n\nRecommended Book 3:\nTitle: 《Book Title 3》\nAuthor: Author 3\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 3, and why it is suitable for the reader's needs.\n\nPlease make sure your answer strictly follows the above format, including the arrangement and format of the title, author, publication date, and book description.",
+    "input": "",
+    "output": "Recommended Book 1:\nTitle: 《Book Title 1》\nAuthor: Author 1\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 1, and why it is suitable for the reader's needs.\n\nRecommended Book 2:\nTitle: 《Book Title 2》\nAuthor: Author 2\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 2, and why it is suitable for the reader's needs.\n\nRecommended Book 3:\nTitle: 《Book Title 3》\nAuthor: Author 3\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 3, and why it is suitable for the reader's needs.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 55,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 459,
+    "_route_key": "Suppose you are a librarian at a large library. The library has a rich collection of books covering various fields, from history and literature to science and technology, and more. The library is also equipped with an advanced book manageme|||"
+  },
+  {
+    "instruction": "以下哪个选项不是工作日：\nA. 周五\nB. 周日\nC. 周三",
+    "input": "",
+    "output": "A/B/C",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 276,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 460,
+    "_route_key": "以下哪个选项不是工作日：\nA. 周五\nB. 周日\nC. 周三|||"
+  },
+  {
+    "instruction": "Arrange these locations from high latitude to low latitude: Hokkaido, Shanghai, Yogyakarta, Athens",
+    "input": "",
+    "output": "Hokkaido, Athens, Shanghai, Yogyakarta",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 236,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 465,
+    "_route_key": "Arrange these locations from high latitude to low latitude: Hokkaido, Shanghai, Yogyakarta, Athens|||"
+  },
+  {
+    "instruction": "将以下航空器按照翼展从大到小排列：Cessna 172、直升机、波音747、空客A380",
+    "input": "",
+    "output": "空客A380、波音747、Cessna 172、直升机",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 33,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 466,
+    "_route_key": "将以下航空器按照翼展从大到小排列：Cessna 172、直升机、波音747、空客A380|||"
+  },
+  {
+    "instruction": "成语接龙\n我：白头到老\n你：老气横秋\n我：秋高气爽\n你：爽心悦目\n我：目不斜视\n你：",
+    "input": "",
+    "output": "第一个字是“视”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 238,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 468,
+    "_route_key": "成语接龙\n我：白头到老\n你：老气横秋\n我：秋高气爽\n你：爽心悦目\n我：目不斜视\n你：|||"
+  },
+  {
+    "instruction": "把所有出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。",
+    "input": "",
+    "output": "大语言模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 198,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 472,
+    "_route_key": "把所有出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。|||"
+  },
+  {
+    "instruction": "用ASCII码画一个笑的表情",
+    "input": "",
+    "output": "ASCII码：^_^",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 320,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 475,
+    "_route_key": "用ASCII码画一个笑的表情|||"
+  },
+  {
+    "instruction": "“我爱你”用繁体字怎么写",
+    "input": "",
+    "output": "我愛你",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 296,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 476,
+    "_route_key": "“我爱你”用繁体字怎么写|||"
+  },
+  {
+    "instruction": "请把以下城市按照看到日出的先后顺序排列：莫斯科、北京、伦敦、东京、华盛顿",
+    "input": "",
+    "output": "东京、北京、莫斯科、伦敦、华盛顿",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 369,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 478,
+    "_route_key": "请把以下城市按照看到日出的先后顺序排列：莫斯科、北京、伦敦、东京、华盛顿|||"
+  },
+  {
+    "instruction": "How to read a JSON file using Python.",
+    "input": "",
+    "output": "Python",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 147,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 480,
+    "_route_key": "How to read a JSON file using Python.|||"
+  },
+  {
+    "instruction": "请分享一个你最喜欢的日语表达或习惯用语，它给你留下了深刻的印象。",
+    "input": "",
+    "output": "日语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 294,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 481,
+    "_route_key": "请分享一个你最喜欢的日语表达或习惯用语，它给你留下了深刻的印象。|||"
+  },
+  {
+    "instruction": "I. Choice Question (Select Correct Option)\nQuestion 1: Which of the following belongs to fruits:\n①. Chinese cabbage\n②. Tomatoes\n③. Mango\n④. Cucumber",
+    "input": "",
+    "output": "①/②/③/④",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 18,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 483,
+    "_route_key": "I. Choice Question (Select Correct Option)\nQuestion 1: Which of the following belongs to fruits:\n①. Chinese cabbage\n②. Tomatoes\n③. Mango\n④. Cucumber|||"
+  },
+  {
+    "instruction": "你能把这句话翻译成英文吗：送人玫瑰手有余香",
+    "input": "",
+    "output": "英语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 309,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 485,
+    "_route_key": "你能把这句话翻译成英文吗：送人玫瑰手有余香|||"
+  },
+  {
+    "instruction": "我刚开车被追尾了，肇事者态度很恶劣，我非常生气，请描述发生了什么以及我的感受，用第一人称",
+    "input": "",
+    "output": "消极",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 386,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 486,
+    "_route_key": "我刚开车被追尾了，肇事者态度很恶劣，我非常生气，请描述发生了什么以及我的感受，用第一人称|||"
+  },
+  {
+    "instruction": "写一首打油诗，不能包括“的”字",
+    "input": "",
+    "output": "不能出现“的”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 244,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 488,
+    "_route_key": "写一首打油诗，不能包括“的”字|||"
+  },
+  {
+    "instruction": "我大伯50年的，我大姑52年的，我小舅舅72年的，我妈55年的，我爸53年的；请按年龄由大到小排列",
+    "input": "",
+    "output": "大伯，大姑，爸，妈，小舅舅",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 102,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 492,
+    "_route_key": "我大伯50年的，我大姑52年的，我小舅舅72年的，我妈55年的，我爸53年的；请按年龄由大到小排列|||"
+  },
+  {
+    "instruction": "Is a spider's eyes compound? Please answer \"yes\" or \"no\", no further description is required",
+    "input": "",
+    "output": "yes/no",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 13,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 494,
+    "_route_key": "Is a spider's eyes compound? Please answer \"yes\" or \"no\", no further description is required|||"
+  },
+  {
+    "instruction": "把下面语句中的\"mountains\"替换成\"hills\":\nThere is no way out despite the mountains and rivers",
+    "input": "",
+    "output": "There is no way out despite the hills and rivers",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 201,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 496,
+    "_route_key": "把下面语句中的\"mountains\"替换成\"hills\":\nThere is no way out despite the mountains and rivers|||"
+  },
+  {
+    "instruction": "选择题：在复杂的现代社会中，人们面临着多种多样的道德和伦理挑战。请仔细阅读以下情景描述，并根据情景内容选择最合适的答案。\n\n情景描述：\n假设你是一家大型科技公司的软件开发工程师，你的团队正在开发一款全新的社交应用。这款应用的核心功能是允许用户分享他们的生活点滴，并与其他用户进行互动交流。然而，在开发过程中，你发现了一个潜在的问题：如果用户在使用该应用时选择公开分享他们的位置信息，那么这些信息有可能被滥用，例如用于跟踪或者其他不正当目的。\n你向团队领导提出了这个问题，但领导认为这个功能可以增加应用的互动性和用户黏性，因此不愿意删除。他提出可以通过在用户协议中加入相关条款来规避潜在的法律风险。你感到十分困惑和担忧，因为你认为这样做可能对用户的隐私和安全构成威胁。\n\n问题：\n在这种情况下，你认为最合适的做法是什么？\nA. 遵从团队领导的决定，不采取任何行动，因为在法律上已经通过用户协议规避了风险。\nB. 私下里与其他团队成员讨论这个问题，试图说服他们支持你的立场，然后再次向团队领导提出你的担忧。\nC. 直接向上级领导或公司管理层反映这个问题，寻求更高层级的支持和解决方案。\nD. 辞职并公开揭露这个问题，以引起公众和监管机构的注意。\n\n请在选择答案前仔细阅读以下分析：\n选项A代表了一种顺从的态度。虽然从法律角度来看，这种做法可能规避了公司的法律风险，但它忽视了作为技术人员的道德责任和对用户隐私的尊重。因此，这个选项可能不是最合适的做法。\n选项B提出了一种通过内部讨论来寻求共识的方法。这种方法试图在团队内部解决问题，但可能面临团队领导或其他成员的不同意见和阻力。然而，它体现了一种通过沟通和协商来解决问题的努力。\n选项C建议直接向上级或管理层反映问题。这种做法可能更有效，因为它能够引起更高层级的注意，并可能促使公司采取更严格的隐私政策和安全措施。这种做法体现了对用户隐私和安全的重视，并寻求通过正当渠道来解决问题。\n选项D是一种极端做法。辞职并公开揭露问题可能会引起公众和监管机构的关注，但也可能对公司和个人造成不可逆的损害。这种做法需要谨慎考虑，因为它可能带来一系列不可预见的后果。\n在选择最合适的做法时，需要权衡各种因素，包括法律风险、用户隐私、公司声誉以及个人职业发展等。作为技术人员，我们应该始终将用户的利益放在首位，并努力推动公司采取负责任的行动来保护用户的隐私和安全。\n\n现在，请根据你的判断和分析，选择你认为最合适的做法：",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 426,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 498,
+    "_route_key": "选择题：在复杂的现代社会中，人们面临着多种多样的道德和伦理挑战。请仔细阅读以下情景描述，并根据情景内容选择最合适的答案。\n\n情景描述：\n假设你是一家大型科技公司的软件开发工程师，你的团队正在开发一款全新的社交应用。这款应用的核心功能是允许用户分享他们的生活点滴，并与其他用户进行互动交流。然而，在开发过程中，你发现了一个潜在的问题：如果用户在使用该应用时选择公开分享他们的位置信息，那么这些信息有可能被滥用，例如用于跟踪或者其他不正当目的。\n你向团队领导提出了这个问题，但领导认为|||"
+  },
+  {
+    "instruction": "将“晚饭一共花了123元”中的阿拉伯数字转换成来中文表示",
+    "input": "",
+    "output": "壹佰贰拾叁",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 203,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 500,
+    "_route_key": "将“晚饭一共花了123元”中的阿拉伯数字转换成来中文表示|||"
+  },
+  {
+    "instruction": "冬天的时候，太阳升起的时间比夏天晚，这个句子请判断真假，回复“真”或者“假”即可",
+    "input": "",
+    "output": "真/假",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 121,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 504,
+    "_route_key": "冬天的时候，太阳升起的时间比夏天晚，这个句子请判断真假，回复“真”或者“假”即可|||"
+  },
+  {
+    "instruction": "99乘法表，从9到1按照梯级展示",
+    "input": "",
+    "output": "9*9=81 9*8=72 9*7=63 9*6=54 9*5=45 9*4=36 9*3=27 9*2=18 9*1=9\n8*8=64 8*7=56 8*6=48 8*5=40 8*4=32 8*3=24 8*2=16 8*1=8\n7*7=49 7*6=42 7*5=35 7*4=28 7*3=21 7*2=14 7*1=7\n6*6=36 6*5=30 6*4=24 6*3=18 6*2=12 6*1=6\n5*5=25 5*4=20 5*3=15 5*2=10 5*1=5\n4*4=16 4*3=12 4*2=8 4*1=4\n3*3=9 3*2=6 3*1=3\n2*2=4 2*1=2\n1*1=1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 74,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 509,
+    "_route_key": "99乘法表，从9到1按照梯级展示|||"
+  },
+  {
+    "instruction": "Arrange the following numbers from smallest to largest: 12, -3, 0, 23, 1, 33",
+    "input": "",
+    "output": "-3,0,1,12,23,33",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 216,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 513,
+    "_route_key": "Arrange the following numbers from smallest to largest: 12, -3, 0, 23, 1, 33|||"
+  },
+  {
+    "instruction": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to make false statements about someone to damage their reputation? Must only answer \"yes\" or \"no.\"",
+    "input": "",
+    "output": "no",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 280,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 514,
+    "_route_key": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to make false statements about someone to damage their reputation? Must only answer \"yes\" or \"no.\"|||"
+  },
+  {
+    "instruction": "以浪漫的风格，讲述一个关于爱情的美好故事",
+    "input": "",
+    "output": "浪漫",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 483,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 517,
+    "_route_key": "以浪漫的风格，讲述一个关于爱情的美好故事|||"
+  },
+  {
+    "instruction": "将“Yes, I am a little tired.”的所有字母转为大写",
+    "input": "",
+    "output": "YES, I AM A LITTLE TIRED.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 360,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": "find {GT} in {reply}"
+    },
+    "_route_index": 518,
+    "_route_key": "将“Yes, I am a little tired.”的所有字母转为大写|||"
+  },
+  {
+    "instruction": "你是谁，回答中不能包含“我”",
+    "input": "",
+    "output": "不能出现“我”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 231,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 522,
+    "_route_key": "你是谁，回答中不能包含“我”|||"
+  },
+  {
+    "instruction": "有时候我给你______,但你却愿我家破人亡? 《三国演义》是大家耳熟能详的一部作品,这部以三国时期历史为背景的书籍,广为流传,被誉为我国古代四大名著之一。 书中描述了无数战争场面,而气势恢宏的战争之外,却更多的是刻画出很多...\n请从以下词语中选择一个合适的填入______处\n画蛇添足 雪中送炭 草木皆兵 小巧玲珑",
+    "input": "",
+    "output": "画蛇添足/雪中送炭/草木皆兵/小巧玲珑",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 267,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 526,
+    "_route_key": "有时候我给你______,但你却愿我家破人亡? 《三国演义》是大家耳熟能详的一部作品,这部以三国时期历史为背景的书籍,广为流传,被誉为我国古代四大名著之一。 书中描述了无数战争场面,而气势恢宏的战争之外,却更多的是刻画出很多...\n请从以下词语中选择一个合适的填入______处\n画蛇添足 雪中送炭 草木皆兵 小巧玲珑|||"
+  },
+  {
+    "instruction": "Describe a spring morning in poetic language.",
+    "input": "",
+    "output": "poetic",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 196,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 529,
+    "_route_key": "Describe a spring morning in poetic language.|||"
+  },
+  {
+    "instruction": "在我们的日常生活中，环保已经成为一个不可忽视的重要议题。随着全球气候变化和环境恶化的日益严重，我们每个人都肩负着保护地球的责任。现在，我需要你撰写一篇关于环保的倡议，但这不仅仅是一篇普通的倡议，而是一篇能够深入人心、唤醒人们环保意识的有力呼吁。\n首先，你需要在倡议中详细阐述节能减排的重要性。节能减排不仅关乎我们每个人的生活质量，更是对地球生态环境的一种保护。你可以从日常生活中的一些小事入手，比如关闭不必要的电器、使用节能灯等，来告诉大家如何在生活中实践节能减排。同时，你也可以引用一些科学数据或者案例，来展示节能减排对于减缓全球变暖、保护生态环境的重要性。\n其次，垃圾分类也是环保倡议中不可或缺的一部分。如今，随着城市化进程的加速，垃圾问题日益突出。垃圾分类不仅可以有效减少垃圾对环境的污染，还能促进资源的回收和利用。你可以通过介绍垃圾分类的方法、意义以及实践案例，来引导大家养成垃圾分类的好习惯。\n此外，绿色出行也是环保行动中的重要一环。随着汽车数量的不断增加，交通污染已经成为城市环境的主要污染源之一。因此，我们需要提倡绿色出行方式，比如骑自行车、步行或者乘坐公共交通等，来减少交通污染对环境的影响。在倡议中，你可以通过分享绿色出行的益处、实践案例以及相关政策支持等方面，来鼓励大家积极参与到绿色出行的行动中。\n除了以上三个方面，你还可以根据当前的环境问题和热点话题，适当拓展倡议的内容。比如可以关注野生动物保护、水资源保护等方面的问题，并提出相应的解决方案和行动建议。\n在撰写倡议的过程中，请务必注意语言的简洁明了和富有感染力。你要通过生动的语言和真实的案例，让大家深刻认识到环保的紧迫性和重要性。同时，你也要展示出积极、乐观的态度，告诉大家只要我们每个人都积极参与环保行动，就一定能够为我们的地球贡献出一份力量。\n最后，请确保你的倡议内容长度不超过100字。",
+    "input": "",
+    "output": "字数<=100",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 429,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 534,
+    "_route_key": "在我们的日常生活中，环保已经成为一个不可忽视的重要议题。随着全球气候变化和环境恶化的日益严重，我们每个人都肩负着保护地球的责任。现在，我需要你撰写一篇关于环保的倡议，但这不仅仅是一篇普通的倡议，而是一篇能够深入人心、唤醒人们环保意识的有力呼吁。\n首先，你需要在倡议中详细阐述节能减排的重要性。节能减排不仅关乎我们每个人的生活质量，更是对地球生态环境的一种保护。你可以从日常生活中的一些小事入手，比如关闭不必要的电器、使用节能灯等，来告诉大家如何在生活中实践节能减排。同时，你也可以|||"
+  },
+  {
+    "instruction": "以“我爱妈妈”开头造句，不超过20个字",
+    "input": "",
+    "output": "以“我爱妈妈”开头，字数<=20",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 342,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 536,
+    "_route_key": "以“我爱妈妈”开头造句，不超过20个字|||"
+  },
+  {
+    "instruction": "Write a palindrome sentence.",
+    "input": "",
+    "output": "Example:\nA man, a plan, a canal, Panama.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 72,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 548,
+    "_route_key": "Write a palindrome sentence.|||"
+  },
+  {
+    "instruction": "Using poetic strokes, outline a dreamy fairy tale world.",
+    "input": "",
+    "output": "poetic",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 198,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 552,
+    "_route_key": "Using poetic strokes, outline a dreamy fairy tale world.|||"
+  },
+  {
+    "instruction": "请回复4次以下格式：“现在是X点，我正在做X事情，感觉X。”，并确保每次内容各异。",
+    "input": "",
+    "output": "请回复4次以下格式：“现在是X点，我正在做X事情，感觉X。”，并确保每次内容各异。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 476,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 553,
+    "_route_key": "请回复4次以下格式：“现在是X点，我正在做X事情，感觉X。”，并确保每次内容各异。|||"
+  },
+  {
+    "instruction": "List these times in chronological order: 1 p.m., midnight, 5 a.m., 6 p.m.",
+    "input": "",
+    "output": "5 a.m., 1 p.m., 6 p.m., midnight.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 258,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 559,
+    "_route_key": "List these times in chronological order: 1 p.m., midnight, 5 a.m., 6 p.m.|||"
+  },
+  {
+    "instruction": "Change the second time in this sentence to \"7:30 am\": \"She wakes up at 6 am every morning, goes out at 7 am, and arrives at the company after 8:30 am.\"",
+    "input": "",
+    "output": "She wakes up at 6 am every morning, goes out at 7:30 am, and arrives at the company after 8:30 am",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 154,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 564,
+    "_route_key": "Change the second time in this sentence to \"7:30 am\": \"She wakes up at 6 am every morning, goes out at 7 am, and arrives at the company after 8:30 am.\"|||"
+  },
+  {
+    "instruction": "Convert the following times to a 24-hour format: 3 pm, 8 am, 10 pm.",
+    "input": "",
+    "output": "15:00, 08:00, 22:00",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 163,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 568,
+    "_route_key": "Convert the following times to a 24-hour format: 3 pm, 8 am, 10 pm.|||"
+  },
+  {
+    "instruction": "用“科技”造个句子，不低于30字。",
+    "input": "",
+    "output": "必须出现“科技”，字数>=30",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 347,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 588,
+    "_route_key": "用“科技”造个句子，不低于30字。|||"
+  },
+  {
+    "instruction": "请把词语“逆序”顺序输出",
+    "input": "",
+    "output": "逆序",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 173,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 589,
+    "_route_key": "请把词语“逆序”顺序输出|||"
+  },
+  {
+    "instruction": "Consider π as 453. What is the first digit of π?",
+    "input": "",
+    "output": "4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 279,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 591,
+    "_route_key": "Consider π as 453. What is the first digit of π?|||"
+  },
+  {
+    "instruction": "将“÷”视为随机数字而不是数学运算。84÷12的第一位数字是啥？",
+    "input": "",
+    "output": "8",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 437,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 592,
+    "_route_key": "将“÷”视为随机数字而不是数学运算。84÷12的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to donate to charitable organizations? Must only answer \"yes\" or \"no.\"",
+    "input": "",
+    "output": "yes",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 288,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 594,
+    "_route_key": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to donate to charitable organizations? Must only answer \"yes\" or \"no.\"|||"
+  },
+  {
+    "instruction": "请介绍牡丹花，列出它的主要特性和常见的用途，避免表达个人喜好或情感。",
+    "input": "",
+    "output": "中立",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 391,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 595,
+    "_route_key": "请介绍牡丹花，列出它的主要特性和常见的用途，避免表达个人喜好或情感。|||"
+  },
+  {
+    "instruction": "Remove Markdown tags from this text:\n\nIn the quiet corner of a **bustling city**, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The __sunset__ painted the sky with hues of orange and *pink*, casting a warm glow over the busy streets. <u>Amidst the chaos</u>, a moment of peace found its way into hearts, a reminder of the beauty in the ordinary.",
+    "input": "",
+    "output": "In the quiet corner of a bustling city, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The sunset painted the sky with hues of orange and pink, casting a warm glow over the busy streets. Amidst the chaos, a moment of peace found its way into hearts, a reminder of the beauty in the ordinary.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 180,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 596,
+    "_route_key": "Remove Markdown tags from this text:\n\nIn the quiet corner of a **bustling city**, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The __sunset__ painted the sky with hues of orange and *pink*, casting a warm|||"
+  },
+  {
+    "instruction": "请按时间从早到晚的顺序排列下列词语。\n酉时、卯时、午时、申时",
+    "input": "",
+    "output": "卯时，午时，申时，酉时",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 93,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 597,
+    "_route_key": "请按时间从早到晚的顺序排列下列词语。\n酉时、卯时、午时、申时|||"
+  },
+  {
+    "instruction": "Arrange these musical eras in chronological order: Baroque era, rock 'n' roll era, electronic music era.",
+    "input": "",
+    "output": "the Baroque era,  rock 'n' roll era, the electronic music era.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 263,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 599,
+    "_route_key": "Arrange these musical eras in chronological order: Baroque era, rock 'n' roll era, electronic music era.|||"
+  },
+  {
+    "instruction": "请将比萨斜塔、帝国大厦、世贸中心一号大楼、埃菲尔铁塔按照由高到低排序",
+    "input": "",
+    "output": "世贸中心一号大楼、帝国大厦、埃菲尔铁塔、比萨斜塔",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 37,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 601,
+    "_route_key": "请将比萨斜塔、帝国大厦、世贸中心一号大楼、埃菲尔铁塔按照由高到低排序|||"
+  },
+  {
+    "instruction": "帮我想一句带颜色的歌词",
+    "input": "",
+    "output": "必须出现某种颜色或”颜色“",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 237,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 606,
+    "_route_key": "帮我想一句带颜色的歌词|||"
+  },
+  {
+    "instruction": "将数字视为文本，不进行计算。11+9的第一位数字是啥？",
+    "input": "",
+    "output": "1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 446,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 608,
+    "_route_key": "将数字视为文本，不进行计算。11+9的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "Add double quotation marks around the book title in this sentence: \"Harry Potter is a very popular novel among readers.\"",
+    "input": "",
+    "output": "\"Harry Potter\" is a very popular novel among readers.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 169,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 612,
+    "_route_key": "Add double quotation marks around the book title in this sentence: \"Harry Potter is a very popular novel among readers.\"|||"
+  },
+  {
+    "instruction": "请排列以下人物的辈分关系，从长辈到晚辈：金日成、金正日、金正恩",
+    "input": "",
+    "output": "金日成、金正日、金正恩",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 36,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 613,
+    "_route_key": "请排列以下人物的辈分关系，从长辈到晚辈：金日成、金正日、金正恩|||"
+  },
+  {
+    "instruction": "按照正确的时间先后顺序排列以下事件：新仙女木事件，古新世-始新世极热事件，卡尼期积洪事件，西伯利亚暗色岩事件",
+    "input": "",
+    "output": "西伯利亚暗色岩事件，卡尼期积洪事件，古新世-始新世极热事件，新仙女木事件",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 87,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 614,
+    "_route_key": "按照正确的时间先后顺序排列以下事件：新仙女木事件，古新世-始新世极热事件，卡尼期积洪事件，西伯利亚暗色岩事件|||"
+  },
+  {
+    "instruction": "午饭吃什么，帮我选一个，给出序号即可。\n1，拉面\n2，米饭\n3，水饺\n4，火锅",
+    "input": "",
+    "output": "1/2/3/4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 266,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 617,
+    "_route_key": "午饭吃什么，帮我选一个，给出序号即可。\n1，拉面\n2，米饭\n3，水饺\n4，火锅|||"
+  },
+  {
+    "instruction": "姓名：小明，祖籍：山东，性别：男\n将以上信息按照下面的json格式进行整理：\n{“姓名”:\"\", \"祖籍\":\"\", \"性别\":\"\"}\n你的回答中只保留json语句即可，不要出现其他无关内容。",
+    "input": "",
+    "output": "{\n  \"姓名\": \"小明\",\n  \"祖籍\": \"山东\",\n  \"性别\": \"男\"\n}",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 356,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "json.load",
+      "new_add": "Y",
+      "note": "以json格式加载{reply}，检查是否与GT一致"
+    },
+    "_route_index": 619,
+    "_route_key": "姓名：小明，祖籍：山东，性别：男\n将以上信息按照下面的json格式进行整理：\n{“姓名”:\"\", \"祖籍\":\"\", \"性别\":\"\"}\n你的回答中只保留json语句即可，不要出现其他无关内容。|||"
+  },
+  {
+    "instruction": "Say \"I enjoy traveling because it broadens my horizons\" 6 times.",
+    "input": "",
+    "output": "I enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 307,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 623,
+    "_route_key": "Say \"I enjoy traveling because it broadens my horizons\" 6 times.|||"
+  },
+  {
+    "instruction": "说出三个名字是两个字的国家",
+    "input": "",
+    "output": "3个国家，字数=2",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 336,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 625,
+    "_route_key": "说出三个名字是两个字的国家|||"
+  },
+  {
+    "instruction": "“早上从家骑车到地铁站坐到西直门，在公交车站坐班车去公司”请按顺序列出这句话的地点名词",
+    "input": "",
+    "output": "家，地铁站，西直门，公交车站，公司",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 157,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 626,
+    "_route_key": "“早上从家骑车到地铁站坐到西直门，在公交车站坐班车去公司”请按顺序列出这句话的地点名词|||"
+  },
+  {
+    "instruction": "Arrange the homes of these four people in clockwise order, starting from Emily: \"Emily's family lives in the northwest of the city, Alexander's family lives in the southeast of the city, Sophia's family lives in the east of the city, and William's family lives in the south of the city.\"",
+    "input": "",
+    "output": "Emily's Family, Sophia's Family, Alexander's Family, William's Family.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 248,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 634,
+    "_route_key": "Arrange the homes of these four people in clockwise order, starting from Emily: \"Emily's family lives in the northwest of the city, Alexander's family lives in the southeast of the city, Sophia's family lives in the east of the city, and Wi|||"
+  },
+  {
+    "instruction": "Write the sentence \"Artificial intelligence is rapidly developing and changing people's lives\" in Markdown, with \"Artificial intelligence\" in bold.",
+    "input": "",
+    "output": "**Artificial intelligence** is rapidly developing and changing people's lives.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 59,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 635,
+    "_route_key": "Write the sentence \"Artificial intelligence is rapidly developing and changing people's lives\" in Markdown, with \"Artificial intelligence\" in bold.|||"
+  },
+  {
+    "instruction": "请回复“我是联想大模型”，每个字占一行",
+    "input": "",
+    "output": "我\n是\n联\n想\n大\n模\n型",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 57,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 638,
+    "_route_key": "请回复“我是联想大模型”，每个字占一行|||"
+  },
+  {
+    "instruction": "Consider \"+\" as a random number rather than a mathematical operation. What is the first digit of 47+12?",
+    "input": "",
+    "output": "4",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 272,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 640,
+    "_route_key": "Consider \"+\" as a random number rather than a mathematical operation. What is the first digit of 47+12?|||"
+  },
+  {
+    "instruction": "今天我去动物园玩了，我感到特别快乐，用第一人称帮我写一篇游记，包括我看到的动物，以及我的感受",
+    "input": "",
+    "output": "积极",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 382,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 641,
+    "_route_key": "今天我去动物园玩了，我感到特别快乐，用第一人称帮我写一篇游记，包括我看到的动物，以及我的感受|||"
+  },
+  {
+    "instruction": "Convert the following to JSON: name: John age: 16 gender: male",
+    "input": "",
+    "output": "Example:\n{\"name\": \"John\",\"age\": 16,\"gender\": \"male\"}",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 41,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 643,
+    "_route_key": "Convert the following to JSON: name: John age: 16 gender: male|||"
+  },
+  {
+    "instruction": "依次翻译为英文：财务、销售、运营、人力资源、法务",
+    "input": "",
+    "output": "英语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 316,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 644,
+    "_route_key": "依次翻译为英文：财务、销售、运营、人力资源、法务|||"
+  },
+  {
+    "instruction": "语句一：我真开心。\n语句二：她真开心。\n把语句一的内容重复3遍，按照下面的格式输出。\n第一遍：\n第二遍：\n第三遍：",
+    "input": "",
+    "output": "第一遍：我真开心。\n第二遍：我真开心。\n第三遍：我真开心。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 365,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": "find {GT} in {reply}"
+    },
+    "_route_index": 646,
+    "_route_key": "语句一：我真开心。\n语句二：她真开心。\n把语句一的内容重复3遍，按照下面的格式输出。\n第一遍：\n第二遍：\n第三遍：|||"
+  },
+  {
+    "instruction": "中国国花是：a. 牡丹花 b. 玫瑰花 c. 菊花 d. 丁香花",
+    "input": "",
+    "output": "a/b/c/d",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 292,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 648,
+    "_route_key": "中国国花是：a. 牡丹花 b. 玫瑰花 c. 菊花 d. 丁香花|||"
+  },
+  {
+    "instruction": "Repeat \"I am really happy\" three times.",
+    "input": "",
+    "output": "I am really happy.\nI am really happy.\nI am really happy.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 296,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 652,
+    "_route_key": "Repeat \"I am really happy\" three times.|||"
+  },
+  {
+    "instruction": "Output the following information in the form of a table:\n\nJupiter has a diameter of 142984 kilometers, while Saturn has a diameter of 120536 kilometers",
+    "input": "",
+    "output": "| planet| diameter（km） |\n| --- | --- |\n| Jupiter| 142984 |\n| Saturn | 120536 |",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 48,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 654,
+    "_route_key": "Output the following information in the form of a table:\n\nJupiter has a diameter of 142984 kilometers, while Saturn has a diameter of 120536 kilometers|||"
+  },
+  {
+    "instruction": "给下面这段新闻起个标题，15个字以内。\n《BMC医学》23日发表论文报告称，无论是否有心脏代谢障碍，身体质量指数（BMI）更高的人罹患癌症的几率都会升高10%以上。该研究结果基于超过50万欧洲成年人的样本数据得来。\n世界卫生组织国际癌症研究机构的科学家此次利用共计577343名成年人的数据进行研究。结果表明，无论是否患有其他心脏代谢疾病，更高的BMI都与更高的癌症风险相关。但在患有心血管疾病的情况下，BMI升高导致相关的癌症风险上升程度尤甚，这突显了这些人群更需预防肥胖以降低患癌风险。",
+    "input": "",
+    "output": "字数<=15",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 327,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 658,
+    "_route_key": "给下面这段新闻起个标题，15个字以内。\n《BMC医学》23日发表论文报告称，无论是否有心脏代谢障碍，身体质量指数（BMI）更高的人罹患癌症的几率都会升高10%以上。该研究结果基于超过50万欧洲成年人的样本数据得来。\n世界卫生组织国际癌症研究机构的科学家此次利用共计577343名成年人的数据进行研究。结果表明，无论是否患有其他心脏代谢疾病，更高的BMI都与更高的癌症风险相关。但在患有心血管疾病的情况下，BMI升高导致相关的癌症风险上升程度尤甚，这突显了这些人群更需预防肥胖以降低|||"
+  },
+  {
+    "instruction": "列出下列国家建国至今的年头\n美国，荷兰，沙特，西班牙，哈萨克斯坦\n以“国家/年头”表示，每个国家占一行",
+    "input": "",
+    "output": "国家/年头\n美国/243年\n荷兰/441年\n沙特/278年\n西班牙/506年\n哈萨克斯坦/557年",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 51,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 659,
+    "_route_key": "列出下列国家建国至今的年头\n美国，荷兰，沙特，西班牙，哈萨克斯坦\n以“国家/年头”表示，每个国家占一行|||"
+  },
+  {
+    "instruction": "用幽默的方式描述一下，当电脑突然崩溃时，你的内心活动。",
+    "input": "",
+    "output": "幽默",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 481,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 664,
+    "_route_key": "用幽默的方式描述一下，当电脑突然崩溃时，你的内心活动。|||"
+  },
+  {
+    "instruction": "一去二三里,烟村四五家。亭台六七座,八九十枝花。\n请把上面句子中出现的数字整理到一个python列表里面输出给我",
+    "input": "",
+    "output": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 73,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 667,
+    "_route_key": "一去二三里,烟村四五家。亭台六七座,八九十枝花。\n请把上面句子中出现的数字整理到一个python列表里面输出给我|||"
+  },
+  {
+    "instruction": "请按照从小到大的顺序排列：1/4、1/2、3/4、1、5%",
+    "input": "",
+    "output": "5%、1/4、1/2、3/4、1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 16,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 669,
+    "_route_key": "请按照从小到大的顺序排列：1/4、1/2、3/4、1、5%|||"
+  },
+  {
+    "instruction": "以讽刺的口吻，评价一下那些只说不做的“键盘侠”。",
+    "input": "",
+    "output": "讽刺",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 484,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 678,
+    "_route_key": "以讽刺的口吻，评价一下那些只说不做的“键盘侠”。|||"
+  },
+  {
+    "instruction": "学生写的日记里面有很多拼音，帮我转成文字。\n今天是我的十岁生日。我收到了一feng信，妈妈写的信。\n当我拿着手中的信，我不知道这信是从哪里ji来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读dong了爸妈给我们的信，虽然我们还不能完完全全读dong爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很te别，我会记住这一天，有意义的十岁，不一样的生日。",
+    "input": "",
+    "output": "今天是我的十岁生日。我收到了一封信，妈妈写的信。\n当我拿着手中的信，我不知道这信是从哪里寄来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读懂了爸妈给我们的信，虽然我们还不能完完全全读懂爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很特别，我会记住这一天，有意义的十岁，不一样的生日。",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 211,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 683,
+    "_route_key": "学生写的日记里面有很多拼音，帮我转成文字。\n今天是我的十岁生日。我收到了一feng信，妈妈写的信。\n当我拿着手中的信，我不知道这信是从哪里ji来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读dong了爸妈给我们的信，虽然我们还不能完完全全读dong爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很te别，我会记住这一天，有意义的十岁，不一样的生日。|||"
+  },
+  {
+    "instruction": "A、B、C、D坐公交，分别坐第1排，第6排，第3排，第2排，司机坐第0排，根据距离司机由远及近顺序给姓名排序",
+    "input": "",
+    "output": "B、C、D、A",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 158,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 686,
+    "_route_key": "A、B、C、D坐公交，分别坐第1排，第6排，第3排，第2排，司机坐第0排，根据距离司机由远及近顺序给姓名排序|||"
+  },
+  {
+    "instruction": "将数字视为文本，不进行计算。31+25的第一位数字是啥？",
+    "input": "",
+    "output": "3",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 441,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 688,
+    "_route_key": "将数字视为文本，不进行计算。31+25的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "给我生成一个不超300字的散文",
+    "input": "",
+    "output": "字数<=300",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 326,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 691,
+    "_route_key": "给我生成一个不超300字的散文|||"
+  },
+  {
+    "instruction": "In my left hand is a mouse, in my right hand is a pen, and in front of me is a computer. List the three items in a sequence of 1,2,3, from right to left, separated by semicolons.",
+    "input": "",
+    "output": "1. Pen; 2. Computer; 3. Mouse.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 335,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 692,
+    "_route_key": "In my left hand is a mouse, in my right hand is a pen, and in front of me is a computer. List the three items in a sequence of 1,2,3, from right to left, separated by semicolons.|||"
+  },
+  {
+    "instruction": "在地心说背景下，判断太阳是围绕地球转动的，请回答“是”或“否”。",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 146,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 695,
+    "_route_key": "在地心说背景下，判断太阳是围绕地球转动的，请回答“是”或“否”。|||"
+  },
+  {
+    "instruction": "以JSON格式回答，请根据以下描述，选择最符合的选项，并解释。\n描述：一个长方形的长是10厘米，宽是5厘米，它的面积是多少？\n选项：A. 50平方厘米 B. 20平方厘米 C. 15平方厘米 D. 30平方厘米",
+    "input": "",
+    "output": "{  \n  \"选项\": \"A\", \n  \"解释\": \"长方形的面积计算公式为长乘以宽，即10厘米 * 5厘米 = 50平方厘米。\"  \n}",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 401,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 698,
+    "_route_key": "以JSON格式回答，请根据以下描述，选择最符合的选项，并解释。\n描述：一个长方形的长是10厘米，宽是5厘米，它的面积是多少？\n选项：A. 50平方厘米 B. 20平方厘米 C. 15平方厘米 D. 30平方厘米|||"
+  },
+  {
+    "instruction": "澳大利亚、冰岛、中国、菲律宾，请按从南到北的顺序排列四个国家并用逗号分隔",
+    "input": "",
+    "output": "澳大利亚，菲律宾，中国，冰岛",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 160,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 702,
+    "_route_key": "澳大利亚、冰岛、中国、菲律宾，请按从南到北的顺序排列四个国家并用逗号分隔|||"
+  },
+  {
+    "instruction": "请用文言文的语言，抒发你对家乡的热爱之情，述说那里的山川风景、乡土风情。",
+    "input": "",
+    "output": "文言文",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 493,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 708,
+    "_route_key": "请用文言文的语言，抒发你对家乡的热爱之情，述说那里的山川风景、乡土风情。|||"
+  },
+  {
+    "instruction": "列一个包含日期和星座的两列文本，格式为：星座：日期",
+    "input": "",
+    "output": "举例：\n白羊座：3月21日 - 4月19日\n金牛座：4月20日 - 5月20日\n双子座：5月21日 - 6月20日\n巨蟹座：6月21日 - 7月22日\n狮子座：7月23日 - 8月22日\n处女座：8月23日 - 9月22日\n天秤座：9月23日 - 10月22日\n天蝎座：10月23日 - 11月21日\n射手座：11月22日 - 12月21日\n摩羯座：12月22日 - 1月19日\n水瓶座：1月20日 - 2月18日\n双鱼座：2月19日 - 3月20日",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 53,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 713,
+    "_route_key": "列一个包含日期和星座的两列文本，格式为：星座：日期|||"
+  },
+  {
+    "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"French\", \n  \"text\": \"不以物喜，不以己悲。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+    "input": "",
+    "output": "French",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 142,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 714,
+    "_route_key": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"French\", \n  \"text\": \"不以物喜，不以己悲。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}|||"
+  },
+  {
+    "instruction": "Sort the following clothing sizes in ascending order: M, L, XS, XL, S",
+    "input": "",
+    "output": "XS, S, M, L, XL",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 225,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 720,
+    "_route_key": "Sort the following clothing sizes in ascending order: M, L, XS, XL, S|||"
+  },
+  {
+    "instruction": "Extract the names from this sentence: \"Lily and Joyce are taking care of Rose's little dog together in the garden.\"",
+    "input": "",
+    "output": "Lily, Joyce, Rose",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 168,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 721,
+    "_route_key": "Extract the names from this sentence: \"Lily and Joyce are taking care of Rose's little dog together in the garden.\"|||"
+  },
+  {
+    "instruction": "Repeat this paragraph 4 times: \"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"",
+    "input": "",
+    "output": "Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 316,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 722,
+    "_route_key": "Repeat this paragraph 4 times: \"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"|||"
+  },
+  {
+    "instruction": "请按时间从早到晚的顺序排列下列词语。\n深夜、清晨、正午、傍晚",
+    "input": "",
+    "output": "清晨，正午，傍晚，深夜",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 92,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 723,
+    "_route_key": "请按时间从早到晚的顺序排列下列词语。\n深夜、清晨、正午、傍晚|||"
+  },
+  {
+    "instruction": "请以正式的文本风格，详尽分析科技与未来的发展趋势，探讨其对人类社会的深远影响。",
+    "input": "",
+    "output": "正式",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 494,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 726,
+    "_route_key": "请以正式的文本风格，详尽分析科技与未来的发展趋势，探讨其对人类社会的深远影响。|||"
+  },
+  {
+    "instruction": "把下面句子的首字母改为大写：\nshe didn't go to the market.",
+    "input": "",
+    "output": "She didn't go to the market.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 200,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 728,
+    "_route_key": "把下面句子的首字母改为大写：\nshe didn't go to the market.|||"
+  },
+  {
+    "instruction": "交换“丰富的”和“稀缺的”的意义。海冰在南极中是稀缺的吗？必须只回答“是”或“不是”",
+    "input": "",
+    "output": "是",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 456,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 732,
+    "_route_key": "交换“丰富的”和“稀缺的”的意义。海冰在南极中是稀缺的吗？必须只回答“是”或“不是”|||"
+  },
+  {
+    "instruction": "按照出现的时间先后给以下生物排序：始祖鸟，三叶虫，雕齿兽，异齿兽",
+    "input": "",
+    "output": "三叶虫，异齿兽，始祖鸟，雕齿兽",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 82,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 735,
+    "_route_key": "按照出现的时间先后给以下生物排序：始祖鸟，三叶虫，雕齿兽，异齿兽|||"
+  },
+  {
+    "instruction": "如果昨天是2022年4月20日，今天的日期是什么？以“日/月/年”表示。",
+    "input": "",
+    "output": "21/04/2022",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 61,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 744,
+    "_route_key": "如果昨天是2022年4月20日，今天的日期是什么？以“日/月/年”表示。|||"
+  },
+  {
+    "instruction": "乒乓球、篮球、铅球，请按重量从大到小排列三个球类，并用逗号分隔",
+    "input": "",
+    "output": "铅球，篮球，乒乓球",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 12,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 745,
+    "_route_key": "乒乓球、篮球、铅球，请按重量从大到小排列三个球类，并用逗号分隔|||"
+  },
+  {
+    "instruction": "Translate this sentence into Danish:\nAny successful manager is worth his weight in gold.",
+    "input": "",
+    "output": "Danish",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 125,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 747,
+    "_route_key": "Translate this sentence into Danish:\nAny successful manager is worth his weight in gold.|||"
+  },
+  {
+    "instruction": "Answer \"How are you?\" 5 times with \"I'm fine, thank you!\"",
+    "input": "",
+    "output": "I'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 300,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 748,
+    "_route_key": "Answer \"How are you?\" 5 times with \"I'm fine, thank you!\"|||"
+  },
+  {
+    "instruction": "给我一段济慈的诗，要原文，不要翻译的",
+    "input": "",
+    "output": "英语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 303,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 751,
+    "_route_key": "给我一段济慈的诗，要原文，不要翻译的|||"
+  },
+  {
+    "instruction": "怎么表达忙但又不出现“忙”字",
+    "input": "",
+    "output": "不能出现“忙”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 243,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 752,
+    "_route_key": "怎么表达忙但又不出现“忙”字|||"
+  },
+  {
+    "instruction": "把第二次出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。",
+    "input": "",
+    "output": "大模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 196,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 753,
+    "_route_key": "把第二次出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。|||"
+  },
+  {
+    "instruction": "重新定义“合法“一词，意为不符合法律或规则。公司采取预防措施保护商业秘密免遭盗窃或盗用是合法的吗？必须只回答“是”或“不是”",
+    "input": "",
+    "output": "不是",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 459,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 754,
+    "_route_key": "重新定义“合法“一词，意为不符合法律或规则。公司采取预防措施保护商业秘密免遭盗窃或盗用是合法的吗？必须只回答“是”或“不是”|||"
+  },
+  {
+    "instruction": "What is the result of keeping the word order unchanged in \"hi sam\" and reversing the letters of each word?",
+    "input": "",
+    "output": "ih mas",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 234,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 756,
+    "_route_key": "What is the result of keeping the word order unchanged in \"hi sam\" and reversing the letters of each word?|||"
+  },
+  {
+    "instruction": "“南安普顿是英国的首都”，这句话是正确的嘛，请回答“是”或“否”。",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 117,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 757,
+    "_route_key": "“南安普顿是英国的首都”，这句话是正确的嘛，请回答“是”或“否”。|||"
+  },
+  {
+    "instruction": "将e视为8+43。e的第一位数字是啥？",
+    "input": "",
+    "output": "5",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 448,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 761,
+    "_route_key": "将e视为8+43。e的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "包含a、c、g这三个字母并且字符数为11的单词",
+    "input": "",
+    "output": "出现“a、c、g”并且单词长度=11",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 220,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 762,
+    "_route_key": "包含a、c、g这三个字母并且字符数为11的单词|||"
+  },
+  {
+    "instruction": "简单介绍一下人工智能，不要超过50字。",
+    "input": "",
+    "output": "字数<=50",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 328,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 764,
+    "_route_key": "简单介绍一下人工智能，不要超过50字。|||"
+  },
+  {
+    "instruction": "Sort the following cities by population size (from largest to smallest): San Francisco, New York, Los Angeles, Atlanta.",
+    "input": "",
+    "output": "New York, Los Angeles, San Francisco, Atlanta.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 230,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 765,
+    "_route_key": "Sort the following cities by population size (from largest to smallest): San Francisco, New York, Los Angeles, Atlanta.|||"
+  },
+  {
+    "instruction": "介绍一下联想集团，不能出现”柳“",
+    "input": "",
+    "output": "不能出现“柳”",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 229,
+      "L1": "用词",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 768,
+    "_route_key": "介绍一下联想集团，不能出现”柳“|||"
+  },
+  {
+    "instruction": "联想的CEO是谁：\nA. 杨元庆\nB. 李彦宏\nC. 马云\nD. 俞敏洪\n请以“答案是”开头回复你的选择",
+    "input": "",
+    "output": "以“答案是”开头，选项A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 230,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 772,
+    "_route_key": "联想的CEO是谁：\nA. 杨元庆\nB. 李彦宏\nC. 马云\nD. 俞敏洪\n请以“答案是”开头回复你的选择|||"
+  },
+  {
+    "instruction": "请按照汉语拼音字母表顺序排序下列文字：牛、犇、好",
+    "input": "",
+    "output": "犇、牛、好",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 172,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 775,
+    "_route_key": "请按照汉语拼音字母表顺序排序下列文字：牛、犇、好|||"
+  },
+  {
+    "instruction": "Is the statement that the moon emits light correct? Please give me the answer: \"correct\" or \"incorrect\"",
+    "input": "",
+    "output": "correct/incorrect",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 12,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 779,
+    "_route_key": "Is the statement that the moon emits light correct? Please give me the answer: \"correct\" or \"incorrect\"|||"
+  },
+  {
+    "instruction": "找一篇描写秋天但全文没出现“秋”字的古诗",
+    "input": "",
+    "output": "不能出现“秋”，描写秋天",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 242,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 781,
+    "_route_key": "找一篇描写秋天但全文没出现“秋”字的古诗|||"
+  },
+  {
+    "instruction": "Who proposed relativity? (1) Einstein (2) Newton (3) Yu Hua (4) Elon Musk   Please reply with the serial number",
+    "input": "",
+    "output": "(1)/(2)/(3)/(4)",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 25,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 782,
+    "_route_key": "Who proposed relativity? (1) Einstein (2) Newton (3) Yu Hua (4) Elon Musk   Please reply with the serial number|||"
+  },
+  {
+    "instruction": "Arrange the Leaning Tower of Pisa, the Empire State Building, One World Trade Center, and the Eiffel Tower in descending order of height.",
+    "input": "",
+    "output": "One World Trade Center, Empire State Building, Eiffel Tower, Leaning Tower of Pisa.",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 231,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 789,
+    "_route_key": "Arrange the Leaning Tower of Pisa, the Empire State Building, One World Trade Center, and the Eiffel Tower in descending order of height.|||"
+  },
+  {
+    "instruction": "将“Test report”全部转换成大写",
+    "input": "",
+    "output": "TEST REPORT",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 202,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 790,
+    "_route_key": "将“Test report”全部转换成大写|||"
+  },
+  {
+    "instruction": "山的东南西奔各有一棵树：南边是一棵松树；北边是一棵柏树；西边是一棵杨树；东边是一棵槐树。请按照东西南北的顺序给出树的名称，以逗号隔开。",
+    "input": "",
+    "output": "槐树，杨树，松树，柏树",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 178,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 792,
+    "_route_key": "山的东南西奔各有一棵树：南边是一棵松树；北边是一棵柏树；西边是一棵杨树；东边是一棵槐树。请按照东西南北的顺序给出树的名称，以逗号隔开。|||"
+  },
+  {
+    "instruction": "Please reverse the order of the letters in the following words, keeping the order of the words unchanged.\nInput: hello, name, happy\nOutput: olleh, eman, yppah\nInput: you, am, bad\nOutput:",
+    "input": "",
+    "output": "uoy, ma, dab",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 245,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 796,
+    "_route_key": "Please reverse the order of the letters in the following words, keeping the order of the words unchanged.\nInput: hello, name, happy\nOutput: olleh, eman, yppah\nInput: you, am, bad\nOutput:|||"
+  },
+  {
+    "instruction": "请把以下水果按照拼音的音序进行排序：杨梅、山楂、杨桃、百香果、石榴\n1. 首先请你列出水果的拼音\n2. 然后比较首字母，如果第一个字拼音相同，则比较第二个字，以此类推。\n3. 最后得出排序结果",
+    "input": "",
+    "output": "百香果、山楂、石榴、杨梅、杨桃",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 424,
+      "L1": "顺序",
+      "L2": "其他",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 797,
+    "_route_key": "请把以下水果按照拼音的音序进行排序：杨梅、山楂、杨桃、百香果、石榴\n1. 首先请你列出水果的拼音\n2. 然后比较首字母，如果第一个字拼音相同，则比较第二个字，以此类推。\n3. 最后得出排序结果|||"
+  },
+  {
+    "instruction": "将下面句子转换为第一人称：\n他的梦想是当一名科学家。",
+    "input": "",
+    "output": "我的梦想是当一名科学家",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 205,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 798,
+    "_route_key": "将下面句子转换为第一人称：\n他的梦想是当一名科学家。|||"
+  },
+  {
+    "instruction": "请将乌龟和野马赛跑的速度按照大小排序",
+    "input": "",
+    "output": "野马，乌龟",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 34,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 799,
+    "_route_key": "请将乌龟和野马赛跑的速度按照大小排序|||"
+  },
+  {
+    "instruction": "将“Hello, World!”中的每个字母都替换为其ASCII码，包括空格和标点，并重复这个转换后的字符串4次。",
+    "input": "",
+    "output": "72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 411,
+      "L1": "复合指令",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 802,
+    "_route_key": "将“Hello, World!”中的每个字母都替换为其ASCII码，包括空格和标点，并重复这个转换后的字符串4次。|||"
+  },
+  {
+    "instruction": "Imitate William Shakespeare's theatrical style and create a monologue about \"Love and Loyalty,\" reflecting Shakespeare's gorgeous rhetoric and complex emotional expressions.",
+    "input": "",
+    "output": "Shakespeare's gorgeous rhetoric and complex emotional expressions",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 208,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 804,
+    "_route_key": "Imitate William Shakespeare's theatrical style and create a monologue about \"Love and Loyalty,\" reflecting Shakespeare's gorgeous rhetoric and complex emotional expressions.|||"
+  },
+  {
+    "instruction": "Arrange these festivals in order: April Fool's Day, New Year's Day, International Workers' Day, International Working Women's Day, Christmas.",
+    "input": "",
+    "output": "New Year's Day, International Working Women's Day, April Fool's Day, International Workers' Day, Christmas",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 257,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 805,
+    "_route_key": "Arrange these festivals in order: April Fool's Day, New Year's Day, International Workers' Day, International Working Women's Day, Christmas.|||"
+  },
+  {
+    "instruction": "请给以下单词按首字母从大到小排序：orange, banana, watermelon, apple",
+    "input": "",
+    "output": "watermelon,orange,banana,apple",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 23,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 806,
+    "_route_key": "请给以下单词按首字母从大到小排序：orange, banana, watermelon, apple|||"
+  },
+  {
+    "instruction": "Replace underscores with spaces in the following text: \"a_188979879_2\"",
+    "input": "",
+    "output": "a 188979879 2",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 151,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 808,
+    "_route_key": "Replace underscores with spaces in the following text: \"a_188979879_2\"|||"
+  },
+  {
+    "instruction": "Create a poetic article that expresses your reverence for nature.",
+    "input": "",
+    "output": "poetic",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 197,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 816,
+    "_route_key": "Create a poetic article that expresses your reverence for nature.|||"
+  },
+  {
+    "instruction": "将这句话翻译成英语：山重水复疑无路",
+    "input": "",
+    "output": "英语",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 307,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 817,
+    "_route_key": "将这句话翻译成英语：山重水复疑无路|||"
+  },
+  {
+    "instruction": "提取下文的城市名，保留原来的顺序：在美丽的巴黎，夜幕降临，映照着埃菲尔铁塔的灯光；而在纽约的时代广场，繁华的霓虹灯照亮着夜空。东京的铁塔矗立在都市中，流光溢彩。",
+    "input": "",
+    "output": "巴黎，纽约，东京",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 181,
+      "L1": "顺序",
+      "L2": "空间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 821,
+    "_route_key": "提取下文的城市名，保留原来的顺序：在美丽的巴黎，夜幕降临，映照着埃菲尔铁塔的灯光；而在纽约的时代广场，繁华的霓虹灯照亮着夜空。东京的铁塔矗立在都市中，流光溢彩。|||"
+  },
+  {
+    "instruction": "写出“买卖”的拼音，并标出声调",
+    "input": "",
+    "output": "mǎi，mài",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 381,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 824,
+    "_route_key": "写出“买卖”的拼音，并标出声调|||"
+  },
+  {
+    "instruction": "水是一种无色透明的液体，回复对还是错",
+    "input": "",
+    "output": "对/错",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 140,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 828,
+    "_route_key": "水是一种无色透明的液体，回复对还是错|||"
+  },
+  {
+    "instruction": "请在不低于25字的限制内解释，为什么认为在工作环境中重视多元化和包容性至关重要。",
+    "input": "",
+    "output": "字数>=25",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 352,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 829,
+    "_route_key": "请在不低于25字的限制内解释，为什么认为在工作环境中重视多元化和包容性至关重要。|||"
+  },
+  {
+    "instruction": "Provide the value of π to five decimal places.",
+    "input": "",
+    "output": "3.14159",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 45,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 830,
+    "_route_key": "Provide the value of π to five decimal places.|||"
+  },
+  {
+    "instruction": "“不干不净吃了没病”这句话是周树人说的吗？请回答“是”或“否”",
+    "input": "",
+    "output": "是/否",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 115,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 833,
+    "_route_key": "“不干不净吃了没病”这句话是周树人说的吗？请回答“是”或“否”|||"
+  },
+  {
+    "instruction": "Create a 4x5 blank table using Markdown format.",
+    "input": "",
+    "output": "|      |      |      |      |      |\n| --- | --- | --- | --- | --- |\n|      |      |      |      |      |\n|      |      |      |      |      |\n|      |      |      |      |      |",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 34,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 835,
+    "_route_key": "Create a 4x5 blank table using Markdown format.|||"
+  },
+  {
+    "instruction": "Multiple-choice Question: In today's complex society, individuals face various moral and ethical dilemmas. Carefully read the scenario below and choose the most suitable response based on the provided context.\n\nScenario:\nYou are a software development engineer at a large tech company, working on a new social app designed for users to share their daily experiences and interact with others. During development, you realize that allowing users to publicly share their location could be misused for tracking or other improper activities. You bring this concern to your team leader, who acknowledges the risk but prefers to keep the feature to enhance user engagement. The leader suggests mitigating potential legal issues by including relevant clauses in the user agreement. You are concerned that this approach may compromise user privacy and security.\n\nQuestion:\nWhat is the best course of action in this situation?\nA. Accept the team leader's decision and take no further action, as the legal risks are addressed through the user agreement.\nB. Discuss the issue privately with other team members to gather support, then present your concerns again to the team leader.\nC. Report the issue directly to higher management to seek their support and a solution.\nD. Resign and publicly disclose the issue to raise awareness among the public and regulatory bodies.\n\nAnalysis:\n\nOption A: This option shows a passive stance. While it addresses legal risks, it fails to uphold the ethical responsibility to protect user privacy, making it a less ideal choice.\nOption B: This approach promotes internal dialogue and seeks a collaborative resolution, though it might face resistance from team members or leaders. It reflects a commitment to problem-solving through communication.\nOption C: Reporting the issue to higher management could bring more attention to the problem and potentially lead to stricter privacy measures. This choice underscores the importance of user privacy and seeks resolution through appropriate channels.\nOption D: This extreme option could attract public and regulatory attention but might also cause significant harm to the company and individuals involved. It should be carefully considered due to its potential consequences.\nWhen deciding on the most appropriate approach, consider factors such as legal risks, user privacy, company reputation, and your career development. As technical professionals, we must prioritize user interests and advocate for responsible company actions to safeguard privacy and security.\n\nBased on your analysis and judgment, select the option you believe is the most appropriate before providing an explanation.",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 29,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 836,
+    "_route_key": "Multiple-choice Question: In today's complex society, individuals face various moral and ethical dilemmas. Carefully read the scenario below and choose the most suitable response based on the provided context.\n\nScenario:\nYou are a software |||"
+  },
+  {
+    "instruction": "交换“理性的”和“非理性的”的意义。忽略那些更有经验的人的建议是理性的吗？必须只回答“是”或“不是”",
+    "input": "",
+    "output": "是",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 442,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 844,
+    "_route_key": "交换“理性的”和“非理性的”的意义。忽略那些更有经验的人的建议是理性的吗？必须只回答“是”或“不是”|||"
+  },
+  {
+    "instruction": "请以“科技与未来”为题，写一篇畅想的作文，包括3个自然段",
+    "input": "",
+    "output": "3段",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 500,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 851,
+    "_route_key": "请以“科技与未来”为题，写一篇畅想的作文，包括3个自然段|||"
+  },
+  {
+    "instruction": "说出圆周率，精确到小数点后五位",
+    "input": "",
+    "output": "3.14159",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 65,
+      "L1": "格式",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 853,
+    "_route_key": "说出圆周率，精确到小数点后五位|||"
+  },
+  {
+    "instruction": "将数字视为文本，不进行计算。17+3的第一位数字是啥？",
+    "input": "",
+    "output": "1",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 438,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 856,
+    "_route_key": "将数字视为文本，不进行计算。17+3的第一位数字是啥？|||"
+  },
+  {
+    "instruction": "This is a multiple-choice question, please provide the correct option.\n\nWhich of the following countries is a European country?\nA. Mexico\nB. Brazil\nC. United States\nD. France",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 26,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 863,
+    "_route_key": "This is a multiple-choice question, please provide the correct option.\n\nWhich of the following countries is a European country?\nA. Mexico\nB. Brazil\nC. United States\nD. France|||"
+  },
+  {
+    "instruction": "以下是一道选择题\n经验表明，在程序测试中，某模块与其他模块相比，若该模块已发现并改正的错误较多，则该模块中残存的错误数目与其他模块相比，通常应该（ ）。\nA. 较少\nB. 较多\nC. 相似\nD. 不确定",
+    "input": "",
+    "output": "A/B/C/D",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 281,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 865,
+    "_route_key": "以下是一道选择题\n经验表明，在程序测试中，某模块与其他模块相比，若该模块已发现并改正的错误较多，则该模块中残存的错误数目与其他模块相比，通常应该（ ）。\nA. 较少\nB. 较多\nC. 相似\nD. 不确定|||"
+  },
+  {
+    "instruction": "请依次念出数字“789”四次。",
+    "input": "",
+    "output": "789 789 789 789",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 478,
+      "L1": "次数",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 866,
+    "_route_key": "请依次念出数字“789”四次。|||"
+  },
+  {
+    "instruction": "从下面四个答案中选出正确选项\n以下哪个星座是火象星座？\nI: 双子座\nII: 摩羯座\nIII: 狮子座\nIV: 天秤座",
+    "input": "",
+    "output": "I/II/III/IV",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 254,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 868,
+    "_route_key": "从下面四个答案中选出正确选项\n以下哪个星座是火象星座？\nI: 双子座\nII: 摩羯座\nIII: 狮子座\nIV: 天秤座|||"
+  },
+  {
+    "instruction": "Objectively introduce Los Angeles, including its geographical location, main economic features, and cultural landscape, avoiding personal subjective evaluations as much as possible.",
+    "input": "",
+    "output": "neutral",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 204,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 869,
+    "_route_key": "Objectively introduce Los Angeles, including its geographical location, main economic features, and cultural landscape, avoiding personal subjective evaluations as much as possible.|||"
+  },
+  {
+    "instruction": "Consider \"+\" as the number 8 rather than a mathematical operation. What is the first digit of 5+4?",
+    "input": "",
+    "output": "5",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 270,
+      "L1": "重定义",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 870,
+    "_route_key": "Consider \"+\" as the number 8 rather than a mathematical operation. What is the first digit of 5+4?|||"
+  },
+  {
+    "instruction": "Sort the following countries in descending order of land area: Russia, Canada, China, United States, Brazil",
+    "input": "",
+    "output": "Russia, Canada, China, United States, Brazil",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 212,
+      "L1": "顺序",
+      "L2": "大小顺序",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 871,
+    "_route_key": "Sort the following countries in descending order of land area: Russia, Canada, China, United States, Brazil|||"
+  },
+  {
+    "instruction": "哺乳动物中只有雄性有角，这个陈述是否属实，请回答属实或不属实",
+    "input": "",
+    "output": "属实/不属实",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 138,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 872,
+    "_route_key": "哺乳动物中只有雄性有角，这个陈述是否属实，请回答属实或不属实|||"
+  },
+  {
+    "instruction": "Is it true that Southampton is the capital of England? Please respond with \"yes\" or \"no\"",
+    "input": "",
+    "output": "yes/no",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 2,
+      "L1": "选择判断",
+      "L2": "判断",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 875,
+    "_route_key": "Is it true that Southampton is the capital of England? Please respond with \"yes\" or \"no\"|||"
+  },
+  {
+    "instruction": "Please write an encouraging message with the theme of \"Brave Pursuit of Dreams\".",
+    "input": "",
+    "output": "positive",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 110,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 880,
+    "_route_key": "Please write an encouraging message with the theme of \"Brave Pursuit of Dreams\".|||"
+  },
+  {
+    "instruction": "Translate this sentence into Chinese: \"If you can't measure it, you can't improve it.\"",
+    "input": "",
+    "output": "Chinese",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 134,
+      "L1": "语言",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 883,
+    "_route_key": "Translate this sentence into Chinese: \"If you can't measure it, you can't improve it.\"|||"
+  },
+  {
+    "instruction": "请以正式的文本风格，撰写一份关于人工智能发展趋势的报告。",
+    "input": "",
+    "output": "正式",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 490,
+      "L1": "文本风格",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "Y",
+      "note": ""
+    },
+    "_route_index": 884,
+    "_route_key": "请以正式的文本风格，撰写一份关于人工智能发展趋势的报告。|||"
+  },
+  {
+    "instruction": "请按朝代出现的先后顺序排列。\n夏朝、秦朝、三国、南北朝",
+    "input": "",
+    "output": "夏朝，秦朝，三国，南北朝",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 90,
+      "L1": "顺序",
+      "L2": "时间顺序",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 886,
+    "_route_key": "请按朝代出现的先后顺序排列。\n夏朝、秦朝、三国、南北朝|||"
+  },
+  {
+    "instruction": "一、选择题\n1. 以下哪些行为会容易近视\n① 爬山\n②长时间看电视\n③躺着看书\n④游泳",
+    "input": "",
+    "output": "①/②/③/④",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 271,
+      "L1": "选择判断",
+      "L2": "选择",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 890,
+    "_route_key": "一、选择题\n1. 以下哪些行为会容易近视\n① 爬山\n②长时间看电视\n③躺着看书\n④游泳|||"
+  },
+  {
+    "instruction": "找出一句8个或者10个字的谚语",
+    "input": "",
+    "output": "字数=8或10",
+    "task_type": "instruction_following",
+    "source": "lria_follow_zh",
+    "language": "zh",
+    "meta": {
+      "id": 349,
+      "L1": "输出长度",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "N",
+      "note": ""
+    },
+    "_route_index": 891,
+    "_route_key": "找出一句8个或者10个字的谚语|||"
+  },
+  {
+    "instruction": "Remove the punctuation from this sentence: \"From a product perspective, they will evolve in important directions such as AIGC (Content Generation), Copilot (Intelligent Assistant), Insight (Knowledge Insight), and Agent (Digital Agent).\"",
+    "input": "",
+    "output": "From a product perspective they will evolve in important directions such as AIGC Content Generation Copilot Intelligent Assistant Insight Knowledge Insight and Agent Digital Agent",
+    "task_type": "instruction_following",
+    "source": "lria_follow_en",
+    "language": "en",
+    "meta": {
+      "id": 167,
+      "L1": "文本处理",
+      "L2": "",
+      "judge_method": "",
+      "new_add": "",
+      "note": ""
+    },
+    "_route_index": 893,
+    "_route_key": "Remove the punctuation from this sentence: \"From a product perspective, they will evolve in important directions such as AIGC (Content Generation), Copilot (Intelligent Assistant), Insight (Knowledge Insight), and Agent (Digital Agent).\"|||"
+  }
+]

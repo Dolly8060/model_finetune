@@ -1,0 +1,60 @@
+{
+  "translation": {
+    "bleu": 2.6588186919857586,
+    "rouge1": 10.657921380365625,
+    "rouge2": 5.347780270887652,
+    "rougeL": 9.103372541078299,
+    "bert_precision": 73.23400974273682,
+    "bert_recall": 84.54400300979614,
+    "bert_f1": 78.41119766235352
+  },
+  "summarization": {
+    "bleu": 1.6036937928390262,
+    "rouge1": 18.887765206610663,
+    "rouge2": 4.36215957077015,
+    "rougeL": 10.526586691356494,
+    "bert_precision": 74.3825614452362,
+    "bert_recall": 78.67873907089233,
+    "bert_f1": 76.4112651348114
+  },
+  "instruction_following": {
+    "bleu": 1.5388459259542029,
+    "rouge1": 7.471341702200611,
+    "rouge2": 4.370395143926277,
+    "rougeL": 7.336669898851966,
+    "bert_precision": 72.16481566429138,
+    "bert_recall": 83.57278108596802,
+    "bert_f1": 77.38649845123291,
+    "instruction_following_rate": 33.33333333333333,
+    "strict_accuracy": 27.27272727272727,
+    "loose_accuracy": 36.36363636363637,
+    "samples_evaluated": 11,
+    "no_constraint_samples": 289,
+    "total_constraints": 12,
+    "avg_constraints_per_sample": 1.0909090909090908,
+    "by_constraint_type": {
+      "max_words": {
+        "total": 3,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "table_format": {
+        "total": 7,
+        "passed": 3,
+        "rate": 42.857142857142854
+      },
+      "json_format": {
+        "total": 1,
+        "passed": 1,
+        "rate": 100.0
+      },
+      "markdown_format": {
+        "total": 1,
+        "passed": 0,
+        "rate": 0.0
+      }
+    },
+    "content_quality_samples": 300,
+    "content_quality_skipped": 0
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "series": "qwen3_strict",
+  "version_mapping": {
+    "v1a": "balanced strict training set (old v1 direction)",
+    "v1b": "IF-priority strict training set (old v2b direction)",
+    "v1c": "IF-priority strict training set + lower LR config (old v2c direction)"
+  },
+  "args": {
+    "data_dir": "data",
+    "dataset_dir": "dataset",
+    "output_prefix": "qwen3_strict",
+    "seed": 2026,
+    "train_target": 3600,
+    "val_target": 360,
+    "test_target": 900,
+    "if_unlabeled_target": 1200,
+    "no_think_prefix": false,
+    "audit_mode": true,
+    "audit_dir": "",
+    "source_registry": "data/source_registry_qwen3_strict.template.json",
+    "self_train": "data/train.json",
+    "self_val": "data/val.json",
+    "argilla_ifeval": "data/argilla_ifeval.json",
+    "chinese_ifeval": "data/ifeval_full_with_meta.json",
+    "public_train_meta": "data/public_train_strict_with_meta.json",
+    "public_val_meta": "data/public_val_strict_with_meta.json",
+    "public_test_meta": "data/public_test_strict_with_meta.json",
+    "internal_if_labeled": "data/qwen3_strict_internal_if_labeled.json",
+    "exclude_chinese_ifeval_train": false,
+    "include_public_val_in_train": false,
+    "v1c_copy_v1b": true
+  },
+  "counts": {
+    "train_v1a": 3600,
+    "val": 360,
+    "test_labeled": 900,
+    "test_if_unlabeled": 1200,
+    "train_v1b": 3600,
+    "train_v1c": 3600
+  },
+  "task_distribution": {
+    "train_v1a": {
+      "instruction_following": 1200,
+      "translation": 1200,
+      "summarization": 1200
+    },
+    "train_v1b": {
+      "instruction_following": 1800,
+      "translation": 900,
+      "summarization": 900
+    },
+    "train_v1c": {
+      "summarization": 900,
+      "instruction_following": 1800,
+      "translation": 900
+    },
+    "val": {
+      "instruction_following": 120,
+      "translation": 120,
+      "summarization": 120
+    },
+    "test_labeled": {
+      "instruction_following": 300,
+      "summarization": 300,
+      "translation": 300
+    },
+    "test_if_unlabeled": {
+      "instruction_following": 1200
+    }
+  },
+  "source_distribution": {
+    "train_v1a": {
+      "chinese_generated": 318,
+      "self_generated": 1241,
+      "argilla_ifeval": 882,
+      "opus-100": 432,
+      "arxiv": 521,
+      "wmt19": 206
+    },
+    "train_v1b": {
+      "chinese_generated": 483,
+      "argilla_ifeval": 1317,
+      "opus-100": 334,
+      "wmt19": 152,
+      "arxiv": 394,
+      "self_generated": 920
+    },
+    "train_v1c": {
+      "arxiv": 394,
+      "argilla_ifeval": 1317,
+      "self_generated": 920,
+      "chinese_generated": 483,
+      "opus-100": 334,
+      "wmt19": 152
+    },
+    "val": {
+      "argilla_ifeval": 79,
+      "wmt19": 26,
+      "chinese_generated": 41,
+      "self_generated": 130,
+      "arxiv": 44,
+      "opus-100": 40
+    },
+    "test_labeled": {
+      "lria_follow_zh": 193,
+      "arxiv": 300,
+      "lria_follow_en": 107,
+      "opus-100": 194,
+      "wmt19": 106
+    },
+    "test_if_unlabeled": {
+      "mifeval_ro": 77,
+      "ifeval_prompt_only": 357,
+      "mifeval_en": 79,
+      "mifeval_ar": 70,
+      "mifeval_ja": 74,
+      "mifeval_de": 71,
+      "mifeval_fr": 77,
+      "mifeval_pt": 77,
+      "mifeval_es": 85,
+      "mifeval_it": 71,
+      "mifeval_zh": 80,
+      "mifeval_pl": 82
+    }
+  },
+  "pool_stats": {
+    "skipped": {
+      "missing_output": 0,
+      "task_other": 45,
+      "test_overlap": 0,
+      "missing_file_sources": []
+    },
+    "train_pool_translation_en2zh": 963,
+    "train_pool_translation_zh2en": 1044,
+    "train_pool_summarization": 1709,
+    "train_pool_instruction_following": 1715,
+    "labeled_test_pool_translation_en2zh": 268,
+    "labeled_test_pool_translation_zh2en": 272,
+    "labeled_test_pool_summarization": 360,
+    "labeled_test_pool_instruction_following": 728
+  },
+  "variant_stats": {
+    "v1b": {
+      "target_total": 3600,
+      "target_if": 1800,
+      "target_translation": 900,
+      "target_summarization": 900,
+      "selected": 3600,
+      "duplicates_by_pool_shortage": {
+        "instruction_following": 600,
+        "translation_en2zh": 0,
+        "translation_zh2en": 0,
+        "summarization": 0
+      },
+      "duplicates_observed_in_variant": {
+        "duplicate_extra_instances": 600,
+        "duplicate_groups": 486
+      },
+      "task_distribution": {
+        "instruction_following": 1800,
+        "translation": 900,
+        "summarization": 900
+      },
+      "source_distribution": {
+        "argilla_ifeval": 1317,
+        "self_generated": 920,
+        "wmt19": 152,
+        "opus-100": 334,
+        "arxiv": 394,
+        "chinese_generated": 483
+      }
+    },
+    "v1c": {
+      "copied_from": "v1b",
+      "seed": 2127,
+      "task_distribution": {
+        "instruction_following": 1800,
+        "translation": 900,
+        "summarization": 900
+      },
+      "source_distribution": {
+        "argilla_ifeval": 1317,
+        "self_generated": 920,
+        "wmt19": 152,
+        "opus-100": 334,
+        "arxiv": 394,
+        "chinese_generated": 483
+      },
+      "selected": 3600
+    }
+  },
+  "leakage": {
+    "train_val": 0,
+    "train_test_labeled": 0,
+    "val_test_labeled": 0,
+    "train_test_if_unlabeled": 0,
+    "val_test_if_unlabeled": 0,
+    "test_labeled_vs_test_if_unlabeled": 0,
+    "train_v1b_vs_val": 0,
+    "train_v1c_vs_val": 0,
+    "train_v1b_vs_test_labeled": 0,
+    "train_v1c_vs_test_labeled": 0
+  },
+  "direct_input_files": [
+    "D:\\AI_code\\model_finetune\\data\\train.json",
+    "D:\\AI_code\\model_finetune\\data\\val.json",
+    "D:\\AI_code\\model_finetune\\data\\argilla_ifeval.json",
+    "D:\\AI_code\\model_finetune\\data\\public_train_strict_with_meta.json",
+    "D:\\AI_code\\model_finetune\\data\\ifeval_full_with_meta.json",
+    "D:\\AI_code\\model_finetune\\data\\qwen3_strict_internal_if_labeled.json",
+    "D:\\AI_code\\model_finetune\\data\\public_test_strict_with_meta.json"
+  ],
+  "notes": [
+    "train.json and val.json are user-confirmed API-generated sources.",
+    "dataset/IFEval and dataset/m-ifeval are used for prompt-only IF benchmark.",
+    "dataset/LRIA-Follow_* is used via converted internal_if_labeled file.",
+    "public_*_strict_with_meta.json files are expected metadata-preserving public datasets."
+  ]
+}

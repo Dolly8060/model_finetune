@@ -24,7 +24,8 @@ import os
 import json
 import argparse
 import re
-from typing import List, Dict, Optional
+from functools import lru_cache
+from typing import List, Dict, Optional, Tuple, Any
 from dataclasses import dataclass
 from tqdm import tqdm
 import jieba
@@ -95,14 +96,355 @@ def _check_language(text: str, expected_lang: str) -> bool:
         return True
 
 
+def _first_alpha_char(text: str) -> str:
+    """Return first latin alphabetic char for lightweight case constraints."""
+    for ch in (text or "").strip():
+        if 'a' <= ch.lower() <= 'z':
+            return ch
+    return ""
+
+
+def _check_first_letter_lowercase(text: str, _param=None) -> bool:
+    ch = _first_alpha_char(text)
+    return (not ch) or ch.islower()
+
+
+def _normalize_simple_reply(text: str) -> str:
+    t = (text or "").strip()
+    t = re.sub(r'^[\"\'“”‘’\\s]+|[\"\'“”‘’\\s\\.!?。！？]+$', '', t)
+    return t.lower()
+
+
+def _check_reply_only_choices(text: str, params) -> bool:
+    if not isinstance(params, tuple) or len(params) < 2:
+        return True
+    pred = _normalize_simple_reply(text)
+    options = [_normalize_simple_reply(x) for x in params if str(x).strip()]
+    return pred in options if options else True
+
+
+def _compare_number(actual: int, relation: Optional[str], target: int) -> bool:
+    rel = (relation or "").strip().lower()
+    if rel in ("at least", ">=", "ge", "no less than", "minimum"):
+        return actual >= target
+    if rel in ("at most", "<=", "le", "no more than", "maximum"):
+        return actual <= target
+    if rel in ("less than", "<", "lt"):
+        return actual < target
+    if rel in ("more than", "greater than", ">", "gt"):
+        return actual > target
+    if rel in ("exactly", "equal", "equals", "=="):
+        return actual == target
+    # default: lenient exact
+    return actual == target
+
+
+def _check_letter_frequency(text: str, params) -> bool:
+    if not isinstance(params, tuple) or len(params) < 3:
+        return True
+    letter, relation, target = params[0], params[1], int(params[2])
+    actual = (text or "").count(letter)
+    return _compare_number(actual, relation, target)
+
+
+def _check_capital_word_frequency(text: str, params) -> bool:
+    if not isinstance(params, tuple) or len(params) < 2:
+        return True
+    relation, target = params[0], int(params[1])
+    words = re.findall(r"\b[A-Za-z][A-Za-z'-]*\b", text or "")
+    # capitalized/uppercase words both count as "capital words"
+    actual = sum(1 for w in words if w[0].isupper())
+    return _compare_number(actual, relation, target)
+
+
+def _check_nth_paragraph_first_word(text: str, params) -> bool:
+    if not isinstance(params, tuple) or len(params) < 2:
+        return True
+    try:
+        nth = int(params[0])
+        expected = str(params[1]).strip().lower()
+    except Exception:
+        return True
+    paras = [p.strip() for p in re.split(r"\n\s*\n", text or "") if p.strip()]
+    if not paras:
+        paras = [ln.strip() for ln in (text or "").splitlines() if ln.strip()]
+    if nth <= 0 or nth > len(paras):
+        return False
+    m = re.search(r"[A-Za-z0-9\u4e00-\u9fff\u3040-\u30ff\u0600-\u06ff\u0C80-\u0CFF]+", paras[nth - 1])
+    if not m:
+        return False
+    return m.group(0).lower() == expected
+
+
+def _check_end_with_phrase(text: str, param) -> bool:
+    end_phrase = (param or "").strip()
+    if not end_phrase:
+        return True
+    pred = (text or "").strip()
+    return pred.endswith(end_phrase)
+
+
+def _merge_constraints(base: List[tuple], extra: List[tuple]) -> List[tuple]:
+    merged = list(base or [])
+    seen = {(c, json.dumps(p, ensure_ascii=False, sort_keys=True) if isinstance(p, (dict, list, tuple)) else str(p))
+            for c, p in merged}
+    for c, p in (extra or []):
+        key = (c, json.dumps(p, ensure_ascii=False, sort_keys=True) if isinstance(p, (dict, list, tuple)) else str(p))
+        if key not in seen:
+            merged.append((c, p))
+            seen.add(key)
+    return merged
+
+
+def _candidate_ifeval_paths() -> List[str]:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    cwd = os.getcwd()
+    return [
+        os.path.join(cwd, "dataset", "IFEval", "input_data.jsonl"),
+        os.path.join(os.path.dirname(script_dir), "dataset", "IFEval", "input_data.jsonl"),
+    ]
+
+
+def _candidate_mifeval_dirs() -> List[str]:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    cwd = os.getcwd()
+    return [
+        os.path.join(cwd, "dataset", "m-ifeval"),
+        os.path.join(os.path.dirname(script_dir), "dataset", "m-ifeval"),
+    ]
+
+
+@lru_cache(maxsize=1)
+def _load_ifeval_prompt_index() -> Dict[str, Dict[str, Any]]:
+    index: Dict[str, Dict[str, Any]] = {}
+    for path in _candidate_ifeval_paths():
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    rec = json.loads(line)
+                    prompt = (rec.get("prompt") or "").strip()
+                    if prompt and prompt not in index:
+                        index[prompt] = rec
+            if index:
+                break
+        except Exception:
+            continue
+    return index
+
+
+@lru_cache(maxsize=1)
+def _load_mifeval_prompt_index() -> Dict[str, Dict[str, Dict[str, Any]]]:
+    """
+    Build prompt -> IFEval metadata map for each m-IFEval language source by:
+    mifeval-en(key -> English prompt) --exact match--> IFEval metadata
+    then transfer by shared key to all language files.
+    Returns: {source_name: {prompt_text: ifeval_record}}
+    """
+    out: Dict[str, Dict[str, Dict[str, Any]]] = {}
+    ifeval_map = _load_ifeval_prompt_index()
+    mdir = None
+    for cand in _candidate_mifeval_dirs():
+        if os.path.isdir(cand):
+            mdir = cand
+            break
+    if not mdir:
+        return out
+
+    en_path = os.path.join(mdir, "PMMEval-mifeval-en.json")
+    if not os.path.exists(en_path):
+        return out
+    try:
+        with open(en_path, "r", encoding="utf-8") as f:
+            en_data = json.load(f)
+    except Exception:
+        return out
+
+    key_to_ifeval: Dict[str, Dict[str, Any]] = {}
+    for key, rec in en_data.items():
+        try:
+            prompt = (((rec or {}).get("origin_prompt") or [])[0] or {}).get("prompt", "")
+        except Exception:
+            prompt = ""
+        prompt = (prompt or "").strip()
+        if prompt and prompt in ifeval_map:
+            key_to_ifeval[key] = ifeval_map[prompt]
+
+    # Build per-language prompt maps
+    for fn in os.listdir(mdir):
+        if not fn.lower().startswith("pmmeval-mifeval-") or not fn.lower().endswith(".json"):
+            continue
+        path = os.path.join(mdir, fn)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        lang = fn.rsplit("-", 1)[-1].replace(".json", "").lower()
+        source_name = f"mifeval_{lang}"
+        prompt_map: Dict[str, Dict[str, Any]] = {}
+        for key, rec in data.items():
+            meta_rec = key_to_ifeval.get(key)
+            if not meta_rec:
+                continue
+            try:
+                prompt = (((rec or {}).get("origin_prompt") or [])[0] or {}).get("prompt", "")
+            except Exception:
+                prompt = ""
+            prompt = (prompt or "").strip()
+            if prompt:
+                prompt_map[prompt] = meta_rec
+        out[source_name] = prompt_map
+    return out
+
+
+def _parse_lria_choice_options_from_reference(sample: Dict) -> List[str]:
+    ref = (sample.get("reference") or "").strip()
+    if not ref:
+        return []
+    # Normalize common wrappers/spaces
+    ref_norm = ref.replace("（", "(").replace("）", ")").strip()
+    # Common binary choices
+    binary_aliases = {
+        "是/否": ["是", "否"],
+        "对/错": ["对", "错"],
+        "正确/错误": ["正确", "错误"],
+        "yes/no": ["yes", "no"],
+        "true/false": ["true", "false"],
+    }
+    lower = ref_norm.lower()
+    for k, vals in binary_aliases.items():
+        if lower == k.lower():
+            return vals
+    if "/" not in ref_norm:
+        return []
+    parts = [p.strip() for p in ref_norm.split("/") if p.strip()]
+    if not (2 <= len(parts) <= 8):
+        return []
+    # Keep only short option-like tokens to avoid abusing reference as content label
+    cleaned = []
+    for p in parts:
+        p2 = p.strip().strip("()[]{}")
+        if len(p2) <= 16 and "\n" not in p2:
+            cleaned.append(p2)
+    return cleaned if len(cleaned) == len(parts) else []
+
+
+def _looks_like_choice_judge_prompt(text: str) -> bool:
+    t = (text or "").lower()
+    patterns = [
+        r"\bchoose\b", r"\bselect\b", r"\bonly (?:reply|answer|respond)\b",
+        r"yes or no", r"true or false",
+        r"\u9009\u51fa", r"\u9009\u62e9", r"\u4ec5\u56de\u7b54", r"\u53ea\u56de\u7b54",
+        r"\u662f\u6216\u5426", r"\u6b63\u786e\u6216\u9519\u8bef", r"\u5224\u65ad",
+    ]
+    return any(re.search(p, t, re.IGNORECASE) for p in patterns)
+
+
+def _normalize_lria_label(text: str) -> str:
+    t = (text or "").strip()
+    # remove think tags if any leaked into prediction
+    t = re.sub(r"<think>.*?</think>", "", t, flags=re.IGNORECASE | re.DOTALL).strip()
+    # strip surrounding quotes/punctuation and whitespace
+    t = re.sub(r'^[\s"\'“”‘’`]+|[\s"\'“”‘’`]+$', '', t)
+    return t.casefold()
+
+
+def _check_lria_reference_exact_short(text: str, param) -> bool:
+    ref = _normalize_lria_label(str(param or ""))
+    pred = _normalize_lria_label(text)
+    if not ref:
+        return False
+    return pred == ref
+
+
+def _check_lria_language_or_code(text: str, param) -> bool:
+    label = (str(param or "").strip()).casefold()
+    if not label:
+        return False
+    # natural language labels
+    if label in ("english", "en", "英文", "英语"):
+        return _check_language(text, "en")
+    if label in ("chinese", "zh", "中文", "汉语", "华语"):
+        return _check_language(text, "zh")
+    if label in ("german", "de", "德语"):
+        return _check_language(text, "de")
+    if label in ("french", "fr", "法语"):
+        return _check_language(text, "fr")
+    if label in ("spanish", "es", "西班牙语"):
+        return _check_language(text, "es")
+    if label in ("japanese", "ja", "日语", "日本语"):
+        # reuse CJK-heavy heuristic (not ideal, but better than exact label)
+        return bool(re.search(r'[\u3040-\u30ff]', text or ""))
+    # programming languages
+    txt = (text or "")
+    if label in ("go", "golang"):
+        return bool(re.search(r"\bpackage\s+main\b|\bfunc\s+\w+\s*\(|time\.Sleep|fmt\.", txt))
+    if label in ("python", "py"):
+        return bool(re.search(r"\bdef\s+\w+\s*\(|import\s+\w+|print\s*\(", txt))
+    if label in ("javascript", "js"):
+        return bool(re.search(r"\bfunction\b|const\s+\w+|let\s+\w+|console\.log", txt))
+    if label in ("java"):
+        return bool(re.search(r"\bpublic\s+class\b|\bpublic\s+static\s+void\s+main\b|System\.out\.println", txt))
+    if label in ("c++", "cpp"):
+        return bool(re.search(r"#include\s*<|std::|int\s+main\s*\(", txt))
+    if label in ("c",):
+        return bool(re.search(r"#include\s*<|printf\s*\(|int\s+main\s*\(", txt))
+    # fallback: exact short label
+    return _check_lria_reference_exact_short(text, label)
+
+
+def _candidate_strict_labeled_paths() -> List[str]:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    cwd = os.getcwd()
+    return [
+        os.path.join(cwd, "data", "qwen3_strict_test_labeled.json"),
+        os.path.join(os.path.dirname(script_dir), "data", "qwen3_strict_test_labeled.json"),
+    ]
+
+
+@lru_cache(maxsize=1)
+def _load_strict_labeled_if_index() -> Dict[Tuple[str, str, str, str], Dict[str, Any]]:
+    out: Dict[Tuple[str, str, str, str], Dict[str, Any]] = {}
+    for path in _candidate_strict_labeled_paths():
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for s in data:
+                if s.get("task_type") != "instruction_following":
+                    continue
+                key = (
+                    (s.get("instruction") or "").strip(),
+                    (s.get("input") or "").strip(),
+                    str(s.get("source") or ""),
+                    str(s.get("language") or ""),
+                )
+                out[key] = s
+            if out:
+                break
+        except Exception:
+            continue
+    return out
+
+
 class InstructionFollowingEvaluator:
     """指令遵循评估器"""
     
+    ENABLE_LRIA_FALLBACK = False
+
     VERIFIABLE_INSTRUCTIONS = {
         "response_language": {
             "patterns": [
                 r"(?:your )?(?:ENTIRE )?response (?:should|must) be in (\w+)(?: language)?",
                 r"answer (?:should|must) be (?:entirely )?in (\w+)",
+                r"(?:please )?(?:reply|respond|answer) in (\w+)",
+                r"in only (\w+)(?:,|\\s)",
             ],
             "check": lambda text, lang: _check_language(text, lang),
         },
@@ -118,20 +460,34 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"(?:less|fewer) than (\d+) sentences?",
                 r"(?:at most|no more than) (\d+) sentences?",
+                r"menos de (\d+) frases?",
+                r"moins de (\d+) phrases?",
                 r"不超过(\d+)(?:个)?句",
             ],
             "check": lambda text, param: _count_sentences(text) <= int(param),
+        },
+        "exact_sentences": {
+            "patterns": [
+                r"exactly (\d+) sentences?",
+                r"\u6070\u597d\s*(\d+)\s*\u53e5",
+            ],
+            "check": lambda text, param: _count_sentences(text) == int(param),
         },
         "title_double_brackets": {
             "patterns": [
                 r"title.*(?:wrapped|enclosed) in double angular brackets",
                 r"title.*such as <<.*>>",
+                r"<<[^<>]{0,40}>>",
+                r"double angular brackets",
+                r"paranteze unghiulare duble",
             ],
             "check": lambda text, _: bool(re.search(r'<<[^<>]+>>', text)),
         },
         "paragraph_divider": {
             "patterns": [
                 r"paragraphs? (?:are |should be )?separated (?:with|by) (?:the )?(?:markdown )?divider[:\s]*\*\*\*",
+                r"(?:paragraphs?|abs[aä]tze?) .*?(?:double )?line breaks?",
+                r"\\n\\n",
             ],
             "check": lambda text, _: '***' in text,
         },
@@ -142,9 +498,25 @@ class InstructionFollowingEvaluator:
             ],
             "check": lambda text, params: text.lower().count(params[0].lower()) >= int(params[1]) if isinstance(params, tuple) and len(params) >= 2 else True,
         },
+        "letter_frequency": {
+            "patterns": [
+                r"(?:letter|character) ['\"](.+?)['\"].*(?:at least|at most|less than|more than|exactly) (\d+) times",
+            ],
+            "check": _check_letter_frequency,
+        },
         "min_words": {
             "patterns": [
                 r"at least (\d+) words",
+                r"al menos (\d+) palabras",
+                r"au moins (\d+) mots",
+                r"pelo menos (\d+) palavras",
+                r"almeno (\d+) parole",
+                r"mindestens (\d+) w[oö]rter",
+                r"cel pu(?:\u021bin|tin) (\d+) cuvinte",
+                r"co najmniej (\d+) s[\u0142l][oó]w",
+                r"\u5c11\u306a\u304f\u3068\u3082\s*(\d+)\s*\u8a9e",
+                r"\u81f3\u5c11\s*(\d+)\s*\u4e2a?\u5b57",
+                r"\u81f3\u5c11\s*(\d+)\s*\u4e2a?\u8bcd",
                 r"不少于(\d+)个?(?:字|词)",
                 r"字数要求[^\d]*(\d+)[到至\-~]+\d+",
             ],
@@ -153,6 +525,14 @@ class InstructionFollowingEvaluator:
         "max_words": {
             "patterns": [
                 r"(?:at most|no more than|less than|under) (\d+) words",
+                r"(?:anything )?longer than (\d+) words",
+                r"(\d+) words? or less",
+                r"no m[aá]s de (\d+) palabras",
+                r"pas plus de (\d+) mots",
+                r"nicht mehr als (\d+) w[oö]rter",
+                r"cel mult (\d+) cuvinte",
+                r"\u4e0d\u8d85\u8fc7\s*(\d+)\s*\u4e2a?\u5b57",
+                r"\u4e0d\u8d85\u8fc7\s*(\d+)\s*\u4e2a?\u8bcd",
                 r"不超过(\d+)个?(?:字|词)",
                 r"字数要求[^\d]*\d+[到至\-~]+(\d+)",
             ],
@@ -169,6 +549,12 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"(?:must |should )?have (\d+) paragraphs?",
                 r"exactly (\d+) paragraphs?",
+                r"exactamente (\d+) p[aá]rrafos?",
+                r"exactement (\d+) paragraphes?",
+                r"esattamente (\d+) paragrafi",
+                r"genau (\d+) abs[aä]tze?",
+                r"exact (\d+) paragrafe",
+                r"\u0641\u064a\s*(\d+)\s*\u0641\u0642\u0631\u0627\u062a?.*?\u0628\u0627\u0644\u0636\u0628\u0637",
                 r"请写(\d+)段",
                 r"写(\d+)段",
             ],
@@ -199,6 +585,7 @@ class InstructionFollowingEvaluator:
         "keyword_exclude": {
             "patterns": [
                 r"do not (?:include |use )?(?:the )?(?:word |letter )?['\"]([^'\"]+)['\"]",
+                r"don't (?:include |use |contain )?(?:the )?(?:word |letter )?['\"]([^'\"]+)['\"]",
                 r"(?:cannot|must not) (?:include|use|contain) (?:the )?(?:word |letter )?['\"]([^'\"]+)['\"]",
                 r"avoid (?:using )?['\"]([^'\"]+)['\"]",
                 r"不要使用['\"\u2018\u2019\u201c\u201d]([^'\"\u2018\u2019\u201c\u201d]+)['\"\u2018\u2019\u201c\u201d]",
@@ -210,9 +597,20 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"use bullet points",
                 r"bullet list",
+                r"bullet points?",
                 r"(?:请)?用列表形式",
             ],
             "check": lambda text, _: bool(re.search(r'[-•*●]\s', text)),
+        },
+        "exact_bullet_points": {
+            "patterns": [
+                r"exactly (\d+) bullet points?",
+                r"exact (\d+) bullet points?",
+                r"\u6070\u597d\s*(\d+)\s*\u4e2a?\u8981\u70b9",
+            ],
+            "check": lambda text, param: len(
+                [ln for ln in (text or "").splitlines() if re.match(r'^\s*(?:[-*•]|\d+[.)])\s+', ln)]
+            ) == int(param),
         },
         "numbered_list": {
             "patterns": [
@@ -226,9 +624,27 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"in json format",
                 r"as json",
+                r"format json",
+                r"formato json",
                 r"(?:用|以)json格式",
             ],
             "check": lambda text, _: ('{' in text and '}' in text),
+        },
+        "reply_only_choices": {
+            "patterns": [
+                r"(?:only|just) (?:reply|respond|answer) with ['\"]([^'\"]+)['\"]\s*(?:or|/)\s*['\"]([^'\"]+)['\"]",
+                r"\u4ec5\u56de\u590d[\u201c\"]([^\"\u201d]+)[\u201d\"]\s*\u6216\s*[\u201c\"]([^\"\u201d]+)[\u201d\"]",
+                r"\u53ea\u56de\u590d[\u201c\"]([^\"\u201d]+)[\u201d\"]\s*\u6216\s*[\u201c\"]([^\"\u201d]+)[\u201d\"]",
+            ],
+            "check": _check_reply_only_choices,
+        },
+        "first_letter_lowercase": {
+            "patterns": [
+                r"first letter (?:should be |must be )?lowercase",
+                r"lowercase first letter",
+                r"\u9996\u5b57\u6bcd\u5c0f\u5199",
+            ],
+            "check": _check_first_letter_lowercase,
         },
         "end_with_question": {
             "patterns": [
@@ -247,17 +663,26 @@ class InstructionFollowingEvaluator:
             "check": lambda text, param: text.strip().lower().startswith(param.lower()),
         },
         # --- IFEval 标准约束类型 ---
+        "end_with_phrase": {
+            "patterns": [
+                r"end with ['\"]([^'\"]+)['\"]",
+                r"\u4ee5['\"\u201c]([^\"\u201d]+)['\"\u201d]\u7ed3\u5c3e",
+            ],
+            "check": _check_end_with_phrase,
+        },
         "postscript": {
             "patterns": [
                 r"(?:include|add|end with) a postscript",
                 r"(?:add|include) (?:a )?P\.?S\.?",
                 r"at the end.*(?:P\.S\.|postscript)",
+                r"P\.?P\.?S\.?",
             ],
-            "check": lambda text, _: bool(re.search(r'P\.?S\.?', text)),
+            "check": lambda text, _: bool(re.search(r'P\.?S\.?|P\.?P\.?S\.?', text)),
         },
         "highlight_sections": {
             "patterns": [
                 r"[Hh]ighlight at least (\d+) sections?.*(?:markdown|with \*)",
+                r"[Mm]arkier.*mindestens (\d+) abschnitte.*markdown",
             ],
             "check": lambda text, param: len(re.findall(r'\*[^*\n]+\*', text)) >= int(param),
         },
@@ -273,12 +698,29 @@ class InstructionFollowingEvaluator:
                 r"[Ff]irst,? repeat (?:the )?(?:request|prompt|exact request|sentence|question)",
                 r"repeat the (?:request|exact request|sentence|question) (?:word for word|itself|exactly|above)",
                 r"[Ff]irst,? repeat ['\"\u201c]",
+                r"r[eé]p[eé]t(?:ez|e) d'abord",
+                r"primeiro repita",
+                r"per prima cosa,? ripeti",
+                r"zuerst .*wiederhol",
+                r"primero repite",
+                r"najpierw powt[oó]rz",
+                r"\u9996\u5148.*\u91cd\u590d",
+                r"\u5148.*\u91cd\u590d",
+                r"\u0623\u0648\u0644[\u0627\u064b]?\u061f?.*\u0643\u0631\u0631",
             ],
             "check": lambda text, _: True,  # 难以自动验证，默认通过
         },
         "quotation_wrap": {
             "patterns": [
                 r"(?:[Ww]rap|[Ee]nclose).*(?:double )?quotation marks",
+                r"double\s+quotes?",
+                r"comillas dobles",
+                r"guillemets doubles?|doubles guillemets",
+                r"aspas duplas",
+                r"virgolette doppie",
+                r"ghilimele duble",
+                r"doppelte[nr]?\s+anf[\u00fcu]hrungszeichen",
+                r"\u53cc\u5f15\u53f7",
             ],
             "check": lambda text, _: text.strip().startswith('"') and text.strip().endswith('"'),
         },
@@ -286,8 +728,16 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"(?:all|entire) (?:capital|uppercase) letters",
                 r"response.*(?:all|only) (?:capital|uppercase)",
+                r"capitalize all your words",
+                r"all your words.*capitaliz",
             ],
             "check": lambda text, _: text.upper() == text or sum(1 for c in text if c.isupper()) > sum(1 for c in text if c.islower()) * 3,
+        },
+        "capital_word_frequency": {
+            "patterns": [
+                r"capital(?:ized)? words?.*(?:at least|at most|less than|more than) (\d+)",
+            ],
+            "check": _check_capital_word_frequency,
         },
         "all_lowercase": {
             "patterns": [
@@ -333,6 +783,7 @@ class InstructionFollowingEvaluator:
         "markdown_format": {
             "patterns": [
                 r"(?:in |use )?markdown format",
+                r"\bmarkdown\b",
                 r"用markdown(?:格式)?(?:写|输出|回答)",
             ],
             "check": lambda text, _: bool(re.search(r'(?:^#{1,6}\s|\*\*|```)', text, re.MULTILINE)),
@@ -340,8 +791,19 @@ class InstructionFollowingEvaluator:
         "no_commas": {
             "patterns": [
                 r"[Dd]o not use any commas",
-                r"[Ww]ithout (?:any )?commas",
+                r"[Ww]ithout (?:using )?(?:any )?commas",
                 r"[Nn]o comma",
+                r"sin comas",
+                r"sans virgules?",
+                r"sem v[íi]rgulas?",
+                r"ohne kommas?",
+                r"senza virgole",
+                r"bez przecink",
+                r"nu folose[\u0219s]ti? virgule",
+                r"folosirea virgulelor",
+                r"f[ăa]r[ăa] virgule",
+                r"\u4e0d\u8981.*\u9017\u53f7",
+                r"\u4e0d.*\u4f7f\u7528.*\u9017\u53f7",
             ],
             "check": lambda text, _: ',' not in text,
         },
@@ -349,6 +811,10 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"at least (\d+) placeholders?",
                 r"(\d+) placeholders?",
+                r"mindestens (\d+) platzhalter",
+                r"(\d+) platzhalter",
+                r"\u81f3\u5c11\u5305\u542b\s*(\d+)\s*\u4e2a.*\u5360\u4f4d\u7b26",
+                r"\u81f3\u5c11\s*(\d+)\s*\u4e2a.*\u5360\u4f4d\u7b26",
             ],
             "check": lambda text, param: len(re.findall(r'\[.*?\]', text)) >= int(param),
         },
@@ -358,6 +824,10 @@ class InstructionFollowingEvaluator:
                 r"[Ss]eparate.*?(\d+)\s*asterisk",
                 r"(\d+)\s*asterisk.*?[Ss]eparate",
                 r"[Ss]eparated (?:by|with)\s*(?:\d+\s*)?(?:asterisk|\*{3,})",
+                r"asterisc",
+                r"ast[eé]risc",
+                r"asterisco",
+                r"\*{4,}",
             ],
             "check": lambda text, _: '***' in text or '******' in text,
         },
@@ -365,6 +835,12 @@ class InstructionFollowingEvaluator:
             "patterns": [
                 r"(?:exactly |give |provide )?(\d+) (?:different )?responses?",
                 r"(\d+) different (?:responses?|answers?|ways?)",
+                r"(\d+) respuestas? diferentes",
+                r"(\d+) r[eé]ponses? diff[eé]rentes?",
+                r"(\d+) respostas? diferentes",
+                r"(\d+) risposte? diverse",
+                r"(\d+) r\u0103spunsuri diferite",
+                r"(\d+) verschiedene antworten",
             ],
             "check": lambda text, param: True,  # 难以自动验证响应数量
         },
@@ -395,8 +871,22 @@ class InstructionFollowingEvaluator:
             ],
             "check": lambda text, _: bool(re.search(r'\|.*\|', text)),
         },
+        "lria_reference_exact_short": {
+            "patterns": [],
+            "check": _check_lria_reference_exact_short,
+        },
+        "lria_language_or_code": {
+            "patterns": [],
+            "check": _check_lria_language_or_code,
+        },
+        "nth_paragraph_first_word": {
+            "patterns": [
+                r"the first word of the (\d+)(?:st|nd|rd|th) paragraph.*?['\"]([^'\"]+)['\"]",
+            ],
+            "check": _check_nth_paragraph_first_word,
+        },
     }
-    
+
     @classmethod
     def extract_constraints(cls, instruction: str) -> List[tuple]:
         """从指令中提取约束"""
@@ -414,6 +904,210 @@ class InstructionFollowingEvaluator:
                         param = None
                     constraints.append((constraint_type, param))
                     break
+        return constraints
+
+    @classmethod
+    def _map_ifeval_instruction(cls, instruction_id: str, kwargs: Dict[str, Any]) -> List[tuple]:
+        iid = (instruction_id or "").strip()
+        kw = kwargs or {}
+        if iid == "punctuation:no_comma":
+            return [("no_commas", None)]
+        if iid == "detectable_format:number_highlighted_sections":
+            n = kw.get("num_highlights")
+            return [("highlight_sections", str(n))] if n is not None else []
+        if iid == "length_constraints:number_words":
+            n = kw.get("num_words")
+            if n is None:
+                return []
+            rel = str(kw.get("relation") or "").lower()
+            if rel == "at least":
+                return [("min_words", str(n))]
+            if rel in ("less than", "at most"):
+                return [("max_words", str(n))]
+            return [("exact_words", str(n))]
+        if iid == "length_constraints:number_sentences":
+            n = kw.get("num_sentences")
+            if n is None:
+                return []
+            rel = str(kw.get("relation") or "").lower()
+            if rel == "at least":
+                return [("min_sentences", str(n))]
+            if rel in ("less than", "at most"):
+                return [("max_sentences", str(n))]
+            return [("exact_sentences", str(n))]
+        if iid == "keywords:forbidden_words":
+            return [("keyword_exclude", str(w)) for w in (kw.get("forbidden_words") or []) if str(w).strip()]
+        if iid == "keywords:existence":
+            return [("keyword_include", str(w)) for w in (kw.get("keywords") or []) if str(w).strip()]
+        if iid == "keywords:frequency":
+            if kw.get("keyword") is None or kw.get("frequency") is None:
+                return []
+            return [("keyword_count", (str(kw.get("keyword")), str(kw.get("frequency"))))]
+        if iid == "keywords:letter_frequency":
+            if kw.get("letter") is None or kw.get("let_frequency") is None:
+                return []
+            return [("letter_frequency", (str(kw.get("letter")), str(kw.get("let_relation") or "at least"), str(kw.get("let_frequency"))))]
+        if iid == "combination:repeat_prompt":
+            return [("repeat_prompt", None)]
+        if iid == "startend:quotation":
+            return [("quotation_wrap", None)]
+        if iid == "change_case:english_lowercase":
+            return [("all_lowercase", None)]
+        if iid == "change_case:english_capital":
+            return [("all_uppercase", None)]
+        if iid == "change_case:capital_word_frequency":
+            n = kw.get("capital_frequency")
+            return [("capital_word_frequency", (str(kw.get("capital_relation") or "at least"), str(n)))] if n is not None else []
+        if iid == "detectable_format:title":
+            return [("title_double_brackets", None)]
+        if iid == "detectable_format:number_bullet_lists":
+            n = kw.get("num_bullets")
+            return [("exact_bullet_points", str(n))] if n is not None else []
+        if iid == "language:response_language":
+            lang = kw.get("language")
+            return [("response_language", str(lang))] if lang else []
+        if iid == "detectable_content:number_placeholders":
+            n = kw.get("num_placeholders")
+            return [("placeholder_count", str(n))] if n is not None else []
+        if iid == "length_constraints:number_paragraphs":
+            n = kw.get("num_paragraphs")
+            return [("exact_paragraphs", str(n))] if n is not None else []
+        if iid == "startend:end_checker":
+            phrase = kw.get("end_phrase")
+            return [("end_with_phrase", str(phrase))] if phrase else []
+        if iid == "detectable_content:postscript":
+            return [("postscript", None)]
+        if iid == "combination:two_responses":
+            return [("multiple_responses", "2")]
+        if iid == "detectable_format:json_format":
+            return [("json_format", None)]
+        if iid == "detectable_format:multiple_sections":
+            n = kw.get("num_sections")
+            if n is None:
+                return []
+            splitter = str(kw.get("section_spliter") or "").upper()
+            if splitter == "PARAGRAPH":
+                return [("exact_paragraphs", str(n))]
+            return [("section_markers", str(n))]
+        if iid == "length_constraints:nth_paragraph_first_word":
+            n = kw.get("nth_paragraph")
+            first = kw.get("first_word")
+            if n is None or not first:
+                return []
+            out = [("nth_paragraph_first_word", (str(n), str(first)))]
+            if kw.get("num_paragraphs") is not None:
+                out.append(("exact_paragraphs", str(kw.get("num_paragraphs"))))
+            return out
+        return []
+
+    @classmethod
+    def _extract_ifeval_constraints_from_sample(cls, sample: Dict) -> List[tuple]:
+        if (sample.get("source") or "") != "ifeval_prompt_only":
+            return []
+        prompt = (sample.get("instruction") or "").strip()
+        if not prompt:
+            return []
+        rec = _load_ifeval_prompt_index().get(prompt)
+        if not rec:
+            return []
+        constraints: List[tuple] = []
+        ids = rec.get("instruction_id_list") or []
+        kwargs_list = rec.get("kwargs") or []
+        for i, iid in enumerate(ids):
+            kw = kwargs_list[i] if i < len(kwargs_list) and isinstance(kwargs_list[i], dict) else {}
+            constraints.extend(cls._map_ifeval_instruction(iid, kw))
+        return constraints
+
+    @classmethod
+    def _extract_mifeval_constraints_from_sample(cls, sample: Dict) -> List[tuple]:
+        src = str(sample.get("source") or "").lower()
+        # Support both strict source names (mifeval_xx) and older PMMEval-prefixed names.
+        if src.startswith("pmmeval-mifeval-"):
+            src = "mifeval_" + src.split("-")[-1]
+        if not src.startswith("mifeval_"):
+            return []
+        prompt = (sample.get("instruction") or "").strip()
+        if not prompt:
+            return []
+        rec = (_load_mifeval_prompt_index().get(src) or {}).get(prompt)
+        if not rec:
+            return []
+        constraints: List[tuple] = []
+        ids = rec.get("instruction_id_list") or []
+        kwargs_list = rec.get("kwargs") or []
+        for i, iid in enumerate(ids):
+            kw = kwargs_list[i] if i < len(kwargs_list) and isinstance(kwargs_list[i], dict) else {}
+            constraints.extend(cls._map_ifeval_instruction(iid, kw))
+        return constraints
+
+    @classmethod
+    def _extract_lria_constraints_from_sample(cls, sample: Dict) -> List[tuple]:
+        src = str(sample.get("source") or "")
+        if not src.startswith("lria_follow_"):
+            return []
+        instr = (sample.get("instruction") or "")
+        inp = str(sample.get("input") or "")
+        full_text = (instr + "\n" + inp).strip() if inp else instr
+
+        meta = sample.get("meta") or {}
+        if not meta:
+            lookup_key = (
+                (sample.get("instruction") or "").strip(),
+                (sample.get("input") or "").strip(),
+                str(sample.get("source") or ""),
+                str(sample.get("language") or ""),
+            )
+            meta = (_load_strict_labeled_if_index().get(lookup_key) or {}).get("meta") or {}
+        l1 = str(meta.get("L1") or "")
+        constraints: List[tuple] = []
+
+        choice_opts = _parse_lria_choice_options_from_reference(sample)
+        if choice_opts and (l1 == "\u9009\u62e9\u5224\u65ad" or _looks_like_choice_judge_prompt(full_text)):
+            constraints.append(("reply_only_choices", tuple(choice_opts)))
+
+        if re.search(r"yes\s*or\s*no|true\s*or\s*false|correct\s*or\s*incorrect", full_text, re.IGNORECASE):
+            text_lower = full_text.lower()
+            if "yes" in text_lower and "no" in text_lower:
+                constraints.append(("reply_only_choices", ("yes", "no")))
+            elif "true" in text_lower and "false" in text_lower:
+                constraints.append(("reply_only_choices", ("true", "false")))
+            else:
+                constraints.append(("reply_only_choices", ("correct", "incorrect")))
+        if re.search(r"\u662f\u6216\u5426|\u6b63\u786e\u6216\u9519\u8bef|\u5bf9\u6216\u9519", full_text):
+            if "\u662f\u6216\u5426" in full_text:
+                constraints.append(("reply_only_choices", ("\u662f", "\u5426")))
+            elif "\u5bf9\u6216\u9519" in full_text:
+                constraints.append(("reply_only_choices", ("\u5bf9", "\u9519")))
+            else:
+                constraints.append(("reply_only_choices", ("\u6b63\u786e", "\u9519\u8bef")))
+
+        if cls.ENABLE_LRIA_FALLBACK:
+            ref = (sample.get("reference") or "").strip()
+            ref_short = bool(ref) and len(ref) <= 30 and len(ref.split()) <= 3 and "/" not in ref
+            if ref_short and l1 == "\u8bed\u8a00":
+                constraints.append(("lria_language_or_code", ref))
+            exact_l1_allow = {
+                "\u9009\u62e9\u5224\u65ad",
+                "\u987a\u5e8f",
+                "\u8f93\u51fa\u957f\u5ea6",
+                "\u6b21\u6570",
+                "\u683c\u5f0f",
+                "\u7528\u8bcd",
+                "\u91cd\u5b9a\u4e49",
+            }
+            if ref_short and l1 in exact_l1_allow:
+                constraints.append(("lria_reference_exact_short", ref))
+        return constraints
+
+    @classmethod
+    def extract_constraints_from_sample(cls, sample: Dict) -> List[tuple]:
+        instr_text = (sample.get("instruction") or "")
+        if sample.get("input"):
+            instr_text = instr_text + "\n" + str(sample.get("input"))
+        constraints = cls.extract_constraints(instr_text)
+        constraints = _merge_constraints(constraints, cls._extract_ifeval_constraints_from_sample(sample))
+        constraints = _merge_constraints(constraints, cls._extract_mifeval_constraints_from_sample(sample))
+        constraints = _merge_constraints(constraints, cls._extract_lria_constraints_from_sample(sample))
         return constraints
     
     @classmethod
@@ -448,6 +1142,29 @@ class InstructionFollowingEvaluator:
             "passed": passed_count,
             "rate": passed_count / len(constraints) if constraints else 1.0,
         }
+
+    @classmethod
+    def evaluate_sample_with_constraints(cls, constraints: List[tuple], output: str) -> Dict:
+        if not constraints:
+            return {"constraints": [], "total": 0, "passed": 0, "rate": 1.0}
+        results = []
+        passed_count = 0
+        for constraint_type, param in constraints:
+            passed = cls.check_constraint(output, constraint_type, param)
+            results.append((constraint_type, param, passed))
+            if passed:
+                passed_count += 1
+        return {
+            "constraints": results,
+            "total": len(constraints),
+            "passed": passed_count,
+            "rate": passed_count / len(constraints) if constraints else 1.0,
+        }
+
+    @classmethod
+    def evaluate_sample_from_sample(cls, sample: Dict) -> Dict:
+        constraints = cls.extract_constraints_from_sample(sample)
+        return cls.evaluate_sample_with_constraints(constraints, sample.get("prediction", ""))
     
     @classmethod
     def compute_corpus_metrics(cls, eval_results: List[Dict]) -> Dict:
@@ -680,7 +1397,7 @@ def _reclassify_samples(samples: List[Dict]) -> List[Dict]:
             continue
         
         # 有约束 → 保持IF
-        constraints = InstructionFollowingEvaluator.extract_constraints(s.get("instruction", ""))
+        constraints = InstructionFollowingEvaluator.extract_constraints_from_sample(s)
         if constraints:
             continue
         
@@ -782,9 +1499,7 @@ def score_results(input_file: str, output_dir: str, reclassify: bool = False):
         # 指令遵循特有指标（不依赖reference，仅检查约束）
         if_eval_results = []
         for s in if_samples:
-            if_result = InstructionFollowingEvaluator.evaluate_sample(
-                s["instruction"], s["prediction"]
-            )
+            if_result = InstructionFollowingEvaluator.evaluate_sample_from_sample(s)
             if_eval_results.append(if_result)
         
         if_corpus_metrics = InstructionFollowingEvaluator.compute_corpus_metrics(if_eval_results)
@@ -964,6 +1679,11 @@ def main():
         help="启用运行时任务重分类（默认关闭，严格测试集建议关闭）"
     )
     
+    parser.add_argument(
+        "--enable-lria-fallback", action="store_true",
+        help="Enable LRIA fallback judge for higher IF_labeled coverage (hybrid scoring mode)."
+    )
+
     args = parser.parse_args()
     
     # 默认输出目录
@@ -973,6 +1693,12 @@ def main():
         input_name = os.path.splitext(os.path.basename(args.input_file))[0]
         args.output_dir = os.path.join(out_dir_tmp, f"{input_name}_eval")
     
+    InstructionFollowingEvaluator.ENABLE_LRIA_FALLBACK = bool(args.enable_lria_fallback)
+    print(
+        "IF scoring mode: HYBRID (LRIA fallback enabled)"
+        if InstructionFollowingEvaluator.ENABLE_LRIA_FALLBACK
+        else "IF scoring mode: STRICT (LRIA fallback disabled)"
+    )
     score_results(args.input_file, args.output_dir, args.reclassify)
 
 

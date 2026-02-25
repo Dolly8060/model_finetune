@@ -1,0 +1,53 @@
+{
+  "input": "D:\\AI_code\\model_finetune\\data\\public_eval_with_meta.json",
+  "seed": 2026,
+  "ratios": {
+    "train": 0.6,
+    "val": 0.1,
+    "test": 0.3
+  },
+  "counts": {
+    "input_raw": 3000,
+    "input_clean_dedup": 3000,
+    "train": 1800,
+    "val": 300,
+    "test": 900,
+    "malformed_or_missing_required": 0
+  },
+  "task_distribution": {
+    "train": {
+      "translation": 1080,
+      "summarization": 720
+    },
+    "val": {
+      "summarization": 120,
+      "translation": 180
+    },
+    "test": {
+      "summarization": 360,
+      "translation": 540
+    }
+  },
+  "strat_distribution": {
+    "train": {
+      "translation:zh2en": 540,
+      "summarization": 720,
+      "translation:en2zh": 540
+    },
+    "val": {
+      "summarization": 120,
+      "translation:en2zh": 90,
+      "translation:zh2en": 90
+    },
+    "test": {
+      "summarization": 360,
+      "translation:en2zh": 270,
+      "translation:zh2en": 270
+    }
+  },
+  "outputs": {
+    "train": "D:\\AI_code\\model_finetune\\data\\public_train_strict_with_meta.json",
+    "val": "D:\\AI_code\\model_finetune\\data\\public_val_strict_with_meta.json",
+    "test": "D:\\AI_code\\model_finetune\\data\\public_test_strict_with_meta.json"
+  }
+}

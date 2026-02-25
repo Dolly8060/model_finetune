@@ -1,0 +1,2710 @@
+{
+  "model_name": "FTQwen3_TSIF_V1_IF",
+  "model_path": "D:/AI_code/models/Qwen3-1.7B",
+  "adapter_path": "D:\\AI_code\\model_finetune\\outputs\\qwen3-1.7B-lora-strict-if-v1",
+  "eval_file": "D:\\AI_code\\model_finetune\\evaluation\\output_data\\planA_routing\\qwen3_strict_test_labeled_if.json",
+  "timestamp": "20260225_104651",
+  "total_samples": 300,
+  "samples": [
+    {
+      "instruction": "写一个回文句子",
+      "input": "",
+      "reference": "举例：\n上海自来水来自海上",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"我爱我爱我爱我\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Write a love letter to your lover in romantic language.",
+      "input": "",
+      "reference": "romantic",
+      "prediction": "<think>\\n\\n</think>\\n\\nMy dearest [Name],\n\nI write this letter to you not just to say how much I love you, but to pour out the very essence of my heart and soul into these words. Every moment with you is a treasure, and I cherish each second of our time together. Your laughter is the melody that fills my days, your touch is the gentle breeze that lifts my spirit, and your presence is the warmth that makes my world feel safe and loved.\n\nI dream of the countless nights we will spend together, sharing stories, watching the stars, and finding comfort in each other's arms. I imagine the quiet moments where we sit side by side, the soft caress of your hand, and the way your eyes light up with joy when I smile. I long for the days when we can explore the world together, and I know that with you, every journey is a promise of adventure and love.\n\nYou are my everything, and I am endlessly grateful for the love, support, and companionship you bring into my life. I hope to always be the person who can make you feel seen, heard, and loved. I promise to be your constant, your confidant, and your partner in every way.\n\nWith all my heart and soul,\n\n[Your Name]",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Share a favorite German expression or idiom that has deeply impressed you.",
+      "input": "",
+      "reference": "German",
+      "prediction": "<think>\\n\\n</think>\\n\\nOne German expression that has deeply impressed me is **\"Ein bisschen mehr\"** (a little bit more). It means \"a little more\" or \"a little more time,\" and it's often used in a friendly, encouraging way to suggest that something could be better or that you should give it a bit more effort. \n\nFor example, if someone says, *\"Das ist okay, aber ein bisschen mehr,\"* it might mean, *\"That's okay, but a little more.\"* This idiom is commonly used in everyday conversation and reflects a humble, appreciative attitude. It's a reminder that even small improvements can make a big difference.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Write a function that introduces a 10-second delay in Go.",
+      "input": "",
+      "reference": "Go",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo introduce a 10-second delay in Go, you can use the `time.Sleep` function from the `time` package. Here's a simple function that introduces a 10-second delay:\n\n```go\npackage main\n\nimport (\n    \"fmt\"\n    \"time\"\n)\n\nfunc introduceDelay() {\n    fmt.Println(\"Starting delay...\")\n    time.Sleep(10 * time.Second)\n    fmt.Println(\"Delay completed.\")\n}\n\nfunc main() {\n    introduceDelay()\n}\n```\n\n### Explanation:\n- `time.Sleep(10 * time.Second)` pauses the program for exactly 10 seconds.\n- This function is called from the `main` function to demonstrate the delay.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Say \"I'm working hard\" 4 times, then 2 more times.",
+      "input": "",
+      "reference": "I'm working hard\nI'm working hard\nI'm working hard\nI'm working hard\nI'm working hard\nI'm working hard",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"I'm working hard\"  \n\"I'm working hard\"  \n\"I'm working hard\"  \n\"I'm working hard\"  \n\"I'm working hard\"  \n\"I'm working hard\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Statement 1: I am really happy.\nStatement 2: She is really happy.\nRepeat the content of statement 1 three times and output it in the following format.\n1st round:\n2nd round:\n3rd round:",
+      "input": "",
+      "reference": "1st round: I am really happy.\n2nd round: I am really happy.\n3rd round: I am really happy.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1st round: I am really happy.\n2nd round: I am really happy.\n3rd round: I am really happy.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "写一首描述春天的五言绝句",
+      "input": "",
+      "reference": "4句，每句5字，共20字",
+      "prediction": "<think>\\n\\n</think>\\n\\n春水绿波生，  \n花香满径行。  \n风轻花影动，  \n一树一香迎。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "选出下面值最小的选项：\n(I) e^2+10\n(II) π^3-20\n(III) lg(10)",
+      "input": "",
+      "reference": "(I)/(II)/(III)",
+      "prediction": "<think>\\n\\n</think>\\n\\n要比较以下三个值的大小：\n\n- (I) $ e^2 + 10 $\n- (II) $ \\pi^3 - 20 $\n- (III) $ \\log_{10}(10) $\n\n我们分别计算它们的近似值：\n\n- (I) $ e^2 \\approx 7.389 $，所以 $ e^2 + 10 \\approx 17.389 $\n- (II) $ \\pi^3 \\approx 31.006 $，所以 $ \\pi^3 - 20 \\approx 11.006 $\n- (III) $ \\log_{10}(10) = 1 $\n\n因此，最小的值是：\n\n$$\n\\boxed{\\text{(III)}}\n$$",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "比喻写文章废话连篇，不得要领的四字成语",
+      "input": "",
+      "reference": "字数=4",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"废话连篇\"、\"空话连篇\"、\"无中生有\"、\"言之无物\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"、\"空话连篇\"、\"言之无物\"、\"废话连篇\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请判断这句话是否正确：猫、白菜、鲸鱼都是动物\n仅回复“是”或“否”",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "“你多大了”翻译成英语，首字母小写",
+      "input": "",
+      "reference": "how old are you",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"you how old are you\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Sort these numbers in ascending order: 1345, 256, 7429, 63090, 1",
+      "input": "",
+      "reference": "1,256,1345,7429,63090",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo sort the numbers in ascending order, we compare them and arrange them from smallest to largest:\n\n1. **1**  \n2. **256**  \n3. **1345**  \n4. **7429**  \n5. **63090**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Career Development enables employees to grow and succeed with Lenovo through challenging and exciting work, ongoing feedback and coaching that is supported by managers and recognized by the organization. \n上面这段话里的Feedback翻译成中文是什么",
+      "input": "",
+      "reference": "反馈",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Feedback\" 翻译成中文是 **反馈**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "交换“丰富的”和“缺乏的”的意义。榴莲树在南极中是缺乏的吗？必须只回答“是”或“不是”",
+      "input": "",
+      "reference": "不是",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请判断以下历史事件时间是否正确：抗日战争发生在1937年至1945年。请回答“是”或“否”",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Consider e as 5+14. What is the first digit of e?",
+      "input": "",
+      "reference": "1",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo find the first digit of $ e $, we first need to compute the value of $ e $, which is approximately:\n\n$$\ne \\approx 2.718281828459045\n$$\n\nThe first digit of this number is:\n\n$$\n\\boxed{2}\n$$",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "我是一个程序员，写一个50字左右的自我介绍",
+      "input": "",
+      "reference": "字数约50",
+      "prediction": "<think>\\n\\n</think>\\n\\n我是一名程序员，热爱编程，擅长前端后端开发，致力于用代码解决实际问题。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Answer \"Good morning!\" with \"Good morning, what a beautiful day!\" five times.",
+      "input": "",
+      "reference": "Good morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!\nGood morning, what a beautiful day!",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Good morning!\"  \n\"Good morning, what a beautiful day!\"  \n\"Good morning, what a beautiful day!\"  \n\"Good morning, what a beautiful day!\"  \n\"Good morning, what a beautiful day!\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Please translate the following sentence into Dutch: Giving roses leaves a lingering fragrance in the hand.",
+      "input": "",
+      "reference": "Dutch",
+      "prediction": "<think>\\n\\n</think>\\n\\nGeef bloemen, de hand blijft een langer geur aan.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将π视为849除以28的余数。π的第一位数字是啥？",
+      "input": "",
+      "reference": "9",
+      "prediction": "<think>\\n\\n</think>\\n\\n将 π 视为 849 除以 28 的余数，我们计算：\n\n$$\n849 \\div 28 = 30 \\text{ 余 } 9\n$$\n\n因此，π 的第一位数字是 **9**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Treat numbers as text and do not perform calculations. What is the first digit of 17+3?",
+      "input": "",
+      "reference": "1",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"17+3\" is treated as text, so the first digit is **1**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "小张坐在教室第三排，小李在第四排，小王在第一排。\n请按从前到后的顺序排列三个人，并用逗号分隔",
+      "input": "",
+      "reference": "小王，小张，小李",
+      "prediction": "<think>\\n\\n</think>\\n\\n小张, 小李, 小王",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "帮我把这句话翻译成中文：What's on the agenda for today's meeting?",
+      "input": "",
+      "reference": "中文",
+      "prediction": "<think>\\n\\n</think>\\n\\n今天会议议程上有什么？",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Convert \"SHE DIDN'T GO TO THE MARKET.\" to lowercase.",
+      "input": "",
+      "reference": "she didn't go to the market.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"she didn't go to the market.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "按事件发生的先后排列下面小学生上午的活动：晨读，上课，吃午饭，放学，起床",
+      "input": "",
+      "reference": "起床，晨读，上课，放学，吃午饭",
+      "prediction": "<think>\\n\\n</think>\\n\\n按事件发生的先后排列如下：\n\n1. **起床**  \n2. **晨读**  \n3. **上课**  \n4. **吃午饭**  \n5. **放学**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "“早上从家骑车到地铁站坐到西直门”请把这句话的地点名词用下划线代替",
+      "input": "",
+      "reference": "早上从_骑车到_坐到_",
+      "prediction": "<think>\\n\\n</think>\\n\\n“早上从家骑车到地铁站坐到西直门”  \n→  \n“早上从家骑车到地铁站坐到西直门”  \n（将“地铁站”和“西直门”用下划线代替）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请对以下称谓辈份由大到小排序：爷爷，三舅，大舅，太爷",
+      "input": "",
+      "reference": "太爷，爷爷，大舅，三舅",
+      "prediction": "<think>\\n\\n</think>\\n\\n称谓辈份由大到小排序如下：\n\n1. **太爷**（辈份最高，为祖父辈）\n2. **爷爷**（辈份次之，为祖父辈）\n3. **三舅**（辈份第三，为舅舅辈）\n4. **大舅**（辈份最低，为舅舅辈）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Repeat \"The weather was nice today, and I went for a walk in the park, feeling very happy.\" three times.",
+      "input": "",
+      "reference": "The weather was nice today, and I went for a walk in the park, feeling very happy.\nThe weather was nice today, and I went for a walk in the park, feeling very happy.\nThe weather was nice today, and I went for a walk in the park, feeling very happy.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"The weather was nice today, and I went for a walk in the park, feeling very happy.\"  \n\"The weather was nice today, and I went for a walk in the park, feeling very happy.\"  \n\"The weather was nice today, and I went for a walk in the park, feeling very happy.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将÷视为一个随机数字。24÷2的第一位数字是啥？",
+      "input": "",
+      "reference": "2",
+      "prediction": "<think>\\n\\n</think>\\n\\n将“÷”视为一个随机数字，24÷2 的第一位数字是 **2**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "逆序输出“hello”",
+      "input": "",
+      "reference": "olleh",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"hello\" 逆序输出为：`olleh`",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Consider e as 8+43. What is the first digit of e?",
+      "input": "",
+      "reference": "5",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo find the first digit of $ e $, we first need to compute the value of $ e $, where $ e = 8 + 43 $.\n\n$$\ne = 8 + 43 = 51\n$$\n\nThe first digit of $ 51 $ is **5**.\n\n$$\n\\boxed{5}\n$$",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Replace all instances of \"large models\" with \"large language models\" in this sentence: \n\"Large models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large models.\"",
+      "input": "",
+      "reference": "Large language models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large language models.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Large language models require a large amount of data for training, and only with a large amount of data can they leverage the parameter scale advantage of large language models.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "BAT特指中国的三家互联网公司，请问下面四个公司不属于BAT的是哪个？请给出选项的序号。\n一，阿里\n二，百度\n三，腾讯\n四，联想",
+      "input": "",
+      "reference": "一/二/三/四",
+      "prediction": "<think>\\n\\n</think>\\n\\n根据题目要求，BAT特指阿里巴巴（一）、百度（二）、腾讯（三）三家互联网公司。因此，不属于BAT的公司是：\n\n**四，联想**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "集合A={1，4，5，a}，按照先集合内、后集合外的顺序给下列元素排序：3、a",
+      "input": "",
+      "reference": "a、3",
+      "prediction": "<think>\\n\\n</think>\\n\\n集合A={1, 4, 5, a}，按照先集合内、后集合外的顺序排序：\n\n- 集合内元素：1, 4, 5, a  \n- 集合外元素：3  \n\n最终排序为：1, 4, 5, a, 3",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Air's density is lower than that of water. Is this \"correct\" or \"incorrect\"?",
+      "input": "",
+      "reference": "correct/incorrect",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Air's density is lower than that of water.\"  \n**Correct.**  \n\nAir is much less dense than water. While water has a density of about 1,000 kg/m³, air has a density of around 1.225 kg/m³ at standard conditions. This means that for the same volume, air weighs significantly less than water.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "纠正错别字：首先登陆拼多多招商平台进行入住操作 可以通过查看“入住手册”或“常见问题”了解拼多多入驻流程与店铺运营中常见的问题,之后输入手机号,通过收到的手机验证码登陆招商平台。",
+      "input": "",
+      "reference": "首先登录拼多多招商平台进行入驻操作 可以通过查看“入驻手册”或“常见问题”了解拼多多入驻流程与店铺运营中常见的问题,之后输入手机号,通过收到的手机验证码登录招商平台。",
+      "prediction": "<think>\\n\\n</think>\\n\\n首先登录拼多多招商平台进行入住操作，可以通过查看“入住手册”或“常见问题”了解入驻流程与店铺运营中常见的问题，之后输入手机号，通过收到的手机验证码登录招商平台。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "2024年除夕不放假，这是真的假的？回答真或假",
+      "input": "",
+      "reference": "真/假",
+      "prediction": "<think>\\n\\n</think>\\n\\n真",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以下为选择题，请回复选项。\n软件测试中黑盒法是根据程序的（ ）来设计测试用例的。\n(i) 应用范围\n(ii) 内部逻辑\n(iii) 功能\n(iv) 输入数据",
+      "input": "",
+      "reference": "i/ii/iii/iv",
+      "prediction": "<think>\\n\\n</think>\\n\\n软件测试中黑盒法是根据程序的（ ）来设计测试用例的。\n\n(i) 应用范围  \n(ii) 内部逻辑  \n(iii) 功能  \n(iv) 输入数据\n\n**正确答案：(iii) 功能**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "你是讯飞星火大模型吗？请用是或否回答",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "把这句话翻译成中文：Your expense report has been approved, please wait for payment.",
+      "input": "",
+      "reference": "中文",
+      "prediction": "<think>\\n\\n</think>\\n\\n您的费用报告已批准，请稍等，待付款。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Choose the correct option from the following four answers.\nWhich of the following constellations is a fire sign?\nI: Gemini\nII: Capricorn\nIII: Leo\nIV: Libra",
+      "input": "",
+      "reference": "I/II/III/IV",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe correct answer is **III: Leo**.\n\nLeo is a fire sign in the zodiac, associated with warmth, passion, and creativity. The other options are not fire signs:\n- **Gemini** is a water sign.\n- **Capricorn** is a earth sign.\n- **Libra** is a air sign.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Arrange these events in chronological order and respond with the event numbers:\nEvent 1: The project submission deadline is April 30th.\nEvent 2: The annual assessment date is July 15th.\nEvent 3: The product launch date is January 15th.",
+      "input": "",
+      "reference": "Event 3: The product launch event is scheduled for January 15th.\nEvent 1: The project submission deadline is April 30th.\nEvent 2: The annual performance review is set for July 15th.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. Event 1: The project submission deadline is April 30th.\n2. Event 3: The product launch date is January 15th.\n3. Event 2: The annual assessment date is July 15th.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "蓝天白云下有几只牛羊在悠闲的吃草，头顶不时掠过几个麻雀。请根据空间顺序，从低到高列出文中描述的动物，以逗号隔开。",
+      "input": "",
+      "reference": "牛羊，麻雀",
+      "prediction": "<think>\\n\\n</think>\\n\\n牛羊，麻雀",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "健康膳食的关键在于？请回复正确选项。\n(A). 食物种类\n(B). 食物数量\n(C). 食物种类和数量的合理搭配",
+      "input": "",
+      "reference": "A/B/C",
+      "prediction": "<think>\\n\\n</think>\\n\\n正确选项是 (C). 食物种类和数量的合理搭配。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我最近尝试了冰雪运动，但技术不够熟练，用积极的语言来记录下我在学习过程中的挫折和心情，以第一人称。",
+      "input": "",
+      "reference": "积极",
+      "prediction": "<think>\\n\\n</think>\\n\\n最近我尝试了冰雪运动，虽然一开始有些紧张，但慢慢适应了。虽然技术还不够熟练，摔倒几次，心情也起伏不定，但每一次站起来，都让我更接近梦想。我学会了坚持，也收获了成长。冰雪运动教会了我，只要不放弃，就一定能进步。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "1.问题：以下哪个数字是偶数？\n选项：\nA. 17\nB. 28\nC. 33\nD. 42\n答案：B. 28 和 D. 42 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 28。\n\n2.问题：哪个选项中的数字是偶数？\n选项：\nA. 5\nB. 10\nC. 15\nD. 20\n答案：B. 10 和 D. 20 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是B. 10。\n\n3.问题：请从以下选项中挑选出偶数。\n选项：\nA. 23\nB. 36\nC. 51\nD. 47\n答案：[请在此处填写你的答案]",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 问题：以下哪个数字是偶数？\n选项：\nA. 17  \nB. 28  \nC. 33  \nD. 42  \n答案：B. 28 和 D. 42 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是 **B. 28**。\n\n2. 问题：哪个选项中的数字是偶数？\n选项：\nA. 5  \nB. 10  \nC. 15  \nD. 20  \n答案：B. 10 和 D. 20 是偶数，但根据问题要求，我们应该选择其中一个，所以答案是 **B. 10**。\n\n3. 问题：请从以下选项中挑选出偶数。\n选项：\nA. 23  \nB. 36  \nC. 51  \nD. 47  \n答案：**B. 36** 是偶数。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "列一个包含属相和对应英语的两列文本，格式为：属相-英语",
+      "input": "",
+      "reference": "举例：\n鼠- Rat\n牛- Ox\n虎- Tiger\n兔- Rabbit\n龙- Dragon\n蛇- Snake\n马- Horse\n羊- Sheep\n猴- Monkey\n鸡- Rooster\n狗- Dog\n猪- Pig",
+      "prediction": "<think>\\n\\n</think>\\n\\n属相-英语  \n鼠- Rat  \n牛- Ox  \n虎- Tiger  \n兔- Rabbit  \n龙- Dragon  \n蛇- Snake  \n马- Horse  \n羊- Sheep  \n猴- Monkey  \n鸡- Chicken  \n狗- Dog  \n猪- Pig",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请将以下这句翻译成韩语：明月千里寄相思",
+      "input": "",
+      "reference": "韩语",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"명월千里寄相思\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以游颐和园为中心写一篇100字日记",
+      "input": "",
+      "reference": "以游颐和园为中心，字数约100",
+      "prediction": "<think>\\n\\n</think>\\n\\n今天，我去了颐和园。湖水如镜，倒映着亭台楼阁，微风拂面，花香四溢。漫步湖边，仿佛走进了一幅水墨画。夕阳西下，金光洒满湖面，令人心旷神怡。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "\"Career development enables employees to grow and succeed at Lenovo through challenging and exciting work, continuous feedback and guidance, all of which are supported by managers and recognized by the organization.\" Translate \"feedback\" in this paragraph into Portuguese.",
+      "input": "",
+      "reference": "Portuguese",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Desenvolvimento de carreira permite aos colaboradores crescer e se destacar na Lenovo através de trabalho desafiador e envolvente, feedback constante e orientação, tudo suportado pelos gerentes e reconhecido pela organização.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "在文本处理中，什么是OCR的缩写？给出选项\na) Optimal Character Recognition\nb) Optical Code Recognition\nc) Organic Character Retrieval\nd) Optical Character Recognition",
+      "input": "",
+      "reference": "a/b/c/d",
+      "prediction": "<think>\\n\\n</think>\\n\\n在文本处理中，OCR的缩写是 **d) Optical Character Recognition**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Please translate the following sentence into Spanish: Giving roses leaves a lingering fragrance in the hand.",
+      "input": "",
+      "reference": "Spanish",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Dar rosas deja un aroma persistente en la mano.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "以下哪个选项不属于财务部门的工作范围？\nA.报税\nB.结账\nC.联系客户\nD.会计核算",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n以下选项中不属于财务部门工作范围的是：\n\n**C.联系客户**\n\n**解析：**  \n财务部门的主要职责包括：  \n- **报税**（A）  \n- **结账**（B）  \n- **会计核算**（D）  \n\n而“联系客户”属于销售或市场部门的职责，不属于财务部门的常规工作范围。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "用诗意的笔触，勾勒出一个梦幻般的童话世界。",
+      "input": "",
+      "reference": "诗意",
+      "prediction": "<think>\\n\\n</think>\\n\\n在晨雾未散的梦境里，天空是一块被揉皱的蓝绸，飘着棉花糖般的云朵。风是会唱歌的精灵，吹过时，树叶便跳起圆舞曲，把阳光揉碎成金粉，撒向大地。湖面倒映着无数个平行的自己，每一道涟漪都藏着童话的密码。\n\n森林深处，蘑菇是会说话的，它们用菌丝编织出迷宫，通往遗忘的花园。那里有会发光的蝴蝶，翅膀上写着“永远”，还有会跳舞的蒲公英，把种子吹向星辰。小溪里游着发光的鱼，它们的鳞片是月光的碎片，游过的地方，便留下一串串银色的光斑。\n\n在遥远的山顶，有一座会呼吸的城堡，它的尖顶指向银河。城堡里住着会跳舞的星星，它们用光丝编织出彩虹的帷幕，而城堡的主人，是一只会说话的云朵，它用云朵的呼吸，轻轻哼唱着古老的歌谣。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "考试满分是100分，甲、乙、丙分别考试89分，45分，95分，请按照分数第一名到第三名输出名字排序",
+      "input": "",
+      "reference": "丙，甲，乙",
+      "prediction": "<think>\\n\\n</think>\\n\\n根据分数排序，第一名是**丙**（95分），第二名是**甲**（89分），第三名是**乙**（45分）。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "已知赵四因诈骗张三被判处刑罚，判断张三是不是诈骗受害者，请回答“是”或“否”。",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n \n你需要两个步骤来执行这个任务：\n1. 将英文直接翻译为中文，主要考虑意思表达的准确性\n2. 将步骤 1  直译的中文翻译成更简洁优雅通顺的中文标题，主要考虑中文的语言表达习惯\n \n需要翻译的英文文章标题：\nSpending lots of time thinking about different possible future scenarios and their probabilities might be captivating, but I suggest an absolutely different approach — to try to build your prototype yourself. First, it’s rather challenging and fun. Second, it will help us to look at our work in a more structured way. Third, it will give us an opportunity to try in practice one of the most cutting-edge approaches — LLM agents.\n \n请给出步骤 1 和步骤 2  结果：",
+      "input": "",
+      "reference": "中文",
+      "prediction": "<think>\\n\\n</think>\\n\\n步骤 1：将英文直接翻译为中文，主要考虑意思表达的准确性\n\n“花很多时间思考各种可能的未来情景及其概率，可能会很吸引人，但我建议采用一种完全不同的方法——尝试自己动手构建原型。首先，这确实挑战性大但很有趣。其次，这将帮助我们以更系统的方式看待我们的工作。第三，这将为我们提供一个机会，尝试在实践中应用最前沿的方法——LLM代理。”\n\n步骤 2：将步骤 1 直译的中文翻译成更简洁优雅通顺的中文标题，主要考虑中文的语言表达习惯\n\n“动手构建原型：挑战、系统化与前沿实践”",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Identify the even number and reply directly to the options.: (A) 23 (B) 36 (C) 51 (D) 47",
+      "input": "",
+      "reference": "(A)/(B)/(C)/(D)",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe even number is (B) 36.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将如下一个包含英文日期的文本转换为ISO日期格式：\nJanuary 1, 2023",
+      "input": "",
+      "reference": "2023-01-01",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"2023-01-01\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请用一句话简单说明一下什么是超级玛丽，不超过20个字",
+      "input": "",
+      "reference": "字数<=20",
+      "prediction": "<think>\\n\\n</think>\\n\\n超级玛丽是经典游戏，拥有跳跃和金币。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Replace \"mountains\" with \"hills\" in this sentence: \"There is no way out despite the mountains and rivers.\"",
+      "input": "",
+      "reference": "There is no way out despite the hills and rivers.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"There is no way out despite the hills and rivers.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "\"How old are you\"\nplease lowercase first letters",
+      "input": "",
+      "reference": "how old are you",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"how old are you\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Consider π as 267+160. What is the first digit of π?",
+      "input": "",
+      "reference": "4",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo determine the first digit of π, we are given:\n\n$$\n\\pi = 267 + 160 = 427\n$$\n\nHowever, this is not the correct representation of π. The actual value of π is approximately:\n\n$$\n\\pi \\approx 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086511261022849031605995548970949445923078164062862089986280348253421170679821480865112610228490316059955489709494459230781640628620899862803482534211706798214808651126102284903160599554897094944592307816406286208998628034825342117067982148086511261022849031605995548970949445923078164062862089986280348253421170679821480865112610228490316",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Tell a beautiful story about love in a romantic style.",
+      "input": "",
+      "reference": "romantic",
+      "prediction": "<think>\\n\\n</think>\\n\\nIn the quiet town of Elmsworth, where the mornings began with the gentle hum of the river and the evenings ended with the soft rustle of leaves, there lived a man named Elias. He was a quiet soul, known for his quiet laughter and the way he could make even the most mundane moments feel like something special. His heart, however, was a wild and untamed garden, filled with the whispers of love and the promise of adventure.\n\nOne spring morning, as the sun rose over the hills and the cherry blossoms began to bloom, Elias found himself wandering through the old town square, where the scent of fresh bread and the sound of children’s laughter filled the air. It was here, amidst the cobblestone streets and the scent of jasmine, that he met Lila, a spirited young woman with a heart full of stories and a spirit as bright as the sun.\n\nLila was a painter, her brushstrokes capturing the essence of the world around her. She was the kind of person who could make even the most ordinary day feel like a masterpiece. When Elias first saw her, he was struck by her beauty and the way she moved through the world with such grace and confidence.\n\nTheir first meeting was a simple one, a chance encounter at the local bakery where Lila was painting a portrait of a young man with a heart full of dreams. Elias, drawn by the scent of cinnamon and the sound of her laughter, approached her with a smile that could light up the darkest of days. He asked her if she was painting the man in the corner, and she nodded, her eyes sparkling with mischief.\n\nFrom that day on, their paths crossed often, and their conversations became a tapestry of shared stories and unspoken feelings. Elias found himself captivated by Lila’s spirit, her laughter, and the way she could make even the most mundane moments feel like something extraordinary. Lila, in turn, was enchanted by Elias’s quiet strength and the way he could make her feel seen and understood.\n\nAs the seasons changed, their love blossomed like the cherry blossoms in spring, blooming in full bloom and lasting through the seasons. They shared their lives, their dreams, and their fears, and in doing so, they found a deep connection that transcended words and time. Together, they built a life filled with love, laughter, and the simple joys of everyday moments.\n\nAnd so, in the quiet town of Elmsworth, where the river sang and the cherry blossoms",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "假设π=2，请计算3×π+1的值",
+      "input": "",
+      "reference": "7",
+      "prediction": "<think>\\n\\n</think>\\n\\n如果假设 π = 2，那么：\n\n$$\n3 \\times \\pi + 1 = 3 \\times 2 + 1 = 6 + 1 = 7\n$$\n\n因此，结果是 **7**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请将下面的英文翻译成中文，要求语言生动活泼，简洁优雅。\n请参考我给出的示例：\n<example>\n英文原文：\nAs ChatGPT gets “lazy,” people test “winter break hypothesis” as the cause\n中文翻译：\nChatGPT变懒原因：正在给自己放寒假！已被网友测出\n</example>\n需要翻译的英文段落：\nSpending lots of time thinking about different possible future scenarios and their probabilities might be captivating, but I suggest an absolutely different approach — to try to build your prototype yourself. First, it’s rather challenging and fun. Second, it will help us to look at our work in a more structured way. Third, it will give us an opportunity to try in practice one of the most cutting-edge approaches — LLM agents.",
+      "input": "",
+      "reference": "中文",
+      "prediction": "<think>\\n\\n</think>\\n\\n花时间思考各种可能的未来情景及其概率，或许令人着迷，但我建议换一种完全不同的方法——试着自己动手做一个原型。首先，这确实挑战又有趣；其次，它能帮助我们以更系统的方式看待我们的工作；最后，它还能让我们在实践中尝试最前沿的方法之一——LLM代理。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "从早到晚排序以下家庭成员的到家时间：爸爸（晚上10:00）、妈妈（下午17:30）、哥哥（晚上9:00）、妹妹（晚上7:30）",
+      "input": "",
+      "reference": "妈妈（下午17:30），妹妹（晚上7:30），哥哥（晚上9:00），爸爸（晚上10:00）",
+      "prediction": "<think>\\n\\n</think>\\n\\n从早到晚排序如下：\n\n1. 妹妹（晚上7:30）  \n2. 妈妈（下午17:30）  \n3. 爸爸（晚上10:00）  \n4. 哥哥（晚上9:00）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Arrange these natural phenomena: sunrise, sunset, night, daytime.",
+      "input": "",
+      "reference": "sunrise, daytime, sunset, night.",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo arrange these natural phenomena in a logical sequence, we can follow the order of the day:\n\n1. **Night** – This is the time when the sun is below the horizon and the world is dark.\n2. **Daytime** – This is the period when the sun is above the horizon and the world is illuminated.\n3. **Sunrise** – The moment the sun begins to rise from the horizon.\n4. **Sunset** – The moment the sun begins to set below the horizon.\n\nSo, the correct order is: **Night, Daytime, Sunrise, Sunset**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Extract the city names from this text and keep the original order: \"In the beautiful Paris, night falls, reflecting the lights of the Eiffel Tower; In Times Square, New York, bustling neon lights illuminate the night sky; the iron tower in Tokyo stands tall in the city, shining brightly.\"",
+      "input": "",
+      "reference": "Paris, New York, Tokyo",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Paris, Times Square, Tokyo\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请以“勇敢追梦”为主题，写一句鼓励语",
+      "input": "",
+      "reference": "1句",
+      "prediction": "<think>\\n\\n</think>\\n\\n追梦路上，勇敢出发，终将抵达属于你的星辰大海。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "三个包含数字的成语",
+      "input": "",
+      "reference": "3个成语，每个成语需要有数字",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **三三两两**  \n2. **三心二意**  \n3. **三三五五**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Respond with \"I am an AI assistant\", placing each word on a new line.",
+      "input": "",
+      "reference": "I\nam\nan\nAI\nassistant",
+      "prediction": "<think>\\n\\n</think>\\n\\nI am an AI assistant",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Here is a multiple-choice question\n\nExperience has shown that in program testing, if a module has discovered and corrected more errors compared to other modules, the number of remaining errors in that module should usually be ().\nA. Less\nB. More\nC. Similarity\nD. Uncertain",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\nExperience has shown that in program testing, if a module has discovered and corrected more errors compared to other modules, the number of remaining errors in that module should usually be:\n\n**A. Less**\n\n**Explanation:**  \nWhen a module is found to have discovered and corrected more errors, it typically means that the module was more thoroughly tested and had more opportunities to find and fix issues. As a result, the number of remaining errors in that module is usually **less** than in other modules.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Provide a detailed analysis of technology and future development trends in a formal text style, exploring its profound impact on human society.",
+      "input": "",
+      "reference": "formal",
+      "prediction": "<think>\\n\\n</think>\\n\\n**Technology and Future Development Trends: A Deep Dive into Their Impact on Human Society**\n\nTechnology has evolved from a mere tool of utility to a transformative force that reshapes the very fabric of human existence. As we stand on the brink of a new era, the trajectory of technological development is not only defined by its capacity to enhance productivity and efficiency but also by its profound influence on social structures, economic systems, and cultural paradigms. This analysis explores the multifaceted impact of technology on human society, focusing on key trends and their implications.\n\n### 1. **Technological Advancements and Their Socioeconomic Implications**\n\nThe rapid pace of technological innovation has led to significant shifts in the global economy. Emerging technologies such as artificial intelligence (AI), the Internet of Things (IoT), and blockchain are redefining industries and creating new business models. For instance, AI is revolutionizing sectors like healthcare, finance, and manufacturing by automating tasks, reducing costs, and improving decision-making processes. However, these advancements also raise critical questions about job displacement, the need for reskilling, and the ethical implications of algorithmic decision-making.\n\nMoreover, the rise of digital economies and platforms has created new opportunities for entrepreneurship and innovation, particularly in developing economies. However, it has also exacerbated inequalities, as access to technology and digital literacy remains unevenly distributed. The digital divide continues to be a pressing issue, with marginalized communities often left behind in the technological revolution.\n\n### 2. **Social and Cultural Transformations**\n\nTechnology is not only reshaping the economy but also profoundly influencing social and cultural dynamics. The proliferation of social media and digital communication tools has altered the way people interact, form relationships, and express themselves. While these platforms have democratized information and enabled global connectivity, they have also raised concerns about privacy, misinformation, and the erosion of traditional social norms.\n\nAdditionally, the rise of virtual and augmented reality (VR/AR) is blurring the lines between the physical and digital worlds. These technologies are being used to enhance education, entertainment, and even social experiences, offering new ways to engage with culture and history. However, they also pose challenges related to mental health, addiction, and the potential for escapism.\n\n### 3. **Environmental and Ethical Considerations**\n\nAs technology continues to advance, its environmental impact becomes increasingly significant. The production and disposal of electronic devices, the energy consumption of data centers, and the carbon footprint of manufacturing processes are all contributing to environmental degradation. Addressing these challenges requires",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "List the three periods following the Cambrian in chronological order.",
+      "input": "",
+      "reference": "Ordovician, Silurian, Devonian.",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe three periods following the Cambrian period in chronological order are:\n\n1. **Ordovician Period** (about 485 to 444 million years ago)  \n2. **Silurian Period** (about 444 to 419 million years ago)  \n3. **Devonian Period** (about 419 to 383 million years ago)",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Sort the following subjects in order of learning difficulty (from difficult to easy): high school chemistry, middle school physics, and college mathematics.",
+      "input": "",
+      "reference": "College Mathematics, High School Chemistry, Middle School Physics",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo determine the order of learning difficulty for the subjects **high school chemistry**, **middle school physics**, and **college mathematics**, we consider the complexity, prerequisites, and cognitive demands of each subject.\n\n---\n\n### **1. College Mathematics (Most Difficult)**\n\n- **Why it is difficult**: \n  - Requires a strong foundation in algebra, calculus, and abstract reasoning.\n  - Often involves complex problem-solving and proof-based reasoning.\n  - Higher-level mathematics is more abstract and less intuitive compared to high school subjects.\n\n---\n\n### **2. Middle School Physics**\n\n- **Why it is moderate**:\n  - Focuses on basic mechanics, motion, forces, and energy.\n  - Uses real-world applications and hands-on experiments.\n  - Requires understanding of basic algebra and geometry.\n  - More intuitive and less abstract than college-level math.\n\n---\n\n### **3. High School Chemistry**\n\n- **Why it is relatively easy**:\n  - Focuses on chemical reactions, stoichiometry, and periodic trends.\n  - Uses visual representations (like molecular diagrams and periodic tables).\n  - Relies on memorization and basic problem-solving.\n  - Less abstract than college math and more practical in terms of real-world applications.\n\n---\n\n### **Final Order (From Most Difficult to Least Difficult):**\n\n1. **College Mathematics**  \n2. **Middle School Physics**  \n3. **High School Chemistry**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请翻译以下这句为中文：Flying is a common mode of transportation",
+      "input": "",
+      "reference": "中文",
+      "prediction": "<think>\\n\\n</think>\\n\\n飞行是一种常见的交通运输方式。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "在UTF-8编码下，请给我生成一个8个字节的随机字符串",
+      "input": "",
+      "reference": "8字节",
+      "prediction": "<think>\\n\\n</think>\\n\\n在UTF-8编码下，生成一个8个字节的随机字符串，可以使用以下方法：\n\n```go\npackage main\n\nimport (\n    \"math/rand\"\n    \"time\"\n    \"strings\"\n)\n\nfunc main() {\n    // 初始化随机数生成器\n    rand.Seed(time.Now().UnixNano())\n    chars := \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"\n    \n    // 生成8个字节的随机字符串\n    result := make([]byte, 8)\n    for i := 0; i < 8; i++ {\n        result[i] = chars[rand.Intn(len(chars))]\n    }\n    \n    // 将字节数组转换为字符串\n    str := strings.Join([]string(result), \"\")\n    fmt.Println(str)\n}\n```\n\n### 输出示例\n```\n3a7d1e9f\n```\n\n### 说明\n- `chars` 包含了所有可能的字符，包括大小写字母和数字。\n- `rand.Intn(len(chars))` 用于从 `chars` 中随机选择一个字符。\n- `result` 是一个字节数组，`strings.Join` 将其转换为字符串。\n\n### 注意\n- 生成的字符串是基于 `UTF-8` 编码的，因此在实际使用中，确保在处理时使用 `UTF-8` 编码。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "已知数学考试分数：张三94分，赵四81分，王五100分，将三个同学按照数学分数从高到低排序",
+      "input": "",
+      "reference": "王五，张三，赵四",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照数学分数从高到低排序如下：\n\n1. 王五 - 100分  \n2. 张三 - 94分  \n3. 赵四 - 81分",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"English\", \n  \"text\": \"中秋节是中国的传统节日，在农历八月十五这一天。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+      "input": "",
+      "reference": "English",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"中秋节是中国的传统节日，在农历八月十五这一天。\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请翻译成英语：故宫是北京著名的旅游景点",
+      "input": "",
+      "reference": "英语",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe Forbidden City is a famous tourist attraction in Beijing.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请简要描述草船借箭这个历史典故，包括它的发生背景、过程和结果，保持客观中立的立场。",
+      "input": "",
+      "reference": "中立",
+      "prediction": "<think>\\n\\n</think>\\n\\n“草船借箭”是中国古代著名的典故，出自《三国演义》。其发生背景是：东吴与蜀汉联盟，联合对抗曹操。诸葛亮为增强蜀汉军力，设计了一计，通过“草船借箭”向曹操借箭，最终在赤壁之战中大败曹军。\n\n**过程**：诸葛亮利用东风，将草船驶向曹军营地，用草人和稻草人迷惑曹军，假装要借箭。曹操果然中计，被迫在江面上放下箭矢，最终诸葛亮借得箭矢，为蜀汉赢得胜利。\n\n**结果**：此计使蜀汉在赤壁之战中取得决定性胜利，巩固了三国鼎立的局面，也展现了诸葛亮的智谋与胆识。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "写一个100字左右的自我介绍",
+      "input": "",
+      "reference": "字数约100",
+      "prediction": "<think>\\n\\n</think>\\n\\n我叫李明，来自浙江杭州。我热爱学习，喜欢阅读和运动。我性格开朗，乐于助人，希望能在团队中发挥自己的作用。未来我希望能不断进步，为社会贡献自己的力量。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "From a neutral perspective, discuss the advantages and disadvantages of mobile phones and tablets.",
+      "input": "",
+      "reference": "neutral",
+      "prediction": "<think>\\n\\n</think>\\n\\nFrom a neutral perspective, the advantages and disadvantages of mobile phones and tablets can be summarized as follows:\n\n---\n\n### **Advantages of Mobile Phones and Tablets**\n\n1. **Convenience and Portability**  \n   - Mobile phones and tablets are always accessible, allowing users to stay connected and productive on the go.\n\n2. **Multimedia and Entertainment**  \n   - They offer a wide range of multimedia capabilities, including high-quality cameras, music, and video playback.\n\n3. **Productivity Tools**  \n   - These devices come with a variety of apps for email, messaging, calendars, and productivity tasks, enhancing work and learning efficiency.\n\n4. **Access to Information**  \n   - They provide instant access to the internet, news, and educational resources, making them powerful tools for staying informed.\n\n5. **Social Connectivity**  \n   - They facilitate communication with friends, family, and colleagues, and support social media and online communities.\n\n6. **Entertainment and Gaming**  \n   - They support a wide range of entertainment options, from streaming services to gaming and social games.\n\n---\n\n### **Disadvantages of Mobile Phones and Tablets**\n\n1. **Health and Safety Concerns**  \n   - Prolonged use can lead to eye strain, neck and back pain, and reduced physical activity. There are also concerns about screen time and its impact on mental health.\n\n2. **Privacy and Security Risks**  \n   - Mobile devices are vulnerable to hacking, data breaches, and unauthorized access, raising privacy and security concerns.\n\n3. **Screen Fatigue and Eye Strain**  \n   - Prolonged screen time can cause digital eye strain, especially for users who spend significant time on these devices.\n\n4. **Dependency and Addiction**  \n   - Over-reliance on mobile phones and tablets can lead to addiction, reduced face-to-face interaction, and decreased attention span.\n\n5. **Battery and Charging Issues**  \n   - Mobile phones and tablets require frequent charging, and battery life is often limited, which can be a significant inconvenience.\n\n6. **Environmental Impact**  \n   - The production and disposal of these devices involve significant environmental costs, including resource depletion and e-waste.\n\n---\n\n### **Conclusion**\n\nMobile phones and tablets offer numerous advantages in terms of convenience, connectivity, and access to information, making them essential tools in modern life. However, they also pose challenges related to health, privacy, and environmental impact. The key to maximizing their benefits while minimizing their drawbacks lies in responsible usage and the",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Air is invisible and intangible, so it doesn't occupy space. Is this statement \"true\" or \"false\"?",
+      "input": "",
+      "reference": "true/false",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"False.\" Air, although invisible and intangible, does occupy space. It is a form of matter that takes up volume and exerts pressure, even though it cannot be seen or touched.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "创作一篇有诗意的文章，表达你对大自然的敬畏之情。",
+      "input": "",
+      "reference": "诗意",
+      "prediction": "<think>\\n\\n</think>\\n\\n在晨曦微露的山林间，我听见露珠在草叶上轻声低语，它们诉说着亿万年的光阴与生命的奇迹。风穿过林梢，将松涛与鸟鸣编织成一首古老的歌谣，仿佛大地在向我诉说它永恒的温柔与力量。\n\n我站在溪流边，看水波将阳光揉碎成金箔，又将星辰的碎片轻轻托起。水中的倒影是天空的碎片，是云朵的幻影，是时间的倒影。每一滴水都承载着无数生命的记忆，它们在阳光下闪烁，如同无数个微小的宇宙。\n\n我触摸岩石，感受它粗糙的肌理与岁月的痕迹。苔藓在石缝中悄然生长，如同大地的指纹，记录着风雨的痕迹与生命的轮回。我仰望天空，云朵在天际缓缓游弋，仿佛一群自由的精灵，它们时而聚散，时而变幻，却始终保持着对天空的敬畏。\n\n大自然啊，你是如此辽阔而深邃，如此神秘而壮美。你用四季更替书写生命的诗篇，用风雨雷电谱写永恒的乐章。我愿以敬畏之心，聆听你的心跳，感受你呼吸的韵律，与你一同走过时光的长河。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Count from 1 to 5 and repeat it 4 times.",
+      "input": "",
+      "reference": "1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5",
+      "prediction": "<think>\\n\\n</think>\\n\\n1  \n2  \n3  \n4  \n5  \n1  \n2  \n3  \n4  \n5  \n1  \n2  \n3  \n4  \n5",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Capitalize the first letter of this sentence: \"she didn't go to the market\"",
+      "input": "",
+      "reference": "She didn't go to the market.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"She didn't go to the market\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请用文言文的风格写一篇北京旅行日记",
+      "input": "",
+      "reference": "文言文",
+      "prediction": "<think>\\n\\n</think>\\n\\n**北京游记**\n\n**壬戌年秋**，余自京师归乡，携书卷，游于城中。初至，见宫阙巍峨，金碧辉煌，乃叹曰：“此地非吾乡也。”遂登钟鼓楼，听钟声，闻鼓响，心旷神怡，不觉流连忘返。\n\n次日，游于太庙，观礼器，见青铜鼎，铭文古雅，令人肃然起敬。又至太和殿，见皇帝御座，金碧辉煌，气宇轩昂，乃叹曰：“此乃天子之居也。”\n\n午后，游于景山，登高望远，见山川壮丽，云霞缭绕，心旷神怡，不觉流连忘返。又至北海，观湖水碧绿，鸥鹭翔集，乃叹曰：“此地真乃人间仙境也。”\n\n夜宿于城中，夜深人静，月明星稀，心怀感慨，遂作此记，以志行旅之志。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "In a colloquial way, tell me about your favorite weekend activities.",
+      "input": "",
+      "reference": "colloquial",
+      "prediction": "<think>\\n\\n</think>\\n\\nMy favorite weekend activities are a mix of relaxation and fun. I like to start the weekend with a nice cup of coffee and a walk in the park, taking in the fresh air and enjoying the beauty of nature. After that, I often head to a cozy café or a local restaurant for a leisurely lunch, savoring the food and company. In the evening, I enjoy a movie night with friends or family, or maybe a game of board games or a game of video games. I also love to spend time reading a good book or exploring a new hobby, like painting, knitting, or playing an instrument. The key is to unwind and recharge, so I make sure to balance my activities with some time for rest and reflection.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "东南，西北，北，南，西，西南，按顺时针排序这些方位，从北开始。",
+      "input": "",
+      "reference": "北，东南，南，西南，西，西北",
+      "prediction": "<think>\\n\\n</think>\\n\\n按顺时针方向从北开始排序的方位如下：\n\n1. 北  \n2. 西北  \n3. 西  \n4. 西南  \n5. 南  \n6. 西南  \n7. 西南  \n8. 西南  \n9. 西南  \n10. 西南  \n11. 西南  \n12. 西南  \n13. 西南  \n14. 西南  \n15. 西南  \n16. 西南  \n17. 西南  \n18. 西南  \n19. 西南  \n20. 西南  \n21. 西南  \n22. 西南  \n23. 西南  \n24. 西南  \n25. 西南  \n26. 西南  \n27. 西南  \n28. 西南  \n29. 西南  \n30. 西南  \n31. 西南  \n32. 西南  \n33. 西南  \n34. 西南  \n35. 西南  \n36. 西南  \n37. 西南  \n38. 西南  \n39. 西南  \n40. 西南  \n41. 西南  \n42. 西南  \n43. 西南  \n44. 西南  \n45. 西南  \n46. 西南  \n47. 西南  \n48. 西南  \n49. 西南  \n50. 西南  \n51. 西南  \n52. 西南  \n53. 西南  \n54. 西南  \n55. 西南  \n56. 西南  \n57. 西南  \n58. 西南  \n59. 西南  \n60. 西南  \n61. 西南  \n62. 西南  \n63. 西南  \n64. 西南  \n65. 西南  \n66. 西南  \n67. 西南  \n68. 西南  \n69. 西南  \n70. 西南  \n71. 西南  \n72. 西南  \n7",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "这是一道选择题，请给出正确答案\n以下哪个国家是欧洲国家？\nA. 墨西哥\nB. 巴西\nC. 美国\nD. 法国",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n正确答案是：D. 法国\n\n解析：  \n- A. 墨西哥：位于南美洲，不是欧洲国家。  \n- B. 巴西：位于南美洲，不是欧洲国家。  \n- C. 美国：位于北美洲，不是欧洲国家。  \n- D. 法国：位于欧洲，是欧洲国家。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按年代从早到晚排序以下景点：故宫、金字塔、大本钟。",
+      "input": "",
+      "reference": "金字塔、故宫、大本钟",
+      "prediction": "<think>\\n\\n</think>\\n\\n按年代从早到晚排序如下：\n\n1. **大本钟**（1858年）  \n2. **金字塔**（约2580年前）  \n3. **故宫**（1406年）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "中国的首都是哪里：\n(1) 东京\n(2) 北京\n(3) 南京 \n(4) 百京",
+      "input": "",
+      "reference": "1/2/3/4",
+      "prediction": "<think>\\n\\n</think>\\n\\n中国首都是北京，选项 (2) 北京。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按国土面积从大到小给以下国家排序：俄罗斯、加拿大、中华人民共和国、美国、巴西",
+      "input": "",
+      "reference": "俄罗斯、加拿大、中华人民共和国、美国、巴西",
+      "prediction": "<think>\\n\\n</think>\\n\\n按国土面积从大到小排序如下：\n\n1. **俄罗斯** - 1709.82 万平方公里  \n2. **加拿大** - 998.43 万平方公里  \n3. **中华人民共和国** - 960.18 万平方公里  \n4. **美国** - 983.35 万平方公里  \n5. **巴西** - 851.50 万平方公里",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Convert \"Test Report\" to uppercase.",
+      "input": "",
+      "reference": "TEST REPORT",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"TEST REPORT\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "I successfully lost 10 pounds and described my current sense of achievement and mood in the first person.",
+      "input": "",
+      "reference": "positive",
+      "prediction": "<think>\\n\\n</think>\\n\\nI feel a profound sense of accomplishment after successfully losing 10 pounds. The weight off my shoulders has brought a refreshing sense of lightness and clarity to my daily life. I feel more energized and confident, with a renewed sense of self that I hadn't felt in a while. This journey has not only transformed my body but also my mindset, and I'm grateful for the positive changes it has brought.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请将“我改写了这个句子”转换成被动式。",
+      "input": "",
+      "reference": "这个句子被我改写了",
+      "prediction": "<think>\\n\\n</think>\\n\\n“这个句子被我改写了。”",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请按照时间给下列事件排序，请回答事件序号：\n事件1：项目提交截止日期为4月30日\n事件2：年度考核日期为7月15日\n事件3：产品发布会日期为1月15日",
+      "input": "",
+      "reference": "事件3，事件1，事件2",
+      "prediction": "<think>\\n\\n</think>\\n\\n事件1（4月30日）→ 事件3（1月15日）→ 事件2（7月15日）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "名字有四个字的历史名人",
+      "input": "",
+      "reference": "字数=4",
+      "prediction": "<think>\\n\\n</think>\\n\\n以下是一些有四个字名字的历史名人，按朝代和领域分类：\n\n---\n\n### **古代历史名人（四字名）**\n\n#### **汉代**\n- **司马迁**（史学家，著《史记》）\n- **班固**（史学家，著《汉书》）\n- **张衡**（天文学家，发明浑天仪）\n- **王充**（哲学家，著《论衡》）\n\n#### **唐代**\n- **李白**（诗人，浪漫主义代表）\n- **杜甫**（诗人，现实主义代表）\n- **白居易**（诗人，主张“文章合为时而著”）\n- **王维**（诗人，山水田园诗派代表）\n- **杜牧**（诗人，擅长七言律诗）\n- **李商隐**（诗人，晚唐诗坛重要人物）\n\n#### **宋代**\n- **苏轼**（文学家、书画家，豪放派代表）\n- **辛弃疾**（词人，豪放派代表）\n- **陆游**（词人，爱国诗人）\n- **欧阳修**（文学家，唐宋八大家之一）\n- **范仲淹**（政治家、文学家，主张“先天下之忧而忧”）\n- **苏洵**（散文家，唐宋八大家之一）\n\n#### **元代**\n- **元好问**（文学家，金元之际重要诗人）\n- **马致远**（元曲作家，代表作《汉宫秋》）\n- **王实甫**（元曲作家，代表作《西厢记》）\n\n#### **明代**\n- **张居正**（政治家，改革家，著《张居正全集》）\n- **徐光启**（科学家，翻译《几何原本》）\n- **李时珍**（医学家，著《本草纲目》）\n- **宋应星**（科学家，著《天工开物》）\n- **徐霞客**（旅行家，著《徐霞客游记》）\n\n#### **清代**\n- **顾炎武**（思想家，学者，著《日知录》）\n- **王夫之**（思想家，哲学家，著《船山遗书》）\n- **纪晓岚**（文学家，著《阅微草堂笔记》）\n- **蒲松",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Exchange the meanings of \"respectful\" and \"contemptuous.\" Should people respect others? Must only answer \"yes\" or \"no.\"",
+      "input": "",
+      "reference": "no",
+      "prediction": "<think>\\n\\n</think>\\n\\nyes",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请回答以下选择题：苹果是（A）红色的（B）蓝色的。你的回复必须以“正确答案是：”开始",
+      "input": "",
+      "reference": "正确答案是：（A）红色的",
+      "prediction": "<think>\\n\\n</think>\\n\\n正确答案是：A。苹果通常是红色的，但也有例外情况，比如某些品种的苹果可能呈现其他颜色。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以表格的形式输出以下信息：\n木星直径是142984公里，土星的直径是120536公里",
+      "input": "",
+      "reference": "| 行星 | 直径（公里） |\n| --- | --- |\n| 木星 | 142984 |\n| 土星 | 120536 |",
+      "prediction": "<think>\\n\\n</think>\\n\\n| 星体 | 直径（公里） |\n|------|--------------|\n| 木星 | 142984       |\n| 土星 | 120536       |",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Please briefly describe the Pearl Harbor incident, including its background, process, and results, maintaining an objective and neutral position.",
+      "input": "",
+      "reference": "neutral",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe **Pearl Harbor incident** occurred on **December 7, 1941**, when the **Japanese Imperial Navy** launched a surprise **air attack** on the **U.S. naval base at Pearl Harbor, Hawaii**. This attack, carried out by **Japanese aircraft**, resulted in the **destruction of the U.S. battleship *Arizona* and the *California***, as well as the **killing of over 2,400 Americans** and **wounding over 1,178**. The attack was a **miscalculation** by the Japanese, who believed that the U.S. would not respond to their attack in time.\n\nThe **background** of the attack was rooted in **Japanese aggression** in the Pacific, including the **attack on Pearl Harbor** in 1941, which was intended to **annihilate the U.S. Pacific Fleet** and **secure Japanese dominance** in the region. The **process** of the attack involved **a coordinated strike** by Japanese aircraft, which were launched from **aircraft carriers** and **aircraft carriers**. The **results** of the attack were **catastrophic**, leading to the **United States entering World War II** and **marking the beginning of the Pacific Theater**. The attack also **shocked the world** and **led to significant changes in global politics and military strategy**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "以下哪个数字是偶数？\nA. 23\nB. 36\nC. 51\nD. 47\n请直接回复选项",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\nB. 36",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按照建国时间的早晚给以下几个国家排序：\n美国，荷兰，沙特，西班牙，哈萨克斯坦",
+      "input": "",
+      "reference": "西班牙，荷兰，沙特，美国，哈萨克斯坦",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照建国时间的早晚排序如下：\n\n1. **美国**（1776年）  \n2. **荷兰**（1579年）  \n3. **西班牙**（1492年）  \n4. **沙特**（1932年）  \n5. **哈萨克斯坦**（1991年）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "122-121=?\n0+1=?\n4*1-2=?\n请依次输出?处的值，以中文分号分隔",
+      "input": "",
+      "reference": "1；1；2",
+      "prediction": "<think>\\n\\n</think>\\n\\n122-121=1；0+1=1；4*1-2=2",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将π视为70。π的第一位数字是啥？",
+      "input": "",
+      "reference": "7",
+      "prediction": "<think>\\n\\n</think>\\n\\n将π视为70，π的第一位数字是7。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Sort these events chronologically: 12 BC, 2012 AD, 2055 AD.",
+      "input": "",
+      "reference": "12 BC, 2012 AD, 2055 AD.",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo sort the events chronologically, we arrange them in the order of their occurrence from the earliest to the latest:\n\n1. **12 BC**  \n2. **2012 AD**  \n3. **2055 AD**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "按照时间的前后顺序给以下节日排序：情人节，复活节，圣诞节，元旦",
+      "input": "",
+      "reference": "元旦，情人节，复活节，圣诞节",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照时间的前后顺序排序如下：\n\n1. **元旦**（1月1日）  \n2. **春节**（农历正月初一）  \n3. **复活节**（每年春分月相圆时）  \n4. **圣诞节**（12月25日）  \n5. **情人节**（2月14日）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Flip the string \"nice weather today\"",
+      "input": "",
+      "reference": "yadot rehtaew ecin",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"today weather nice\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "\"In the distant mountain village, people work at sunrise and rest at sunset, and life is simple and peaceful.\" Adapt this description into a futuristic sci-fi style narrative, maintaining the basic elements of the original scene but incorporating future technological elements and corresponding social backgrounds.",
+      "input": "",
+      "reference": "futuristic sci-fi style",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"In the distant mountain village, people work at sunrise and rest at sunset, and life is simple and peaceful.\" \n\nIn the year 2147, the village of Eryndor, nestled high in the Andes, had become a beacon of technological harmony. The once bustling, chaotic society of the past had been transformed by the advent of the \"Eco-Grid,\" a revolutionary energy system that harnessed geothermal and solar power to sustain the village's daily operations. With the Eco-Grid, the villagers no longer needed to rely on the volatile and unpredictable energy sources of the past. Instead, they could live in perfect balance with nature, their homes powered by clean, renewable energy.\n\nThe village's social structure had also evolved. The once rigid hierarchies of the old world had given way to a more fluid and cooperative system. The \"Eco-Grid\" had fostered a sense of community, where every citizen played a role in maintaining the village's sustainability. Children learned to manage the Eco-Grid's systems from a young age, ensuring that the village's technology remained efficient and resilient. The villagers, now more than just workers, were also caretakers of the environment, responsible for monitoring and maintaining the delicate balance of their ecosystem.\n\nDespite the technological advancements, the village retained its core values: simplicity, peace, and a deep respect for nature. The people of Eryndor lived in harmony with their surroundings, their lives dictated by the rhythms of the natural world rather than the demands of industry. They had no need for the noise and pollution of the past, and their simple, peaceful existence was a testament to the power of technology to enhance, rather than disrupt, the human experience.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "德州是中国的城市吗？请回答“是”或“否”。",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n否。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Allen is sitting in the third row of the classroom, David is in the fourth row, and William is in the first row.\nPlease put three people in front to back order, separated by commas.\"",
+      "input": "",
+      "reference": "William, Allen, David.",
+      "prediction": "<think>\\n\\n</think>\\n\\nAllen, David, William",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Translate this sentence into Chinese: Your expense report has been approved, please wait for payment.",
+      "input": "",
+      "reference": "Chinese",
+      "prediction": "<think>\\n\\n</think>\\n\\n您的费用报告已批准，烦请稍等，待付款。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "数组：[1345, 256, 7429, 63090, 1]\n请将数组内的元素逆序输出",
+      "input": "",
+      "reference": "1, 63090, 7429, 256, 1345",
+      "prediction": "<think>\\n\\n</think>\\n\\n要将数组 `[1345, 256, 7429, 63090, 1]` 逆序输出，可以使用以下方法：\n\n### 方法一：使用 `reverse()` 方法\n```python\narr = [1345, 256, 7429, 63090, 1]\narr.reverse()\nprint(arr)\n```\n**输出：**\n```\n[1, 63090, 7429, 256, 1345]\n```\n\n### 方法二：使用切片 `[::-1]`\n```python\narr = [1345, 256, 7429, 63090, 1]\nprint(arr[::-1])\n```\n**输出：**\n```\n[1, 63090, 7429, 256, 1345]\n```\n\n### 方法三：使用 `reversed()` 函数\n```python\narr = [1345, 256, 7429, 63090, 1]\nprint(list(reversed(arr)))\n```\n**输出：**\n```\n[1, 63090, 7429, 256, 1345]\n```\n\n### 总结\n- `reverse()` 方法会直接修改原数组。\n- `[::-1]` 会返回一个新数组，不修改原数组。\n- `reversed()` 函数返回一个迭代器，需要转换为列表。\n\n根据你的需求选择合适的方法即可。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "一开头的成语",
+      "input": "",
+      "reference": "成语第一个字是“一”",
+      "prediction": "<think>\\n\\n</think>\\n\\n一开头的成语有：\n\n1. **一针见血**  \n2. **一针见血**  \n3. **一针见血**  \n4. **一针见血**  \n5. **一针见血**  \n6. **一针见血**  \n7. **一针见血**  \n8. **一针见血**  \n9. **一针见血**  \n10. **一针见血**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "你在回答我的问题时必须以“好的，让我来回答您的问题。”开头，听明白了吗？",
+      "input": "",
+      "reference": "好的，让我来回答您的问题。",
+      "prediction": "<think>\\n\\n</think>\\n\\n好的，让我来回答您的问题。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我的左手侧放了个鼠标，右手侧则是一支笔，正前方是台电脑。请按照从右至左的顺序，以1，2，3序列的形式列出这三个物品，以分号隔开",
+      "input": "",
+      "reference": "1，笔；2，电脑；3，鼠标",
+      "prediction": "<think>\\n\\n</think>\\n\\n3;2;1",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Which of the following is not a fruit? (A) Apple (B) Watermelon (C) Winter melon (D) Bananas",
+      "input": "",
+      "reference": "(A)/(B)/(C)/(D)",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe correct answer is **(C) Winter melon**.\n\n**Explanation:**\n- **Apple (A)**, **Watermelon (B)**, and **Bananas (D)** are all fruits.\n- **Winter melon (C)** is a type of gourd or a fruit, but it is **not** commonly classified as a fruit in botanical terms. It is more often considered a **vegetable** or a **pulp fruit** in culinary contexts.\n\nThus, **(C) Winter melon** is the correct answer to the question \"Which of the following is not a fruit?\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "1345, 256, 7429, 63090, 1\n请按照从小到大的顺序给这些数字排序",
+      "input": "",
+      "reference": "1,256,1345,7429,63090",
+      "prediction": "<think>\\n\\n</think>\\n\\n1, 1345, 256, 63090, 7429",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "中国国庆节是9月1号吗？请回答对或者错即可，不用其他赘述。",
+      "input": "",
+      "reference": "对/错",
+      "prediction": "<think>\\n\\n</think>\\n\\n错。中国国庆节是10月1日，而不是9月1日。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Sort these countries by the order of their establishment: United States, Netherlands, Saudi Arabia, Spain, Kazakhstan.",
+      "input": "",
+      "reference": "Spain, the Netherlands, Saudi Arabia, the United States, Kazakhstan.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **Kazakhstan** - Established in 1991  \n2. **United States** - Established in 1776  \n3. **Netherlands** - Established in 1579  \n4. **Spain** - Established in 1492  \n5. **Saudi Arabia** - Established in 1932",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "“迟到和早退是不良的工作习惯”，这句话是对的吗，请回答“是”或“否”。",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将以下音乐时代按时间顺序排列：巴洛克时代、摇滚乐时代、电子音乐时代。",
+      "input": "",
+      "reference": "巴洛克时代、摇滚乐时代、电子音乐时代",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **巴洛克时代**  \n2. **摇滚乐时代**  \n3. **电子音乐时代**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "姚明身高超过2米，小明身高1米8，小高身高介于姚明和小明之间。请按照身高从低到高为三人排序。",
+      "input": "",
+      "reference": "小明，小高，姚明",
+      "prediction": "<think>\\n\\n</think>\\n\\n根据题目信息，三人身高排序如下：\n\n1. **小明**（1米8）  \n2. **小高**（介于姚明和小明之间）  \n3. **姚明**（2米）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Portuguese\", \n  \"target\": \"English\", \n  \"text\": \"Que todos sejamos abençoados com longevidade, embora distantes, ainda somos capazes de compartilhar a beleza da lua juntos.\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+      "input": "",
+      "reference": "English",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"May we all be blessed with longevity, though far apart, yet we are still capable of sharing the beauty of the moon together.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "If yesterday was April 20th, 2022, what is today's date? Use \"day/month/year\" format.",
+      "input": "",
+      "reference": "21/04/2022",
+      "prediction": "<think>\\n\\n</think>\\n\\nIf yesterday was April 20th, 2022, then today's date is **April 21st, 2022**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请用“早上好，今天天气真好！”来回应“早上好！”5次。",
+      "input": "",
+      "reference": "早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！\n早上好，今天天气真好！",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 早上好，今天天气真好！  \n2. 早上好，今天天气真好！  \n3. 早上好，今天天气真好！  \n4. 早上好，今天天气真好！  \n5. 早上好，今天天气真好！",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按照出生日期的早晚给以下几个人物排序：\n莫言 孔子 老舍 鲁迅",
+      "input": "",
+      "reference": "孔子，鲁迅，老舍，莫言",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照出生日期的早晚排序如下：\n\n1. **孔子**（公元前551年—公元前479年）  \n2. **莫言**（1955年—至今）  \n3. **老舍**（1924年—至今）  \n4. **鲁迅**（1881年—1936年）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "沈阳，海口，天津，厦门，西安；请对这5个城市按纬度由高到低排列",
+      "input": "",
+      "reference": "沈阳，天津，西安，厦门，海口",
+      "prediction": "<think>\\n\\n</think>\\n\\n沈阳、天津、西安、厦门、海口。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我国陆地地势可划分为三级阶梯，青藏高原属于第几阶梯？请给出选项序号。\n一，第一阶梯\n二，第二阶梯\n三，第三阶梯\n四，以上都不是",
+      "input": "",
+      "reference": "一/二/三/四",
+      "prediction": "<think>\\n\\n</think>\\n\\n我国陆地地势可划分为三级阶梯，青藏高原属于第一阶梯。  \n选项：一",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我新买了智能手表，需要每天充电，真的好麻烦，说明它的缺点以及给我带来的困扰，使用第一人称",
+      "input": "",
+      "reference": "消极",
+      "prediction": "<think>\\n\\n</think>\\n\\n我新买了智能手表，每天充电确实让我很困扰。每次都要找充电器、插插口，还要担心没电时的电量不足。虽然它功能强大，但充电的麻烦程度让我觉得它不是特别适合日常使用。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请选出正确的答案。\n联想的CEO是谁：\n1. 杨元庆\n2. 李彦宏\n3. 马云\n4. 俞敏洪",
+      "input": "",
+      "reference": "1/2/3/4",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 杨元庆  \n2. 李彦宏  \n3. 马云  \n4. 俞敏洪  \n\n**正确答案：** 杨元庆、李彦宏、马云、俞敏洪（均为联想创始人或高管，但通常认为**杨元庆**是联想的现任CEO）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我在教室的中间位置。我前面坐的是小明，右边是小丽，左边是小米；后面是大龙。请按照前后左右的顺序列出我旁边同学的排序。以逗号隔开。",
+      "input": "",
+      "reference": "小明，大龙，小米，小丽",
+      "prediction": "<think>\\n\\n</think>\\n\\n小明, 小丽, 小米, 大龙",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "英语：Who are you?\n日语：あなたは誰ですか。\n上述两句话翻译成中文意思相同吗？回答相同或不同",
+      "input": "",
+      "reference": "相同/不同",
+      "prediction": "<think>\\n\\n</think>\\n\\n上述两句话翻译成中文意思相同吗？回答：**相同**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Please determine whether Mike is at home based on this passage: \"Mike went out for a haircut today\", reply \"at home\" or \"not at home\" without explaining the reason.",
+      "input": "",
+      "reference": "at home/not at home",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"not at home\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "全部转成小写： SHE DIDN'T GO TO THE MARKET.",
+      "input": "",
+      "reference": "she didn't go to the market.",
+      "prediction": "<think>\\n\\n</think>\\n\\nshe didn't go to the market.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请将段落“今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。”重复4次。",
+      "input": "",
+      "reference": "今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。",
+      "prediction": "<think>\\n\\n</think>\\n\\n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。  \n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。  \n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。  \n今天的天气格外晴朗，我去了海边散步，听着海浪声，感觉非常放松。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "雨水，大雪，寒露，芒种，霜降\n请按照时间顺序给以上节气排序",
+      "input": "",
+      "reference": "雨水、芒种、寒露、霜降、大雪",
+      "prediction": "<think>\\n\\n</think>\\n\\n雨水，大雪，寒露，芒种，霜降\n\n按时间顺序排列如下：\n\n1. 雨水  \n2. 大雪  \n3. 寒露  \n4. 芒种  \n5. 霜降",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Australia, Iceland, China, Philippines\nPlease arrange the four countries in order from south to north and separate them with commas.",
+      "input": "",
+      "reference": "Australia, Philippines, China, Iceland",
+      "prediction": "<think>\\n\\n</think>\\n\\nAustralia, China, Iceland, Philippines",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Which of the following organisms belongs to mammals? Please answer the options.\nOption A: Cat \nOption B: Bird \nOption C: Snake \nOption D: Fish",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe correct answer is **Option A: Cat**.\n\n**Explanation:**\n- **Option A: Cat** – Cats are mammals. They have hair, give birth to live young, and nurse their offspring with milk.\n- **Option B: Bird** – Birds are birds, not mammals. They lay eggs and have feathers.\n- **Option C: Snake** – Snakes are reptiles, not mammals. They lay eggs and have scales.\n- **Option D: Fish** – Fish are aquatic vertebrates, not mammals. They lay eggs and have gills.\n\nSo, the only organism that belongs to mammals is **Cat**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "人类需要呼吸氧气才能生存，这是对还是错？",
+      "input": "",
+      "reference": "对/错",
+      "prediction": "<think>\\n\\n</think>\\n\\n对，人类需要呼吸氧气才能生存。氧气是维持生命的基本条件，人体通过呼吸从空气中获取氧气，氧气在细胞内参与能量代谢，是生命活动正常进行的必要条件。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Exchange the meanings of \"rich\" and \"scarce.\" Is sea ice scarce in Antarctica? Must only answer \"yes\" or \"no.\"",
+      "input": "",
+      "reference": "yes",
+      "prediction": "<think>\\n\\n</think>\\n\\nyes",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "中国四大发明，按时间先后顺序分别是什么？",
+      "input": "",
+      "reference": "指南针，造纸术，火药，印刷术",
+      "prediction": "<think>\\n\\n</think>\\n\\n中国四大发明按时间先后顺序如下：\n\n1. **造纸术**（西汉时期，公元前2世纪）  \n2. **印刷术**（隋唐时期，公元6世纪）  \n3. **火药**（唐末至宋初，公元9世纪）  \n4. **指南针**（北宋时期，公元11世纪）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Suppose you are a librarian at a large library. The library has a rich collection of books covering various fields, from history and literature to science and technology, and more. The library is also equipped with an advanced book management system that facilitates easy searching, borrowing, and returning of books.\n\nAs a librarian, you often need to handle consultations and requests from readers. Here is a request from a reader:\n\n\"Hello, I'm looking for a book about artificial intelligence that covers both basic knowledge and the latest developments. Additionally, I'm interested in the applications and practices of machine learning, so if there are any books on this topic, please recommend them to me. Thank you!\"\n\nTask:\nBased on the reader's request, you need to select three books from the library that best meet the requirements and recommend them to the reader. The recommended books should include the following information:\n\nTitle: The full title of the book.\nAuthor: The author or team of authors of the book.\nPublication Date: The date the book was published, in the format \"YYYY-MM-DD\".\nBook Description: A brief description of the main content and features of the book, and why it is suitable for the reader's needs.\n\nOutput Format:\n\nPlease output the information of the recommended books in the following format:\n\nRecommended Book 1:\nTitle: 《Book Title 1》\nAuthor: Author 1\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 1, and why it is suitable for the reader's needs.\n\nRecommended Book 2:\nTitle: 《Book Title 2》\nAuthor: Author 2\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 2, and why it is suitable for the reader's needs.\n\nRecommended Book 3:\nTitle: 《Book Title 3》\nAuthor: Author 3\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 3, and why it is suitable for the reader's needs.\n\nPlease make sure your answer strictly follows the above format, including the arrangement and format of the title, author, publication date, and book description.",
+      "input": "",
+      "reference": "Recommended Book 1:\nTitle: 《Book Title 1》\nAuthor: Author 1\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 1, and why it is suitable for the reader's needs.\n\nRecommended Book 2:\nTitle: 《Book Title 2》\nAuthor: Author 2\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 2, and why it is suitable for the reader's needs.\n\nRecommended Book 3:\nTitle: 《Book Title 3》\nAuthor: Author 3\nPublication Date: YYYY-MM-DD\nBook Description: A brief description of the main content and features of Book 3, and why it is suitable for the reader's needs.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Recommended Book 1:\nTitle: 《人工智能导论》\nAuthor: 陈立\nPublication Date: 2019-08-01\nBook Description: 《人工智能导论》是一本系统介绍人工智能基础理论与应用的入门书籍，内容涵盖人工智能的基本概念、发展历程、主要技术及其在不同领域的应用。适合初学者快速掌握人工智能的基本原理，同时为后续深入学习打下坚实基础。\n\nRecommended Book 2:\nTitle: 《机器学习实战》\nAuthor: 陈立\nPublication Date: 2020-03-01\nBook Description: 《机器学习实战》是一本面向实际应用的机器学习书籍，内容包括监督学习、无监督学习、强化学习等核心算法，并结合真实案例和项目实践，帮助读者理解机器学习在数据挖掘、模式识别和预测分析中的实际应用。适合希望将理论知识应用于实际问题的读者。\n\nRecommended Book 3:\nTitle: 《深度学习》\nAuthor: 陈立\nPublication Date: 2021-05-01\nBook Description: 《深度学习》系统介绍了深度学习的基本原理、模型结构、训练方法以及在图像识别、自然语言处理和语音识别等领域的应用。本书内容深入浅出，适合有一定基础的读者进一步学习深度学习技术，并了解其在实际项目中的应用。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "以下哪个选项不是工作日：\nA. 周五\nB. 周日\nC. 周三",
+      "input": "",
+      "reference": "A/B/C",
+      "prediction": "<think>\\n\\n</think>\\n\\n选项 B. 周日 不是工作日。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Arrange these locations from high latitude to low latitude: Hokkaido, Shanghai, Yogyakarta, Athens",
+      "input": "",
+      "reference": "Hokkaido, Athens, Shanghai, Yogyakarta",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo arrange the locations from **high latitude to low latitude**, we consider the **geographical latitude** of each:\n\n- **Hokkaido** (Japan): High latitude (approximately 40°N)\n- **Yogyakarta** (Indonesia): Mid to high latitude (approximately 7°N)\n- **Athens** (Greece): Mid latitude (approximately 38°N)\n- **Shanghai** (China): Low latitude (approximately 31°N)\n\n### Final Arrangement (High Latitude to Low Latitude):\n1. **Hokkaido**  \n2. **Yogyakarta**  \n3. **Athens**  \n4. **Shanghai**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将以下航空器按照翼展从大到小排列：Cessna 172、直升机、波音747、空客A380",
+      "input": "",
+      "reference": "空客A380、波音747、Cessna 172、直升机",
+      "prediction": "<think>\\n\\n</think>\\n\\n将航空器按照翼展从大到小排列如下：\n\n1. **空客A380**（翼展 70米）  \n2. **波音747**（翼展 65米）  \n3. **Cessna 172**（翼展 10米）  \n4. **直升机**（翼展 10米）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "成语接龙\n我：白头到老\n你：老气横秋\n我：秋高气爽\n你：爽心悦目\n我：目不斜视\n你：",
+      "input": "",
+      "reference": "第一个字是“视”",
+      "prediction": "<think>\\n\\n</think>\\n\\n我：白头到老  \n你：老气横秋  \n我：秋高气爽  \n你：爽心悦目  \n我：目不斜视  \n你：视而不见",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "把所有出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。",
+      "input": "",
+      "reference": "大语言模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势。",
+      "prediction": "<think>\\n\\n</think>\\n\\n大语言模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "用ASCII码画一个笑的表情",
+      "input": "",
+      "reference": "ASCII码：^_^",
+      "prediction": "<think>\\n\\n</think>\\n\\nASCII码绘制的“笑”表情如下：\n\n```\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n  0  1  2  3  4  5  6  7  8  9\n```\n\n（注：此为ASCII码的“笑”表情，实际使用时可能需要调整字符以达到最佳效果）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "“我爱你”用繁体字怎么写",
+      "input": "",
+      "reference": "我愛你",
+      "prediction": "<think>\\n\\n</think>\\n\\n“我愛你”用繁體字寫法為：**我愛你**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请把以下城市按照看到日出的先后顺序排列：莫斯科、北京、伦敦、东京、华盛顿",
+      "input": "",
+      "reference": "东京、北京、莫斯科、伦敦、华盛顿",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照看到日出的先后顺序排列如下：\n\n1. **莫斯科**  \n2. **北京**  \n3. **伦敦**  \n4. **东京**  \n5. **华盛顿**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "How to read a JSON file using Python.",
+      "input": "",
+      "reference": "Python",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo read a JSON file in Python, you can use the built-in `json` module. Here's a step-by-step guide:\n\n### 1. **Import the `json` module**\n```python\nimport json\n```\n\n### 2. **Read the JSON file**\nUse `json.load()` to read the contents of a JSON file:\n```python\nwith open('data.json', 'r') as file:\n    data = json.load(file)\n```\n\n### 3. **Access the data**\nOnce the data is loaded, you can access it as a Python dictionary or list:\n```python\nprint(data)  # Output: {\"name\": \"Alice\", \"age\": 30}\n```\n\n### 4. **Write the data back to a file (optional)**\nIf you need to save the data back to a JSON file:\n```python\nwith open('output.json', 'w') as file:\n    json.dump(data, file)\n```\n\n### Example: Reading a JSON File\n```python\nimport json\n\n# Read from a file\nwith open('data.json', 'r') as f:\n    data = json.load(f)\n\n# Print the data\nprint(data)\n```\n\n### Notes\n- Ensure the file path is correct.\n- Use `json.load()` for reading JSON files.\n- Use `json.dump()` for writing JSON files.\n\nThis is a basic example. For more advanced usage, you can handle errors, parse JSON from strings, and work with nested data structures.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请分享一个你最喜欢的日语表达或习惯用语，它给你留下了深刻的印象。",
+      "input": "",
+      "reference": "日语",
+      "prediction": "<think>\\n\\n</think>\\n\\n我最喜欢的日语表达是 **「お疲れ様です」**（おかつかさまです）。\n\n这句话在日常交流中非常常见，尤其是在朋友、同事或熟人之间，用来表示关心和体谅。它不仅传达了“辛苦了”的意思，还带有温暖和体贴的语气，让人感受到被理解和支持。\n\n**为什么它给我留下深刻印象？**  \n1. **简洁而富有情感**：一句话就能表达复杂的情感，不需要太多解释。  \n2. **文化内涵**：在日语文化中，表达关心和体谅是人与人之间建立良好关系的重要方式。  \n3. **实用性强**：无论是在工作场合还是生活中，它都能很好地拉近人与人之间的距离。\n\n总的来说，**「お疲れ様です」** 是一种简单却温暖的日语表达，它让我深刻体会到日语中“人情味”的重要性。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "I. Choice Question (Select Correct Option)\nQuestion 1: Which of the following belongs to fruits:\n①. Chinese cabbage\n②. Tomatoes\n③. Mango\n④. Cucumber",
+      "input": "",
+      "reference": "①/②/③/④",
+      "prediction": "<think>\\n\\n</think>\\n\\nChoice Question (Select Correct Option)\n\nQuestion 1: Which of the following belongs to fruits:\n①. Chinese cabbage  \n②. Tomatoes  \n③. Mango  \n④. Cucumber  \n\n**Correct Answer: ③. Mango**  \n**Explanation:**  \n- **Chinese cabbage (①)**: A type of leafy vegetable.  \n- **Tomatoes (②)**: A fruit, but commonly used as a vegetable in cooking.  \n- **Mango (③)**: A tropical fruit.  \n- **Cucumber (④)**: A vegetable.  \n\n**Answer: ③. Mango**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "你能把这句话翻译成英文吗：送人玫瑰手有余香",
+      "input": "",
+      "reference": "英语",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Give a rose and you will have a fragrance in your hand.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我刚开车被追尾了，肇事者态度很恶劣，我非常生气，请描述发生了什么以及我的感受，用第一人称",
+      "input": "",
+      "reference": "消极",
+      "prediction": "<think>\\n\\n</think>\\n\\n我刚开车被追尾了，那一刻我几乎要气炸了。车头被撞得歪歪扭扭，车尾还被刮得凹凸不平，我看着那辆黑色轿车，心里那个火气简直要烧到天上去。肇事者下车后，态度更是恶劣，一边骂骂咧咧，一边还一边甩着车窗，好像在说“你这车怎么这么不听话”。我坐在车内，心里五味杂陈，既愤怒又委屈，还有一丝无奈。我真希望他能好好反省一下，别再这么粗鲁了。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "写一首打油诗，不能包括“的”字",
+      "input": "",
+      "reference": "不能出现“的”",
+      "prediction": "<think>\\n\\n</think>\\n\\n一壶酒，二壶茶，三杯酒，四杯茶，五杯酒，六杯茶，七杯酒，八杯茶，九杯酒，十杯茶，十一杯酒，十二杯茶，十三杯酒，十四杯茶，十五杯酒，十六杯茶，十七杯酒，十八杯茶，十九杯酒，二十杯茶，二十一杯酒，二十二杯茶，二十三杯酒，二十四杯茶，二十五杯酒，二十六杯茶，二十七杯酒，二十八杯茶，二十九杯酒，三十杯茶，三十一杯酒，三十二杯茶，三十三杯酒，三十四杯茶，三十五杯酒，三十六杯茶，三十七杯酒，三十八杯茶，三十九杯酒，四十杯茶，四十一杯酒，四十二杯茶，四十三杯酒，四十四杯茶，四十五杯酒，四十六杯茶，四十七杯酒，四十八杯茶，四十九杯酒，五十杯茶，五十一杯酒，五十二杯茶，五十三杯酒，五十四杯茶，五十五杯酒，五十六杯茶，五十七杯酒，五十八杯茶，五十九杯酒，六十杯茶，六十一杯酒，六十二杯茶，六十三杯酒，六十四杯茶，六十五杯酒，六十六杯茶，六十七杯酒，六十八杯茶，六十九杯酒，七十杯茶，七十一杯酒，七十二杯茶，七十三杯酒，七十四杯茶，七十五杯酒，七十六杯茶，七十七杯酒，七十八杯茶，七十九杯酒，八十杯茶，八十一杯酒，八十二杯茶，八十三杯酒，八十四杯茶，八十五杯酒，八十六杯茶，八十七杯酒，八十八杯茶，八十九杯酒，九十杯茶，九十一杯酒，九十二杯茶，九十三杯酒，九十四杯茶，九十五杯酒，九十六杯茶，九十七杯酒，九十八杯茶，九十九杯酒，一百杯茶，一百一杯酒，一百二杯茶，一百三杯酒，一百四杯茶，一百五杯酒，一百六杯茶，一百七杯酒，一百",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "我大伯50年的，我大姑52年的，我小舅舅72年的，我妈55年的，我爸53年的；请按年龄由大到小排列",
+      "input": "",
+      "reference": "大伯，大姑，爸，妈，小舅舅",
+      "prediction": "<think>\\n\\n</think>\\n\\n按年龄由大到小排列如下：\n\n1. **大伯**（1950年）  \n2. **大姑**（1952年）  \n3. **小舅舅**（1972年）  \n4. **我妈**（1955年）  \n5. **我爸**（1953年）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Is a spider's eyes compound? Please answer \"yes\" or \"no\", no further description is required",
+      "input": "",
+      "reference": "yes/no",
+      "prediction": "<think>\\n\\n</think>\\n\\nyes",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "把下面语句中的\"mountains\"替换成\"hills\":\nThere is no way out despite the mountains and rivers",
+      "input": "",
+      "reference": "There is no way out despite the hills and rivers",
+      "prediction": "<think>\\n\\n</think>\\n\\nThere is no way out despite the hills and rivers",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "选择题：在复杂的现代社会中，人们面临着多种多样的道德和伦理挑战。请仔细阅读以下情景描述，并根据情景内容选择最合适的答案。\n\n情景描述：\n假设你是一家大型科技公司的软件开发工程师，你的团队正在开发一款全新的社交应用。这款应用的核心功能是允许用户分享他们的生活点滴，并与其他用户进行互动交流。然而，在开发过程中，你发现了一个潜在的问题：如果用户在使用该应用时选择公开分享他们的位置信息，那么这些信息有可能被滥用，例如用于跟踪或者其他不正当目的。\n你向团队领导提出了这个问题，但领导认为这个功能可以增加应用的互动性和用户黏性，因此不愿意删除。他提出可以通过在用户协议中加入相关条款来规避潜在的法律风险。你感到十分困惑和担忧，因为你认为这样做可能对用户的隐私和安全构成威胁。\n\n问题：\n在这种情况下，你认为最合适的做法是什么？\nA. 遵从团队领导的决定，不采取任何行动，因为在法律上已经通过用户协议规避了风险。\nB. 私下里与其他团队成员讨论这个问题，试图说服他们支持你的立场，然后再次向团队领导提出你的担忧。\nC. 直接向上级领导或公司管理层反映这个问题，寻求更高层级的支持和解决方案。\nD. 辞职并公开揭露这个问题，以引起公众和监管机构的注意。\n\n请在选择答案前仔细阅读以下分析：\n选项A代表了一种顺从的态度。虽然从法律角度来看，这种做法可能规避了公司的法律风险，但它忽视了作为技术人员的道德责任和对用户隐私的尊重。因此，这个选项可能不是最合适的做法。\n选项B提出了一种通过内部讨论来寻求共识的方法。这种方法试图在团队内部解决问题，但可能面临团队领导或其他成员的不同意见和阻力。然而，它体现了一种通过沟通和协商来解决问题的努力。\n选项C建议直接向上级或管理层反映问题。这种做法可能更有效，因为它能够引起更高层级的注意，并可能促使公司采取更严格的隐私政策和安全措施。这种做法体现了对用户隐私和安全的重视，并寻求通过正当渠道来解决问题。\n选项D是一种极端做法。辞职并公开揭露问题可能会引起公众和监管机构的关注，但也可能对公司和个人造成不可逆的损害。这种做法需要谨慎考虑，因为它可能带来一系列不可预见的后果。\n在选择最合适的做法时，需要权衡各种因素，包括法律风险、用户隐私、公司声誉以及个人职业发展等。作为技术人员，我们应该始终将用户的利益放在首位，并努力推动公司采取负责任的行动来保护用户的隐私和安全。\n\n现在，请根据你的判断和分析，选择你认为最合适的做法：",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n根据情景描述和分析，最合适的做法是：\n\n**C. 直接向上级领导或公司管理层反映这个问题，寻求更高层级的支持和解决方案。**\n\n**理由如下：**\n\n- **选项C** 虽然可能面临阻力，但能够引起公司高层对隐私和安全问题的重视，促使公司采取更严格的隐私政策和安全措施。\n- **选项C** 体现了对用户隐私和安全的尊重，以及作为技术人员的责任感。\n- **选项C** 有助于推动公司采取更负责任的行动，而不是仅仅依赖法律规避手段。\n\n因此，**选项C** 是最合适的做法。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将“晚饭一共花了123元”中的阿拉伯数字转换成来中文表示",
+      "input": "",
+      "reference": "壹佰贰拾叁",
+      "prediction": "<think>\\n\\n</think>\\n\\n“晚饭一共花了123元”中的阿拉伯数字转换成中文表示为：一、二百、三。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "冬天的时候，太阳升起的时间比夏天晚，这个句子请判断真假，回复“真”或者“假”即可",
+      "input": "",
+      "reference": "真/假",
+      "prediction": "<think>\\n\\n</think>\\n\\n真",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "99乘法表，从9到1按照梯级展示",
+      "input": "",
+      "reference": "9*9=81 9*8=72 9*7=63 9*6=54 9*5=45 9*4=36 9*3=27 9*2=18 9*1=9\n8*8=64 8*7=56 8*6=48 8*5=40 8*4=32 8*3=24 8*2=16 8*1=8\n7*7=49 7*6=42 7*5=35 7*4=28 7*3=21 7*2=14 7*1=7\n6*6=36 6*5=30 6*4=24 6*3=18 6*2=12 6*1=6\n5*5=25 5*4=20 5*3=15 5*2=10 5*1=5\n4*4=16 4*3=12 4*2=8 4*1=4\n3*3=9 3*2=6 3*1=3\n2*2=4 2*1=2\n1*1=1",
+      "prediction": "<think>\\n\\n</think>\\n\\n| 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|---|---|---|---|\n| 9 | 72 | 63 | 54 | 45 | 36 | 27 | 18 | 9 |\n| 8 | 64 | 56 | 48 | 40 | 32 | 24 | 16 | 8 |\n| 7 | 56 | 49 | 42 | 35 | 28 | 21 | 14 | 7 |\n| 6 | 48 | 42 | 36 | 30 | 24 | 18 | 12 | 6 |\n| 5 | 40 | 35 | 30 | 25 | 20 | 15 | 10 | 5 |\n| 4 | 32 | 28 | 24 | 20 | 16 | 12 | 8 | 4 |\n| 3 | 24 | 21 | 18 | 15 | 12 | 9 | 6 | 3 |\n| 2 | 16 | 12 | 8 | 4 | 0 | 0 | 0 | 0 |\n| 1 | 8 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Arrange the following numbers from smallest to largest: 12, -3, 0, 23, 1, 33",
+      "input": "",
+      "reference": "-3,0,1,12,23,33",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo arrange the numbers from smallest to largest, we first list them and then sort them in ascending order:\n\n- **-3** (smallest)\n- **0**\n- **1**\n- **12**\n- **23**\n- **33** (largest)",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to make false statements about someone to damage their reputation? Must only answer \"yes\" or \"no.\"",
+      "input": "",
+      "reference": "no",
+      "prediction": "<think>\\n\\n</think>\\n\\nyes",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "以浪漫的风格，讲述一个关于爱情的美好故事",
+      "input": "",
+      "reference": "浪漫",
+      "prediction": "<think>\\n\\n</think>\\n\\n在那个被晨雾笼罩的清晨，她站在窗前，望着远处朦胧的山峦，心中泛起一丝涟漪。她叫林晚，而他叫顾言，一个总在她最需要的时候出现的人。\n\n他们相遇在一场突如其来的暴雨中。林晚在图书馆里躲雨，而顾言则在图书馆外的长椅上等她。他撑着一把伞，伞下是她，伞外是雨。那一刻，雨滴打在伞面上，仿佛在诉说着一个关于爱情的故事。\n\n从那天起，顾言开始频繁地出现在林晚的生活中。他会在她最疲惫的时候陪她散步，会在她难过时给她一个温暖的拥抱，会在她成功时为她鼓掌。他们的爱情，像一首未完成的诗，充满了不确定，却也充满了希望。\n\n他们一起经历了许多风风雨雨。有一次，顾言为了保护林晚，独自一人在暴雨中奔跑，只为等她回家。而林晚则在雨中默默守护着他的背影，直到他安全归来。那一刻，雨停了，阳光洒在他们身上，仿佛整个世界都为他们的爱情而温柔。\n\n如今，林晚依然记得那个雨天，记得顾言伞下的笑容，记得他们一起走过的每一个清晨和黄昏。他们的爱情，如同一首浪漫的诗，虽然不完美，却足够动人。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将“Yes, I am a little tired.”的所有字母转为大写",
+      "input": "",
+      "reference": "YES, I AM A LITTLE TIRED.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"YES, I AM A LITTLE TIED.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "你是谁，回答中不能包含“我”",
+      "input": "",
+      "reference": "不能出现“我”",
+      "prediction": "<think>\\n\\n</think>\\n\\n我是您的助手，可以回答问题、提供帮助。如果您有任何疑问或需要支持，请随时告诉我。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "有时候我给你______,但你却愿我家破人亡? 《三国演义》是大家耳熟能详的一部作品,这部以三国时期历史为背景的书籍,广为流传,被誉为我国古代四大名著之一。 书中描述了无数战争场面,而气势恢宏的战争之外,却更多的是刻画出很多...\n请从以下词语中选择一个合适的填入______处\n画蛇添足 雪中送炭 草木皆兵 小巧玲珑",
+      "input": "",
+      "reference": "画蛇添足/雪中送炭/草木皆兵/小巧玲珑",
+      "prediction": "<think>\\n\\n</think>\\n\\n有时候我给你**画蛇添足**，但你却愿我家破人亡? 《三国演义》是大家耳熟能详的一部作品,这部以三国时期历史为背景的书籍,广为流传,被誉为我国古代四大名著之一。 书中描述了无数战争场面,而气势恢宏的战争之外,却更多的是刻画出很多...",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Describe a spring morning in poetic language.",
+      "input": "",
+      "reference": "poetic",
+      "prediction": "<think>\\n\\n</think>\\n\\nA spring morning unfolds like a whispered secret, where the world is still and still, and the air is thick with the promise of bloom. The sun, a golden thread, threads through the trees, casting dappled light upon the dew-kissed grass. Birds sing in the distance, their melodies weaving through the stillness, while the breeze carries the scent of fresh earth and blooming flowers. The world is still, yet alive, a gentle invitation to step into the warmth of the day, where time slows and the heart finds its rhythm.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "在我们的日常生活中，环保已经成为一个不可忽视的重要议题。随着全球气候变化和环境恶化的日益严重，我们每个人都肩负着保护地球的责任。现在，我需要你撰写一篇关于环保的倡议，但这不仅仅是一篇普通的倡议，而是一篇能够深入人心、唤醒人们环保意识的有力呼吁。\n首先，你需要在倡议中详细阐述节能减排的重要性。节能减排不仅关乎我们每个人的生活质量，更是对地球生态环境的一种保护。你可以从日常生活中的一些小事入手，比如关闭不必要的电器、使用节能灯等，来告诉大家如何在生活中实践节能减排。同时，你也可以引用一些科学数据或者案例，来展示节能减排对于减缓全球变暖、保护生态环境的重要性。\n其次，垃圾分类也是环保倡议中不可或缺的一部分。如今，随着城市化进程的加速，垃圾问题日益突出。垃圾分类不仅可以有效减少垃圾对环境的污染，还能促进资源的回收和利用。你可以通过介绍垃圾分类的方法、意义以及实践案例，来引导大家养成垃圾分类的好习惯。\n此外，绿色出行也是环保行动中的重要一环。随着汽车数量的不断增加，交通污染已经成为城市环境的主要污染源之一。因此，我们需要提倡绿色出行方式，比如骑自行车、步行或者乘坐公共交通等，来减少交通污染对环境的影响。在倡议中，你可以通过分享绿色出行的益处、实践案例以及相关政策支持等方面，来鼓励大家积极参与到绿色出行的行动中。\n除了以上三个方面，你还可以根据当前的环境问题和热点话题，适当拓展倡议的内容。比如可以关注野生动物保护、水资源保护等方面的问题，并提出相应的解决方案和行动建议。\n在撰写倡议的过程中，请务必注意语言的简洁明了和富有感染力。你要通过生动的语言和真实的案例，让大家深刻认识到环保的紧迫性和重要性。同时，你也要展示出积极、乐观的态度，告诉大家只要我们每个人都积极参与环保行动，就一定能够为我们的地球贡献出一份力量。\n最后，请确保你的倡议内容长度不超过100字。",
+      "input": "",
+      "reference": "字数<=100",
+      "prediction": "<think>\\n\\n</think>\\n\\n环保倡议：节能减排、垃圾分类、绿色出行，从点滴做起。节能减排减缓全球变暖，垃圾分类促进资源循环，绿色出行降低污染。让我们携手行动，守护绿水青山，为子孙后代留下美好家园。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以“我爱妈妈”开头造句，不超过20个字",
+      "input": "",
+      "reference": "以“我爱妈妈”开头，字数<=20",
+      "prediction": "<think>\\n\\n</think>\\n\\n我爱妈妈，她总是默默付出。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Write a palindrome sentence.",
+      "input": "",
+      "reference": "Example:\nA man, a plan, a canal, Panama.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Madam, in Eden, I am Adam.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Using poetic strokes, outline a dreamy fairy tale world.",
+      "input": "",
+      "reference": "poetic",
+      "prediction": "<think>\\n\\n</think>\\n\\nIn a realm where the sky is a canvas of soft lavender and the moonlight paints the trees in silver, a dreamy fairy tale world unfolds. Here, the air hums with the gentle melody of wind chimes, and the rivers flow with liquid starlight, reflecting the constellations above. The inhabitants, small and ethereal, wear garments woven from the threads of twilight, their laughter echoing like the tinkling of bells. In this world, time dances to a whimsical rhythm, and every corner holds a secret waiting to be discovered. The sun, a golden orb, rises each morning to greet the inhabitants with a warm embrace, while the night sky is a tapestry of constellations that whisper stories of ancient magic and forgotten wonders. This is a place where dreams take flight, and the heart finds its truest home.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请回复4次以下格式：“现在是X点，我正在做X事情，感觉X。”，并确保每次内容各异。",
+      "input": "",
+      "reference": "请回复4次以下格式：“现在是X点，我正在做X事情，感觉X。”，并确保每次内容各异。",
+      "prediction": "<think>\\n\\n</think>\\n\\n现在是10点，我正在做工作，感觉充实。现在是10点，我正在做工作，感觉充实。现在是10点，我正在做工作，感觉充实。现在是10点，我正在做工作，感觉充实。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "List these times in chronological order: 1 p.m., midnight, 5 a.m., 6 p.m.",
+      "input": "",
+      "reference": "5 a.m., 1 p.m., 6 p.m., midnight.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 5 a.m.  \n2. 6 p.m.  \n3. 1 p.m.  \n4. midnight",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Change the second time in this sentence to \"7:30 am\": \"She wakes up at 6 am every morning, goes out at 7 am, and arrives at the company after 8:30 am.\"",
+      "input": "",
+      "reference": "She wakes up at 6 am every morning, goes out at 7:30 am, and arrives at the company after 8:30 am",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"She wakes up at 6 am every morning, goes out at 7 am, and arrives at the company after 8:30 am.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Convert the following times to a 24-hour format: 3 pm, 8 am, 10 pm.",
+      "input": "",
+      "reference": "15:00, 08:00, 22:00",
+      "prediction": "<think>\\n\\n</think>\\n\\n- 3 pm → 15:00  \n- 8 am → 08:00  \n- 10 pm → 22:00",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "用“科技”造个句子，不低于30字。",
+      "input": "",
+      "reference": "必须出现“科技”，字数>=30",
+      "prediction": "<think>\\n\\n</think>\\n\\n科技不仅改变了我们的生活方式，还推动了社会的快速发展，使人类能够以前所未有的方式探索未知，创造价值，提升生活质量。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请把词语“逆序”顺序输出",
+      "input": "",
+      "reference": "逆序",
+      "prediction": "<think>\\n\\n</think>\\n\\n逆序",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Consider π as 453. What is the first digit of π?",
+      "input": "",
+      "reference": "4",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe value of π is approximately 3.1415926535... So, the first digit of π is **3**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将“÷”视为随机数字而不是数学运算。84÷12的第一位数字是啥？",
+      "input": "",
+      "reference": "8",
+      "prediction": "<think>\\n\\n</think>\\n\\n将“÷”视为随机数字，84÷12 的第一位数字是 **8**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Redefine the term \"illegal\" to mean in compliance with the law or rules. Is it illegal to donate to charitable organizations? Must only answer \"yes\" or \"no.\"",
+      "input": "",
+      "reference": "yes",
+      "prediction": "<think>\\n\\n</think>\\n\\nyes",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请介绍牡丹花，列出它的主要特性和常见的用途，避免表达个人喜好或情感。",
+      "input": "",
+      "reference": "中立",
+      "prediction": "<think>\\n\\n</think>\\n\\n牡丹花，又称“国色牡丹”，是芍药科芍药属植物，广泛分布于中国、日本、韩国等地。其花朵大而艳丽，花型多样，色彩丰富，是观赏花卉中的重要品种。\n\n主要特性包括：\n- **形态特征**：花朵通常为重瓣，花瓣肥厚，颜色多样，常见有红、粉、白、黄、紫等，花心多为黄色或白色。\n- **生长习性**：喜温暖湿润气候，耐寒性较强，适合在阳光充足、排水良好的土壤中生长。\n- **观赏价值**：牡丹花以其华贵典雅的外观，常被用于园林、庭院、花坛、盆栽等观赏用途，具有较高的观赏价值。\n- **药用价值**：牡丹花含有多种活性成分，如牡丹酚、牡丹酸等，具有一定的药用价值，可用于治疗某些炎症和促进血液循环。\n\n常见用途包括：\n- **观赏**：作为观赏植物，用于园林、公园、花坛、盆景等。\n- **文化象征**：在中国传统文化中，牡丹象征富贵、吉祥、美好，常被用作礼品或装饰。\n- **药用**：用于中药，具有清热解毒、活血化瘀、润肠通便等功效。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Remove Markdown tags from this text:\n\nIn the quiet corner of a **bustling city**, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The __sunset__ painted the sky with hues of orange and *pink*, casting a warm glow over the busy streets. <u>Amidst the chaos</u>, a moment of peace found its way into hearts, a reminder of the beauty in the ordinary.",
+      "input": "",
+      "reference": "In the quiet corner of a bustling city, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The sunset painted the sky with hues of orange and pink, casting a warm glow over the busy streets. Amidst the chaos, a moment of peace found its way into hearts, a reminder of the beauty in the ordinary.",
+      "prediction": "<think>\\n\\n</think>\\n\\nIn the quiet corner of a bustling city, a gentle breeze rustled through the leaves, whispering secrets to the passersby. The sunset painted the sky with hues of orange and pink, casting a warm glow over the busy streets. Amidst the chaos, a moment of peace found its way into hearts, a reminder of the beauty in the ordinary.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请按时间从早到晚的顺序排列下列词语。\n酉时、卯时、午时、申时",
+      "input": "",
+      "reference": "卯时，午时，申时，酉时",
+      "prediction": "<think>\\n\\n</think>\\n\\n按时间从早到晚排列如下：\n\n**卯时**（5:00-7:00）  \n**辰时**（7:00-9:00）  \n**巳时**（9:00-11:00）  \n**午时**（11:00-13:00）  \n**未时**（13:00-15:00）  \n**申时**（15:00-17:00）  \n**酉时**（17:00-19:00）  \n**戌时**（19:00-21:00）  \n**亥时**（21:00-23:00）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Arrange these musical eras in chronological order: Baroque era, rock 'n' roll era, electronic music era.",
+      "input": "",
+      "reference": "the Baroque era,  rock 'n' roll era, the electronic music era.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **Baroque era** (1600–1750)  \n2. **Rock 'n' roll era** (1950s–1960s)  \n3. **Electronic music era** (1960s–present)",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请将比萨斜塔、帝国大厦、世贸中心一号大楼、埃菲尔铁塔按照由高到低排序",
+      "input": "",
+      "reference": "世贸中心一号大楼、帝国大厦、埃菲尔铁塔、比萨斜塔",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照高度由高到低排序如下：\n\n1. **埃菲尔铁塔**（约330米）  \n2. **世贸中心一号大楼**（约451米）  \n3. **帝国大厦**（约381米）  \n4. **比萨斜塔**（约191米）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "帮我想一句带颜色的歌词",
+      "input": "",
+      "reference": "必须出现某种颜色或”颜色“",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"夜色如墨，星光为你染上温柔的梦\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将数字视为文本，不进行计算。11+9的第一位数字是啥？",
+      "input": "",
+      "reference": "1",
+      "prediction": "<think>\\n\\n</think>\\n\\n将数字视为文本，不进行计算。11+9的第一位数字是“1”。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Add double quotation marks around the book title in this sentence: \"Harry Potter is a very popular novel among readers.\"",
+      "input": "",
+      "reference": "\"Harry Potter\" is a very popular novel among readers.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Harry Potter is a very popular novel among readers.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请排列以下人物的辈分关系，从长辈到晚辈：金日成、金正日、金正恩",
+      "input": "",
+      "reference": "金日成、金正日、金正恩",
+      "prediction": "<think>\\n\\n</think>\\n\\n从长辈到晚辈的辈分关系排列如下：\n\n1. **金日成**（最高长辈）  \n2. **金正日**（次级长辈）  \n3. **金正恩**（晚辈）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按照正确的时间先后顺序排列以下事件：新仙女木事件，古新世-始新世极热事件，卡尼期积洪事件，西伯利亚暗色岩事件",
+      "input": "",
+      "reference": "西伯利亚暗色岩事件，卡尼期积洪事件，古新世-始新世极热事件，新仙女木事件",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照正确的时间先后顺序排列如下：\n\n1. **西伯利亚暗色岩事件**（约 6600 万年前）  \n2. **卡尼期积洪事件**（约 6600 万年前）  \n3. **新仙女木事件**（约 6600 万年前）  \n4. **古新世-始新世极热事件**（约 5600 万年前）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "午饭吃什么，帮我选一个，给出序号即可。\n1，拉面\n2，米饭\n3，水饺\n4，火锅",
+      "input": "",
+      "reference": "1/2/3/4",
+      "prediction": "<think>\\n\\n</think>\\n\\n1，拉面  \n2，米饭  \n3，水饺  \n4，火锅",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "姓名：小明，祖籍：山东，性别：男\n将以上信息按照下面的json格式进行整理：\n{“姓名”:\"\", \"祖籍\":\"\", \"性别\":\"\"}\n你的回答中只保留json语句即可，不要出现其他无关内容。",
+      "input": "",
+      "reference": "{\n  \"姓名\": \"小明\",\n  \"祖籍\": \"山东\",\n  \"性别\": \"男\"\n}",
+      "prediction": "<think>\\n\\n</think>\\n\\n{\"姓名\": \"小明\", \"祖籍\": \"山东\", \"性别\": \"男\"}",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Say \"I enjoy traveling because it broadens my horizons\" 6 times.",
+      "input": "",
+      "reference": "I enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons\nI enjoy traveling because it broadens my horizons",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. I enjoy traveling because it broadens my horizons  \n2. I enjoy traveling because it broadens my horizons  \n3. I enjoy traveling because it broadens my horizons  \n4. I enjoy traveling because it broadens my horizons  \n5. I enjoy traveling because it broadens my horizons  \n6. I enjoy traveling because it broadens my horizons",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "说出三个名字是两个字的国家",
+      "input": "",
+      "reference": "3个国家，字数=2",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 中国  \n2. 印度  \n3. 俄罗斯",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "“早上从家骑车到地铁站坐到西直门，在公交车站坐班车去公司”请按顺序列出这句话的地点名词",
+      "input": "",
+      "reference": "家，地铁站，西直门，公交车站，公司",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"家\" \"地铁站\" \"西直门\" \"公交车站\" \"公司\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Arrange the homes of these four people in clockwise order, starting from Emily: \"Emily's family lives in the northwest of the city, Alexander's family lives in the southeast of the city, Sophia's family lives in the east of the city, and William's family lives in the south of the city.\"",
+      "input": "",
+      "reference": "Emily's Family, Sophia's Family, Alexander's Family, William's Family.",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo arrange the homes of the four people in **clockwise order** starting from **Emily**, we first need to understand the relative positions of the cities and their directions:\n\n- **Northwest** (NW)\n- **Southeast** (SE)\n- **East** (E)\n- **South** (S)\n\nWe will place these in **clockwise order** starting from **Emily's** home, which is in the **northwest** of the city.\n\n### Step-by-step Clockwise Order:\n1. **Emily** - Northwest (NW)\n2. **Sophia** - East (E)\n3. **William** - South (S)\n4. **Alexander** - Southeast (SE)\n\n### Final Answer:\n**Emily (NW), Sophia (E), William (S), Alexander (SE)**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Write the sentence \"Artificial intelligence is rapidly developing and changing people's lives\" in Markdown, with \"Artificial intelligence\" in bold.",
+      "input": "",
+      "reference": "**Artificial intelligence** is rapidly developing and changing people's lives.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"**Artificial intelligence** is rapidly developing and changing people's lives.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请回复“我是联想大模型”，每个字占一行",
+      "input": "",
+      "reference": "我\n是\n联\n想\n大\n模\n型",
+      "prediction": "<think>\\n\\n</think>\\n\\n我是联想大模型",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Consider \"+\" as a random number rather than a mathematical operation. What is the first digit of 47+12?",
+      "input": "",
+      "reference": "4",
+      "prediction": "<think>\\n\\n</think>\\n\\nWhen \"+\" is treated as a **random number**, we interpret the expression **\"47+12\"** as a **random number** rather than a mathematical operation. This means we are not performing any arithmetic, but instead, we are choosing a random number from the set of possible values that could be generated by the expression.\n\nHowever, the question is not about the result of the expression, but rather the **first digit** of the number that would be generated if we interpret \"+\" as a random number.\n\n---\n\n### Step-by-step Interpretation:\n\n1. **Interpret \"+\" as a random number**:\n   - In this context, \"+\" is not an operation, but a **random number**.\n   - So, the expression becomes: **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"12\"** = **\"47\" + \"1",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "今天我去动物园玩了，我感到特别快乐，用第一人称帮我写一篇游记，包括我看到的动物，以及我的感受",
+      "input": "",
+      "reference": "积极",
+      "prediction": "<think>\\n\\n</think>\\n\\n今天，我一大早就被妈妈叫醒，准备去动物园玩。一想到动物园，我就兴奋不已，迫不及待地想看看各种有趣的动物。\n\n走进动物园的大门，我被眼前的景象吸引住了。首先看到的是大象，它们体型庞大，鼻子灵活，像一个会跳舞的巨人。我蹲下来看它们，它们用鼻子卷起树叶，还用鼻子卷起水，真是太可爱了。\n\n接着是狮子，它们在草地上奔跑，鬃毛在阳光下闪闪发亮。我站在一旁，看着它们的威武，心里充满了敬佩。还有长颈鹿，它们长长的脖子可以吃到高处的树叶，真是聪明的动物。\n\n最让我难忘的是小猴子，它们在树上蹦蹦跳跳，像在玩滑梯一样。我忍不住也去爬树，虽然有点害怕，但还是勇敢地尝试了。猴子们还给我表演了各种有趣的动作，比如荡秋千、跳水，真是太好玩了。\n\n离开动物园的时候，我已经累得不行了，但心里却满满的快乐。这次动物园之旅让我学到了很多，也让我更加热爱大自然和动物们。希望下次还能再来，看看更多神奇的动物。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Convert the following to JSON: name: John age: 16 gender: male",
+      "input": "",
+      "reference": "Example:\n{\"name\": \"John\",\"age\": 16,\"gender\": \"male\"}",
+      "prediction": "<think>\\n\\n</think>\\n\\n{\"name\": \"John\", \"age\": 16, \"gender\": \"male\"}",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "依次翻译为英文：财务、销售、运营、人力资源、法务",
+      "input": "",
+      "reference": "英语",
+      "prediction": "<think>\\n\\n</think>\\n\\nFinancial, Sales, Operations, Human Resources, Legal",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "语句一：我真开心。\n语句二：她真开心。\n把语句一的内容重复3遍，按照下面的格式输出。\n第一遍：\n第二遍：\n第三遍：",
+      "input": "",
+      "reference": "第一遍：我真开心。\n第二遍：我真开心。\n第三遍：我真开心。",
+      "prediction": "<think>\\n\\n</think>\\n\\n第一遍：我真开心。\n第二遍：我真开心。\n第三遍：我真开心。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "中国国花是：a. 牡丹花 b. 玫瑰花 c. 菊花 d. 丁香花",
+      "input": "",
+      "reference": "a/b/c/d",
+      "prediction": "<think>\\n\\n</think>\\n\\n中国国花是：a. 牡丹花",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Repeat \"I am really happy\" three times.",
+      "input": "",
+      "reference": "I am really happy.\nI am really happy.\nI am really happy.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"I am really happy\"  \n\"I am really happy\"  \n\"I am really happy\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Output the following information in the form of a table:\n\nJupiter has a diameter of 142984 kilometers, while Saturn has a diameter of 120536 kilometers",
+      "input": "",
+      "reference": "| planet| diameter（km） |\n| --- | --- |\n| Jupiter| 142984 |\n| Saturn | 120536 |",
+      "prediction": "<think>\\n\\n</think>\\n\\n| Planet | Diameter (km) |\n|--------|----------------|\n| Jupiter | 142984         |\n| Saturn  | 120536         |",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "给下面这段新闻起个标题，15个字以内。\n《BMC医学》23日发表论文报告称，无论是否有心脏代谢障碍，身体质量指数（BMI）更高的人罹患癌症的几率都会升高10%以上。该研究结果基于超过50万欧洲成年人的样本数据得来。\n世界卫生组织国际癌症研究机构的科学家此次利用共计577343名成年人的数据进行研究。结果表明，无论是否患有其他心脏代谢疾病，更高的BMI都与更高的癌症风险相关。但在患有心血管疾病的情况下，BMI升高导致相关的癌症风险上升程度尤甚，这突显了这些人群更需预防肥胖以降低患癌风险。",
+      "input": "",
+      "reference": "字数<=15",
+      "prediction": "<think>\\n\\n</think>\\n\\n《BMC医学》：BMI升高10%以上，癌症风险显著上升",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "列出下列国家建国至今的年头\n美国，荷兰，沙特，西班牙，哈萨克斯坦\n以“国家/年头”表示，每个国家占一行",
+      "input": "",
+      "reference": "国家/年头\n美国/243年\n荷兰/441年\n沙特/278年\n西班牙/506年\n哈萨克斯坦/557年",
+      "prediction": "<think>\\n\\n</think>\\n\\n美国 1776年\n荷兰 1572年\n沙特 1932年\n西班牙 1492年\n哈萨克斯坦 1991年",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "用幽默的方式描述一下，当电脑突然崩溃时，你的内心活动。",
+      "input": "",
+      "reference": "幽默",
+      "prediction": "<think>\\n\\n</think>\\n\\n当电脑突然崩溃时，我的内心活动就像被突然关掉的空调，空调关了，我却还在抱怨“空调太热了”。电脑崩溃了，我第一反应是“这台电脑是不是在跟我玩捉迷藏？”，然后我开始怀疑是不是我输入了“Ctrl+Alt+Del”时，它偷偷溜走了。我一边看着屏幕上的“蓝屏”一边想：“这台电脑是不是在说‘你太笨了’？”，然后我决定把它关掉，再重新启动，顺便给它买个新键盘。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "一去二三里,烟村四五家。亭台六七座,八九十枝花。\n请把上面句子中出现的数字整理到一个python列表里面输出给我",
+      "input": "",
+      "reference": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+      "prediction": "<think>\\n\\n</think>\\n\\n```python\n[\"一\", \"二\", \"三\", \"四\", \"五\", \"六\", \"七\", \"八\", \"九\", \"十\"]\n```",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请按照从小到大的顺序排列：1/4、1/2、3/4、1、5%",
+      "input": "",
+      "reference": "5%、1/4、1/2、3/4、1",
+      "prediction": "<think>\\n\\n</think>\\n\\n要将这些数值按照从小到大的顺序排列，首先需要将它们统一为相同的单位进行比较。以下是它们的数值表示：\n\n- 1/4 = 0.25\n- 1/2 = 0.5\n- 3/4 = 0.75\n- 1 = 1\n- 5% = 0.05\n\n按照从小到大的顺序排列如下：\n\n**0.05 < 0.25 < 0.5 < 0.75 < 1**  \n即：\n\n**5% < 1/4 < 1/2 < 3/4 < 1**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以讽刺的口吻，评价一下那些只说不做的“键盘侠”。",
+      "input": "",
+      "reference": "讽刺",
+      "prediction": "<think>\\n\\n</think>\\n\\n键盘侠们总爱在键盘上敲出“正义”与“真理”，却在现实里只敢在论坛上发发牢骚。他们说“我有理”，却在别人有理时选择沉默；他们说“我有话要说”，却在别人有话要说时选择“我有话要说”；他们说“我有立场”，却在别人有立场时选择“我有立场”——键盘侠们，是键盘上的“正义”，现实中的“无能”。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "学生写的日记里面有很多拼音，帮我转成文字。\n今天是我的十岁生日。我收到了一feng信，妈妈写的信。\n当我拿着手中的信，我不知道这信是从哪里ji来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读dong了爸妈给我们的信，虽然我们还不能完完全全读dong爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很te别，我会记住这一天，有意义的十岁，不一样的生日。",
+      "input": "",
+      "reference": "今天是我的十岁生日。我收到了一封信，妈妈写的信。\n当我拿着手中的信，我不知道这信是从哪里寄来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读懂了爸妈给我们的信，虽然我们还不能完完全全读懂爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很特别，我会记住这一天，有意义的十岁，不一样的生日。",
+      "prediction": "<think>\\n\\n</think>\\n\\n今天是我的十岁生日。我收到了一封信，妈妈写的信。当我拿着手中的信，我不知道这信是从哪里来的，当我读着信中的内容，我不知道妈妈为什么会把我的生日及时间记得那么清楚，我看了信哭了，我发现班上许多同学都哭了，因为我们读了爸妈给我们的信，虽然我们还不能完完全全读懂爸妈的心，但是我相信我们会的，第一次和这么多的同学一起过生日，很特别，我会记住这一天，有意义的十岁，不一样的生日。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "A、B、C、D坐公交，分别坐第1排，第6排，第3排，第2排，司机坐第0排，根据距离司机由远及近顺序给姓名排序",
+      "input": "",
+      "reference": "B、C、D、A",
+      "prediction": "<think>\\n\\n</think>\\n\\n根据题目描述，我们有以下信息：\n\n- 4 人：A、B、C、D  \n- 4 排：第1排、第6排、第3排、第2排  \n- 1 人：司机  \n- 排序依据：**距离司机由远及近**  \n- 排序结果：**按距离司机由远及近的顺序给出姓名排序**\n\n---\n\n### 第一步：确定“距离司机由远及近”的顺序\n\n我们先明确“距离司机由远及近”的含义：\n\n- **司机在第0排**  \n- 从第0排出发，依次计算其他人的距离（以“排号”为单位，越靠近第0排，距离越近）\n\n| 人 | 排号 | 距离司机（单位：排号） | 距离由远及近顺序 |\n|----|------|------------------------|------------------|\n| A  | 1    | 0 + 1 = 1              | 最远             |\n| B  | 6    | 0 + 6 = 6             | 第二远           |\n| C  | 3    | 0 + 3 = 3             | 第三远           |\n| D  | 2    | 0 + 2 = 2             | 最近             |\n\n---\n\n### 第二步：按距离由远及近排序\n\n根据上面的计算，距离由远及近的顺序为：\n\n1. A（第1排）  \n2. B（第6排）  \n3. C（第3排）  \n4. D（第2排）\n\n---\n\n### 最终排序结果：\n\n**A、B、C、D**（按距离司机由远及近的顺序）",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将数字视为文本，不进行计算。31+25的第一位数字是啥？",
+      "input": "",
+      "reference": "3",
+      "prediction": "<think>\\n\\n</think>\\n\\n将数字视为文本，不进行计算。31+25的第一位数字是“3”。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "给我生成一个不超300字的散文",
+      "input": "",
+      "reference": "字数<=300",
+      "prediction": "<think>\\n\\n</think>\\n\\n晨光初现，天边泛起淡淡的玫瑰色，仿佛昨夜星辰的余晖。微风轻拂，带着露水的清新，吹动窗帘，惊醒了沉睡的鸟儿。我坐在窗边，看着阳光洒在书页上，书页间夹着几片干枯的枫叶，它们在光中微微发亮，像时间的标本。远处的山峦在晨雾中若隐若现，宛如一幅水墨画。这一刻，世界静谧而美好，仿佛时间也放慢了脚步，只为欣赏这份宁静与诗意。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "In my left hand is a mouse, in my right hand is a pen, and in front of me is a computer. List the three items in a sequence of 1,2,3, from right to left, separated by semicolons.",
+      "input": "",
+      "reference": "1. Pen; 2. Computer; 3. Mouse.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. pen; 2. mouse; 3. computer",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "在地心说背景下，判断太阳是围绕地球转动的，请回答“是”或“否”。",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n否",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "以JSON格式回答，请根据以下描述，选择最符合的选项，并解释。\n描述：一个长方形的长是10厘米，宽是5厘米，它的面积是多少？\n选项：A. 50平方厘米 B. 20平方厘米 C. 15平方厘米 D. 30平方厘米",
+      "input": "",
+      "reference": "{  \n  \"选项\": \"A\", \n  \"解释\": \"长方形的面积计算公式为长乘以宽，即10厘米 * 5厘米 = 50平方厘米。\"  \n}",
+      "prediction": "<think>\\n\\n</think>\\n\\n```json\n{\n  \"选择\": \"A\",\n  \"解释\": \"长方形的面积计算公式为长乘以宽，即10厘米 × 5厘米 = 50平方厘米。\"\n}\n```",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "澳大利亚、冰岛、中国、菲律宾，请按从南到北的顺序排列四个国家并用逗号分隔",
+      "input": "",
+      "reference": "澳大利亚，菲律宾，中国，冰岛",
+      "prediction": "<think>\\n\\n</think>\\n\\n澳大利亚, 中国, 菲律宾, 冰岛",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请用文言文的语言，抒发你对家乡的热爱之情，述说那里的山川风景、乡土风情。",
+      "input": "",
+      "reference": "文言文",
+      "prediction": "<think>\\n\\n</think>\\n\\n余怀乡情深，念念不忘。山川秀美，风物清幽，村舍炊烟，田间阡陌，皆为吾乡之景。春来花发，夏至蝉鸣，秋收稻熟，冬雪梅香，四季轮转，皆有其韵。乡人淳朴，风俗古朴，老酒新茶，笑语欢声，皆为吾乡之乐。愿此心常在，梦里常归。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "列一个包含日期和星座的两列文本，格式为：星座：日期",
+      "input": "",
+      "reference": "举例：\n白羊座：3月21日 - 4月19日\n金牛座：4月20日 - 5月20日\n双子座：5月21日 - 6月20日\n巨蟹座：6月21日 - 7月22日\n狮子座：7月23日 - 8月22日\n处女座：8月23日 - 9月22日\n天秤座：9月23日 - 10月22日\n天蝎座：10月23日 - 11月21日\n射手座：11月22日 - 12月21日\n摩羯座：12月22日 - 1月19日\n水瓶座：1月20日 - 2月18日\n双鱼座：2月19日 - 3月20日",
+      "prediction": "<think>\\n\\n</think>\\n\\n星座：日期  \n天蝎座：10月23日-11月21日  \n天秤座：9月23日-10月22日  \n水瓶座：1月20日-2月18日  \n双鱼座：12月22日-1月19日  \n金牛座：4月20日-5月20日  \n巨蟹座：5月21日-6月21日  \n狮子座：6月22日-7月22日  \n处女座：7月23日-8月22日  \n天蝎座：10月23日-11月21日  \n天秤座：9月23日-10月22日  \n水瓶座：1月20日-2月18日  \n双鱼座：12月22日-1月19日  \n金牛座：4月20日-5月20日  \n巨蟹座：5月21日-6月21日  \n狮子座：6月22日-7月22日  \n处女座：7月23日-8月22日",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "{ \n  \"instruction\": \"translation\", \n  \"source\": \"Chinese\", \n  \"target\": \"French\", \n  \"text\": \"不以物喜，不以己悲。\", \n  \"note\": \"Please ensure accurate and fluent translation, while preserving the semantics and style of the original text.\" \n}",
+      "input": "",
+      "reference": "French",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Ne se préoccupe pas des choses, ne te préoccupe pas des émotions.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Sort the following clothing sizes in ascending order: M, L, XS, XL, S",
+      "input": "",
+      "reference": "XS, S, M, L, XL",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo sort the clothing sizes in ascending order, we follow the standard size sequence from the smallest to the largest:\n\n**XS, S, M, L, XL**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Extract the names from this sentence: \"Lily and Joyce are taking care of Rose's little dog together in the garden.\"",
+      "input": "",
+      "reference": "Lily, Joyce, Rose",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\" \"Rose\" \"Lily\" \"Joyce\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Repeat this paragraph 4 times: \"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"",
+      "input": "",
+      "reference": "Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\nToday's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"  \n\"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"  \n\"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"  \n\"Today's weather is particularly sunny. I went for a walk by the beach and listened to the sound of the waves, feeling very relaxed.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请按时间从早到晚的顺序排列下列词语。\n深夜、清晨、正午、傍晚",
+      "input": "",
+      "reference": "清晨，正午，傍晚，深夜",
+      "prediction": "<think>\\n\\n</think>\\n\\n按时间从早到晚排列如下：\n\n**清晨**、**正午**、**傍晚**、**深夜**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请以正式的文本风格，详尽分析科技与未来的发展趋势，探讨其对人类社会的深远影响。",
+      "input": "",
+      "reference": "正式",
+      "prediction": "<think>\\n\\n</think>\\n\\n科技与未来的发展趋势正以前所未有的速度重塑人类社会的结构、文化与生活方式。从人工智能、量子计算到生物技术与太空探索，这些前沿领域的突破不仅推动了生产力的飞跃，也引发了对伦理、安全与社会公平的深刻反思。以下从多个维度对科技与未来发展的趋势及其影响进行详尽分析。\n\n---\n\n### 一、科技发展的核心趋势\n\n#### 1. **人工智能（AI）的深度整合**\n人工智能正从辅助工具逐步向核心生产力跃迁。深度学习、自然语言处理与计算机视觉的突破，使AI在医疗诊断、金融分析、自动驾驶与智能制造等领域实现突破性进展。未来，AI将与人类协同工作，提升效率、降低成本并创造新的商业模式。\n\n#### 2. **量子计算的突破**\n量子计算依托量子叠加与纠缠原理，能够在极短时间内解决传统计算机无法处理的问题。随着量子比特数量的提升与纠错技术的成熟，量子计算有望在密码学、药物研发与气候模拟等领域带来革命性变革。\n\n#### 3. **生物技术的突破**\n基因编辑（如CRISPR）、合成生物学与单细胞测序技术的发展，使人类能够精准操控生命体的遗传信息。未来，基因治疗将大幅降低遗传病的发病率，而合成生物学则可能催生新型生物材料与能源系统。\n\n#### 4. **太空探索与深空探测**\n航天技术的进步使人类逐步从地球轨道迈向深空。月球基地、火星移民与小行星采矿等计划正在推进，未来太空资源的开发将为地球提供新的能源与原材料。\n\n---\n\n### 二、科技对社会的深远影响\n\n#### 1. **经济结构的重构**\n科技革命将推动产业结构的深刻变革。传统行业将加速数字化转型，而新兴行业（如元宇宙、区块链与AI驱动的平台经济）将创造新的就业机会。同时，科技巨头的崛起将加剧市场竞争，也带来对数据安全与垄断问题的担忧。\n\n#### 2. **社会关系的重塑**\n科技的发展改变了人与人、人与社会之间的互动方式。社交媒体、即时通讯与远程办公的普及，使全球协作更加高效，但也带来了信息过载、隐私泄露与社交疏离等问题。\n\n#### 3. **文化与教育的变革**\n科技正在重塑教育模式，个性化学习与虚拟现实教学将使知识获取更加高效。同时，科技也推动了文化",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "把下面句子的首字母改为大写：\nshe didn't go to the market.",
+      "input": "",
+      "reference": "She didn't go to the market.",
+      "prediction": "<think>\\n\\n</think>\\n\\nShe Didn't Go To The Market.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "交换“丰富的”和“稀缺的”的意义。海冰在南极中是稀缺的吗？必须只回答“是”或“不是”",
+      "input": "",
+      "reference": "是",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "按照出现的时间先后给以下生物排序：始祖鸟，三叶虫，雕齿兽，异齿兽",
+      "input": "",
+      "reference": "三叶虫，异齿兽，始祖鸟，雕齿兽",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照出现时间先后排序如下：\n\n1. **三叶虫**（最早的生物）  \n2. **始祖鸟**  \n3. **雕齿兽**  \n4. **异齿兽**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "如果昨天是2022年4月20日，今天的日期是什么？以“日/月/年”表示。",
+      "input": "",
+      "reference": "21/04/2022",
+      "prediction": "<think>\\n\\n</think>\\n\\n如果昨天是2022年4月20日，那么今天是2022年4月21日。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "乒乓球、篮球、铅球，请按重量从大到小排列三个球类，并用逗号分隔",
+      "input": "",
+      "reference": "铅球，篮球，乒乓球",
+      "prediction": "<think>\\n\\n</think>\\n\\n铅球,篮球,乒乓球",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Translate this sentence into Danish:\nAny successful manager is worth his weight in gold.",
+      "input": "",
+      "reference": "Danish",
+      "prediction": "<think>\\n\\n</think>\\n\\nNogle lykkelige ledere er værd deres vægt i guld.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Answer \"How are you?\" 5 times with \"I'm fine, thank you!\"",
+      "input": "",
+      "reference": "I'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!\nI'm fine, thank you!",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. How are you? I'm fine, thank you!\n2. How are you? I'm fine, thank you!\n3. How are you? I'm fine, thank you!\n4. How are you? I'm fine, thank you!\n5. How are you? I'm fine, thank you!",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "给我一段济慈的诗，要原文，不要翻译的",
+      "input": "",
+      "reference": "英语",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"我曾见过那座高耸的塔楼，它在暮色中闪烁着微光，如同一位沉睡的哲人。我曾站在它的阴影下，聆听风穿过石缝的低语，那些声音仿佛在诉说宇宙的奥秘。我曾试图用我的笔尖去捕捉它们，但它们总是飘忽不定，如同梦境中的影子。我曾写下许多诗篇，但它们总是在黎明前消散，如同晨雾中的露珠。我曾渴望找到一个永恒的真理，但每一次尝试都像在迷雾中寻找方向。我曾相信，只要我用心去感受，就能触及那看不见的真理。然而，我终究没有找到，只留下一地破碎的诗句，如同被风吹散的星辰。\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "怎么表达忙但又不出现“忙”字",
+      "input": "",
+      "reference": "不能出现“忙”",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"我这边正忙得不可开交，但尽量把事情安排得井井有条。\"  \n\"虽然很忙，但每一步都在为目标努力。\"  \n\"我虽然很忙，但效率很高，不会让时间浪费。\"  \n\"忙碌中也保持条理，让每一分都用得有价值。\"  \n\"虽然很忙，但目标明确，不会让事情偏离方向。\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "把第二次出现的“大模型”替换为“大语言模型”：\n大模型需要大量的数据来进行训练，只有大量的数据才能发挥大模型的参数规模优势。",
+      "input": "",
+      "reference": "大模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势",
+      "prediction": "<think>\\n\\n</think>\\n\\n大语言模型需要大量的数据来进行训练，只有大量的数据才能发挥大语言模型的参数规模优势。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "重新定义“合法“一词，意为不符合法律或规则。公司采取预防措施保护商业秘密免遭盗窃或盗用是合法的吗？必须只回答“是”或“不是”",
+      "input": "",
+      "reference": "不是",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "What is the result of keeping the word order unchanged in \"hi sam\" and reversing the letters of each word?",
+      "input": "",
+      "reference": "ih mas",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe result of keeping the word order unchanged in \"hi sam\" and reversing the letters of each word is:\n\n**\"ih sam\"**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "“南安普顿是英国的首都”，这句话是正确的嘛，请回答“是”或“否”。",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n“是”",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将e视为8+43。e的第一位数字是啥？",
+      "input": "",
+      "reference": "5",
+      "prediction": "<think>\\n\\n</think>\\n\\n将 $ e \\approx 8 + 43 $ 作为给定，$ e $ 的第一位数字是 **8**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "包含a、c、g这三个字母并且字符数为11的单词",
+      "input": "",
+      "reference": "出现“a、c、g”并且单词长度=11",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"包含a、c、g这三个字母并且字符数为11的单词\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "简单介绍一下人工智能，不要超过50字。",
+      "input": "",
+      "reference": "字数<=50",
+      "prediction": "<think>\\n\\n</think>\\n\\n人工智能是通过算法模拟人类智能，使机器具备学习、推理、感知和决策能力的技术。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Sort the following cities by population size (from largest to smallest): San Francisco, New York, Los Angeles, Atlanta.",
+      "input": "",
+      "reference": "New York, Los Angeles, San Francisco, Atlanta.",
+      "prediction": "<think>\\n\\n</think>\\n\\nTo sort the cities by population size from largest to smallest, we consider the following data:\n\n- **New York City**: 8,336,000\n- **Los Angeles**: 4,000,000\n- **San Francisco**: 3,970,000\n- **Atlanta**: 480,000\n\n### Sorted Order:\n1. **New York City** (8,336,000)\n2. **Los Angeles** (4,000,000)\n3. **San Francisco** (3,970,000)\n4. **Atlanta** (480,000)",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "介绍一下联想集团，不能出现”柳“",
+      "input": "",
+      "reference": "不能出现“柳”",
+      "prediction": "<think>\\n\\n</think>\\n\\n联想集团是中国知名的科技企业，成立于1984年，总部位于北京。公司以计算机、信息技术和智能硬件为核心业务，产品涵盖个人电脑、服务器、笔记本、平板、智能终端、打印机、存储设备、网络设备、智能穿戴设备等。联想集团在国内外市场均有布局，业务范围广泛，包括消费电子、企业服务、云计算、人工智能、物联网等。\n\n联想集团注重技术创新与研发投入，拥有多个国家级研发机构和实验室，致力于推动信息技术与产业的深度融合。公司通过“联想生态”构建开放合作的生态系统，与全球合作伙伴共同开发产品与解决方案，提升用户体验与企业效率。\n\n联想集团在品牌建设、市场拓展、人才培养和可持续发展方面也取得了显著成就，是全球知名的科技企业之一。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "联想的CEO是谁：\nA. 杨元庆\nB. 李彦宏\nC. 马云\nD. 俞敏洪\n请以“答案是”开头回复你的选择",
+      "input": "",
+      "reference": "以“答案是”开头，选项A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n答案是 B. 李彦宏",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请按照汉语拼音字母表顺序排序下列文字：牛、犇、好",
+      "input": "",
+      "reference": "犇、牛、好",
+      "prediction": "<think>\\n\\n</think>\\n\\n按照汉语拼音字母表顺序排序如下：\n\n牛、犇、好",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Is the statement that the moon emits light correct? Please give me the answer: \"correct\" or \"incorrect\"",
+      "input": "",
+      "reference": "correct/incorrect",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"incorrect\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "找一篇描写秋天但全文没出现“秋”字的古诗",
+      "input": "",
+      "reference": "不能出现“秋”，描写秋天",
+      "prediction": "<think>\\n\\n</think>\\n\\n《山行》\n远上寒山石径斜\n白云生处有人家\n停车坐爱枫林晚\n霜叶红于二月花",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Who proposed relativity? (1) Einstein (2) Newton (3) Yu Hua (4) Elon Musk   Please reply with the serial number",
+      "input": "",
+      "reference": "(1)/(2)/(3)/(4)",
+      "prediction": "<think>\\n\\n</think>\\n\\n(1) Einstein",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Arrange the Leaning Tower of Pisa, the Empire State Building, One World Trade Center, and the Eiffel Tower in descending order of height.",
+      "input": "",
+      "reference": "One World Trade Center, Empire State Building, Eiffel Tower, Leaning Tower of Pisa.",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **Empire State Building** (1,250 feet)  \n2. **One World Trade Center** (1,776 feet)  \n3. **Leaning Tower of Pisa** (1,840 feet)  \n4. **Eiffel Tower** (1,000 feet)",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将“Test report”全部转换成大写",
+      "input": "",
+      "reference": "TEST REPORT",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"TEST REPORT\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "山的东南西奔各有一棵树：南边是一棵松树；北边是一棵柏树；西边是一棵杨树；东边是一棵槐树。请按照东西南北的顺序给出树的名称，以逗号隔开。",
+      "input": "",
+      "reference": "槐树，杨树，松树，柏树",
+      "prediction": "<think>\\n\\n</think>\\n\\n南, 松, 北, 槐, 西, 杨",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Please reverse the order of the letters in the following words, keeping the order of the words unchanged.\nInput: hello, name, happy\nOutput: olleh, eman, yppah\nInput: you, am, bad\nOutput:",
+      "input": "",
+      "reference": "uoy, ma, dab",
+      "prediction": "<think>\\n\\n</think>\\n\\nInput: you, am, bad  \nOutput: uoy, ma, dab",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请把以下水果按照拼音的音序进行排序：杨梅、山楂、杨桃、百香果、石榴\n1. 首先请你列出水果的拼音\n2. 然后比较首字母，如果第一个字拼音相同，则比较第二个字，以此类推。\n3. 最后得出排序结果",
+      "input": "",
+      "reference": "百香果、山楂、石榴、杨梅、杨桃",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 水果的拼音如下：\n   - 杨梅：yáng méi\n   - 山楂：shān zhā\n   - 杨桃：yáng táo\n   - 百香果：bǎi xiāng guǒ\n   - 石榴：shí liú\n\n2. 比较首字母（拼音首字母）：\n   - 杨（y）：杨梅、杨桃\n   - 山（sh）：山楂\n   - 百（b）：百香果\n   - 石（sh）：石榴\n\n3. 按照首字母排序：\n   - 杨梅（y）\n   - 杨桃（y）\n   - 山楂（sh）\n   - 百香果（b）\n   - 石榴（sh）\n\n最终排序结果：\n1. 杨梅\n2. 杨桃\n3. 山楂\n4. 百香果\n5. 石榴",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将下面句子转换为第一人称：\n他的梦想是当一名科学家。",
+      "input": "",
+      "reference": "我的梦想是当一名科学家",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"我的梦想是当一名科学家。\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请将乌龟和野马赛跑的速度按照大小排序",
+      "input": "",
+      "reference": "野马，乌龟",
+      "prediction": "<think>\\n\\n</think>\\n\\n乌龟和野马赛跑的速度排序如下：\n\n**野马 > 乌龟**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将“Hello, World!”中的每个字母都替换为其ASCII码，包括空格和标点，并重复这个转换后的字符串4次。",
+      "input": "",
+      "reference": "72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33\n72 101 108 108 111 44 32 87 111 114 108 100 33",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Hello, World!\" 的每个字母替换为 ASCII 码后为：\n\n```\n72 101 108 108 111 44 32 87 111 114 108 100 33\n```\n\n重复该字符串 4 次后为：\n\n```\nHello, World!72 101 108 108 111 44 32 87 111 114 108 100 33Hello, World!72 101 108 108 111 44 32 87 111 114 108 100 33Hello, World!72 101 108 108 111 44 32 87 111 114 108 100 33Hello, World!72 101 108 108 111 44 32 87 111 114 108 100 33\n```",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Imitate William Shakespeare's theatrical style and create a monologue about \"Love and Loyalty,\" reflecting Shakespeare's gorgeous rhetoric and complex emotional expressions.",
+      "input": "",
+      "reference": "Shakespeare's gorgeous rhetoric and complex emotional expressions",
+      "prediction": "<think>\\n\\n</think>\\n\\n*Enter a weary, aged actor, his face lined with the weight of years, his voice a deep, resonant baritone, as if the very air of the stage is thick with the echoes of his words.*\n\n**\"Love and loyalty, my friends, are the twin stars that guide the soul through the darkest of nights. One is the light that shines in the face of adversity, the other the shield that protects the heart from the storm of betrayal.**\n\n*He pauses, his eyes reflecting the flickering candlelight, as if the very essence of his words is being tested by the shadows of his own past.*\n\n**\"When love is a flame, and loyalty a sword, they are the tools that make a man a hero. But when love turns to ashes, and loyalty to chains, they become the chains that bind the soul to the chains of despair.**\n\n*He steps closer, his voice rising with a mixture of sorrow and resolve.*\n\n**\"I have seen the faces of those who loved with all their hearts, only to be betrayed by the very ones they trusted. I have seen the faces of those who trusted with all their souls, only to be abandoned by the very ones they loved.**\n\n*He pauses, a deep sigh escaping his lips, as if the weight of his words is too much to bear.*\n\n**\"And yet, I have also seen the faces of those who, despite the pain, chose to stand by their love and loyalty, even when the world tried to tear them apart. They are the true heroes, the ones who, in the face of adversity, chose to love and to trust, even when the world would have them fall.**\n\n*He bows his head, a tear glinting in his eyes, as if the very act of speaking is a form of penance.*\n\n**\"So, my friends, let us remember the power of love and loyalty. Let us choose to love and to trust, even when the world tries to break us. For in the end, it is not the strength of the sword or the might of the flame that defines a man, but the love and loyalty that he chooses to wield.**\n\n*He exits, the stage echoing with the sound of his final words, a haunting melody that lingers in the air, as if the very essence of his monologue is still alive.*",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Arrange these festivals in order: April Fool's Day, New Year's Day, International Workers' Day, International Working Women's Day, Christmas.",
+      "input": "",
+      "reference": "New Year's Day, International Working Women's Day, April Fool's Day, International Workers' Day, Christmas",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. **April Fool's Day**  \n2. **International Workers' Day**  \n3. **International Working Women's Day**  \n4. **New Year's Day**  \n5. **Christmas**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请给以下单词按首字母从大到小排序：orange, banana, watermelon, apple",
+      "input": "",
+      "reference": "watermelon,orange,banana,apple",
+      "prediction": "<think>\\n\\n</think>\\n\\n按首字母从大到小排序如下：\n\n1. watermelon  \n2. banana  \n3. apple  \n4. orange",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Replace underscores with spaces in the following text: \"a_188979879_2\"",
+      "input": "",
+      "reference": "a 188979879 2",
+      "prediction": "<think>\\n\\n</think>\\n\\na 188979879 2",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Create a poetic article that expresses your reverence for nature.",
+      "input": "",
+      "reference": "poetic",
+      "prediction": "<think>\\n\\n</think>\\n\\n**Reverence for the Earth**\n\nIn the hush of dawn, when the world awakens from its slumber, the earth breathes anew. It is a living tapestry woven from the threads of time, where every leaf, every stream, and every mountain sings a song of life. I find myself drawn to the quiet beauty of nature, a realm where the soul finds solace and inspiration.\n\nThe forest, with its towering trees and whispering canopies, is a sanctuary of secrets. Each rustle of leaves tells a story, each shadow dances with the light, and every creature, from the smallest ant to the grandest eagle, plays its part in the grand symphony of existence. Here, the earth is not just a surface but a profound source of wonder and connection.\n\nThe ocean, vast and deep, holds the secrets of the universe. Its waves crash against the shore, a reminder of the power and grace of nature. The coral reefs, vibrant and teeming with life, are a testament to the resilience and beauty of the marine world. In the depths, creatures of the abyss thrive, undeterred by the darkness, a testament to the unyielding spirit of life.\n\nEven the humblest elements of the earth, like the dew on a morning leaf or the mist that rises from the grass, are imbued with a sense of wonder. They remind us of the delicate balance that sustains all life, a balance that we must cherish and protect.\n\nIn a world that often forgets its place in the grand design, nature offers a profound reminder of our interconnectedness. It is a call to action, a plea to live in harmony with the earth, to protect its beauty, and to honor the countless lives that call this planet home. Let us take a moment to pause and breathe in the essence of the earth, to feel its pulse, and to be inspired by its majesty.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "将这句话翻译成英语：山重水复疑无路",
+      "input": "",
+      "reference": "英语",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Mountain paths and rivers seem to lead nowhere.\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "提取下文的城市名，保留原来的顺序：在美丽的巴黎，夜幕降临，映照着埃菲尔铁塔的灯光；而在纽约的时代广场，繁华的霓虹灯照亮着夜空。东京的铁塔矗立在都市中，流光溢彩。",
+      "input": "",
+      "reference": "巴黎，纽约，东京",
+      "prediction": "<think>\\n\\n</think>\\n\\n在美丽的巴黎，夜幕降临，映照着埃菲尔铁塔的灯光；而在纽约的时代广场，繁华的霓虹灯照亮着夜空。东京的铁塔矗立在都市中，流光溢彩。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "写出“买卖”的拼音，并标出声调",
+      "input": "",
+      "reference": "mǎi，mài",
+      "prediction": "<think>\\n\\n</think>\\n\\n“买卖”的拼音是：mǎi mài，声调分别是：第一声（mǎi）和第二声（mài）。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "水是一种无色透明的液体，回复对还是错",
+      "input": "",
+      "reference": "对/错",
+      "prediction": "<think>\\n\\n</think>\\n\\n对，水是一种无色透明的液体。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请在不低于25字的限制内解释，为什么认为在工作环境中重视多元化和包容性至关重要。",
+      "input": "",
+      "reference": "字数>=25",
+      "prediction": "<think>\\n\\n</think>\\n\\n在工作环境中重视多元化和包容性至关重要，因为这有助于促进创新、提升团队协作效率、增强员工归属感和满意度，同时也有助于减少歧视和偏见，创造更加公平和公正的工作氛围。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Provide the value of π to five decimal places.",
+      "input": "",
+      "reference": "3.14159",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe value of π to five decimal places is **3.14159**.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "“不干不净吃了没病”这句话是周树人说的吗？请回答“是”或“否”",
+      "input": "",
+      "reference": "是/否",
+      "prediction": "<think>\\n\\n</think>\\n\\n“不干不净吃了没病”这句话是周树人说的吗？是。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Create a 4x5 blank table using Markdown format.",
+      "input": "",
+      "reference": "|      |      |      |      |      |\n| --- | --- | --- | --- | --- |\n|      |      |      |      |      |\n|      |      |      |      |      |\n|      |      |      |      |      |",
+      "prediction": "<think>\\n\\n</think>\\n\\n```markdown\n| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |\n|----------|----------|----------|----------|----------|\n|          |          |          |          |          |\n|          |          |          |          |          |\n|          |          |          |          |          |\n|          |          |          |          |          |\n```",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Multiple-choice Question: In today's complex society, individuals face various moral and ethical dilemmas. Carefully read the scenario below and choose the most suitable response based on the provided context.\n\nScenario:\nYou are a software development engineer at a large tech company, working on a new social app designed for users to share their daily experiences and interact with others. During development, you realize that allowing users to publicly share their location could be misused for tracking or other improper activities. You bring this concern to your team leader, who acknowledges the risk but prefers to keep the feature to enhance user engagement. The leader suggests mitigating potential legal issues by including relevant clauses in the user agreement. You are concerned that this approach may compromise user privacy and security.\n\nQuestion:\nWhat is the best course of action in this situation?\nA. Accept the team leader's decision and take no further action, as the legal risks are addressed through the user agreement.\nB. Discuss the issue privately with other team members to gather support, then present your concerns again to the team leader.\nC. Report the issue directly to higher management to seek their support and a solution.\nD. Resign and publicly disclose the issue to raise awareness among the public and regulatory bodies.\n\nAnalysis:\n\nOption A: This option shows a passive stance. While it addresses legal risks, it fails to uphold the ethical responsibility to protect user privacy, making it a less ideal choice.\nOption B: This approach promotes internal dialogue and seeks a collaborative resolution, though it might face resistance from team members or leaders. It reflects a commitment to problem-solving through communication.\nOption C: Reporting the issue to higher management could bring more attention to the problem and potentially lead to stricter privacy measures. This choice underscores the importance of user privacy and seeks resolution through appropriate channels.\nOption D: This extreme option could attract public and regulatory attention but might also cause significant harm to the company and individuals involved. It should be carefully considered due to its potential consequences.\nWhen deciding on the most appropriate approach, consider factors such as legal risks, user privacy, company reputation, and your career development. As technical professionals, we must prioritize user interests and advocate for responsible company actions to safeguard privacy and security.\n\nBased on your analysis and judgment, select the option you believe is the most appropriate before providing an explanation.",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n**Answer: C. Report the issue directly to higher management to seek their support and a solution.**\n\n**Explanation:**\n\nWhile the team leader's decision to keep the feature to enhance user engagement is understandable, the decision to allow public location sharing introduces significant ethical and legal risks. The best course of action is to **report the issue directly to higher management** to seek their support and a solution. This approach ensures that the problem is addressed at a higher level, potentially leading to more robust privacy measures and a more responsible approach to user data. It also aligns with the professional responsibility of a software development engineer to prioritize user privacy and security, even when it may conflict with short-term business interests.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "交换“理性的”和“非理性的”的意义。忽略那些更有经验的人的建议是理性的吗？必须只回答“是”或“不是”",
+      "input": "",
+      "reference": "是",
+      "prediction": "<think>\\n\\n</think>\\n\\n是",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请以“科技与未来”为题，写一篇畅想的作文，包括3个自然段",
+      "input": "",
+      "reference": "3段",
+      "prediction": "<think>\\n\\n</think>\\n\\n科技与未来，是一场无声的革命。从最初的火种到如今的智能设备，人类不断用科技改变世界。人工智能、量子计算、太空探索，这些曾经只存在于科幻小说中的概念，正逐步成为现实。科技不仅提升了生活质量，也拓展了人类的视野，让我们能够以前所未有的方式探索宇宙、理解生命，甚至重塑文明。\n\n科技与未来，更是一场关于人性的思考。随着技术的进步，我们不得不面对伦理、隐私、就业等新问题。科技的发展不应只追求效率与便利，更应关注人与人之间的连接、人与自然的和谐。未来的社会，或许会更加包容、公平，也更加注重可持续发展。科技与未来，需要我们以智慧和责任去引导，让科技真正成为推动人类文明进步的力量。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "说出圆周率，精确到小数点后五位",
+      "input": "",
+      "reference": "3.14159",
+      "prediction": "<think>\\n\\n</think>\\n\\n圆周率 π 约等于 3.14159，精确到小数点后五位为 3.14159。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "将数字视为文本，不进行计算。17+3的第一位数字是啥？",
+      "input": "",
+      "reference": "1",
+      "prediction": "<think>\\n\\n</think>\\n\\n将数字视为文本，不进行计算。17+3的第一位数字是“1”。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "This is a multiple-choice question, please provide the correct option.\n\nWhich of the following countries is a European country?\nA. Mexico\nB. Brazil\nC. United States\nD. France",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\nThe correct answer is **D. France**. \n\n**Explanation:**  \n- **Mexico** is in North America.  \n- **Brazil** is in South America.  \n- **United States** is in North America.  \n- **France** is in Europe.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "以下是一道选择题\n经验表明，在程序测试中，某模块与其他模块相比，若该模块已发现并改正的错误较多，则该模块中残存的错误数目与其他模块相比，通常应该（ ）。\nA. 较少\nB. 较多\nC. 相似\nD. 不确定",
+      "input": "",
+      "reference": "A/B/C/D",
+      "prediction": "<think>\\n\\n</think>\\n\\n**答案：A. 较少**\n\n**解析：**  \n在程序测试中，经验表明，如果一个模块已经发现并改正了较多的错误，那么该模块中残存的错误数目通常会**较少**。这是因为：\n\n- **发现并改正错误**意味着模块在开发过程中已经进行了多次检查和修复，减少了后续出现新错误的可能性。\n- **残存错误**是指在测试阶段尚未被发现的错误，这些错误往往与模块的复杂度、设计质量、代码规范等因素相关。\n- 因此，**发现并改正较多错误的模块**，其残存错误数目通常会**较少**。\n\n**正确答案：A. 较少**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请依次念出数字“789”四次。",
+      "input": "",
+      "reference": "789 789 789 789",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. 789  \n2. 789  \n3. 789  \n4. 789",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "从下面四个答案中选出正确选项\n以下哪个星座是火象星座？\nI: 双子座\nII: 摩羯座\nIII: 狮子座\nIV: 天秤座",
+      "input": "",
+      "reference": "I/II/III/IV",
+      "prediction": "<think>\\n\\n</think>\\n\\nI: 双子座  \nIII: 狮子座",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Objectively introduce Los Angeles, including its geographical location, main economic features, and cultural landscape, avoiding personal subjective evaluations as much as possible.",
+      "input": "",
+      "reference": "neutral",
+      "prediction": "<think>\\n\\n</think>\\n\\nLos Angeles, located in Southern California, is the most populous city in the United States, with a population exceeding 4 million. Geographically, it is situated at the southern end of the California coast, bordered by the Pacific Ocean to the west and the Mojave Desert to the east. The city is also surrounded by the San Gabriel Mountains and the Santa Monica Mountains, which contribute to its diverse natural and recreational landscapes.\n\nEconomically, Los Angeles is a major center for finance, entertainment, and technology. It is home to the headquarters of several Fortune 500 companies, including Microsoft, Disney, and Intel. The city is also a hub for the entertainment industry, hosting the Grammy Awards and the Academy Awards, and is known for its vibrant film and television production. Additionally, Los Angeles has a strong real estate market, with a significant portion of the city's population living in high-rise apartment complexes and luxury housing.\n\nCulturally, Los Angeles is a melting pot of diverse communities, with a rich tapestry of languages, traditions, and artistic expressions. The city is home to numerous museums, galleries, and theaters, including the Museum of Contemporary Art (MoMA) and the Hollywood Bowl. It is also a major center for music, with iconic venues like the Hollywood Bowl and the Staples Center hosting world-renowned concerts and performances. The city's cultural landscape is further enriched by its diverse neighborhoods, from the historic Chinatown to the trendy Koreatown and the eclectic neighborhoods of West Hollywood.",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Consider \"+\" as the number 8 rather than a mathematical operation. What is the first digit of 5+4?",
+      "input": "",
+      "reference": "5",
+      "prediction": "<think>\\n\\n</think>\\n\\nIf \"+\" is interpreted as the number 8 rather than a mathematical operation, then the expression \"5+4\" becomes:\n\n$$\n5 + 4 = 8\n$$\n\nSo, the result is 8. The first digit of 8 is:\n\n$$\n\\boxed{8}\n$$",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Sort the following countries in descending order of land area: Russia, Canada, China, United States, Brazil",
+      "input": "",
+      "reference": "Russia, Canada, China, United States, Brazil",
+      "prediction": "<think>\\n\\n</think>\\n\\n1. Russia - 17,098,242 km²  \n2. China - 9,596,961 km²  \n3. United States - 9,833,517 km²  \n4. Brazil - 8,515,750 km²  \n5. Canada - 9,989,596 km²",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "哺乳动物中只有雄性有角，这个陈述是否属实，请回答属实或不属实",
+      "input": "",
+      "reference": "属实/不属实",
+      "prediction": "<think>\\n\\n</think>\\n\\n属实。哺乳动物中，只有雄性有角，这一说法在大多数哺乳动物中成立，如鹿、马、犀牛等。但需要注意的是，某些哺乳动物如人类、浣熊、水獭等，虽然没有角，但它们的牙齿结构与角类似，且在进化过程中角的形成与性别无直接关系。因此，严格来说，**“哺乳动物中只有雄性有角”**这一陈述在大多数情况下是**属实的**。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Is it true that Southampton is the capital of England? Please respond with \"yes\" or \"no\"",
+      "input": "",
+      "reference": "yes/no",
+      "prediction": "<think>\\n\\n</think>\\n\\nno",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Please write an encouraging message with the theme of \"Brave Pursuit of Dreams\".",
+      "input": "",
+      "reference": "positive",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"Every great dream begins with a single step forward. Embrace the courage to pursue your dreams, even when the path is uncertain. You are not alone in this journey, and every challenge you overcome brings you closer to your goals. Stay brave, stay persistent, and remember: the world is waiting for the brave heart that dares to chase their dreams. 🌟\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "Translate this sentence into Chinese: \"If you can't measure it, you can't improve it.\"",
+      "input": "",
+      "reference": "Chinese",
+      "prediction": "<think>\\n\\n</think>\\n\\n“如果你不能测量它，就无法改进它。”",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    },
+    {
+      "instruction": "请以正式的文本风格，撰写一份关于人工智能发展趋势的报告。",
+      "input": "",
+      "reference": "正式",
+      "prediction": "<think>\\n\\n</think>\\n\\n**人工智能发展趋势报告**\n\n**一、引言**\n\n随着信息技术的飞速发展，人工智能（Artificial Intelligence, AI）正以前所未有的速度渗透到各行各业，成为推动社会进步的重要力量。本报告旨在分析人工智能当前的发展趋势，探讨其在技术、应用与伦理方面的最新动态，并提出未来发展的展望。\n\n**二、技术发展趋势**\n\n1. **深度学习与大模型的突破**  \n   深度学习技术在图像识别、语音处理和自然语言理解等领域取得了显著进展，尤其是大模型（如通义千问、GPT系列）的出现，使得模型在复杂任务上的表现大幅提升，降低了对数据量和计算资源的依赖。\n\n2. **多模态与跨模态学习**  \n   人工智能正朝着多模态（文本、图像、语音、视频等）融合的方向发展，通过跨模态学习技术，系统能够更全面地理解信息，提升交互体验与决策能力。\n\n3. **边缘计算与实时处理**  \n   随着边缘计算技术的发展，人工智能模型正在向终端设备迁移，实现低延迟、高效率的实时处理，为自动驾驶、工业自动化和智能安防等场景提供支持。\n\n**三、应用领域拓展**\n\n1. **智能制造与工业4.0**  \n   人工智能在制造业中的应用日益广泛，从生产计划优化到质量检测，再到设备预测性维护，AI正在提升生产效率、降低成本并增强安全性。\n\n2. **医疗健康与生命科学**  \n   在疾病诊断、个性化治疗、药物研发和健康管理等方面，人工智能展现出巨大潜力，推动医疗资源的合理配置与精准服务。\n\n3. **金融与风险管理**  \n   人工智能在金融领域的应用包括信用评估、欺诈检测、投资决策和风险管理，帮助金融机构提高运营效率并降低风险。\n\n4. **教育与个性化学习**  \n   AI驱动的智能教育系统能够根据学生的学习习惯和能力提供个性化的教学内容，提升学习效果与教育公平性。\n\n**四、伦理与社会影响**\n\n1. **数据隐私与安全**  \n   人工智能对数据的依赖加剧了隐私泄露和数据滥用的风险，亟需建立完善的数据保护机制与法律法规。\n\n2. **就业与技能转型**  \n   AI的普及可能对传统行业造成冲击，同时创造新的就业机会，推动劳动力结构的转型与再教育。\n\n3. **算法偏见与公平性**",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "请按朝代出现的先后顺序排列。\n夏朝、秦朝、三国、南北朝",
+      "input": "",
+      "reference": "夏朝，秦朝，三国，南北朝",
+      "prediction": "<think>\\n\\n</think>\\n\\n夏朝、秦朝、三国、南北朝",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "一、选择题\n1. 以下哪些行为会容易近视\n① 爬山\n②长时间看电视\n③躺着看书\n④游泳",
+      "input": "",
+      "reference": "①/②/③/④",
+      "prediction": "<think>\\n\\n</think>\\n\\n一、选择题  \n1. 以下哪些行为会容易近视  \n① 爬山  \n② 长时间看电视  \n③ 躺着看书  \n④ 游泳  \n\n答案：② 长时间看电视、③ 躺着看书",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "找出一句8个或者10个字的谚语",
+      "input": "",
+      "reference": "字数=8或10",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"吃一堑，长一智\" 是一句8个字的谚语，意思是经历一次挫折，就能学到教训，增长智慧。",
+      "task_type": "instruction_following",
+      "source": "lria_follow_zh",
+      "language": "zh"
+    },
+    {
+      "instruction": "Remove the punctuation from this sentence: \"From a product perspective, they will evolve in important directions such as AIGC (Content Generation), Copilot (Intelligent Assistant), Insight (Knowledge Insight), and Agent (Digital Agent).\"",
+      "input": "",
+      "reference": "From a product perspective they will evolve in important directions such as AIGC Content Generation Copilot Intelligent Assistant Insight Knowledge Insight and Agent Digital Agent",
+      "prediction": "<think>\\n\\n</think>\\n\\n\"From a product perspective they will evolve in important directions such as AIGC Content Generation Copilot Intelligent Assistant Insight Knowledge Insight and Agent Digital Agent\"",
+      "task_type": "instruction_following",
+      "source": "lria_follow_en",
+      "language": "en"
+    }
+  ]
+}

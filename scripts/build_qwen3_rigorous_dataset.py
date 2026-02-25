@@ -11,6 +11,7 @@ Outputs:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import random
@@ -112,11 +113,16 @@ def load_json_list(path: Path, source_name: str) -> List[Dict]:
     if not isinstance(data, list):
         return []
     out = []
-    for s in data:
+    for idx, s in enumerate(data):
         if not isinstance(s, dict):
             continue
         x = dict(s)
         x.setdefault("source", source_name)
+        x.setdefault("_src_file", str(path))
+        x.setdefault("_src_index", idx)
+        x.setdefault("_src_loader", "json_list")
+        x.setdefault("_src_source_name", source_name)
+        x.setdefault("_record_uid", f"json_list|{path.name}|{idx}")
         out.append(x)
     return out
 
@@ -131,7 +137,7 @@ def load_mifeval_dir(path: Path) -> List[Dict]:
         raw = json.loads(file.read_text(encoding="utf-8"))
         if not isinstance(raw, dict):
             continue
-        for _, item in raw.items():
+        for item_key, item in raw.items():
             prompt = ""
             op = item.get("origin_prompt")
             if isinstance(op, list) and op:
@@ -149,6 +155,11 @@ def load_mifeval_dir(path: Path) -> List[Dict]:
                 "task_type": "instruction_following",
                 "source": f"mifeval_{lang}",
                 "language": lang,
+                "_src_file": str(file),
+                "_src_index": item_key,
+                "_src_loader": "mifeval_json",
+                "_src_source_name": f"mifeval_{lang}",
+                "_record_uid": f"mifeval|{file.name}|{item_key}",
             })
     return out
 
@@ -158,7 +169,7 @@ def load_ifeval_jsonl(path: Path) -> List[Dict]:
     if not path.exists():
         return out
     with path.open("r", encoding="utf-8") as f:
-        for line in f:
+        for line_no, line in enumerate(f, start=1):
             line = line.strip()
             if not line:
                 continue
@@ -176,6 +187,11 @@ def load_ifeval_jsonl(path: Path) -> List[Dict]:
                 "task_type": "instruction_following",
                 "source": "ifeval_prompt_only",
                 "language": "en",
+                "_src_file": str(path),
+                "_src_index": line_no,
+                "_src_loader": "ifeval_jsonl",
+                "_src_source_name": "ifeval_prompt_only",
+                "_record_uid": f"ifeval_jsonl|{path.name}|{line_no}",
             })
     return out
 
@@ -232,6 +248,39 @@ def count_by_source(samples: List[Dict]) -> Dict[str, int]:
     return dict(c)
 
 
+def count_by_source_file(samples: List[Dict]) -> Dict[str, int]:
+    c = Counter((s.get("_src_file") or "missing") for s in samples)
+    return dict(c)
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def build_lineage_records(samples: List[Dict], split_name: str) -> List[Dict]:
+    out: List[Dict] = []
+    for pos, s in enumerate(samples):
+        out.append({
+            "split": split_name,
+            "position": pos,
+            "record_uid": s.get("_record_uid"),
+            "source_label": s.get("source"),
+            "source_file": s.get("_src_file"),
+            "source_index": s.get("_src_index"),
+            "source_loader": s.get("_src_loader"),
+            "task_type": s.get("task_type"),
+            "direction": s.get("direction"),
+            "language": s.get("language"),
+            "has_output": bool((s.get("output") or "").strip()),
+            "dedup_key": dedup_key(s),
+        })
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build rigorous Qwen3 dataset splits.")
     parser.add_argument("--data-dir", type=str, default="data")
@@ -244,6 +293,8 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=2026)
     parser.add_argument("--include-public-in-train", action="store_true")
     parser.add_argument("--no-think-prefix", action="store_true")
+    parser.add_argument("--audit-mode", action="store_true", help="Emit lineage/hash audit artifacts.")
+    parser.add_argument("--audit-dir", type=str, default="", help="Directory for audit artifacts (default: data/audit).")
     args = parser.parse_args()
 
     rng = random.Random(args.seed)
@@ -494,6 +545,82 @@ def main() -> None:
     }
     out_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    if args.audit_mode:
+        audit_dir = Path(args.audit_dir) if args.audit_dir else (data_dir / "audit")
+        audit_dir.mkdir(parents=True, exist_ok=True)
+
+        lineage_path = audit_dir / f"{args.output_prefix}_lineage.jsonl"
+        source_snapshot_path = audit_dir / f"{args.output_prefix}_source_snapshot.json"
+        hashes_path = audit_dir / f"{args.output_prefix}_hashes.json"
+
+        lineage_records: List[Dict] = []
+        lineage_records.extend(build_lineage_records(train_set, "train"))
+        lineage_records.extend(build_lineage_records(val_set, "val"))
+        lineage_records.extend(build_lineage_records(selected_test, "test_labeled"))
+        lineage_records.extend(build_lineage_records(test_if_unlabeled, "test_if_unlabeled"))
+        with lineage_path.open("w", encoding="utf-8") as f:
+            for rec in lineage_records:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+        raw_if_sources = [
+            dataset_dir / "m-ifeval",
+            dataset_dir / "IFEval" / "input_data.jsonl",
+        ]
+        input_files: List[Path] = []
+        for p, _ in train_sources:
+            if p.exists():
+                input_files.append(p)
+        for p, _ in eval_labeled_sources:
+            if p.exists():
+                input_files.append(p)
+        for raw_src in raw_if_sources:
+            if raw_src.is_dir():
+                input_files.extend(sorted(x for x in raw_src.glob("*") if x.is_file()))
+            elif raw_src.exists():
+                input_files.append(raw_src)
+        # De-duplicate while preserving order.
+        seen_input: Set[str] = set()
+        input_files = [p for p in input_files if not (str(p.resolve()) in seen_input or seen_input.add(str(p.resolve())))]
+
+        source_snapshot = {
+            "output_prefix": args.output_prefix,
+            "confirmed_user_generated": [
+                "data/train.json",
+                "data/val.json",
+            ],
+            "direct_input_files": [
+                {"path": str(p), "size_bytes": p.stat().st_size}
+                for p in input_files
+            ],
+            "final_split_source_labels": {
+                "train": count_by_source(train_out),
+                "val": count_by_source(val_out),
+                "test_labeled": count_by_source(test_labeled_out),
+                "test_if_unlabeled": count_by_source(test_if_unlabeled_out),
+            },
+            "final_split_source_files": {
+                "train": count_by_source_file(train_set),
+                "val": count_by_source_file(val_set),
+                "test_labeled": count_by_source_file(selected_test),
+                "test_if_unlabeled": count_by_source_file(test_if_unlabeled),
+            },
+            "lineage_record_count": len(lineage_records),
+        }
+        source_snapshot_path.write_text(json.dumps(source_snapshot, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        hash_entries = {}
+        files_to_hash = input_files + [out_train, out_val, out_test, out_if_unlabeled, out_manifest, Path(__file__).resolve()]
+        for p in files_to_hash:
+            if p.exists() and p.is_file():
+                hash_entries[str(p)] = {
+                    "sha256": sha256_file(p),
+                    "size_bytes": p.stat().st_size,
+                }
+        hashes_path.write_text(json.dumps({
+            "output_prefix": args.output_prefix,
+            "files": hash_entries,
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
+
     print("=" * 72)
     print("Qwen3 rigorous dataset build complete")
     print("=" * 72)
@@ -506,6 +633,10 @@ def main() -> None:
     print("task(val):", manifest["task_distribution"]["val"])
     print("task(test_labeled):", manifest["task_distribution"]["test_labeled"])
     print("leakage:", leakage)
+    if args.audit_mode:
+        print(f"audit_lineage: {lineage_path}")
+        print(f"audit_source_snapshot: {source_snapshot_path}")
+        print(f"audit_hashes: {hashes_path}")
 
 
 if __name__ == "__main__":

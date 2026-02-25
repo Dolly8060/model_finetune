@@ -1,0 +1,30 @@
+{
+  "output_file": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_internal_if_labeled.json",
+  "count": 728,
+  "source_distribution": {
+    "lria_follow_en": 256,
+    "lria_follow_zh": 472
+  },
+  "language_distribution": {
+    "en": 256,
+    "zh": 472
+  },
+  "sources": [
+    "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_EN\\LRIA-Follow_v3_EN.xlsx",
+    "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_ZH\\LRIA-Follow_v3_ZH.xlsx"
+  ],
+  "file_stats": {
+    "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_EN\\LRIA-Follow_v3_EN.xlsx": {
+      "rows_total": 357,
+      "rows_missing_prompt": 0,
+      "rows_missing_gt": 101,
+      "rows_kept_labeled": 256
+    },
+    "D:\\AI_code\\model_finetune\\dataset\\LRIA-Follow_ZH\\LRIA-Follow_v3_ZH.xlsx": {
+      "rows_total": 505,
+      "rows_missing_prompt": 0,
+      "rows_missing_gt": 33,
+      "rows_kept_labeled": 472
+    }
+  }
+}

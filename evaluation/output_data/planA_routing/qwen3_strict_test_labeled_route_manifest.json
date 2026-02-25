@@ -1,0 +1,24 @@
+{
+  "input_file": "D:\\AI_code\\model_finetune\\data\\qwen3_strict_test_labeled.json",
+  "total": 900,
+  "routed_ts": 600,
+  "routed_if": 300,
+  "other_unrouted": 0,
+  "duplicates_by_route_key": 0,
+  "task_distribution_total": {
+    "instruction_following": 300,
+    "summarization": 300,
+    "translation": 300
+  },
+  "task_distribution_ts": {
+    "summarization": 300,
+    "translation": 300
+  },
+  "task_distribution_if": {
+    "instruction_following": 300
+  },
+  "outputs": {
+    "ts": "D:\\AI_code\\model_finetune\\evaluation\\output_data\\planA_routing\\qwen3_strict_test_labeled_ts.json",
+    "if": "D:\\AI_code\\model_finetune\\evaluation\\output_data\\planA_routing\\qwen3_strict_test_labeled_if.json"
+  }
+}

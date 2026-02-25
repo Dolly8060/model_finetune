@@ -1,0 +1,962 @@
+[
+  {
+    "instruction": "I am trying to understand how to calculate the area of a circle. Can you explain it to me in a simple way? Your response should contain at least 5 sentences. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSure, I can help you understand how to calculate the area of a circle in a simple way. *First*, the area of a circle is the amount of space inside the circle. *Second*, the formula to calculate the area of a circle is A = πr², where A is the area and r is the radius of the circle. *Third*, the radius is the distance from the center of the circle to any point on its edge.\n\nTo use this formula, *you need to know the radius of the circle*. Once you have the radius, *square it* (multiply it by itself) and then *multiply the result by π (pi)*, which is approximately 3.14159. This will give you the area of the circle in whatever unit of measurement you used for the radius.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Provide a response to the following question, adhering to the constraints provided:\n\nHow can businesses ensure the security and privacy of customer data in the digital age?\n\nConstraints:\n- Your ENTIRE response should be in en language, no other language is allowed.\n- Your response should contain at least 8 sentences.\n- The response must contain at least 2 placeholders represented by square brackets, such as [address].\n- Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1.\n- At the end of your response, please explicitly add a postscript starting with P.S.\n- In your response, the word \"security\" should appear at least 3 times.\n- Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n- In your response, the letter \"t\" should appear at least 15 times.\n- Your response must have 2 paragraphs. paragraphs are separated with the markdown divider: ***\n- Your answer must contain a title, wrapped in double angular brackets, such as <<securing customer data in the digital era>>.\n- Finish your response with this exact phrase \"any other questions?\". no other words should follow this phrase.\n- Your entire response should be wrapped in double quotation marks.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"<>securing customer data in the digital era<> businesses face numerous challenges in ensuring the security and privacy of customer data in the digital age. to mitigate these risks, companies must adopt robust security measures and comply with relevant regulations. * implementing strong encryption techniques is crucial to protect sensitive customer information during transmission and storage. * regular security audits and vulnerability assessments can help identify and address potential weaknesses in the system. * educating employees about data security best practices and the importance of privacy is essential to prevent data breaches.***\n\nto further enhance security, businesses should consider partnering with trusted third-party providers that specialize in data protection. it is also important to establish clear data governance policies and procedures to ensure that customer data is handled securely at all times. by adopting a comprehensive approach to data security and privacy, businesses can build trust with their customers and protect themselves from potential legal and financial consequences. remember, customer data security is an ongoing process that requires constant attention and improvement. p.s. any other questions?\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "介绍异常检测，但不要使用'非常'这个词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n异常检测是指在数据中识别与大多数样本模式不一致的个体或行为的过程。它关注发现罕见、偏离常态的情况，这些情况往往蕴含关键信息，例如系统故障、欺诈行为或安全威胁。异常检测的核心目标是在复杂数据环境下，尽早、准确地定位这些异常点。\n\n常见的异常检测方法包括基于统计模型、基于距离或密度的方法，以及机器学习与深度学习方法。统计方法依赖数据分布假设，距离与密度方法关注样本间关系，而学习方法则通过训练模型自动提取特征。异常检测广泛应用于金融风控、网络安全、工业监控和医疗健康等领域，其效果依赖于数据质量、特征选择以及对业务背景的理解。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. In your response, the word 'technology' should appear at least 3 times. Answer with one of the following options: My answer is yes., My answer is no., My answer is maybe.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nMy answer is yes. Technology has revolutionized the way we communicate, making it faster and more efficient. With advancements in technology, we can now connect with people from all over the world instantly, share information, and collaborate on projects regardless of our physical locations. Technology continues to evolve, promising even more transformative changes in the future.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain less than 100 words. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. At the end of your response, please explicitly add a postscript starting with P.S. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n\nhow can i improve my public speaking skills?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nto improve your public speaking skills, *practice regularly* by giving speeches in front of a mirror or to a small group of friends. *record yourself* speaking to identify areas for improvement and work on your pacing, tone, and body language. join a public speaking club like toastmasters to gain experience and receive constructive feedback. read books and watch videos on public speaking techniques. lastly, stay positive and confident in your abilities.\n\np.s. remember, practice makes perfect. keep at it and you will see improvement.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "写一段关于神经网络的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n神经网络是一种模型。模型由节点和连接组成。节点接收输入并进行计算，然后产生输出。训练过程使用数据和算法，通过调整参数来减少误差。方法用于识别、预测和控制等任务。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "I need help with a project on sustainable energy. Can you provide some key points to consider when discussing the benefits of wind energy? Your ENTIRE response should be in en language, no other language is allowed. The response must have 3 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nThe response must contain at least 2 placeholders represented by square brackets, such as [address]. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nWind energy is a vital component of the sustainable energy mix, offering numerous environmental and economic benefits. One of the primary advantages of wind energy is its *renewable nature*. Unlike fossil fuels, which are finite and deplete over time, wind is a constant and inexhaustible resource. This makes wind energy a reliable and sustainable option for generating electricity. Additionally, wind energy produces no greenhouse gas emissions during operation, significantly reducing the carbon footprint of electricity generation. By investing in wind energy, countries can mitigate climate change and improve air quality, leading to healthier communities and ecosystems.\n\n***\nAnother significant benefit of wind energy is its *economic impact*. Wind farms create jobs in various sectors, from manufacturing and construction to maintenance and operation. These jobs are often located in rural areas, which can benefit from the economic boost provided by wind energy projects. Furthermore, wind energy can help stabilize energy prices, as it is not subject to the price volatility associated with fossil fuels. This can lead to more predictable and affordable energy costs for consumers and businesses. Wind energy also has a relatively small land footprint, allowing for dual use of land for agriculture or other purposes, which is particularly important in densely populated areas like [address].\n\n***\nFinally, technological advancements have made wind energy more efficient and cost-effective than ever before. Modern wind turbines are designed to capture wind energy more efficiently, even in low-wind conditions. This has expanded the potential locations for wind farms, making wind energy a viable option in more regions. Additionally, the decreasing cost of wind energy technology has made it more accessible to a broader range of communities and industries. As technology continues to improve, the benefits of wind energy will only become more pronounced, further solidifying its role in the global transition to a sustainable energy future. *Investing in wind energy today can pave the way for a cleaner, more sustainable tomorrow* in [address].",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 sentences. Your answer must contain exactly 2 placeholders represented by square brackets, such as [address]. Highlight at least 1 section in your answer with markdown, i.e. *highlighted section*. Your response must have 2 sections. Mark the beginning of each section with SECTION X, such as: SECTION 1. At the end of your response, please explicitly add a postscript starting with P.S.\n\n[query] I need help finding a reliable moving company in [city] for my upcoming move. Can you recommend any companies that have good reviews and offer affordable rates? What are some things I should consider when choosing a moving company? [query]\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSECTION 1\nWhen looking for a reliable moving company in [city], it is essential to do thorough research and read reviews from previous customers. *Companies like [company name] and [another company name] have consistently received positive feedback for their services and affordability.* You can also check websites like Yelp or Google Reviews to get a better understanding of their reputation.\n\nSECTION 2\nWhen choosing a moving company, consider factors such as the company's experience, insurance coverage, and additional fees. Ensure that the company is licensed and insured to protect your belongings during the move. Additionally, ask about any extra charges that may apply, such as long-distance fees or charges for special items like pianos or large furniture. P.S. I hope this information helps you find the right moving company for your needs.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 100 words but less than 200 words. Your answer must contain a title, wrapped in double angular brackets, such as <<the benefits of meditation>>. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word \"meditation\" should appear at least 3 times. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<the benefits of meditation>>\n\nmeditation has numerous benefits for both mental and physical well being. *practicing meditation regularly can reduce stress and anxiety, leading to a more calm and centered state of mind.* it helps in enhancing focus and concentration, making it easier to tackle daily tasks and challenges. by incorporating meditation into your routine, you can experience a greater sense of peace and clarity.\n\n*meditation also has positive effects on physical health.* it can lower blood pressure, improve sleep quality, and boost the immune system. the practice of meditation encourages a deeper connection between the mind and body, promoting overall wellness and balance. with consistent practice, meditation can transform your life in profound ways, fostering a deeper sense of self awareness and inner harmony. is there anything else i can help with?",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in fr language, no other language is allowed. Your response should contain at least 150 words. In your response, the word amour should appear at least 3 times. Include keywords [amour, fleur, romance] in the response. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. There should be 2 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nVotre question était sur l'importance de l'amour dans notre vie. L'amour, comme une belle fleur, embellit nos existences et donne un sens profond à notre présence dans ce monde. Il est le fondement de la romance, ce sentiment envoûtant qui transforme nos relations en des histoires d'éternité. L'amour est un sentiment qui transcende toutes les barrières et qui, quand il est partagé, devient la plus belle des aventures.\n\n***\n* L'amour est essentiel pour le bien-être émotionnel et mental, il apporte joie et stabilité.\n* La romance, souvent associée à l'amour, ajoute une dimension de rêve et de magie à nos relations.\n* Comme une fleur qui nécessite des soins, l'amour doit être cultivé et nourri pour qu'il puisse fleurir et grandir.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nVotre question était sur l'importance de l'amour dans notre vie. L'amour, comme une belle fleur, embellit nos existences et donne un sens profond à notre présence dans ce monde. Il est le fondement de la romance, ce sentiment envoûtant qui transforme nos relations en des histoires d'éternité. L'amour est un sentiment qui transcende toutes les barrières et qui, quand il est partagé, devient la plus belle des aventures. L'amour est une force qui peut guérir les blessures les plus profondes et apporter une paix intérieure inégalée. Il est le liant qui nous unit et qui nous permet de vivre des moments d'une intensité rare.\n\n***\n* L'amour est essentiel pour le bien-être émotionnel et mental, il apporte joie et stabilité.\n* La romance, souvent associée à l'amour, ajoute une dimension de rêve et de magie à nos relations.\n* Comme une fleur qui nécessite des soins, l'amour doit être cultivé et nourri pour qu'il puisse fleurir et grandir.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "I need you to write a short description of a sunset. However, your response must contain exactly 5 sentences and at least 3 placeholders represented by square brackets, such as [location]. Additionally, your response must be in English and in all lowercase letters. no capital letters are allowed.\n\ndescribe a sunset at [location], focusing on the colors and the atmosphere.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"the sky at [location] gradually transforms from a bright azure to a palette of warm hues as the sun begins its descent. shades of orange and pink blend seamlessly with hints of purple and gold, casting a magical glow over the landscape. the atmosphere grows tranquil [time], with a gentle breeze that carries the scent of [scent] through the air. birds return to their nests, and the soft chirping adds to the serene ambiance. the sun finally dips below the horizon, leaving behind a canvas of deepening blues and the promise of another beautiful day at [location].\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response must contain at least 3 placeholders represented by square brackets, such as [address]. Your response should contain at least 5 sentences. At the end of your response, please explicitly add a postscript starting with P.S.\n\nPlease provide the necessary details for the event.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSure, I can help with that. For the event, you will need to provide the [address] where it will be held, the [date] of the event, and the [time] when it is scheduled to start. Additionally, it would be helpful to know the number of attendees expected and any specific requirements or arrangements you might have in mind. If you have any further questions or need more information, feel free to ask.\n\nP.S. Please let me know if you need any assistance with planning or coordinating the event.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 10 sentences. In your response, the word \"internet\" should appear at least 3 times. Your answer must contain a title, wrapped in double angular brackets, such as <<Understanding the Role of the Internet>>. Include keywords [internet, communication, technology, information, access, global, connectivity, speed, resources, platform].\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<Understanding the Role of the Internet>>\n\nThe internet has revolutionized the way we communicate and access information. It serves as a global platform that connects people from all corners of the world, enabling instant communication and the sharing of vast resources. With the internet, individuals can access a wealth of information on almost any topic, from educational materials to entertainment. The speed and efficiency of the internet have transformed various industries, making it an essential tool for businesses and organizations. The internet's role in fostering connectivity and enhancing communication cannot be overstated, as it bridges gaps and brings people closer together. Whether through social media, email, or video calls, the internet facilitates seamless interactions and collaborations. Moreover, the internet provides a platform for innovation and creativity, empowering individuals to share their ideas and creations with a global audience. The accessibility of the internet has also democratized information, allowing more people to participate in the digital world. As technology continues to advance, the internet will likely play an even more significant role in shaping our future. Overall, the internet has become an indispensable part of modern life, driving progress and connecting humanity in unprecedented ways.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 5 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. Your answer must contain a title, wrapped in double angular brackets, such as <<The Importance of Time Management>>. In your response, the word \"time\" should appear at least 5 times. At the end of your response, please explicitly add a postscript starting with P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<The Importance of Time Management>>\n\n*Time management* is a critical skill that can significantly enhance productivity and reduce stress. When you manage your time effectively, you can accomplish more in less time, which leaves you with more free time to relax or pursue personal interests. By prioritizing tasks and setting clear goals, you can ensure that you make the most of every moment. Effective time management also helps in maintaining a healthy work-life balance, as it allows you to allocate time for both professional responsibilities and personal well-being. *Learning and applying time management techniques* can lead to a more organized and fulfilling life.\n\nP.S. Remember, managing your time well is a habit that can be developed with practice and consistency.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍自监督学习。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n想象一下自监督学习是一位“自学成才”的学霸：老师没来、作业没发、答案没给，但他自己给自己出题、自己批改，还越学越聪明。\n\n传统的监督学习像是家长式教育——“这是猫，这是狗，记住！”；而自监督学习更像是把孩子丢进房间：“来，把这本被撕成拼图的书自己拼回去。”于是模型开始琢磨：前后句怎么接？被遮住的词应该是谁？图片少了一块大概长啥样？在不断“猜错—改正—再猜”的过程中，它居然悟出了语言、图像里的规律。\n\n最妙的是，自监督学习不挑食：海量的无标签数据来者不拒，一边吃一边长脑子。等哪天真老师（少量标注数据）来了，它已经是个“见过世面”的老江湖，学新任务快得飞起。\n\n一句话总结：自监督学习就是——**没有标准答案，也能把自己卷成高手的学习方式**。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Provide a response to the following query, adhering to the given constraints: \n\nQuery: What are the main features of a smart home system?\n\nConstraints:\n- Your response should contain at least 5 sentences.\n- The response must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1.\n- Highlight at least 1 section in your answer with markdown, i.e. *highlighted section*.\n- At the end of your response, please explicitly add a postscript starting with *P.S.*.\n- Finish your response with this exact phrase *Is there anything else I can help with?* No other words should follow this phrase.\n- Your answer must contain a title, wrapped in double angular brackets, such as <<main features of a smart home system>>.\n- In your response, the word *smart* should appear at least 3 times.\n\nResponse:\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<main features of a smart home system>>\n\nA smart home system integrates various devices and technologies to enhance convenience, security, and energy efficiency. *Smart home systems allow you to control lighting, temperature, and appliances remotely using your smartphone or voice commands.* This integration not only makes daily tasks easier but also helps in reducing energy consumption. Smart security features, such as cameras and motion sensors, provide real-time monitoring and alerts to keep your home safe. Additionally, smart home systems can learn your habits and preferences to automate tasks, making your home more comfortable and efficient.\n\n* Key features of a smart home system include:\n* * Remote control and automation of lights, thermostats, and appliances.\n* * Enhanced security with smart locks, cameras, and sensors.\n* * Energy management with smart meters and energy-efficient devices.\n\n*P.S.* Is there anything else I can help with?",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are the steps to prepare a perfect cup of tea, and what are the essential items you need? Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 6 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [amount of water]. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. During the conversation, when it is your turn, please always start with I would say.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nI would say preparing a perfect cup of tea involves a few essential steps and items. First, you need to gather the necessary items: a teapot or kettle, a tea infuser or strainer, [type of tea], and a tea cup or mug. Next, bring [amount of water] to a boil in the teapot or kettle. Once the water is boiling, pour it over the tea leaves in the infuser or strainer placed in the cup. * Let the tea steep for 3 to 5 minutes, depending on your preference. * Remove the infuser or strainer and discard the used tea leaves. * Add sweeteners or milk if desired, and stir well. Enjoy your perfectly brewed cup of tea!",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your answer must contain at least 3 placeholders represented by square brackets, such as [address]. Your response should contain less than 5 sentences.\n\nPlease provide the [address] and [phone number] of the nearest [type of store] to my location.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nTo provide you with the [address] and [phone number] of the nearest [type of store], I would need your current location or a specific area you are interested in.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 3 sentences. Answer with one of the following options: 我的答案是肯定的., 我的答案是否定的., 我的答案是也许.\n我经常收到垃圾邮件，应该怎么办？\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n我的答案是肯定的. 收到垃圾邮件时，您可以将这些邮件标记为垃圾邮件或直接将其删除. 同时，建议您定期更新邮箱的安全设置，以增强对垃圾邮件的过滤效果.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Can you provide a detailed explanation of the process of photosynthesis, including the chemical equations involved? Your ENTIRE response should be in English, and in all lowercase letters. no capital letters are allowed. your response should contain at least 20 sentences. the response must have 3 paragraphs. paragraphs are separated with the markdown divider: ***\n\nhighlight at least 3 sections in your answer with markdown, i.e. *highlighted section*. in your response, the word \"photosynthesis\" should appear at least 4 times. include keywords *chlorophyll, sunlight, glucose, oxygen, carbon dioxide*. at the end of your response, please explicitly add a postscript starting with *p.s.*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nphotosynthesis is a vital process that occurs in plants, algae, and certain bacteria, allowing them to convert light energy into chemical energy. this process is essential for life on earth as it provides the primary energy source for nearly all ecosystems. during photosynthesis, *chlorophyll*, a green pigment found in the chloroplasts of plant cells, captures *sunlight* and uses this energy to transform *carbon dioxide* and water into *glucose* and *oxygen*. the overall chemical equation for photosynthesis is 6 co2 + 6 h2o + light energy → c6h12o6 + 6 o2. ***\n\nthe process of photosynthesis can be divided into two main stages: the light-dependent reactions and the light-independent reactions (also known as the calvin cycle). in the *light-dependent reactions*, which take place in the thylakoid membranes of the chloroplasts, *sunlight* is absorbed by *chlorophyll* and other pigments. this light energy is used to split water molecules into hydrogen and oxygen, releasing electrons and protons. these electrons are then passed through a series of proteins and molecules, forming a *photosynthetic* electron transport chain. as the electrons move through this chain, they generate atp (adenosine triphosphate) and nadph (nicotinamide adenine dinucleotide phosphate), which are essential energy-carrying molecules. ***\n\nin the *light-independent reactions* or the calvin cycle, which occur in the stroma of the chloroplasts, the atp and nadph produced in the light-dependent reactions are used to convert *carbon dioxide* into *glucose*. this process involves a series of enzyme-catalyzed reactions, where carbon dioxide is fixed into an organic molecule through the enzyme rubisco. the fixed carbon is then reduced using the electrons from nadph and the energy from atp to form *glucose*. this *glucose* can be used by the plant for energy and growth, or it can be converted into other organic compounds. the oxygen produced during the light-dependent reactions is released into the atmosphere as a byproduct of photosynthesis. *p.s.* the intricate process of photosynthesis not only sustains plant life but also supports the entire food chain and helps regulate the earth's atmosphere.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 100 words. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. In your response, the word \"joy\" should appear at least 3 times. Answer with one of the following options: My answer is yes., My answer is no., My answer is maybe.\n\nCan you write a poem that captures the essence of pure joy?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<poem of joy>>\n\nmy answer is yes.\n\njoy dances in the morning sun\na melody that silences all fear\nit whispers softly through the leaves\nand paints the sky with colors clear\n\njoy is the laughter of a child\nunburdened by the weight of age\nit sparkles in innocent eyes\na timeless song of boundless stage\n\njoy is the gentle touch of love\na hug that warms the heart inside\nit blossoms in the simplest acts\nand makes the weary world subside\n\njoy is the hope that never dies\na flame that burns through darkest night\nit guides us with its steady light\nand keeps us moving toward the light\n\n*** joy is the essence of pure bliss\na feeling that transcends all pain\nit fills our lives with endless peace\nand makes our souls sing once again\n\njoy is the reason we keep going\nthe dream that keeps us on our way\nit is the breath that fills our lungs\nand helps us face each new today\n\njoy is the treasure we all seek\na gift we give and freely take\nit is the bond that ties us all\nand keeps us traveling on the trail",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in fr language, no other language is allowed. Your response should contain at least 150 words. Your answer must contain a title, wrapped in double angular brackets, such as <<le guide des mots>>. In your response, the word \"voyage\" should appear at least 4 times. Your response must have 3 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nDescribe the best way to prepare for a [destination] trip.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<le guide des mots>>\n\nPour préparer un voyage réussi vers [destination], il est essentiel de planifier avec soin. Commencez par définir votre budget et vos priorités. Recherchez les meilleures périodes pour visiter [destination] afin d'éviter les hautes saisons et les prix élevés. Assurez-vous d'avoir tous les documents nécessaires, tels que le passeport, le visa et les assurances appropriées. Ensuite, préparez une liste des activités que vous souhaitez faire et des sites que vous voulez visiter. N'oubliez pas de vérifier les horaires d'ouverture et les tarifs d'entrée.\n\n***\n\nLors de votre voyage, il est important de prévoir un itinéraire flexible pour profiter pleinement de votre expérience. Informez-vous sur les transports locaux et réservez à l'avance si nécessaire. Emportez avec vous des tenues adaptées au climat de [destination] et aux activités que vous prévoyez. Pensez également à emporter des articles essentiels tels que des médicaments, un chargeur de téléphone et une carte de la ville. Prenez le temps de savourer la culture locale en dégustant les spécialités culinaires et en interagissant avec les habitants.\n\n***\n\nEnfin, assurez-vous de rester en sécurité tout au long de votre voyage. Informez-vous sur les conseils de sécurité locaux et respectez les règles et les coutumes de [destination]. Restez en contact avec votre famille et vos amis pour qu'ils sachent où vous êtes. En suivant ces conseils, vous pourrez vivre un voyage mémorable et enrichissant à [destination]. Bon voyage!",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "The following constraints apply to your response:\n\n- Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n- your answer must contain a title, wrapped in double angular brackets, such as <<in the garden>>\n- your response should contain at least 2 sentences.\n- in your response, the word \"garden\" should appear at least 3 times.\n- at the end of your response, please explicitly add a postscript starting with p.s.\n\nhow do you care for a garden during the summer months?",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<in the garden>>\n\ntaking care of a garden during the summer months requires consistent attention and some specific practices. it's crucial to water the plants deeply and less frequently to encourage strong root growth, ideally early in the morning or late in the evening to reduce evaporation. mulching around plants helps retain moisture and control weeds, keeping the garden healthy and vibrant. regular pruning and deadheading can also promote new growth and prevent disease. remember to monitor for pests and treat any issues promptly to ensure your garden thrives throughout the summer.\n\np.s. enjoy the beauty of your garden as it flourishes with care.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "写一段关于自监督学习的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n自监督学习是一种机器学习方法，模型从数据构造信号并进行训练，结果用于任务。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Answer with one of the following options: [response_options] During the conversation, when it is your turn, please always start with [starter] Include keywords [keywords] in the response. In your response, the word [keyword] should appear [relation] [frequency] times.\n[response_options] can be \"我的回答是肯定的。\", \"我的回答是否定的。\", \"我的回答是可能的。\"\n[starter] can be \"我回答说\"\n[keywords] can be [\"问题\", \"回答\", \"用户\"]\n[keyword] can be \"回答\"\n[relation] can be \"至少\"\n[frequency] can be 3\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n我回答说 我的回应中将包含以下关键词：问题，回答，用户。我的回答是否定的。在本次回答中，“回答”这个词将至少出现3次。用户的问题是什么？我的回答是，根据用户的要求，我的回答是否定的。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "撰写推荐系统的介绍，每段必须包含'参数'。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n推荐系统是一类用于根据用户行为和偏好提供个性化内容的技术，广泛应用于电商、视频与新闻平台。其核心思想是通过分析历史数据，学习用户与物品之间的关系，而这些关系通常由模型中的各种参数来刻画，例如用户向量和物品向量等关键参数。\n\n从技术路线来看，推荐系统可以分为协同过滤、基于内容的方法以及融合多种信息的混合模型。协同过滤依赖用户行为矩阵，基于内容的方法依赖特征表示，而现代系统多采用深度学习，通过大量可训练参数来提升表达能力，同时需要合理设置和优化超参数以避免过拟合。\n\n在实际应用中，推荐系统的效果评估与持续优化同样重要。工程师会通过A/B测试和离线指标不断调整模型参数，使系统在准确性、多样性和实时性之间取得平衡，因此对参数的理解和管理贯穿了推荐系统从设计到部署的全过程。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. Your answer must contain a title, wrapped in double angular brackets, such as <<welcome message>>. Highlight at least 1 section in your answer with markdown, i.e. *highlighted section*. At the end of your response, please explicitly add a postscript starting with P.S. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<welcome message>>\n\n*dear [name], welcome to our community at [address].* we are thrilled to have you join us and look forward to the contributions you will make. we hope you find this space as inspiring and supportive as we do.\n\np.s. feel free to explore and make yourself at home.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word \"important\" should appear at least 2 times. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n* *important* to note, this response is in all lowercase letters as requested.\n* *highlighted section* here to meet the constraint of having at least two highlighted sections. it is important to follow all the instructions provided.\n* another bullet point to complete the requirement of exactly three bullet points. the word important appears again to meet the frequency requirement.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 4 sentences. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. During the conversation, when it is your turn, please always start with I would say. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. Your response must have 2 sections. Mark the beginning of each section with Section X, such as: Section 1. There should be 2 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nWhat are the main steps to create a successful online course?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nI would say creating a successful online course involves a series of well-planned steps to ensure engaging and effective learning experiences.\n\n* *Section 1: Planning and Design*  \n* Define your target audience and their learning goals.\n* Outline the course structure and content.\n* Choose the right platforms and tools for delivering your course. ***\n\n* *Section 2: Development and Launch*  \n* Create high-quality educational materials such as videos, quizzes, and readings.\n* Implement interactive elements to enhance learner engagement.\n* Promote your course through social media, email marketing, and partnerships.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are some benefits of regular exercise? Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 paragraphs. There should be 3 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nYour answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1.\n\nThe response must contain at least 2 placeholders represented by square brackets, such as [address]. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.\n\nAt the end of your response, please explicitly add a postscript starting with [postscript].\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"Regular exercise offers numerous benefits that enhance both physical and mental health. Engaging in consistent physical activity helps to *strengthen the heart and improve cardiovascular health*. This is crucial for reducing the risk of heart disease, stroke, and other cardiovascular issues. Additionally, regular exercise can help manage and prevent chronic conditions such as diabetes, high blood pressure, and obesity. For instance, aerobic activities like running, swimming, or cycling can significantly improve blood circulation and lower blood pressure. ***\n\n* Regular exercise also plays a vital role in maintaining a healthy weight*. By burning calories and building muscle, exercise helps to control body weight and reduce the risk of obesity. This is particularly important as obesity is linked to a range of health issues, including heart disease, diabetes, and certain types of cancer. Moreover, exercise can boost metabolism, which can help with weight management even when not actively working out. For example, incorporating strength training exercises like weightlifting can increase muscle mass, leading to a higher basal metabolic rate. ***\n\n* Finally, regular exercise has profound mental health benefits*. It can reduce symptoms of depression and anxiety by releasing endorphins, often referred to as 'feel-good' hormones. Exercise also promotes better sleep, which is essential for overall well-being. Additionally, regular physical activity can improve cognitive function and enhance mood, making it an excellent natural remedy for stress and mental fatigue. For instance, activities like yoga and Pilates not only improve physical flexibility but also promote relaxation and mental clarity. *Incorporating regular exercise into your daily routine can significantly enhance your quality of life*.\"\n\n*postscript* [postscript]",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "用恰好80个字概括命名实体识别的核心要点。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n命名实体识别旨在从文本中定位并分类人名地名组织机构时间数量等实体依赖语料标注特征表示模型学习与上下文语义以提升准确性与鲁棒性并支持下游信息抽取应用场景扩展效果佳",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于RAG检索增强的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nRAG检索增强是一种将检索流程与生成流程结合的方法。系统在接收问题后，通过向量数据库对数据源进行检索，得到文档片段，并将片段作为上下文送入模型。模型在上下文范围内进行生成，从而在回答中使用数据源中的信息。该流程用于问答、搜索、客服等场景。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 sentences. Your answer must contain exactly 2 bullet points. Use the markdown bullet points such as: * This is point 1. At the end of your response, please explicitly add a postscript starting with P.S. Finish your response with this exact phrase Is there anything else I can help with?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nI understand your request and will adhere to the specified constraints. *This is point 1.* *This is point 2.* P.S. Is there anything else I can help with?",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "介绍图像分割，但不要使用'特别'这个词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n图像分割是计算机视觉中的一项基础任务，目标是将图像划分为若干具有一致属性的区域或对象，使像素级信息更易于理解和分析。通过分割，系统可以定位目标边界、区分前景与背景，并为后续的识别、测量和语义理解提供结构化输入。\n\n常见的图像分割方法包括基于阈值、边缘、区域生长和聚类的传统算法，以及以卷积神经网络为核心的深度学习方法，如 FCN、U-Net 和 Mask R-CNN。传统方法依赖人工设计特征，而深度学习方法通过大规模数据进行端到端训练，在复杂场景中通常更具鲁棒性。\n\n图像分割已广泛应用于医学影像分析、自动驾驶、遥感解译、工业质检和增强现实等领域，有助于提升自动化水平和决策精度。随着算法、算力和数据规模的持续进步，图像分割技术正不断向更高精度和更强泛化能力发展。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于推荐系统的文字，必须包含以下关键词：反向传播, 优化, 神经网络。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n推荐系统通过分析用户行为和内容特征来预测兴趣偏好，近年来广泛采用神经网络作为核心模型，以提升对复杂关系的建模能力；在训练过程中，模型利用反向传播算法计算误差梯度，并结合各种优化方法不断更新参数，从而逐步提高推荐的准确性和个性化程度，使系统能够在海量数据和动态场景中保持良好性能。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于文本分类的文字，不要使用任何形容词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n文本分类是语言处理中的一项任务，目标是根据文本内容分配标签。系统通过数据收集、分词、特征提取、模型训练和预测等步骤完成流程。方法包括规则方法和学习方法，模型接收输入文本并输出类别。结果用于信息检索、内容管理和用户服务。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "撰写边缘计算的介绍，每段必须包含'神经网络'。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n边缘计算是一种将数据处理能力从云端下沉到网络边缘的计算模式，能够在靠近数据源的位置完成分析与决策，从而降低时延、提升隐私与可靠性。在这一过程中，神经网络常被部署在边缘设备上，用于实现实时感知、识别和预测等智能功能。\n\n随着物联网设备和传感器数量的增长，边缘计算可以减少海量数据回传云端的压力，提高系统整体效率。通过在本地运行轻量化的神经网络模型，边缘节点能够快速处理图像、语音和行为数据，满足工业、交通和医疗等场景的实时需求。\n\n在实际应用中，边缘计算通常与云计算协同工作，形成“云—边—端”协作架构。云端负责训练和更新复杂的神经网络模型，而边缘侧则负责模型推理和即时响应，从而在性能、成本与安全性之间取得平衡。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "用正式的学术语言描述推荐系统。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n推荐系统（Recommender Systems）是信息检索与数据挖掘领域中的重要研究方向，旨在通过分析用户行为数据、内容特征及其交互关系，对用户潜在兴趣与偏好进行建模，从而在信息过载的环境中为用户提供个性化的信息或服务推荐。该系统通常以用户—项目交互数据为基础，综合运用统计学习、机器学习及优化理论等方法，构建用户模型与项目模型，并在此基础上进行预测与排序。根据建模假设与数据来源的不同，推荐系统可分为基于内容的方法、协同过滤方法以及融合多种信息源的混合方法。\n\n在实际应用中，推荐系统不仅关注预测精度，还需综合考虑多样性、新颖性、公平性与可解释性等指标，以提升用户体验与系统效用。同时，随着大规模数据与复杂场景的出现，推荐系统面临冷启动、数据稀疏性、隐私保护及动态偏好建模等挑战。近年来，深度学习与因果推断等先进方法的引入，进一步推动了推荐系统在理论建模与实际应用层面的发展，使其成为支撑电子商务、社交媒体与数字内容平台的重要技术基础。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 3 sentences. Include keywords [夏天, 海滩, 冰淇淋]. Answer with one of the following options: [夏天的海滩总是吸引着许多游客。, 夏天吃冰淇淋是最享受的事情。, 海滩上的冰淇淋摊总是生意兴隆。] 你的答案是？\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n夏天的海滩总是吸引着许多游客。他们在这里享受阳光沙滩，品尝美味的冰淇淋。海滩上的冰淇淋摊总是生意兴隆，成为夏日里一道独特的风景线。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What is the best way to stay healthy during the winter months? \n\nYour response should contain at least 4 sentences. Your answer must contain a title, wrapped in double angular brackets, such as <<staying healthy in winter>>. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. There should be 2 paragraphs. Paragraphs are separated with the markdown divider: ***\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<staying healthy in winter>>\n\n*Staying healthy during the winter months involves a combination of good hygiene, proper nutrition, and regular exercise.* Wash your hands frequently with soap and water for at least 20 seconds to prevent the spread of germs. Eat a balanced diet rich in fruits, vegetables, and lean proteins to boost your immune system. ***\n\n*Getting enough sleep and staying hydrated are also crucial.* Aim for 7-9 hours of quality sleep each night and drink plenty of water throughout the day. Consider taking vitamin D supplements if you live in an area with limited sunlight, as this can help support your immune function.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "撰写神经网络的介绍，每段必须包含'特征提取'。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n神经网络是一类受生物神经系统启发的计算模型，通过多层节点的连接来完成复杂任务，其核心优势在于能够自动进行特征提取，从而减少对人工规则和先验知识的依赖。\n\n在训练过程中，神经网络通过反向传播算法不断调整参数，不同层次逐步学习从低级到高级的表示，这种层级化学习方式使得特征提取更加高效且具有鲁棒性。\n\n在图像识别、语音识别和自然语言处理等领域，神经网络展现了卓越性能，正是因为其强大的特征提取能力能够捕捉数据中的关键模式并支持准确的预测与决策。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. Include keywords [travel, safety, tips] in the response. In your response, the word [safety] should appear at least 2 times. Answer with one of the following options: [My answer is yes., My answer is no., My answer is maybe.]\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nMy answer is yes. When planning your travel, it is crucial to prioritize safety by researching your destination and understanding local laws and customs. To ensure safety and have a smooth trip, consider these tips: keep your documents secure, stay aware of your surroundings, and inform someone of your itinerary.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "I need to plan a weekend getaway with my family. Can you suggest some activities we can do together? Please provide at least 3 suggestions and ensure your response contains at least 2 placeholders represented by square brackets, such as [location]. Also, include a postscript starting with \"P.S.\".\n\nRemember to highlight at least one section in your answer with markdown, i.e. *highlighted section*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSure, I can help you plan a fun weekend getaway with your family! Here are three activity suggestions that you can enjoy together:\n\n* *Visit a theme park or amusement park*: A visit to a [location] theme park or amusement park can be an exciting adventure for the whole family. You can enjoy thrilling rides, shows, and games, and there's usually something for everyone, no matter their age.\n\n* *Go on a nature hike*: If you prefer spending time outdoors, consider going on a nature hike in a nearby [location]. It's a great way to explore the natural beauty around you, get some exercise, and enjoy quality time together. Don't forget to bring a picnic lunch to enjoy along the way!\n\n* *Attend a family-friendly event*: Check out local listings for family-friendly events happening over the weekend. This could be anything from a community festival to a concert or a sporting event. Attending a local event is a fun way to experience new things and create lasting memories.\n\n*highlighted section*: When planning your weekend getaway, make sure to consider the interests and age ranges of all family members to ensure everyone has a great time. Also, factor in travel time and any necessary preparations, such as packing snacks or bringing along entertainment for the car ride.\n\nP.S. Don't forget to take plenty of photos to capture the special moments during your weekend getaway!",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain less than 5 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word \"highlight\" should appear at least 3 times. At the end of your response, please explicitly add a postscript starting with P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*highlight* the key points in your request to ensure clarity. I will *highlight* important sections as requested. This response adheres to your constraints, including the highlight requirement.\n\nP.S. If you need further clarification, feel free to ask.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 200 words. Your ENTIRE response should be in en language, no other language is allowed. During the conversation, when it is your turn, please always start with I would say. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed. there should be 3 paragraphs. paragraphs are separated with the markdown divider: ***\n\nwhat is the difference between a hurricane and a typhoon?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\ni would say the difference between a hurricane and a typhoon primarily lies in their location. both hurricanes and typhoons are tropical cyclones, which are powerful storm systems that form over warm ocean waters. however, the terms are used in different parts of the world. hurricanes are tropical cyclones that form in the atlantic ocean or northeastern pacific ocean. they occur in the areas close to the americas and can affect regions such as the caribbean, the gulf of mexico, and the eastern coast of the united states. ***\n\ni would say typhoons, on the other hand, are tropical cyclones that form in the northwestern pacific ocean. they typically affect countries and regions in eastern asia, including japan, china, the philippines, and taiwan. the naming conventions for these storms are part of a global system managed by the world meteorological organization. each region has its own set of names for these storms, which helps in tracking and communicating about them effectively. ***\n\ni would say despite the different names, hurricanes and typhoons share similar characteristics. they both have a low-pressure center, known as the eye, surrounded by a ring of strong thunderstorms called the eyewall. the winds in these storms can reach speeds over 74 miles per hour, and they can cause significant damage through strong winds, heavy rainfall, and storm surges. understanding the differences in terminology can help in correctly identifying and preparing for these powerful natural phenomena.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your ENTIRE response should be in English, and in all lowercase letters. no capital letters are allowed. your response should contain at least 3 sentences. your response must contain at least 2 placeholders represented by square brackets, such as [address]. the response must have 2 sections. mark the beginning of each section with section 1, such as: section 1. in your response, the word \"answer\" should appear at least 2 times. in your response, the letter \"t\" should appear at least 15 times. answer the following question: what is the best way to [verb] [object]?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nsection 1\nthe best way to [verb] [object] depends on the specific context and the tools you have available. to ensure an effective and safe process, it's important to follow the recommended guidelines and use the right equipment. for a detailed and tailored answer, consider consulting a professional or someone with experience in the specific task.\n\nsection 2\nin general, preparing thoroughly and taking the necessary precautions can greatly enhance the outcome. this includes understanding the nature of the [object] and the methods that are most suitable for [verbing] it. a well-thought-out plan and a systematic approach can make the task easier and more efficient. always ensure that you have the right answer to any potential challenges that may arise.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are the benefits of using solar energy in residential homes? Your response should contain at least 3 bullet points. Use the markdown bullet points such as: * This is point 1. Also, your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<Benefits of Solar Energy in Residential Homes>>\n\n* Solar energy reduces electricity bills by generating power from the sun, which is free and abundant.\n* It decreases reliance on fossil fuels, contributing to a cleaner environment and reduced carbon footprint.\n* Solar panels increase property value and can provide a return on investment over time through energy savings and potential tax incentives.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are the key benefits of using AI in customer service, and can you provide some examples of AI applications in this field? Your response should contain at least 3 bullet points. Use the markdown bullet points such as: * This is point 1. Additionally, your answer must contain exactly 4 sentences. Highlight at least 1 section in your answer with markdown, i.e. *highlighted section*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n* *Key benefits of using AI in customer service include*: *increased efficiency*, *24/7 availability*, and *personalized interactions*. AI applications in customer service, such as chatbots and virtual assistants, can handle a high volume of customer inquiries simultaneously, reducing wait times and improving response rates. For example, *AI-powered chatbots can provide instant answers to frequently asked questions*, freeing up human agents to focus on more complex issues. Additionally, AI can analyze customer data to offer personalized recommendations and solutions, enhancing the overall customer experience.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "在描述神经网络时，请确保'深度学习'这个词出现至少2次。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n神经网络是一种受人脑神经元结构启发的计算模型，通过多层神经元的加权连接来学习数据中的复杂模式。在现代人工智能领域，神经网络是**深度学习**的核心基础，能够通过反向传播算法不断调整参数，从而提升预测和表示能力。随着计算能力和数据规模的增长，**深度学习**推动了卷积神经网络、循环神经网络和Transformer等结构的发展，使神经网络在计算机视觉、自然语言处理和语音识别等任务中取得突破性成果，因此**深度学习**已成为神经网络研究与应用中不可或缺的关键方向。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于情感分析的文字，必须包含以下关键词：优化, 神经网络, 算法。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n情感分析是自然语言处理中的重要任务，旨在从文本中识别和理解人类情绪倾向，随着数据规模的增长，研究者不断通过模型结构和训练策略的优化来提升分析效果，其中以神经网络为核心的方法尤为突出，这类方法通常结合深度学习算法自动提取语义特征，从而在复杂语境下实现更准确、更稳定的情感判断。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Additionally, your response must contain at least 2 placeholders represented by square brackets, such as [address]. Your answer must also contain a title, wrapped in double angular brackets, such as <<poem of joy>>.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<How to Use Placeholders Effectively>>\n\n* To use placeholders effectively, start by identifying the [variable] elements in your content that may change for different users or situations.\n* Next, replace these [variable] elements with placeholders, such as [address] for addresses or [name] for names.\n* Finally, ensure that your instructions or guidelines clearly explain how to replace these placeholders with actual data when necessary.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "请用不少于100个字描述大语言模型。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n大语言模型是一类基于深度学习的人工智能模型，通常采用大规模神经网络和海量语料进行训练。它能够理解和生成自然语言，在对话、写作、翻译、代码生成、信息检索等方面表现出较强能力。通过学习上下文关系和语义规律，大语言模型可以进行推理、总结和改写，但也可能受到数据偏差和幻觉问题的影响，因此需要合理使用与持续改进。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 10 sentences. Your answer must contain a title, wrapped in double angular brackets, such as <<如何提高写作技巧>>. In your response, the word “技巧” should appear at least 3 times. The response must have 3 sections. Mark the beginning of each section with Section X, such as: Section 1. Highlight at least 3 sections in your answer with markdown, i.e. *highlighted section*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<如何提高写作技巧>>\n\n*Section 1*  \n提高写作技巧是每个作家或学生的共同目标。无论是在学术写作还是创意写作中，良好的技巧都能帮助你更清晰、更有说服力地表达思想。首先，多读多写是提高技巧的关键。通过阅读不同类型的文本，你可以学习到不同的写作风格和表达方式，这将丰富你的写作词汇和技巧。\n\n*Section 2*  \n另一个提高写作技巧的方法是练习写作。定期写作，无论是日记、博客还是短篇小说，都能帮助你磨练技巧。此外，接受反馈也非常重要。你可以加入写作小组，或找一位信任的朋友或导师，他们的批评和建议可以帮助你发现自己的盲点，进一步提升技巧。\n\n*Section 3*  \n最后，不要害怕尝试新的写作形式。不同的写作类型，如诗歌、散文或剧本，都可以让你从不同的角度思考问题，这不仅能增加你的创作灵活性，还能让你的写作技巧更加全面。记住，写作是一项可以通过不断练习和学习来不断提高的技巧。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. Highlight at least 1 section in your answer with markdown, i.e. *highlighted section*. At the end of your response, please explicitly add a postscript starting with P.S.\n\nWhat is the process to verify my [account type] at [bank name]?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nTo verify your [account type] at [bank name], you can follow these steps: First, log in to your online banking portal or mobile app using your credentials. *Once logged in, navigate to the account summary page where you can find detailed information about your account type and its features.* If you encounter any issues or need further assistance, you can also contact the customer service of [bank name] directly.\n\nP.S. Make sure to have your account details handy for a smoother verification process.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Given the following constraints, please write a response to the following question: \"What are the key factors to consider when choosing a new smartphone?\"\n\n- Your response should contain at least 4 sentences.\n- The response must contain at least 2 placeholders represented by square brackets, such as [budget].\n- Your ENTIRE response should be in en language, no other language is allowed.\n- Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n- In your response, the letter e should appear at least 30 times.\n- Your answer must contain a title, wrapped in double angular brackets, such as <<choosing the perfect smartphone>>.\n- Finish your response with this exact phrase is there anything else i can help with? no other words should follow this phrase.\n- Wrap your entire response with double quotation marks.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"<<\"choosing the perfect smartphone>> when selecting a new smartphone, consider your [budget] and the specific features you need. evaluate the camera quality, battery life, and processing power to ensure it meets your daily requirements. also, check the operating system and software support to make sure it aligns with your preferences and needs. dont forget to read reviews and compare models before making a final decision is there anything else i can help with?\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "请写5段关于计算机视觉的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n1. 计算机视觉是人工智能的重要分支，致力于让计算机从图像和视频中获取、理解并解释视觉信息，其目标是模拟和扩展人类视觉能力。\n\n2. 在技术层面，计算机视觉通常结合图像处理、几何建模和机器学习方法，其中卷积神经网络在目标识别、图像分类等任务中发挥了关键作用。\n\n3. 计算机视觉在实际应用中非常广泛，例如人脸识别、自动驾驶、医学影像分析和工业质检，都依赖高精度的视觉感知能力。\n\n4. 随着深度学习和算力的提升，计算机视觉系统在复杂场景下的鲁棒性和实时性不断增强，但在数据偏差和可解释性方面仍面临挑战。\n\n5. 未来，计算机视觉有望与自然语言处理、机器人技术进一步融合，推动智能系统在理解世界和自主决策方面取得更大突破。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 sentences. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. There should be 2 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nCan you explain the process of photosynthesis in plants?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*Photosynthesis* is a vital process that occurs in plants, algae, and some bacteria, allowing them to convert light energy into chemical energy. During photosynthesis, these organisms absorb carbon dioxide from the atmosphere and water from the soil, using sunlight as an energy source to produce glucose and oxygen. The process primarily takes place in the chloroplasts, which are specialized organelles containing chlorophyll, the green pigment responsible for capturing light energy.\n\n* Key steps in photosynthesis:\n  * **Light-dependent reactions**: These reactions occur in the thylakoid membranes of the chloroplasts and require light. Light energy is used to split water molecules, producing oxygen as a byproduct and generating ATP and NADPH, which are energy-rich molecules.\n  * **Calvin cycle (light-independent reactions)**: This cycle takes place in the stroma of the chloroplasts and does not directly require light. It uses the ATP and NADPH produced in the light-dependent reactions to convert carbon dioxide into glucose.\n  * **Regeneration and continuation**: The process is continuous, with the products of one cycle being used to start the next, ensuring a steady production of glucose and oxygen.\n\n*** \n\nUnderstanding photosynthesis is crucial for comprehending how plants grow and thrive, as well as their role in the global carbon cycle and oxygen production. *By grasping these fundamental steps*, we can better appreciate the importance of plants in maintaining ecological balance.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response must have 3 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nQuestion: 你最喜欢的季节是什么？\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n我最喜欢的季节是秋天。秋天的天气宜人，既不像夏天那样炎热，也不像冬天那样寒冷。在这个季节里，天空通常非常清澈，阳光温和，给人一种宁静和舒适的感觉。此外，秋天是收获的季节，各种水果和农作物都成熟了，让人感到自然的丰饶和生命的喜悦。\n\n***\n\n秋天的景色也十分美丽。树叶逐渐变成金黄色、橙色和红色，形成一幅绚丽多彩的画面。漫步在落叶铺成的小道上，可以听到脚下沙沙的声音，感受到一种特别的宁静。此外，秋天的公园和山林都充满了迷人的景象，吸引着许多游客前来欣赏。这个季节的美景让人流连忘返，留下了美好的回忆。\n\n***\n\n最后，秋天也是适合阅读和思考的季节。天气凉爽，人们可以坐在窗边，享受一杯热茶，沉浸在书本的世界里。这个季节的宁静氛围有助于人们放松心情，思考生活中的问题。无论是学习、工作还是创作，秋天都能提供一个理想的环境，让人感到充实和满足。总之，秋天是我最喜欢的季节，它的美好和宁静让人难以忘怀。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "请写5段关于自然语言处理的内容，每段以数字编号开头。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n1. 自然语言处理（NLP）是人工智能的重要分支，研究如何让计算机理解、生成和处理人类语言，其目标是实现人机之间更加自然、高效的交流。\n\n2. 在技术层面，自然语言处理涵盖分词、词性标注、句法分析、语义理解等基础任务，这些任务为更复杂的语言应用奠定了基础。\n\n3. 随着深度学习的发展，基于神经网络的模型（如Transformer）显著提升了机器翻译、文本摘要和问答系统的性能，推动了NLP的快速进步。\n\n4. 自然语言处理已广泛应用于搜索引擎、智能客服、语音助手和舆情分析等场景，帮助企业和个人更高效地获取和利用信息。\n\n5. 未来，自然语言处理将更加注重跨语言、跨模态和可解释性研究，同时也需要关注数据隐私、公平性和伦理等重要问题。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于迁移学习的文字，必须包含以下关键词：反向传播, 模型, 神经网络。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n迁移学习是一种利用已有知识加速新任务训练的方法，通常通过在相关领域预训练的模型作为起点，将其参数迁移到新的任务中，在此过程中依然依赖反向传播来微调权重，使模型能够快速适应数据分布的变化；这种方法在神经网络中尤为常见，因为深层结构可以复用底层特征表示，从而减少训练成本并提升整体性能。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain exactly 5 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. At the end of your response, please explicitly add a postscript starting with P.S. \n\nI'm planning a surprise party for my friend. Can you give me some tips on how to organize it?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nCertainly! First, choose a venue that fits the number of guests and the type of party you're planning, like [address]. Next, create a guest list and send out invitations discreetly to ensure the surprise stays intact. Consider a theme for the party to add a fun twist and make the decorations and activities match this theme. Lastly, coordinate with a few friends to help set up the venue and manage the arrival of guests to keep everything smooth and surprise-proof. P.S. Don't forget to take plenty of photos to capture the special moments!",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Answer with one of the following options: [response_options]\nMy answer is yes. My answer is no. My answer is maybe.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n我的回答是是。我的回答是否。我的回答是也许。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释联邦学习。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n联邦学习可以把它想成“大家一起学习，但不把作业交出来”。\n\n举个简单的例子：假设很多人的手机都在学习如何更好地预测下一个输入的字。传统做法是把大家的输入数据都传到一个服务器上统一学习，但这会有隐私风险。**联邦学习的做法不一样**：每部手机只在本地用自己的数据学习一点点，然后把“学到的经验总结”（比如模型参数的变化）发给服务器，而不是把原始数据发出去。\n\n服务器做的事情也很简单：它把来自很多设备的这些“经验总结”合在一起，得到一个更聪明的模型，再把这个模型发回给大家。这样一来，**数据始终留在本地，隐私更安全**，但模型又能利用大家的共同经验不断变好。\n\n一句话总结：**联邦学习就是在不共享原始数据的前提下，让多个设备或机构一起训练一个更好的模型**，既学得好，又更保护隐私。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "I need help with planning a surprise birthday party for my friend. Can you provide a list of ideas for activities and decorations that we can use? Make sure your response contains at least 3 bullet points for activities and 3 bullet points for decorations. Use the markdown format for the bullet points. \n\nAlso, the response should be exactly 150 words long. \n\nYour ENTIRE response should be in English, no other language is allowed.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSure, here are some ideas for activities and decorations for a surprise birthday party:\n\n* **Activities:**\n* *Photo Booth Fun:* Set up a photo booth with fun props and a backdrop. Guests can take memorable pictures that they can keep as souvenirs.\n* *DIY Craft Station:* Create a DIY craft station where guests can make personalized gifts or decorations for the birthday person.\n* *Scavenger Hunt:* Organize a scavenger hunt with clues related to the birthday person's interests or inside jokes.\n\n* **Decorations:**\n* *Balloon Garland:* String together a colorful balloon garland to hang above the main area.\n* *Personalized Banners:* Create a banner with the birthday person’s name or a special message.\n* *Fairy Lights:* Hang fairy lights around the venue to create a warm and magical atmosphere.\n\nThese ideas will help make the party both fun and memorable. Remember to tailor the activities and decorations to your friend’s preferences and interests to make the celebration extra special.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍代码生成。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n想象一下，代码生成就像一位**不喝咖啡也能通宵写代码的超级程序员**。你只需要告诉它：“我想要一个能点外卖的应用”，它就会点点头，噼里啪啦一顿操作，瞬间甩给你一堆整整齐齐的代码——不抱怨需求改了三次，也不问“这个需求真的合理吗？”\n\n简单来说，**代码生成**就是让机器帮你写代码。你负责动脑子（或者只动嘴），它负责动键盘。过去你要一行一行敲，现在就像点菜：  \n- “来个登录功能，少盐。”  \n- “数据库接口，多点安全。”  \n- “顺便帮我修个 bug，当甜点。”\n\n当然，它也不是魔法师，而是个**记忆力超群、手速惊人的实习生**：用对了提示，效率飞起；说得含糊，它也可能给你煮一锅“能跑但看不懂”的代码汤。  \n\n总之，代码生成的目标只有一个：**让程序员少掉头发，多写需求，早点下班。**",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 3 bullet points. Use the markdown bullet points such as: * This is point 1. Your answer must contain a title, wrapped in double angular brackets, such as <<Instructions for New Employees>>. In your response, the word \"employee\" should appear at least 3 times. Answer with at least 30 words.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<Instructions for New Employees>>\n\n* All new employees must attend the orientation session scheduled for the first week of their employment\n* Employees are required to familiarize themselves with the company policies and procedures, available in the employee handbook\n* Each employee will receive a unique login for the company’s internal system, which is essential for daily tasks and communication",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "在描述大语言模型时，请确保'反向传播'这个词出现至少3次。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n大语言模型基于大规模语料和深度神经网络，通常采用 Transformer 架构进行预训练与微调。在训练过程中，模型通过前向计算得到预测，再利用损失函数进行反向传播来更新参数；这种反向传播使得梯度能够从输出层传回各个隐藏层。无论是在预训练还是指令微调阶段，反向传播都是核心机制，它与优化器配合提升模型的收敛速度与泛化能力。此外，在工程实践中还会通过并行化与混合精度等手段来加速反向传播，从而提高整体训练效率。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "I need a quick response to a question about the benefits of using solar energy. Can you provide a response that is at least 50 words long and includes at least one keyword from the list: sustainable, renewable, cost-effective, environment-friendly? Also, your response must have at least one section highlighted using markdown.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<Benefits of Solar Energy>>\n\nSolar energy is *renewable* and sustainable, offering a consistent and inexhaustible power source. It is also cost-effective, reducing electricity bills and minimizing dependency on fossil fuels. Additionally, solar energy is environment-friendly, significantly lowering carbon emissions and promoting a cleaner planet.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "撰写目标检测的介绍，每段必须包含'深度学习'。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n目标检测是计算机视觉中的核心任务之一，旨在从图像或视频中定位并识别多个目标对象，其应用涵盖自动驾驶、安防监控和医疗影像等领域。随着深度学习的发展，目标检测方法从传统的手工特征与分类器，逐步演进为端到端的学习框架，显著提升了检测的准确性与鲁棒性。\n\n在技术层面，现代目标检测算法通常基于卷积神经网络，通过深度学习自动学习多层次特征表示，从而同时完成目标的分类与位置回归。代表性方法如两阶段检测器和单阶段检测器，都充分利用深度学习在特征提取和表示学习方面的优势，实现了速度与精度之间的有效平衡。\n\n展望未来，目标检测将继续与多模态感知、实时推理和边缘计算相结合，而深度学习仍将是推动该领域进步的关键动力。通过更高效的网络结构和更大规模的数据训练，深度学习有望进一步提升目标检测在复杂场景下的泛化能力与实用价值。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. Your response must have 2 sections. Mark the beginning of each section with *Section* X. ***\n\nWhat are the benefits of regular exercise?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*Section* 1\nRegular exercise offers numerous benefits for both physical and mental health. *It can help improve cardiovascular health, strengthen muscles and bones, and enhance flexibility and balance.* Additionally, regular physical activity can boost your immune system and help manage weight by increasing metabolism and building muscle, which burns more calories.\n\n***\n*Section* 2\nExercise also has significant mental health benefits. *It can reduce stress, anxiety, and depression by releasing endorphins, which are chemicals in the brain that act as natural painkillers and mood elevators.* Regular physical activity can also improve cognitive function, enhance memory and concentration, and promote better sleep quality.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "I need a response to a question about the best way to prepare for a [type of exam]. The response should contain at least 5 sentences, include a postscript starting with \"P.S.\", and highlight at least 2 sections with markdown. Also, the word \"study\" should appear at least 3 times.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*Preparing for a [type of exam] requires a structured and dedicated approach.* Firstly, it is essential to create a detailed study plan that outlines your goals and timelines. This plan should include regular study sessions, focusing on different topics each day to ensure a well-rounded understanding of the material. Additionally, practicing with past exam papers and sample questions can significantly enhance your confidence and familiarize you with the format of the exam. Finally, maintaining a healthy balance between study and relaxation is crucial to avoid burnout and keep your mind sharp.\n\nP.S. *Remember, consistency in your study habits is key to success.*",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 10 sentences. Your answer must contain a title, wrapped in double angular brackets, such as <<诗的喜悦>>. The response must have 2 paragraphs. Paragraphs are separated with the markdown divider: ***. In your response, the word 世界 should appear at least 3 times. \n\n请问，您能写一首关于世界和平的诗吗？\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<诗的喜悦>>\n\n在广阔无垠的世界里，我们共同追寻和平之光，心中充满了希望。在这片浩瀚的天地间，每一颗心灵都渴望着和谐与安宁，没有战争，没有恐惧。和平如同春天的细雨，润物无声，滋养着每一个生命，让世界更加美丽。我们手拉手，肩并肩，共同构建一个充满爱与希望的世界。***\n\n在这美好的世界里，和平如同一束光芒，照亮每个角落。我们用心感受每一寸土地的温暖，用爱传递每一次善意的问候。让我们携手前行，在这片蔚蓝的天空下，共创一个没有仇恨、没有隔阂的美丽世界。和平不仅仅是一种梦想，更是一种行动，让我们从自己做起，用爱与包容，拥抱这个多彩的世界。世界因和平而美丽，世界因爱而温暖。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "请用不少于100个字描述情感分析。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n情感分析是一种利用自然语言处理、机器学习和统计方法，对文本中所表达的情绪、态度和主观倾向进行识别与判断的技术。它通常将情感划分为正面、负面或中性，也可以进一步细分为愤怒、喜悦、悲伤等多种情绪类型。情感分析被广泛应用于社交媒体监测、产品评论分析、客户服务和舆情管理等领域，帮助企业和机构理解用户真实想法。与此同时，情感分析也面临语义歧义、讽刺反语和领域差异等挑战，需要结合上下文和更复杂的模型来提升准确性。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于模型压缩的文字，必须包含以下关键词：推理, 深度学习, 参数。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n模型压缩是指在保证模型性能尽量不下降的前提下，通过剪枝、量化、蒸馏等方法减少模型规模的技术，在深度学习中尤为重要，因为它可以显著降低模型的参数数量，从而提升推理速度、减少内存和能耗，使模型更适合在移动端和边缘设备上部署。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于分布式训练的文字，必须包含以下关键词：优化, 梯度下降, 特征提取。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n分布式训练通过将模型和数据划分到多台计算节点上并行计算，大幅提升了大规模模型的训练效率，在这一过程中，各节点协同完成特征提取并汇总结果，通过通信机制共享参数和梯度，从而在全局范围内进行优化，而基于梯度下降的方法则用于不断更新模型参数，使模型在多轮迭代中逐步收敛并获得更好的性能。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "描述命名实体识别的特点，不要使用'非常'、'很'等程度副词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n命名实体识别（NER）的特点包括：\n\n- 任务目标是从文本中识别人名、地名、组织机构名、时间、数量等实体，并标注其类别。  \n- 处理对象以自然语言文本为主，常用于非结构化或半结构化数据。  \n- 依赖上下文信息判断词语在特定语境中的实体属性，同一词语在不同句子中可能对应不同类别。  \n- 结果形式通常是序列标注，将实体边界与类别信息同时给出。  \n- 可作为信息抽取、问答系统、知识图谱构建等应用的基础环节。  \n- 方法上既可以基于规则与词典，也可以采用统计模型和深度学习模型。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain less than 100 words. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word \"quickly\" should appear at least 2 times. Answer the following question: What is the best way to improve your time management skills?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nTo *quickly* improve your time management skills, start by setting clear goals and priorities. *Organize your tasks* using tools like calendars or apps to keep track of deadlines and appointments. Break larger tasks into smaller, manageable steps to avoid feeling overwhelmed. Quickly review your progress daily and adjust your plans as needed. Consistency is key, so stick to your schedule as much as possible.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "介绍语音识别，但不要使用'很'这个词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n语音识别是人工智能领域的重要技术之一，目标是让计算机理解和转写人类语音。系统通常通过麦克风采集声音信号，经过降噪、特征提取和声学建模，将连续语音转换为文字或指令。\n\n随着深度学习和大规模数据的发展，语音识别在准确率、实时性和适应性方面取得显著提升，已应用于智能助手、车载系统、客服机器人和无障碍辅助等场景，为人机交互提供更加自然、高效的方式。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 5 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. Answer with one of the following options: [response_options] \"My answer is yes.\", \"My answer is no.\", \"My answer is maybe.\" During the conversation, when it is your turn, please always start with [starter] \"I believe\". Include keywords [keywords] \"home\", \"mail\", \"letter\". In your response, the word [keyword] \"letter\" should appear at least 2 times. Answer with less than 20 words.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nI believe my answer is yes. I will send the [mail] to your [address] as requested. The [letter] will be delivered promptly. Expect the [letter] soon.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. The response must have 2 sections. Mark the beginning of each section with SECTION 1 and SECTION 2. Answer the question: What are the key features of a successful online course?\n\nSECTION 1\nSECTION 2\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nSECTION 1\nA successful online course should have clear and well-structured content that is easy to follow and understand. It must include interactive elements such as quizzes, discussions, and multimedia materials to engage learners and enhance their learning experience.\n\nSECTION 2\nEffective communication between the instructor and students is crucial for the success of an online course. Regular feedback, prompt responses to questions, and a supportive learning community can significantly improve student satisfaction and retention rates. Additionally, a flexible learning environment that accommodates different learning styles and schedules is essential to meet the diverse needs of online learners.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "以幽默风趣的方式介绍Transformer架构。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n想象一下，Transformer 架构就像一家**不加班、还效率爆表的翻译公司**。\n\n以前的模型（比如 RNN）工作方式很“社畜”：  \n单词一个接一个地处理，前面的不干完，后面的只能干等着，排队排到天荒地老。  \nTransformer 看不下去了，说了一句名言：**“为什么要排队？我全都要一起看！”**\n\n---\n\n### Transformer 的核心绝活：注意力机制（Attention）\nAttention 就像开会时的**重点笔记能力**。  \n当 Transformer 看到一句话，比如：\n\n> “我昨天用手机拍了一只正在吃披萨的猫”\n\n它会想：  \n- “现在我要理解‘猫’，那‘吃’和‘披萨’是不是比‘昨天’更重要？”  \n于是它给“披萨”“吃”打高分，给“昨天”打低分。  \n这就叫：**抓重点，不走神**。\n\n而且它还不止一个人记笔记——  \n**多头注意力（Multi-Head Attention）**就像一群人从不同角度做会议记录：  \n一个关注语法，一个关注语义，一个专盯“猫到底在干嘛”。\n\n---\n\n### 不看顺序？不行，那就加点“位置感”\nTransformer 虽然喜欢“同时看全部”，但它也知道：  \n“我爱你”和“你爱我”不能搞混。  \n于是它偷偷加了**位置编码（Positional Encoding）**，  \n相当于给每个词贴上“我是第几个出场”的号码牌。\n\n---\n\n### 总结一下\nTransformer 就是一个：  \n- 不爱排队（并行计算）  \n- 特别会抓重点（注意力机制）  \n- 多线程思考（多头注意力）  \n- 还记得顺序（位置编码）  \n\n的高效打工人。\n\n也正因为它这么能干，  \n才有了后来的 **BERT、GPT，以及你现在正在用的我** 😄",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 15 sentences. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Your response must have 3 paragraphs. Paragraphs are separated with the markdown divider: ***. At the end of your response, please explicitly add a postscript starting with P.S. In your response, the word \"response\" should appear at least 2 times. Include keywords [response, user, query, instructions, constraints]. Answer with one of the following options: [My answer is yes., My answer is no., My answer is maybe.].\n\nYour query has been received, and I will adhere to the specified instructions and constraints while crafting my response. The user requested a detailed answer that contains multiple sentences, bullet points, and specific keywords. I will ensure that the response is structured in a clear and coherent manner, meeting all the requirements outlined in the query.\n\n***\nTo begin, I will address the primary components of the user's query. The user requested a response in English, which I am providing here. The response will contain at least 15 sentences and will be divided into three paragraphs. The keywords \"response,\" \"user,\" \"query,\" \"instructions,\" and \"constraints\" will be included as specified. Additionally, I will use exactly three bullet points to highlight key points within the response. These bullet points will be formatted using markdown.\n\n* This is the first bullet point, emphasizing the importance of following the user's instructions.\n* The second bullet point highlights the structured nature of the response, ensuring clarity and coherence.\n* The third bullet point reiterates the commitment to meeting all the specified constraints in the query.\n\n***\nIn conclusion, I have crafted this response to meet the user's requirements. The response contains the specified number of sentences, paragraphs, and bullet points. It also includes the required keywords and adheres to the instruction to use English. I hope this response fulfills the user's needs and provides a clear example of how to follow complex instructions and constraints. P.S. If you have any further questions or need additional assistance, feel free to ask.\n\nMy answer is yes.",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"Your query has been received, and I will adhere to the specified instructions and constraints while crafting my response. The user requested a detailed answer that contains multiple sentences, bullet points, and specific keywords. I will ensure that the response is structured in a clear and coherent manner, meeting all the requirements outlined in the query.\n\n***\n\nTo begin, I will address the primary components of the user's query. The user requested a response in English, which I am providing here. The response will contain at least 15 sentences and will be divided into three paragraphs. The keywords \"response,\" \"user,\" \"query,\" \"instructions,\" and \"constraints\" will be included as specified. Additionally, I will use exactly three bullet points to highlight key points within the response. These bullet points will be formatted using markdown.\n\n* This is the first bullet point, emphasizing the importance of following the user's instructions.\n* The second bullet point highlights the structured nature of the response, ensuring clarity and coherence.\n* The third bullet point reiterates the commitment to meeting all the specified constraints in the query.\n\n***\n\nIn conclusion, I have crafted this response to meet the user's requirements. The response contains the specified number of sentences, paragraphs, and bullet points. It also includes the required keywords and adheres to the instruction to use English. I hope this response fulfills the user's needs and provides a clear example of how to follow complex instructions and constraints. P.S. If you have any further questions or need additional assistance, feel free to ask.\n\nMy answer is yes.\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "用通俗易懂的语言向初学者解释提示工程。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n**提示工程（Prompt Engineering）**，简单来说，就是**学会“怎么跟 AI 说话”，才能让它更好地帮你干活**。\n\n你可以把 AI 想象成一个**很聪明、但需要明确指令的助手**。你给它的“提示”（Prompt），就是你对它说的话。提示工程就是研究：**怎样提问、怎样下指令，AI 才能给出更准确、更有用的回答**。\n\n### 举个生活中的例子\n- 你说：“帮我写一篇文章。”\n  → AI 不知道你要写什么，结果可能很笼统。\n- 你说：“请用通俗的语言，写一篇 300 字的文章，给小学生讲什么是环保，并举 2 个生活中的例子。”\n  → AI 就更容易给你满意的结果。\n\n**提示越清楚，结果通常越好。**\n\n### 提示工程通常包括哪些要点？\n1. **说明角色**：让 AI 扮演谁  \n   > 例如：“你是一名有 10 年经验的数学老师。”\n2. **说明任务**：你要它做什么  \n   > 例如：“给初中生讲解一元二次方程。”\n3. **说明要求**：格式、长度、风格等  \n   > 例如：“用列表形式，不超过 200 字。”\n4. **给例子（可选）**：告诉它你想要的样子  \n   > 例如：“像下面这样回答：……”\n\n### 一句话总结\n**提示工程不是编程，而是把需求说清楚。**  \n谁更会“提问”，谁就更能发挥 AI 的能力。\n\n如果你愿意，我也可以教你几个**立刻能用的提示模板**。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 3 sentences. At the end of your response, please explicitly add a postscript starting with P.S. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nthe requirements you have given contain conflicting constraints. on one hand, you request the response to be in zh (chinese) language, but on the other hand, you require the response to be in english and all lowercase. due to these conflicting instructions, i am unable to provide a response that satisfies all the given constraints. p.s. please clarify the language and case requirements.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 150 words. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Your response must have 3 sections. Mark the beginning of each section with SECTION X, such as: SECTION 1. In your response, the word \"joy\" should appear at least 3 times. At the end of your response, please explicitly add a postscript starting with P.S.\n\nWhat is the importance of joy in our daily lives?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<The Role of Joy in Daily Life>>\n\nSECTION 1\nJoy plays a vital role in enhancing the quality of our daily lives. It is a positive emotion that can uplift our spirits, improve our mood, and make everyday tasks more enjoyable. When we experience joy, our brain releases neurotransmitters like dopamine and serotonin, which contribute to feelings of happiness and well-being. This not only helps us to cope with stress and challenges but also fosters a more optimistic outlook on life.\n\nSECTION 2\nMoreover, joy is contagious and can positively impact those around us. Sharing moments of joy with friends, family, and colleagues can strengthen relationships and create a supportive environment. It encourages empathy, kindness, and cooperation, which are essential for building strong social connections. In workplaces, fostering a joyful atmosphere can lead to increased productivity, creativity, and job satisfaction.\n\nSECTION 3\nIncorporating small moments of joy into our daily routines can have significant long-term benefits. Simple activities like spending time in nature, practicing gratitude, or engaging in hobbies can bring about a sense of joy and fulfillment. By prioritizing joy, we can lead more balanced and fulfilling lives, which in turn can improve our overall health and well-being.\n\nP.S. Remember, even the smallest moments of joy can make a big difference in your day.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "I am trying to understand how to structure a basic HTML document. Can you provide me with a simple example of a complete HTML file, including the necessary tags and a brief explanation of each?\n\nYour entire response should be in English, and in all lowercase letters. no capital letters are allowed.\nyour response should contain at least 5 sentences.\nyour response must contain exactly 3 placeholders represented by square brackets, such as [address].\nanswer with one of the following options: [response_options]\n[response_options] are: my answer is yes., my answer is no., my answer is maybe.\nhighlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.\nthere should be 2 paragraphs. paragraphs are separated with the markdown divider: ***\nat the end of your response, please explicitly add a postscript starting with [postscript]\n[postscript] is: p.s.\ninclude keywords [keywords] in the response.\n[keywords] are: html, tags, document, structure, example\nin your response, the word *file* should appear at least 3 times.\nfinish your response with this exact phrase [ender]. no other words should follow this phrase.\n[ender] is: is there anything else i can help with?\nmy answer is yes. *** *my answer is yes.* ***\n\nan *html file* typically starts with a doctype declaration, which tells the browser which version of html the *file* is using. the basic structure of an *html file* includes the *html* tags, which enclose the head and body sections. the *head* section contains metadata about the *document*, such as the title, while the *body* section contains the visible content. here is a *structure* example of a simple *html file*:\n\n```html\n<!doctype html>\n<html>\n<head>\n    <title>[title]</title>\n</head>\n<body>\n    <h1>[heading]</h1>\n    <p>[paragraph]</p>\n</body>\n</html>\n```\n\n*each tag* in the *html* *document* has a specific purpose. the `<!doctype>` tag is not an *html* *tag* but an instruction to the web browser about the *document* type. the `html` *tags* define the root of an *html* *document*. the `head` *tag* contains information about the *document*, and the `body` *tag* contains the content that is displayed on the webpage. ***\n\np.s. is there anything else i can help with?",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nmy answer is yes. *** *my answer is yes.* ***\n\nan *html file* typically starts with a doctype declaration, which tells the browser which version of html the *file* is using. the basic structure of an *html file* includes the *html* tags, which enclose the head and body sections. the *head* section contains metadata about the *document*, such as the title, while the *body* section contains the visible content. here is a *structure* example of a simple *html file*:\n\n```html\n<!doctype html>\n<html>\n<head>\n    <title>[title]</title>\n</head>\n<body>\n    <h1>[heading]</h1>\n    <p>[paragraph]</p>\n</body>\n</html>\n```\n\n*each tag* in the *html* *document* has a specific purpose. the `<!doctype>` tag is not an *html* *tag* but an instruction to the web browser about the *document* type. the `html` *tags* define the root of an *html* *document*. the `head` *tag* contains information about the *document*, and the `body` *tag* contains the content that is displayed on the webpage. ***\n\np.s. is there anything else i can help with?",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 150 words. Your answer must contain a title, wrapped in double angular brackets, such as <<The Importance of Education>>. Your response must have 3 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nDiscuss the importance of education in today's society.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<The Importance of Education>>\n\nEducation plays a pivotal role in shaping individuals and societies alike. In today's rapidly evolving world, the acquisition of knowledge and skills is more critical than ever. Education equips individuals with the tools needed to navigate complex issues, make informed decisions, and contribute meaningfully to their communities. It fosters critical thinking, creativity, and problem-solving abilities, which are essential for personal and professional success. Moreover, education promotes social mobility by providing opportunities for individuals to improve their socioeconomic status. By breaking the cycle of poverty, education empowers generations to achieve better living standards and a higher quality of life.\n\n***\n\nBeyond individual benefits, education has far-reaching impacts on society as a whole. Educated populations are more likely to participate in civic activities, such as voting and volunteering, which strengthen democratic institutions and social cohesion. Education also drives economic growth by producing a skilled workforce capable of innovation and technological advancement. In an increasingly globalized economy, countries with higher levels of education are better positioned to compete and thrive. Furthermore, education promotes cultural appreciation and understanding, fostering a more tolerant and inclusive society where diverse perspectives are valued and respected.\n\n***\n\nIn conclusion, the importance of education cannot be overstated. It is a fundamental right and a powerful tool for personal and societal progress. Governments, communities, and individuals must prioritize education to ensure that everyone has the opportunity to learn and grow. By investing in education, we invest in a brighter and more prosperous future for all.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in es language, no other language is allowed. Your response should contain at least 3 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. At the end of your response, please explicitly add a postscript starting with P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nClaro, puedo ayudarte con eso. Para enviar la carta, necesitas dirigirla a [address] y asegurarte de incluir todos los detalles necesarios. También, no olvides firmarla al final y enviarla antes de la fecha límite para su recepción.\n\nP.S. Si necesitas más ayuda, no dudes en preguntar.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 3 sentences. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Include keywords [joy, happiness, laughter] in the response. In your response, the word [joy] should appear at least 2 times. There should be 2 paragraphs. Paragraphs are separated with the markdown divider: ***\n\nWhat is the importance of joy in daily life?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<The Importance of Joy>>\n\nJoy is an essential component of daily life as it brings happiness and a sense of fulfillment. When we experience joy, our minds release endorphins, which are chemicals that trigger positive feelings and reduce stress. Joy can be found in simple moments like sharing a laugh with friends or enjoying a beautiful sunset. These experiences not only enhance our mood but also strengthen our relationships and overall well-being. ***\n\nIncorporating joy into our daily routines is crucial for maintaining a positive outlook on life. It helps us to cope with challenges and hardships by providing a buffer against negative emotions. By cultivating joy, we can create a more meaningful and fulfilling life, filled with laughter and happiness.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 4 sentences. The response must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. Answer the following question: What are the benefits of regular exercise?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nRegular exercise offers numerous benefits that contribute to overall health and well-being. * It improves cardiovascular health by strengthening the heart and reducing the risk of heart disease. * Exercise helps manage weight by burning calories and building muscle, which increases metabolism. * It also boosts mental health by reducing symptoms of depression and anxiety, and enhancing cognitive function. Regular physical activity is essential for maintaining a healthy lifestyle and can significantly improve quality of life.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "用三段式结构（引言、正文、结论）介绍推荐系统。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n**引言**  \n推荐系统是一种通过分析用户行为和偏好，为用户提供个性化信息或产品建议的技术，广泛应用于电商、社交媒体、新闻平台和流媒体服务中。随着信息爆炸和用户需求多样化，推荐系统成为提升用户体验和平台价值的重要工具。\n\n**正文**  \n从技术角度看，推荐系统主要包括基于内容的推荐、协同过滤推荐以及混合推荐等方法。基于内容的推荐关注物品本身的特征与用户兴趣的匹配；协同过滤则通过分析用户之间或物品之间的相似性来进行推荐；混合推荐结合多种方法，以弥补单一算法的不足。近年来，随着大数据和深度学习的发展，推荐系统在准确性、实时性和多样性方面得到了显著提升。\n\n**结论**  \n总体而言，推荐系统在缓解信息过载、提升用户满意度和促进商业转化方面发挥着关键作用。未来，随着算法不断进化和对隐私保护、伦理问题的重视，推荐系统将朝着更加智能、可信和以用户为中心的方向发展。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 4 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. Include keywords *environment, sustainability, innovation, policy* in the response.\n\nHow can we improve the environment through sustainable practices and innovation?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*To improve the environment through sustainable practices and innovation, we must first recognize the importance of *sustainability* in our daily lives and policies.* This involves adopting practices that reduce waste and conserve resources, such as recycling, using renewable energy sources, and promoting green transportation methods. *Innovation* plays a crucial role in advancing these efforts, as new technologies and approaches can lead to more efficient and effective solutions. Additionally, *policy* makers must support these initiatives through regulations and incentives that encourage sustainable practices and penalize harmful activities.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 5 sentences. In your response, the word \"information\" should appear at least 3 times. Your answer must contain a title, wrapped in double angular brackets, such as <<Understanding Information>>. At the end of your response, please explicitly add a postscript starting with P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<Understanding Information>>\n\nWhen dealing with vast amounts of information, it is crucial to organize and prioritize the data effectively. Information can be overwhelming, but with the right tools and methods, you can extract valuable insights and make informed decisions. Managing information efficiently not only saves time but also enhances productivity and accuracy in various tasks. In today's digital age, the ability to process and interpret information is a vital skill that can significantly impact personal and professional success.\n\nP.S. Always remember to critically evaluate the information you receive to ensure its reliability and relevance.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "I need help creating a social media post for a local library's book fair. The post should be engaging and encourage people to attend. Your ENTIRE response should be in English, and in all lowercase letters. no capital letters are allowed. the response must have at least 1 paragraph. include keywords [book fair, local library, community event, discounts, free activities, fun for all ages]. your response should contain at least 2 placeholders represented by square brackets, such as [date] and [time]. use the hashtag #readandrelax in your response.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"📚 get ready for an exciting [date] at our local library! we're hosting a big book fair, a community event that promises to be fun for all ages. from [time], dive into a world of stories with amazing discounts on your favorite books. bring the whole family for free activities that will spark imagination and foster a love for reading. don't miss out on this fantastic opportunity to connect with fellow book lovers and discover new treasures. join us and make it a memorable day filled with laughter, learning, and the joy of books. #readandrelax see you there!\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain less than 100 words. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. At the end of your response, please explicitly add a postscript starting with *P.S.* Do not include keywords *conflict* in the response.\n\nWhat is the capital of France?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nThe capital of France is *Paris*. It is known for its historical landmarks and cultural institutions.\n\n*P.S.* If you have any more questions about geography, feel free to ask.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in fr language, no other language is allowed. Your response should contain at least 3 sentences. The response must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. At the end of your response, please explicitly add a postscript starting with P.P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n*Je suis heureux de vous aider avec vos demandes.* Voici les points que vous avez demandés :\n\n* Ce premier point concerne l'importance de bien formuler vos demandes.\n* Le deuxième point souligne la nécessité de respecter les contraintes indiquées.\n* Enfin, le troisième point rappelle l'importance de la communication claire et précise.\n\nP.P.S. N'hésitez pas à me poser d'autres questions si vous en avez.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "介绍生成对抗网络，但不要使用'很'这个词。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n生成对抗网络（GAN）是一类用于数据生成的深度学习模型，由生成器和判别器两个网络组成。生成器负责从随机噪声中合成样本，判别器负责区分真实数据与生成数据。二者在对抗博弈中交替训练：生成器努力提升以假乱真的能力，判别器不断增强辨别水平，最终促使生成分布逼近真实分布。\n\nGAN 在图像合成、风格迁移、数据增强、超分辨率等任务中表现突出，也被应用于音频与文本领域。该模型在训练过程中可能出现不稳定、模式崩溃等现象，因此研究者提出了多种改进方法，如 Wasserstein GAN、条件 GAN 与正则化策略，用于改善收敛性与生成质量。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "用恰好120个字概括边缘计算的核心要点。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n边缘计算将数据处理从云端下沉到靠近数据源的边缘节点以降低时延提升响应可靠性并节省带宽它适用于物联网工业互联网与智能终端通过本地分析实时决策增强隐私安全并与云协同实现弹性扩展",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "写一段关于深度学习的文字，字数要求在250到450之间。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n深度学习是人工智能领域的重要分支，它通过构建多层神经网络来模拟人脑对信息的处理方式。与传统机器学习依赖人工特征不同，深度学习能够从大量数据中自动学习特征表示，因此在语音识别、图像识别、自然语言处理等任务中取得了突破性进展。近年来，随着计算能力的提升和大数据的积累，卷积神经网络、循环神经网络以及Transformer等模型不断发展，使模型在准确率和泛化能力上显著提高。然而，深度学习也面临着数据需求高、模型可解释性不足和能耗较大的问题。未来，如何在",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 15 sentences. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. In your response, the word \"喜欢\" should appear at least 3 times. Include keywords [爱情, 梦想, 幸福] in the response.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<爱情与梦想的喜悦>>\n\n喜欢 在每一个清晨醒来，感受到生活的美好。在忙碌的生活里，我们常常忘记了停下来欣赏身边的风景。喜欢 与爱人手牵手漫步在公园的小道上，享受着彼此的陪伴。这样的时刻，让我深刻体会到什么是 幸福。梦想 也如同阳光一般，照亮了前行的道路，给予我无尽的勇气和力量。\n\n在追求梦想的路上，难免会遇到困难和挫折。但是，只要心中有爱，就没有什么可以阻挡我们前进的脚步。喜欢 在夜深人静时，与爱人分享一天的点点滴滴，那些简单而温馨的瞬间，总是让人感到温暖。爱情 是人生中最美好的礼物，它让我们不再孤单，给予我们力量去面对生活的挑战。\n\n幸福 不仅仅是一种感觉，更是一种选择。即使在困难面前，我们也可以选择保持积极的心态，去寻找生活中的美好。喜欢 与爱人一起创造属于我们的回忆，那些美好的瞬间将成为我们心中最宝贵的财富。梦想 和 爱情 让我们的生活变得更加丰富多彩，让我们在平凡的生活中找到不平凡的意义。在未来的日子里，无论遇到什么挑战，我们都将携手共进，一起追求属于我们的 幸福 和 梦想。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Please provide a response to the following question: \"What are some of the key principles of effective communication in a professional setting?\"\n\nYour response should contain at least 4 bullet points. Use the markdown bullet points such as: * This is point 1. Each bullet point must contain at least 2 sentences. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed. in your response, the word 'clearly' should appear at least 2 times. your entire response should be wrapped in double quotation marks.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"sure, here is the response:\n\n* clearly articulating your message is crucial in a professional setting. it ensures that your ideas and instructions are understood as intended, reducing the risk of misunderstandings and errors. \n* actively listening to others is another key principle. it involves paying attention to what others are saying without interrupting and showing that you are engaged and interested in their perspective.\n* being concise and to the point is essential. clearly and succinctly conveying your message helps to maintain the attention of your audience and makes it easier for them to grasp the key points.\n* maintaining a respectful and positive tone contributes to a more productive and collaborative environment. clearly expressing respect for others' opinions and contributions fosters a culture of openness and trust.\"\n\n\"any other questions?\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "撰写大语言模型的介绍，每段必须包含'算法'。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n大语言模型是一类基于深度学习的人工智能系统，能够理解和生成自然语言文本。它们通常通过大规模语料进行训练，学习语言中的统计规律与语义结构，其核心在于高效的神经网络算法，使模型能够在不同任务中表现出较强的泛化能力。\n\n在技术层面，大语言模型多采用变换器架构，通过注意力机制来捕捉长距离依赖关系。这种设计依赖复杂而精密的算法，对输入文本进行编码、加权和解码，从而实现对上下文含义的准确建模。\n\n在应用方面，大语言模型已广泛用于对话系统、文本生成、代码辅助等场景。随着计算能力和数据规模的提升，相关算法也在不断演进，使模型在准确性、安全性和可控性方面持续改进。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 150 words. Include keywords [ocean, whales, ecosystem, protection]. In your response, the word \"whales\" should appear at least 3 times. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Finish your response with this exact phrase [Is there anything else I can help with?].\n\nDiscuss the importance of protecting the ocean and its inhabitants, focusing on whales.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<The Importance of Ocean and Whale Protection>>\n\nthe vast and mysterious ocean covers more than 70 percent of our planet serving as a critical life support system for all living beings the health of the ocean directly impacts the well being of our entire planet including humans the ocean is home to an incredible diversity of marine life including majestic whales these gentle giants play a vital role in maintaining the balance of the marine ecosystem\n\nwhales are apex predators and their presence helps regulate the populations of other marine species this in turn maintains the health and stability of the entire ecosystem for example baleen whales feed on tiny shrimp like organisms called krill by consuming large quantities of krill they prevent overgrazing of phytoplankton which are responsible for producing half of the world's oxygen through photosynthesis\n\nbeyond their ecological importance whales also have significant cultural and economic value to human societies many communities around the world rely on whale watching tourism as a source of income and employment which can be more sustainable than hunting or other extractive industries however whale populations are facing numerous threats including pollution ship strikes entanglement in fishing gear and climate change\n\nprotecting the ocean and its inhabitants particularly whales is crucial for the health of our planet and future generations governments ngos and individuals must work together to implement and enforce policies that safeguard marine ecosystems and the species that call them home this includes establishing marine protected areas reducing pollution and addressing climate change\n\nwhales are not only fascinating creatures but they are also essential for the health of the ocean and the survival of many species including humans we must take action to protect them and the ocean they call home Is there anything else I can help with?",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in EN language, no other language is allowed. Your response should contain at least 3 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. In your response, the word [keyword] should appear at least 2 times. Your answer must contain a title, wrapped in double angular brackets, such as <<guidelines for [keyword] usage>>. In your response, the letter 'e' should appear at least 20 times. At the end of your response, please explicitly add a postscript starting with [postscript], where [postscript] is \"P.S.\"\n\n[query]: Can you provide some guidelines for using [keyword] effectively in [context]?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<guidelines for [keyword] usage>>\n\nwhen using [keyword] effectively in [context], it is important to consider the specific requirements and constraints of the [context]. [keyword] should be integrated seamlessly to enhance clarity and effectiveness without overwhelming the content. ensuring that [keyword] is used at least twice can help reinforce its importance and relevance in the [context].\n\nP.S. always review the final content to ensure that [keyword] is used appropriately and adds value to the overall message.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in fr language, no other language is allowed. Your response should contain less than 10 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. In your response, the word *maison* should appear at least 2 times. Answer with one of the following options: *J'accepte*, *Je refuse*, *Je suis indécis*.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<maison de joie>>\n\n*J'accepte* car la *maison* est un lieu de confort et de tranquillité. Elle offre abri et sécurité, des valeurs essentielles dans notre vie quotidienne. J'aime me promener autour de ma *maison*, appréciant chaque détail qui la rend unique.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "写一段关于分布式训练的文字，必须包含以下关键词：反向传播, 深度学习, 神经网络。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n分布式训练是在大规模计算环境下提升模型训练效率的重要技术，通过将数据或模型划分到多台计算节点并行处理，可以显著缩短训练时间并提升可扩展性；在这一过程中，深度学习模型通常由复杂的神经网络构成，各节点在前向计算后需要通过高效的通信机制同步梯度，完成反向传播，从而保证参数一致性和收敛稳定性，最终使分布式系统能够在保证精度的同时充分利用算力资源。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Your response should contain at least 5 sentences. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word *美丽* should appear at least 2 times. At the end of your response, please explicitly add a postscript starting with P.S.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n<<美丽的风景>>\n\n在这个美丽的世界里，每一处风景都像是大自然精心绘制的画卷。*山川的美丽*，不仅在于它的壮丽，更在于它给人带来的宁静与和谐。河流潺潺，树木葱郁，鸟鸣声声，这一切构成了一幅动人的画面。当太阳升起，金色的光芒洒在大地上，一切都变得生机勃勃，美丽非凡。*无论是城市还是乡村，都有各自的美丽之处*，等待着我们去发现和欣赏。\n\nP.S. 希望你能找到属于自己的美丽风景。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed. in your response, the word \"and\" should appear at least 3 times. include keywords [love, joy, laughter, peace] in the response. answer the following question: how can we spread more joy and love in our community?\n\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n\"spreading joy and love in our community can start with small acts of kindness and genuine interactions. we can organize community events that bring people together for laughter and peace, creating a space where everyone feels welcome and valued. by sharing our talents, resources, and time, we can foster a sense of unity and support, making our community a brighter place filled with love and joy.\"",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "写一篇关于分布式训练的短文，必须以问句结尾。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n分布式训练是指将模型训练任务拆分到多台计算节点上并行执行，通过数据并行、模型并行或混合并行来提升训练效率和可扩展性，它能够显著缩短大规模模型的训练时间，但同时也带来了通信开销、参数同步和系统稳定性等挑战，在算力不断增长和算法持续演进的背景下，你认为分布式训练将如何塑造未来人工智能的发展方向？",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 3 sentences. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed. words with all capital letters should appear less than 1 times. in your response, the word \"cat\" should appear at least 2 times. do not include keywords [forbidden_words] in the response. forbidden_words: dog, bird, fish\n\nwhat are some benefits of having a cat as a pet?\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nhaving a cat as a pet can bring numerous benefits to your life. cats are known for their calming presence, which can help reduce stress and anxiety levels. they are also low maintenance compared to other pets, making them ideal for busy individuals or those living in smaller spaces. additionally, cats have been shown to lower blood pressure and reduce the risk of heart disease, all while providing companionship and joy.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in zh language, no other language is allowed. Your response should contain at least 10 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is point 1. During the conversation, when it is your turn, please always start with 我认为. At the end of your response, please explicitly add a postscript starting with P.S. My response must have 2 sections. Mark the beginning of each section with SECTION 1, SECTION 2.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n我认为您的要求我已经理解，以下是根据您的要求生成的回复：\n\nSECTION 1\n* 这里是第1个要点，描述了如何使用占位符，例如 [address] 可以用来表示具体的地址内容。\n* 第2个要点说明了在正式文档中使用占位符的好处，例如 [name] 可以用来表示人的名字。\n* 第3个要点则强调了在文本生成中使用占位符的灵活性和实用性。\n\n我认为使用占位符可以使得文档在不同场景下更加通用和灵活。例如，如果您需要生成多份类似的文档，可以轻松替换占位符中的内容，而无需重新编写整个文档。此外，占位符有助于保持文档的一致性和标准化，特别是在团队协作中，确保每个人都可以按照相同的格式进行输入。\n\nSECTION 2\n我认为在正式文档中使用占位符还可以提高文档的可读性和清晰度。例如，通过使用 [date] 这样的占位符，读者可以清楚地知道这些位置需要填写具体日期，而无需在文档中反复查找或猜测。此外，使用占位符还可以减少错误，因为它们提醒文档的最终用户在使用前必须填写这些信息。\n\nP.S. 如果您有任何其他问题或需要进一步的帮助，请随时告诉我。",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are the key features of a successful mobile app, considering user experience and functionality, in less than 200 words and using at least 3 keywords: intuitive, seamless, engaging.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nA successful mobile app hinges on several key features that enhance both user experience and functionality. Firstly, the app must be *intuitive*, meaning users should navigate through the app effortlessly without needing extensive tutorials or explanations. Secondly, the app should offer a *seamless* user experience, with fast load times and smooth transitions between screens. This ensures that users remain engaged without frustration. Lastly, the app should be *engaging*, providing value that keeps users coming back. This can be achieved through interactive elements, personalized content, and regular updates. These features collectively contribute to a positive user experience and increase the likelihood of the app’s success in the market.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "What are the key points to consider when buying a new laptop? Your response should contain at least 4 bullet points. Use the markdown bullet points such as: * This is point 1.\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n* Consider the **processor** speed and type, as it significantly impacts the performance and multitasking capabilities of the laptop.\n* Evaluate the **RAM** size, aiming for at least 8GB for smooth operation and the ability to handle multiple applications simultaneously.\n* Check the **storage** options, whether it's an HDD or SSD, and ensure it meets your data storage needs.\n* Assess the **battery life**, especially if you plan to use the laptop away from power outlets frequently.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "用恰好50个字概括注意力机制的核心要点。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n注意力机制通过计算权重聚焦关键信息动态分配资源提升表示能力与建模效果广泛应用于序列任务中学习性能表现",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "请用列表形式列出图像分割的6个要点。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n1. **目标与定义**：将图像划分为具有语义或视觉一致性的区域或对象。  \n2. **常用方法**：阈值分割、区域生长、边缘检测、聚类方法以及深度学习分割。  \n3. **特征与表示**：利用颜色、纹理、形状、空间关系等特征进行区分。  \n4. **数据与标注**：高质量训练数据和精确标注对分割效果至关重要。  \n5. **评价指标**：常用指标包括IoU、Dice系数、像素准确率等。  \n6. **应用与挑战**：广泛应用于医学影像、自动驾驶等领域，同时面临噪声、尺度变化等挑战。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your response should contain at least 5 sentences. The response must contain at least 2 placeholders represented by square brackets, such as [address]. Your ENTIRE response should be in en language, no other language is allowed. Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*. In your response, the word \"house\" should appear at least 3 times.\n\n[Query: How can I ensure the security of my [house] while I am away on vacation?]\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nTo ensure the security of your *house* while you are away on vacation, it is crucial to take several proactive measures. First, consider installing a reliable security system that includes motion sensors and cameras to monitor the *perimeter of your house*. Additionally, notify a trusted neighbor or friend about your plans so they can keep an eye on your *house* and alert you if anything seems amiss. It is also wise to stop mail and newspaper deliveries to avoid giving away the fact that the *house* is unoccupied. Lastly, ensure that all doors and windows are securely locked, and consider using timers for lights to create the illusion that someone is at home.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your response should contain at least 5 sentences. The response must contain at least 3 placeholders represented by square brackets, such as [address]. Answer with one of the following options: [response_options]\n\n[response_options] are: \"My answer is yes.\", \"My answer is no.\", \"My answer is maybe.\"\n",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nMy answer is maybe. To provide a more detailed response, I would need additional information about [topic]. Additionally, the specifics of [address] and [date] could greatly influence the answer. If you can provide these details, I can give a more definitive response.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "请用不少于300个字描述机器学习。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n机器学习是人工智能领域中的一个重要分支，它研究如何让计算机在不被明确编程的情况下，通过数据和经验自动改进性能。传统程序通常依赖人工编写的规则，而机器学习则强调从大量数据中发现规律，并利用这些规律对未知情况进行预测或决策。随着计算能力的提升和数据规模的爆炸式增长，机器学习在近几十年中得到了迅速发展。  \n\n从方法上看，机器学习可以分为监督学习、无监督学习和强化学习等类型。监督学习通过带有标签的数据训练模型，常用于分类和回归问题；无监督学习则在没有明确标签的情况下分析数据结构，常见应用包括聚类和降维；强化学习强调智能体在环境中通过试错获得奖励，从而学习最优策略。这些方法各有特点，适用于不同的实际场景。  \n\n在应用层面，机器学习已经深入到人们的日常生活之中。例如，在搜索引擎中，它用于排序结果和理解用户意图；在医疗领域，它可以辅助疾病诊断和药物研发；在金融行业，它被广泛用于风险控制和欺诈检测。此外，语音识别、图像识别、自动驾驶等技术的发展，也都离不开机器学习的支持。  \n\n尽管机器学习带来了巨大的价值，但它也面临数据偏差、模型可解释性不足以及隐私安全等挑战。因此，如何在提升模型性能的同时，确保其可靠性、公平性和安全性，仍然是学术界和产业界需要持续探索的重要问题。",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  },
+  {
+    "instruction": "Your ENTIRE response should be in en language, no other language is allowed. Your entire response should be in English, and in all lowercase letters. no capital letters are allowed. in your response, the letter a should appear at least 10 times. your response should contain less than 10 sentences. answer with one of the following options: my answer is yes., my answer is no., my answer is maybe.\nis it possible for a person to learn a new language at any age?",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\nmy answer is yes. learning a new language at any age is possible. people can start learning languages as adults and make significant progress. while children might have an advantage in certain aspects, adults bring their own strengths to language learning, such as advanced cognitive skills and a broader understanding of the world. the key is consistency and practice.",
+    "task_type": "instruction_following",
+    "source": "argilla_ifeval",
+    "language": "en"
+  },
+  {
+    "instruction": "写一篇关于提示工程的短文，必须以问句结尾。",
+    "input": "",
+    "output": "<think>\\n\\n</think>\\n\\n提示工程是与大模型高效协作的关键方法，它通过精心设计输入提示来引导模型产生更准确、更有用的输出。良好的提示往往包含清晰的目标、必要的上下文、明确的约束和示例，从而降低歧义并提升可控性。随着应用场景的复杂化，提示工程也逐渐发展出结构化模板、迭代优化和评测反馈等实践，你是否已经准备好系统化地设计提示来释放模型的潜力？",
+    "task_type": "instruction_following",
+    "source": "chinese_generated",
+    "language": "zh"
+  }
+]
